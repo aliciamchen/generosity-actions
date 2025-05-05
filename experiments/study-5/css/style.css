@@ -1,0 +1,33 @@
+.jspsych-content {
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.jspsych-html-button-response-stimulus {
+  padding: 10px;
+}
+
+.align-left {
+  text-align: left;
+  display: block;
+  justify-content: center;
+}
+
+.red-bold {
+  color: red;
+  font-weight: bold;
+}
+
+.blue-bold {
+  color: blue;
+  font-weight: bold;
+}
+
+.video-container {
+  justify-content: center;
+}
+
+.tangram:hover {
+  outline: 5px solid gray;
+}
