@@ -1,0 +1,56 @@
+[
+    {
+      "id": "meal",
+      "partner_name": "Repi",
+      "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and Repi are sharing a ceremonial meal for the first time.",
+      "options": {
+        "give": "You serve the food first",
+        "receive": "You wait to be served"
+      }
+    },
+    {
+      "id": "meeting place",
+      "partner_name": "Minu",
+      "scenario": "When meeting someone for a gathering, there are two primary meeting places. One is closer to your dwelling and one is closer to Minu's dwelling. You and Minu are meeting for the first time, and you need to decide which place to suggest for the meeting.",
+      "options": {
+        "give": "Suggest the place closer to their dwelling",
+        "receive": "Suggest the place closer to your own dwelling"
+      }
+    },
+    {
+      "id": "song preference",
+      "partner_name": "Leko",
+      "scenario": "Each week ends with a village event where pairs of people team up to perform a song in front of the community. Without speaking beforehand, each person begins singing, and it is expected that the pair sings the same song. You and Leko are paired for the first time.",
+      "options": {
+        "give": "Start singing what you think your partner's preferred song might be",
+        "receive": "Start singing your preferred song"
+      }
+    },
+    {
+      "id": "object carrying",
+      "partner_name": "Fadi",
+      "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and Fadi are participating in this ritual for the first time.",
+      "options": {
+        "give": "Carry the heavier object",
+        "receive": "Carry the lighter object"
+      }
+    },
+    {
+      "id": "task checking",
+      "partner_name": "Tudo",
+      "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and Tudo are working together for the first time.",
+      "options": {
+        "give": "Perform the detailed check",
+        "receive": "Wait for your partner to do a detailed check"
+      }
+    },
+    {
+      "id": "gift",
+      "partner_name": "Zira",
+      "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and Zira have just finished taking part in the event together for the first time.",
+      "options": {
+        "give": "Give a token",
+        "receive": "Accept a token"
+      }
+    }
+  ]
