@@ -23,7 +23,7 @@
     "id": "meeting place",
     "partner_name": "Minu",
     "time": "first",
-    "scenario": "On certain mornings, two villagers are asked to inspect the far fields, which requires setting out on a long walk before sunrise. Today, you've been paired with **Minu** for the **first time**, and you must decide on a meeting point. There's one spot near your home, and another closer to **Minu**'s.",
+    "scenario": "Some days, a pair of people is assigned to check on the fields furthest from the village, which means leaving for a long walk early in the morning. This morning, you are paired with **Minu** for the **first time**, and you need to figure out where to meet them. You know that there is a meeting place closer to your house, and a meeting place closer to their house.",
     "options": {
       "give": "Go to the place closer to their house",
       "receive": "Go to the place closer to your house"
@@ -33,7 +33,7 @@
     "id": "meeting place",
     "partner_name": "Minu",
     "time": "second",
-    "scenario": "On certain mornings, two villagers are asked to inspect the far fields, which requires setting out on a long walk before sunrise. Today, you've been paired with **Minu** for the **second time**, and you must decide on a meeting point. There's one spot near your home, and another closer to **Minu**'s.",
+    "scenario": "Some days, a pair of people is assigned to check on the fields furthest from the village, which means leaving for a long walk early in the morning. This morning, you are paired with **Minu** for the **second time**, and you need to figure out where to meet them. You know that there is a meeting place closer to your house, and a meeting place closer to their house.",
     "options": {
       "give": "Go to the place closer to their house",
       "receive": "Go to the place closer to your house"
@@ -43,7 +43,7 @@
     "id": "song preference",
     "partner_name": "Leko",
     "time": "first",
-    "scenario": "At the end of each week, villagers pair up to give a musical performance for the community. You and **Leko** are paired for the **first time**. One of the songs features an impressive solo for your instrument, while another showcases **Leko**'s instrument more prominently.",
+    "scenario": "Each week ends with a village event where pairs of people perform in front of the community. You and **Leko** are paired for the **first time**. One song you know has a great solo part for your instrument, while the other song highlights **Leko**'s instrument.",
     "options": {
       "give": "Choose the song that's better for your partner's instrument",
       "receive": "Choose the song that's better for your instrument"
@@ -53,7 +53,7 @@
     "id": "song preference",
     "partner_name": "Leko",
     "time": "second",
-    "scenario": "At the end of each week, villagers pair up to give a musical performance for the community. You and **Leko** are paired for the **second time**. One of the songs features an impressive solo for your instrument, while another showcases **Leko**'s instrument more prominently.",
+    "scenario": "Each week ends with a village event where pairs of people perform in front of the community. You and **Leko** are paired for the **second time**. One song you know has a great solo part for your instrument, while the other song highlights **Leko**'s instrument.",
     "options": {
       "give": "Choose the song that's better for your partner's instrument",
       "receive": "Choose the song that's better for your instrument"
