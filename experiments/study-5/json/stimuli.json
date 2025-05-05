@@ -3,7 +3,7 @@
     "id": "meal",
     "partner_name": "Repi",
     "time": "first",
-    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and Repi are sharing a ceremonial meal for the first time.",
+    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and **Repi** are sharing a ceremonial meal for the **first time**.",
     "options": {
       "give": "You serve the food first",
       "receive": "You wait to be served"
@@ -13,7 +13,7 @@
     "id": "meal",
     "partner_name": "Repi",
     "time": "second",
-    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and Repi are sharing a ceremonial meal for the second time.",
+    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and **Repi** are sharing a ceremonial meal for the **second time**.",
     "options": {
       "give": "You serve the food first",
       "receive": "You wait to be served"
@@ -23,7 +23,7 @@
     "id": "meeting place",
     "partner_name": "Minu",
     "time": "first",
-    "scenario": "When meeting someone for a gathering, there are two primary meeting places. One is closer to your dwelling and one is closer to Minu's dwelling. You and Minu are meeting for the first time, and you need to decide which place to suggest for the meeting.",
+    "scenario": "When meeting someone for a gathering, there are two primary meeting places. One is closer to your dwelling and one is closer to **Minu**'s dwelling. You and **Minu** are meeting for the **first time**, and you need to decide which place to suggest for the meeting.",
     "options": {
       "give": "Suggest the place closer to their dwelling",
       "receive": "Suggest the place closer to your own dwelling"
@@ -33,7 +33,7 @@
     "id": "meeting place",
     "partner_name": "Minu",
     "time": "second",
-    "scenario": "When meeting someone for a gathering, there are two primary meeting places. One is closer to your dwelling and one is closer to Minu's dwelling. You and Minu are meeting for the second time, and you need to decide which place to suggest for the meeting.",
+    "scenario": "When meeting someone for a gathering, there are two primary meeting places. One is closer to your dwelling and one is closer to **Minu**'s dwelling. You and **Minu** are meeting for the **second time**, and you need to decide which place to suggest for the meeting.",
     "options": {
       "give": "Suggest the place closer to their dwelling",
       "receive": "Suggest the place closer to your own dwelling"
@@ -43,7 +43,7 @@
     "id": "song preference",
     "partner_name": "Leko",
     "time": "first",
-    "scenario": "Each week ends with a village event where pairs of people team up to perform a song in front of the community. Without speaking beforehand, each person begins singing, and it is expected that the pair sings the same song. You and Leko are paired for the first time.",
+    "scenario": "Each week ends with a village event where pairs of people team up to perform a song in front of the community. Without speaking beforehand, each person begins singing, and it is expected that the pair sings the same song. You and **Leko** are paired for the **first time**.",
     "options": {
       "give": "Start singing what you think your partner's preferred song might be",
       "receive": "Start singing your preferred song"
@@ -53,7 +53,7 @@
     "id": "song preference",
     "partner_name": "Leko",
     "time": "second",
-    "scenario": "Each week ends with a village event where pairs of people team up to perform a song in front of the community. Without speaking beforehand, each person begins singing, and it is expected that the pair sings the same song. You and Leko are paired for the second time.",
+    "scenario": "Each week ends with a village event where pairs of people team up to perform a song in front of the community. Without speaking beforehand, each person begins singing, and it is expected that the pair sings the same song. You and **Leko** are paired for the **second time**.",
     "options": {
       "give": "Start singing what you think your partner's preferred song might be",
       "receive": "Start singing your preferred song"
@@ -63,7 +63,7 @@
     "id": "object carrying",
     "partner_name": "Fadi",
     "time": "first",
-    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and Fadi are participating in this ritual for the first time.",
+    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and **Fadi** are participating in this ritual for the **first time**.",
     "options": {
       "give": "Carry the heavier object",
       "receive": "Carry the lighter object"
@@ -73,7 +73,7 @@
     "id": "object carrying",
     "partner_name": "Fadi",
     "time": "second",
-    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and Fadi are participating in this ritual for the second time.",
+    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and **Fadi** are participating in this ritual for the **second time**.",
     "options": {
       "give": "Carry the heavier object",
       "receive": "Carry the lighter object"
@@ -83,7 +83,7 @@
     "id": "task checking",
     "partner_name": "Tudo",
     "time": "first",
-    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and Tudo are working together for the first time.",
+    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and **Tudo** are working together for the **first time**.",
     "options": {
       "give": "Perform the detailed check",
       "receive": "Wait for your partner to do a detailed check"
@@ -93,7 +93,7 @@
     "id": "task checking",
     "partner_name": "Tudo",
     "time": "second",
-    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and Tudo are working together for the second time.",
+    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and **Tudo** are working together for the **second time**.",
     "options": {
       "give": "Perform the detailed check",
       "receive": "Wait for your partner to do a detailed check"
@@ -103,7 +103,7 @@
     "id": "gift",
     "partner_name": "Zira",
     "time": "first",
-    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and Zira have just finished taking part in the event together for the first time.",
+    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and **Zira** have just finished taking part in the event together for the **first time**.",
     "options": {
       "give": "Give a token",
       "receive": "Accept a token"
@@ -113,10 +113,31 @@
     "id": "gift",
     "partner_name": "Zira",
     "time": "second",
-    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and Zira have just finished taking part in the event together for the second time.",
+    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and **Zira** have just finished taking part in the event together for the **second time**.",
     "options": {
       "give": "Give a token",
       "receive": "Accept a token"
+    }
+  },
+
+  {
+    "id": "attention",
+    "partner_name": "Hera",
+    "time": "first",
+    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check. Please select the option on the left.",
+    "options": {
+      "give": "You serve the food first",
+      "receive": "You wait to be served"
+    }
+  },
+  {
+    "id": "attention",
+    "partner_name": "Hera",
+    "time": "second",
+    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check. Please select the option on the right.",
+    "options": {
+      "give": "You serve the food first",
+      "receive": "You wait to be served"
     }
   }
 ]
