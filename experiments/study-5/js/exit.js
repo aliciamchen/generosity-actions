@@ -1,5 +1,5 @@
 // exit survey and debrief
-async function createExit(item_id, jsPsych) {
+async function createExit(jsPsych) {
   try {
     // Exit survey
     const response = await fetch("html/exit-survey.html");
@@ -22,7 +22,7 @@ async function createExit(item_id, jsPsych) {
       type: jsPsychPipe,
       action: "save",
       experiment_id: "MFgivQ7NLbx7",
-      filename: `item-${item_id}_id-${subject_id}.json`, // TODO: save date and time??
+      filename: `${subject_id}.json`, // TODO: save date and time??
       data_string: () => jsPsych.data.get().json(),
     };
 

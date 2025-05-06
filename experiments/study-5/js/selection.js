@@ -35,15 +35,15 @@ async function createSelectionTrials(condition_id, jsPsych) {
     const selectionInstructions = {
       type: jsPsychHtmlButtonResponse,
       stimulus: `
-        <h2>Social Interaction Phase</h2>
+        <h2>Social Interaction</h2>
         <div class="align-left">
           <p>Congrats, you have passed the comprehension check!</p>
           <p>You will now interact with 6 different partners from this society.</p>
           <p>Remember, you will interact with each partner twice.</p>
           <p>For each interaction, you will choose an action, and then see what your partner chose.</p>
-          <p>If you and your partner choose <em>different actions</em>, the interaction will go smoothly.</p>
-          <p>If you and your partner choose the <em>same action</em>, the interaction will be awkward.</p>
-          <p>Your goal is to have as many smooth interactions as possible.</p>
+          <p>If you and your partner choose <em>different actions</em>, the interaction will go smoothly. ☺️</p>
+          <p>If you and your partner choose the <em>same action</em>, the interaction will be awkward. 😫</p>
+          <p>Your goal is to have as many smooth interactions as possible. Please press "Begin" to start the study.</p>
         </div>
       `,
       choices: ["Begin"],
@@ -182,20 +182,18 @@ async function createSelectionTrials(condition_id, jsPsych) {
 // Helper function to find data from the first interaction for a specific scenario and partner
 function getFirstInteractionData(jsPsych, scenarioId, partnerName) {
   // Get all data from first interactions that are not attention checks
-  const firstInteractionData = jsPsych.data
-    .get()
-    .filter({
-      scenario_id: scenarioId,
-      partner_name: partnerName,
-      time: "first",
-      type: "choice",
-      is_attention_check: false
-    });
-  
+  const firstInteractionData = jsPsych.data.get().filter({
+    scenario_id: scenarioId,
+    partner_name: partnerName,
+    time: "first",
+    type: "choice",
+    is_attention_check: false,
+  });
+
   if (firstInteractionData.count() > 0) {
     return firstInteractionData.values()[0];
   }
-  
+
   return null;
 }
 
@@ -206,6 +204,21 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
     ? pairedInteraction.first
     : pairedInteraction.second;
   const stimulus = interaction.stimulus;
+
+  // waiting for partner screen with random duration
+  const waitingScreen = {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: "Waiting for partner...",
+    trial_duration: function () {
+      return jsPsych.randomization.sampleWithoutReplacement(
+        [500, 1000, 2300, 2500, 3000, 3500, 4000, 4500, 5000],
+        1
+      )[0];
+    },
+    choices: "NO_KEYS",
+  };
+
+  trialGroup.push(waitingScreen);
 
   // Intro/reminder screen
   const introScreen = {
@@ -233,32 +246,34 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
   // Selection trial
   const selectionTrial = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: function() {
-      let reminderHTML = '';
-      
+    stimulus: function () {
+      let reminderHTML = "";
+
       // For second interactions, check if we have data from the first interaction
       if (!isFirstTrial && !pairedInteraction.isAttentionCheck) {
         // Get data from the first interaction with this partner for this scenario
         const firstInteractionData = getFirstInteractionData(
-          jsPsych, 
-          pairedInteraction.scenarioId, 
+          jsPsych,
+          pairedInteraction.scenarioId,
           pairedInteraction.partnerName
         );
-        
+
         if (firstInteractionData) {
           // Create reminder text based on first interaction data
-          const participantFirstChoice = firstInteractionData.participant_choice === "give" 
-            ? stimulus.options.give 
-            : stimulus.options.receive;
-            
-          const partnerFirstChoice = firstInteractionData.partner_choice === "give" 
-            ? stimulus.options.give 
-            : stimulus.options.receive;
-            
-          const firstOutcome = firstInteractionData.coordination 
-            ? "smoothly" 
+          const participantFirstChoice =
+            firstInteractionData.participant_choice === "give"
+              ? stimulus.options.give
+              : stimulus.options.receive;
+
+          const partnerFirstChoice =
+            firstInteractionData.partner_choice === "give"
+              ? stimulus.options.give
+              : stimulus.options.receive;
+
+          const firstOutcome = firstInteractionData.coordination
+            ? "smoothly"
             : "awkwardly";
-            
+
           reminderHTML = `
             <div class="reminder-box">
               <h4>Reminder of your first interaction:</h4>
@@ -269,7 +284,7 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
           `;
         }
       }
-      
+
       return `
         <div class="align-left">
           <h3>Interaction with ${stimulus.partner_name}</h3>
@@ -352,11 +367,14 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
   };
   trialGroup.push(selectionTrial);
 
+  trialGroup.push(waitingScreen);
+
   // Feedback trial
   const feedbackTrial = {
     type: jsPsychHtmlButtonResponse,
     stimulus: function () {
-      const lastTrialData = jsPsych.data.getLastTrialData().values()[0];
+      // Get the choice trial data (two trials back, since the last trial is a waiting screen)
+      const lastTrialData = jsPsych.data.get().filter({type: 'choice'}).last(1).values()[0];
       const participantChoice = lastTrialData.participant_choice;
       const partnerChoice = lastTrialData.partner_choice;
       const didCoordinate = lastTrialData.coordination;
