@@ -123,7 +123,7 @@
     "id": "attention",
     "partner_name": "Hera",
     "time": "first",
-    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check. Please select \"You serve the food first\".",
+    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check so we can make sure you're not a bot and award you your pay. Please select \"You serve the food first\".",
     "options": {
       "give": "You serve the food first",
       "receive": "You wait to be served"
@@ -133,7 +133,7 @@
     "id": "attention",
     "partner_name": "Hera",
     "time": "second",
-    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check. Please select \"You wait to be served\".",
+    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check so we can make sure you're not a bot and award you your pay. Please select \"You wait to be served\".",
     "options": {
       "give": "You serve the food first",
       "receive": "You wait to be served"

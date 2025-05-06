@@ -1,5 +1,5 @@
 .jspsych-content {
-  max-width: 50%;
+  max-width: 45%;
   text-align: center;
   margin: auto;
 }
@@ -15,12 +15,12 @@
 }
 
 .red-bold {
-  color: red;
+  color: rgb(241, 74, 74);
   font-weight: bold;
 }
 
 .blue-bold {
-  color: blue;
+  color: rgb(91, 91, 243);
   font-weight: bold;
 }
 

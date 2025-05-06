@@ -95,9 +95,11 @@ async function createSelectionTrials(condition_id, jsPsych) {
         type: jsPsychHtmlButtonResponse,
         stimulus: `
           <h3>New Partner: ${trialGroup.partnerName}</h3>
-          <p>This partner has <strong>${getRelationshipText(
+          <p>${trialGroup.partnerName} has <strong>${getRelationshipText(
             trialGroup.relationship
-          )}</strong> power/status/influence than you.</p>
+          )}</strong> power, status, or influence ${
+          trialGroup.relationship == "equal" ? "as" : "than"
+        } you.</p>
         `,
         choices: ["Continue"],
       };
@@ -114,8 +116,13 @@ async function createSelectionTrials(condition_id, jsPsych) {
           stimulus: `
             <div class="align-left">
               <h3>Interaction with ${stimulus.partner_name}</h3>
+              <p><em>${stimulus.partner_name} has <strong>${getRelationshipText(
+            trialGroup.relationship
+          )}</strong> power, status, or influence ${
+            trialGroup.relationship == "equal" ? "as" : "than"
+          } you.</em></p>
               <p>${stimulus.scenario}</p>
-              <p>What will you choose to do?</p>
+              <p>What do you choose to do?</p>
             </div>
           `,
           choices: [stimulus.options.receive, stimulus.options.give],
@@ -154,11 +161,12 @@ async function createSelectionTrials(condition_id, jsPsych) {
               );
 
               // Determine if interaction was smooth (different choices) or awkward (same choices)
-              data.smooth_interaction =
+              data.coordination =
                 data.participant_choice !== data.partner_choice;
 
               // Record points
-              data.points = data.smooth_interaction ? 1 : 0;
+              data.points = data.coordination ? 1 : 0;
+              console.log(data)
             } else {
               // For attention checks, partner choice is always opposite to the correct choice
               // This ensures a smooth interaction if the attention check is passed
@@ -168,7 +176,7 @@ async function createSelectionTrials(condition_id, jsPsych) {
                 data.partner_choice = "give"; // Opposite of correct "receive"
               }
 
-              data.smooth_interaction = data.passed_attention;
+              data.coordination = data.passed_attention;
               data.points = data.passed_attention ? 1 : 0;
             }
 
@@ -193,7 +201,7 @@ async function createSelectionTrials(condition_id, jsPsych) {
             const lastTrialData = jsPsych.data.getLastTrialData().values()[0];
             const participantChoice = lastTrialData.participant_choice;
             const partnerChoice = lastTrialData.partner_choice;
-            const isSmooth = lastTrialData.smooth_interaction;
+            const didCoordinate = lastTrialData.coordination;
 
             let feedbackText = "";
             if (
@@ -221,7 +229,7 @@ async function createSelectionTrials(condition_id, jsPsych) {
                 <hr>
                 ${feedbackText}
                 ${
-                  isSmooth
+                  didCoordinate
                     ? `<p class="blue-bold">The interaction went smoothly! You earned 1 point.</p>`
                     : `<p class="red-bold">The interaction was awkward! You earned 0 points.</p>`
                 }
@@ -305,8 +313,7 @@ async function assignConditions(condition_id) {
     const conditions = JSON.parse(text);
     const assignment = conditions[condition_id];
     return assignment;
-  }
-  catch (error) {
+  } catch (error) {
     console.error("Error loading conditions:", error);
     throw error;
   }
