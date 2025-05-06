@@ -179,6 +179,26 @@ async function createSelectionTrials(condition_id, jsPsych) {
   }
 }
 
+// Helper function to find data from the first interaction for a specific scenario and partner
+function getFirstInteractionData(jsPsych, scenarioId, partnerName) {
+  // Get all data from first interactions that are not attention checks
+  const firstInteractionData = jsPsych.data
+    .get()
+    .filter({
+      scenario_id: scenarioId,
+      partner_name: partnerName,
+      time: "first",
+      type: "choice",
+      is_attention_check: false
+    });
+  
+  if (firstInteractionData.count() > 0) {
+    return firstInteractionData.values()[0];
+  }
+  
+  return null;
+}
+
 // Helper function to create a group of trials for an interaction (intro + selection + feedback)
 function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
   const trialGroup = [];
@@ -213,18 +233,57 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
   // Selection trial
   const selectionTrial = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: `
-      <div class="align-left">
-        <h3>Interaction with ${stimulus.partner_name}</h3>
-        <p><em>${stimulus.partner_name} has <strong>${getRelationshipText(
-      pairedInteraction.relationship
-    )}</strong> power, status, or influence ${
-      pairedInteraction.relationship == "equal" ? "as" : "than"
-    } you.</em></p>
-        <p>${stimulus.scenario}</p>
-        <p>What do you choose to do?</p>
-      </div>
-    `,
+    stimulus: function() {
+      let reminderHTML = '';
+      
+      // For second interactions, check if we have data from the first interaction
+      if (!isFirstTrial && !pairedInteraction.isAttentionCheck) {
+        // Get data from the first interaction with this partner for this scenario
+        const firstInteractionData = getFirstInteractionData(
+          jsPsych, 
+          pairedInteraction.scenarioId, 
+          pairedInteraction.partnerName
+        );
+        
+        if (firstInteractionData) {
+          // Create reminder text based on first interaction data
+          const participantFirstChoice = firstInteractionData.participant_choice === "give" 
+            ? stimulus.options.give 
+            : stimulus.options.receive;
+            
+          const partnerFirstChoice = firstInteractionData.partner_choice === "give" 
+            ? stimulus.options.give 
+            : stimulus.options.receive;
+            
+          const firstOutcome = firstInteractionData.coordination 
+            ? "smoothly" 
+            : "awkwardly";
+            
+          reminderHTML = `
+            <div class="reminder-box">
+              <h4>Reminder of your first interaction:</h4>
+              <p>Last time you interacted with ${stimulus.partner_name}, you chose to <strong>${participantFirstChoice}</strong>.</p>
+              <p>${stimulus.partner_name} chose to <strong>${partnerFirstChoice}</strong>.</p>
+              <p>The interaction went <strong>${firstOutcome}</strong>.</p>
+            </div>
+          `;
+        }
+      }
+      
+      return `
+        <div class="align-left">
+          <h3>Interaction with ${stimulus.partner_name}</h3>
+          <p><em>${stimulus.partner_name} has <strong>${getRelationshipText(
+        pairedInteraction.relationship
+      )}</strong> power, status, or influence ${
+        pairedInteraction.relationship == "equal" ? "as" : "than"
+      } you.</em></p>
+          ${reminderHTML}
+          <p>${stimulus.scenario}</p>
+          <p>What do you choose to do?</p>
+        </div>
+      `;
+    },
     choices: [stimulus.options.receive, stimulus.options.give],
     data: {
       task: "selection",

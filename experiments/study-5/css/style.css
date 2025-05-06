@@ -24,10 +24,17 @@
   font-weight: bold;
 }
 
-.video-container {
-  justify-content: center;
+/* Reminder box for second interactions */
+.reminder-box {
+  background-color: #f8f8f8;
+  border-left: 4px solid #c3890d;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.tangram:hover {
-  outline: 5px solid gray;
+.reminder-box h4 {
+  margin-top: 0;
+  color: #c3890d;
 }
