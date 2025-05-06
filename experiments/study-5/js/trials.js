@@ -1,19 +1,13 @@
 // put all the trials together
 async function makeTrials(jsPsych) {
   try {
-    const condition = await jsPsychPipe.getCondition("MFgivQ7NLbx7");
-    const item_id = Math.floor(condition / 2) % 3;
-    const counterbalance = condition % 2 === 0 ? 'a' : 'b';
-
-    console.log(condition, item_id, counterbalance);
+    const condition_id = await jsPsychPipe.getCondition("MFgivQ7NLbx7");
 
     jsPsych.data.addProperties({
       subject_id: subject_id,
       study_id: study_id,
       session_id: session_id,
-      condition: condition,
-      item_id: item_id,
-      counterbalance: counterbalance,
+      condition_id: condition_id,
       url: window.location.href,
     });
 
@@ -25,24 +19,20 @@ async function makeTrials(jsPsych) {
     };
     timeline.push(preload);
 
-    // consent
-    const consent = await createConsent();
-    timeline.push(consent);
+    // // consent
+    // const consent = await createConsent();
+    // timeline.push(consent);
 
-    // instructions + comprehension check loop
-    const comprehensionLoop = await createComprehensionLoop(item_id, jsPsych);
-    timeline.push(comprehensionLoop);
+    // // instructions + comprehension check loop
+    // const comprehensionLoop = await createComprehensionLoop(jsPsych);
+    // timeline.push(comprehensionLoop);
 
-    // // observation phase
-    // const videoTrials = await createVideoTrials(item_id, counterbalance, jsPsych);
-    // timeline.push(videoTrials);
-
-    // // selection phase
-    // const selectionTrials = await createSelectionTrials(item_id, counterbalance, jsPsych);
-    // timeline.push(selectionTrials);
+    // selection phase
+    const selectionTrials = await createSelectionTrials(condition_id, jsPsych);
+    timeline.push(selectionTrials);
 
     // exit survey
-    const exit = await createExit(item_id, jsPsych);
+    const exit = await createExit(jsPsych);
     timeline.push(exit);
 
     return timeline.flat();

@@ -15,7 +15,7 @@ async function createConsent() {
 }
 
 // Instructions and comprehension loop
-async function loadInstructionsFromHTML(item_id) {
+async function loadInstructionsFromHTML() {
   try {
     const response = await fetch("html/instructions.html");
     let text = await response.text();
@@ -27,9 +27,9 @@ async function loadInstructionsFromHTML(item_id) {
   }
 }
 
-async function createInstructions(item_id) {
+async function createInstructions() {
   try {
-    const instructionPages = await loadInstructionsFromHTML(item_id);
+    const instructionPages = await loadInstructionsFromHTML();
     return {
       type: jsPsychInstructions,
       pages: instructionPages,

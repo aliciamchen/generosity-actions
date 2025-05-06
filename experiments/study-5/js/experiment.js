@@ -3,9 +3,6 @@
 const local_testing = false;
 let failCount = 0;
 
-const constants = {
-  names: ["Repi", "Minu", "Laju", "Hera", "Zuda", "Bavi", "Lika", "Felu"],
-};
 
 const jsPsych = initJsPsych({
   on_finish: function () {

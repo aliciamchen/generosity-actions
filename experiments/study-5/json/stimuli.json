@@ -3,120 +3,140 @@
     "id": "meal",
     "partner_name": "Repi",
     "time": "first",
-    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and **Repi** are sharing a ceremonial meal for the **first time**.",
+    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and <strong>Repi</strong> are sharing a ceremonial meal for the <strong>first time</strong>.",
     "options": {
-      "give": "You serve the food first",
-      "receive": "You wait to be served"
+      "give": "Serve the food first",
+      "receive": "Wait to be served"
     }
   },
   {
     "id": "meal",
     "partner_name": "Repi",
     "time": "second",
-    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and **Repi** are sharing a ceremonial meal for the **second time**.",
+    "scenario": "When two people share a ceremonial meal, one person must serve the food while the other receives it first. You and <strong>Repi</strong> are sharing a ceremonial meal for the <strong>second time</strong>.",
+    "options": {
+      "give": "Serve the food first",
+      "receive": "Wait to be served"
+    }
+  },
+  {
+    "id": "meeting place",
+    "partner_name": "Minu",
+    "time": "first",
+    "scenario": "Some days, a pair of people is assigned to check on the fields furthest from the village, which means leaving for a long walk early in the morning. This morning, you are paired with <strong>Minu</strong> for the <strong>first time</strong>, and you need to figure out where to meet them. You know that there is a meeting place closer to your house, and a meeting place closer to their house.",
+    "options": {
+      "give": "Go to the place closer to your partner's house",
+      "receive": "Go to the place closer to your own house"
+    }
+  },
+  {
+    "id": "meeting place",
+    "partner_name": "Minu",
+    "time": "second",
+    "scenario": "Some days, a pair of people is assigned to check on the fields furthest from the village, which means leaving for a long walk early in the morning. This morning, you are paired with <strong>Minu</strong> for the <strong>second time</strong>, and you need to figure out where to meet them. You know that there is a meeting place closer to your house, and a meeting place closer to their house.",
+    "options": {
+      "give": "Go to the place closer to your partner's house",
+      "receive": "Go to the place closer to your own house"
+    }
+  },
+  {
+    "id": "song preference",
+    "partner_name": "Leko",
+    "time": "first",
+    "scenario": "Each week ends with a village event where pairs of people perform in front of the community. You and <strong>Leko</strong> are paired for the <strong>first time</strong>. One song you know has a great solo part for your instrument, while the other song highlights <strong>Leko</strong>'s instrument.",
+    "options": {
+      "give": "Choose the song that's better for your partner's instrument",
+      "receive": "Choose the song that's better for your own instrument"
+    }
+  },
+  {
+    "id": "song preference",
+    "partner_name": "Leko",
+    "time": "second",
+    "scenario": "Each week ends with a village event where pairs of people perform in front of the community. You and <strong>Leko</strong> are paired for the <strong>second time</strong>. One song you know has a great solo part for your instrument, while the other song highlights <strong>Leko</strong>'s instrument.",
+    "options": {
+      "give": "Choose the song that's better for your partner's instrument",
+      "receive": "Choose the song that's better for your own instrument"
+    }
+  },
+  {
+    "id": "object carrying",
+    "partner_name": "Fadi",
+    "time": "first",
+    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and <strong>Fadi</strong> are participating in this ritual for the <strong>first time</strong>.",
+    "options": {
+      "give": "Carry the heavier object",
+      "receive": "Carry the lighter object"
+    }
+  },
+  {
+    "id": "object carrying",
+    "partner_name": "Fadi",
+    "time": "second",
+    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and <strong>Fadi</strong> are participating in this ritual for the <strong>second time</strong>.",
+    "options": {
+      "give": "Carry the heavier object",
+      "receive": "Carry the lighter object"
+    }
+  },
+  {
+    "id": "task checking",
+    "partner_name": "Tudo",
+    "time": "first",
+    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and <strong>Tudo</strong> are working together for the <strong>first time</strong>.",
+    "options": {
+      "give": "Perform the detailed check",
+      "receive": "Wait for your partner to do a detailed check"
+    }
+  },
+  {
+    "id": "task checking",
+    "partner_name": "Tudo",
+    "time": "second",
+    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and <strong>Tudo</strong> are working together for the <strong>second time</strong>.",
+    "options": {
+      "give": "Perform the detailed check",
+      "receive": "Wait for your partner to do a detailed check"
+    }
+  },
+  {
+    "id": "gift",
+    "partner_name": "Zira",
+    "time": "first",
+    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and <strong>Zira</strong> have just finished taking part in the event together for the <strong>first time</strong>.",
+    "options": {
+      "give": "Give a token",
+      "receive": "Accept a token"
+    }
+  },
+  {
+    "id": "gift",
+    "partner_name": "Zira",
+    "time": "second",
+    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and <strong>Zira</strong> have just finished taking part in the event together for the <strong>second time</strong>.",
+    "options": {
+      "give": "Give a token",
+      "receive": "Accept a token"
+    }
+  }, 
+  {
+    "id": "attention",
+    "partner_name": "Hera",
+    "time": "first",
+    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check. Please select \"You serve the food first\".",
     "options": {
       "give": "You serve the food first",
       "receive": "You wait to be served"
     }
   },
   {
-    "id": "meeting place",
-    "partner_name": "Minu",
-    "time": "first",
-    "scenario": "Some days, a pair of people is assigned to check on the fields furthest from the village, which means leaving for a long walk early in the morning. This morning, you are paired with **Minu** for the **first time**, and you need to figure out where to meet them. You know that there is a meeting place closer to your house, and a meeting place closer to their house.",
-    "options": {
-      "give": "Go to the place closer to their house",
-      "receive": "Go to the place closer to your house"
-    }
-  },
-  {
-    "id": "meeting place",
-    "partner_name": "Minu",
+    "id": "attention",
+    "partner_name": "Hera",
     "time": "second",
-    "scenario": "Some days, a pair of people is assigned to check on the fields furthest from the village, which means leaving for a long walk early in the morning. This morning, you are paired with **Minu** for the **second time**, and you need to figure out where to meet them. You know that there is a meeting place closer to your house, and a meeting place closer to their house.",
+    "scenario": "In this society, when two people share a ceremonial meal, one person must serve the food while the other receives it first. If both try to serve or both wait to be served, it creates social awkwardness. This is an attention check. Please select \"You wait to be served\".",
     "options": {
-      "give": "Go to the place closer to their house",
-      "receive": "Go to the place closer to your house"
-    }
-  },
-  {
-    "id": "song preference",
-    "partner_name": "Leko",
-    "time": "first",
-    "scenario": "Each week ends with a village event where pairs of people perform in front of the community. You and **Leko** are paired for the **first time**. One song you know has a great solo part for your instrument, while the other song highlights **Leko**'s instrument.",
-    "options": {
-      "give": "Choose the song that's better for your partner's instrument",
-      "receive": "Choose the song that's better for your instrument"
-    }
-  },
-  {
-    "id": "song preference",
-    "partner_name": "Leko",
-    "time": "second",
-    "scenario": "Each week ends with a village event where pairs of people perform in front of the community. You and **Leko** are paired for the **second time**. One song you know has a great solo part for your instrument, while the other song highlights **Leko**'s instrument.",
-    "options": {
-      "give": "Choose the song that's better for your partner's instrument",
-      "receive": "Choose the song that's better for your instrument"
-    }
-  },
-  {
-    "id": "object carrying",
-    "partner_name": "Fadi",
-    "time": "first",
-    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and **Fadi** are participating in this ritual for the **first time**.",
-    "options": {
-      "give": "Carry the heavier object",
-      "receive": "Carry the lighter object"
-    }
-  },
-  {
-    "id": "object carrying",
-    "partner_name": "Fadi",
-    "time": "second",
-    "scenario": "At the end of a ritual, the sacred objects must be returned to their keeper. Someone must carry the heavier object and someone must carry the lighter object. You and **Fadi** are participating in this ritual for the **second time**.",
-    "options": {
-      "give": "Carry the heavier object",
-      "receive": "Carry the lighter object"
-    }
-  },
-  {
-    "id": "task checking",
-    "partner_name": "Tudo",
-    "time": "first",
-    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and **Tudo** are working together for the **first time**.",
-    "options": {
-      "give": "Perform the detailed check",
-      "receive": "Wait for your partner to do a detailed check"
-    }
-  },
-  {
-    "id": "task checking",
-    "partner_name": "Tudo",
-    "time": "second",
-    "scenario": "The people in the village are paired up, to work together on a series of tasks for the village. It is important that each task is done correctly and that no mistakes are made, so one person needs to do a detailed check. You and **Tudo** are working together for the **second time**.",
-    "options": {
-      "give": "Perform the detailed check",
-      "receive": "Wait for your partner to do a detailed check"
-    }
-  },
-  {
-    "id": "gift",
-    "partner_name": "Zira",
-    "time": "first",
-    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and **Zira** have just finished taking part in the event together for the **first time**.",
-    "options": {
-      "give": "Give a token",
-      "receive": "Accept a token"
-    }
-  },
-  {
-    "id": "gift",
-    "partner_name": "Zira",
-    "time": "second",
-    "scenario": "After participating in an important communal event, it is customary for one person to offer a meaningful token to the other. The other person receives the token as a sign of shared experience and mutual respect. You and **Zira** have just finished taking part in the event together for the **second time**.",
-    "options": {
-      "give": "Give a token",
-      "receive": "Accept a token"
+      "give": "You serve the food first",
+      "receive": "You wait to be served"
     }
   }
 ]
