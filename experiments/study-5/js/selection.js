@@ -1,9 +1,14 @@
 // selection.js - Handles the selection trials phase
 
+function getTotalPoints(jsPsych) {
+  const choiceData = jsPsych.data.get().filter({type: 'choice'});
+  const totalPoints = choiceData.select('points').sum();
+  return totalPoints;
+}
+
 // Function to create the selection trials
 async function createSelectionTrials(condition_id, jsPsych) {
   try {
-    // Load the stimuli
     const response = await fetch("json/stimuli.json");
     const stimuli = await response.json();
 
@@ -181,7 +186,6 @@ async function createSelectionTrials(condition_id, jsPsych) {
 
 // Helper function to find data from the first interaction for a specific scenario and partner
 function getFirstInteractionData(jsPsych, scenarioId, partnerName) {
-  // Get all data from first interactions that are not attention checks
   const firstInteractionData = jsPsych.data.get().filter({
     scenario_id: scenarioId,
     partner_name: partnerName,
@@ -336,9 +340,8 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
         // Determine if interaction was smooth (different choices) or awkward (same choices)
         data.coordination = data.participant_choice !== data.partner_choice;
 
-        // Record points
         data.points = data.coordination ? 1 : 0;
-        console.log(data);
+        // console.log(data);
       } else {
         // For attention checks, partner choice is always opposite to the correct choice
         // This ensures a smooth interaction if the attention check is passed
@@ -352,16 +355,6 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
         data.points = data.passed_attention ? 1 : 0;
       }
 
-      // Save information about attention checks to jsPsych's data for later analysis
-      if (pairedInteraction.isAttentionCheck) {
-        jsPsych.data.addProperties({
-          attention_check_passed: jsPsych.data
-            .get()
-            .filter({ is_attention_check: true })
-            .select("passed_attention")
-            .values.every(Boolean),
-        });
-      }
     },
   };
   trialGroup.push(selectionTrial);
@@ -377,6 +370,7 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
       const participantChoice = lastTrialData.participant_choice;
       const partnerChoice = lastTrialData.partner_choice;
       const didCoordinate = lastTrialData.coordination;
+      const totalPoints = getTotalPoints(jsPsych);
 
       let feedbackText = "";
       if (
@@ -408,6 +402,7 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
               ? `<p class="blue-bold">The interaction went smoothly! You earned 1 point.</p>`
               : `<p class="red-bold">The interaction was awkward! You earned 0 points.</p>`
           }
+          <p>Total points so far: <strong>${totalPoints}</strong></p>
         </div>
       `;
     },

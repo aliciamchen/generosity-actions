@@ -19,13 +19,13 @@ async function makeTrials(jsPsych) {
     };
     timeline.push(preload);
 
-    // // consent
-    // const consent = await createConsent();
-    // timeline.push(consent);
+    // consent
+    const consent = await createConsent();
+    timeline.push(consent);
 
-    // // instructions + comprehension check loop
-    // const comprehensionLoop = await createComprehensionLoop(jsPsych);
-    // timeline.push(comprehensionLoop);
+    // instructions + comprehension check loop
+    const comprehensionLoop = await createComprehensionLoop(jsPsych);
+    timeline.push(comprehensionLoop);
 
     // selection phase
     const selectionTrials = await createSelectionTrials(condition_id, jsPsych);
