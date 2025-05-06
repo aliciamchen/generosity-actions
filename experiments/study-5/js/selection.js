@@ -187,7 +187,6 @@ function getFirstInteractionData(jsPsych, scenarioId, partnerName) {
     partner_name: partnerName,
     time: "first",
     type: "choice",
-    is_attention_check: false,
   });
 
   if (firstInteractionData.count() > 0) {
@@ -250,7 +249,7 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
       let reminderHTML = "";
 
       // For second interactions, check if we have data from the first interaction
-      if (!isFirstTrial && !pairedInteraction.isAttentionCheck) {
+      if (!isFirstTrial) {
         // Get data from the first interaction with this partner for this scenario
         const firstInteractionData = getFirstInteractionData(
           jsPsych,
