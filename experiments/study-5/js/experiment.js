@@ -2,7 +2,7 @@
 
 const local_testing = false;
 let failCount = 0;
-let basePay = 4;
+let basePay = 3;
 let possiblePoints = 14;
 let pointMultiplier = 0.214;
 

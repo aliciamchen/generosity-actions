@@ -45,9 +45,8 @@ async function createSelectionTrials(condition_id, jsPsych) {
           <p>Congrats, you have passed the comprehension check!</p>
           <p>You will now interact with 6 different partners from this society.</p>
           <p>Remember, you will interact with each partner twice.</p>
-          <p>For each interaction, you will choose an action, and then see what your partner chose.</p>
-          <p>If you and your partner choose <em>different actions</em>, the interaction will go smoothly. ☺️</p>
-          <p>If you and your partner choose the <em>same action</em>, the interaction will be awkward. 😫</p>
+          <p>The first time you interact with a partner, you will choose an action, and then see what your partner chose, and see whether it was smooth or awkward.</p>
+          <p>The second time you interact with a partner, you will see a reminder of your first interaction, and then choose an action again.</p>
           <p>Your goal is to have as many smooth interactions as possible. You will see your total score at the end of the study.</p>
           <p>Please press "Begin" to start the study.</p>
         </div>
@@ -231,11 +230,16 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
       <h3>${isFirstTrial ? "New Partner" : "Second Interaction with"}: ${
       pairedInteraction.partnerName
     }</h3>
-      <p>${pairedInteraction.partnerName} has <strong>${getRelationshipText(
+    <div class="relationship-box">
+    <h4>Your relationship with ${pairedInteraction.partnerName}</h4>
+      <p>You and ${pairedInteraction.partnerName} are in a relationship where ${
+      pairedInteraction.partnerName
+    } has <strong>${getRelationshipText(
       pairedInteraction.relationship
     )}</strong> power, status, or influence ${
       pairedInteraction.relationship == "equal" ? "as" : "than"
     } you.</p>
+    </div>
     `,
     choices: ["Continue"],
     data: {
@@ -292,7 +296,9 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
       return `
         <div class="align-left">
           <h3>Interaction with ${stimulus.partner_name}</h3>
-          <p><em>${stimulus.partner_name} has <strong>${getRelationshipText(
+          <p><em>You and ${stimulus.partner_name} are in a relationship where ${
+        stimulus.partner_name
+      } has <strong>${getRelationshipText(
         pairedInteraction.relationship
       )}</strong> power, status, or influence ${
         pairedInteraction.relationship == "equal" ? "as" : "than"
@@ -398,10 +404,10 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
                 : stimulus.options.receive
             }</strong></p>
             <p>${stimulus.partner_name} chose: <strong>${
-              partnerChoice === "give"
-                ? stimulus.options.give
-                : stimulus.options.receive
-            }</strong></p>
+          partnerChoice === "give"
+            ? stimulus.options.give
+            : stimulus.options.receive
+        }</strong></p>
             <hr>
             ${
               didCoordinate

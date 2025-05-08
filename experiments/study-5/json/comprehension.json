@@ -19,11 +19,21 @@
     "required": true
   },
   {
-    "prompt": "How can you make sure the social interactions occur smoothly?",
+    "prompt": "When will you see feedback about whether the interaction occurred smoothly?",
     "options": [
-      "(A) By choosing the same actions as my partners",
-      "(B) By choosing different actions from my partners",
-      "(C) By randomly choosing actions without considering my partners' choices"
-    ]
+      "(A) Only after the first interaction with each partner",
+      "(B) Only after the second interaction with each partner",
+      "(C) After both interactions with each partner"
+    ],
+    "required": true
+  },
+  {
+    "prompt": "What determines whether a social interaction occurs smoothly?",
+    "options": [
+      "(A) Only your choice of action",
+      "(B) Only your partner's choice of action",
+      "(C) Both your choice and your partner's choice of actions"
+    ],
+    "required": true
   }
 ]

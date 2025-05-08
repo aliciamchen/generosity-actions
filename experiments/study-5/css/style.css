@@ -38,3 +38,18 @@
   margin-top: 0;
   color: #c3890d;
 }
+
+.relationship-box {
+  background-color: #f8f8f8;
+  border-left: 4px solid #8e05b8;
+  padding: 10px 15px;
+  margin: 15px auto;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
+.relationship-box h4 {
+  margin-top: 0;
+  color: #8e05b8;
+}
