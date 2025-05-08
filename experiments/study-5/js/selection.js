@@ -48,7 +48,8 @@ async function createSelectionTrials(condition_id, jsPsych) {
           <p>For each interaction, you will choose an action, and then see what your partner chose.</p>
           <p>If you and your partner choose <em>different actions</em>, the interaction will go smoothly. ☺️</p>
           <p>If you and your partner choose the <em>same action</em>, the interaction will be awkward. 😫</p>
-          <p>Your goal is to have as many smooth interactions as possible. Please press "Begin" to start the study.</p>
+          <p>Your goal is to have as many smooth interactions as possible. You will see your total score at the end of the study.</p>
+          <p>Please press "Begin" to start the study.</p>
         </div>
       `,
       choices: ["Begin"],
@@ -397,17 +398,16 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
                 : stimulus.options.receive
             }</strong></p>
             <p>${stimulus.partner_name} chose: <strong>${
-          partnerChoice === "give"
-            ? stimulus.options.give
-            : stimulus.options.receive
-        }</strong></p>
+              partnerChoice === "give"
+                ? stimulus.options.give
+                : stimulus.options.receive
+            }</strong></p>
             <hr>
             ${
               didCoordinate
-                ? `<p class="blue-bold">The interaction went smoothly! You earned 1 point.</p>`
-                : `<p class="red-bold">The interaction was awkward! You earned 0 points.</p>`
+                ? `<p class="blue-bold">The interaction went smoothly!</p>`
+                : `<p class="red-bold">The interaction was awkward!</p>`
             }
-            <p>Total points so far: <strong>${totalPoints}</strong></p>
           </div>
         `;
       },
