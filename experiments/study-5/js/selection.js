@@ -372,14 +372,15 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
       const didCoordinate = lastTrialData.coordination;
       const totalPoints = getTotalPoints(jsPsych);
 
-      let feedbackText = "";
-      if (
-        pairedInteraction.isAttentionCheck &&
-        !lastTrialData.passed_attention
-      ) {
-        feedbackText = `<p class="red-bold">This was an attention check. You were asked to select "${
-          isFirstTrial ? stimulus.options.give : stimulus.options.receive
-        }".</p>`;
+      if (pairedInteraction.isAttentionCheck) {
+        return `
+          <div class="align-left">
+            <h3>Attention Check</h3>
+            <p class="red-bold">This was an attention check. You were asked to select "${
+              isFirstTrial ? stimulus.options.give : stimulus.options.receive
+            }".</p>
+          </div>
+        `;
       }
 
       return `
@@ -391,12 +392,11 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
               : stimulus.options.receive
           }</strong></p>
           <p>${stimulus.partner_name} chose: <strong>${
-        partnerChoice === "give"
-          ? stimulus.options.give
-          : stimulus.options.receive
-      }</strong></p>
+            partnerChoice === "give"
+              ? stimulus.options.give
+              : stimulus.options.receive
+          }</strong></p>
           <hr>
-          ${feedbackText}
           ${
             didCoordinate
               ? `<p class="blue-bold">The interaction went smoothly! You earned 1 point.</p>`
