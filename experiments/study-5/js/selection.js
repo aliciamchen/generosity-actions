@@ -1,8 +1,8 @@
 // selection.js - Handles the selection trials phase
 
 function getTotalPoints(jsPsych) {
-  const choiceData = jsPsych.data.get().filter({type: 'choice'});
-  const totalPoints = choiceData.select('points').sum();
+  const choiceData = jsPsych.data.get().filter({ type: "choice" });
+  const totalPoints = choiceData.select("points").sum();
   return totalPoints;
 }
 
@@ -354,68 +354,74 @@ function createTrialGroup(pairedInteraction, isFirstTrial, jsPsych) {
         data.coordination = data.passed_attention;
         data.points = data.passed_attention ? 1 : 0;
       }
-
     },
   };
   trialGroup.push(selectionTrial);
 
   trialGroup.push(waitingScreen);
 
-  // Feedback trial
-  const feedbackTrial = {
-    type: jsPsychHtmlButtonResponse,
-    stimulus: function () {
-      // Get the choice trial data (two trials back, since the last trial is a waiting screen)
-      const lastTrialData = jsPsych.data.get().filter({type: 'choice'}).last(1).values()[0];
-      const participantChoice = lastTrialData.participant_choice;
-      const partnerChoice = lastTrialData.partner_choice;
-      const didCoordinate = lastTrialData.coordination;
-      const totalPoints = getTotalPoints(jsPsych);
+  // Only add feedback trial for first-time interactions
+  if (isFirstTrial) {
+    // Feedback trial
+    const feedbackTrial = {
+      type: jsPsychHtmlButtonResponse,
+      stimulus: function () {
+        // Get the choice trial data (two trials back, since the last trial is a waiting screen)
+        const lastTrialData = jsPsych.data
+          .get()
+          .filter({ type: "choice" })
+          .last(1)
+          .values()[0];
+        const participantChoice = lastTrialData.participant_choice;
+        const partnerChoice = lastTrialData.partner_choice;
+        const didCoordinate = lastTrialData.coordination;
+        const totalPoints = getTotalPoints(jsPsych);
 
-      if (pairedInteraction.isAttentionCheck) {
+        if (pairedInteraction.isAttentionCheck) {
+          return `
+            <div class="align-left">
+              <h3>Attention Check</h3>
+              <p class="red-bold">This was an attention check. You were asked to select "${
+                isFirstTrial ? stimulus.options.give : stimulus.options.receive
+              }".</p>
+            </div>
+          `;
+        }
+
         return `
           <div class="align-left">
-            <h3>Attention Check</h3>
-            <p class="red-bold">This was an attention check. You were asked to select "${
-              isFirstTrial ? stimulus.options.give : stimulus.options.receive
-            }".</p>
+            <h3>Interaction Result</h3>
+            <p>You chose: <strong>${
+              participantChoice === "give"
+                ? stimulus.options.give
+                : stimulus.options.receive
+            }</strong></p>
+            <p>${stimulus.partner_name} chose: <strong>${
+          partnerChoice === "give"
+            ? stimulus.options.give
+            : stimulus.options.receive
+        }</strong></p>
+            <hr>
+            ${
+              didCoordinate
+                ? `<p class="blue-bold">The interaction went smoothly! You earned 1 point.</p>`
+                : `<p class="red-bold">The interaction was awkward! You earned 0 points.</p>`
+            }
+            <p>Total points so far: <strong>${totalPoints}</strong></p>
           </div>
         `;
-      }
-
-      return `
-        <div class="align-left">
-          <h3>Interaction Result</h3>
-          <p>You chose: <strong>${
-            participantChoice === "give"
-              ? stimulus.options.give
-              : stimulus.options.receive
-          }</strong></p>
-          <p>${stimulus.partner_name} chose: <strong>${
-            partnerChoice === "give"
-              ? stimulus.options.give
-              : stimulus.options.receive
-          }</strong></p>
-          <hr>
-          ${
-            didCoordinate
-              ? `<p class="blue-bold">The interaction went smoothly! You earned 1 point.</p>`
-              : `<p class="red-bold">The interaction was awkward! You earned 0 points.</p>`
-          }
-          <p>Total points so far: <strong>${totalPoints}</strong></p>
-        </div>
-      `;
-    },
-    choices: ["Continue"],
-    data: {
-      task: "selection",
-      type: "feedback",
-      is_attention_check: pairedInteraction.isAttentionCheck,
-      scenario_id: pairedInteraction.scenarioId,
-      time: isFirstTrial ? "first" : "second",
-    },
-  };
-  trialGroup.push(feedbackTrial);
+      },
+      choices: ["Continue"],
+      data: {
+        task: "selection",
+        type: "feedback",
+        is_attention_check: pairedInteraction.isAttentionCheck,
+        scenario_id: pairedInteraction.scenarioId,
+        time: isFirstTrial ? "first" : "second",
+      },
+    };
+    trialGroup.push(feedbackTrial);
+  }
 
   return trialGroup;
 }
