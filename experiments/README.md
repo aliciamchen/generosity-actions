@@ -2,7 +2,7 @@
 
 `rsync -av study-4/ aliciach@athena.dialup.mit.edu:~/www/generosity/`
 
-`rsync -av study-5/ aliciach@athena.dialup.mit.edu:~/www/generosity/study-5`
+`rsync -av --delete study-5/ aliciach@athena.dialup.mit.edu:~/www/generosity/study-5`
 
 website is at
 https://web.mit.edu/aliciach/www/generosity/study-4/index.html
