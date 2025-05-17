@@ -1,0 +1,279 @@
+---
+title: "Study 6 analysis"
+author: "Alicia Chen"
+date: "May 17, 2025"
+output: 
+  html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(knitr)
+library(kableExtra)
+library(tidyboot)
+library(lme4)
+library(emmeans)
+library(lmerTest)
+theme_set(theme_minimal(base_size = 15))
+
+options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
+```
+
+# Load and prepare data
+
+```{r load-data}
+data <- read.csv("../data/study-6/non_anonymized/study-6_data.csv")
+
+main_data <- data %>%
+  filter(time == "first") %>%
+  select(
+    subject_id,
+    scenario_id,
+    partner_first_choice = partner_choice,
+    participant_first_choice = participant_choice,
+    successful_first_time = coordination
+  ) %>% 
+  left_join(
+    data %>%
+      filter(time == "second") %>%
+      select(
+        subject_id,
+        scenario_id,
+        partner_status,
+        participant_second_choice = participant_choice,
+        passed_attention_checks
+      ),
+    by = c("subject_id", "scenario_id")
+  ) %>% 
+  mutate(
+    successful_first_time = as.logical(successful_first_time),
+    participant_first_choice_generous = ifelse(participant_first_choice == "give", 1, 0),
+    participant_second_choice_generous = ifelse(participant_second_choice == "give", 1, 0),
+    relationship = ifelse(partner_status == "equal", "equal", "unequal"),
+    strategy = case_when(
+      # Alternating: if partner gave first and participant gives second, or
+      # if partner received first and participant receives second
+      (partner_first_choice == "give" & participant_second_choice == "give") |
+      (partner_first_choice == "receive" & participant_second_choice == "receive") ~ "alternating",
+      TRUE ~ "repeating"
+    ), 
+    strategy_alternating = ifelse(strategy == "alternating", 1, 0)
+  ) %>%
+  select(
+    subject_id,
+    scenario_id,
+    partner_status,
+    relationship,
+    partner_first_choice,
+    participant_first_choice,
+    participant_first_choice_generous,
+    successful_first_time,
+    participant_second_choice,
+    participant_second_choice_generous,
+    strategy,
+    strategy_alternating,
+    passed_attention_checks
+  ) %>%
+  arrange(subject_id, scenario_id) %>%
+  mutate(
+    partner_status = factor(partner_status, levels = c("equal", "lower", "higher")),
+    relationship = factor(relationship, levels = c("equal", "unequal")),
+    participant_first_choice = factor(participant_first_choice, levels = c("receive", "give")),
+    participant_second_choice = factor(participant_second_choice, levels = c("receive", "give")),
+    strategy = factor(strategy, levels = c("alternating", "repeating"))
+  )
+
+
+print("Counts of give/receive")
+print(table(main_data$participant_first_choice))
+print(table(main_data$participant_second_choice))
+
+main_data_filtered <- main_data %>%
+  filter(passed_attention_checks > 0)
+```
+
+Summary statistics
+
+```{r}
+scenario_status_counts <- main_data_filtered %>%
+  count(scenario_id, partner_status) %>%
+  arrange(scenario_id, partner_status)
+
+print("Counts of scenario_id and partner_status combinations:")
+print(scenario_status_counts)
+
+summary(main_data_filtered)
+```
+
+```{r unique-participants}
+main_data_filtered %>%
+  summarise(unique_participants = n_distinct(subject_id))
+```
+
+## Plots
+
+### Implicit coordination expectations
+
+```{r first-time-expectations}
+# Analyze first time choices by partner status
+first_time_summary <- main_data_filtered %>%
+  group_by(scenario_id, partner_status) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T)
+
+ggplot(first_time_summary, aes(x = partner_status, y = empirical_stat, color = partner_status)) +
+  geom_point(size = 3, position = position_dodge(width = 0.9)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.9)) +
+  labs(
+    title = "First time choices",
+    x = "Partner status",
+    y = "Proportion generous"
+  ) +
+  scale_y_continuous(limits = c(0, 1)) +
+  facet_wrap(~ scenario_id)
+```
+
+### Coordination Success
+
+```{r coordination-rates}
+# Analyze coordination success by partner status
+coordination_summary <- main_data_filtered %>%
+  group_by(partner_status) %>%
+  tidyboot_mean(successful_first_time, na.rm = T)
+
+ggplot(coordination_summary, aes(x = partner_status, y = empirical_stat, color = partner_status)) +
+  geom_point(size = 3, position = position_dodge(width = 0.3)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.3)) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
+  labs(
+    title = "Coordination success rates the first time",
+    x = "Partner status",
+    y = "Proportion of successful coordinations"
+  ) +
+  scale_y_continuous(limits = c(0, 1))
+```
+
+### Second Time Choices
+
+```{r second-time-choices}
+# Analyze second time choices by partner status and first time partner choice
+second_time_summary <- main_data_filtered %>%
+  group_by(partner_status, partner_first_choice) %>%
+  tidyboot_mean(participant_second_choice_generous, na.rm = T)
+
+ggplot(second_time_summary, aes(x = partner_first_choice, y = empirical_stat, color = partner_status)) +
+  geom_point(size = 3, position = position_dodge(width = 0.3)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.3)) +
+  labs(
+    title = "Second time choices based on first time partner choice",
+    subtitle = "All trials",
+    x = "First time partner choice",
+    y = "Proportion choosing to give"
+  ) +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_brewer(palette = "Dark2")
+```
+
+Filter by successful coordination
+
+```{r second-time-choices-successful}
+second_time_summary_successful <- main_data_filtered %>%
+  filter(successful_first_time == TRUE) %>%
+  group_by(partner_status, partner_first_choice) %>%
+  tidyboot_mean(participant_second_choice_generous, na.rm = T)
+```
+
+```{r}
+ggplot(second_time_summary_successful, aes(x = partner_first_choice, y = empirical_stat, color = partner_status)) +
+  geom_point(size = 3, position = position_dodge(width = 0.3)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.3)) +
+  labs(title = "Second time choices based on first time partner choice",
+       subtitle = "Only first time coordination",
+       x = "First time partner choice",
+       y = "Proportion choosing to give") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_brewer(palette = "Dark2")
+```
+
+
+### Strategy Patterns
+
+```{r strategy-patterns}
+# Analyze strategy patterns (alternating vs repeating)
+strategy_summary <- main_data_filtered %>%
+  group_by(partner_status, successful_first_time) %>%
+  tidyboot_mean(strategy_alternating, na.rm = T)
+```
+
+```{r}
+ggplot(strategy_summary, aes(x = partner_status, y = empirical_stat, color = factor(successful_first_time))) +
+  geom_point(size = 3, position = position_dodge(width = 0.3)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.3)) +
+  labs(
+    title = "Strategy patterns by partner status and first time success",
+    x = "Partner status", 
+    y = "Proportion alternating",
+    color = "First time coordination"
+  ) +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_discrete(labels = c("unsuccessful", "successful"))
+```
+
+## Data analysis
+
+```{r}
+main_model <- glmer(
+  strategy_alternating ~ relationship + (1 | scenario_id) + (1 | subject_id),
+  data = main_data_filtered,
+  family = binomial(link = "logit"), 
+  control = glmerControl(optimizer = "bobyqa"))
+summary(main_model)
+```
+```{r}
+emm <- emmeans(main_model, ~ relationship)
+pairs(emm)
+```
+Now let's run the secondary analysis comparing the two models as specified in the preregistration:
+
+```{r secondary-analysis}
+# Model 1: Base model
+model1 <- glmer(
+  participant_second_choice_generous ~ partner_first_choice * participant_first_choice +
+    (1 | scenario_id) + (1 | subject_id),
+  data = main_data_filtered,
+  family = binomial(link = "logit")
+)
+summary(model1)
+```
+
+```{r}
+# Model 2: Including partner status
+model2 <- glmer(
+  participant_second_choice_generous ~ partner_first_choice * participant_first_choice +
+    partner_first_choice:partner_status + partner_status +
+    (1 | scenario_id) + (1 | subject_id),
+  data = main_data_filtered,
+  family = binomial(link = "logit"),
+  control = glmerControl(optimizer = "bobyqa")
+)
+summary(model2)
+```
+
+```{r}
+# Compare models using likelihood ratio test
+anova(model1, model2)
+```
+
+```{r}
+# Type III ANOVA for Model 2
+anova(model2, type = "III")
+```
+
+
