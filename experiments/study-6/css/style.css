@@ -1,0 +1,55 @@
+.jspsych-content {
+  max-width: 45%;
+  text-align: center;
+  margin: auto;
+}
+
+.jspsych-html-button-response-stimulus {
+  padding: 10px;
+}
+
+.align-left {
+  text-align: left;
+  display: block;
+  justify-content: center;
+}
+
+.red-bold {
+  color: rgb(241, 74, 74);
+  font-weight: bold;
+}
+
+.blue-bold {
+  color: rgb(91, 91, 243);
+  font-weight: bold;
+}
+
+/* Reminder box for second interactions */
+.reminder-box {
+  background-color: #f8f8f8;
+  border-left: 4px solid #c3890d;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.reminder-box h4 {
+  margin-top: 0;
+  color: #c3890d;
+}
+
+.relationship-box {
+  background-color: #f8f8f8;
+  border-left: 4px solid #8e05b8;
+  padding: 10px 15px;
+  margin: 15px auto;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
+.relationship-box h4 {
+  margin-top: 0;
+  color: #8e05b8;
+}
