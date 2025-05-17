@@ -1,7 +1,7 @@
 // put all the trials together
 async function makeTrials(jsPsych) {
   try {
-    const condition_id = await jsPsychPipe.getCondition("MFgivQ7NLbx7");
+    const condition_id = await jsPsychPipe.getCondition("aqa8eVvU3qSu");
 
     jsPsych.data.addProperties({
       subject_id: subject_id,

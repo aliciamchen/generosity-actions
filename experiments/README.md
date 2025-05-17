@@ -1,12 +1,15 @@
 ## scp ing to MIT scripts
 
-`rsync -av study-4/ aliciach@athena.dialup.mit.edu:~/www/generosity/`
+`rsync -av --delete --mkpath study-4/ aliciach@athena.dialup.mit.edu:~/www/generosity/`
 
-`rsync -av --delete study-5/ aliciach@athena.dialup.mit.edu:~/www/generosity/study-5`
+`rsync -av --delete --mkpath study-5/ aliciach@athena.dialup.mit.edu:~/www/generosity/study-5`
+
+`rsync -av --delete study-6/ aliciach@athena.dialup.mit.edu:~/www/generosity/study-6`
 
 website is at
 https://web.mit.edu/aliciach/www/generosity/study-4/index.html
 https://web.mit.edu/aliciach/www/generosity/study-5/index.html
+https://web.mit.edu/aliciach/www/generosity/study-6/index.html
 
 ## Pilots
 
