@@ -288,14 +288,17 @@ ggsave(here("figures/study-4_scenarios.pdf"))
 
 ```{r}
 study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>%
+  rename(first_actual = first_actual_higher,
+         first_response = first_response_higher,
+         second_response = second_response_higher) %>%
   mutate(
-    first_actual_higher = factor(
-      first_actual_higher,
+    first_actual = factor(
+      first_actual,
       levels = c("equal", "lower", "higher"),
       labels = c("Equal", "Lower", "Higher")
     ),
-    first_response_higher = factor(
-      first_response_higher,
+    first_response = factor(
+      first_response,
       levels = c("equal", "lower", "higher"),
       labels = c("Equal", "Lower", "Higher")
     )
@@ -304,13 +307,9 @@ study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>%
 # Implicit coordination
 study_3_first_time <-
   study_3_data %>%
-  mutate(first_response_higher = recode(
-    first_response_higher,
-    "Higher" = 1,
-    "Lower" = 0
-  )) %>%
+  mutate(first_response = recode(first_response, "Higher" = 0, "Lower" = 1)) %>%
   group_by(story, effort_diff, benefit_diff) %>%
-  tidyboot_mean(first_response_higher, na.rm = TRUE)
+  tidyboot_mean(first_response, na.rm = TRUE)
 
 
 d.temp <- study_3_first_time %>%
@@ -325,13 +324,9 @@ study_3_first_time$story <-
 # First vs. second time
 study_3_second_time <-
   study_3_data %>% filter(symmetric == "asymmetric") %>%
-  mutate(second_response_higher = recode(
-    second_response_higher,
-    "higher" = 1,
-    "lower" = 0
-  )) %>%
-  group_by(story, first_actual_higher) %>%
-  tidyboot_mean(second_response_higher, na.rm = TRUE)
+  mutate(second_response = recode(second_response, "higher" = 0, "lower" = 1)) %>%
+  group_by(story, first_actual) %>%
+  tidyboot_mean(second_response, na.rm = TRUE)
 
 study_3_first_second <-
   left_join(
@@ -364,7 +359,7 @@ ggplot(study_3_first_time, aes(x = story, y = empirical_stat)) +
     alpha = 0.5
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  labs(x = "Scenario", y = "P(higher-rank generous)", title = 'Study 3: Implicit coordination') +
+  labs(x = "Scenario", y = "P(lower-rank generous)", title = 'Study 3: Implicit coordination') +
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
 ggsave(here("figures/study-3_implicit.pdf"))
@@ -375,7 +370,7 @@ First time vs. second time
 ```{r fig.width=4.5, fig.height=4.5}
 ggplot(
     study_3_first_second,
-    aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual_higher)
+    aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual)
   ) +
   geom_smooth(method = "lm",
               fill = "lightgray",
@@ -404,7 +399,7 @@ ggplot(
   scale_y_continuous(limits = c(0, 1)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#B87FFF", "Lower" = "#35ACFF")) +
-  labs(x = "First time P(higher-rank generous)", y = "Second time P(higher-rank generous)", color = "Observed rank of generous actor") + 
+  labs(x = "First time P(lower-rank generous)", y = "Second time P(lower-rank generous)", color = "Observed rank of generous actor") + 
   theme(legend.position = "bottom") 
 
 
@@ -424,7 +419,7 @@ study_2_first_second <- study_2_data %>%
   ungroup() %>%
   rename(observed_higher = relationship) %>%
   mutate(
-    second_response_higher = case_when(
+    second_response = case_when(
       next_interaction == 'Precedent' ~ observed_higher,
       next_interaction == 'Reciprocity' ~ ifelse(observed_higher == "Higher", "Lower", "Higher"),
       next_interaction == 'None' ~ 'None'
@@ -433,7 +428,7 @@ study_2_first_second <- study_2_data %>%
 
 
 study_2_first_second_summary <- study_2_first_second %>%
-  filter(second_response_higher == 'Higher') %>%
+  filter(second_response == 'Lower') %>%
   group_by(story, observed_higher) %>%
   tidyboot_mean(normalized_likert_rating, na.rm = T)
 
@@ -478,12 +473,13 @@ ggplot(studies_2_3,
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#B87FFF", "Lower" = "#35ACFF")) +
-  labs(x = "Study 3 First time P(higher-rank generous)", y = "Study 2 Second time P(higher-rank generous)", color = "Observed rank of generous actor") +
+  labs(x = "Study 4 First time P(lower-rank generous)", y = "Study 2 P(lower-rank generous)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 
 ggsave(here("figures/study-2-3_first_second.pdf"))
 ```
+
 # Study 5
 
 ```{r}
@@ -547,7 +543,7 @@ ggsave(here("figures/study-5_first_time_scenarios.pdf"))
 ```{r fig.width=2.8, fig.height=3}
 ggplot(
   study_5_first_time_all,
-  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+  aes(x = participant_rank, y = empirical_stat)
 ) +
   geom_pointrange(
     aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
@@ -577,7 +573,7 @@ study_5_strategy_summary <- study_5_data %>%
   tidyboot_mean(strategy_alternating, na.rm = T)
 ```
 
-```{r fig.width=5.5, fig.height=4}
+```{r fig.width=5.5, fig.height=3}
 ggplot(
   study_5_strategy_summary,
   aes(
@@ -602,7 +598,7 @@ ggplot(
     color = "First time coordination"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_discrete(labels = c("Unsuccessful", "Successful"))
+  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful")) 
 
 ggsave(here("figures/study-5_strategies.pdf"))
 ```
@@ -621,7 +617,7 @@ study_5_summary <- study_5_data %>%
 ```{r fig.width = 4.6, fig.height = 5}
 ggplot(
   study_5_summary,
-  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+  aes(x = participant_rank, y = empirical_stat, color = successful_first_time)
 ) +
   # Add shaded rectangles based on partner_first_choice
   geom_rect(
@@ -658,7 +654,10 @@ ggplot(
     y = "P(Second time generous)",
     color = "Participant rank"
   ) +
-  scale_color_manual(values = relationship.colors) +
+  scale_color_brewer(
+    palette = "Set1", 
+    labels = c("Unsuccessful", "Successful")
+  ) + 
   facet_grid(partner_first_choice ~ participant_first_choice) +
   theme(legend.position = "none", strip.background = element_blank())
 
@@ -731,7 +730,7 @@ study_6_first_time_all <- study_6_data %>%
 ```{r fig.width=6, fig.height=4}
 ggplot(
   study_6_first_time_summary,
-  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+  aes(x = participant_rank, y = empirical_stat)
 ) +
   geom_pointrange(
     aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
@@ -748,7 +747,6 @@ ggplot(
              linetype = "dashed",
              color = "gray") +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = relationship.colors) +
   facet_wrap( ~ scenario_id) +
   theme(legend.position = "none")
 
@@ -758,7 +756,7 @@ ggsave(here("figures/study-6_first_time_scenarios.pdf"))
 ```{r fig.width=2.8, fig.height=3}
 ggplot(
   study_6_first_time_all,
-  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+  aes(x = participant_rank, y = empirical_stat)
 ) +
   geom_pointrange(
     aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
@@ -775,7 +773,6 @@ ggplot(
              linetype = "dashed",
              color = "gray") +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = relationship.colors) +
   theme(legend.position = "none")
 
 ggsave(here("figures/study-6_first_time_all.pdf"))
@@ -788,7 +785,7 @@ study_6_strategy_summary <- study_6_data %>%
   tidyboot_mean(strategy_alternating, na.rm = T)
 ```
 
-```{r fig.width=5.5, fig.height=4}
+```{r fig.width=5.5, fig.height=3}
 ggplot(
   study_6_strategy_summary,
   aes(
@@ -813,7 +810,7 @@ ggplot(
     color = "First time coordination"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_discrete(labels = c("Unsuccessful", "Successful"))
+  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful")) 
 
 ggsave(here("figures/study-6_strategies.pdf"))
 ```
@@ -832,7 +829,7 @@ study_6_summary <- study_6_data %>%
 ```{r fig.width = 4.6, fig.height = 5}
 ggplot(
   study_6_summary,
-  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+  aes(x = participant_rank, y = empirical_stat, color = successful_first_time)
 ) +
   # Add shaded rectangles based on partner_first_choice
   geom_rect(
@@ -869,8 +866,10 @@ ggplot(
     y = "P(Second time generous)",
     color = "Participant rank"
   ) +
-  scale_color_manual(values
-                     = relationship.colors) +
+  scale_color_brewer(
+    palette = "Set1", 
+    labels = c("Unsuccessful", "Successful")
+  ) +
   facet_grid(partner_first_choice ~ participant_first_choice) +
   theme(legend.position = "none", strip.background = element_blank())
 
