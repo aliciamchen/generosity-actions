@@ -1,0 +1,61 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+524c1b16f40c278b4f668eae7cedcb80,591234,female,38,yes,TRUE,None
+a9f31090b3912931034d10a7cb60209e,703596,male,39,yes,TRUE,NA
+94b0736227a1ed1cd4eb31ae67afb3c9,1329434,female,59,yes,TRUE,NA
+51c82cd223b33af5d6ed0e5eeac70fdc,1082711,male,32,yes,TRUE,NA
+015ff36922457118cf626c4143038b6b,409268,female,29,yes,TRUE,NA
+9d451d6251e2cab7c7b57cc9ed2d68ed,576769,male,36,yes,TRUE,n/a
+46ccd98c150550164552910b2f00ca5e,602309,female,37,yes,TRUE,NA
+33483f23f79fea225bf8266cb27febc0,532491,male,40,yes,TRUE,The third question was phrased as a negative which makes the unlikely options a double-negative.  Maybe turn that negative into a positive :)
+c0841e4b1821fabb081b0b8c7ffbd9bc,991817,female,43,yes,TRUE,NA
+f4994d65f2e7c0bccb3ec54c65312f26,490835,female,28,yes,TRUE,NA
+58d068628122e79049db339be205e423,1191334,male,57,yes,TRUE,"Everything went fine, thanks!"
+4c73022249bf6d32e0f081b6f3f949ab,677460,male,36,yes,TRUE,NA
+c5a172a4aa09ab3f7acefb1b94a1d893,504191,male,33,yes,TRUE,NA
+62e29cd5618aa2feee9e8a5df3cc0d39,713232,female,24,yes,TRUE,NA
+6f450d905e55c52e2583d236ac669a97,811181,male,31,yes,TRUE,NA
+1477dc429fa24ab7c18a6268b4987b3d,2420759,female,42,yes,TRUE,none
+cbb34c406693303e32fdd0532bb68fd4,427253,female,32,yes,TRUE,NA
+01b24ed71b3939db1ab25d9e93e0506e,782319,male,47,yes,TRUE,NA
+2fd2fe5f640de043ae411942abe98b92,1420118,female,43,yes,TRUE,NA
+13f0a9cbdd188cc15305a8d1154688f8,421246,male,26,yes,TRUE,NA
+25c1d3c3bd0a94f77e4f621ae7178090,1084449,female,32,yes,TRUE,I don't have any comments or suggestions.
+7d4f33ea3eb943e9efcba64a65ee1d57,1059001,female,31,yes,TRUE,N/A
+11388addc2696ed94df9f614f4fa4069,536544,female,37,yes,TRUE,NA
+ded235f28328eff433c6836c448159a1,645389,female,39,yes,TRUE,NA
+b7a4e6bf4336051c06dfcff6ae7f27d1,377971,female,21,yes,TRUE,NA
+dfa98395748d7370c265a017ba370bd0,498814,female,35,yes,TRUE,NA
+f0a1a29e3f665a07d6b5d1a64950d0ba,936475,female,26,yes,TRUE,NA
+2ae2619c3e0f02425074a265e4cb7129,765657,female,33,yes,TRUE,NA
+4de671a516954b8d4af0706c1b1c273b,1026883,male,41,yes,TRUE,none
+be42b8c5cdfabacfa2e467a899afda65,834525,male,39,yes,TRUE,"On the question about the two police officers, I chose ""extremely likely"" for question 3 and I meant to choose ""extremely unlikely""."
+990ae8cafabdea262f60097207ffc401,958215,male,30,yes,TRUE,NA
+3c521ed21e6fbd714ebeac4a27a45fe9,1850662,female,42,yes,TRUE,NA
+4052301d3fa33a527ad48afb3a5e05ed,576608,female,24,yes,TRUE,NA
+9dfad9a0b5e61a27523d425546f0c939,716734,male,31,yes,TRUE,NA
+57ac8a547c606e71fce9259cb78b38e3,596853,female,29,yes,TRUE,NA
+75dec045683dd7f440be3f767dbb5347,764411,male,63,yes,TRUE,NA
+a4c245fae1112590547e5bbcbb29e1ff,718194,female,55,yes,TRUE,NA
+0f21ec3cefa073e8e04c769d3341e457,1864411,male,32,yes,TRUE,NA
+ac8d75bcb701863b9df25e35ee7aaf1f,656456,female,20,yes,FALSE,NA
+7f1519d85264449b52cce14cda418ed4,375847,male,29,yes,TRUE,none
+82711e8f782f239de29e38c045439855,1043989,male,24,yes,TRUE,NA
+26a5e2153b7f900d3cbf54d96c469e3b,3778654,nonconforming,27,yes,TRUE,"No, thanks and have a good day! :)"
+92d19db288dd703796ba1f60387a5c94,1086746,female,23,yes,TRUE,NA
+036930329f0eae84821456e704f2ba48,1558780,nonconforming,24,yes,TRUE,NA
+41f726136a9bccda9ec315b6cc9bd305,613775,female,25,yes,TRUE,NA
+96e521180cab4feb81a21fdaed0ebbb6,1480713,nonconforming,24,yes,TRUE,NA
+59709bca92f7c98d1a347825067cf122,244216,female,23,yes,TRUE,NA
+ec4c203ce89c6736d4ea2827c8d4f267,529343,female,21,yes,TRUE,no!
+2e1363d9ab8a330ccbabd63ae7bbb5bb,704983,nonconforming,23,yes,TRUE,NA
+e26d969704b3f3bd41d8bdc24ee53968,960281,male,31,yes,TRUE,NA
+9f1a3b9cbd29cc15d4c1e6cd43b00a3b,623819,nonconforming,27,yes,TRUE,NA
+85f59412ba98073a3f4990c865b6adb8,607615,female,65,yes,TRUE,NA
+ff3c878a05ed598cc20b280c16695469,816551,male,28,yes,TRUE,NA
+e577365da9dde454350f57c03eba9625,555650,male,21,yes,TRUE,sprinkle the check to make sure participants are paying attention in the middle rather than the end
+77c0dcb2315afa6d11b03ccbddf851a9,869915,male,21,yes,TRUE,NA
+d29e034c9ed4f69bf7f8ab85eecb56da,1077189,male,45,yes,TRUE,NA
+85148db44b0a32a59a84b7b84980d6fc,315496,male,18,yes,TRUE,NA
+9387c3636ca2fe0284113c6cdf48aced,483668,male,22,yes,TRUE,NA
+95f6d3368d1e272b548c3463cf83600a,609368,male,24,yes,TRUE,NA
+40edaeb6b1304a137778240372961fdd,591067,male,21,yes,TRUE,Nope. Thank you for letting me take this survey!
