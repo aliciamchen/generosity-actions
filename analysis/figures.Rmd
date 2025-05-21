@@ -1,0 +1,750 @@
+---
+title: "figures"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(here)
+library(tidyverse)
+library(ggplot2)
+library(showtext)
+library(dplyr)
+library(tidyboot)
+library(lmerTest)
+library(ggpubr)
+
+showtext_auto()
+
+font_add(family = "Lato", regular = here("fonts/Lato-Regular.ttf"))
+theme_set(theme_classic(base_size = 15, base_family = "Lato"))
+
+action_colors <- c("#F0E442", "#E69F00", "#D6D6D6")
+relationship.colors <- c("#00A08A", "#35ACFF","#B87FFF")
+```
+
+
+# Study 1
+
+```{r}
+study_1_data <- read_csv(here("data/study-1_tidy_data.csv")) %>% 
+  mutate(relationship = factor(relationship, levels = c("no_info", "symmetric", "asymmetric"), labels = c("No info", "Symmetric", "Asymmetric")),
+         next_interaction = factor(next_interaction, levels = c("alternating", "repeating", "none"), labels = c("Reciprocity", "Precedent", "None")))
+
+study_1_summary <- study_1_data %>% 
+  group_by(relationship, next_interaction) %>% 
+  tidyboot_mean(likert_rating, na.rm = T) 
+
+study_1_summary_scenario <- study_1_data %>% 
+  group_by(relationship, next_interaction, story) %>% 
+  tidyboot_mean(likert_rating, na.rm = T)
+```
+```{r fig.width=6, fig.height=3.5, dpi=125}
+ggplot(study_1_data, aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(bw = 0.43, position = position_dodge(width = 0.7), alpha = 0.8) +
+  geom_pointrange(
+    data = study_1_summary,
+    aes(x = relationship, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.3, 
+    linewidth = 1,
+    position = position_dodge(width = 0.7)
+  ) +
+  scale_fill_manual(values = action_colors) +
+  scale_color_manual(values = action_colors) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "Study 1: Equal vs. hierarchical", x = "Relationship", y = "How likely?", fill = "Next interaction") +
+  theme(legend.position = "bottom")
+
+ggsave(here("figures/study-1_main.pdf"))
+```
+
+```{r fig.width=10, fig.height=10.5}
+ggplot(study_1_data, aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(bw = 0.43, position = position_dodge(width = 0.7), alpha = 0.8) +
+  geom_pointrange(
+    data = study_1_summary_scenario,
+    aes(x = relationship, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.3, 
+    linewidth = 1,
+    position = position_dodge(width = 0.7)
+  ) +
+  scale_fill_manual(values = action_colors) +
+  scale_color_manual(values = action_colors) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "Study 1: Equal vs. hierarchical", x = "Relationship", y = "How likely?", fill = "Next interaction") +
+  theme(legend.position = "bottom") + 
+  facet_wrap(~story, nrow = 6)
+
+ggsave(here("figures/study-1_scenarios.pdf"))
+```
+
+# Study 2
+
+```{r}
+study_2_data <- read_csv(here("data/study-2_tidy_data.csv")) %>% 
+  mutate(relationship = factor(relationship, levels = c("equal", "less", "more"), labels = c("Equal", "Lower", "Higher")),
+         next_interaction = factor(next_interaction, levels = c("alternating", "repeating", "none"), labels = c("Reciprocity", "Precedent", "None")))
+
+study_2_summary <- study_2_data %>% 
+  group_by(relationship, next_interaction) %>% 
+  tidyboot_mean(likert_rating, na.rm = T) 
+
+study_2_summary_scenario <- study_2_data %>% 
+  group_by(relationship, next_interaction, story) %>% 
+  tidyboot_mean(likert_rating, na.rm = T)
+```
+```{r fig.width=6, fig.height=3.5, dpi=125}
+ggplot(study_2_data, aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(bw = 0.43, position = position_dodge(width = 0.7), alpha = 0.8) +
+  geom_pointrange(
+    data = study_2_summary,
+    aes(x = relationship, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.3, 
+    linewidth = 1,
+    position = position_dodge(width = 0.7)
+  ) +
+  scale_fill_manual(values = action_colors) +
+  scale_color_manual(values = action_colors) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "Study 2: Relative rank", x = "Rank of generous character", y = "How likely?", fill = "Next interaction") +
+  theme(legend.position = "bottom")
+
+ggsave(here("figures/study-2_main.pdf"))
+```
+
+```{r fig.width=10, fig.height=10.5}
+ggplot(study_2_data, aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(bw = 0.43, position = position_dodge(width = 0.7), alpha = 0.8) +
+  geom_pointrange(
+    data = study_2_summary_scenario,
+    aes(x = relationship, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.3, 
+    linewidth = 1,
+    position = position_dodge(width = 0.7)
+  ) +
+  scale_fill_manual(values = action_colors) +
+  scale_color_manual(values = action_colors) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "Study 2: Relative rank", x = "Rank of generous character", y = "How likely?", fill = "Next interaction") +
+  theme(legend.position = "bottom") + 
+  facet_wrap(~story, nrow = 6)
+
+ggsave(here("figures/study-2_scenarios.pdf"))
+```
+
+# Study 4
+
+```{r}
+study_4_data <- read_csv(here("data/study-4_tidy_data.csv")) %>% 
+  mutate(relationship = factor(relationship, levels = c("equal", "lower", "higher"), labels = c("Equal", "Lower", "Higher")),
+         next_interaction = factor(next_interaction, levels = c("alternating", "repeating", "none"), labels = c("Reciprocity", "Precedent", "None")))
+
+study_4_summary <- study_4_data %>%
+  group_by(relationship, next_interaction) %>% 
+  tidyboot_mean(likert_rating, na.rm = T)
+
+study_4_summary_scenario <- study_4_data %>%
+  group_by(relationship, next_interaction, story) %>% 
+  tidyboot_mean(likert_rating, na.rm = T)
+```
+
+```{r fig.width=6, fig.height=3.5, dpi=125}
+ggplot(study_4_data, aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(bw = 0.43, position = position_dodge(width = 0.7), alpha = 0.8) +
+  geom_pointrange(
+    data = study_4_summary,
+    aes(x = relationship, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.3, 
+    linewidth = 1,
+    position = position_dodge(width = 0.7)
+  ) +
+  scale_fill_manual(values = action_colors) +
+  scale_color_manual(values = action_colors) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "Study 4: Concrete relationships", x = "Rank of generous character", y = "How likely?", fill = "Next interaction") +
+  theme(legend.position = "bottom")
+ggsave(here("figures/study-4_main.pdf"))
+```
+
+```{r fig.width=10, fig.height=10.5}
+ggplot(study_4_data, aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(bw = 0.43, position = position_dodge(width = 0.7), alpha = 0.8) +
+  geom_pointrange(
+    data = study_4_summary_scenario,
+    aes(x = relationship, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.3, 
+    linewidth = 1,
+    position = position_dodge(width = 0.7)
+  ) +
+  scale_fill_manual(values = action_colors) +
+  scale_color_manual(values = action_colors) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
+  labs(title = "Study 4: Concrete relationships", x = "Rank of generous character", y = "How likely?", fill = "Next interaction") +
+  theme(legend.position = "bottom") +
+  facet_wrap(~story, nrow = 6) 
+
+ggsave(here("figures/study-4_scenarios.pdf"))
+```
+# Study 3
+
+```{r}
+study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>%
+  mutate(
+    first_actual_higher = factor(
+      first_actual_higher,
+      levels = c("equal", "lower", "higher"),
+      labels = c("Equal", "Lower", "Higher")
+    ),
+    first_response_higher = factor(
+      first_response_higher,
+      levels = c("equal", "lower", "higher"),
+      labels = c("Equal", "Lower", "Higher")
+    )
+  )
+
+# Implicit coordination
+study_3_first_time <-
+  study_3_data %>%
+  mutate(first_response_higher = recode(
+    first_response_higher,
+    "Higher" = 1,
+    "Lower" = 0
+  )) %>%
+  group_by(story, effort_diff, benefit_diff) %>%
+  tidyboot_mean(first_response_higher, na.rm = TRUE)
+
+
+d.temp <- study_3_first_time %>%
+  arrange(desc(mean))
+
+levs <- unique(d.temp$story)
+
+study_3_first_time$story <-
+  factor(study_3_first_time$story, levels = levs)
+
+
+# First vs. second time
+study_3_second_time <-
+  study_3_data %>% filter(symmetric == "asymmetric") %>%
+  mutate(second_response_higher = recode(
+    second_response_higher,
+    "higher" = 1,
+    "lower" = 0
+  )) %>%
+  group_by(story, first_actual_higher) %>%
+  tidyboot_mean(second_response_higher, na.rm = TRUE)
+
+study_3_first_second <-
+  left_join(
+    study_3_first_time,
+    study_3_second_time,
+    suffix = c("_first", "_second"),
+    by = (c("story"))
+  )
+```
+First time plots
+
+```{r fig.width=8, fig.height=3.5, dpi=125}
+ggplot(study_3_first_time, aes(x = story, y = empirical_stat)) +
+    geom_pointrange(
+    data = study_3_first_time,
+    aes(x = story, y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7, 
+    linewidth = 1.5
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray", alpha = 0.5) +
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(x = "Scenario", y = "P(higher-rank generous)", title = 'Study 3: Implicit coordination') +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+ggsave(here("figures/study-3_implicit.pdf"))
+```
+
+First time vs. second time
+
+```{r fig.width=4.5, fig.height=4.5}
+ggplot(
+    study_3_first_second,
+    aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual_higher)
+  ) +
+  geom_smooth(method = "lm",
+              fill = "lightgray",
+              linewidth = 1.3) +
+  geom_point(size = 3.6,
+             alpha = 0.3,
+             stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_first, ymin = ci_lower_second, ymax = ci_upper_second),
+    size = 1.5,
+    width = 0.03,
+    alpha = 0.3
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_second, xmin = ci_lower_first, xmax = ci_upper_first),
+    size = 1.5,
+    height = 0.03,
+    alpha = 0.3
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_x_continuous(limits = c(0, 1)) +
+  scale_color_manual(values = c("Higher" = "#B87FFF", "Lower" = "#35ACFF")) +
+  labs(x = "First time P(higher-rank generous)", y = "Second time P(higher-rank generous)", color = "Observed rank of generous actor") + 
+  theme(legend.position = "bottom") 
+
+
+
+ggsave(here("figures/study-3_first_second.pdf"))
+```
+
+```{r}
+study_2_first_second <- study_2_data %>%
+  filter(relationship != "Equal", next_interaction != 'None') %>%
+  group_by(subject_id, story, relationship) %>%
+  mutate(
+    total_rating = sum(likert_rating),
+    normalized_likert_rating = likert_rating / total_rating
+  ) %>%
+  select(-total_rating) %>%
+  ungroup() %>%
+  rename(observed_higher = relationship) %>%
+  mutate(
+    second_response_higher = case_when(
+      next_interaction == 'Precedent' ~ observed_higher,
+      next_interaction == 'Reciprocity' ~ ifelse(observed_higher == "Higher", "Lower", "Higher"),
+      next_interaction == 'None' ~ 'None'
+    )
+  )
+
+
+study_2_first_second_summary <- study_2_first_second %>%
+  filter(second_response_higher == 'Higher') %>%
+  group_by(story, observed_higher) %>%
+  tidyboot_mean(normalized_likert_rating, na.rm = T)
+
+
+studies_2_3 <-
+  left_join(study_2_first_second_summary,
+            study_3_first_time,
+            suffix = c("_2", "_3"),
+            by = (c("story")))
+
+```
+
+```{r fig.width=4.5, fig.height=4.5}
+ggplot(studies_2_3,
+         aes(x = empirical_stat_3, y = empirical_stat_2, color = observed_higher)) +
+  geom_point(size = 3.3,
+             alpha = 0.3,
+             stroke = 0) +
+  geom_smooth(method = "lm",
+              fill = "lightgray",
+              linewidth = 1.3) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_3, ymin = ci_lower_2, ymax = ci_upper_2),
+    size = 1.5,
+    width = 0.03,
+    alpha = 0.3
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_2, xmin = ci_lower_3, xmax = ci_upper_3),
+    size = 1.5,
+    height = 0.03,
+    alpha = 0.3
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0.2, 0.8)) +
+  scale_x_continuous(limits = c(0, 1)) +
+  scale_color_manual(values = c("Higher" = "#B87FFF", "Lower" = "#35ACFF")) +
+  labs(x = "Study 3 First time P(higher-rank generous)", y = "Study 2 Second time P(higher-rank generous)", color = "Observed rank of generous actor") + 
+  theme(legend.position = "bottom") 
+
+
+ggsave(here("figures/study-2-3_first_second.pdf"))
+```
+# Study 5
+
+```{r}
+study_5_data <- read_csv(here("data/study-5_tidy_data.csv")) %>% 
+  mutate(participant_rank = case_when(
+    partner_status == "equal" ~ "Equal", 
+    partner_status == "lower" ~ "Higher", 
+    partner_status == "higher" ~ "Lower"
+  ), 
+  participant_rank = factor(participant_rank, levels = c("Equal", "Lower", "Higher")), 
+  participant_first_choice = factor(participant_first_choice, levels = c("receive", "give"), labels = c("Receive", "Give")), 
+  partner_first_choice = factor(partner_first_choice, levels = c("receive", "give"), labels = c("Receive", "Give"))
+    )
+
+# Analyze first time choices by partner status
+study_5_first_time_summary <- study_5_data %>%
+  group_by(scenario_id, participant_rank) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T)
+
+study_5_first_time_all <- study_5_data %>%
+  group_by(participant_rank) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T)
+```
+
+```{r fig.width=6, fig.height=4}
+ggplot(study_5_first_time_summary, aes(x = participant_rank, y = empirical_stat, color = participant_rank)) +
+   geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7, 
+    linewidth = 1.5
+  ) +
+  labs(
+    title = "Study 5: First time",
+    x = "Participant rank",
+    y = "P(first time generous)",
+    color = "Participant rank"
+  ) +
+    geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_manual(values = relationship.colors) + 
+  facet_wrap(~ scenario_id) + 
+  theme(legend.position = "none") 
+
+ggsave(here("figures/study-5_first_time_scenarios.pdf"))
+```
+
+```{r fig.width=2.8, fig.height=3}
+ggplot(study_5_first_time_all, aes(x = participant_rank, y = empirical_stat, color = participant_rank)) +
+   geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7, 
+    linewidth = 1.5
+  ) +
+  labs(
+    title = "Study 5: First time",
+    x = "Participant rank",
+    y = "P(First time generous)",
+    color = "Participant rank"
+  ) +
+    geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_manual(values = relationship.colors) + 
+  theme(legend.position = "none")
+
+ggsave(here("figures/study-5_first_time_all.pdf"))
+```
+
+
+```{r}
+study_5_strategy_summary <- study_5_data %>%
+  group_by(participant_rank, successful_first_time) %>%
+  tidyboot_mean(strategy_alternating, na.rm = T)
+```
+
+```{r fig.width=5.5, fig.height=4}
+ggplot(
+  study_5_strategy_summary,
+  aes(
+    x = participant_rank,
+    y = empirical_stat,
+    color = factor(successful_first_time)
+  )
+) +
+  geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.2)
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  labs(
+    title = "Study 5: Strategies",
+    x = "Participant rank",
+    y = "P(Reciprocity)",
+    color = "First time coordination"
+  ) +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_discrete(labels = c("Unsuccessful", "Successful"))
+
+ggsave(here("figures/study-5_strategies.pdf"))
+```
+
+```{r}
+study_5_summary <- study_5_data %>% 
+  group_by(participant_rank, participant_first_choice, partner_first_choice, successful_first_time) %>% 
+  tidyboot_mean(participant_second_choice_generous, na.rm = TRUE)
+```
+
+```{r fig.width = 4.6, fig.height = 5}
+ggplot(
+  study_5_summary,
+  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+) +
+  # Add shaded rectangles based on partner_first_choice
+  geom_rect(
+    data = data.frame(
+      partner_first_choice = c("Receive", "Receive", "Give", "Give"),
+      ymin = c(0.5, 0, 0, 0.5),
+      ymax = c(1, 0.5, 0.5, 1),
+      rect_color = c( "#E69F00", "#F0E442",  "#E69F00", "#F0E442")
+    ),
+    aes(xmin = -Inf, xmax = Inf, ymin = ymin, ymax = ymax, fill = rect_color),
+    alpha = 0.15,
+    inherit.aes = FALSE
+  ) +
+  geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.3)
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_fill_manual(values = c( "#E69F00" =  "#E69F00", "#F0E442" = "#F0E442")) +
+  labs(
+    title = "Study 5: Second time",
+    x = "Participant rank",
+    y = "P(Second time generous)",
+    color = "Participant rank"
+  ) +
+  scale_color_manual(values = relationship.colors) +
+  facet_grid(partner_first_choice ~ participant_first_choice) +
+  theme(legend.position = "none",
+        strip.background = element_blank())
+
+ggsave(here("figures/study-5_second_time.pdf"))
+```
+
+```{r}
+ggplot(
+  study_5_summary,
+  aes(x = partner_first_choice, y = empirical_stat, color = participant_rank)
+) +
+  geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.3)
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(
+    title = "Study 5: Second time choices",
+    x = "Observed partner first choice",
+    y = "P(Second time generous)",
+    color = "Participant rank"
+  ) +
+  scale_color_manual(values = relationship.colors) +
+  facet_wrap( ~ participant_first_choice,
+              labeller = labeller(
+                participant_first_choice = function(x)
+                  paste("First choice:", x)
+              )) +
+  theme(legend.position = "bottom")
+```
+
+# Study 6
+
+```{r}
+study_6_data <- read_csv(here("data/study-6_tidy_data.csv")) %>% 
+  mutate(participant_rank = case_when(
+    partner_status == "equal" ~ "Equal", 
+    partner_status == "lower" ~ "Higher", 
+    partner_status == "higher" ~ "Lower"
+  ), 
+  participant_rank = factor(participant_rank, levels = c("Equal", "Lower", "Higher")), 
+  participant_first_choice = factor(participant_first_choice, levels = c("receive", "give"), labels = c("Receive", "Give")), 
+  partner_first_choice = factor(partner_first_choice, levels = c("receive", "give"), labels = c("Receive", "Give"))
+    )
+
+# Analyze first time choices by partner status
+study_6_first_time_summary <- study_6_data %>%
+  group_by(scenario_id, participant_rank) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T)
+
+study_6_first_time_all <- study_6_data %>%
+  group_by(participant_rank) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T)
+```
+
+```{r fig.width=6, fig.height=4}
+ggplot(study_6_first_time_summary, aes(x = participant_rank, y = empirical_stat, color = participant_rank)) +
+   geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7, 
+    linewidth = 1.5
+  ) +
+  labs(
+    title = "Study 6: First time",
+    x = "Participant rank",
+    y = "P(First time generous)",
+    color = "Participant rank"
+  ) +
+    geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_manual(values = relationship.colors) + 
+  facet_wrap(~ scenario_id) + 
+  theme(legend.position = "none") 
+
+ggsave(here("figures/study-6_first_time_scenarios.pdf"))
+```
+
+```{r fig.width=2.8, fig.height=3}
+ggplot(study_6_first_time_all, aes(x = participant_rank, y = empirical_stat, color = participant_rank)) +
+   geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7, 
+    linewidth = 1.5
+  ) +
+  labs(
+    title = "Study 6: First time",
+    x = "Participant rank",
+    y = "P(First time generous)",
+    color = "Participant rank"
+  ) +
+    geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_manual(values = relationship.colors) + 
+  theme(legend.position = "none")
+
+ggsave(here("figures/study-6_first_time_all.pdf"))
+```
+
+
+```{r}
+study_6_strategy_summary <- study_6_data %>%
+  group_by(participant_rank, successful_first_time) %>%
+  tidyboot_mean(strategy_alternating, na.rm = T)
+```
+
+```{r fig.width=5.5, fig.height=4}
+ggplot(
+  study_6_strategy_summary,
+  aes(
+    x = participant_rank,
+    y = empirical_stat,
+    color = factor(successful_first_time)
+  )
+) +
+  geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.2)
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  labs(
+    title = "Study 6: Strategies",
+    x = "Participant rank",
+    y = "P(Reciprocity)",
+    color = "First time coordination"
+  ) +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_color_discrete(labels = c("Unsuccessful", "Successful"))
+
+ggsave(here("figures/study-6_strategies.pdf"))
+```
+
+```{r}
+study_6_summary <- study_6_data %>% 
+  group_by(participant_rank, participant_first_choice, partner_first_choice, successful_first_time) %>% 
+  tidyboot_mean(participant_second_choice_generous, na.rm = TRUE)
+```
+
+```{r fig.width = 4.6, fig.height = 5}
+ggplot(
+  study_6_summary,
+  aes(x = participant_rank, y = empirical_stat, color = participant_rank)
+) +
+  # Add shaded rectangles based on partner_first_choice
+  geom_rect(
+    data = data.frame(
+      partner_first_choice = c("Receive", "Receive", "Give", "Give"),
+      ymin = c(0.5, 0, 0, 0.5),
+      ymax = c(1, 0.5, 0.5, 1),
+      rect_color = c( "#E69F00", "#F0E442",  "#E69F00", "#F0E442")
+    ),
+    aes(xmin = -Inf, xmax = Inf, ymin = ymin, ymax = ymax, fill = rect_color),
+    alpha = 0.15,
+    inherit.aes = FALSE
+  ) +
+  geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.3)
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  scale_fill_manual(values = c( "#E69F00" =  "#E69F00", "#F0E442" = "#F0E442")) +
+  labs(
+    title = "Study 6: Second time",
+    x = "Participant rank",
+    y = "P(Second time generous)",
+    color = "Participant rank"
+  ) +
+  scale_color_manual(values = relationship.colors) +
+  facet_grid(partner_first_choice ~ participant_first_choice) +
+  theme(legend.position = "none",
+        strip.background = element_blank())
+
+ggsave(here("figures/study-6_second_time.pdf"))
+```
+
+```{r}
+ggplot(
+  study_6_summary,
+  aes(x = partner_first_choice, y = empirical_stat, color = participant_rank)
+) +
+  geom_pointrange(
+    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.3)
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(
+    title = "Study 6: Second time",
+    x = "Observed partner first choice",
+    y = "P(Second time generous)",
+    color = "Participant rank"
+  ) +
+  scale_color_manual(values = relationship.colors) +
+  facet_wrap( ~ participant_first_choice,
+              labeller = labeller(
+                participant_first_choice = function(x)
+                  paste("First choice:", x)
+              )) +
+  theme(legend.position = "bottom")
+```
+
+
+
+
