@@ -8,6 +8,8 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+library(here)
+library(showtext)
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
@@ -17,7 +19,12 @@ library(tidyboot)
 library(lme4)
 library(emmeans)
 library(lmerTest)
-theme_set(theme_minimal(base_size = 15))
+library(broom.mixed)
+
+showtext_auto()
+
+font_add(family = "Lato", regular = here("fonts/Lato-Regular.ttf"))
+theme_set(theme_classic(base_size = 15, base_family = "Lato"))
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 ```
@@ -95,6 +102,8 @@ print(table(main_data$participant_second_choice))
 # Filter for participants who passed attention checks
 main_data_filtered <- main_data %>%
   filter(passed_attention_checks > 0)
+
+write_csv(main_data_filtered, here("data/study-5_tidy_data.csv"))
 ```
 
 Summary statistics
@@ -183,24 +192,48 @@ ggplot(second_time_summary, aes(x = partner_first_choice, y = empirical_stat, co
 
 Filter by successful coordination
 
-```{r second-time-choices-successful}
-second_time_summary_successful <- main_data_filtered %>%
-  filter(successful_first_time == TRUE) %>%
-  group_by(partner_status, partner_first_choice) %>%
+```{r}
+second_time_summary <- main_data_filtered %>%
+  group_by(partner_status, partner_first_choice, successful_first_time) %>%
   tidyboot_mean(participant_second_choice_generous, na.rm = T)
 ```
 
+
 ```{r}
-ggplot(second_time_summary_successful, aes(x = partner_first_choice, y = empirical_stat, color = partner_status)) +
+ggplot(second_time_summary, aes(x = partner_first_choice, y = empirical_stat, color = partner_status)) +
   geom_point(size = 3, position = position_dodge(width = 0.3)) +
   geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
                 width = 0.2, position = position_dodge(width = 0.3)) +
   labs(title = "Second time choices based on first time partner choice",
-       subtitle = "Only first time coordination",
+       subtitle = "Study 5",
        x = "First time partner choice",
        y = "Proportion choosing to give") +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_brewer(palette = "Dark2")
+  scale_color_brewer(palette = "Dark2") +
+  facet_wrap(~ successful_first_time, 
+             labeller = "label_both")
+```
+
+Plot partner first choices
+
+```{r}
+first_time_summary <- main_data_filtered %>%
+  group_by(partner_status) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T)
+```
+
+```{r}
+ggplot(first_time_summary, aes(x = partner_status, y = empirical_stat, color = partner_status)) +
+  geom_point(size = 3, position = position_dodge(width = 0.3)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.3)) +
+  labs(
+    title = "First time choices",
+    x = "Partner status",
+    y = "Proportion choosing to give"
+  ) +
+  scale_color_brewer(palette = "Dark2") +
+  scale_y_continuous(limits = c(0, 1))
 ```
 
 
@@ -243,6 +276,7 @@ summary(main_model)
 emm <- emmeans(main_model, ~ relationship)
 pairs(emm)
 ```
+
 Now let's run the secondary analysis comparing the two models as specified in the preregistration:
 
 ```{r secondary-analysis}
@@ -277,6 +311,111 @@ anova(model1, model2)
 ```{r}
 # Type III ANOVA for Model 2
 anova(model2, type = "III")
+```
+```{r fig.width=6, fig.height=3.5}
+tidy_model <- tidy(model2, effects = "fixed", conf.int = TRUE)
+# Relabel terms for plot clarity
+tidy_model <- tidy_model %>%
+  filter(term %in% c(
+    "(Intercept)",
+    "partner_first_choice1",
+    "participant_first_choice1",
+    "partner_first_choice1:participant_first_choice1"
+  )) %>%
+  mutate(term = recode(term,
+    `(Intercept)`                                     = "Intercept",
+    `partner_first_choice1`                          = "Simple reciprocity",
+    `participant_first_choice1`                      = "Habit",
+    `partner_first_choice1:participant_first_choice1`= "Heuristic learning"
+  )) %>% 
+  mutate(term = factor(term, levels = c(
+    "Intercept",
+    "Heuristic learning",
+    "Habit",
+    "Simple reciprocity"
+  ))) 
+
+
+ggplot(tidy_model, aes(x = estimate, y = term)) +
+  geom_point(size = 2.5) +
+  geom_errorbarh(aes(xmin = conf.low, xmax = conf.high), height = 0, size = 1.1) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "gray") +
+  lims(x = c(-1.1, 0.4)) + 
+  labs(
+    title = "Study 5: Generous second choice",
+    x = "Estimate (log-odds)",
+    y = "Predictor"
+  ) 
+
+ggsave(
+  here("figures/study-5-second-choice-model.pdf")
+)
+```
+```{r}
+library(ggeffects)
+
+# Compute predicted probabilities
+preds <- ggpredict(model2, terms = c("partner_first_choice", "partner_status"))
+
+# Plot predicted probabilities
+plot(preds) +
+  labs(
+    title = "Predicted Probability of Choosing 'Give' (Second Interaction)",
+    x = "Partner's First Choice",
+    y = "Predicted Probability",
+    color = "Partner Status"
+  )
+```
+
+# Full plots
+
+```{r}
+first_time_coord <- 
+  main_data_filtered %>% filter(successful_first_time == TRUE) %>%
+  group_by(partner_status) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T) %>%
+  mutate(partner_first_choice = "first_time",
+         did_coordinate = "yes")
+
+second_time_coord <- 
+  main_data_filtered %>% filter(successful_first_time == TRUE) %>%
+  group_by(partner_status, partner_first_choice) %>%
+  tidyboot_mean(participant_second_choice_generous, na.rm = T) %>%
+  mutate(did_coordinate = "yes")
+
+first_time_miscoord <- 
+  main_data_filtered %>% filter(successful_first_time == FALSE) %>%
+  group_by(partner_status) %>%
+  tidyboot_mean(participant_first_choice_generous, na.rm = T) %>%
+  mutate(partner_first_choice = "first_time",
+         did_coordinate = "no")
+
+second_time_miscoord <-
+  main_data_filtered %>% filter(successful_first_time == FALSE) %>%
+  group_by(partner_status, partner_first_choice) %>%
+  tidyboot_mean(participant_second_choice_generous, na.rm = T) %>%
+  mutate(did_coordinate = "no")
+```
+
+Join first and second time; columns are `partner_status`, `partner_first_choice` ('first_time' if its the first time), and successful_first_time.
+
+```{r, include=FALSE}
+coord_all <- bind_rows(
+  first_time_coord, second_time_coord, first_time_miscoord, second_time_miscoord
+)
+```
+
+```{r}
+ggplot(coord_all, aes(x = partner_first_choice, y = empirical_stat, color = partner_status)) +
+  geom_point(size = 3, position = position_dodge(width = 0.3)) +
+  geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), size = 1, 
+                width = 0.2, position = position_dodge(width = 0.3)) +
+  labs(title = "Study 5", x = "Observed partner first choice",
+       y = "Proportion choosing to give") +
+  scale_color_brewer(palette = "Dark2") +
+  scale_y_continuous(limits = c(0, 1)) +
+  facet_wrap(~ did_coordinate, labeller = "label_both") +
+  theme(legend.position = "bottom")
 ```
 
 
