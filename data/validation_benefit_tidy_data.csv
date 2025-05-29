@@ -1,0 +1,2089 @@
+"subject_id","story","benefit","likert_rating"
+"3b43b5d4c3bd12c7995544383aae1ba4","meeting location","expected_high_benefit",5
+"3b43b5d4c3bd12c7995544383aae1ba4","meeting location","expected_low_benefit",5
+"3b43b5d4c3bd12c7995544383aae1ba4","architects","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","architects","expected_low_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","restaurant","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","restaurant","expected_low_benefit",3
+"3b43b5d4c3bd12c7995544383aae1ba4","group project","expected_high_benefit",3
+"3b43b5d4c3bd12c7995544383aae1ba4","group project","expected_low_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","groceries","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","groceries","expected_low_benefit",4
+"3b43b5d4c3bd12c7995544383aae1ba4","conversation","expected_high_benefit",5
+"3b43b5d4c3bd12c7995544383aae1ba4","conversation","expected_low_benefit",5
+"3b43b5d4c3bd12c7995544383aae1ba4","police","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","police","expected_low_benefit",4
+"3b43b5d4c3bd12c7995544383aae1ba4","scheduling","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","scheduling","expected_low_benefit",4
+"3b43b5d4c3bd12c7995544383aae1ba4","feedback","expected_high_benefit",6
+"3b43b5d4c3bd12c7995544383aae1ba4","feedback","expected_low_benefit",4
+"3b43b5d4c3bd12c7995544383aae1ba4","gifts","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","gifts","expected_low_benefit",5
+"3b43b5d4c3bd12c7995544383aae1ba4","meeting prep","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","meeting prep","expected_low_benefit",3
+"3b43b5d4c3bd12c7995544383aae1ba4","concerts","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","concerts","expected_low_benefit",3
+"3b43b5d4c3bd12c7995544383aae1ba4","family meals","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","family meals","expected_low_benefit",3
+"3b43b5d4c3bd12c7995544383aae1ba4","fundraising","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","fundraising","expected_low_benefit",5
+"3b43b5d4c3bd12c7995544383aae1ba4","babysitting","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","babysitting","expected_low_benefit",4
+"3b43b5d4c3bd12c7995544383aae1ba4","weekend","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","weekend","expected_low_benefit",3
+"3b43b5d4c3bd12c7995544383aae1ba4","housemates","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","housemates","expected_low_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","coffee","expected_high_benefit",7
+"3b43b5d4c3bd12c7995544383aae1ba4","coffee","expected_low_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","weekend","expected_high_benefit",1
+"b0f8dfb154bc2309604fca4628bfc3ea","weekend","expected_low_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","concerts","expected_high_benefit",7
+"b0f8dfb154bc2309604fca4628bfc3ea","concerts","expected_low_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","groceries","expected_high_benefit",6
+"b0f8dfb154bc2309604fca4628bfc3ea","groceries","expected_low_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","meeting prep","expected_high_benefit",2
+"b0f8dfb154bc2309604fca4628bfc3ea","meeting prep","expected_low_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","coffee","expected_high_benefit",6
+"b0f8dfb154bc2309604fca4628bfc3ea","coffee","expected_low_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","babysitting","expected_high_benefit",7
+"b0f8dfb154bc2309604fca4628bfc3ea","babysitting","expected_low_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","feedback","expected_high_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","feedback","expected_low_benefit",6
+"b0f8dfb154bc2309604fca4628bfc3ea","restaurant","expected_high_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","restaurant","expected_low_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","fundraising","expected_high_benefit",2
+"b0f8dfb154bc2309604fca4628bfc3ea","fundraising","expected_low_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","family meals","expected_high_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","family meals","expected_low_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","conversation","expected_high_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","conversation","expected_low_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","architects","expected_high_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","architects","expected_low_benefit",2
+"b0f8dfb154bc2309604fca4628bfc3ea","meeting location","expected_high_benefit",2
+"b0f8dfb154bc2309604fca4628bfc3ea","meeting location","expected_low_benefit",2
+"b0f8dfb154bc2309604fca4628bfc3ea","housemates","expected_high_benefit",7
+"b0f8dfb154bc2309604fca4628bfc3ea","housemates","expected_low_benefit",3
+"b0f8dfb154bc2309604fca4628bfc3ea","police","expected_high_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","police","expected_low_benefit",6
+"b0f8dfb154bc2309604fca4628bfc3ea","gifts","expected_high_benefit",7
+"b0f8dfb154bc2309604fca4628bfc3ea","gifts","expected_low_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","scheduling","expected_high_benefit",4
+"b0f8dfb154bc2309604fca4628bfc3ea","scheduling","expected_low_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","group project","expected_high_benefit",5
+"b0f8dfb154bc2309604fca4628bfc3ea","group project","expected_low_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","coffee","expected_high_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","coffee","expected_low_benefit",3
+"60f789e86be3028dfe8ee79b5c4204ef","fundraising","expected_high_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","fundraising","expected_low_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","meeting prep","expected_high_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","meeting prep","expected_low_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","architects","expected_high_benefit",6
+"60f789e86be3028dfe8ee79b5c4204ef","architects","expected_low_benefit",3
+"60f789e86be3028dfe8ee79b5c4204ef","restaurant","expected_high_benefit",7
+"60f789e86be3028dfe8ee79b5c4204ef","restaurant","expected_low_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","police","expected_high_benefit",6
+"60f789e86be3028dfe8ee79b5c4204ef","police","expected_low_benefit",2
+"60f789e86be3028dfe8ee79b5c4204ef","gifts","expected_high_benefit",7
+"60f789e86be3028dfe8ee79b5c4204ef","gifts","expected_low_benefit",2
+"60f789e86be3028dfe8ee79b5c4204ef","scheduling","expected_high_benefit",7
+"60f789e86be3028dfe8ee79b5c4204ef","scheduling","expected_low_benefit",3
+"60f789e86be3028dfe8ee79b5c4204ef","housemates","expected_high_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","housemates","expected_low_benefit",4
+"60f789e86be3028dfe8ee79b5c4204ef","weekend","expected_high_benefit",6
+"60f789e86be3028dfe8ee79b5c4204ef","weekend","expected_low_benefit",2
+"60f789e86be3028dfe8ee79b5c4204ef","concerts","expected_high_benefit",7
+"60f789e86be3028dfe8ee79b5c4204ef","concerts","expected_low_benefit",3
+"60f789e86be3028dfe8ee79b5c4204ef","conversation","expected_high_benefit",5
+"60f789e86be3028dfe8ee79b5c4204ef","conversation","expected_low_benefit",5
+"60f789e86be3028dfe8ee79b5c4204ef","meeting location","expected_high_benefit",6
+"60f789e86be3028dfe8ee79b5c4204ef","meeting location","expected_low_benefit",3
+"60f789e86be3028dfe8ee79b5c4204ef","group project","expected_high_benefit",5
+"60f789e86be3028dfe8ee79b5c4204ef","group project","expected_low_benefit",5
+"60f789e86be3028dfe8ee79b5c4204ef","babysitting","expected_high_benefit",6
+"60f789e86be3028dfe8ee79b5c4204ef","babysitting","expected_low_benefit",2
+"60f789e86be3028dfe8ee79b5c4204ef","feedback","expected_high_benefit",5
+"60f789e86be3028dfe8ee79b5c4204ef","feedback","expected_low_benefit",5
+"60f789e86be3028dfe8ee79b5c4204ef","family meals","expected_high_benefit",7
+"60f789e86be3028dfe8ee79b5c4204ef","family meals","expected_low_benefit",3
+"60f789e86be3028dfe8ee79b5c4204ef","groceries","expected_high_benefit",6
+"60f789e86be3028dfe8ee79b5c4204ef","groceries","expected_low_benefit",2
+"a92386d5411c80cff0dfbbbb56fd6935","police","expected_high_benefit",6
+"a92386d5411c80cff0dfbbbb56fd6935","police","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","family meals","expected_high_benefit",5
+"a92386d5411c80cff0dfbbbb56fd6935","family meals","expected_low_benefit",2
+"a92386d5411c80cff0dfbbbb56fd6935","housemates","expected_high_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","housemates","expected_low_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","gifts","expected_high_benefit",5
+"a92386d5411c80cff0dfbbbb56fd6935","gifts","expected_low_benefit",2
+"a92386d5411c80cff0dfbbbb56fd6935","coffee","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","coffee","expected_low_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","group project","expected_high_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","group project","expected_low_benefit",2
+"a92386d5411c80cff0dfbbbb56fd6935","restaurant","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","restaurant","expected_low_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","feedback","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","feedback","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","meeting prep","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","meeting prep","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","conversation","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","conversation","expected_low_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","architects","expected_high_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","architects","expected_low_benefit",2
+"a92386d5411c80cff0dfbbbb56fd6935","meeting location","expected_high_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","meeting location","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","concerts","expected_high_benefit",5
+"a92386d5411c80cff0dfbbbb56fd6935","concerts","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","babysitting","expected_high_benefit",6
+"a92386d5411c80cff0dfbbbb56fd6935","babysitting","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","weekend","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","weekend","expected_low_benefit",2
+"a92386d5411c80cff0dfbbbb56fd6935","groceries","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","groceries","expected_low_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","scheduling","expected_high_benefit",4
+"a92386d5411c80cff0dfbbbb56fd6935","scheduling","expected_low_benefit",3
+"a92386d5411c80cff0dfbbbb56fd6935","fundraising","expected_high_benefit",1
+"a92386d5411c80cff0dfbbbb56fd6935","fundraising","expected_low_benefit",1
+"4cb50965b8617b6db122a74319279f37","groceries","expected_high_benefit",5
+"4cb50965b8617b6db122a74319279f37","groceries","expected_low_benefit",1
+"4cb50965b8617b6db122a74319279f37","weekend","expected_high_benefit",5
+"4cb50965b8617b6db122a74319279f37","weekend","expected_low_benefit",3
+"4cb50965b8617b6db122a74319279f37","meeting prep","expected_high_benefit",5
+"4cb50965b8617b6db122a74319279f37","meeting prep","expected_low_benefit",1
+"4cb50965b8617b6db122a74319279f37","fundraising","expected_high_benefit",3
+"4cb50965b8617b6db122a74319279f37","fundraising","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","babysitting","expected_high_benefit",5
+"4cb50965b8617b6db122a74319279f37","babysitting","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","meeting location","expected_high_benefit",2
+"4cb50965b8617b6db122a74319279f37","meeting location","expected_low_benefit",1
+"4cb50965b8617b6db122a74319279f37","architects","expected_high_benefit",3
+"4cb50965b8617b6db122a74319279f37","architects","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","conversation","expected_high_benefit",3
+"4cb50965b8617b6db122a74319279f37","conversation","expected_low_benefit",3
+"4cb50965b8617b6db122a74319279f37","gifts","expected_high_benefit",5
+"4cb50965b8617b6db122a74319279f37","gifts","expected_low_benefit",1
+"4cb50965b8617b6db122a74319279f37","police","expected_high_benefit",6
+"4cb50965b8617b6db122a74319279f37","police","expected_low_benefit",1
+"4cb50965b8617b6db122a74319279f37","coffee","expected_high_benefit",3
+"4cb50965b8617b6db122a74319279f37","coffee","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","feedback","expected_high_benefit",4
+"4cb50965b8617b6db122a74319279f37","feedback","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","scheduling","expected_high_benefit",4
+"4cb50965b8617b6db122a74319279f37","scheduling","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","family meals","expected_high_benefit",5
+"4cb50965b8617b6db122a74319279f37","family meals","expected_low_benefit",3
+"4cb50965b8617b6db122a74319279f37","restaurant","expected_high_benefit",3
+"4cb50965b8617b6db122a74319279f37","restaurant","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","housemates","expected_high_benefit",4
+"4cb50965b8617b6db122a74319279f37","housemates","expected_low_benefit",2
+"4cb50965b8617b6db122a74319279f37","group project","expected_high_benefit",4
+"4cb50965b8617b6db122a74319279f37","group project","expected_low_benefit",3
+"4cb50965b8617b6db122a74319279f37","concerts","expected_high_benefit",3
+"4cb50965b8617b6db122a74319279f37","concerts","expected_low_benefit",2
+"a9665d9ddfa77243865c5aa7a10ebfcf","group project","expected_high_benefit",4
+"a9665d9ddfa77243865c5aa7a10ebfcf","group project","expected_low_benefit",7
+"a9665d9ddfa77243865c5aa7a10ebfcf","babysitting","expected_high_benefit",7
+"a9665d9ddfa77243865c5aa7a10ebfcf","babysitting","expected_low_benefit",2
+"a9665d9ddfa77243865c5aa7a10ebfcf","groceries","expected_high_benefit",5
+"a9665d9ddfa77243865c5aa7a10ebfcf","groceries","expected_low_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","coffee","expected_high_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","coffee","expected_low_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","meeting location","expected_high_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","meeting location","expected_low_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","family meals","expected_high_benefit",5
+"a9665d9ddfa77243865c5aa7a10ebfcf","family meals","expected_low_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","police","expected_high_benefit",6
+"a9665d9ddfa77243865c5aa7a10ebfcf","police","expected_low_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","weekend","expected_high_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","weekend","expected_low_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","housemates","expected_high_benefit",4
+"a9665d9ddfa77243865c5aa7a10ebfcf","housemates","expected_low_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","gifts","expected_high_benefit",6
+"a9665d9ddfa77243865c5aa7a10ebfcf","gifts","expected_low_benefit",2
+"a9665d9ddfa77243865c5aa7a10ebfcf","architects","expected_high_benefit",6
+"a9665d9ddfa77243865c5aa7a10ebfcf","architects","expected_low_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","conversation","expected_high_benefit",4
+"a9665d9ddfa77243865c5aa7a10ebfcf","conversation","expected_low_benefit",4
+"a9665d9ddfa77243865c5aa7a10ebfcf","restaurant","expected_high_benefit",4
+"a9665d9ddfa77243865c5aa7a10ebfcf","restaurant","expected_low_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","scheduling","expected_high_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","scheduling","expected_low_benefit",1
+"a9665d9ddfa77243865c5aa7a10ebfcf","feedback","expected_high_benefit",6
+"a9665d9ddfa77243865c5aa7a10ebfcf","feedback","expected_low_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","fundraising","expected_high_benefit",4
+"a9665d9ddfa77243865c5aa7a10ebfcf","fundraising","expected_low_benefit",3
+"a9665d9ddfa77243865c5aa7a10ebfcf","meeting prep","expected_high_benefit",5
+"a9665d9ddfa77243865c5aa7a10ebfcf","meeting prep","expected_low_benefit",2
+"a9665d9ddfa77243865c5aa7a10ebfcf","concerts","expected_high_benefit",6
+"a9665d9ddfa77243865c5aa7a10ebfcf","concerts","expected_low_benefit",2
+"0675b57c0c57c25874ebb3bed82f18b8","family meals","expected_high_benefit",1
+"0675b57c0c57c25874ebb3bed82f18b8","family meals","expected_low_benefit",1
+"0675b57c0c57c25874ebb3bed82f18b8","conversation","expected_high_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","conversation","expected_low_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","concerts","expected_high_benefit",7
+"0675b57c0c57c25874ebb3bed82f18b8","concerts","expected_low_benefit",3
+"0675b57c0c57c25874ebb3bed82f18b8","babysitting","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","babysitting","expected_low_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","fundraising","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","fundraising","expected_low_benefit",3
+"0675b57c0c57c25874ebb3bed82f18b8","meeting prep","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","meeting prep","expected_low_benefit",3
+"0675b57c0c57c25874ebb3bed82f18b8","feedback","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","feedback","expected_low_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","police","expected_high_benefit",4
+"0675b57c0c57c25874ebb3bed82f18b8","police","expected_low_benefit",4
+"0675b57c0c57c25874ebb3bed82f18b8","restaurant","expected_high_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","restaurant","expected_low_benefit",4
+"0675b57c0c57c25874ebb3bed82f18b8","housemates","expected_high_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","housemates","expected_low_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","gifts","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","gifts","expected_low_benefit",NA
+"0675b57c0c57c25874ebb3bed82f18b8","meeting location","expected_high_benefit",NA
+"0675b57c0c57c25874ebb3bed82f18b8","meeting location","expected_low_benefit",4
+"0675b57c0c57c25874ebb3bed82f18b8","groceries","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","groceries","expected_low_benefit",3
+"0675b57c0c57c25874ebb3bed82f18b8","architects","expected_high_benefit",7
+"0675b57c0c57c25874ebb3bed82f18b8","architects","expected_low_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","scheduling","expected_high_benefit",6
+"0675b57c0c57c25874ebb3bed82f18b8","scheduling","expected_low_benefit",2
+"0675b57c0c57c25874ebb3bed82f18b8","group project","expected_high_benefit",7
+"0675b57c0c57c25874ebb3bed82f18b8","group project","expected_low_benefit",1
+"0675b57c0c57c25874ebb3bed82f18b8","weekend","expected_high_benefit",4
+"0675b57c0c57c25874ebb3bed82f18b8","weekend","expected_low_benefit",4
+"0675b57c0c57c25874ebb3bed82f18b8","coffee","expected_high_benefit",5
+"0675b57c0c57c25874ebb3bed82f18b8","coffee","expected_low_benefit",4
+"c12e79a52fa9ec26f4be4bd5d108100f","group project","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","group project","expected_low_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","restaurant","expected_high_benefit",3
+"c12e79a52fa9ec26f4be4bd5d108100f","restaurant","expected_low_benefit",3
+"c12e79a52fa9ec26f4be4bd5d108100f","meeting location","expected_high_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","meeting location","expected_low_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","gifts","expected_high_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","gifts","expected_low_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","feedback","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","feedback","expected_low_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","fundraising","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","fundraising","expected_low_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","concerts","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","concerts","expected_low_benefit",1
+"c12e79a52fa9ec26f4be4bd5d108100f","weekend","expected_high_benefit",3
+"c12e79a52fa9ec26f4be4bd5d108100f","weekend","expected_low_benefit",3
+"c12e79a52fa9ec26f4be4bd5d108100f","meeting prep","expected_high_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","meeting prep","expected_low_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","conversation","expected_high_benefit",4
+"c12e79a52fa9ec26f4be4bd5d108100f","conversation","expected_low_benefit",4
+"c12e79a52fa9ec26f4be4bd5d108100f","family meals","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","family meals","expected_low_benefit",3
+"c12e79a52fa9ec26f4be4bd5d108100f","scheduling","expected_high_benefit",2
+"c12e79a52fa9ec26f4be4bd5d108100f","scheduling","expected_low_benefit",2
+"c12e79a52fa9ec26f4be4bd5d108100f","groceries","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","groceries","expected_low_benefit",1
+"c12e79a52fa9ec26f4be4bd5d108100f","babysitting","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","babysitting","expected_low_benefit",1
+"c12e79a52fa9ec26f4be4bd5d108100f","coffee","expected_high_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","coffee","expected_low_benefit",1
+"c12e79a52fa9ec26f4be4bd5d108100f","police","expected_high_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","police","expected_low_benefit",2
+"c12e79a52fa9ec26f4be4bd5d108100f","housemates","expected_high_benefit",5
+"c12e79a52fa9ec26f4be4bd5d108100f","housemates","expected_low_benefit",6
+"c12e79a52fa9ec26f4be4bd5d108100f","architects","expected_high_benefit",3
+"c12e79a52fa9ec26f4be4bd5d108100f","architects","expected_low_benefit",3
+"22b956a0adf9004b8b327d96fff26e7e","weekend","expected_high_benefit",5
+"22b956a0adf9004b8b327d96fff26e7e","weekend","expected_low_benefit",5
+"22b956a0adf9004b8b327d96fff26e7e","conversation","expected_high_benefit",5
+"22b956a0adf9004b8b327d96fff26e7e","conversation","expected_low_benefit",3
+"22b956a0adf9004b8b327d96fff26e7e","babysitting","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","babysitting","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","restaurant","expected_high_benefit",6
+"22b956a0adf9004b8b327d96fff26e7e","restaurant","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","feedback","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","feedback","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","police","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","police","expected_low_benefit",1
+"22b956a0adf9004b8b327d96fff26e7e","gifts","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","gifts","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","scheduling","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","scheduling","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","concerts","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","concerts","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","architects","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","architects","expected_low_benefit",6
+"22b956a0adf9004b8b327d96fff26e7e","meeting location","expected_high_benefit",4
+"22b956a0adf9004b8b327d96fff26e7e","meeting location","expected_low_benefit",4
+"22b956a0adf9004b8b327d96fff26e7e","fundraising","expected_high_benefit",4
+"22b956a0adf9004b8b327d96fff26e7e","fundraising","expected_low_benefit",6
+"22b956a0adf9004b8b327d96fff26e7e","group project","expected_high_benefit",4
+"22b956a0adf9004b8b327d96fff26e7e","group project","expected_low_benefit",3
+"22b956a0adf9004b8b327d96fff26e7e","coffee","expected_high_benefit",6
+"22b956a0adf9004b8b327d96fff26e7e","coffee","expected_low_benefit",3
+"22b956a0adf9004b8b327d96fff26e7e","groceries","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","groceries","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","meeting prep","expected_high_benefit",5
+"22b956a0adf9004b8b327d96fff26e7e","meeting prep","expected_low_benefit",2
+"22b956a0adf9004b8b327d96fff26e7e","family meals","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","family meals","expected_low_benefit",3
+"22b956a0adf9004b8b327d96fff26e7e","housemates","expected_high_benefit",7
+"22b956a0adf9004b8b327d96fff26e7e","housemates","expected_low_benefit",5
+"8cc62e0189bb1ce9be242197aba3ed1e","meeting prep","expected_high_benefit",2
+"8cc62e0189bb1ce9be242197aba3ed1e","meeting prep","expected_low_benefit",2
+"8cc62e0189bb1ce9be242197aba3ed1e","meeting location","expected_high_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","meeting location","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","fundraising","expected_high_benefit",2
+"8cc62e0189bb1ce9be242197aba3ed1e","fundraising","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","concerts","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","concerts","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","groceries","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","groceries","expected_low_benefit",3
+"8cc62e0189bb1ce9be242197aba3ed1e","coffee","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","coffee","expected_low_benefit",2
+"8cc62e0189bb1ce9be242197aba3ed1e","police","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","police","expected_low_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","babysitting","expected_high_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","babysitting","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","architects","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","architects","expected_low_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","feedback","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","feedback","expected_low_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","group project","expected_high_benefit",2
+"8cc62e0189bb1ce9be242197aba3ed1e","group project","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","restaurant","expected_high_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","restaurant","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","housemates","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","housemates","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","family meals","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","family meals","expected_low_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","gifts","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","gifts","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","conversation","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","conversation","expected_low_benefit",1
+"8cc62e0189bb1ce9be242197aba3ed1e","scheduling","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","scheduling","expected_low_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","weekend","expected_high_benefit",7
+"8cc62e0189bb1ce9be242197aba3ed1e","weekend","expected_low_benefit",7
+"e1ed1a2b94c42677990b95406888d9cd","coffee","expected_high_benefit",4
+"e1ed1a2b94c42677990b95406888d9cd","coffee","expected_low_benefit",3
+"e1ed1a2b94c42677990b95406888d9cd","conversation","expected_high_benefit",4
+"e1ed1a2b94c42677990b95406888d9cd","conversation","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","feedback","expected_high_benefit",4
+"e1ed1a2b94c42677990b95406888d9cd","feedback","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","concerts","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","concerts","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","family meals","expected_high_benefit",6
+"e1ed1a2b94c42677990b95406888d9cd","family meals","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","scheduling","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","scheduling","expected_low_benefit",1
+"e1ed1a2b94c42677990b95406888d9cd","groceries","expected_high_benefit",6
+"e1ed1a2b94c42677990b95406888d9cd","groceries","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","architects","expected_high_benefit",6
+"e1ed1a2b94c42677990b95406888d9cd","architects","expected_low_benefit",3
+"e1ed1a2b94c42677990b95406888d9cd","fundraising","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","fundraising","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","gifts","expected_high_benefit",6
+"e1ed1a2b94c42677990b95406888d9cd","gifts","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","babysitting","expected_high_benefit",6
+"e1ed1a2b94c42677990b95406888d9cd","babysitting","expected_low_benefit",3
+"e1ed1a2b94c42677990b95406888d9cd","group project","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","group project","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","meeting prep","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","meeting prep","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","police","expected_high_benefit",6
+"e1ed1a2b94c42677990b95406888d9cd","police","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","housemates","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","housemates","expected_low_benefit",3
+"e1ed1a2b94c42677990b95406888d9cd","meeting location","expected_high_benefit",3
+"e1ed1a2b94c42677990b95406888d9cd","meeting location","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","restaurant","expected_high_benefit",4
+"e1ed1a2b94c42677990b95406888d9cd","restaurant","expected_low_benefit",2
+"e1ed1a2b94c42677990b95406888d9cd","weekend","expected_high_benefit",5
+"e1ed1a2b94c42677990b95406888d9cd","weekend","expected_low_benefit",2
+"418346a85a8d88259864d274157015f8","housemates","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","housemates","expected_low_benefit",2
+"418346a85a8d88259864d274157015f8","group project","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","group project","expected_low_benefit",5
+"418346a85a8d88259864d274157015f8","meeting location","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","meeting location","expected_low_benefit",6
+"418346a85a8d88259864d274157015f8","concerts","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","concerts","expected_low_benefit",5
+"418346a85a8d88259864d274157015f8","family meals","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","family meals","expected_low_benefit",4
+"418346a85a8d88259864d274157015f8","meeting prep","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","meeting prep","expected_low_benefit",5
+"418346a85a8d88259864d274157015f8","feedback","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","feedback","expected_low_benefit",5
+"418346a85a8d88259864d274157015f8","architects","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","architects","expected_low_benefit",5
+"418346a85a8d88259864d274157015f8","babysitting","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","babysitting","expected_low_benefit",2
+"418346a85a8d88259864d274157015f8","conversation","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","conversation","expected_low_benefit",5
+"418346a85a8d88259864d274157015f8","scheduling","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","scheduling","expected_low_benefit",4
+"418346a85a8d88259864d274157015f8","gifts","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","gifts","expected_low_benefit",3
+"418346a85a8d88259864d274157015f8","coffee","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","coffee","expected_low_benefit",3
+"418346a85a8d88259864d274157015f8","restaurant","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","restaurant","expected_low_benefit",3
+"418346a85a8d88259864d274157015f8","police","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","police","expected_low_benefit",3
+"418346a85a8d88259864d274157015f8","groceries","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","groceries","expected_low_benefit",3
+"418346a85a8d88259864d274157015f8","fundraising","expected_high_benefit",6
+"418346a85a8d88259864d274157015f8","fundraising","expected_low_benefit",3
+"418346a85a8d88259864d274157015f8","weekend","expected_high_benefit",5
+"418346a85a8d88259864d274157015f8","weekend","expected_low_benefit",5
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","babysitting","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","babysitting","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","group project","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","group project","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","housemates","expected_high_benefit",7
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","housemates","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","gifts","expected_high_benefit",7
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","gifts","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","weekend","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","weekend","expected_low_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","police","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","police","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","conversation","expected_high_benefit",5
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","conversation","expected_low_benefit",5
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","concerts","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","concerts","expected_low_benefit",3
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","fundraising","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","fundraising","expected_low_benefit",3
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","meeting location","expected_high_benefit",4
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","meeting location","expected_low_benefit",4
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","scheduling","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","scheduling","expected_low_benefit",3
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","coffee","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","coffee","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","groceries","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","groceries","expected_low_benefit",2
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","meeting prep","expected_high_benefit",4
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","meeting prep","expected_low_benefit",4
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","family meals","expected_high_benefit",5
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","family meals","expected_low_benefit",5
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","feedback","expected_high_benefit",4
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","feedback","expected_low_benefit",4
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","architects","expected_high_benefit",6
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","architects","expected_low_benefit",5
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","restaurant","expected_high_benefit",7
+"d9f910127a7040d8dc0a8f4f3a4a2bb4","restaurant","expected_low_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","meeting location","expected_high_benefit",5
+"9c054a5711bf29a87d9b376239662dd3","meeting location","expected_low_benefit",5
+"9c054a5711bf29a87d9b376239662dd3","meeting prep","expected_high_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","meeting prep","expected_low_benefit",5
+"9c054a5711bf29a87d9b376239662dd3","fundraising","expected_high_benefit",4
+"9c054a5711bf29a87d9b376239662dd3","fundraising","expected_low_benefit",5
+"9c054a5711bf29a87d9b376239662dd3","coffee","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","coffee","expected_low_benefit",3
+"9c054a5711bf29a87d9b376239662dd3","conversation","expected_high_benefit",6
+"9c054a5711bf29a87d9b376239662dd3","conversation","expected_low_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","gifts","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","gifts","expected_low_benefit",3
+"9c054a5711bf29a87d9b376239662dd3","restaurant","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","restaurant","expected_low_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","police","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","police","expected_low_benefit",1
+"9c054a5711bf29a87d9b376239662dd3","feedback","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","feedback","expected_low_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","babysitting","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","babysitting","expected_low_benefit",3
+"9c054a5711bf29a87d9b376239662dd3","weekend","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","weekend","expected_low_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","scheduling","expected_high_benefit",4
+"9c054a5711bf29a87d9b376239662dd3","scheduling","expected_low_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","housemates","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","housemates","expected_low_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","concerts","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","concerts","expected_low_benefit",4
+"9c054a5711bf29a87d9b376239662dd3","group project","expected_high_benefit",2
+"9c054a5711bf29a87d9b376239662dd3","group project","expected_low_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","groceries","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","groceries","expected_low_benefit",1
+"9c054a5711bf29a87d9b376239662dd3","architects","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","architects","expected_low_benefit",5
+"9c054a5711bf29a87d9b376239662dd3","family meals","expected_high_benefit",7
+"9c054a5711bf29a87d9b376239662dd3","family meals","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","scheduling","expected_high_benefit",5
+"af7ecc30c96be3ee8f5c8276291ba949","scheduling","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","police","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","police","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","meeting prep","expected_high_benefit",5
+"af7ecc30c96be3ee8f5c8276291ba949","meeting prep","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","feedback","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","feedback","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","family meals","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","family meals","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","weekend","expected_high_benefit",5
+"af7ecc30c96be3ee8f5c8276291ba949","weekend","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","architects","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","architects","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","meeting location","expected_high_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","meeting location","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","gifts","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","gifts","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","group project","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","group project","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","coffee","expected_high_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","coffee","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","groceries","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","groceries","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","conversation","expected_high_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","conversation","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","concerts","expected_high_benefit",5
+"af7ecc30c96be3ee8f5c8276291ba949","concerts","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","babysitting","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","babysitting","expected_low_benefit",3
+"af7ecc30c96be3ee8f5c8276291ba949","restaurant","expected_high_benefit",6
+"af7ecc30c96be3ee8f5c8276291ba949","restaurant","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","housemates","expected_high_benefit",5
+"af7ecc30c96be3ee8f5c8276291ba949","housemates","expected_low_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","fundraising","expected_high_benefit",4
+"af7ecc30c96be3ee8f5c8276291ba949","fundraising","expected_low_benefit",5
+"74c7cbce61c9a59b5b2a9910055fb543","restaurant","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","restaurant","expected_low_benefit",2
+"74c7cbce61c9a59b5b2a9910055fb543","groceries","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","groceries","expected_low_benefit",1
+"74c7cbce61c9a59b5b2a9910055fb543","babysitting","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","babysitting","expected_low_benefit",2
+"74c7cbce61c9a59b5b2a9910055fb543","group project","expected_high_benefit",2
+"74c7cbce61c9a59b5b2a9910055fb543","group project","expected_low_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","concerts","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","concerts","expected_low_benefit",3
+"74c7cbce61c9a59b5b2a9910055fb543","meeting prep","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","meeting prep","expected_low_benefit",3
+"74c7cbce61c9a59b5b2a9910055fb543","architects","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","architects","expected_low_benefit",4
+"74c7cbce61c9a59b5b2a9910055fb543","conversation","expected_high_benefit",5
+"74c7cbce61c9a59b5b2a9910055fb543","conversation","expected_low_benefit",5
+"74c7cbce61c9a59b5b2a9910055fb543","fundraising","expected_high_benefit",6
+"74c7cbce61c9a59b5b2a9910055fb543","fundraising","expected_low_benefit",3
+"74c7cbce61c9a59b5b2a9910055fb543","gifts","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","gifts","expected_low_benefit",2
+"74c7cbce61c9a59b5b2a9910055fb543","scheduling","expected_high_benefit",5
+"74c7cbce61c9a59b5b2a9910055fb543","scheduling","expected_low_benefit",3
+"74c7cbce61c9a59b5b2a9910055fb543","family meals","expected_high_benefit",5
+"74c7cbce61c9a59b5b2a9910055fb543","family meals","expected_low_benefit",6
+"74c7cbce61c9a59b5b2a9910055fb543","coffee","expected_high_benefit",6
+"74c7cbce61c9a59b5b2a9910055fb543","coffee","expected_low_benefit",6
+"74c7cbce61c9a59b5b2a9910055fb543","feedback","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","feedback","expected_low_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","housemates","expected_high_benefit",6
+"74c7cbce61c9a59b5b2a9910055fb543","housemates","expected_low_benefit",4
+"74c7cbce61c9a59b5b2a9910055fb543","weekend","expected_high_benefit",6
+"74c7cbce61c9a59b5b2a9910055fb543","weekend","expected_low_benefit",1
+"74c7cbce61c9a59b5b2a9910055fb543","police","expected_high_benefit",7
+"74c7cbce61c9a59b5b2a9910055fb543","police","expected_low_benefit",2
+"74c7cbce61c9a59b5b2a9910055fb543","meeting location","expected_high_benefit",5
+"74c7cbce61c9a59b5b2a9910055fb543","meeting location","expected_low_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","meeting prep","expected_high_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","meeting prep","expected_low_benefit",4
+"97d84bdfa9e71cb408ff6943b7cb3cd3","conversation","expected_high_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","conversation","expected_low_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","scheduling","expected_high_benefit",6
+"97d84bdfa9e71cb408ff6943b7cb3cd3","scheduling","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","groceries","expected_high_benefit",7
+"97d84bdfa9e71cb408ff6943b7cb3cd3","groceries","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","feedback","expected_high_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","feedback","expected_low_benefit",4
+"97d84bdfa9e71cb408ff6943b7cb3cd3","family meals","expected_high_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","family meals","expected_low_benefit",4
+"97d84bdfa9e71cb408ff6943b7cb3cd3","meeting location","expected_high_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","meeting location","expected_low_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","babysitting","expected_high_benefit",6
+"97d84bdfa9e71cb408ff6943b7cb3cd3","babysitting","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","architects","expected_high_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","architects","expected_low_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","police","expected_high_benefit",6
+"97d84bdfa9e71cb408ff6943b7cb3cd3","police","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","housemates","expected_high_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","housemates","expected_low_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","group project","expected_high_benefit",4
+"97d84bdfa9e71cb408ff6943b7cb3cd3","group project","expected_low_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","restaurant","expected_high_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","restaurant","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","gifts","expected_high_benefit",7
+"97d84bdfa9e71cb408ff6943b7cb3cd3","gifts","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","fundraising","expected_high_benefit",6
+"97d84bdfa9e71cb408ff6943b7cb3cd3","fundraising","expected_low_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","weekend","expected_high_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","weekend","expected_low_benefit",3
+"97d84bdfa9e71cb408ff6943b7cb3cd3","coffee","expected_high_benefit",5
+"97d84bdfa9e71cb408ff6943b7cb3cd3","coffee","expected_low_benefit",2
+"97d84bdfa9e71cb408ff6943b7cb3cd3","concerts","expected_high_benefit",6
+"97d84bdfa9e71cb408ff6943b7cb3cd3","concerts","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","weekend","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","weekend","expected_low_benefit",2
+"fe830ac48cad5f9d7d66f3c41c23a9f0","coffee","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","coffee","expected_low_benefit",5
+"fe830ac48cad5f9d7d66f3c41c23a9f0","feedback","expected_high_benefit",5
+"fe830ac48cad5f9d7d66f3c41c23a9f0","feedback","expected_low_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","architects","expected_high_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","architects","expected_low_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","meeting prep","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","meeting prep","expected_low_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","family meals","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","family meals","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","concerts","expected_high_benefit",7
+"fe830ac48cad5f9d7d66f3c41c23a9f0","concerts","expected_low_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","group project","expected_high_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","group project","expected_low_benefit",5
+"fe830ac48cad5f9d7d66f3c41c23a9f0","babysitting","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","babysitting","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","scheduling","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","scheduling","expected_low_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","meeting location","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","meeting location","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","restaurant","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","restaurant","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","fundraising","expected_high_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","fundraising","expected_low_benefit",4
+"fe830ac48cad5f9d7d66f3c41c23a9f0","groceries","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","groceries","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","housemates","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","housemates","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","police","expected_high_benefit",7
+"fe830ac48cad5f9d7d66f3c41c23a9f0","police","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","conversation","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","conversation","expected_low_benefit",3
+"fe830ac48cad5f9d7d66f3c41c23a9f0","gifts","expected_high_benefit",6
+"fe830ac48cad5f9d7d66f3c41c23a9f0","gifts","expected_low_benefit",3
+"9b1444f9579f7d1673d48336fc0674da","fundraising","expected_high_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","fundraising","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","coffee","expected_high_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","coffee","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","babysitting","expected_high_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","babysitting","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","restaurant","expected_high_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","restaurant","expected_low_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","scheduling","expected_high_benefit",3
+"9b1444f9579f7d1673d48336fc0674da","scheduling","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","gifts","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","gifts","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","feedback","expected_high_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","feedback","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","architects","expected_high_benefit",2
+"9b1444f9579f7d1673d48336fc0674da","architects","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","groceries","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","groceries","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","weekend","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","weekend","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","conversation","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","conversation","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","group project","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","group project","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","housemates","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","housemates","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","family meals","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","family meals","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","police","expected_high_benefit",3
+"9b1444f9579f7d1673d48336fc0674da","police","expected_low_benefit",6
+"9b1444f9579f7d1673d48336fc0674da","meeting location","expected_high_benefit",3
+"9b1444f9579f7d1673d48336fc0674da","meeting location","expected_low_benefit",3
+"9b1444f9579f7d1673d48336fc0674da","meeting prep","expected_high_benefit",3
+"9b1444f9579f7d1673d48336fc0674da","meeting prep","expected_low_benefit",5
+"9b1444f9579f7d1673d48336fc0674da","concerts","expected_high_benefit",4
+"9b1444f9579f7d1673d48336fc0674da","concerts","expected_low_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","weekend","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","weekend","expected_low_benefit",3
+"19ec2ea2a9b77705762f80f4670f3bd6","architects","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","architects","expected_low_benefit",1
+"19ec2ea2a9b77705762f80f4670f3bd6","feedback","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","feedback","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","conversation","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","conversation","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","family meals","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","family meals","expected_low_benefit",3
+"19ec2ea2a9b77705762f80f4670f3bd6","coffee","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","coffee","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","housemates","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","housemates","expected_low_benefit",3
+"19ec2ea2a9b77705762f80f4670f3bd6","babysitting","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","babysitting","expected_low_benefit",3
+"19ec2ea2a9b77705762f80f4670f3bd6","meeting prep","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","meeting prep","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","restaurant","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","restaurant","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","police","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","police","expected_low_benefit",3
+"19ec2ea2a9b77705762f80f4670f3bd6","scheduling","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","scheduling","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","group project","expected_high_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","group project","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","gifts","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","gifts","expected_low_benefit",2
+"19ec2ea2a9b77705762f80f4670f3bd6","concerts","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","concerts","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","fundraising","expected_high_benefit",6
+"19ec2ea2a9b77705762f80f4670f3bd6","fundraising","expected_low_benefit",3
+"19ec2ea2a9b77705762f80f4670f3bd6","groceries","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","groceries","expected_low_benefit",4
+"19ec2ea2a9b77705762f80f4670f3bd6","meeting location","expected_high_benefit",5
+"19ec2ea2a9b77705762f80f4670f3bd6","meeting location","expected_low_benefit",4
+"740afc3256dbbd429562b15a3acf41ab","architects","expected_high_benefit",6
+"740afc3256dbbd429562b15a3acf41ab","architects","expected_low_benefit",1
+"740afc3256dbbd429562b15a3acf41ab","police","expected_high_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","police","expected_low_benefit",1
+"740afc3256dbbd429562b15a3acf41ab","weekend","expected_high_benefit",6
+"740afc3256dbbd429562b15a3acf41ab","weekend","expected_low_benefit",2
+"740afc3256dbbd429562b15a3acf41ab","group project","expected_high_benefit",5
+"740afc3256dbbd429562b15a3acf41ab","group project","expected_low_benefit",2
+"740afc3256dbbd429562b15a3acf41ab","concerts","expected_high_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","concerts","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","meeting prep","expected_high_benefit",6
+"740afc3256dbbd429562b15a3acf41ab","meeting prep","expected_low_benefit",2
+"740afc3256dbbd429562b15a3acf41ab","meeting location","expected_high_benefit",4
+"740afc3256dbbd429562b15a3acf41ab","meeting location","expected_low_benefit",4
+"740afc3256dbbd429562b15a3acf41ab","scheduling","expected_high_benefit",6
+"740afc3256dbbd429562b15a3acf41ab","scheduling","expected_low_benefit",2
+"740afc3256dbbd429562b15a3acf41ab","fundraising","expected_high_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","fundraising","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","groceries","expected_high_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","groceries","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","restaurant","expected_high_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","restaurant","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","babysitting","expected_high_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","babysitting","expected_low_benefit",2
+"740afc3256dbbd429562b15a3acf41ab","family meals","expected_high_benefit",1
+"740afc3256dbbd429562b15a3acf41ab","family meals","expected_low_benefit",7
+"740afc3256dbbd429562b15a3acf41ab","coffee","expected_high_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","coffee","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","housemates","expected_high_benefit",6
+"740afc3256dbbd429562b15a3acf41ab","housemates","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","gifts","expected_high_benefit",6
+"740afc3256dbbd429562b15a3acf41ab","gifts","expected_low_benefit",3
+"740afc3256dbbd429562b15a3acf41ab","conversation","expected_high_benefit",5
+"740afc3256dbbd429562b15a3acf41ab","conversation","expected_low_benefit",5
+"740afc3256dbbd429562b15a3acf41ab","feedback","expected_high_benefit",5
+"740afc3256dbbd429562b15a3acf41ab","feedback","expected_low_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","police","expected_high_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","police","expected_low_benefit",2
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","coffee","expected_high_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","coffee","expected_low_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","concerts","expected_high_benefit",7
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","concerts","expected_low_benefit",5
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","conversation","expected_high_benefit",5
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","conversation","expected_low_benefit",2
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","feedback","expected_high_benefit",5
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","feedback","expected_low_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","architects","expected_high_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","architects","expected_low_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","meeting prep","expected_high_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","meeting prep","expected_low_benefit",5
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","weekend","expected_high_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","weekend","expected_low_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","fundraising","expected_high_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","fundraising","expected_low_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","meeting location","expected_high_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","meeting location","expected_low_benefit",2
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","gifts","expected_high_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","gifts","expected_low_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","groceries","expected_high_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","groceries","expected_low_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","group project","expected_high_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","group project","expected_low_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","scheduling","expected_high_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","scheduling","expected_low_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","family meals","expected_high_benefit",5
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","family meals","expected_low_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","babysitting","expected_high_benefit",6
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","babysitting","expected_low_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","restaurant","expected_high_benefit",5
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","restaurant","expected_low_benefit",3
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","housemates","expected_high_benefit",4
+"d14b2bbeb849c6c9a6fdaa87a4b7b926","housemates","expected_low_benefit",5
+"d21e76abf41797df52718913c99bf41a","groceries","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","groceries","expected_low_benefit",5
+"d21e76abf41797df52718913c99bf41a","babysitting","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","babysitting","expected_low_benefit",4
+"d21e76abf41797df52718913c99bf41a","conversation","expected_high_benefit",5
+"d21e76abf41797df52718913c99bf41a","conversation","expected_low_benefit",5
+"d21e76abf41797df52718913c99bf41a","fundraising","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","fundraising","expected_low_benefit",5
+"d21e76abf41797df52718913c99bf41a","meeting location","expected_high_benefit",3
+"d21e76abf41797df52718913c99bf41a","meeting location","expected_low_benefit",3
+"d21e76abf41797df52718913c99bf41a","architects","expected_high_benefit",7
+"d21e76abf41797df52718913c99bf41a","architects","expected_low_benefit",5
+"d21e76abf41797df52718913c99bf41a","concerts","expected_high_benefit",7
+"d21e76abf41797df52718913c99bf41a","concerts","expected_low_benefit",2
+"d21e76abf41797df52718913c99bf41a","meeting prep","expected_high_benefit",5
+"d21e76abf41797df52718913c99bf41a","meeting prep","expected_low_benefit",3
+"d21e76abf41797df52718913c99bf41a","scheduling","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","scheduling","expected_low_benefit",4
+"d21e76abf41797df52718913c99bf41a","feedback","expected_high_benefit",5
+"d21e76abf41797df52718913c99bf41a","feedback","expected_low_benefit",3
+"d21e76abf41797df52718913c99bf41a","gifts","expected_high_benefit",7
+"d21e76abf41797df52718913c99bf41a","gifts","expected_low_benefit",2
+"d21e76abf41797df52718913c99bf41a","weekend","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","weekend","expected_low_benefit",2
+"d21e76abf41797df52718913c99bf41a","group project","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","group project","expected_low_benefit",4
+"d21e76abf41797df52718913c99bf41a","restaurant","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","restaurant","expected_low_benefit",4
+"d21e76abf41797df52718913c99bf41a","coffee","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","coffee","expected_low_benefit",4
+"d21e76abf41797df52718913c99bf41a","housemates","expected_high_benefit",5
+"d21e76abf41797df52718913c99bf41a","housemates","expected_low_benefit",5
+"d21e76abf41797df52718913c99bf41a","police","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","police","expected_low_benefit",4
+"d21e76abf41797df52718913c99bf41a","family meals","expected_high_benefit",6
+"d21e76abf41797df52718913c99bf41a","family meals","expected_low_benefit",3
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","housemates","expected_high_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","housemates","expected_low_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","weekend","expected_high_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","weekend","expected_low_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","feedback","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","feedback","expected_low_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","groceries","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","groceries","expected_low_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","police","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","police","expected_low_benefit",3
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","babysitting","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","babysitting","expected_low_benefit",3
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","gifts","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","gifts","expected_low_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","concerts","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","concerts","expected_low_benefit",5
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","conversation","expected_high_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","conversation","expected_low_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","meeting prep","expected_high_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","meeting prep","expected_low_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","restaurant","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","restaurant","expected_low_benefit",3
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","group project","expected_high_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","group project","expected_low_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","meeting location","expected_high_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","meeting location","expected_low_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","family meals","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","family meals","expected_low_benefit",3
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","scheduling","expected_high_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","scheduling","expected_low_benefit",3
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","coffee","expected_high_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","coffee","expected_low_benefit",4
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","fundraising","expected_high_benefit",5
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","fundraising","expected_low_benefit",6
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","architects","expected_high_benefit",7
+"5bbccccfb23eaa28d010dfe5b3ab3e2f","architects","expected_low_benefit",7
+"2a8e3615fc065b73e8749da3123b2c72","restaurant","expected_high_benefit",6
+"2a8e3615fc065b73e8749da3123b2c72","restaurant","expected_low_benefit",1
+"2a8e3615fc065b73e8749da3123b2c72","coffee","expected_high_benefit",6
+"2a8e3615fc065b73e8749da3123b2c72","coffee","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","gifts","expected_high_benefit",6
+"2a8e3615fc065b73e8749da3123b2c72","gifts","expected_low_benefit",1
+"2a8e3615fc065b73e8749da3123b2c72","housemates","expected_high_benefit",5
+"2a8e3615fc065b73e8749da3123b2c72","housemates","expected_low_benefit",3
+"2a8e3615fc065b73e8749da3123b2c72","groceries","expected_high_benefit",5
+"2a8e3615fc065b73e8749da3123b2c72","groceries","expected_low_benefit",4
+"2a8e3615fc065b73e8749da3123b2c72","police","expected_high_benefit",7
+"2a8e3615fc065b73e8749da3123b2c72","police","expected_low_benefit",1
+"2a8e3615fc065b73e8749da3123b2c72","babysitting","expected_high_benefit",6
+"2a8e3615fc065b73e8749da3123b2c72","babysitting","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","family meals","expected_high_benefit",7
+"2a8e3615fc065b73e8749da3123b2c72","family meals","expected_low_benefit",3
+"2a8e3615fc065b73e8749da3123b2c72","feedback","expected_high_benefit",5
+"2a8e3615fc065b73e8749da3123b2c72","feedback","expected_low_benefit",3
+"2a8e3615fc065b73e8749da3123b2c72","meeting location","expected_high_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","meeting location","expected_low_benefit",1
+"2a8e3615fc065b73e8749da3123b2c72","scheduling","expected_high_benefit",5
+"2a8e3615fc065b73e8749da3123b2c72","scheduling","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","weekend","expected_high_benefit",5
+"2a8e3615fc065b73e8749da3123b2c72","weekend","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","fundraising","expected_high_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","fundraising","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","group project","expected_high_benefit",4
+"2a8e3615fc065b73e8749da3123b2c72","group project","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","conversation","expected_high_benefit",4
+"2a8e3615fc065b73e8749da3123b2c72","conversation","expected_low_benefit",3
+"2a8e3615fc065b73e8749da3123b2c72","architects","expected_high_benefit",4
+"2a8e3615fc065b73e8749da3123b2c72","architects","expected_low_benefit",3
+"2a8e3615fc065b73e8749da3123b2c72","meeting prep","expected_high_benefit",3
+"2a8e3615fc065b73e8749da3123b2c72","meeting prep","expected_low_benefit",2
+"2a8e3615fc065b73e8749da3123b2c72","concerts","expected_high_benefit",6
+"2a8e3615fc065b73e8749da3123b2c72","concerts","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","concerts","expected_high_benefit",6
+"61ad9a0947ba6bb1eef3686545fc6442","concerts","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","meeting prep","expected_high_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","meeting prep","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","group project","expected_high_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","group project","expected_low_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","architects","expected_high_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","architects","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","meeting location","expected_high_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","meeting location","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","restaurant","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","restaurant","expected_low_benefit",2
+"61ad9a0947ba6bb1eef3686545fc6442","housemates","expected_high_benefit",4
+"61ad9a0947ba6bb1eef3686545fc6442","housemates","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","conversation","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","conversation","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","groceries","expected_high_benefit",4
+"61ad9a0947ba6bb1eef3686545fc6442","groceries","expected_low_benefit",2
+"61ad9a0947ba6bb1eef3686545fc6442","police","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","police","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","feedback","expected_high_benefit",4
+"61ad9a0947ba6bb1eef3686545fc6442","feedback","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","weekend","expected_high_benefit",NA
+"61ad9a0947ba6bb1eef3686545fc6442","weekend","expected_low_benefit",2
+"61ad9a0947ba6bb1eef3686545fc6442","scheduling","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","scheduling","expected_low_benefit",2
+"61ad9a0947ba6bb1eef3686545fc6442","gifts","expected_high_benefit",6
+"61ad9a0947ba6bb1eef3686545fc6442","gifts","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","babysitting","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","babysitting","expected_low_benefit",2
+"61ad9a0947ba6bb1eef3686545fc6442","family meals","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","family meals","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","coffee","expected_high_benefit",5
+"61ad9a0947ba6bb1eef3686545fc6442","coffee","expected_low_benefit",3
+"61ad9a0947ba6bb1eef3686545fc6442","fundraising","expected_high_benefit",4
+"61ad9a0947ba6bb1eef3686545fc6442","fundraising","expected_low_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","restaurant","expected_high_benefit",6
+"135d4e7dfd7c9a4b7f1d527768776308","restaurant","expected_low_benefit",2
+"135d4e7dfd7c9a4b7f1d527768776308","meeting prep","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","meeting prep","expected_low_benefit",2
+"135d4e7dfd7c9a4b7f1d527768776308","conversation","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","conversation","expected_low_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","group project","expected_high_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","group project","expected_low_benefit",2
+"135d4e7dfd7c9a4b7f1d527768776308","concerts","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","concerts","expected_low_benefit",5
+"135d4e7dfd7c9a4b7f1d527768776308","groceries","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","groceries","expected_low_benefit",3
+"135d4e7dfd7c9a4b7f1d527768776308","housemates","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","housemates","expected_low_benefit",3
+"135d4e7dfd7c9a4b7f1d527768776308","fundraising","expected_high_benefit",2
+"135d4e7dfd7c9a4b7f1d527768776308","fundraising","expected_low_benefit",5
+"135d4e7dfd7c9a4b7f1d527768776308","coffee","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","coffee","expected_low_benefit",3
+"135d4e7dfd7c9a4b7f1d527768776308","police","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","police","expected_low_benefit",6
+"135d4e7dfd7c9a4b7f1d527768776308","scheduling","expected_high_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","scheduling","expected_low_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","weekend","expected_high_benefit",6
+"135d4e7dfd7c9a4b7f1d527768776308","weekend","expected_low_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","gifts","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","gifts","expected_low_benefit",6
+"135d4e7dfd7c9a4b7f1d527768776308","babysitting","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","babysitting","expected_low_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","family meals","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","family meals","expected_low_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","meeting location","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","meeting location","expected_low_benefit",3
+"135d4e7dfd7c9a4b7f1d527768776308","feedback","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","feedback","expected_low_benefit",4
+"135d4e7dfd7c9a4b7f1d527768776308","architects","expected_high_benefit",1
+"135d4e7dfd7c9a4b7f1d527768776308","architects","expected_low_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","police","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","police","expected_low_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","restaurant","expected_high_benefit",6
+"ab3c0f9ff65d3046b0a8cb738147d5d2","restaurant","expected_low_benefit",2
+"ab3c0f9ff65d3046b0a8cb738147d5d2","meeting location","expected_high_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","meeting location","expected_low_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","conversation","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","conversation","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","meeting prep","expected_high_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","meeting prep","expected_low_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","group project","expected_high_benefit",2
+"ab3c0f9ff65d3046b0a8cb738147d5d2","group project","expected_low_benefit",6
+"ab3c0f9ff65d3046b0a8cb738147d5d2","scheduling","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","scheduling","expected_low_benefit",2
+"ab3c0f9ff65d3046b0a8cb738147d5d2","family meals","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","family meals","expected_low_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","concerts","expected_high_benefit",6
+"ab3c0f9ff65d3046b0a8cb738147d5d2","concerts","expected_low_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","feedback","expected_high_benefit",6
+"ab3c0f9ff65d3046b0a8cb738147d5d2","feedback","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","groceries","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","groceries","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","coffee","expected_high_benefit",4
+"ab3c0f9ff65d3046b0a8cb738147d5d2","coffee","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","weekend","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","weekend","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","architects","expected_high_benefit",6
+"ab3c0f9ff65d3046b0a8cb738147d5d2","architects","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","housemates","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","housemates","expected_low_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","babysitting","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","babysitting","expected_low_benefit",2
+"ab3c0f9ff65d3046b0a8cb738147d5d2","fundraising","expected_high_benefit",5
+"ab3c0f9ff65d3046b0a8cb738147d5d2","fundraising","expected_low_benefit",3
+"ab3c0f9ff65d3046b0a8cb738147d5d2","gifts","expected_high_benefit",6
+"ab3c0f9ff65d3046b0a8cb738147d5d2","gifts","expected_low_benefit",2
+"34960800b48fba1ce67cea160a5d0ccf","police","expected_high_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","police","expected_low_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","babysitting","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","babysitting","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","coffee","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","coffee","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","gifts","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","gifts","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","architects","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","architects","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","groceries","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","groceries","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","fundraising","expected_high_benefit",5
+"34960800b48fba1ce67cea160a5d0ccf","fundraising","expected_low_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","restaurant","expected_high_benefit",7
+"34960800b48fba1ce67cea160a5d0ccf","restaurant","expected_low_benefit",2
+"34960800b48fba1ce67cea160a5d0ccf","meeting prep","expected_high_benefit",5
+"34960800b48fba1ce67cea160a5d0ccf","meeting prep","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","feedback","expected_high_benefit",5
+"34960800b48fba1ce67cea160a5d0ccf","feedback","expected_low_benefit",5
+"34960800b48fba1ce67cea160a5d0ccf","group project","expected_high_benefit",5
+"34960800b48fba1ce67cea160a5d0ccf","group project","expected_low_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","scheduling","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","scheduling","expected_low_benefit",2
+"34960800b48fba1ce67cea160a5d0ccf","housemates","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","housemates","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","family meals","expected_high_benefit",7
+"34960800b48fba1ce67cea160a5d0ccf","family meals","expected_low_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","weekend","expected_high_benefit",7
+"34960800b48fba1ce67cea160a5d0ccf","weekend","expected_low_benefit",2
+"34960800b48fba1ce67cea160a5d0ccf","conversation","expected_high_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","conversation","expected_low_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","meeting location","expected_high_benefit",4
+"34960800b48fba1ce67cea160a5d0ccf","meeting location","expected_low_benefit",3
+"34960800b48fba1ce67cea160a5d0ccf","concerts","expected_high_benefit",6
+"34960800b48fba1ce67cea160a5d0ccf","concerts","expected_low_benefit",4
+"4316d74281eee014b478495c8c55d78d","housemates","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","housemates","expected_low_benefit",4
+"4316d74281eee014b478495c8c55d78d","group project","expected_high_benefit",5
+"4316d74281eee014b478495c8c55d78d","group project","expected_low_benefit",5
+"4316d74281eee014b478495c8c55d78d","meeting prep","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","meeting prep","expected_low_benefit",7
+"4316d74281eee014b478495c8c55d78d","fundraising","expected_high_benefit",3
+"4316d74281eee014b478495c8c55d78d","fundraising","expected_low_benefit",5
+"4316d74281eee014b478495c8c55d78d","feedback","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","feedback","expected_low_benefit",7
+"4316d74281eee014b478495c8c55d78d","architects","expected_high_benefit",6
+"4316d74281eee014b478495c8c55d78d","architects","expected_low_benefit",7
+"4316d74281eee014b478495c8c55d78d","scheduling","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","scheduling","expected_low_benefit",1
+"4316d74281eee014b478495c8c55d78d","groceries","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","groceries","expected_low_benefit",4
+"4316d74281eee014b478495c8c55d78d","conversation","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","conversation","expected_low_benefit",1
+"4316d74281eee014b478495c8c55d78d","meeting location","expected_high_benefit",4
+"4316d74281eee014b478495c8c55d78d","meeting location","expected_low_benefit",7
+"4316d74281eee014b478495c8c55d78d","family meals","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","family meals","expected_low_benefit",7
+"4316d74281eee014b478495c8c55d78d","gifts","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","gifts","expected_low_benefit",1
+"4316d74281eee014b478495c8c55d78d","police","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","police","expected_low_benefit",1
+"4316d74281eee014b478495c8c55d78d","restaurant","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","restaurant","expected_low_benefit",1
+"4316d74281eee014b478495c8c55d78d","babysitting","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","babysitting","expected_low_benefit",3
+"4316d74281eee014b478495c8c55d78d","coffee","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","coffee","expected_low_benefit",4
+"4316d74281eee014b478495c8c55d78d","weekend","expected_high_benefit",5
+"4316d74281eee014b478495c8c55d78d","weekend","expected_low_benefit",1
+"4316d74281eee014b478495c8c55d78d","concerts","expected_high_benefit",7
+"4316d74281eee014b478495c8c55d78d","concerts","expected_low_benefit",1
+"76faf29bc4357e95dba0e00e600dcf31","group project","expected_high_benefit",5
+"76faf29bc4357e95dba0e00e600dcf31","group project","expected_low_benefit",6
+"76faf29bc4357e95dba0e00e600dcf31","family meals","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","family meals","expected_low_benefit",4
+"76faf29bc4357e95dba0e00e600dcf31","feedback","expected_high_benefit",6
+"76faf29bc4357e95dba0e00e600dcf31","feedback","expected_low_benefit",4
+"76faf29bc4357e95dba0e00e600dcf31","conversation","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","conversation","expected_low_benefit",2
+"76faf29bc4357e95dba0e00e600dcf31","concerts","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","concerts","expected_low_benefit",2
+"76faf29bc4357e95dba0e00e600dcf31","babysitting","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","babysitting","expected_low_benefit",1
+"76faf29bc4357e95dba0e00e600dcf31","scheduling","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","scheduling","expected_low_benefit",2
+"76faf29bc4357e95dba0e00e600dcf31","coffee","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","coffee","expected_low_benefit",2
+"76faf29bc4357e95dba0e00e600dcf31","housemates","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","housemates","expected_low_benefit",4
+"76faf29bc4357e95dba0e00e600dcf31","architects","expected_high_benefit",6
+"76faf29bc4357e95dba0e00e600dcf31","architects","expected_low_benefit",4
+"76faf29bc4357e95dba0e00e600dcf31","weekend","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","weekend","expected_low_benefit",3
+"76faf29bc4357e95dba0e00e600dcf31","restaurant","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","restaurant","expected_low_benefit",2
+"76faf29bc4357e95dba0e00e600dcf31","groceries","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","groceries","expected_low_benefit",5
+"76faf29bc4357e95dba0e00e600dcf31","police","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","police","expected_low_benefit",3
+"76faf29bc4357e95dba0e00e600dcf31","gifts","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","gifts","expected_low_benefit",1
+"76faf29bc4357e95dba0e00e600dcf31","meeting location","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","meeting location","expected_low_benefit",4
+"76faf29bc4357e95dba0e00e600dcf31","meeting prep","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","meeting prep","expected_low_benefit",2
+"76faf29bc4357e95dba0e00e600dcf31","fundraising","expected_high_benefit",7
+"76faf29bc4357e95dba0e00e600dcf31","fundraising","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","architects","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","architects","expected_low_benefit",3
+"31d30ebce5be771d63b689322a93aee2","restaurant","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","restaurant","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","housemates","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","housemates","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","family meals","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","family meals","expected_low_benefit",5
+"31d30ebce5be771d63b689322a93aee2","coffee","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","coffee","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","meeting location","expected_high_benefit",4
+"31d30ebce5be771d63b689322a93aee2","meeting location","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","meeting prep","expected_high_benefit",4
+"31d30ebce5be771d63b689322a93aee2","meeting prep","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","concerts","expected_high_benefit",7
+"31d30ebce5be771d63b689322a93aee2","concerts","expected_low_benefit",5
+"31d30ebce5be771d63b689322a93aee2","fundraising","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","fundraising","expected_low_benefit",5
+"31d30ebce5be771d63b689322a93aee2","scheduling","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","scheduling","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","babysitting","expected_high_benefit",7
+"31d30ebce5be771d63b689322a93aee2","babysitting","expected_low_benefit",2
+"31d30ebce5be771d63b689322a93aee2","police","expected_high_benefit",7
+"31d30ebce5be771d63b689322a93aee2","police","expected_low_benefit",2
+"31d30ebce5be771d63b689322a93aee2","weekend","expected_high_benefit",5
+"31d30ebce5be771d63b689322a93aee2","weekend","expected_low_benefit",5
+"31d30ebce5be771d63b689322a93aee2","group project","expected_high_benefit",4
+"31d30ebce5be771d63b689322a93aee2","group project","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","feedback","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","feedback","expected_low_benefit",2
+"31d30ebce5be771d63b689322a93aee2","conversation","expected_high_benefit",4
+"31d30ebce5be771d63b689322a93aee2","conversation","expected_low_benefit",4
+"31d30ebce5be771d63b689322a93aee2","groceries","expected_high_benefit",6
+"31d30ebce5be771d63b689322a93aee2","groceries","expected_low_benefit",2
+"31d30ebce5be771d63b689322a93aee2","gifts","expected_high_benefit",7
+"31d30ebce5be771d63b689322a93aee2","gifts","expected_low_benefit",4
+"5d242d19364d4ebebb84420f32be3b3b","conversation","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","conversation","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","gifts","expected_high_benefit",6
+"5d242d19364d4ebebb84420f32be3b3b","gifts","expected_low_benefit",2
+"5d242d19364d4ebebb84420f32be3b3b","feedback","expected_high_benefit",6
+"5d242d19364d4ebebb84420f32be3b3b","feedback","expected_low_benefit",2
+"5d242d19364d4ebebb84420f32be3b3b","group project","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","group project","expected_low_benefit",4
+"5d242d19364d4ebebb84420f32be3b3b","meeting location","expected_high_benefit",4
+"5d242d19364d4ebebb84420f32be3b3b","meeting location","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","weekend","expected_high_benefit",6
+"5d242d19364d4ebebb84420f32be3b3b","weekend","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","babysitting","expected_high_benefit",6
+"5d242d19364d4ebebb84420f32be3b3b","babysitting","expected_low_benefit",2
+"5d242d19364d4ebebb84420f32be3b3b","family meals","expected_high_benefit",7
+"5d242d19364d4ebebb84420f32be3b3b","family meals","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","concerts","expected_high_benefit",7
+"5d242d19364d4ebebb84420f32be3b3b","concerts","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","restaurant","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","restaurant","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","housemates","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","housemates","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","architects","expected_high_benefit",NA
+"5d242d19364d4ebebb84420f32be3b3b","architects","expected_low_benefit",4
+"5d242d19364d4ebebb84420f32be3b3b","coffee","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","coffee","expected_low_benefit",4
+"5d242d19364d4ebebb84420f32be3b3b","groceries","expected_high_benefit",6
+"5d242d19364d4ebebb84420f32be3b3b","groceries","expected_low_benefit",2
+"5d242d19364d4ebebb84420f32be3b3b","meeting prep","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","meeting prep","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","fundraising","expected_high_benefit",6
+"5d242d19364d4ebebb84420f32be3b3b","fundraising","expected_low_benefit",2
+"5d242d19364d4ebebb84420f32be3b3b","scheduling","expected_high_benefit",5
+"5d242d19364d4ebebb84420f32be3b3b","scheduling","expected_low_benefit",3
+"5d242d19364d4ebebb84420f32be3b3b","police","expected_high_benefit",7
+"5d242d19364d4ebebb84420f32be3b3b","police","expected_low_benefit",2
+"b21f562684ba37f83ad454579459a4e2","meeting location","expected_high_benefit",5
+"b21f562684ba37f83ad454579459a4e2","meeting location","expected_low_benefit",5
+"b21f562684ba37f83ad454579459a4e2","meeting prep","expected_high_benefit",4
+"b21f562684ba37f83ad454579459a4e2","meeting prep","expected_low_benefit",4
+"b21f562684ba37f83ad454579459a4e2","family meals","expected_high_benefit",4
+"b21f562684ba37f83ad454579459a4e2","family meals","expected_low_benefit",3
+"b21f562684ba37f83ad454579459a4e2","group project","expected_high_benefit",3
+"b21f562684ba37f83ad454579459a4e2","group project","expected_low_benefit",6
+"b21f562684ba37f83ad454579459a4e2","groceries","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","groceries","expected_low_benefit",6
+"b21f562684ba37f83ad454579459a4e2","gifts","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","gifts","expected_low_benefit",6
+"b21f562684ba37f83ad454579459a4e2","feedback","expected_high_benefit",4
+"b21f562684ba37f83ad454579459a4e2","feedback","expected_low_benefit",4
+"b21f562684ba37f83ad454579459a4e2","scheduling","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","scheduling","expected_low_benefit",4
+"b21f562684ba37f83ad454579459a4e2","architects","expected_high_benefit",3
+"b21f562684ba37f83ad454579459a4e2","architects","expected_low_benefit",3
+"b21f562684ba37f83ad454579459a4e2","fundraising","expected_high_benefit",5
+"b21f562684ba37f83ad454579459a4e2","fundraising","expected_low_benefit",5
+"b21f562684ba37f83ad454579459a4e2","restaurant","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","restaurant","expected_low_benefit",3
+"b21f562684ba37f83ad454579459a4e2","weekend","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","weekend","expected_low_benefit",2
+"b21f562684ba37f83ad454579459a4e2","housemates","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","housemates","expected_low_benefit",6
+"b21f562684ba37f83ad454579459a4e2","conversation","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","conversation","expected_low_benefit",6
+"b21f562684ba37f83ad454579459a4e2","coffee","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","coffee","expected_low_benefit",4
+"b21f562684ba37f83ad454579459a4e2","babysitting","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","babysitting","expected_low_benefit",5
+"b21f562684ba37f83ad454579459a4e2","police","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","police","expected_low_benefit",6
+"b21f562684ba37f83ad454579459a4e2","concerts","expected_high_benefit",6
+"b21f562684ba37f83ad454579459a4e2","concerts","expected_low_benefit",3
+"7d27eec2944024b3f7996179f6c978f7","police","expected_high_benefit",6
+"7d27eec2944024b3f7996179f6c978f7","police","expected_low_benefit",6
+"7d27eec2944024b3f7996179f6c978f7","housemates","expected_high_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","housemates","expected_low_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","weekend","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","weekend","expected_low_benefit",7
+"7d27eec2944024b3f7996179f6c978f7","feedback","expected_high_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","feedback","expected_low_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","concerts","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","concerts","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","architects","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","architects","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","meeting location","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","meeting location","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","fundraising","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","fundraising","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","coffee","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","coffee","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","restaurant","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","restaurant","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","groceries","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","groceries","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","meeting prep","expected_high_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","meeting prep","expected_low_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","scheduling","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","scheduling","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","gifts","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","gifts","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","conversation","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","conversation","expected_low_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","babysitting","expected_high_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","babysitting","expected_low_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","group project","expected_high_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","group project","expected_low_benefit",2
+"7d27eec2944024b3f7996179f6c978f7","family meals","expected_high_benefit",1
+"7d27eec2944024b3f7996179f6c978f7","family meals","expected_low_benefit",1
+"66c84b79700e4bff163db4eaac7f348c","concerts","expected_high_benefit",7
+"66c84b79700e4bff163db4eaac7f348c","concerts","expected_low_benefit",3
+"66c84b79700e4bff163db4eaac7f348c","restaurant","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","restaurant","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","architects","expected_high_benefit",7
+"66c84b79700e4bff163db4eaac7f348c","architects","expected_low_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","family meals","expected_high_benefit",7
+"66c84b79700e4bff163db4eaac7f348c","family meals","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","group project","expected_high_benefit",4
+"66c84b79700e4bff163db4eaac7f348c","group project","expected_low_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","housemates","expected_high_benefit",7
+"66c84b79700e4bff163db4eaac7f348c","housemates","expected_low_benefit",3
+"66c84b79700e4bff163db4eaac7f348c","groceries","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","groceries","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","police","expected_high_benefit",6
+"66c84b79700e4bff163db4eaac7f348c","police","expected_low_benefit",1
+"66c84b79700e4bff163db4eaac7f348c","gifts","expected_high_benefit",7
+"66c84b79700e4bff163db4eaac7f348c","gifts","expected_low_benefit",1
+"66c84b79700e4bff163db4eaac7f348c","weekend","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","weekend","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","meeting location","expected_high_benefit",4
+"66c84b79700e4bff163db4eaac7f348c","meeting location","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","meeting prep","expected_high_benefit",4
+"66c84b79700e4bff163db4eaac7f348c","meeting prep","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","feedback","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","feedback","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","scheduling","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","scheduling","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","conversation","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","conversation","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","fundraising","expected_high_benefit",6
+"66c84b79700e4bff163db4eaac7f348c","fundraising","expected_low_benefit",3
+"66c84b79700e4bff163db4eaac7f348c","coffee","expected_high_benefit",3
+"66c84b79700e4bff163db4eaac7f348c","coffee","expected_low_benefit",2
+"66c84b79700e4bff163db4eaac7f348c","babysitting","expected_high_benefit",5
+"66c84b79700e4bff163db4eaac7f348c","babysitting","expected_low_benefit",2
+"253fc91d7cad77f06dee7a9cbb8efef6","restaurant","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","restaurant","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","babysitting","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","babysitting","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","conversation","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","conversation","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","concerts","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","concerts","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","group project","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","group project","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","police","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","police","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","meeting location","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","meeting location","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","weekend","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","weekend","expected_low_benefit",3
+"253fc91d7cad77f06dee7a9cbb8efef6","housemates","expected_high_benefit",3
+"253fc91d7cad77f06dee7a9cbb8efef6","housemates","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","coffee","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","coffee","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","fundraising","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","fundraising","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","architects","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","architects","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","family meals","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","family meals","expected_low_benefit",6
+"253fc91d7cad77f06dee7a9cbb8efef6","gifts","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","gifts","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","meeting prep","expected_high_benefit",3
+"253fc91d7cad77f06dee7a9cbb8efef6","meeting prep","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","feedback","expected_high_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","feedback","expected_low_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","groceries","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","groceries","expected_low_benefit",5
+"253fc91d7cad77f06dee7a9cbb8efef6","scheduling","expected_high_benefit",4
+"253fc91d7cad77f06dee7a9cbb8efef6","scheduling","expected_low_benefit",5
+"78410b8f5698a855f3c4324aa4764ac5","group project","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","group project","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","restaurant","expected_high_benefit",3
+"78410b8f5698a855f3c4324aa4764ac5","restaurant","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","groceries","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","groceries","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","meeting prep","expected_high_benefit",5
+"78410b8f5698a855f3c4324aa4764ac5","meeting prep","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","conversation","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","conversation","expected_low_benefit",3
+"78410b8f5698a855f3c4324aa4764ac5","family meals","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","family meals","expected_low_benefit",1
+"78410b8f5698a855f3c4324aa4764ac5","architects","expected_high_benefit",5
+"78410b8f5698a855f3c4324aa4764ac5","architects","expected_low_benefit",5
+"78410b8f5698a855f3c4324aa4764ac5","feedback","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","feedback","expected_low_benefit",4
+"78410b8f5698a855f3c4324aa4764ac5","concerts","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","concerts","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","gifts","expected_high_benefit",7
+"78410b8f5698a855f3c4324aa4764ac5","gifts","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","fundraising","expected_high_benefit",NA
+"78410b8f5698a855f3c4324aa4764ac5","fundraising","expected_low_benefit",3
+"78410b8f5698a855f3c4324aa4764ac5","coffee","expected_high_benefit",5
+"78410b8f5698a855f3c4324aa4764ac5","coffee","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","weekend","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","weekend","expected_low_benefit",3
+"78410b8f5698a855f3c4324aa4764ac5","police","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","police","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","meeting location","expected_high_benefit",4
+"78410b8f5698a855f3c4324aa4764ac5","meeting location","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","scheduling","expected_high_benefit",5
+"78410b8f5698a855f3c4324aa4764ac5","scheduling","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","babysitting","expected_high_benefit",6
+"78410b8f5698a855f3c4324aa4764ac5","babysitting","expected_low_benefit",2
+"78410b8f5698a855f3c4324aa4764ac5","housemates","expected_high_benefit",3
+"78410b8f5698a855f3c4324aa4764ac5","housemates","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","coffee","expected_high_benefit",3
+"38a24313a74945efd04119c64ac02baf","coffee","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","meeting prep","expected_high_benefit",4
+"38a24313a74945efd04119c64ac02baf","meeting prep","expected_low_benefit",4
+"38a24313a74945efd04119c64ac02baf","family meals","expected_high_benefit",3
+"38a24313a74945efd04119c64ac02baf","family meals","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","gifts","expected_high_benefit",7
+"38a24313a74945efd04119c64ac02baf","gifts","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","babysitting","expected_high_benefit",7
+"38a24313a74945efd04119c64ac02baf","babysitting","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","housemates","expected_high_benefit",5
+"38a24313a74945efd04119c64ac02baf","housemates","expected_low_benefit",5
+"38a24313a74945efd04119c64ac02baf","conversation","expected_high_benefit",2
+"38a24313a74945efd04119c64ac02baf","conversation","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","feedback","expected_high_benefit",4
+"38a24313a74945efd04119c64ac02baf","feedback","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","scheduling","expected_high_benefit",4
+"38a24313a74945efd04119c64ac02baf","scheduling","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","fundraising","expected_high_benefit",5
+"38a24313a74945efd04119c64ac02baf","fundraising","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","meeting location","expected_high_benefit",2
+"38a24313a74945efd04119c64ac02baf","meeting location","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","groceries","expected_high_benefit",3
+"38a24313a74945efd04119c64ac02baf","groceries","expected_low_benefit",1
+"38a24313a74945efd04119c64ac02baf","restaurant","expected_high_benefit",4
+"38a24313a74945efd04119c64ac02baf","restaurant","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","police","expected_high_benefit",3
+"38a24313a74945efd04119c64ac02baf","police","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","concerts","expected_high_benefit",5
+"38a24313a74945efd04119c64ac02baf","concerts","expected_low_benefit",1
+"38a24313a74945efd04119c64ac02baf","group project","expected_high_benefit",2
+"38a24313a74945efd04119c64ac02baf","group project","expected_low_benefit",2
+"38a24313a74945efd04119c64ac02baf","weekend","expected_high_benefit",4
+"38a24313a74945efd04119c64ac02baf","weekend","expected_low_benefit",3
+"38a24313a74945efd04119c64ac02baf","architects","expected_high_benefit",4
+"38a24313a74945efd04119c64ac02baf","architects","expected_low_benefit",4
+"f7e026fd862420b427cdb47b4debfc7d","housemates","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","housemates","expected_low_benefit",3
+"f7e026fd862420b427cdb47b4debfc7d","babysitting","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","babysitting","expected_low_benefit",1
+"f7e026fd862420b427cdb47b4debfc7d","gifts","expected_high_benefit",7
+"f7e026fd862420b427cdb47b4debfc7d","gifts","expected_low_benefit",1
+"f7e026fd862420b427cdb47b4debfc7d","architects","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","architects","expected_low_benefit",3
+"f7e026fd862420b427cdb47b4debfc7d","meeting location","expected_high_benefit",3
+"f7e026fd862420b427cdb47b4debfc7d","meeting location","expected_low_benefit",2
+"f7e026fd862420b427cdb47b4debfc7d","scheduling","expected_high_benefit",5
+"f7e026fd862420b427cdb47b4debfc7d","scheduling","expected_low_benefit",2
+"f7e026fd862420b427cdb47b4debfc7d","restaurant","expected_high_benefit",4
+"f7e026fd862420b427cdb47b4debfc7d","restaurant","expected_low_benefit",1
+"f7e026fd862420b427cdb47b4debfc7d","police","expected_high_benefit",7
+"f7e026fd862420b427cdb47b4debfc7d","police","expected_low_benefit",1
+"f7e026fd862420b427cdb47b4debfc7d","feedback","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","feedback","expected_low_benefit",3
+"f7e026fd862420b427cdb47b4debfc7d","weekend","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","weekend","expected_low_benefit",3
+"f7e026fd862420b427cdb47b4debfc7d","coffee","expected_high_benefit",7
+"f7e026fd862420b427cdb47b4debfc7d","coffee","expected_low_benefit",1
+"f7e026fd862420b427cdb47b4debfc7d","fundraising","expected_high_benefit",7
+"f7e026fd862420b427cdb47b4debfc7d","fundraising","expected_low_benefit",3
+"f7e026fd862420b427cdb47b4debfc7d","meeting prep","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","meeting prep","expected_low_benefit",2
+"f7e026fd862420b427cdb47b4debfc7d","group project","expected_high_benefit",4
+"f7e026fd862420b427cdb47b4debfc7d","group project","expected_low_benefit",4
+"f7e026fd862420b427cdb47b4debfc7d","family meals","expected_high_benefit",7
+"f7e026fd862420b427cdb47b4debfc7d","family meals","expected_low_benefit",2
+"f7e026fd862420b427cdb47b4debfc7d","concerts","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","concerts","expected_low_benefit",2
+"f7e026fd862420b427cdb47b4debfc7d","conversation","expected_high_benefit",5
+"f7e026fd862420b427cdb47b4debfc7d","conversation","expected_low_benefit",4
+"f7e026fd862420b427cdb47b4debfc7d","groceries","expected_high_benefit",6
+"f7e026fd862420b427cdb47b4debfc7d","groceries","expected_low_benefit",2
+"35a06026cf9a2a979d8e7fa8ef36b57f","groceries","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","groceries","expected_low_benefit",2
+"35a06026cf9a2a979d8e7fa8ef36b57f","family meals","expected_high_benefit",7
+"35a06026cf9a2a979d8e7fa8ef36b57f","family meals","expected_low_benefit",3
+"35a06026cf9a2a979d8e7fa8ef36b57f","meeting location","expected_high_benefit",4
+"35a06026cf9a2a979d8e7fa8ef36b57f","meeting location","expected_low_benefit",4
+"35a06026cf9a2a979d8e7fa8ef36b57f","concerts","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","concerts","expected_low_benefit",4
+"35a06026cf9a2a979d8e7fa8ef36b57f","fundraising","expected_high_benefit",5
+"35a06026cf9a2a979d8e7fa8ef36b57f","fundraising","expected_low_benefit",3
+"35a06026cf9a2a979d8e7fa8ef36b57f","group project","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","group project","expected_low_benefit",4
+"35a06026cf9a2a979d8e7fa8ef36b57f","babysitting","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","babysitting","expected_low_benefit",2
+"35a06026cf9a2a979d8e7fa8ef36b57f","housemates","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","housemates","expected_low_benefit",5
+"35a06026cf9a2a979d8e7fa8ef36b57f","coffee","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","coffee","expected_low_benefit",5
+"35a06026cf9a2a979d8e7fa8ef36b57f","architects","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","architects","expected_low_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","restaurant","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","restaurant","expected_low_benefit",3
+"35a06026cf9a2a979d8e7fa8ef36b57f","feedback","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","feedback","expected_low_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","weekend","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","weekend","expected_low_benefit",2
+"35a06026cf9a2a979d8e7fa8ef36b57f","scheduling","expected_high_benefit",5
+"35a06026cf9a2a979d8e7fa8ef36b57f","scheduling","expected_low_benefit",3
+"35a06026cf9a2a979d8e7fa8ef36b57f","meeting prep","expected_high_benefit",5
+"35a06026cf9a2a979d8e7fa8ef36b57f","meeting prep","expected_low_benefit",4
+"35a06026cf9a2a979d8e7fa8ef36b57f","gifts","expected_high_benefit",7
+"35a06026cf9a2a979d8e7fa8ef36b57f","gifts","expected_low_benefit",2
+"35a06026cf9a2a979d8e7fa8ef36b57f","conversation","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","conversation","expected_low_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","police","expected_high_benefit",6
+"35a06026cf9a2a979d8e7fa8ef36b57f","police","expected_low_benefit",3
+"2db6000f3ce003fb9c3231204b584c4d","architects","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","architects","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","babysitting","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","babysitting","expected_low_benefit",2
+"2db6000f3ce003fb9c3231204b584c4d","family meals","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","family meals","expected_low_benefit",3
+"2db6000f3ce003fb9c3231204b584c4d","gifts","expected_high_benefit",2
+"2db6000f3ce003fb9c3231204b584c4d","gifts","expected_low_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","groceries","expected_high_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","groceries","expected_low_benefit",3
+"2db6000f3ce003fb9c3231204b584c4d","weekend","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","weekend","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","coffee","expected_high_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","coffee","expected_low_benefit",3
+"2db6000f3ce003fb9c3231204b584c4d","group project","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","group project","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","housemates","expected_high_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","housemates","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","restaurant","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","restaurant","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","concerts","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","concerts","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","police","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","police","expected_low_benefit",3
+"2db6000f3ce003fb9c3231204b584c4d","feedback","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","feedback","expected_low_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","meeting location","expected_high_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","meeting location","expected_low_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","conversation","expected_high_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","conversation","expected_low_benefit",6
+"2db6000f3ce003fb9c3231204b584c4d","scheduling","expected_high_benefit",3
+"2db6000f3ce003fb9c3231204b584c4d","scheduling","expected_low_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","meeting prep","expected_high_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","meeting prep","expected_low_benefit",4
+"2db6000f3ce003fb9c3231204b584c4d","fundraising","expected_high_benefit",5
+"2db6000f3ce003fb9c3231204b584c4d","fundraising","expected_low_benefit",4
+"67179a45078698dd27905cf761a0cde8","scheduling","expected_high_benefit",3
+"67179a45078698dd27905cf761a0cde8","scheduling","expected_low_benefit",2
+"67179a45078698dd27905cf761a0cde8","fundraising","expected_high_benefit",5
+"67179a45078698dd27905cf761a0cde8","fundraising","expected_low_benefit",3
+"67179a45078698dd27905cf761a0cde8","police","expected_high_benefit",5
+"67179a45078698dd27905cf761a0cde8","police","expected_low_benefit",1
+"67179a45078698dd27905cf761a0cde8","feedback","expected_high_benefit",6
+"67179a45078698dd27905cf761a0cde8","feedback","expected_low_benefit",3
+"67179a45078698dd27905cf761a0cde8","conversation","expected_high_benefit",4
+"67179a45078698dd27905cf761a0cde8","conversation","expected_low_benefit",3
+"67179a45078698dd27905cf761a0cde8","family meals","expected_high_benefit",4
+"67179a45078698dd27905cf761a0cde8","family meals","expected_low_benefit",4
+"67179a45078698dd27905cf761a0cde8","weekend","expected_high_benefit",3
+"67179a45078698dd27905cf761a0cde8","weekend","expected_low_benefit",3
+"67179a45078698dd27905cf761a0cde8","meeting location","expected_high_benefit",2
+"67179a45078698dd27905cf761a0cde8","meeting location","expected_low_benefit",2
+"67179a45078698dd27905cf761a0cde8","coffee","expected_high_benefit",3
+"67179a45078698dd27905cf761a0cde8","coffee","expected_low_benefit",1
+"67179a45078698dd27905cf761a0cde8","concerts","expected_high_benefit",5
+"67179a45078698dd27905cf761a0cde8","concerts","expected_low_benefit",4
+"67179a45078698dd27905cf761a0cde8","restaurant","expected_high_benefit",4
+"67179a45078698dd27905cf761a0cde8","restaurant","expected_low_benefit",3
+"67179a45078698dd27905cf761a0cde8","housemates","expected_high_benefit",6
+"67179a45078698dd27905cf761a0cde8","housemates","expected_low_benefit",6
+"67179a45078698dd27905cf761a0cde8","groceries","expected_high_benefit",4
+"67179a45078698dd27905cf761a0cde8","groceries","expected_low_benefit",2
+"67179a45078698dd27905cf761a0cde8","group project","expected_high_benefit",2
+"67179a45078698dd27905cf761a0cde8","group project","expected_low_benefit",4
+"67179a45078698dd27905cf761a0cde8","architects","expected_high_benefit",4
+"67179a45078698dd27905cf761a0cde8","architects","expected_low_benefit",4
+"67179a45078698dd27905cf761a0cde8","gifts","expected_high_benefit",7
+"67179a45078698dd27905cf761a0cde8","gifts","expected_low_benefit",1
+"67179a45078698dd27905cf761a0cde8","babysitting","expected_high_benefit",5
+"67179a45078698dd27905cf761a0cde8","babysitting","expected_low_benefit",3
+"67179a45078698dd27905cf761a0cde8","meeting prep","expected_high_benefit",4
+"67179a45078698dd27905cf761a0cde8","meeting prep","expected_low_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","concerts","expected_high_benefit",6
+"ec5b85d08342718372a39d021c9c43c2","concerts","expected_low_benefit",4
+"ec5b85d08342718372a39d021c9c43c2","babysitting","expected_high_benefit",5
+"ec5b85d08342718372a39d021c9c43c2","babysitting","expected_low_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","groceries","expected_high_benefit",4
+"ec5b85d08342718372a39d021c9c43c2","groceries","expected_low_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","meeting prep","expected_high_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","meeting prep","expected_low_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","housemates","expected_high_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","housemates","expected_low_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","group project","expected_high_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","group project","expected_low_benefit",2
+"ec5b85d08342718372a39d021c9c43c2","weekend","expected_high_benefit",4
+"ec5b85d08342718372a39d021c9c43c2","weekend","expected_low_benefit",4
+"ec5b85d08342718372a39d021c9c43c2","conversation","expected_high_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","conversation","expected_low_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","meeting location","expected_high_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","meeting location","expected_low_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","gifts","expected_high_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","gifts","expected_low_benefit",6
+"ec5b85d08342718372a39d021c9c43c2","family meals","expected_high_benefit",4
+"ec5b85d08342718372a39d021c9c43c2","family meals","expected_low_benefit",2
+"ec5b85d08342718372a39d021c9c43c2","feedback","expected_high_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","feedback","expected_low_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","police","expected_high_benefit",5
+"ec5b85d08342718372a39d021c9c43c2","police","expected_low_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","scheduling","expected_high_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","scheduling","expected_low_benefit",5
+"ec5b85d08342718372a39d021c9c43c2","coffee","expected_high_benefit",5
+"ec5b85d08342718372a39d021c9c43c2","coffee","expected_low_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","architects","expected_high_benefit",5
+"ec5b85d08342718372a39d021c9c43c2","architects","expected_low_benefit",3
+"ec5b85d08342718372a39d021c9c43c2","restaurant","expected_high_benefit",5
+"ec5b85d08342718372a39d021c9c43c2","restaurant","expected_low_benefit",1
+"ec5b85d08342718372a39d021c9c43c2","fundraising","expected_high_benefit",2
+"ec5b85d08342718372a39d021c9c43c2","fundraising","expected_low_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","babysitting","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","babysitting","expected_low_benefit",3
+"875aa2150a8ded5b46bc6cb18fd765c6","fundraising","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","fundraising","expected_low_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","family meals","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","family meals","expected_low_benefit",3
+"875aa2150a8ded5b46bc6cb18fd765c6","scheduling","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","scheduling","expected_low_benefit",2
+"875aa2150a8ded5b46bc6cb18fd765c6","gifts","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","gifts","expected_low_benefit",3
+"875aa2150a8ded5b46bc6cb18fd765c6","feedback","expected_high_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","feedback","expected_low_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","police","expected_high_benefit",5
+"875aa2150a8ded5b46bc6cb18fd765c6","police","expected_low_benefit",3
+"875aa2150a8ded5b46bc6cb18fd765c6","coffee","expected_high_benefit",5
+"875aa2150a8ded5b46bc6cb18fd765c6","coffee","expected_low_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","meeting location","expected_high_benefit",2
+"875aa2150a8ded5b46bc6cb18fd765c6","meeting location","expected_low_benefit",1
+"875aa2150a8ded5b46bc6cb18fd765c6","conversation","expected_high_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","conversation","expected_low_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","weekend","expected_high_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","weekend","expected_low_benefit",3
+"875aa2150a8ded5b46bc6cb18fd765c6","meeting prep","expected_high_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","meeting prep","expected_low_benefit",2
+"875aa2150a8ded5b46bc6cb18fd765c6","concerts","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","concerts","expected_low_benefit",2
+"875aa2150a8ded5b46bc6cb18fd765c6","architects","expected_high_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","architects","expected_low_benefit",7
+"875aa2150a8ded5b46bc6cb18fd765c6","restaurant","expected_high_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","restaurant","expected_low_benefit",2
+"875aa2150a8ded5b46bc6cb18fd765c6","groceries","expected_high_benefit",4
+"875aa2150a8ded5b46bc6cb18fd765c6","groceries","expected_low_benefit",2
+"875aa2150a8ded5b46bc6cb18fd765c6","group project","expected_high_benefit",5
+"875aa2150a8ded5b46bc6cb18fd765c6","group project","expected_low_benefit",6
+"875aa2150a8ded5b46bc6cb18fd765c6","housemates","expected_high_benefit",5
+"875aa2150a8ded5b46bc6cb18fd765c6","housemates","expected_low_benefit",5
+"72da4e15ba267d9ff5b535634b16d99a","meeting prep","expected_high_benefit",1
+"72da4e15ba267d9ff5b535634b16d99a","meeting prep","expected_low_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","weekend","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","weekend","expected_low_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","meeting location","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","meeting location","expected_low_benefit",1
+"72da4e15ba267d9ff5b535634b16d99a","concerts","expected_high_benefit",7
+"72da4e15ba267d9ff5b535634b16d99a","concerts","expected_low_benefit",2
+"72da4e15ba267d9ff5b535634b16d99a","babysitting","expected_high_benefit",7
+"72da4e15ba267d9ff5b535634b16d99a","babysitting","expected_low_benefit",1
+"72da4e15ba267d9ff5b535634b16d99a","architects","expected_high_benefit",5
+"72da4e15ba267d9ff5b535634b16d99a","architects","expected_low_benefit",3
+"72da4e15ba267d9ff5b535634b16d99a","gifts","expected_high_benefit",7
+"72da4e15ba267d9ff5b535634b16d99a","gifts","expected_low_benefit",1
+"72da4e15ba267d9ff5b535634b16d99a","feedback","expected_high_benefit",3
+"72da4e15ba267d9ff5b535634b16d99a","feedback","expected_low_benefit",1
+"72da4e15ba267d9ff5b535634b16d99a","police","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","police","expected_low_benefit",2
+"72da4e15ba267d9ff5b535634b16d99a","fundraising","expected_high_benefit",4
+"72da4e15ba267d9ff5b535634b16d99a","fundraising","expected_low_benefit",5
+"72da4e15ba267d9ff5b535634b16d99a","restaurant","expected_high_benefit",7
+"72da4e15ba267d9ff5b535634b16d99a","restaurant","expected_low_benefit",2
+"72da4e15ba267d9ff5b535634b16d99a","coffee","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","coffee","expected_low_benefit",2
+"72da4e15ba267d9ff5b535634b16d99a","housemates","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","housemates","expected_low_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","group project","expected_high_benefit",5
+"72da4e15ba267d9ff5b535634b16d99a","group project","expected_low_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","conversation","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","conversation","expected_low_benefit",5
+"72da4e15ba267d9ff5b535634b16d99a","groceries","expected_high_benefit",7
+"72da4e15ba267d9ff5b535634b16d99a","groceries","expected_low_benefit",1
+"72da4e15ba267d9ff5b535634b16d99a","family meals","expected_high_benefit",7
+"72da4e15ba267d9ff5b535634b16d99a","family meals","expected_low_benefit",2
+"72da4e15ba267d9ff5b535634b16d99a","scheduling","expected_high_benefit",6
+"72da4e15ba267d9ff5b535634b16d99a","scheduling","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","group project","expected_high_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","group project","expected_low_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","meeting prep","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","meeting prep","expected_low_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","family meals","expected_high_benefit",1
+"5870d2fc3b7650081479760443f2b5f1","family meals","expected_low_benefit",1
+"5870d2fc3b7650081479760443f2b5f1","fundraising","expected_high_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","fundraising","expected_low_benefit",3
+"5870d2fc3b7650081479760443f2b5f1","concerts","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","concerts","expected_low_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","police","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","police","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","groceries","expected_high_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","groceries","expected_low_benefit",3
+"5870d2fc3b7650081479760443f2b5f1","housemates","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","housemates","expected_low_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","meeting location","expected_high_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","meeting location","expected_low_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","restaurant","expected_high_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","restaurant","expected_low_benefit",1
+"5870d2fc3b7650081479760443f2b5f1","conversation","expected_high_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","conversation","expected_low_benefit",6
+"5870d2fc3b7650081479760443f2b5f1","babysitting","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","babysitting","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","feedback","expected_high_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","feedback","expected_low_benefit",4
+"5870d2fc3b7650081479760443f2b5f1","scheduling","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","scheduling","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","gifts","expected_high_benefit",6
+"5870d2fc3b7650081479760443f2b5f1","gifts","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","architects","expected_high_benefit",1
+"5870d2fc3b7650081479760443f2b5f1","architects","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","weekend","expected_high_benefit",1
+"5870d2fc3b7650081479760443f2b5f1","weekend","expected_low_benefit",2
+"5870d2fc3b7650081479760443f2b5f1","coffee","expected_high_benefit",5
+"5870d2fc3b7650081479760443f2b5f1","coffee","expected_low_benefit",1
+"87ecabfd4ed3b4f02a64abec0d09f26f","restaurant","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","restaurant","expected_low_benefit",3
+"87ecabfd4ed3b4f02a64abec0d09f26f","gifts","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","gifts","expected_low_benefit",1
+"87ecabfd4ed3b4f02a64abec0d09f26f","groceries","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","groceries","expected_low_benefit",1
+"87ecabfd4ed3b4f02a64abec0d09f26f","housemates","expected_high_benefit",NA
+"87ecabfd4ed3b4f02a64abec0d09f26f","housemates","expected_low_benefit",NA
+"87ecabfd4ed3b4f02a64abec0d09f26f","concerts","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","concerts","expected_low_benefit",3
+"87ecabfd4ed3b4f02a64abec0d09f26f","family meals","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","family meals","expected_low_benefit",2
+"87ecabfd4ed3b4f02a64abec0d09f26f","feedback","expected_high_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","feedback","expected_low_benefit",2
+"87ecabfd4ed3b4f02a64abec0d09f26f","architects","expected_high_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","architects","expected_low_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","meeting location","expected_high_benefit",4
+"87ecabfd4ed3b4f02a64abec0d09f26f","meeting location","expected_low_benefit",1
+"87ecabfd4ed3b4f02a64abec0d09f26f","conversation","expected_high_benefit",6
+"87ecabfd4ed3b4f02a64abec0d09f26f","conversation","expected_low_benefit",4
+"87ecabfd4ed3b4f02a64abec0d09f26f","scheduling","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","scheduling","expected_low_benefit",3
+"87ecabfd4ed3b4f02a64abec0d09f26f","weekend","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","weekend","expected_low_benefit",2
+"87ecabfd4ed3b4f02a64abec0d09f26f","group project","expected_high_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","group project","expected_low_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","babysitting","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","babysitting","expected_low_benefit",2
+"87ecabfd4ed3b4f02a64abec0d09f26f","fundraising","expected_high_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","fundraising","expected_low_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","coffee","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","coffee","expected_low_benefit",2
+"87ecabfd4ed3b4f02a64abec0d09f26f","police","expected_high_benefit",7
+"87ecabfd4ed3b4f02a64abec0d09f26f","police","expected_low_benefit",2
+"87ecabfd4ed3b4f02a64abec0d09f26f","meeting prep","expected_high_benefit",5
+"87ecabfd4ed3b4f02a64abec0d09f26f","meeting prep","expected_low_benefit",2
+"9d3672b97337fc1e46c9e796c3802834","feedback","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","feedback","expected_low_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","gifts","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","gifts","expected_low_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","police","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","police","expected_low_benefit",4
+"9d3672b97337fc1e46c9e796c3802834","coffee","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","coffee","expected_low_benefit",6
+"9d3672b97337fc1e46c9e796c3802834","groceries","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","groceries","expected_low_benefit",2
+"9d3672b97337fc1e46c9e796c3802834","housemates","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","housemates","expected_low_benefit",5
+"9d3672b97337fc1e46c9e796c3802834","group project","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","group project","expected_low_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","fundraising","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","fundraising","expected_low_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","babysitting","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","babysitting","expected_low_benefit",6
+"9d3672b97337fc1e46c9e796c3802834","conversation","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","conversation","expected_low_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","family meals","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","family meals","expected_low_benefit",4
+"9d3672b97337fc1e46c9e796c3802834","restaurant","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","restaurant","expected_low_benefit",3
+"9d3672b97337fc1e46c9e796c3802834","concerts","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","concerts","expected_low_benefit",NA
+"9d3672b97337fc1e46c9e796c3802834","weekend","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","weekend","expected_low_benefit",6
+"9d3672b97337fc1e46c9e796c3802834","meeting prep","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","meeting prep","expected_low_benefit",6
+"9d3672b97337fc1e46c9e796c3802834","architects","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","architects","expected_low_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","meeting location","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","meeting location","expected_low_benefit",6
+"9d3672b97337fc1e46c9e796c3802834","scheduling","expected_high_benefit",7
+"9d3672b97337fc1e46c9e796c3802834","scheduling","expected_low_benefit",3
+"ff6914599ed2f0b8764a11f3ba4bc888","housemates","expected_high_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","housemates","expected_low_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","conversation","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","conversation","expected_low_benefit",3
+"ff6914599ed2f0b8764a11f3ba4bc888","babysitting","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","babysitting","expected_low_benefit",2
+"ff6914599ed2f0b8764a11f3ba4bc888","coffee","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","coffee","expected_low_benefit",4
+"ff6914599ed2f0b8764a11f3ba4bc888","architects","expected_high_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","architects","expected_low_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","scheduling","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","scheduling","expected_low_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","weekend","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","weekend","expected_low_benefit",3
+"ff6914599ed2f0b8764a11f3ba4bc888","concerts","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","concerts","expected_low_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","groceries","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","groceries","expected_low_benefit",2
+"ff6914599ed2f0b8764a11f3ba4bc888","family meals","expected_high_benefit",7
+"ff6914599ed2f0b8764a11f3ba4bc888","family meals","expected_low_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","meeting prep","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","meeting prep","expected_low_benefit",3
+"ff6914599ed2f0b8764a11f3ba4bc888","gifts","expected_high_benefit",7
+"ff6914599ed2f0b8764a11f3ba4bc888","gifts","expected_low_benefit",3
+"ff6914599ed2f0b8764a11f3ba4bc888","restaurant","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","restaurant","expected_low_benefit",4
+"ff6914599ed2f0b8764a11f3ba4bc888","group project","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","group project","expected_low_benefit",4
+"ff6914599ed2f0b8764a11f3ba4bc888","meeting location","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","meeting location","expected_low_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","fundraising","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","fundraising","expected_low_benefit",5
+"ff6914599ed2f0b8764a11f3ba4bc888","feedback","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","feedback","expected_low_benefit",3
+"ff6914599ed2f0b8764a11f3ba4bc888","police","expected_high_benefit",6
+"ff6914599ed2f0b8764a11f3ba4bc888","police","expected_low_benefit",3
+"45d0e5584028c86ff30ac044618a7a29","meeting location","expected_high_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","meeting location","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","feedback","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","feedback","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","restaurant","expected_high_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","restaurant","expected_low_benefit",3
+"45d0e5584028c86ff30ac044618a7a29","coffee","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","coffee","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","groceries","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","groceries","expected_low_benefit",2
+"45d0e5584028c86ff30ac044618a7a29","weekend","expected_high_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","weekend","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","babysitting","expected_high_benefit",6
+"45d0e5584028c86ff30ac044618a7a29","babysitting","expected_low_benefit",3
+"45d0e5584028c86ff30ac044618a7a29","meeting prep","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","meeting prep","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","fundraising","expected_high_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","fundraising","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","police","expected_high_benefit",6
+"45d0e5584028c86ff30ac044618a7a29","police","expected_low_benefit",3
+"45d0e5584028c86ff30ac044618a7a29","housemates","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","housemates","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","gifts","expected_high_benefit",6
+"45d0e5584028c86ff30ac044618a7a29","gifts","expected_low_benefit",2
+"45d0e5584028c86ff30ac044618a7a29","family meals","expected_high_benefit",6
+"45d0e5584028c86ff30ac044618a7a29","family meals","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","concerts","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","concerts","expected_low_benefit",3
+"45d0e5584028c86ff30ac044618a7a29","architects","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","architects","expected_low_benefit",4
+"45d0e5584028c86ff30ac044618a7a29","group project","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","group project","expected_low_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","conversation","expected_high_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","conversation","expected_low_benefit",5
+"45d0e5584028c86ff30ac044618a7a29","scheduling","expected_high_benefit",3
+"45d0e5584028c86ff30ac044618a7a29","scheduling","expected_low_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","coffee","expected_high_benefit",6
+"9d5dcc57029b3a17631b01b407b63a87","coffee","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","scheduling","expected_high_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","scheduling","expected_low_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","housemates","expected_high_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","housemates","expected_low_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","concerts","expected_high_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","concerts","expected_low_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","babysitting","expected_high_benefit",7
+"9d5dcc57029b3a17631b01b407b63a87","babysitting","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","group project","expected_high_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","group project","expected_low_benefit",6
+"9d5dcc57029b3a17631b01b407b63a87","conversation","expected_high_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","conversation","expected_low_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","restaurant","expected_high_benefit",6
+"9d5dcc57029b3a17631b01b407b63a87","restaurant","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","feedback","expected_high_benefit",6
+"9d5dcc57029b3a17631b01b407b63a87","feedback","expected_low_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","police","expected_high_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","police","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","weekend","expected_high_benefit",7
+"9d5dcc57029b3a17631b01b407b63a87","weekend","expected_low_benefit",1
+"9d5dcc57029b3a17631b01b407b63a87","gifts","expected_high_benefit",7
+"9d5dcc57029b3a17631b01b407b63a87","gifts","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","meeting prep","expected_high_benefit",6
+"9d5dcc57029b3a17631b01b407b63a87","meeting prep","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","meeting location","expected_high_benefit",NA
+"9d5dcc57029b3a17631b01b407b63a87","meeting location","expected_low_benefit",4
+"9d5dcc57029b3a17631b01b407b63a87","fundraising","expected_high_benefit",5
+"9d5dcc57029b3a17631b01b407b63a87","fundraising","expected_low_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","groceries","expected_high_benefit",7
+"9d5dcc57029b3a17631b01b407b63a87","groceries","expected_low_benefit",2
+"9d5dcc57029b3a17631b01b407b63a87","family meals","expected_high_benefit",7
+"9d5dcc57029b3a17631b01b407b63a87","family meals","expected_low_benefit",3
+"9d5dcc57029b3a17631b01b407b63a87","architects","expected_high_benefit",6
+"9d5dcc57029b3a17631b01b407b63a87","architects","expected_low_benefit",3
+"2d1c0a906842e13008b937aafefc7228","fundraising","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","fundraising","expected_low_benefit",3
+"2d1c0a906842e13008b937aafefc7228","coffee","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","coffee","expected_low_benefit",4
+"2d1c0a906842e13008b937aafefc7228","architects","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","architects","expected_low_benefit",5
+"2d1c0a906842e13008b937aafefc7228","concerts","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","concerts","expected_low_benefit",2
+"2d1c0a906842e13008b937aafefc7228","babysitting","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","babysitting","expected_low_benefit",5
+"2d1c0a906842e13008b937aafefc7228","weekend","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","weekend","expected_low_benefit",2
+"2d1c0a906842e13008b937aafefc7228","police","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","police","expected_low_benefit",3
+"2d1c0a906842e13008b937aafefc7228","meeting prep","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","meeting prep","expected_low_benefit",1
+"2d1c0a906842e13008b937aafefc7228","meeting location","expected_high_benefit",1
+"2d1c0a906842e13008b937aafefc7228","meeting location","expected_low_benefit",1
+"2d1c0a906842e13008b937aafefc7228","scheduling","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","scheduling","expected_low_benefit",1
+"2d1c0a906842e13008b937aafefc7228","groceries","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","groceries","expected_low_benefit",3
+"2d1c0a906842e13008b937aafefc7228","housemates","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","housemates","expected_low_benefit",6
+"2d1c0a906842e13008b937aafefc7228","group project","expected_high_benefit",6
+"2d1c0a906842e13008b937aafefc7228","group project","expected_low_benefit",6
+"2d1c0a906842e13008b937aafefc7228","feedback","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","feedback","expected_low_benefit",6
+"2d1c0a906842e13008b937aafefc7228","family meals","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","family meals","expected_low_benefit",3
+"2d1c0a906842e13008b937aafefc7228","conversation","expected_high_benefit",5
+"2d1c0a906842e13008b937aafefc7228","conversation","expected_low_benefit",5
+"2d1c0a906842e13008b937aafefc7228","gifts","expected_high_benefit",7
+"2d1c0a906842e13008b937aafefc7228","gifts","expected_low_benefit",2
+"2d1c0a906842e13008b937aafefc7228","restaurant","expected_high_benefit",6
+"2d1c0a906842e13008b937aafefc7228","restaurant","expected_low_benefit",4
+"4a7804119f856e1c865cd7b64255f6e1","feedback","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","feedback","expected_low_benefit",4
+"4a7804119f856e1c865cd7b64255f6e1","groceries","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","groceries","expected_low_benefit",2
+"4a7804119f856e1c865cd7b64255f6e1","architects","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","architects","expected_low_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","restaurant","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","restaurant","expected_low_benefit",1
+"4a7804119f856e1c865cd7b64255f6e1","coffee","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","coffee","expected_low_benefit",1
+"4a7804119f856e1c865cd7b64255f6e1","family meals","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","family meals","expected_low_benefit",2
+"4a7804119f856e1c865cd7b64255f6e1","babysitting","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","babysitting","expected_low_benefit",2
+"4a7804119f856e1c865cd7b64255f6e1","fundraising","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","fundraising","expected_low_benefit",2
+"4a7804119f856e1c865cd7b64255f6e1","meeting location","expected_high_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","meeting location","expected_low_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","police","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","police","expected_low_benefit",2
+"4a7804119f856e1c865cd7b64255f6e1","concerts","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","concerts","expected_low_benefit",2
+"4a7804119f856e1c865cd7b64255f6e1","conversation","expected_high_benefit",4
+"4a7804119f856e1c865cd7b64255f6e1","conversation","expected_low_benefit",4
+"4a7804119f856e1c865cd7b64255f6e1","weekend","expected_high_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","weekend","expected_low_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","scheduling","expected_high_benefit",5
+"4a7804119f856e1c865cd7b64255f6e1","scheduling","expected_low_benefit",1
+"4a7804119f856e1c865cd7b64255f6e1","gifts","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","gifts","expected_low_benefit",1
+"4a7804119f856e1c865cd7b64255f6e1","housemates","expected_high_benefit",7
+"4a7804119f856e1c865cd7b64255f6e1","housemates","expected_low_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","meeting prep","expected_high_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","meeting prep","expected_low_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","group project","expected_high_benefit",3
+"4a7804119f856e1c865cd7b64255f6e1","group project","expected_low_benefit",3
+"7a6a15eff233df83790f23e7a376a860","groceries","expected_high_benefit",4
+"7a6a15eff233df83790f23e7a376a860","groceries","expected_low_benefit",4
+"7a6a15eff233df83790f23e7a376a860","concerts","expected_high_benefit",2
+"7a6a15eff233df83790f23e7a376a860","concerts","expected_low_benefit",NA
+"7a6a15eff233df83790f23e7a376a860","conversation","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","conversation","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","restaurant","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","restaurant","expected_low_benefit",3
+"7a6a15eff233df83790f23e7a376a860","family meals","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","family meals","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","meeting location","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","meeting location","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","fundraising","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","fundraising","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","coffee","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","coffee","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","babysitting","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","babysitting","expected_low_benefit",2
+"7a6a15eff233df83790f23e7a376a860","feedback","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","feedback","expected_low_benefit",6
+"7a6a15eff233df83790f23e7a376a860","housemates","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","housemates","expected_low_benefit",6
+"7a6a15eff233df83790f23e7a376a860","police","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","police","expected_low_benefit",6
+"7a6a15eff233df83790f23e7a376a860","meeting prep","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","meeting prep","expected_low_benefit",6
+"7a6a15eff233df83790f23e7a376a860","architects","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","architects","expected_low_benefit",4
+"7a6a15eff233df83790f23e7a376a860","scheduling","expected_high_benefit",5
+"7a6a15eff233df83790f23e7a376a860","scheduling","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","gifts","expected_high_benefit",6
+"7a6a15eff233df83790f23e7a376a860","gifts","expected_low_benefit",4
+"7a6a15eff233df83790f23e7a376a860","group project","expected_high_benefit",4
+"7a6a15eff233df83790f23e7a376a860","group project","expected_low_benefit",5
+"7a6a15eff233df83790f23e7a376a860","weekend","expected_high_benefit",4
+"7a6a15eff233df83790f23e7a376a860","weekend","expected_low_benefit",4
+"0232b9d57f53d287eb910bb39d984613","scheduling","expected_high_benefit",2
+"0232b9d57f53d287eb910bb39d984613","scheduling","expected_low_benefit",2
+"0232b9d57f53d287eb910bb39d984613","weekend","expected_high_benefit",2
+"0232b9d57f53d287eb910bb39d984613","weekend","expected_low_benefit",3
+"0232b9d57f53d287eb910bb39d984613","family meals","expected_high_benefit",5
+"0232b9d57f53d287eb910bb39d984613","family meals","expected_low_benefit",2
+"0232b9d57f53d287eb910bb39d984613","fundraising","expected_high_benefit",1
+"0232b9d57f53d287eb910bb39d984613","fundraising","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","group project","expected_high_benefit",2
+"0232b9d57f53d287eb910bb39d984613","group project","expected_low_benefit",2
+"0232b9d57f53d287eb910bb39d984613","police","expected_high_benefit",3
+"0232b9d57f53d287eb910bb39d984613","police","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","meeting prep","expected_high_benefit",2
+"0232b9d57f53d287eb910bb39d984613","meeting prep","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","coffee","expected_high_benefit",3
+"0232b9d57f53d287eb910bb39d984613","coffee","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","restaurant","expected_high_benefit",1
+"0232b9d57f53d287eb910bb39d984613","restaurant","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","meeting location","expected_high_benefit",1
+"0232b9d57f53d287eb910bb39d984613","meeting location","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","feedback","expected_high_benefit",4
+"0232b9d57f53d287eb910bb39d984613","feedback","expected_low_benefit",2
+"0232b9d57f53d287eb910bb39d984613","concerts","expected_high_benefit",4
+"0232b9d57f53d287eb910bb39d984613","concerts","expected_low_benefit",2
+"0232b9d57f53d287eb910bb39d984613","groceries","expected_high_benefit",5
+"0232b9d57f53d287eb910bb39d984613","groceries","expected_low_benefit",2
+"0232b9d57f53d287eb910bb39d984613","babysitting","expected_high_benefit",5
+"0232b9d57f53d287eb910bb39d984613","babysitting","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","architects","expected_high_benefit",3
+"0232b9d57f53d287eb910bb39d984613","architects","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","housemates","expected_high_benefit",5
+"0232b9d57f53d287eb910bb39d984613","housemates","expected_low_benefit",3
+"0232b9d57f53d287eb910bb39d984613","gifts","expected_high_benefit",5
+"0232b9d57f53d287eb910bb39d984613","gifts","expected_low_benefit",1
+"0232b9d57f53d287eb910bb39d984613","conversation","expected_high_benefit",2
+"0232b9d57f53d287eb910bb39d984613","conversation","expected_low_benefit",2
+"08052639359f5b30db862b3c462eec73","weekend","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","weekend","expected_low_benefit",2
+"08052639359f5b30db862b3c462eec73","feedback","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","feedback","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","scheduling","expected_high_benefit",4
+"08052639359f5b30db862b3c462eec73","scheduling","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","meeting location","expected_high_benefit",1
+"08052639359f5b30db862b3c462eec73","meeting location","expected_low_benefit",1
+"08052639359f5b30db862b3c462eec73","babysitting","expected_high_benefit",6
+"08052639359f5b30db862b3c462eec73","babysitting","expected_low_benefit",4
+"08052639359f5b30db862b3c462eec73","restaurant","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","restaurant","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","fundraising","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","fundraising","expected_low_benefit",1
+"08052639359f5b30db862b3c462eec73","family meals","expected_high_benefit",6
+"08052639359f5b30db862b3c462eec73","family meals","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","groceries","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","groceries","expected_low_benefit",2
+"08052639359f5b30db862b3c462eec73","architects","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","architects","expected_low_benefit",5
+"08052639359f5b30db862b3c462eec73","housemates","expected_high_benefit",4
+"08052639359f5b30db862b3c462eec73","housemates","expected_low_benefit",4
+"08052639359f5b30db862b3c462eec73","gifts","expected_high_benefit",7
+"08052639359f5b30db862b3c462eec73","gifts","expected_low_benefit",1
+"08052639359f5b30db862b3c462eec73","conversation","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","conversation","expected_low_benefit",2
+"08052639359f5b30db862b3c462eec73","police","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","police","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","concerts","expected_high_benefit",5
+"08052639359f5b30db862b3c462eec73","concerts","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","coffee","expected_high_benefit",4
+"08052639359f5b30db862b3c462eec73","coffee","expected_low_benefit",3
+"08052639359f5b30db862b3c462eec73","group project","expected_high_benefit",3
+"08052639359f5b30db862b3c462eec73","group project","expected_low_benefit",4
+"08052639359f5b30db862b3c462eec73","meeting prep","expected_high_benefit",4
+"08052639359f5b30db862b3c462eec73","meeting prep","expected_low_benefit",3
+"d96883fc0b9cf678e1d67e5613946662","groceries","expected_high_benefit",5
+"d96883fc0b9cf678e1d67e5613946662","groceries","expected_low_benefit",2
+"d96883fc0b9cf678e1d67e5613946662","restaurant","expected_high_benefit",4
+"d96883fc0b9cf678e1d67e5613946662","restaurant","expected_low_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","gifts","expected_high_benefit",7
+"d96883fc0b9cf678e1d67e5613946662","gifts","expected_low_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","architects","expected_high_benefit",5
+"d96883fc0b9cf678e1d67e5613946662","architects","expected_low_benefit",3
+"d96883fc0b9cf678e1d67e5613946662","meeting location","expected_high_benefit",4
+"d96883fc0b9cf678e1d67e5613946662","meeting location","expected_low_benefit",2
+"d96883fc0b9cf678e1d67e5613946662","scheduling","expected_high_benefit",5
+"d96883fc0b9cf678e1d67e5613946662","scheduling","expected_low_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","fundraising","expected_high_benefit",3
+"d96883fc0b9cf678e1d67e5613946662","fundraising","expected_low_benefit",2
+"d96883fc0b9cf678e1d67e5613946662","meeting prep","expected_high_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","meeting prep","expected_low_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","feedback","expected_high_benefit",5
+"d96883fc0b9cf678e1d67e5613946662","feedback","expected_low_benefit",5
+"d96883fc0b9cf678e1d67e5613946662","conversation","expected_high_benefit",4
+"d96883fc0b9cf678e1d67e5613946662","conversation","expected_low_benefit",5
+"d96883fc0b9cf678e1d67e5613946662","housemates","expected_high_benefit",6
+"d96883fc0b9cf678e1d67e5613946662","housemates","expected_low_benefit",4
+"d96883fc0b9cf678e1d67e5613946662","concerts","expected_high_benefit",7
+"d96883fc0b9cf678e1d67e5613946662","concerts","expected_low_benefit",2
+"d96883fc0b9cf678e1d67e5613946662","babysitting","expected_high_benefit",7
+"d96883fc0b9cf678e1d67e5613946662","babysitting","expected_low_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","weekend","expected_high_benefit",4
+"d96883fc0b9cf678e1d67e5613946662","weekend","expected_low_benefit",3
+"d96883fc0b9cf678e1d67e5613946662","police","expected_high_benefit",7
+"d96883fc0b9cf678e1d67e5613946662","police","expected_low_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","group project","expected_high_benefit",1
+"d96883fc0b9cf678e1d67e5613946662","group project","expected_low_benefit",3
+"d96883fc0b9cf678e1d67e5613946662","coffee","expected_high_benefit",4
+"d96883fc0b9cf678e1d67e5613946662","coffee","expected_low_benefit",2
+"d96883fc0b9cf678e1d67e5613946662","family meals","expected_high_benefit",7
+"d96883fc0b9cf678e1d67e5613946662","family meals","expected_low_benefit",2

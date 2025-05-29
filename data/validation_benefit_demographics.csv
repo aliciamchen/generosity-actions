@@ -1,0 +1,64 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+3b43b5d4c3bd12c7995544383aae1ba4,397906,female,59,yes,TRUE,NA
+b0f8dfb154bc2309604fca4628bfc3ea,560873,female,60,yes,TRUE,NA
+60f789e86be3028dfe8ee79b5c4204ef,626200,male,35,yes,TRUE,NA
+a92386d5411c80cff0dfbbbb56fd6935,390577,male,33,yes,TRUE,NA
+4cb50965b8617b6db122a74319279f37,414978,female,37,yes,TRUE,none
+a9665d9ddfa77243865c5aa7a10ebfcf,1786086,male,34,yes,TRUE,"No comments, thank you."
+0675b57c0c57c25874ebb3bed82f18b8,309043,female,62,yes,TRUE,NA
+c12e79a52fa9ec26f4be4bd5d108100f,864117,female,36,yes,TRUE,Thank you
+22b956a0adf9004b8b327d96fff26e7e,2601119,male,42,yes,TRUE,NA
+8cc62e0189bb1ce9be242197aba3ed1e,394264,male,35,yes,TRUE,NA
+e1ed1a2b94c42677990b95406888d9cd,789290,female,51,yes,TRUE,NA
+418346a85a8d88259864d274157015f8,588477,male,31,yes,TRUE,No
+d9f910127a7040d8dc0a8f4f3a4a2bb4,766015,female,61,yes,TRUE,NA
+9c054a5711bf29a87d9b376239662dd3,930207,female,26,yes,TRUE,NA
+af7ecc30c96be3ee8f5c8276291ba949,671496,female,50,yes,TRUE,NA
+74c7cbce61c9a59b5b2a9910055fb543,932403,male,24,yes,TRUE,NA
+97d84bdfa9e71cb408ff6943b7cb3cd3,498867,female,40,yes,TRUE,NA
+fe830ac48cad5f9d7d66f3c41c23a9f0,392603,male,31,yes,TRUE,None
+a2769e845301ae390e2955d4ca8c60c7,584194,nonconforming,25,no,TRUE,No comments
+9b1444f9579f7d1673d48336fc0674da,785421,male,34,yes,TRUE,NA
+19ec2ea2a9b77705762f80f4670f3bd6,1469558,abstain,24,yes,TRUE,NA
+740afc3256dbbd429562b15a3acf41ab,1110246,female,64,yes,TRUE,"By selflessly giving of your time or gifts, you get something in return. Give for the sake of giving, not to get something in return."
+d14b2bbeb849c6c9a6fdaa87a4b7b926,481675,female,33,yes,TRUE,NA
+d21e76abf41797df52718913c99bf41a,371419,nonconforming,18,yes,TRUE,N/A
+5bbccccfb23eaa28d010dfe5b3ab3e2f,1697118,male,29,yes,TRUE,NA
+2a8e3615fc065b73e8749da3123b2c72,433955,male,31,yes,TRUE,No comments.
+61ad9a0947ba6bb1eef3686545fc6442,742590,female,66,yes,TRUE,I have no additional comments or suggestions.
+135d4e7dfd7c9a4b7f1d527768776308,456565,female,59,yes,TRUE,NA
+ab3c0f9ff65d3046b0a8cb738147d5d2,736239,male,20,yes,TRUE,NA
+34960800b48fba1ce67cea160a5d0ccf,759437,male,46,yes,TRUE,I enjoyed participating in this study and I was happy to provide some insight. Thanks!
+4316d74281eee014b478495c8c55d78d,584716,male,30,yes,TRUE,NA
+76faf29bc4357e95dba0e00e600dcf31,754037,male,31,yes,TRUE,It was a wonderful study it feels good and enjoyable too.
+31d30ebce5be771d63b689322a93aee2,371090,female,26,yes,TRUE,NA
+5d242d19364d4ebebb84420f32be3b3b,545199,female,31,yes,TRUE,NA
+b21f562684ba37f83ad454579459a4e2,493803,female,35,yes,TRUE,N/A
+7d27eec2944024b3f7996179f6c978f7,638235,female,33,yes,TRUE,NA
+66c84b79700e4bff163db4eaac7f348c,291477,female,22,yes,TRUE,NA
+253fc91d7cad77f06dee7a9cbb8efef6,420763,male,22,yes,TRUE,NA
+78410b8f5698a855f3c4324aa4764ac5,400975,female,23,yes,TRUE,NA
+38a24313a74945efd04119c64ac02baf,771122,male,23,yes,TRUE,NA
+f7e026fd862420b427cdb47b4debfc7d,695511,male,21,yes,TRUE,NA
+35a06026cf9a2a979d8e7fa8ef36b57f,765320,female,21,yes,TRUE,NA
+2db6000f3ce003fb9c3231204b584c4d,1260484,female,25,yes,TRUE,NA
+67179a45078698dd27905cf761a0cde8,296237,female,23,yes,TRUE,NA
+ec5b85d08342718372a39d021c9c43c2,874760,male,57,yes,TRUE,NA
+875aa2150a8ded5b46bc6cb18fd765c6,457050,male,29,yes,TRUE,NA
+72da4e15ba267d9ff5b535634b16d99a,829451,female,35,yes,TRUE,NA
+5870d2fc3b7650081479760443f2b5f1,509205,female,21,yes,TRUE,NA
+87ecabfd4ed3b4f02a64abec0d09f26f,1293396,male,36,yes,TRUE,early on in the study I accidentally tapped submit without making a selection. Wasn't intentional - sensitive trackpad.
+9d3672b97337fc1e46c9e796c3802834,872432,male,32,yes,TRUE,NA
+ff6914599ed2f0b8764a11f3ba4bc888,1259483,female,68,yes,TRUE,None.
+45d0e5584028c86ff30ac044618a7a29,396886,female,31,yes,TRUE,NA
+9d5dcc57029b3a17631b01b407b63a87,380727,nonconforming,31,yes,TRUE,NA
+2d1c0a906842e13008b937aafefc7228,1006239,male,21,yes,TRUE,"There should definitely be a secondary set of options for the type of benefit. Much similarly to love languages, where it would be ""Gifts"" ""Quality Time"" or ""Effort"". I think some of the people had benefit in different ways, where one side benefit in a physical way, where the other benefit in an emotional way. 
+
+Just feels like an important specification to me when I imagine any social interaction. 
+
+For example : The religious meal from sue, if it was a Christian gathering, Sue would have benefit as Christians enjoy being able to do something good and selfless, whereas the other person gained from getting a meal from the other individual."
+4a7804119f856e1c865cd7b64255f6e1,445222,male,33,yes,TRUE,NA
+7a6a15eff233df83790f23e7a376a860,198858,male,20,yes,TRUE,no
+0232b9d57f53d287eb910bb39d984613,515564,male,36,yes,TRUE,NA
+08052639359f5b30db862b3c462eec73,435618,female,46,yes,TRUE,No comments or suggestions.
+d96883fc0b9cf678e1d67e5613946662,632291,male,27,yes,TRUE,"This was an interesting study, and I do wonder what the results of it will be."
