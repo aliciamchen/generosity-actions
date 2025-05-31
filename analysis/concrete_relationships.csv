@@ -1,0 +1,55 @@
+story,relationship,concrete_relationship
+conversation,more,Employer and Employee
+conversation,equal,Between Co-workers
+conversation,less,Employer and Employee
+coffee,more,Mentor and Mentee
+coffee,equal,Between peers
+coffee,less,Mentor and Mentee
+gifts,more,Godparent and Godchild
+gifts,equal,Between neighbors
+gifts,less,Godparent and Godchild
+housemates,more,Landlord and Tenant
+housemates,equal,Between roommates
+housemates,less,Landlord and Tenant
+family meals,more,Aunt and Niece/Nephew
+family meals,equal,Between cousins
+family meals,less,Aunt and Niece/Nephew
+police,more,Supervisor and Subordinate
+police,equal,Between Co-workers
+police,less,Supervisor and Subordinate
+concerts,more,Between Siblings
+concerts,equal,Between Close Friends
+concerts,less,Between Siblings
+architects,more,Supervisor and Subordinate
+architects,equal,Between Co-workers
+architects,less,Supervisor and Subordinate
+feedback,more,Professor and Graduate student
+feedback,equal,Between peers
+feedback,less,Professor and Graduate student
+meeting location,more,Manager and Staff
+meeting location,equal,Between Co-workers
+meeting location,less,Manager and Staff
+group project,more,Intern and Employee
+group project,equal,Between Co-workers
+group project,less,Intern and Employee
+meeting prep,more,Manager and Assistant
+meeting prep,equal,Between Co-workers
+meeting prep,less,Manager and Assistant
+restaurant,more,Superior and Subordinate
+restaurant,equal,Between Co-workers
+restaurant,less,Superior and Subordinate
+groceries,more,Student and Dorm Resident assistant
+groceries,equal,Between roommates
+groceries,less,Student and Dorm Resident assistant
+weekend,more,Between cousins
+weekend,equal,Between cousins
+weekend,less,Between cousins
+scheduling,more,Mentor and Mentee
+scheduling,equal,Between Co-workers
+scheduling,less,Mentor and Mentee
+babysitting,more,Religious leader and Congregant
+babysitting,equal,Between religious followers
+babysitting,less,Religious leader and Congregant
+fundraising,more,Coach and athlete
+fundraising,equal,Between teammates in sports
+fundraising,less,Coach and athlete
