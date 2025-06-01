@@ -31,13 +31,11 @@ study_1_data <- read_csv(here("data/study-1_tidy_data.csv")) %>%
   mutate(
     relationship = factor(
       relationship,
-      levels = c("no_info", "symmetric", "asymmetric"),
-      labels = c("No info", "Symmetric", "Asymmetric")
+      levels = c("No info", "Symmetric", "Asymmetric")
     ),
     next_interaction = factor(
       next_interaction,
-      levels = c("alternating", "repeating", "none"),
-      labels = c("Reciprocity", "Precedent", "None")
+      levels = c("Reciprocity", "Precedent", "None")
     )
   )
 
@@ -109,7 +107,7 @@ ggplot(study_1_data,
   theme(legend.position = "bottom") +
   facet_wrap( ~ story, nrow = 6)
 
-ggsave(here("figures/study-1_scenarios.pdf"))
+# ggsave(here("figures/study-1_scenarios.pdf"))
 ```
 
 # Study 2
