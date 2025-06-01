@@ -113,19 +113,19 @@ ggplot(study_1_data,
 # Study 2
 
 ```{r}
-study_2_data <- read_csv(here("data/study-2_tidy_data.csv")) %>%
-  mutate(
+study_2_data <- read_csv(here("data/study-2_tidy_data.csv")) %>% 
+    mutate(
     relationship = factor(
       relationship,
-      levels = c("equal", "less", "more"),
-      labels = c("Equal", "Lower", "Higher")
+      levels = c("Equal", "Lower", "Higher")
     ),
     next_interaction = factor(
       next_interaction,
-      levels = c("alternating", "repeating", "none"),
-      labels = c("Reciprocity", "Precedent", "None")
+      levels = c("Reciprocity", "Precedent", "None")
     )
-  )
+  ) %>% 
+  pivot_wider(names_from = "type", values_from = c("n", "diff", "ci_lower", "ci_upper", "mean"))
+
 
 study_2_summary <- study_2_data %>%
   group_by(relationship, next_interaction) %>%
@@ -164,7 +164,7 @@ ggplot(study_2_data,
        fill = "Next interaction") +
   theme(legend.position = "bottom")
 
-ggsave(here("figures/study-2_main.pdf"))
+# ggsave(here("figures/study-2_main.pdf"))
 ```
 
 ```{r fig.width=10, fig.height=10.5}
@@ -195,7 +195,63 @@ ggplot(study_2_data,
   theme(legend.position = "bottom") +
   facet_wrap( ~ story, nrow = 6)
 
-ggsave(here("figures/study-2_scenarios.pdf"))
+# ggsave(here("figures/study-2_scenarios.pdf"))
+```
+## Validation study
+
+TODO: Move from other R script
+
+## Effect size benefit over effort
+
+```{r}
+study_2_benefit_effort <- read.csv(here("data/study-2_benefit_effort.csv")) %>% 
+  rename(
+    diff_x = diff,
+    ci_lower_x = ci_lower, 
+    ci_upper_x = ci_upper) %>% 
+  mutate(relationship = factor(relationship, levels = c("Lower", "Higher")))
+```
+
+```{r}
+study_2_benefit_effort_summary <- study_2_benefit_effort %>%
+  group_by(story, relationship, type, diff_x, ci_lower_x, ci_upper_x) %>%
+  tidyboot_mean(p_prec, na.rm = TRUE) %>% 
+  rename(p_prec = empirical_stat)
+```
+
+```{r fig.width = 7, fig.height=4}
+appender <- function(string, suffix = "-rank generous") paste0(string, suffix)
+
+ggplot(study_2_benefit_effort_summary %>% filter(type == "benefit"), aes(x = diff_x, y = p_prec, color = relationship)) +
+  geom_point(size = 3, alpha = 0.3) +
+  geom_smooth(method = "lm", fill = "lightgray") +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
+    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
+  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  labs(x = "Generous actor benefit minus recipient benefit",
+       y = "P(Precedent)",
+       title = "Study 2: Differential benefit vs. likelihood of a precedent") + 
+  theme(legend.position = "none") +
+  facet_grid(~ relationship, labeller = as_labeller(appender))
+
+ggsave(here("figures/study-2_benefit.pdf"))
+```
+```{r fig.width = 7, fig.height=4}
+ggplot(study_2_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff_x, y = p_prec, color = relationship)) +
+  geom_point(size = 3, alpha = 0.3) +
+  geom_smooth(method = "lm", fill = "lightgray") +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
+    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
+    scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  labs(x = "Generous actor effort minus recipient effort",
+       y = "P(Precedent)",
+       title = "Study 2: Differential effort vs. likelihood of a precedent") + 
+  theme(legend.position = "none") +
+  facet_grid(~ relationship, labeller = as_labeller(appender))
+
+ggsave(here("figures/study-2_effort.pdf"))
 ```
 
 # Study 4
