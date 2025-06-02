@@ -3,10 +3,14 @@ library(tidyverse)
 library(tidyboot)
 library(ggthemes)
 library(forcats)
+library(showtext)
+
+showtext_auto()
+
+font_add(family = "Lato", regular = here("fonts/Lato-Regular.ttf"))
+theme_set(theme_classic(base_size = 15, base_family = "Lato"))
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
-
-theme_set(theme_classic(base_size = 15))
 
 
 # Load data
@@ -118,9 +122,10 @@ write.csv(effort.long.summary,
 
 # Diffs
 ggplot(diffs, aes(x = story, y = diff, fill = type)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
   geom_violin(width = 2.0,
               bw = 0.43,
-              position = position_dodge(width = 0.4)) +
+              position = position_dodge(width = 0.4), alpha = 1) +
   geom_point(
     data = diffs.summary,
     aes(x = story, y = diff),
@@ -135,11 +140,13 @@ ggplot(diffs, aes(x = story, y = diff, fill = type)) +
     size = 1,
     width = 0.2
   ) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
-  labs(x = "story", y = "Generous actor minus recipient") +
+  labs(x = "Scenario", y = "Generous actor minus recipient") +
+  scale_fill_brewer(palette = "Pastel1") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1), 
         legend.position = "none") + 
-  facet_wrap(~type, nrow = 2)
+  facet_wrap(~str_to_title(type), nrow = 2)
+
+ggsave(here("figures/scenario_diffs.pdf"), width = 8, height = 5)
 
 # Benefit
 
@@ -150,8 +157,8 @@ ggplot(
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.4),
-    fill = "#F7A19F"
+    position = position_dodge(width = 0.4), 
+    fill = "#fbb4ae"
   ) +
   geom_point(
     data = benefit.long.summary,
@@ -169,9 +176,11 @@ ggplot(
   ) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "story", y = "Benefit compared to not interacting") +
+  labs(x = "Scenario", y = "Benefit compared to not interacting") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) + 
-  facet_wrap(~partner, nrow = 2)
+  facet_wrap(~partner, nrow = 2, labeller = labeller(partner = c("generous_actor" = "Generous actor", "recipient" = "Recipient")))
+
+ggsave(here("figures/scenario_benefit.pdf"), width = 8, height = 5)
 
 # Effort
 
@@ -183,7 +192,7 @@ ggplot(
     width = 2.0,
     bw = 0.43,
     position = position_dodge(width = 0.4),
-    fill = "#99CCCC"
+    fill = "#b3cde3"
   ) +
   geom_point(
     data = effort.long.summary,
@@ -201,7 +210,9 @@ ggplot(
   ) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "story", y = "Effort compared to not interacting") +
+  labs(x = "Scenario", y = "Effort compared to not interacting") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) + 
-  facet_wrap(~partner, nrow = 2)
+  facet_wrap(~partner, nrow = 2, labeller = labeller(partner = c("generous_actor" = "Generous actor", "recipient" = "Recipient")))
+
+ggsave(here("figures/scenario_effort.pdf"), width = 8, height = 5)
 
