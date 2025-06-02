@@ -50,7 +50,7 @@ print(length(unique(d.effort$subject_id)))
 diffs.benefit <- d.benefit %>%
   group_by(subject_id, story) %>%
   spread(partner, likert_rating) %>%
-  mutate(diff = generous_actor - recipient, type = "benefit")
+  mutate(diff = recipient - generous_actor, type = "benefit")
 
 diffs.effort <- d.effort %>%
   group_by(subject_id, story) %>%
@@ -140,7 +140,7 @@ ggplot(diffs, aes(x = story, y = diff, fill = type)) +
     size = 1,
     width = 0.2
   ) +
-  labs(x = "Scenario", y = "Generous actor minus recipient") +
+  labs(x = "Scenario", y = "Difference between the people interacting") +
   scale_fill_brewer(palette = "Pastel1") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1), 
         legend.position = "none") + 
