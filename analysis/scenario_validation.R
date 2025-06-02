@@ -121,98 +121,123 @@ write.csv(effort.long.summary,
 
 
 # Diffs
-ggplot(diffs, aes(x = story, y = diff, fill = type)) +
+ggplot(diffs %>% filter(type == "benefit"), aes(x = story, y = diff)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
   geom_violin(width = 2.0,
               bw = 0.43,
               position = position_dodge(width = 0.4), alpha = 1) +
   geom_point(
-    data = diffs.summary,
+    data = diffs.summary %>% filter(type == "benefit"),
     aes(x = story, y = diff),
-    size = 1,
+    size = 1.7,
     alpha = 1,
     position = position_dodge(width = 0.4)
   ) +
   geom_errorbar(
-    data = diffs.summary,
+    data = diffs.summary %>% filter(type == "benefit"),
     aes(x = story, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.4),
-    size = 1,
-    width = 0.2
+    size = 1.1,
+    width = 0
   ) +
-  labs(x = "Scenario", y = "Difference between the people interacting") +
-  scale_fill_brewer(palette = "Pastel1") +
+  labs(x = "Scenario", y = "Benefit difference") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1), 
-        legend.position = "none") + 
-  facet_wrap(~str_to_title(type), nrow = 2)
+        legend.position = "none") 
 
-ggsave(here("figures/scenario_diffs.pdf"), width = 8, height = 5)
+ggsave(here("figures/scenario_diffs_benefit.pdf"), width = 8, height = 3.2)
+
+ggplot(diffs %>% filter(type == "effort"), aes(x = story, y = diff)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4), alpha = 1) +
+  geom_point(
+    data = diffs.summary %>% filter(type == "effort"),
+    aes(x = story, y = diff),
+    size = 1.7,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = diffs.summary %>% filter(type == "effort"),
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1.1,
+    width = 0
+  ) +
+  labs(x = "Scenario", y = "Effort difference") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1), 
+        legend.position = "none") 
+
+ggsave(here("figures/scenario_diffs_effort.pdf"), width = 8, height = 3.2)
+
 
 # Benefit
 
 ggplot(
   benefit.long,
-  aes(x = story, y = benefit)
+  aes(x = story, y = benefit, fill = partner)
 ) +
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.4), 
-    fill = "#fbb4ae"
+    position = position_dodge(width = 0.7)
   ) +
   geom_point(
     data = benefit.long.summary,
     aes(x = story, y = benefit),
-    size = 1,
+    size = 1.7,
     alpha = 1,
-    position = position_dodge(width = 0.4)
+    position = position_dodge(width = 0.7)
   ) +
   geom_errorbar(
     data = benefit.long.summary,
     aes(x = story, ymin = ci_lower, ymax = ci_upper),
-    position = position_dodge(width = 0.4),
-    size = 1,
-    width = 0.2
+    position = position_dodge(width = 0.7),
+    size = 1.1, 
+    width = 0
   ) +
+  scale_fill_brewer(palette = "Set2") +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "Scenario", y = "Benefit compared to not interacting") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1)) + 
-  facet_wrap(~partner, nrow = 2, labeller = labeller(partner = c("generous_actor" = "Generous actor", "recipient" = "Recipient")))
+  labs(x = "Scenario", y = "Benefit") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom") 
 
-ggsave(here("figures/scenario_benefit.pdf"), width = 8, height = 5)
+ggsave(here("figures/scenario_benefit.pdf"), width = 8, height = 3.5)
 
 # Effort
 
 ggplot(
   effort.long,
-  aes(x = story, y = effort)
+  aes(x = story, y = effort, fill = partner)
 ) +
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.4),
-    fill = "#b3cde3"
+    position = position_dodge(width = 0.7), 
   ) +
   geom_point(
     data = effort.long.summary,
     aes(x = story, y = effort),
-    size = 1,
+    size = 1.7,
     alpha = 1,
-    position = position_dodge(width = 0.4)
+    position = position_dodge(width = 0.7)
   ) +
   geom_errorbar(
     data = effort.long.summary,
     aes(x = story, ymin = ci_lower, ymax = ci_upper),
-    position = position_dodge(width = 0.4),
-    size = 1,
-    width = 0.2
+    position = position_dodge(width = 0.7),
+    size = 1.1, 
+    width = 0
   ) +
+  scale_fill_brewer(palette = "Set2") +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "Scenario", y = "Effort compared to not interacting") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1)) + 
-  facet_wrap(~partner, nrow = 2, labeller = labeller(partner = c("generous_actor" = "Generous actor", "recipient" = "Recipient")))
+  labs(x = "Scenario", y = "Effort") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom") 
 
-ggsave(here("figures/scenario_effort.pdf"), width = 8, height = 5)
+
+
+ggsave(here("figures/scenario_effort.pdf"), width = 8, height = 3.5)
+
 
