@@ -123,9 +123,7 @@ study_2_data <- read_csv(here("data/study-2_tidy_data.csv")) %>%
       next_interaction,
       levels = c("Reciprocity", "Precedent", "None")
     )
-  ) %>% 
-  pivot_wider(names_from = "type", values_from = c("n", "diff", "ci_lower", "ci_upper", "mean"))
-
+  )
 
 study_2_summary <- study_2_data %>%
   group_by(relationship, next_interaction) %>%
@@ -254,40 +252,39 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
 ggsave(here("figures/study-2_effort.pdf"))
 ```
 
-# Study 4
+# Study 3
 
 ```{r}
-study_4_data <- read_csv(here("data/study-4_tidy_data.csv")) %>%
-  mutate(
+study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>% 
+    mutate(
     relationship = factor(
       relationship,
-      levels = c("equal", "lower", "higher"),
-      labels = c("Equal", "Lower", "Higher")
+      levels = c("Equal", "Lower", "Higher")
     ),
     next_interaction = factor(
       next_interaction,
-      levels = c("alternating", "repeating", "none"),
-      labels = c("Reciprocity", "Precedent", "None")
+      levels = c("Reciprocity", "Precedent", "None")
     )
   )
 
-study_4_summary <- study_4_data %>%
+study_3_summary <- study_3_data %>%
   group_by(relationship, next_interaction) %>%
   tidyboot_mean(likert_rating, na.rm = T)
 
-study_4_summary_scenario <- study_4_data %>%
+study_3_summary_scenario <- study_3_data %>%
   group_by(relationship, next_interaction, story) %>%
   tidyboot_mean(likert_rating, na.rm = T)
 ```
 
+
 ```{r fig.width=6, fig.height=3.5, dpi=125}
-ggplot(study_4_data,
+ggplot(study_3_data,
        aes(x = relationship, y = likert_rating, fill = next_interaction)) +
   geom_violin(bw = 0.43,
               position = position_dodge(width = 0.7),
               alpha = 0.8) +
   geom_pointrange(
-    data = study_4_summary,
+    data = study_3_summary,
     aes(
       x = relationship,
       y = empirical_stat,
@@ -301,22 +298,22 @@ ggplot(study_4_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 4: Concrete relationships",
+  labs(title = "Study 3: Concrete relationships",
        x = "Rank of generous character",
        y = "How likely?",
        fill = "Next interaction") +
   theme(legend.position = "bottom")
-ggsave(here("figures/study-4_main.pdf"))
+# ggsave(here("figures/study-4_main.pdf"))
 ```
 
 ```{r fig.width=10, fig.height=10.5}
-ggplot(study_4_data,
+ggplot(study_3_data,
        aes(x = relationship, y = likert_rating, fill = next_interaction)) +
   geom_violin(bw = 0.43,
               position = position_dodge(width = 0.7),
               alpha = 0.8) +
   geom_pointrange(
-    data = study_4_summary_scenario,
+    data = study_3_summary_scenario,
     aes(
       x = relationship,
       y = empirical_stat,
@@ -330,16 +327,71 @@ ggplot(study_4_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 4: Concrete relationships",
+  labs(title = "Study 3: Concrete relationships",
        x = "Rank of generous character",
        y = "How likely?",
        fill = "Next interaction") +
   theme(legend.position = "bottom") +
   facet_wrap( ~ story, nrow = 6)
 
-ggsave(here("figures/study-4_scenarios.pdf"))
+ggsave(here("figures/study-3_scenarios.pdf"))
 ```
-# Study 3
+
+
+## Effect size benefit over effort
+
+```{r}
+study_3_benefit_effort <- read.csv(here("data/study-3_benefit_effort.csv")) %>% 
+  rename(
+    diff_x = diff,
+    ci_lower_x = ci_lower, 
+    ci_upper_x = ci_upper) %>% 
+  mutate(relationship = factor(relationship, levels = c("Lower", "Higher")))
+```
+
+```{r}
+study_3_benefit_effort_summary <- study_3_benefit_effort %>%
+  group_by(story, relationship, type, diff_x, ci_lower_x, ci_upper_x) %>%
+  tidyboot_mean(p_prec, na.rm = TRUE) %>% 
+  rename(p_prec = empirical_stat)
+```
+
+```{r fig.width = 7, fig.height=4}
+appender <- function(string, suffix = "-rank generous") paste0(string, suffix)
+
+ggplot(study_3_benefit_effort_summary %>% filter(type == "benefit"), aes(x = diff_x, y = p_prec, color = relationship)) +
+  geom_point(size = 3, alpha = 0.3) +
+  geom_smooth(method = "lm", fill = "lightgray") +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
+    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
+  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  labs(x = "Generous actor benefit minus recipient benefit",
+       y = "P(Precedent)",
+       title = "Study 3: Differential benefit vs. likelihood of a precedent") + 
+  theme(legend.position = "none") +
+  facet_grid(~ relationship, labeller = as_labeller(appender))
+
+ggsave(here("figures/study-3_benefit.pdf"))
+```
+```{r fig.width = 7, fig.height=4}
+ggplot(study_3_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff_x, y = p_prec, color = relationship)) +
+  geom_point(size = 3, alpha = 0.3) +
+  geom_smooth(method = "lm", fill = "lightgray") +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
+    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
+    scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  labs(x = "Generous actor effort minus recipient effort",
+       y = "P(Precedent)",
+       title = "Study 3: Differential effort vs. likelihood of a precedent") + 
+  theme(legend.position = "none") +
+  facet_grid(~ relationship, labeller = as_labeller(appender))
+
+ggsave(here("figures/study-3_effort.pdf"))
+```
+
+# Study 4
 
 ```{r}
 study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>%
