@@ -15,10 +15,12 @@ options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 # Load data
 
-d.benefit <- read.csv(here('data/validation_benefit_data.csv')) %>% 
+d.benefit <- read.csv(here("data/validation_benefit_data.csv")) %>%
   filter(pass_attention == T, understood == "yes") %>%
-  rename("recipient" = expected_high_benefit, 
-         "generous_actor" = expected_low_benefit) %>% 
+  rename(
+    "recipient" = expected_high_benefit,
+    "generous_actor" = expected_low_benefit
+  ) %>%
   pivot_longer(
     cols = c("generous_actor", "recipient"),
     names_to = "partner",
@@ -29,10 +31,12 @@ d.benefit <- read.csv(here('data/validation_benefit_data.csv')) %>%
 
 print(length(unique(d.benefit$subject_id)))
 
-d.effort <- read.csv(here('data/validation_effort_data.csv')) %>% 
+d.effort <- read.csv(here("data/validation_effort_data.csv")) %>%
   filter(pass_attention == T, understood == "yes") %>%
-  rename("recipient" = expected_high_benefit, 
-         "generous_actor" = expected_low_benefit) %>% 
+  rename(
+    "recipient" = expected_high_benefit,
+    "generous_actor" = expected_low_benefit
+  ) %>%
   pivot_longer(
     cols = c("generous_actor", "recipient"),
     names_to = "partner",
@@ -103,8 +107,9 @@ benefit.long.summary <- benefit.long %>%
   rename(benefit = empirical_stat)
 
 write.csv(benefit.long.summary,
-          here("data/scenarios_benefit.csv"),
-          row.names = FALSE)
+  here("data/scenarios_benefit.csv"),
+  row.names = FALSE
+)
 
 effort.long.summary <- effort.long %>%
   group_by(story, partner) %>%
@@ -112,8 +117,9 @@ effort.long.summary <- effort.long %>%
   rename(effort = empirical_stat)
 
 write.csv(effort.long.summary,
-          here("data/scenarios_effort.csv"),
-          row.names = FALSE)
+  here("data/scenarios_effort.csv"),
+  row.names = FALSE
+)
 
 
 
@@ -123,9 +129,11 @@ write.csv(effort.long.summary,
 # Diffs
 ggplot(diffs %>% filter(type == "benefit"), aes(x = story, y = diff)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
-  geom_violin(width = 2.0,
-              bw = 0.43,
-              position = position_dodge(width = 0.4), alpha = 1) +
+  geom_violin(
+    width = 2.0,
+    bw = 0.43,
+    position = position_dodge(width = 0.4), alpha = 1
+  ) +
   geom_point(
     data = diffs.summary %>% filter(type == "benefit"),
     aes(x = story, y = diff),
@@ -141,16 +149,20 @@ ggplot(diffs %>% filter(type == "benefit"), aes(x = story, y = diff)) +
     width = 0
   ) +
   labs(x = "Scenario", y = "Benefit difference") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1), 
-        legend.position = "none") 
+  theme(
+    axis.text.x = element_text(angle = 30, hjust = 1),
+    legend.position = "none"
+  )
 
-ggsave(here("figures/scenario_diffs_benefit.pdf"), width = 8, height = 3.2)
+ggsave(here("figures/scenario_diffs_benefit.pdf"), width = 9.5, height = 3)
 
 ggplot(diffs %>% filter(type == "effort"), aes(x = story, y = diff)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
-  geom_violin(width = 2.0,
-              bw = 0.43,
-              position = position_dodge(width = 0.4), alpha = 1) +
+  geom_violin(
+    width = 2.0,
+    bw = 0.43,
+    position = position_dodge(width = 0.4), alpha = 1
+  ) +
   geom_point(
     data = diffs.summary %>% filter(type == "effort"),
     aes(x = story, y = diff),
@@ -166,10 +178,12 @@ ggplot(diffs %>% filter(type == "effort"), aes(x = story, y = diff)) +
     width = 0
   ) +
   labs(x = "Scenario", y = "Effort difference") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1), 
-        legend.position = "none") 
+  theme(
+    axis.text.x = element_text(angle = 30, hjust = 1),
+    legend.position = "none"
+  )
 
-ggsave(here("figures/scenario_diffs_effort.pdf"), width = 8, height = 3.2)
+ggsave(here("figures/scenario_diffs_effort.pdf"), width = 9.5, height = 3)
 
 
 # Benefit
@@ -194,16 +208,21 @@ ggplot(
     data = benefit.long.summary,
     aes(x = story, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.7),
-    size = 1.1, 
+    size = 1.1,
     width = 0
   ) +
-  scale_fill_brewer(palette = "Set2") +
-  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
-                     limits = c(0.8, 7.2)) +
-  labs(x = "Scenario", y = "Benefit") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom") 
+  scale_fill_brewer(
+    palette = "Set2",
+    labels = c("Generous actor", "Recipient")
+  ) +
+  scale_y_continuous(
+    breaks = c(1, 2, 3, 4, 5, 6, 7),
+    limits = c(0.8, 7.2)
+  ) +
+  labs(x = "Scenario", y = "Benefit", fill = "Partner") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom")
 
-ggsave(here("figures/scenario_benefit.pdf"), width = 8, height = 3.5)
+ggsave(here("figures/scenario_benefit.pdf"), width = 9.5, height = 3.7)
 
 # Effort
 
@@ -214,7 +233,7 @@ ggplot(
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.7), 
+    position = position_dodge(width = 0.7),
   ) +
   geom_point(
     data = effort.long.summary,
@@ -227,17 +246,21 @@ ggplot(
     data = effort.long.summary,
     aes(x = story, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.7),
-    size = 1.1, 
+    size = 1.1,
     width = 0
   ) +
-  scale_fill_brewer(palette = "Set2") +
-  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
-                     limits = c(0.8, 7.2)) +
-  labs(x = "Scenario", y = "Effort") +
-  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom") 
+  scale_fill_brewer(
+    palette = "Set2",
+    labels = c("Generous actor", "Recipient")
+  ) +
+  scale_y_continuous(
+    breaks = c(1, 2, 3, 4, 5, 6, 7),
+    limits = c(0.8, 7.2)
+  ) +
+  labs(x = "Scenario", y = "Effort", fill = "Partner") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom")
 
 
 
-ggsave(here("figures/scenario_effort.pdf"), width = 8, height = 3.5)
-
+ggsave(here("figures/scenario_effort.pdf"), width = 9.5, height = 3.7)
 

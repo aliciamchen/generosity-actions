@@ -49,7 +49,7 @@ d <-
   left_join(scenarios.diffs)
 
 
-write_csv(d, here("data/study-2_tidy_data.csv"))
+
 
 d.benefit.effort <- d %>% filter(relationship != "Equal", next_interaction != "None") %>% select(-normalized_likert_rating) %>%
   pivot_wider(names_from = next_interaction, values_from = likert_rating) %>%
@@ -58,6 +58,10 @@ d.benefit.effort <- d %>% filter(relationship != "Equal", next_interaction != "N
          p_prec = (Precedent / (Precedent + Reciprocity))) %>%
   ungroup()
 
+d <- d %>% 
+  pivot_wider(names_from = "type", values_from = c("n", "diff", "ci_lower", "ci_upper", "mean"))
+
+write_csv(d, here("data/study-2_tidy_data.csv"))
 write_csv(d.benefit.effort, here("data/study-2_benefit_effort.csv"))
 
 

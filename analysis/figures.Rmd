@@ -20,7 +20,6 @@ theme_set(theme_classic(base_size = 15, base_family = "Lato"))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 action_colors <- c("#F0E442", "#E69F00", "#D6D6D6")
-relationship.colors <- c("#00A08A", "#35ACFF","#B87FFF")
 ```
 
 
@@ -227,7 +226,7 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "benefit"), aes(x = dif
     geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Generous actor benefit minus recipient benefit",
+  labs(x = "Differential benefit",
        y = "P(Precedent)",
        title = "Study 2: Differential benefit vs. likelihood of a precedent") + 
   theme(legend.position = "none") +
@@ -243,7 +242,7 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
     geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
     scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Generous actor effort minus recipient effort",
+  labs(x = "Differential effort",
        y = "P(Precedent)",
        title = "Study 2: Differential effort vs. likelihood of a precedent") + 
   theme(legend.position = "none") +
@@ -366,7 +365,7 @@ ggplot(study_3_benefit_effort_summary %>% filter(type == "benefit"), aes(x = dif
     geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Generous actor benefit minus recipient benefit",
+  labs(x = "Differential benefit",
        y = "P(Precedent)",
        title = "Study 3: Differential benefit vs. likelihood of a precedent") + 
   theme(legend.position = "none") +
@@ -382,7 +381,7 @@ ggplot(study_3_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
     geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
     scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Generous actor effort minus recipient effort",
+  labs(x = "Differential effort",
        y = "P(Precedent)",
        title = "Study 3: Differential effort vs. likelihood of a precedent") + 
   theme(legend.position = "none") +
