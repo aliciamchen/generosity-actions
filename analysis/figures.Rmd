@@ -20,6 +20,7 @@ theme_set(theme_classic(base_size = 15, base_family = "Lato"))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 action_colors <- c("#F0E442", "#E69F00", "#D6D6D6")
+relationship_colors = c("Higher" = "#DC267F", "Lower" = "#785EF0")
 ```
 
 
@@ -436,9 +437,44 @@ study_4_first_second_summary <-
     suffix = c("_first", "_second"),
     by = (c("story"))
   )
-
-
 ```
+## Do we replicate the previous results? 
+
+```{r}
+study_4_summary <- study_4_data %>% 
+    mutate(strategy = recode(
+    strategy,
+    "Precedent" = 1,
+    "Reciprocity" = 0
+  )) %>%
+  group_by(first_response, first_actual) %>% 
+  tidyboot_mean(strategy, na.rm = TRUE) %>% 
+  mutate(Expectations = case_when(
+  first_actual != first_response ~ "Inconsistent",
+  first_actual == first_response ~ "Consistent"), 
+  Expectations = factor(Expectations, levels = c("Consistent", "Inconsistent")))
+```
+
+      
+
+```{r fig.width=6, fig.height=3.2}
+ggplot(study_4_summary, aes(x = first_actual, y = empirical_stat, color = first_actual, shape = Expectations)) +
+  geom_pointrange(
+    aes(ymin = ci_lower, ymax = ci_upper),
+    size = 0.7,
+    linewidth = 1.5,
+    position = position_dodge(width = 0.2),
+  ) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
+  scale_color_manual(values = relationship_colors, guide = "none") +
+  scale_shape_discrete(name = "First time prediction") +
+  scale_y_continuous(limits = c(0, 1)) +
+  labs(x = "Rank of generous actor",
+       y = "P(Precedent)") +
+  theme(legend.position = "right") 
+```
+
+## Implicit cooordination
 
 First time plots
 
@@ -468,7 +504,7 @@ ggplot(study_4_first_time_summary, aes(x = story, y = empirical_stat)) +
 ggsave(here("figures/study-4_implicit.pdf"))
 ```
 
-First time vs. second time
+## Main plot: First time vs. second time
 
 ```{r fig.width=4.5, fig.height=4.5}
 ggplot(
@@ -547,6 +583,17 @@ studies_2_4_summary <-
     by = (c("story"))
   )
 
+studies_2_4_all <- 
+    left_join(
+    study_2_first_second,
+    study_4_first_time,
+    suffix = c("_2", "_4"),
+    by = (c("story", "diff_benefit", "ci_lower_benefit", "ci_upper_benefit", "diff_effort", "ci_lower_effort", "ci_upper_effort"))
+  ) %>% 
+  rename(expected.first.4 = empirical_stat, expected.next.2 = normalized_likert_rating) %>%
+  filter(second_response == "Lower")
+
+
 ```
 
 
@@ -614,7 +661,7 @@ study_3_first_second_summary <- study_3_first_second %>%
   tidyboot_mean(normalized_likert_rating, na.rm = T)
 
 
-studies_3_4 <-
+studies_3_4_summary <-
   left_join(
     study_3_first_second_summary,
     study_4_first_time_summary,
@@ -627,16 +674,15 @@ studies_3_4_all <-
     study_3_first_second,
     study_4_first_time,
     suffix = c("_3", "_4"),
-    by = (c("story", "diff_benefit", "diff_effort"))
+    by = (c("story", "diff_benefit", "ci_lower_benefit", "ci_upper_benefit", "diff_effort", "ci_lower_effort", "ci_upper_effort"))
   ) %>% 
   rename(expected.first.3 = empirical_stat, expected.next.4 = normalized_likert_rating) %>%
   filter(second_response == "Lower")
-
 ```
 
 
 ```{r fig.width=4.5, fig.height=4.5}
-ggplot(studies_3_4,
+ggplot(studies_3_4_summary,
        aes(x = empirical_stat_4, y = empirical_stat_3, color = first_actual)) +
   geom_point(size = 3.3,
              alpha = 0.3,
@@ -673,7 +719,7 @@ ggsave(here("figures/study-3-4_first_second.pdf"))
 ```
 
 ```{r fig.width=7.5, fig.height=4.5}
-ggplot(studies_3_4,
+ggplot(studies_3_4_summary,
        aes(x = prestige_score, y = empirical_stat_3, color = first_actual)) +
   geom_point(size = 3.3,
              alpha = 0.3,
@@ -700,7 +746,7 @@ ggsave(here("figures/study-3_prestige.pdf"))
 ```
 
 ```{r fig.width=7.5, fig.height=4.5}
-ggplot(studies_3_4,
+ggplot(studies_3_4_summary,
        aes(x = dominance_score, y = empirical_stat_3, color = first_actual)) +
   geom_point(size = 3.3,
              alpha = 0.3,
