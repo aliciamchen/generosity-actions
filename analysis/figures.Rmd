@@ -20,7 +20,7 @@ theme_set(theme_classic(base_size = 15, base_family = "Lato"))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 action_colors <- c("#F0E442", "#E69F00", "#D6D6D6")
-relationship_colors = c("Higher" = "#DC267F", "Lower" = "#785EF0")
+relationship_colors <- c("Higher" = "#DC267F", "Lower" = "#785EF0")
 ```
 
 
@@ -50,11 +50,15 @@ study_1_summary_scenario <- study_1_data %>%
 
 
 ```{r fig.width=6, fig.height=3.5, dpi=125}
-ggplot(study_1_data,
-       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
-  geom_violin(bw = 0.43,
-              position = position_dodge(width = 0.7),
-              alpha = 0.8) +
+ggplot(
+  study_1_data,
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
+  geom_violin(
+    bw = 0.43,
+    position = position_dodge(width = 0.7),
+    alpha = 0.8
+  ) +
   geom_pointrange(
     data = study_1_summary,
     aes(
@@ -70,21 +74,27 @@ ggplot(study_1_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 1: Equal vs. hierarchical",
-       x = "Relationship",
-       y = "How likely?",
-       fill = "Next interaction") +
+  labs(
+    title = "Study 1: Equal vs. hierarchical",
+    x = "Relationship",
+    y = "How likely?",
+    fill = "Next interaction"
+  ) +
   theme(legend.position = "bottom")
 
 ggsave(here("figures/study-1_main.pdf"))
 ```
 
 ```{r fig.width=10, fig.height=10.5}
-ggplot(study_1_data,
-       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
-  geom_violin(bw = 0.43,
-              position = position_dodge(width = 0.7),
-              alpha = 0.8) +
+ggplot(
+  study_1_data,
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
+  geom_violin(
+    bw = 0.43,
+    position = position_dodge(width = 0.7),
+    alpha = 0.8
+  ) +
   geom_pointrange(
     data = study_1_summary_scenario,
     aes(
@@ -100,12 +110,14 @@ ggplot(study_1_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 1: Equal vs. hierarchical",
-       x = "Relationship",
-       y = "How likely?",
-       fill = "Next interaction") +
+  labs(
+    title = "Study 1: Equal vs. hierarchical",
+    x = "Relationship",
+    y = "How likely?",
+    fill = "Next interaction"
+  ) +
   theme(legend.position = "bottom") +
-  facet_wrap( ~ story, nrow = 6)
+  facet_wrap(~story, nrow = 6)
 
 # ggsave(here("figures/study-1_scenarios.pdf"))
 ```
@@ -113,8 +125,8 @@ ggplot(study_1_data,
 # Study 2
 
 ```{r}
-study_2_data <- read_csv(here("data/study-2_tidy_data.csv")) %>% 
-    mutate(
+study_2_data <- read_csv(here("data/study-2_tidy_data.csv")) %>%
+  mutate(
     relationship = factor(
       relationship,
       levels = c("Equal", "Lower", "Higher")
@@ -136,11 +148,15 @@ study_2_summary_scenario <- study_2_data %>%
 
 
 ```{r fig.width=6, fig.height=3.5, dpi=125}
-ggplot(study_2_data,
-       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
-  geom_violin(bw = 0.43,
-              position = position_dodge(width = 0.7),
-              alpha = 0.8) +
+ggplot(
+  study_2_data,
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
+  geom_violin(
+    bw = 0.43,
+    position = position_dodge(width = 0.7),
+    alpha = 0.8
+  ) +
   geom_pointrange(
     data = study_2_summary,
     aes(
@@ -156,21 +172,27 @@ ggplot(study_2_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 2: Relative rank",
-       x = "Rank of generous character",
-       y = "How likely?",
-       fill = "Next interaction") +
+  labs(
+    title = "Study 2: Relative rank",
+    x = "Rank of generous character",
+    y = "How likely?",
+    fill = "Next interaction"
+  ) +
   theme(legend.position = "bottom")
 
 # ggsave(here("figures/study-2_main.pdf"))
 ```
 
 ```{r fig.width=10, fig.height=10.5}
-ggplot(study_2_data,
-       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
-  geom_violin(bw = 0.43,
-              position = position_dodge(width = 0.7),
-              alpha = 0.8) +
+ggplot(
+  study_2_data,
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
+  geom_violin(
+    bw = 0.43,
+    position = position_dodge(width = 0.7),
+    alpha = 0.8
+  ) +
   geom_pointrange(
     data = study_2_summary_scenario,
     aes(
@@ -186,12 +208,14 @@ ggplot(study_2_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 2: Relative rank",
-       x = "Rank of generous character",
-       y = "How likely?",
-       fill = "Next interaction") +
+  labs(
+    title = "Study 2: Relative rank",
+    x = "Rank of generous character",
+    y = "How likely?",
+    fill = "Next interaction"
+  ) +
   theme(legend.position = "bottom") +
-  facet_wrap( ~ story, nrow = 6)
+  facet_wrap(~story, nrow = 6)
 
 # ggsave(here("figures/study-2_scenarios.pdf"))
 ```
@@ -202,18 +226,19 @@ TODO: Move from other R script
 ## Effect size benefit over effort
 
 ```{r}
-study_2_benefit_effort <- read.csv(here("data/study-2_benefit_effort.csv")) %>% 
+study_2_benefit_effort <- read.csv(here("data/study-2_benefit_effort.csv")) %>%
   rename(
     diff_x = diff,
-    ci_lower_x = ci_lower, 
-    ci_upper_x = ci_upper) %>% 
+    ci_lower_x = ci_lower,
+    ci_upper_x = ci_upper
+  ) %>%
   mutate(relationship = factor(relationship, levels = c("Lower", "Higher")))
 ```
 
 ```{r}
 study_2_benefit_effort_summary <- study_2_benefit_effort %>%
   group_by(story, relationship, type, diff_x, ci_lower_x, ci_upper_x) %>%
-  tidyboot_mean(p_prec, na.rm = TRUE) %>% 
+  tidyboot_mean(p_prec, na.rm = TRUE) %>%
   rename(p_prec = empirical_stat)
 ```
 
@@ -223,15 +248,17 @@ appender <- function(string, suffix = "-rank generous") paste0(string, suffix)
 ggplot(study_2_benefit_effort_summary %>% filter(type == "benefit"), aes(x = diff_x, y = p_prec, color = relationship)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
-  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
-    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
+  geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Differential benefit",
-       y = "P(Precedent)",
-       title = "Study 2: Differential benefit vs. likelihood of a precedent") + 
+  labs(
+    x = "Differential benefit",
+    y = "P(Precedent)",
+    title = "Study 2: Differential benefit vs. likelihood of a precedent"
+  ) +
   theme(legend.position = "none") +
-  facet_grid(~ relationship, labeller = as_labeller(appender))
+  facet_grid(~relationship, labeller = as_labeller(appender))
 
 ggsave(here("figures/study-2_benefit.pdf"))
 ```
@@ -241,15 +268,17 @@ ggsave(here("figures/study-2_benefit.pdf"))
 ggplot(study_2_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff_x, y = p_prec, color = relationship)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
-  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
-    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
+  geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-    scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Differential effort",
-       y = "P(Precedent)",
-       title = "Study 2: Differential effort vs. likelihood of a precedent") + 
+  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  labs(
+    x = "Differential effort",
+    y = "P(Precedent)",
+    title = "Study 2: Differential effort vs. likelihood of a precedent"
+  ) +
   theme(legend.position = "none") +
-  facet_grid(~ relationship, labeller = as_labeller(appender))
+  facet_grid(~relationship, labeller = as_labeller(appender))
 
 ggsave(here("figures/study-2_effort.pdf"))
 ```
@@ -257,8 +286,8 @@ ggsave(here("figures/study-2_effort.pdf"))
 # Study 3
 
 ```{r}
-study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>% 
-    mutate(
+study_3_data <- read_csv(here("data/study-3_tidy_data.csv")) %>%
+  mutate(
     relationship = factor(
       relationship,
       levels = c("Equal", "Lower", "Higher")
@@ -280,11 +309,15 @@ study_3_summary_scenario <- study_3_data %>%
 
 
 ```{r fig.width=6, fig.height=3.5, dpi=125}
-ggplot(study_3_data,
-       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
-  geom_violin(bw = 0.43,
-              position = position_dodge(width = 0.7),
-              alpha = 0.8) +
+ggplot(
+  study_3_data,
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
+  geom_violin(
+    bw = 0.43,
+    position = position_dodge(width = 0.7),
+    alpha = 0.8
+  ) +
   geom_pointrange(
     data = study_3_summary,
     aes(
@@ -300,20 +333,26 @@ ggplot(study_3_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 3: Concrete relationships",
-       x = "Rank of generous character",
-       y = "How likely?",
-       fill = "Next interaction") +
+  labs(
+    title = "Study 3: Concrete relationships",
+    x = "Rank of generous character",
+    y = "How likely?",
+    fill = "Next interaction"
+  ) +
   theme(legend.position = "bottom")
 # ggsave(here("figures/study-4_main.pdf"))
 ```
 
 ```{r fig.width=10, fig.height=10.5}
-ggplot(study_3_data,
-       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
-  geom_violin(bw = 0.43,
-              position = position_dodge(width = 0.7),
-              alpha = 0.8) +
+ggplot(
+  study_3_data,
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
+  geom_violin(
+    bw = 0.43,
+    position = position_dodge(width = 0.7),
+    alpha = 0.8
+  ) +
   geom_pointrange(
     data = study_3_summary_scenario,
     aes(
@@ -329,12 +368,14 @@ ggplot(study_3_data,
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
-  labs(title = "Study 3: Concrete relationships",
-       x = "Rank of generous character",
-       y = "How likely?",
-       fill = "Next interaction") +
+  labs(
+    title = "Study 3: Concrete relationships",
+    x = "Rank of generous character",
+    y = "How likely?",
+    fill = "Next interaction"
+  ) +
   theme(legend.position = "bottom") +
-  facet_wrap( ~ story, nrow = 6)
+  facet_wrap(~story, nrow = 6)
 
 ggsave(here("figures/study-3_scenarios.pdf"))
 ```
@@ -343,18 +384,19 @@ ggsave(here("figures/study-3_scenarios.pdf"))
 ## Effect size benefit over effort
 
 ```{r}
-study_3_benefit_effort <- read.csv(here("data/study-3_benefit_effort.csv")) %>% 
+study_3_benefit_effort <- read.csv(here("data/study-3_benefit_effort.csv")) %>%
   rename(
     diff_x = diff,
-    ci_lower_x = ci_lower, 
-    ci_upper_x = ci_upper) %>% 
+    ci_lower_x = ci_lower,
+    ci_upper_x = ci_upper
+  ) %>%
   mutate(relationship = factor(relationship, levels = c("Lower", "Higher")))
 ```
 
 ```{r}
 study_3_benefit_effort_summary <- study_3_benefit_effort %>%
   group_by(story, relationship, type, diff_x, ci_lower_x, ci_upper_x) %>%
-  tidyboot_mean(p_prec, na.rm = TRUE) %>% 
+  tidyboot_mean(p_prec, na.rm = TRUE) %>%
   rename(p_prec = empirical_stat)
 ```
 
@@ -364,15 +406,17 @@ appender <- function(string, suffix = "-rank generous") paste0(string, suffix)
 ggplot(study_3_benefit_effort_summary %>% filter(type == "benefit"), aes(x = diff_x, y = p_prec, color = relationship)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
-  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
-    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
+  geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Differential benefit",
-       y = "P(Precedent)",
-       title = "Study 3: Differential benefit vs. likelihood of a precedent") + 
+  labs(
+    x = "Differential benefit",
+    y = "P(Precedent)",
+    title = "Study 3: Differential benefit vs. likelihood of a precedent"
+  ) +
   theme(legend.position = "none") +
-  facet_grid(~ relationship, labeller = as_labeller(appender))
+  facet_grid(~relationship, labeller = as_labeller(appender))
 
 ggsave(here("figures/study-3_benefit.pdf"))
 ```
@@ -380,15 +424,17 @@ ggsave(here("figures/study-3_benefit.pdf"))
 ggplot(study_3_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff_x, y = p_prec, color = relationship)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
-  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.13, alpha = 0.3) +
-    geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size= 1.5, height = 0.015, alpha = 0.3) +
+  geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
+  geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-    scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Differential effort",
-       y = "P(Precedent)",
-       title = "Study 3: Differential effort vs. likelihood of a precedent") + 
+  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  labs(
+    x = "Differential effort",
+    y = "P(Precedent)",
+    title = "Study 3: Differential effort vs. likelihood of a precedent"
+  ) +
   theme(legend.position = "none") +
-  facet_grid(~ relationship, labeller = as_labeller(appender))
+  facet_grid(~relationship, labeller = as_labeller(appender))
 
 ggsave(here("figures/study-3_effort.pdf"))
 ```
@@ -427,7 +473,8 @@ study_4_first_time_summary$story <-
 
 # First vs. second time
 study_4_second_summary <-
-  study_4_data %>% filter(symmetric == "Asymmetric") %>%
+  study_4_data %>%
+  filter(symmetric == "Asymmetric") %>%
   mutate(second_response = recode(second_response, "Higher" = 0, "Lower" = 1)) %>%
   group_by(story, first_actual) %>%
   tidyboot_mean(second_response, na.rm = TRUE)
@@ -443,18 +490,21 @@ study_4_first_second_summary <-
 ## Do we replicate the previous results? 
 
 ```{r}
-study_4_summary <- study_4_data %>% 
-    mutate(strategy = recode(
+study_4_summary <- study_4_data %>%
+  mutate(strategy = recode(
     strategy,
     "Precedent" = 1,
     "Reciprocity" = 0
   )) %>%
-  group_by(first_response, first_actual) %>% 
-  tidyboot_mean(strategy, na.rm = TRUE) %>% 
-  mutate(Expectations = case_when(
-  first_actual != first_response ~ "Inconsistent",
-  first_actual == first_response ~ "Consistent"), 
-  Expectations = factor(Expectations, levels = c("Consistent", "Inconsistent")))
+  group_by(first_response, first_actual) %>%
+  tidyboot_mean(strategy, na.rm = TRUE) %>%
+  mutate(
+    Expectations = case_when(
+      first_actual != first_response ~ "Inconsistent",
+      first_actual == first_response ~ "Consistent"
+    ),
+    Expectations = factor(Expectations, levels = c("Consistent", "Inconsistent"))
+  )
 ```
 
       
@@ -471,9 +521,11 @@ ggplot(study_4_summary, aes(x = first_actual, y = empirical_stat, color = first_
   scale_color_manual(values = relationship_colors, guide = "none") +
   scale_shape_discrete(name = "First time prediction") +
   scale_y_continuous(limits = c(0, 1)) +
-  labs(x = "Rank of generous actor",
-       y = "P(Precedent)") +
-  theme(legend.position = "right") 
+  labs(
+    x = "Rank of generous actor",
+    y = "P(Precedent)"
+  ) +
+  theme(legend.position = "right")
 ```
 
 ## Implicit cooordination
@@ -500,7 +552,7 @@ ggplot(study_4_first_time_summary, aes(x = story, y = empirical_stat)) +
     alpha = 0.5
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  labs(x = "Scenario", y = "P(lower-rank generous)", title = 'Study 3: Implicit coordination') +
+  labs(x = "Scenario", y = "P(lower-rank generous)", title = "Study 3: Implicit coordination") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
 ggsave(here("figures/study-4_implicit.pdf"))
@@ -513,40 +565,48 @@ ggsave(here("figures/study-4_implicit.pdf"))
 ggplot(study_4_first_second_summary, aes(x = diff_effort, y = empirical_stat_first)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
-  geom_errorbar(mapping = aes(x = diff_effort, ymin = ci_lower_first, ymax=ci_upper_first), size= 1.5, width = 0.11, alpha = 0.3) +
-    geom_errorbarh(mapping = aes(y = empirical_stat_first, xmin = ci_lower_effort, xmax = ci_upper_effort), size= 1.5, height = 0.03, alpha = 0.3) +
+  geom_errorbar(mapping = aes(x = diff_effort, ymin = ci_lower_first, ymax = ci_upper_first), size = 1.5, width = 0.11, alpha = 0.3) +
+  geom_errorbarh(mapping = aes(y = empirical_stat_first, xmin = ci_lower_effort, xmax = ci_upper_effort), size = 1.5, height = 0.03, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-  labs(x = "Differential effort",
-       y = "P(Lower-ranked generous)") +
-  theme(legend.position = "none") 
+  labs(
+    x = "Differential effort",
+    y = "P(Lower-ranked generous)"
+  ) +
+  theme(legend.position = "none")
 ```
 
 ```{r fig.width = 6, fig.height=4}
 ggplot(study_4_first_second_summary, aes(x = diff_benefit, y = empirical_stat_first)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
-  geom_errorbar(mapping = aes(x = diff_benefit, ymin = ci_lower_first, ymax=ci_upper_first), size= 1.5, width = 0.11, alpha = 0.3) +
-    geom_errorbarh(mapping = aes(y = empirical_stat_first, xmin = ci_lower_benefit, xmax = ci_upper_benefit), size= 1.5, height = 0.03, alpha = 0.3) +
+  geom_errorbar(mapping = aes(x = diff_benefit, ymin = ci_lower_first, ymax = ci_upper_first), size = 1.5, width = 0.11, alpha = 0.3) +
+  geom_errorbarh(mapping = aes(y = empirical_stat_first, xmin = ci_lower_benefit, xmax = ci_upper_benefit), size = 1.5, height = 0.03, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
   lims(y = c(0, 1)) +
-  labs(x = "Differential benefit",
-       y = "P(Lower-ranked generous)") +
-  theme(legend.position = "none") 
+  labs(
+    x = "Differential benefit",
+    y = "P(Lower-ranked generous)"
+  ) +
+  theme(legend.position = "none")
 ```
 
 ## Main plot: First time vs. second time
 
 ```{r fig.width=4.5, fig.height=4.5}
 ggplot(
-    study_4_first_second_summary,
-    aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual)
+  study_4_first_second_summary,
+  aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual)
+) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
   ) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
-  geom_point(size = 3.6,
-             alpha = 0.3,
-             stroke = 0) +
+  geom_point(
+    size = 3.6,
+    alpha = 0.3,
+    stroke = 0
+  ) +
   geom_errorbar(
     mapping = aes(x = empirical_stat_first, ymin = ci_lower_second, ymax = ci_upper_second),
     size = 1.5,
@@ -559,17 +619,21 @@ ggplot(
     height = 0.03,
     alpha = 0.3
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
-  geom_vline(xintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
+  geom_vline(
+    xintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "First time P(lower-rank generous)", y = "Second time P(lower-rank generous)", color = "Observed rank of generous actor") + 
-  theme(legend.position = "bottom") 
+  labs(x = "First time P(lower-rank generous)", y = "Second time P(lower-rank generous)", color = "Observed rank of generous actor") +
+  theme(legend.position = "bottom")
 
 
 
@@ -579,9 +643,8 @@ ggsave(here("figures/study-4_first_second.pdf"))
 ## Study 4 vs. Study 2
 
 ```{r}
-
 study_2_first_second <- study_2_data %>%
-  filter(relationship != "Equal", next_interaction != 'None') %>%
+  filter(relationship != "Equal", next_interaction != "None") %>%
   group_by(subject_id, story, relationship) %>%
   mutate(
     total_rating = sum(likert_rating),
@@ -589,18 +652,18 @@ study_2_first_second <- study_2_data %>%
   ) %>%
   select(-total_rating) %>%
   ungroup() %>%
-  rename(first_actual  = relationship) %>%
+  rename(first_actual = relationship) %>%
   mutate(
     second_response = case_when(
-      next_interaction == 'Precedent' ~ first_actual,
-      next_interaction == 'Reciprocity' ~ ifelse(first_actual == "Higher", "Lower", "Higher"),
-      next_interaction == 'None' ~ 'None'
+      next_interaction == "Precedent" ~ first_actual,
+      next_interaction == "Reciprocity" ~ ifelse(first_actual == "Higher", "Lower", "Higher"),
+      next_interaction == "None" ~ "None"
     )
   )
 
 
 study_2_first_second_summary <- study_2_first_second %>%
-  filter(second_response == 'Lower') %>%
+  filter(second_response == "Lower") %>%
   group_by(story, first_actual) %>%
   tidyboot_mean(normalized_likert_rating, na.rm = T)
 
@@ -616,14 +679,20 @@ studies_2_4_summary <-
 
 
 ```{r fig.width=4.5, fig.height=4.5}
-ggplot(studies_2_4_summary,
-       aes(x = empirical_stat_4, y = empirical_stat_2, color = first_actual)) +
-  geom_point(size = 3.3,
-             alpha = 0.3,
-             stroke = 0) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
+ggplot(
+  studies_2_4_summary,
+  aes(x = empirical_stat_4, y = empirical_stat_2, color = first_actual)
+) +
+  geom_point(
+    size = 3.3,
+    alpha = 0.3,
+    stroke = 0
+  ) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
+  ) +
   geom_errorbar(
     mapping = aes(x = empirical_stat_4, ymin = ci_lower_2, ymax = ci_upper_2),
     size = 1.5,
@@ -636,12 +705,16 @@ ggplot(studies_2_4_summary,
     height = 0.03,
     alpha = 0.3
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
-  geom_vline(xintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
+  geom_vline(
+    xintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
@@ -652,11 +725,11 @@ ggplot(studies_2_4_summary,
 ggsave(here("figures/study-2-4_first_second.pdf"))
 ```
 
-## Study 4 vs. study 3 (concrete relationships) 
+## Study 4 vs. Study 3 (concrete relationships) 
 
 ```{r}
 study_3_first_second <- study_3_data %>%
-  filter(relationship != "Equal", next_interaction != 'None') %>%
+  filter(relationship != "Equal", next_interaction != "None") %>%
   group_by(subject_id, story, relationship) %>%
   mutate(
     total_rating = sum(likert_rating),
@@ -667,14 +740,14 @@ study_3_first_second <- study_3_data %>%
   rename(first_actual = relationship) %>%
   mutate(
     second_response = case_when(
-      next_interaction == 'Precedent' ~ first_actual,
-      next_interaction == 'Reciprocity' ~ ifelse(first_actual == "Higher", "Lower", "Higher"),
-      next_interaction == 'None' ~ 'None'
+      next_interaction == "Precedent" ~ first_actual,
+      next_interaction == "Reciprocity" ~ ifelse(first_actual == "Higher", "Lower", "Higher"),
+      next_interaction == "None" ~ "None"
     )
   )
 
 study_3_first_second_summary <- study_3_first_second %>%
-  filter(second_response == 'Lower') %>%
+  filter(second_response == "Lower") %>%
   group_by(story, first_actual, prestige_score, dominance_score) %>%
   tidyboot_mean(normalized_likert_rating, na.rm = T)
 
@@ -687,27 +760,33 @@ studies_3_4_summary <-
     by = (c("story"))
   )
 
-studies_3_4_all <- 
-    left_join(
+studies_3_4_all <-
+  left_join(
     study_3_first_second,
     study_4_first_time_summary,
     suffix = c("_3", "_4"),
     by = (c("story", "diff_benefit", "ci_lower_benefit", "ci_upper_benefit", "diff_effort", "ci_lower_effort", "ci_upper_effort"))
-  ) %>% 
+  ) %>%
   rename(expected.first.3 = empirical_stat, expected.next.4 = normalized_likert_rating) %>%
   filter(second_response == "Lower")
 ```
 
 
 ```{r fig.width=4.5, fig.height=4.5}
-ggplot(studies_3_4_summary,
-       aes(x = empirical_stat_4, y = empirical_stat_3, color = first_actual)) +
-  geom_point(size = 3.3,
-             alpha = 0.3,
-             stroke = 0) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
+ggplot(
+  studies_3_4_summary,
+  aes(x = empirical_stat_4, y = empirical_stat_3, color = first_actual)
+) +
+  geom_point(
+    size = 3.3,
+    alpha = 0.3,
+    stroke = 0
+  ) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
+  ) +
   geom_errorbar(
     mapping = aes(x = empirical_stat_4, ymin = ci_lower_3, ymax = ci_upper_3),
     size = 1.5,
@@ -720,12 +799,16 @@ ggplot(studies_3_4_summary,
     height = 0.03,
     alpha = 0.3
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
-  geom_vline(xintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
+  geom_vline(
+    xintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
@@ -736,55 +819,71 @@ ggplot(studies_3_4_summary,
 ggsave(here("figures/study-3-4_first_second.pdf"))
 ```
 
-```{r fig.width=7.5, fig.height=4.5}
-ggplot(studies_3_4_summary,
-       aes(x = prestige_score, y = empirical_stat_3, color = first_actual)) +
-  geom_point(size = 3.3,
-             alpha = 0.3,
-             stroke = 0) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
+```{r fig.width=4, fig.height=4.5}
+ggplot(
+  studies_3_4_summary,
+  aes(x = prestige_score, y = empirical_stat_3, color = first_actual)
+) +
+  geom_point(
+    size = 3.3,
+    alpha = 0.3,
+    stroke = 0
+  ) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
+  ) +
   geom_errorbar(
     mapping = aes(x = prestige_score, ymin = ci_lower_3, ymax = ci_upper_3),
     size = 1.5,
     width = 0.03,
     alpha = 0.3
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
   labs(x = "Prestige score", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
-  theme(legend.position = "right")
+  theme(legend.position = "bottom")
 
 
 ggsave(here("figures/study-3_prestige.pdf"))
 ```
 
-```{r fig.width=7.5, fig.height=4.5}
-ggplot(studies_3_4_summary,
-       aes(x = dominance_score, y = empirical_stat_3, color = first_actual)) +
-  geom_point(size = 3.3,
-             alpha = 0.3,
-             stroke = 0) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
+```{r fig.width=4, fig.height=4.5}
+ggplot(
+  studies_3_4_summary,
+  aes(x = dominance_score, y = empirical_stat_3, color = first_actual)
+) +
+  geom_point(
+    size = 3.3,
+    alpha = 0.3,
+    stroke = 0
+  ) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
+  ) +
   geom_errorbar(
     mapping = aes(x = dominance_score, ymin = ci_lower_3, ymax = ci_upper_3),
     size = 1.5,
     width = 0.03,
     alpha = 0.3
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
   labs(x = "Dominance score", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
-  theme(legend.position = "right")
+  theme(legend.position = "bottom")
 
 
 ggsave(here("figures/study-3_dominance.pdf"))
@@ -796,39 +895,51 @@ plot correlation of dominance score vs. prestige score
 ggplot(studies_3_4_summary, aes(x = dominance_score, y = prestige_score)) +
   geom_point(size = 2.5) +
   geom_smooth(method = "lm", fill = "lightgray", linewidth = 1.3) +
-  labs(x = "Dominance score", y = "Prestige score") 
+  labs(x = "Dominance score", y = "Prestige score")
+
+ggsave(here("figures/dominance_vs_prestige.pdf"))
 ```
 
 Plot 'first time' with dominance score, see how much they are related
 
 ```{r fig.width=4, fig.height=4}
-ggplot(studies_3_4_summary %>% filter(first_actual == "Lower"),
-       aes(x = dominance_score, y = empirical_stat_4)) +
+ggplot(
+  studies_3_4_summary %>% filter(first_actual == "Lower"),
+  aes(x = dominance_score, y = empirical_stat_4)
+) +
   geom_pointrange(
     aes(y = empirical_stat_4, ymin = ci_lower_4, ymax = ci_upper_4),
     size = 0.7,
     linewidth = 1.5
   ) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
+  ) +
   lims(y = c(0, 1)) +
-  labs(y = "Study 4 First time P(lower-rank generous)", x = "Dominance score") 
+  labs(y = "Study 4 First time P(lower-rank generous)", x = "Dominance score")
 
-ggplot(studies_3_4_summary %>% filter(first_actual == "Lower"),
-       aes(x = prestige_score, y = empirical_stat_4)) +
+ggsave(here("figures/study-4_dominance-vs-first.pdf"))
+
+ggplot(
+  studies_3_4_summary %>% filter(first_actual == "Lower"),
+  aes(x = prestige_score, y = empirical_stat_4)
+) +
   geom_pointrange(
     aes(y = empirical_stat_4, ymin = ci_lower_4, ymax = ci_upper_4),
     size = 0.7,
     linewidth = 1.5
   ) +
-  geom_smooth(method = "lm",
-              fill = "lightgray",
-              linewidth = 1.3) +
+  geom_smooth(
+    method = "lm",
+    fill = "lightgray",
+    linewidth = 1.3
+  ) +
   lims(y = c(0, 1)) +
-  labs(y = "Study 4 First time P(lower-rank generous)", x = "Prestige score") 
+  labs(y = "Study 4 First time P(lower-rank generous)", x = "Prestige score")
 
-
+ggsave(here("figures/study-4_prestige-vs-first.pdf"))
 ```
 
 
@@ -880,12 +991,14 @@ ggplot(
     x = "Self rank",
     y = "P(first time generous)"
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   scale_color_manual(values = relationship.colors) +
-  facet_wrap( ~ scenario_id) +
+  facet_wrap(~scenario_id) +
   theme(legend.position = "none")
 
 ggsave(here("figures/study-5_first_time_scenarios.pdf"))
@@ -907,9 +1020,11 @@ ggplot(
     y = "P(Self generous first time)",
     color = "Self rank"
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   scale_color_manual(values = relationship.colors) +
   theme(legend.position = "none")
@@ -939,9 +1054,11 @@ ggplot(
     linewidth = 1.5,
     position = position_dodge(width = 0.2)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   labs(
     title = "Study 5: Strategies",
     x = "Self rank",
@@ -949,7 +1066,7 @@ ggplot(
     color = "First time coordination"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful")) 
+  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful"))
 
 ggsave(here("figures/study-5_strategies.pdf"))
 ```
@@ -994,11 +1111,13 @@ ggplot(
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_fill_manual(values = c("#E69F00" =  "#E69F00", "#F0E442" = "#F0E442")) +
+  scale_fill_manual(values = c("#E69F00" = "#E69F00", "#F0E442" = "#F0E442")) +
   labs(
     title = "Study 5: Second time",
     x = "Self rank",
@@ -1006,9 +1125,9 @@ ggplot(
     color = "Self rank"
   ) +
   scale_color_brewer(
-    palette = "Set1", 
+    palette = "Set1",
     labels = c("Unsuccessful", "Successful")
-  ) + 
+  ) +
   facet_grid(partner_first_choice ~ participant_first_choice) +
   theme(legend.position = "none", strip.background = element_blank())
 
@@ -1024,9 +1143,11 @@ ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   labs(
     title = "Study 5: Second time (successful first time)",
@@ -1036,9 +1157,9 @@ ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     shape = "First time generous"
   ) +
   scale_color_manual(
-    values = c("Receive" = "#E69F00", "Give" = "#F0E442"), 
+    values = c("Receive" = "#E69F00", "Give" = "#F0E442"),
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
-  ) + 
+  ) +
   scale_shape_manual(
     values = c("Receive" = 16, "Give" = 17),
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
@@ -1054,9 +1175,11 @@ ggplot(study_5_summary %>% filter(successful_first_time == FALSE), aes(x = parti
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   labs(
     title = "Study 5: Second time (unsuccessful first time)",
@@ -1066,8 +1189,8 @@ ggplot(study_5_summary %>% filter(successful_first_time == FALSE), aes(x = parti
   ) +
   scale_color_grey(
     start = 0.4, end = 0.7,
-     labels = c("Give" = "Both give", "Receive" = "Both receive")
-  ) 
+    labels = c("Give" = "Both give", "Receive" = "Both receive")
+  )
 
 ggsave(here("figures/study-5_second_time_unsuccessful.pdf"))
 ```
@@ -1084,9 +1207,11 @@ ggplot(
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   labs(
     title = "Study 5: Second time choices",
@@ -1095,11 +1220,13 @@ ggplot(
     color = "Self rank"
   ) +
   scale_color_manual(values = relationship.colors) +
-  facet_wrap(~ participant_first_choice,
-             labeller = labeller(
-               participant_first_choice = function(x)
-                 paste("First choice:", x)
-             )) +
+  facet_wrap(~participant_first_choice,
+    labeller = labeller(
+      participant_first_choice = function(x) {
+        paste("First choice:", x)
+      }
+    )
+  ) +
   theme(legend.position = "bottom")
 ```
 
@@ -1152,11 +1279,13 @@ ggplot(
     y = "P(First time generous)",
     color = "Self rank"
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
-  facet_wrap( ~ scenario_id) +
+  facet_wrap(~scenario_id) +
   theme(legend.position = "none")
 
 ggsave(here("figures/study-6_first_time_scenarios.pdf"))
@@ -1178,9 +1307,11 @@ ggplot(
     y = "P(Self generous first time)",
     color = "Self rank"
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   theme(legend.position = "none")
 
@@ -1209,9 +1340,11 @@ ggplot(
     linewidth = 1.5,
     position = position_dodge(width = 0.2)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   labs(
     title = "Study 6: Strategies",
     x = "Self rank",
@@ -1219,7 +1352,7 @@ ggplot(
     color = "First time coordination"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful")) 
+  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful"))
 
 ggsave(here("figures/study-6_strategies.pdf"))
 ```
@@ -1264,11 +1397,13 @@ ggplot(
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_fill_manual(values = c("#E69F00" =  "#E69F00", "#F0E442" = "#F0E442")) +
+  scale_fill_manual(values = c("#E69F00" = "#E69F00", "#F0E442" = "#F0E442")) +
   labs(
     title = "Study 6: Second time",
     x = "Self rank",
@@ -1276,7 +1411,7 @@ ggplot(
     color = "Self rank"
   ) +
   scale_color_brewer(
-    palette = "Set1", 
+    palette = "Set1",
     labels = c("Unsuccessful", "Successful")
   ) +
   facet_grid(partner_first_choice ~ participant_first_choice) +
@@ -1295,9 +1430,11 @@ ggplot(study_6_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   labs(
     title = "Study 6: Second time (successful first time)",
@@ -1306,7 +1443,7 @@ ggplot(study_6_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     color = "First time generous"
   ) +
   scale_color_manual(
-    values = c("Receive" = "#E69F00", "Give" = "#F0E442"), 
+    values = c("Receive" = "#E69F00", "Give" = "#F0E442"),
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
   )
 
@@ -1321,9 +1458,11 @@ ggplot(study_6_summary %>% filter(successful_first_time == FALSE), aes(x = parti
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   labs(
     title = "Study 6: Second time (unsuccessful first time)",
@@ -1333,8 +1472,8 @@ ggplot(study_6_summary %>% filter(successful_first_time == FALSE), aes(x = parti
   ) +
   scale_color_grey(
     start = 0.4, end = 0.7,
-     labels = c("Give" = "Both give", "Receive" = "Both receive")
-  ) 
+    labels = c("Give" = "Both give", "Receive" = "Both receive")
+  )
 
 ggsave(here("figures/study-6_second_time_unsuccessful.pdf"))
 ```
@@ -1350,9 +1489,11 @@ ggplot(
     linewidth = 1.5,
     position = position_dodge(width = 0.3)
   ) +
-  geom_hline(yintercept = 0.5,
-             linetype = "dashed",
-             color = "gray") +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   scale_y_continuous(limits = c(0, 1)) +
   labs(
     title = "Study 6: Second time",
@@ -1361,11 +1502,13 @@ ggplot(
     color = "Self rank"
   ) +
   scale_color_manual(values = relationship.colors) +
-  facet_wrap(~ participant_first_choice,
-             labeller = labeller(
-               participant_first_choice = function(x)
-                 paste("First choice:", x)
-             )) +
+  facet_wrap(~participant_first_choice,
+    labeller = labeller(
+      participant_first_choice = function(x) {
+        paste("First choice:", x)
+      }
+    )
+  ) +
   theme(legend.position = "bottom")
 ```
 
