@@ -11,7 +11,6 @@ library(glue)
 
 options(warn = -1)
 
-theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 emm_options(lmerTest.limit = 3179)
@@ -236,8 +235,39 @@ summary(mod)
 
 
 
+# Full model with Study 2 benefit / effort
+
+benefit.effort.2 <- read.csv(here("data/study-2_benefit_effort.csv")) %>%
+  mutate(relationship = factor(relationship, levels = c("Equal", "Lower", "Higher")),
+         study = "Study 2")
+
+study.3.benefit.effort <- d.benefit.effort %>%
+  mutate(study = "Study 3")
+
+benefit.effort.all <- bind_rows(benefit.effort.2, study.3.benefit.effort)
 
 
+mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id) + (1 | study),
+            data = benefit.effort.all %>% filter(relationship == "Higher", type == "benefit"))
+
+summary(mod)
+
+mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id) + (1 | study),
+            data = benefit.effort.all %>% filter(relationship == "Higher", type == "effort"))
+
+summary(mod)
+
+
+
+mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id) + (1 | study),
+            data = benefit.effort.all %>% filter(relationship == "Lower", type == "benefit"))
+
+summary(mod)
+
+mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id) + (1 | study),
+            data = benefit.effort.all %>% filter(relationship == "Lower", type == "effort"))
+
+summary(mod)
 
 
 

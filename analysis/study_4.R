@@ -51,7 +51,12 @@ d <-
     first_response = response_first,
     second_response = response_second
   ) %>%
-  mutate(symmetric = ifelse(first_actual == "Equal", "Symmetric", "Asymmetric")) %>%
+  mutate(symmetric = ifelse(first_actual == "Equal", "Symmetric", "Asymmetric"), 
+    Expectations = case_when(
+      first_actual != first_response ~ "Inconsistent",
+      first_actual == first_response ~ "Consistent"
+    ),
+    Expectations = factor(Expectations, levels = c("Consistent", "Inconsistent"))) %>%
   group_by(story) %>%
   left_join(scenarios.diffs) %>%
   pivot_wider(names_from = type, values_from = c("n", "diff", "ci_lower", "ci_upper", "mean"))
@@ -200,6 +205,54 @@ emmeans(mod, pairwise ~ first_actual) %>% summary(infer = T)
 # Confidence level used: 0.95
 # Conf-level adjustment: tukey method for comparing a family of 3 estimates
 # P value adjustment: tukey method for comparing a family of 3 estimates
+
+# Add consistent / inconsistent as a predictor
+mod <- glmer(
+  data = d,
+  strategy ~ first_actual * Expectations + (1 |
+                               subject_id) + (1 |
+                                                story),
+  family = "binomial"
+)
+
+summary(mod)
+emmeans(mod, pairwise ~ first_actual * Expectations) %>% summary(infer = T)
+
+# $emmeans
+# first_actual Expectations emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
+# Equal        Consistent   -1.413 0.219 Inf    -1.842   -0.9833  -6.450  <.0001
+# Higher       Consistent    0.869 0.237 Inf     0.404    1.3337   3.664  0.0002
+# Lower        Consistent    1.165 0.240 Inf     0.695    1.6342   4.862  <.0001
+# Equal        Inconsistent nonEst    NA  NA        NA        NA      NA      NA
+# Higher       Inconsistent -0.389 0.234 Inf    -0.847    0.0692  -1.664  0.0961
+# Lower        Inconsistent -0.200 0.233 Inf    -0.657    0.2565  -0.859  0.3902
+# 
+# Results are given on the logit (not the response) scale. 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+# contrast                                 estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
+# Equal Consistent - Higher Consistent       -2.281 0.176 Inf    -2.761    -1.802 -12.991  <.0001
+# Equal Consistent - Lower Consistent        -2.577 0.180 Inf    -3.069    -2.086 -14.305  <.0001
+# Equal Consistent - Equal Inconsistent      nonEst    NA  NA        NA        NA      NA      NA
+# Equal Consistent - Higher Inconsistent     -1.024 0.166 Inf    -1.478    -0.570  -6.150  <.0001
+# Equal Consistent - Lower Inconsistent      -1.212 0.166 Inf    -1.665    -0.760  -7.309  <.0001
+# Higher Consistent - Lower Consistent       -0.296 0.202 Inf    -0.846     0.255  -1.465  0.5852
+# Higher Consistent - Equal Inconsistent     nonEst    NA  NA        NA        NA      NA      NA
+# Higher Consistent - Higher Inconsistent     1.258 0.197 Inf     0.719     1.796   6.369  <.0001
+# Higher Consistent - Lower Inconsistent      1.069 0.186 Inf     0.562     1.577   5.746  <.0001
+# Lower Consistent - Equal Inconsistent      nonEst    NA  NA        NA        NA      NA      NA
+# Lower Consistent - Higher Inconsistent      1.553 0.190 Inf     1.035     2.071   8.180  <.0001
+# Lower Consistent - Lower Inconsistent       1.365 0.201 Inf     0.818     1.912   6.805  <.0001
+# Equal Inconsistent - Higher Inconsistent   nonEst    NA  NA        NA        NA      NA      NA
+# Equal Inconsistent - Lower Inconsistent    nonEst    NA  NA        NA        NA      NA      NA
+# Higher Inconsistent - Lower Inconsistent   -0.189 0.189 Inf    -0.705     0.328  -0.995  0.8577
+# 
+# Results are given on the log odds ratio (not the response) scale. 
+# Confidence level used: 0.95 
+# Conf-level adjustment: tukey method for comparing a family of 5 estimates 
+# P value adjustment: tukey method for comparing a family of 5 estimates 
+
 
 
 
@@ -431,5 +484,58 @@ mod2 <- lmer(
 
 summary(mod2)
 
+# Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+# Formula: expected.next.3 ~ (dominance_score + prestige_score + expected.first.4) *  
+#     first_actual + (1 | subject_id) + (1 | story)
+#    Data: studies_3_4_all
+# 
+# REML criterion at convergence: -659.8
+# 
+# Scaled residuals: 
+#     Min      1Q  Median      3Q     Max 
+# -3.0323 -0.5802 -0.0153  0.6424  2.5525 
+# 
+# Random effects:
+#  Groups     Name        Variance  Std.Dev.
+#  subject_id (Intercept) 0.0000000 0.00000 
+#  story      (Intercept) 0.0008452 0.02907 
+#  Residual               0.0194478 0.13946 
+# Number of obs: 678, groups:  subject_id, 57; story, 18
+# 
+# Fixed effects:
+#                                  Estimate Std. Error         df t value Pr(>|t|)   
+# (Intercept)                     2.846e-01  7.319e-02  1.411e+01   3.888  0.00162 **
+# dominance_score                 5.085e-04  7.331e-04  1.396e+01   0.694  0.49931   
+# prestige_score                  1.731e-03  1.006e-03  1.404e+01   1.720  0.10732   
+# expected.first.4                1.548e-01  3.766e-02  1.434e+01   4.109  0.00101 **
+# first_actual1                  -2.087e-02  4.498e-02  6.613e+02  -0.464  0.64281   
+# dominance_score:first_actual1   1.391e-03  4.476e-04  6.586e+02   3.108  0.00196 **
+# prestige_score:first_actual1    5.043e-04  6.174e-04  6.622e+02   0.817  0.41437   
+# expected.first.4:first_actual1 -7.255e-02  2.327e-02  6.600e+02  -3.117  0.00190 **
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# 
+# Correlation of Fixed Effects:
+#             (Intr) dmnnc_ prstg_ exp..4 frst_1 dm_:_1 pr_:_1
+# dominnc_scr -0.027                                          
+# prestig_scr -0.922 -0.254                                   
+# expctd.fr.4 -0.359 -0.215  0.179                            
+# first_actl1 -0.001  0.026 -0.004 -0.015                     
+# dmnnc_sc:_1  0.026 -0.002 -0.021 -0.024 -0.032              
+# prstg_sc:_1 -0.004 -0.021  0.008  0.018 -0.922 -0.245       
+# expct..4:_1 -0.015 -0.024  0.018  0.020 -0.358 -0.217  0.173
+# optimizer (nloptwrap) convergence code: 0 (OK)
+# boundary (singular) fit: see help('isSingular')
+
 # Is the more complex model better?
 anova(mod, mod2)
+
+# Data: studies_3_4_all
+# Models:
+#   mod: expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) + (1 | story)
+# mod2: expected.next.3 ~ (dominance_score + prestige_score + expected.first.4) * first_actual + (1 | subject_id) + (1 | story)
+# npar     AIC     BIC logLik deviance  Chisq Df Pr(>Chisq)   
+# mod     7 -706.93 -675.29 360.46  -720.93                        
+# mod2   11 -716.36 -666.65 369.18  -738.36 17.434  4   0.001591 **
+#   ---
+#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -452,6 +452,8 @@ study_4_data <- read_csv(here("data/study-4_tidy_data.csv")) %>%
       first_response,
       levels = c("Equal", "Lower", "Higher")
     )
+  ) %>% mutate(
+    Expectations = factor(Expectations, levels = c("Consistent", "Inconsistent"))
   )
 
 # Implicit coordination
@@ -496,15 +498,9 @@ study_4_summary <- study_4_data %>%
     "Precedent" = 1,
     "Reciprocity" = 0
   )) %>%
-  group_by(first_response, first_actual) %>%
-  tidyboot_mean(strategy, na.rm = TRUE) %>%
-  mutate(
-    Expectations = case_when(
-      first_actual != first_response ~ "Inconsistent",
-      first_actual == first_response ~ "Consistent"
-    ),
-    Expectations = factor(Expectations, levels = c("Consistent", "Inconsistent"))
-  )
+  group_by(first_response, first_actual, Expectations) %>%
+  tidyboot_mean(strategy, na.rm = TRUE)
+
 ```
 
       
@@ -513,8 +509,8 @@ study_4_summary <- study_4_data %>%
 ggplot(study_4_summary, aes(x = first_actual, y = empirical_stat, color = first_actual, shape = Expectations)) +
   geom_pointrange(
     aes(ymin = ci_lower, ymax = ci_upper),
-    size = 0.7,
-    linewidth = 1.5,
+    size = 1.0,
+    linewidth = 1.8,
     position = position_dodge(width = 0.2),
   ) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
@@ -526,6 +522,8 @@ ggplot(study_4_summary, aes(x = first_actual, y = empirical_stat, color = first_
     y = "P(Precedent)"
   ) +
   theme(legend.position = "right")
+
+ggsave(here("figures/study-4_main.pdf"))
 ```
 
 ## Implicit cooordination
@@ -561,21 +559,24 @@ ggsave(here("figures/study-4_implicit.pdf"))
 
 ### Correlate benefit and effort with implicit coordination expectations
 
-```{r fig.width = 6, fig.height=4}
+```{r fig.width = 4.5, fig.height=4}
 ggplot(study_4_first_second_summary, aes(x = diff_effort, y = empirical_stat_first)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
   geom_errorbar(mapping = aes(x = diff_effort, ymin = ci_lower_first, ymax = ci_upper_first), size = 1.5, width = 0.11, alpha = 0.3) +
   geom_errorbarh(mapping = aes(y = empirical_stat_first, xmin = ci_lower_effort, xmax = ci_upper_effort), size = 1.5, height = 0.03, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
+  lims(y = c(0, 1)) +
   labs(
     x = "Differential effort",
     y = "P(Lower-ranked generous)"
   ) +
   theme(legend.position = "none")
+
+ggsave(here("figures/study-4_effort-first-time.pdf"))
 ```
 
-```{r fig.width = 6, fig.height=4}
+```{r fig.width = 4.5, fig.height=4}
 ggplot(study_4_first_second_summary, aes(x = diff_benefit, y = empirical_stat_first)) +
   geom_point(size = 3, alpha = 0.3) +
   geom_smooth(method = "lm", fill = "lightgray") +
@@ -588,6 +589,8 @@ ggplot(study_4_first_second_summary, aes(x = diff_benefit, y = empirical_stat_fi
     y = "P(Lower-ranked generous)"
   ) +
   theme(legend.position = "none")
+
+ggsave(here("figures/study-4_benefit-first-time.pdf"))
 ```
 
 ## Main plot: First time vs. second time
@@ -819,7 +822,7 @@ ggplot(
 ggsave(here("figures/study-3-4_first_second.pdf"))
 ```
 
-```{r fig.width=4, fig.height=4.5}
+```{r fig.width=4, fig.height=4}
 ggplot(
   studies_3_4_summary,
   aes(x = prestige_score, y = empirical_stat_3, color = first_actual)
@@ -848,13 +851,13 @@ ggplot(
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
   labs(x = "Prestige score", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 
 
 ggsave(here("figures/study-3_prestige.pdf"))
 ```
 
-```{r fig.width=4, fig.height=4.5}
+```{r fig.width=4, fig.height=4}
 ggplot(
   studies_3_4_summary,
   aes(x = dominance_score, y = empirical_stat_3, color = first_actual)
@@ -883,7 +886,7 @@ ggplot(
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
   labs(x = "Dominance score", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
-  theme(legend.position = "bottom")
+  theme(legend.position = "none")
 
 
 ggsave(here("figures/study-3_dominance.pdf"))
@@ -899,12 +902,37 @@ ggplot(studies_3_4_summary, aes(x = dominance_score, y = prestige_score)) +
 
 ggsave(here("figures/dominance_vs_prestige.pdf"))
 ```
+```{r}
+cor.test(studies_3_4_summary$dominance_score, studies_3_4_summary$prestige_score, method = "pearson")
+```
+
 
 Plot 'first time' with dominance score, see how much they are related
 
+```{r}
+studies_3_4_lower_summary <- studies_3_4_summary %>%
+  filter(first_actual == "Lower") 
+
+studies_3_4_higher_summary <- studies_3_4_summary %>%
+  filter(first_actual == "Higher")
+```
+
+Correlation of dominance score vs. first time P(lower-rank generous)
+```{r}
+cor.test(studies_3_4_lower_summary$dominance_score, studies_3_4_lower_summary$empirical_stat_4, method = "pearson")
+```
+
+Correlation of prestige score vs. first time P(lower-rank generous)
+```{r}
+cor.test(studies_3_4_higher_summary$prestige_score, studies_3_4_higher_summary$empirical_stat_4, method = "pearson")
+```
+
+
+
+
 ```{r fig.width=4, fig.height=4}
 ggplot(
-  studies_3_4_summary %>% filter(first_actual == "Lower"),
+  studies_3_4_lower_summary,
   aes(x = dominance_score, y = empirical_stat_4)
 ) +
   geom_pointrange(
@@ -917,13 +945,18 @@ ggplot(
     fill = "lightgray",
     linewidth = 1.3
   ) +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
+  ) +
   lims(y = c(0, 1)) +
   labs(y = "Study 4 First time P(lower-rank generous)", x = "Dominance score")
 
 ggsave(here("figures/study-4_dominance-vs-first.pdf"))
 
 ggplot(
-  studies_3_4_summary %>% filter(first_actual == "Lower"),
+  studies_3_4_higher_summary,
   aes(x = prestige_score, y = empirical_stat_4)
 ) +
   geom_pointrange(
@@ -935,6 +968,11 @@ ggplot(
     method = "lm",
     fill = "lightgray",
     linewidth = 1.3
+  ) +
+  geom_hline(
+    yintercept = 0.5,
+    linetype = "dashed",
+    color = "gray"
   ) +
   lims(y = c(0, 1)) +
   labs(y = "Study 4 First time P(lower-rank generous)", x = "Prestige score")
