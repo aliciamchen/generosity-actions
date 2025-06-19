@@ -1038,7 +1038,7 @@ ggplot(
   facet_wrap(~scenario_id) +
   theme(legend.position = "none")
 
-# ggsave(here("figures/study-5_first_time_scenarios.pdf"))
+ggsave(here("figures/study-5_first_time_scenarios.pdf"))
 ```
 
 ```{r fig.width=2.8, fig.height=3.2}
@@ -1066,7 +1066,7 @@ ggplot(
   scale_color_manual(values = relationship_colors) +
   theme(legend.position = "none")
 
-# ggsave(here("figures/study-5_first_time_all.pdf"))
+ggsave(here("figures/study-5_first_time_all.pdf"))
 ```
 
 
@@ -1105,7 +1105,7 @@ ggplot(
   scale_y_continuous(limits = c(0, 1)) +
   scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful"))
 
-# ggsave(here("figures/study-5_strategies.pdf"))
+ggsave(here("figures/study-5_strategies.pdf"))
 ```
 
 ```{r}
@@ -1151,7 +1151,7 @@ ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
   )
 
-# ggsave(here("figures/study-5_second_time_successful.pdf"))
+ggsave(here("figures/study-5_second_time_successful.pdf"))
 ```
 
 ```{r fig.width=4.5, fig.height=3.2}
@@ -1179,7 +1179,7 @@ ggplot(study_5_summary %>% filter(successful_first_time == FALSE), aes(x = parti
     labels = c("Give" = "Both give", "Receive" = "Both receive")
   )
 
-# ggsave(here("figures/study-5_second_time_unsuccessful.pdf"))
+ggsave(here("figures/study-5_second_time_unsuccessful.pdf"))
 ```
 
 
