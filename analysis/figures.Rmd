@@ -1035,11 +1035,10 @@ ggplot(
     color = "gray"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = relationship.colors) +
   facet_wrap(~scenario_id) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-5_first_time_scenarios.pdf"))
+# ggsave(here("figures/study-5_first_time_scenarios.pdf"))
 ```
 
 ```{r fig.width=2.8, fig.height=3.2}
@@ -1064,10 +1063,10 @@ ggplot(
     color = "gray"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = relationship.colors) +
+  scale_color_manual(values = relationship_colors) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-5_first_time_all.pdf"))
+# ggsave(here("figures/study-5_first_time_all.pdf"))
 ```
 
 
@@ -1106,7 +1105,7 @@ ggplot(
   scale_y_continuous(limits = c(0, 1)) +
   scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful"))
 
-ggsave(here("figures/study-5_strategies.pdf"))
+# ggsave(here("figures/study-5_strategies.pdf"))
 ```
 
 ```{r}
@@ -1120,61 +1119,10 @@ study_5_summary <- study_5_data %>%
   tidyboot_mean(participant_second_choice_generous, na.rm = TRUE)
 ```
 
-```{r fig.width = 4.6, fig.height = 5}
-ggplot(
-  study_5_summary,
-  aes(x = participant_rank, y = empirical_stat, color = successful_first_time)
-) +
-  # Add shaded rectangles based on partner_first_choice
-  geom_rect(
-    data = data.frame(
-      partner_first_choice = c("Receive", "Receive", "Give", "Give"),
-      ymin = c(0.5, 0, 0, 0.5),
-      ymax = c(1, 0.5, 0.5, 1),
-      rect_color = c("#E69F00", "#F0E442", "#E69F00", "#F0E442")
-    ),
-    aes(
-      xmin = -Inf,
-      xmax = Inf,
-      ymin = ymin,
-      ymax = ymax,
-      fill = rect_color
-    ),
-    alpha = 0.15,
-    inherit.aes = FALSE
-  ) +
-  geom_pointrange(
-    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
-    size = 0.7,
-    linewidth = 1.5,
-    position = position_dodge(width = 0.3)
-  ) +
-  geom_hline(
-    yintercept = 0.5,
-    linetype = "dashed",
-    color = "gray"
-  ) +
-  scale_y_continuous(limits = c(0, 1)) +
-  scale_fill_manual(values = c("#E69F00" = "#E69F00", "#F0E442" = "#F0E442")) +
-  labs(
-    title = "Study 5: Second time",
-    x = "Self rank",
-    y = "P(Second time generous)",
-    color = "Self rank"
-  ) +
-  scale_color_brewer(
-    palette = "Set1",
-    labels = c("Unsuccessful", "Successful")
-  ) +
-  facet_grid(partner_first_choice ~ participant_first_choice) +
-  theme(legend.position = "none", strip.background = element_blank())
-
-ggsave(here("figures/study-5_second_time.pdf"))
-```
 Plot coordination and miscoordination separately
 
 ```{r fig.width=5.1, fig.height=3.2}
-ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = participant_rank, y = empirical_stat, color = partner_first_choice, shape = partner_first_choice)) +
+ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = participant_rank, y = empirical_stat, color = partner_first_choice)) +
   geom_pointrange(
     aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
     size = 0.7,
@@ -1203,8 +1151,9 @@ ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
   )
 
-ggsave(here("figures/study-5_second_time_successful.pdf"))
+# ggsave(here("figures/study-5_second_time_successful.pdf"))
 ```
+
 ```{r fig.width=4.5, fig.height=3.2}
 ggplot(study_5_summary %>% filter(successful_first_time == FALSE), aes(x = participant_rank, y = empirical_stat, color = partner_first_choice)) +
   geom_pointrange(
@@ -1230,7 +1179,7 @@ ggplot(study_5_summary %>% filter(successful_first_time == FALSE), aes(x = parti
     labels = c("Give" = "Both give", "Receive" = "Both receive")
   )
 
-ggsave(here("figures/study-5_second_time_unsuccessful.pdf"))
+# ggsave(here("figures/study-5_second_time_unsuccessful.pdf"))
 ```
 
 
@@ -1257,7 +1206,7 @@ ggplot(
     y = "P(Second time generous)",
     color = "Self rank"
   ) +
-  scale_color_manual(values = relationship.colors) +
+  scale_color_manual(values = relationship_colors) +
   facet_wrap(~participant_first_choice,
     labeller = labeller(
       participant_first_choice = function(x) {
@@ -1406,58 +1355,6 @@ study_6_summary <- study_6_data %>%
   tidyboot_mean(participant_second_choice_generous, na.rm = TRUE)
 ```
 
-```{r fig.width = 4.6, fig.height = 5}
-ggplot(
-  study_6_summary,
-  aes(x = participant_rank, y = empirical_stat, color = successful_first_time)
-) +
-  # Add shaded rectangles based on partner_first_choice
-  geom_rect(
-    data = data.frame(
-      partner_first_choice = c("Receive", "Receive", "Give", "Give"),
-      ymin = c(0.5, 0, 0, 0.5),
-      ymax = c(1, 0.5, 0.5, 1),
-      rect_color = c("#E69F00", "#F0E442", "#E69F00", "#F0E442")
-    ),
-    aes(
-      xmin = -Inf,
-      xmax = Inf,
-      ymin = ymin,
-      ymax = ymax,
-      fill = rect_color
-    ),
-    alpha = 0.15,
-    inherit.aes = FALSE
-  ) +
-  geom_pointrange(
-    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
-    size = 0.7,
-    linewidth = 1.5,
-    position = position_dodge(width = 0.3)
-  ) +
-  geom_hline(
-    yintercept = 0.5,
-    linetype = "dashed",
-    color = "gray"
-  ) +
-  scale_y_continuous(limits = c(0, 1)) +
-  scale_fill_manual(values = c("#E69F00" = "#E69F00", "#F0E442" = "#F0E442")) +
-  labs(
-    title = "Study 6: Second time",
-    x = "Self rank",
-    y = "P(Second time generous)",
-    color = "Self rank"
-  ) +
-  scale_color_brewer(
-    palette = "Set1",
-    labels = c("Unsuccessful", "Successful")
-  ) +
-  facet_grid(partner_first_choice ~ participant_first_choice) +
-  theme(legend.position = "none", strip.background = element_blank())
-
-ggsave(here("figures/study-6_second_time.pdf"))
-```
-
 Plot coordination and miscoordination separately
 
 ```{r fig.width=5.1, fig.height=3.2}
@@ -1550,4 +1447,3 @@ ggplot(
   theme(legend.position = "bottom")
 ```
 
-# Cost/benefit validation
