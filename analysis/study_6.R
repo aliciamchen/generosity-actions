@@ -54,7 +54,7 @@ main_data <- data %>%
         (partner_first_choice == "receive" & participant_second_choice == "receive") ~ "alternating",
       TRUE ~ "repeating"
     ), 
-    strategy_alternating = ifelse(strategy == "alternating", 1, 0),
+    strategy_repeating = ifelse(strategy == "repeating", 1, 0),
     first_choices = paste0(participant_first_choice, "_", partner_first_choice)
   ) %>%
   select(
@@ -71,7 +71,7 @@ main_data <- data %>%
     participant_second_choice,
     participant_second_choice_generous,
     strategy,
-    strategy_alternating,
+    strategy_repeating,
     passed_attention_checks
   ) %>%
   arrange(subject_id, scenario_id) %>%
@@ -102,7 +102,7 @@ study_6_demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_a
 
 ## ------------------------------------------------------------------------------------------------------------------------------------------------------
 main_model <- glmer(
-  strategy_alternating ~ partner_status * coordination + (1 | scenario_id) + (1 | subject_id),
+  strategy_repeating ~ partner_status * coordination + (1 | scenario_id) + (1 | subject_id),
   data = main_data_filtered,
   family = binomial(link = "logit"), 
   control = glmerControl(optimizer = "bobyqa"))
@@ -113,12 +113,12 @@ emm <- emmeans(main_model, ~ partner_status * coordination)
 summary(emm, infer = T)
 
 # partner_status coordination emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
-# equal          False        -1.049 0.193 Inf    -1.427    -0.672  -5.442  <.0001
-# lower          False        -1.055 0.202 Inf    -1.451    -0.659  -5.218  <.0001
-# higher         False        -1.291 0.201 Inf    -1.684    -0.898  -6.434  <.0001
-# equal          True         -0.138 0.199 Inf    -0.529     0.253  -0.692  0.4890
-# lower          True         -1.175 0.209 Inf    -1.585    -0.766  -5.626  <.0001
-# higher         True         -1.653 0.245 Inf    -2.133    -1.173  -6.746  <.0001
+# equal          False         1.049 0.193 Inf     0.672     1.427   5.442  <.0001
+# lower          False         1.055 0.202 Inf     0.659     1.451   5.217  <.0001
+# higher         False         1.291 0.201 Inf     0.898     1.684   6.434  <.0001
+# equal          True          0.138 0.199 Inf    -0.253     0.529   0.692  0.4890
+# lower          True          1.175 0.209 Inf     0.766     1.585   5.626  <.0001
+# higher         True          1.653 0.245 Inf     1.173     2.133   6.746  <.0001
 # 
 # Results are given on the logit (not the response) scale. 
 # Confidence level used: 0.95 
@@ -126,21 +126,21 @@ summary(emm, infer = T)
 pairs(emm)
 
 # contrast                   estimate    SE  df z.ratio p.value
-# equal False - lower False    0.0056 0.260 Inf   0.022  1.0000
-# equal False - higher False   0.2415 0.258 Inf   0.937  0.9369
-# equal False - equal True    -0.9115 0.264 Inf  -3.453  0.0073
-# equal False - lower True     0.1259 0.263 Inf   0.478  0.9969
-# equal False - higher True    0.6034 0.292 Inf   2.068  0.3040
-# lower False - higher False   0.2359 0.264 Inf   0.894  0.9480
-# lower False - equal True    -0.9171 0.266 Inf  -3.446  0.0075
-# lower False - lower True     0.1203 0.274 Inf   0.439  0.9979
-# lower False - higher True    0.5978 0.298 Inf   2.003  0.3406
-# higher False - equal True   -1.1530 0.264 Inf  -4.361  0.0002
-# higher False - lower True   -0.1156 0.267 Inf  -0.432  0.9981
-# higher False - higher True   0.3619 0.299 Inf   1.211  0.8315
-# equal True - lower True      1.0374 0.272 Inf   3.814  0.0019
-# equal True - higher True     1.5149 0.301 Inf   5.039  <.0001
-# lower True - higher True     0.4774 0.301 Inf   1.588  0.6065
+# equal False - lower False   -0.0056 0.260 Inf  -0.022  1.0000
+# equal False - higher False  -0.2415 0.258 Inf  -0.937  0.9369
+# equal False - equal True     0.9115 0.264 Inf   3.453  0.0073
+# equal False - lower True    -0.1259 0.263 Inf  -0.478  0.9969
+# equal False - higher True   -0.6034 0.292 Inf  -2.068  0.3040
+# lower False - higher False  -0.2359 0.264 Inf  -0.894  0.9480
+# lower False - equal True     0.9171 0.266 Inf   3.446  0.0075
+# lower False - lower True    -0.1203 0.274 Inf  -0.439  0.9979
+# lower False - higher True   -0.5978 0.298 Inf  -2.003  0.3406
+# higher False - equal True    1.1530 0.264 Inf   4.361  0.0002
+# higher False - lower True    0.1156 0.267 Inf   0.432  0.9981
+# higher False - higher True  -0.3619 0.299 Inf  -1.211  0.8315
+# equal True - lower True     -1.0374 0.272 Inf  -3.814  0.0019
+# equal True - higher True    -1.5149 0.301 Inf  -5.039  <.0001
+# lower True - higher True    -0.4774 0.301 Inf  -1.588  0.6065
 # 
 # Results are given on the log odds ratio (not the response) scale. 
 # P value adjustment: tukey method for comparing a family of 6 estimates 
