@@ -1,0 +1,442 @@
+[
+  {
+    "story": "",
+    "relationship": "attention",
+    "vignette": "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
+    "repeating": "Please select \"extremely likely\" for this question.",
+    "alternating": "Please select \"extremely unlikely\" for this question.",
+    "none": "Please select \"extremely likely\" for this question."
+  },
+  {
+    "story": "conversation",
+    "relationship": "asymmetric",
+    "vignette": "Consider Alice and Angela, who work at the same company. Alice and Angela are in an <strong>asymmetric</strong> relationship. During their last one-hour meeting, Alice spent most of the time talking, while Angela spent most of the time listening and asking questions. How likely is it that",
+    "repeating": "The next time they meet, they expect that Alice will spend most of the time talking and Angela will listen.",
+    "alternating": "The next time they meet, they expect that Angela will spend most of the time talking and Alice will listen.",
+    "none": "Alice and Angela do not expect to meet in the future."
+  },
+  {
+    "story": "conversation",
+    "relationship": "symmetric",
+    "vignette": "Consider Alice and Angela, who work at the same company. Alice and Angela are in a <strong>symmetric</strong> relationship. During their last one-hour meeting, Alice spent most of the time talking, while Angela spent most of the time listening and asking questions. How likely is it that",
+    "repeating": "The next time they meet, they expect that Alice will spend most of the time talking and Angela will listen.",
+    "alternating": "The next time they meet, they expect that Angela will spend most of the time talking and Alice will listen.",
+    "none": "Alice and Angela do not expect to meet in the future."
+  },
+  {
+    "story": "conversation",
+    "relationship": "no_info",
+    "vignette": "Consider Alice and Angela, who work at the same company. During their last one-hour meeting, Alice spent most of the time talking, while Angela spent most of the time listening and asking questions. How likely is it that",
+    "repeating": "The next time they meet, they expect that Alice will spend most of the time talking and Angela will listen.",
+    "alternating": "The next time they meet, they expect that Angela will spend most of the time talking and Alice will listen.",
+    "none": "Alice and Angela do not expect to meet in the future."
+  },
+  {
+    "story": "coffee",
+    "relationship": "asymmetric",
+    "vignette": "Consider Andrew and Bob, who work in the same field. Andrew and Bob are in an <strong>asymmetric</strong> relationship. This week, when they met for coffee, Bob bought and brought coffee to the meeting for both of them. How likely is it that",
+    "repeating": "The next time they meet for coffee, they expect that Bob will buy and bring coffee to the meeting for both of them.",
+    "alternating": "The next time they meet for coffee, they expect that Andrew will buy and bring coffee to the meeting for both of them.",
+    "none": "Andrew and Bob do not expect to meet for coffee in the future."
+  },
+  {
+    "story": "coffee",
+    "relationship": "symmetric",
+    "vignette": "Consider Andrew and Bob, who work in the same field. Andrew and Bob are in a <strong>symmetric</strong> relationship. This week, when they met for coffee, Bob bought and brought coffee to the meeting for both of them. How likely is it that",
+    "repeating": "The next time they meet for coffee, they expect that Bob will buy and bring coffee to the meeting for both of them.",
+    "alternating": "The next time they meet for coffee, they expect that Andrew will buy and bring coffee to the meeting for both of them.",
+    "none": "Andrew and Bob do not expect to meet for coffee in the future."
+  },
+  {
+    "story": "coffee",
+    "relationship": "no_info",
+    "vignette": "Consider Andrew and Bob, who work in the same field. This week, when they met for coffee, Bob bought and brought coffee to the meeting for both of them. How likely is it that",
+    "repeating": "The next time they meet for coffee, they expect that Bob will buy and bring coffee to the meeting for both of them.",
+    "alternating": "The next time they meet for coffee, they expect that Andrew will buy and bring coffee to the meeting for both of them.",
+    "none": "Andrew and Bob do not expect to meet for coffee in the future."
+  },
+  {
+    "story": "gifts",
+    "relationship": "asymmetric",
+    "vignette": "Consider two families, the Lee family and the Min family. The Min family and the Lee family are in an <strong>asymmetric</strong> relationship. This year, the Lee family gave the Min family a precious and expensive gift. How likely is it that",
+    "repeating": "Next year, they expect that the Lee family gives the Min family a precious and expensive gift.",
+    "alternating": "Next year, they expect that each member of the Min family gives the Lee family a precious and expensive gift.",
+    "none": "The Lee family and the Min family do not expect to exchange gifts in the future."
+  },
+  {
+    "story": "gifts",
+    "relationship": "symmetric",
+    "vignette": "Consider two families, the Lee family and the Min family. The Min family and the Lee family are in a <strong>asymmetric</strong> relationship. This year, the Lee family gave the Min family a precious and expensive gift. How likely is it that",
+    "repeating": "Next year, they expect that the Lee family gives the Min family a precious and expensive gift.",
+    "alternating": "Next year, they expect that each member of the Min family gives the Lee family a precious and expensive gift.",
+    "none": "The Lee family and the Min family do not expect to exchange gifts in the future."
+  },
+  {
+    "story": "gifts",
+    "relationship": "no_info",
+    "vignette": "Consider two families, the Lee family and the Min family. This year, the Lee family gave the Min family a precious and expensive gift. How likely is it that",
+    "repeating": "Next year, they expect that the Lee family gives the Min family a precious and expensive gift.",
+    "alternating": "Next year, they expect that each member of the Min family gives the Lee family a precious and expensive gift.",
+    "none": "The Lee family and the Min family do not expect to exchange gifts in the future."
+  },
+  {
+    "story": "housemates",
+    "relationship": "asymmetric",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Sarah and Anne are in an <strong>asymmetric</strong> relationship. Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. This week, Anne completed all of the tasks on the list. How likely is it that",
+    "repeating": "Next week, they expect that Anne will complete all of the tasks on the list.",
+    "alternating": "Next week, they expect that Sarah will complete all of the tasks on the list.",
+    "none": "Next week, they expect to ask their next-door neighbor Emily to complete all the tasks on the list."
+  },
+  {
+    "story": "housemates",
+    "relationship": "symmetric",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Sarah and Anne are in a <strong>symmetric</strong> relationship.  Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. This week, Anne completed all of the tasks on the list. How likely is it that",
+    "repeating": "Next week, they expect that Anne will complete all of the tasks on the list.",
+    "alternating": "Next week, they expect that Sarah will complete all of the tasks on the list.",
+    "none": "Next week, they expect to ask their next-door neighbor Emily to complete all the tasks on the list."
+  },
+  {
+    "story": "housemates",
+    "relationship": "no_info",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. This week, Anne completed all of the tasks on the list. How likely is it that",
+    "repeating": "Next week, they expect that Anne will complete all of the tasks on the list.",
+    "alternating": "Next week, they expect that Sarah will complete all of the tasks on the list.",
+    "none": "Next week, they expect to ask their next-door neighbor Emily to complete all the tasks on the list."
+  },
+  {
+    "story": "family meals",
+    "relationship": "asymmetric",
+    "vignette": "Consider Sue and Martha, who are part of the same family. Sue and Martha are in an <strong>asymmetric</strong> relationship. Four times a year, the whole family gets together for key religious holidays. The last time, the family gathered at Sue’s house. Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you. How likely is it that",
+    "repeating": "The next time the whole family gets together, they expect to gather at Sue's house, where Sue will do all the cooking and cleaning.",
+    "alternating": "The next time the whole family gets together, they expect to gather at Martha's house, where Martha will do all the cooking and cleaning.",
+    "none": "Sue and Martha do not expect to attend the next family gathering."
+  },
+  {
+    "story": "family meals",
+    "relationship": "symmetric",
+    "vignette": "Consider Sue and Martha, who are part of the same family. Sue and Martha are in a <strong>symmetric</strong> relationship.  Four times a year, the whole family gets together for key religious holidays. The last time, the family gathered at Sue’s house. Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you. How likely is it that",
+    "repeating": "The next time the whole family gets together, they expect to gather at Sue's house, where Sue will do all the cooking and cleaning.",
+    "alternating": "The next time the whole family gets together, they expect to gather at Martha's house, where Martha will do all the cooking and cleaning.",
+    "none": "Sue and Martha do not expect to attend the next family gathering."
+  },
+  {
+    "story": "family meals",
+    "relationship": "no_info",
+    "vignette": "Consider Sue and Martha, who are part of the same family. Four times a year, the whole family gets together for key religious holidays. The last time, the family gathered at Sue’s house. Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you. How likely is it that",
+    "repeating": "The next time the whole family gets together, they expect to gather at Sue's house, where Sue will do all the cooking and cleaning.",
+    "alternating": "The next time the whole family gets together, they expect to gather at Martha's house, where Martha will do all the cooking and cleaning.",
+    "none": "Sue and Martha do not expect to attend the next family gathering."
+  },
+  {
+    "story": "police",
+    "relationship": "asymmetric",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat.  Justin and Jarred are in an <strong>asymmetric</strong> relationship.  Today, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car. How likely is it that",
+    "repeating": "Tomorrow, they expect that Justin will go to the office at 6am to do the day's paperwork, so that Jarred can arrive later.",
+    "alternating": "Tomorrow, they expect that Jarred will go to the office at 6am to do the day's paperwork, so that Justin can arrive later.",
+    "none": "Justin and Jarred do not expect to work together in the future."
+  },
+  {
+    "story": "police",
+    "relationship": "symmetric",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat.  Justin and Jarred are in a <strong>symmetric</strong> relationship.  Today, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car. How likely is it that",
+    "repeating": "Tomorrow, they expect that Justin will go to the office at 6am to do the day's paperwork, so that Jarred can arrive later.",
+    "alternating": "Tomorrow, they expect that Jarred will go to the office at 6am to do the day's paperwork, so that Justin can arrive later.",
+    "none": "Justin and Jarred do not expect to work together in the future."
+  },
+  {
+    "story": "police",
+    "relationship": "no_info",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat.  Today, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car. How likely is it that",
+    "repeating": "Tomorrow, they expect that Justin will go to the office at 6am to do the day's paperwork, so that Jarred can arrive later.",
+    "alternating": "Tomorrow, they expect that Jarred will go to the office at 6am to do the day's paperwork, so that Justin can arrive later.",
+    "none": "Justin and Jarred do not expect to work together in the future."
+  },
+  {
+    "story": "concerts",
+    "relationship": "asymmetric",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. Kevin and Allen are in an <strong>asymmetric</strong> relationship. Last time they went to a concert together, Kevin paid for the tickets. How likely is it that",
+    "repeating": "Next time, they expect that Kevin will pay for the tickets.",
+    "alternating": "Next time, they expect that Allen will pay for the tickets.",
+    "none": "Kevin and Allen do not expect to go to concerts together in the future."
+  },
+  {
+    "story": "concerts",
+    "relationship": "symmetric",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. Kevin and Allen are in a <strong>symmetric</strong> relationship. Last time they went to a concert together, Kevin paid for the tickets. How likely is it that",
+    "repeating": "Next time, they expect that Kevin will pay for the tickets.",
+    "alternating": "Next time, they expect that Allen will pay for the tickets.",
+    "none": "Kevin and Allen do not expect to go to concerts together in the future."
+  },
+  {
+    "story": "concerts",
+    "relationship": "no_info",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. Last time they went to a concert together, Kevin paid for the tickets. How likely is it that",
+    "repeating": "Next time, they expect that Kevin will pay for the tickets.",
+    "alternating": "Next time, they expect that Allen will pay for the tickets.",
+    "none": "Kevin and Allen do not expect to go to concerts together in the future."
+  },
+  {
+    "story": "architects",
+    "relationship": "asymmetric",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. Sonia and Liana are in an <strong>asymmetric</strong> relationship. They work on the same team, where they work together on their designs. Last time, Sonia meticulously double-checked their finished designs before they sent them out. How likely is it that",
+    "repeating": "Next time they finish a design, they expect that Sonia meticulously double checks the design.",
+    "alternating": "Next time they finish a design, they expect that Liana meticulously double checks the design.",
+    "none": "Sonia and Liana do not expect to work together on designs in the future."
+  },
+  {
+    "story": "architects",
+    "relationship": "symmetric",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. Sonia and Liana are in a <strong>symmetric</strong> relationship. They work on the same team, where they work together on their designs. Last time, Sonia meticulously double-checked their finished designs before they sent them out. How likely is it that",
+    "repeating": "Next time they finish a design, they expect that Sonia meticulously double checks the design.",
+    "alternating": "Next time they finish a design, they expect that Liana meticulously double checks the design.",
+    "none": "Sonia and Liana do not expect to work together on designs in the future."
+  },
+  {
+    "story": "architects",
+    "relationship": "no_info",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. They work on the same team, where they work together on their designs. Last time, Sonia meticulously double-checked their finished designs before they sent them out. How likely is it that",
+    "repeating": "Next time they finish a design, they expect that Sonia meticulously double checks the design.",
+    "alternating": "Next time they finish a design, they expect that Liana meticulously double checks the design.",
+    "none": "Sonia and Liana do not expect to work together on designs in the future."
+  },
+  {
+    "story": "feedback",
+    "relationship": "asymmetric",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. Taylor and Samantha are in an <strong>asymmetric</strong> relationship. They frequently attend the same group writing workshops. Last time, Samantha shared her work in progress, and Taylor gave feedback on it. How likely is it that",
+    "repeating": "Next time, they expect that Samantha shares her work in progress, and Taylor gives feedback on it.",
+    "alternating": "Next time, they expect that Taylor shares her work in progress, and Samantha gives feedback on it.",
+    "none": "Taylor and Samantha do not expect to exchange feedback in the future."
+  },
+  {
+    "story": "feedback",
+    "relationship": "symmetric",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. Taylor and Samantha are in a <strong>symmetric</strong> relationship. They frequently attend the same group writing workshops. Last time, Samantha shared her work in progress, and Taylor gave feedback on it. How likely is it that",
+    "repeating": "Next time, they expect that Samantha shares her work in progress, and Taylor gives feedback on it.",
+    "alternating": "Next time, they expect that Taylor shares her work in progress, and Samantha gives feedback on it.",
+    "none": "Taylor and Samantha do not expect to exchange feedback in the future."
+  },
+  {
+    "story": "feedback",
+    "relationship": "no_info",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. They frequently attend the same group writing workshops. Last time, Samantha shared her work in progress, and Taylor gave feedback on it. How likely is it that",
+    "repeating": "Next time, they expect that Samantha shares her work in progress, and Taylor gives feedback on it.",
+    "alternating": "Next time, they expect that Taylor shares her work in progress, and Samantha gives feedback on it.",
+    "none": "Taylor and Samantha do not expect to exchange feedback in the future."
+  },
+  {
+    "story": "meeting location",
+    "relationship": "asymmetric",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. Ethan and Benjamin are in an <strong>asymmetric</strong> relationship. This week, Ethan walked to Benjamin’s office, where they had the meeting. How likely is it that",
+    "repeating": "Next week, they expect that Ethan walks to Benjamin's office, where they have the meeting.",
+    "alternating": "Next week, they expect that Benjamin walks to Ethan's office, where they have the meeting.",
+    "none": "Ethan and Benjamin do not expect to meet in the future."
+  },
+  {
+    "story": "meeting location",
+    "relationship": "symmetric",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. Ethan and Benjamin are in a <strong>symmetric</strong> relationship. This week, Ethan walked to Benjamin’s office, where they had the meeting. How likely is it that",
+    "repeating": "Next week, they expect that Ethan walks to Benjamin's office, where they have the meeting.",
+    "alternating": "Next week, they expect that Benjamin walks to Ethan's office, where they have the meeting.",
+    "none": "Ethan and Benjamin do not expect to meet in the future."
+  },
+  {
+    "story": "meeting location",
+    "relationship": "no_info",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. This week, Ethan walked to Benjamin’s office, where they had the meeting. How likely is it that",
+    "repeating": "Next week, they expect that Ethan walks to Benjamin's office, where they have the meeting.",
+    "alternating": "Next week, they expect that Benjamin walks to Ethan's office, where they have the meeting.",
+    "none": "Ethan and Benjamin do not expect to meet in the future."
+  },
+  {
+    "story": "group project",
+    "relationship": "asymmetric",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. Maxwell and Ralph are in an <strong>asymmetric</strong> relationship. This time, when they met, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next. How likely is it that",
+    "repeating": "Next time they meet, they expect that Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "alternating": "Next time they meet, they expect that Ralph contributes most of the ideas, delegates tasks to Maxwell, and decides what to do next.",
+    "none": "Maxwell and Ralph do not expect to meet in the future."
+  },
+  {
+    "story": "group project",
+    "relationship": "symmetric",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. Maxwell and Ralph are in a <strong>symmetric</strong> relationship. This time, when they met, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next. How likely is it that",
+    "repeating": "Next time they meet, they expect that Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "alternating": "Next time they meet, they expect that Ralph contributes most of the ideas, delegates tasks to Maxwell, and decides what to do next.",
+    "none": "Maxwell and Ralph do not expect to meet in the future."
+  },
+  {
+    "story": "group project",
+    "relationship": "no_info",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. This time, when they met, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next. How likely is it that",
+    "repeating": "Next time they meet, they expect that Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "alternating": "Next time they meet, they expect that Ralph contributes most of the ideas, delegates tasks to Maxwell, and decides what to do next.",
+    "none": "Maxwell and Ralph do not expect to meet in the future."
+  },
+  {
+    "story": "meeting prep",
+    "relationship": "asymmetric",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. Chloe and Victoria are in an <strong>asymmetric</strong> relationship. Last week, when they met, Chloe prepared the agenda for each meeting and booked the meeting room. How likely is it that",
+    "repeating": "Next week, they expect that Chloe prepares the agenda for the meeting and books the meeting room.",
+    "alternating": "Next week, they expect that Victoria prepares the agenda for the meeting and books the meeting room.",
+    "none": "Chloe and Victoria do not expect to meet in the future."
+  },
+  {
+    "story": "meeting prep",
+    "relationship": "symmetric",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. Chloe and Victoria are in a <strong>asymmetric</strong> relationship. Last week, when they met, Chloe prepared the agenda for each meeting and booked the meeting room. How likely is it that",
+    "repeating": "Next week, they expect that Chloe prepares the agenda for the meeting and books the meeting room.",
+    "alternating": "Next week, they expect that Victoria prepares the agenda for the meeting and books the meeting room.",
+    "none": "Chloe and Victoria do not expect to meet in the future."
+  },
+  {
+    "story": "meeting prep",
+    "relationship": "no_info",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. Last week, when they met, Chloe prepared the agenda for each meeting and booked the meeting room. How likely is it that",
+    "repeating": "Next week, they expect that Chloe prepares the agenda for the meeting and books the meeting room.",
+    "alternating": "Next week, they expect that Victoria prepares the agenda for the meeting and books the meeting room.",
+    "none": "Chloe and Victoria do not expect to meet in the future."
+  },
+  {
+    "story": "restaurant",
+    "relationship": "asymmetric",
+    "vignette": "Consider Avery and Grace, who work at the same company. Avery and Grace are in an <strong>asymmetric</strong> relationship. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. This week, they went to the Chinese restaurant. How likely is it that",
+    "repeating": "Next time they go out to eat together, they expect that they will go to the Chinese restaurant.",
+    "alternating": "Next time they go out to eat together, they expect that they will go to the Indian restaurant.",
+    "none": "Avery and Grace do not expect to go out to eat together in the future."
+  },
+  {
+    "story": "restaurant",
+    "relationship": "symmetric",
+    "vignette": "Consider Avery and Grace, who work at the same company. Avery and Grace are in a <strong>symmetric</strong> relationship. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. This week, they went to the Chinese restaurant. How likely is it that",
+    "repeating": "Next time they go out to eat together, they expect that they will go to the Chinese restaurant.",
+    "alternating": "Next time they go out to eat together, they expect that they will go to the Indian restaurant.",
+    "none": "Avery and Grace do not expect to go out to eat together in the future."
+  },
+  {
+    "story": "restaurant",
+    "relationship": "no_info",
+    "vignette": "Consider Avery and Grace, who work at the same company. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. This week, they went to the Chinese restaurant. How likely is it that",
+    "repeating": "Next time they go out to eat together, they expect that they will go to the Chinese restaurant.",
+    "alternating": "Next time they go out to eat together, they expect that they will go to the Indian restaurant.",
+    "none": "Avery and Grace do not expect to go out to eat together in the future."
+  },
+  {
+    "story": "groceries",
+    "relationship": "asymmetric",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Dylan and Caleb are in an <strong>asymmetric</strong> relationship. Each of them comes home from the grocery store with many heavy bags about once a week. This week, Caleb helped carry Dylan's groceries up the stairs. How likely is it that",
+    "repeating": "Next week, they expect that Caleb helps carry Dylan's groceries up the stairs.",
+    "alternating": "Next week, they expect that Dylan helps carry Caleb's groceries up the stairs.",
+    "none": "Dylan and Caleb do not expect to help each other carry groceries in the future."
+  },
+  {
+    "story": "groceries",
+    "relationship": "symmetric",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Dylan and Caleb are in a <strong>symmetric</strong> relationship. Each of them comes home from the grocery store with many heavy bags about once a week. This week, Caleb helped carry Dylan's groceries up the stairs. How likely is it that",
+    "repeating": "Next week, they expect that Caleb helps carry Dylan's groceries up the stairs.",
+    "alternating": "Next week, they expect that Dylan helps carry Caleb's groceries up the stairs.",
+    "none": "Dylan and Caleb do not expect to help each other carry groceries in the future."
+  },
+  {
+    "story": "groceries",
+    "relationship": "no_info",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Each of them comes home from the grocery store with many heavy bags about once a week. This week, Caleb helped carry Dylan's groceries up the stairs. How likely is it that",
+    "repeating": "Next week, they expect that Caleb helps carry Dylan's groceries up the stairs.",
+    "alternating": "Next week, they expect that Dylan helps carry Caleb's groceries up the stairs.",
+    "none": "Dylan and Caleb do not expect to help each other carry groceries in the future."
+  },
+  {
+    "story": "weekend",
+    "relationship": "asymmetric",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. Abby and Evelyn are in an <strong>asymmetric</strong> relationship. Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn woke up early both days to do intense outdoor activities. How likely is it that",
+    "repeating": "Next weekend, they expect that they will do intense outdoor activities.",
+    "alternating": "Next weekend, they expect that they will sleep in, get brunch, and walk around the city.",
+    "none": "Abby and Evelyn do not expect to spend time together during the weekend in the future."
+  },
+  {
+    "story": "weekend",
+    "relationship": "symmetric",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. Abby and Evelyn are in a <strong>symmetric</strong> relationship. Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn woke up early both days to do intense outdoor activities. How likely is it that",
+    "repeating": "Next weekend, they expect that they will do intense outdoor activities.",
+    "alternating": "Next weekend, they expect that they will sleep in, get brunch, and walk around the city.",
+    "none": "Abby and Evelyn do not expect to spend time together during the weekend in the future."
+  },
+  {
+    "story": "weekend",
+    "relationship": "no_info",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn woke up early both days to do intense outdoor activities. How likely is it that",
+    "repeating": "Next weekend, they expect that they will do intense outdoor activities.",
+    "alternating": "Next weekend, they expect that they will sleep in, get brunch, and walk around the city.",
+    "none": "Abby and Evelyn do not expect to spend time together during the weekend in the future."
+  },
+  {
+    "story": "scheduling",
+    "relationship": "asymmetric",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace, and met up for a meal this week. Matt and William are in an <strong>asymmetric</strong> relationship. Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. This week, they got dinner on Wednesday at 7pm. How likely is it that",
+    "repeating": "Next time they meet up for a meal during the work week, they expect that they will get dinner.",
+    "alternating": "Next time they meet up for a meal during the work week, they expect that they will get lunch.",
+    "none": "Matt and William do not expect to meet up for a meal in the future."
+  },
+  {
+    "story": "scheduling",
+    "relationship": "symmetric",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace, and met up for a meal this week. Matt and William are in a <strong>symmetric</strong> relationship. Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. This week, they got dinner on Wednesday at 7pm. How likely is it that",
+    "repeating": "Next time they meet up for a meal during the work week, they expect that they will get dinner.",
+    "alternating": "Next time they meet up for a meal during the work week, they expect that they will get lunch.",
+    "none": "Matt and William do not expect to meet up for a meal in the future."
+  },
+  {
+    "story": "scheduling",
+    "relationship": "no_info",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace, and met up for a meal this week. Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. This week, they got dinner on Wednesday at 7pm. How likely is it that",
+    "repeating": "Next time they meet up for a meal during the work week, they expect that they will get dinner.",
+    "alternating": "Next time they meet up for a meal during the work week, they expect that they will get lunch.",
+    "none": "Matt and William do not expect to meet up for a meal in the future."
+  },
+  {
+    "story": "babysitting",
+    "relationship": "asymmetric",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. Ryan and John are in an <strong>asymmetric</strong> relationship. This week, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night. How likely is it that",
+    "repeating": "Next time, they expect that Ryan drops their children off at John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "alternating": "Next time, they expect that John drops their children off at Ryan's house, where Ryan volunteers to watch John's children so John can have a date night.",
+    "none": "Ryan and John do not expect to volunteer to babysit each other's kids in the future."
+  },
+  {
+    "story": "babysitting",
+    "relationship": "symmetric",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. Ryan and John are in a <strong>symmetric</strong> relationship. This week, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night. How likely is it that",
+    "repeating": "Next time, they expect that Ryan drops their children off at John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "alternating": "Next time, they expect that John drops their children off at Ryan's house, where Ryan volunteers to watch John's children so John can have a date night.",
+    "none": "Ryan and John do not expect to volunteer to babysit each other's kids in the future."
+  },
+  {
+    "story": "babysitting",
+    "relationship": "no_info",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. This week, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night. How likely is it that",
+    "repeating": "Next time, they expect that Ryan drops their children off at John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "alternating": "Next time, they expect that John drops their children off at Ryan's house, where Ryan volunteers to watch John's children so John can have a date night.",
+    "none": "Ryan and John do not expect to volunteer to babysit each other's kids in the future."
+  },
+  {
+    "story": "fundraising",
+    "relationship": "asymmetric",
+    "vignette": "Consider Caroline and Bella, who both run races for a charity, and have to raise money for their charity to enter the race. Caroline and Bella are in an <strong>asymmetric</strong> relationship. Last time, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "repeating": "Next time they race for charity, they expect that Caroline takes the lead on the advertising and fundraising.",
+    "alternating": "Next time they race for charity, they expect that Bella takes the lead on the advertising and fundraising.",
+    "none": "Caroline and Bella do not expect to raise money together for charity in the future."
+  },
+  {
+    "story": "fundraising",
+    "relationship": "symmetric",
+    "vignette": "Consider Caroline and Bella, who both run races for a charity, and have to raise money for their charity to enter the race. Caroline and Bella are in aa <strong>symmetric</strong> relationship. Last time, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "repeating": "Next time they race for charity, they expect that Caroline takes the lead on the advertising and fundraising.",
+    "alternating": "Next time they race for charity, they expect that Bella takes the lead on the advertising and fundraising.",
+    "none": "Caroline and Bella do not expect to raise money together for charity in the future."
+  },
+  {
+    "story": "fundraising",
+    "relationship": "no_info",
+    "vignette": "Consider Caroline and Bella, who both run races for a charity, and have to raise money for their charity to enter the race. Last time, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "repeating": "Next time they race for charity, they expect that Caroline takes the lead on the advertising and fundraising.",
+    "alternating": "Next time they race for charity, they expect that Bella takes the lead on the advertising and fundraising.",
+    "none": "Caroline and Bella do not expect to raise money together for charity in the future."
+  }
+]

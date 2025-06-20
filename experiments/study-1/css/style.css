@@ -1,0 +1,29 @@
+
+p {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+h3 {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#label {
+  /* position: absolute; */
+  font-size: 10px;
+  float: top;
+  bottom: 0px;
+  /* justify-content: ; */
+}
+

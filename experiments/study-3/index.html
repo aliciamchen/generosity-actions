@@ -20,6 +20,7 @@
     <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.0"></script>
     <script src="https://unpkg.com/@jspsych/plugin-preload@1.1.1"></script>
     <script src="https://unpkg.com/@jspsych/plugin-survey-likert@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
 
     <!-- Experiment -->
     <script src="js/params.js"></script>
@@ -40,8 +41,8 @@
     <div id="templates">
       <div id="consent">
         <h3>
-          ⚠️ Please read this consent agreement carefully before deciding whether
-          to participate in this experiment. ⚠️
+          ⚠️ Please read this consent agreement carefully before deciding
+          whether to participate in this experiment. ⚠️
         </h3>
         <br />
         <p>
@@ -166,8 +167,12 @@
             <label for="comments">Comments or suggestions?</label>
           </div>
           <div style="margin-left: 0%; text-align: left">
-            <textarea id="comments" name="comments" rows="5" cols="50">
-            </textarea>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              cols="50"
+            ></textarea>
           </div>
         </div>
       </div>

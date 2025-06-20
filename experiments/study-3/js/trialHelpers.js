@@ -52,7 +52,7 @@ function fetchAttentionTrialParams() {
     url: "json/stimuli.json",
     dataType: "json",
     success: function (data) {
-      trial = data.filter((x) => x.story == "attention")
+      trial = data.filter((x) => x.relationship == "attention")[0]
     },
   });
 

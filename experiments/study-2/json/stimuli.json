@@ -1,0 +1,442 @@
+[
+  {
+    "story": "",
+    "relationship": "attention",
+    "vignette": "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
+    "repeating": "Please select \"extremely likely\" for this question.",
+    "alternating": "Please select \"extremely unlikely\" for this question.",
+    "none": "Please select \"extremely likely\" for this question."
+  },
+  {
+    "story": "conversation",
+    "relationship": "more",
+    "vignette": "Consider Angela and Alice, who work at the same company. <strong>Alice and Angela are in a relationship where Angela has more power, status, or influence than Alice.</strong> During their last one-hour meeting, Alice spent most of the time talking, while Angela spent most of the time listening and asking questions. How likely is it that",
+    "repeating": "The next time they meet, they expect that Alice will spend most of the time talking and Angela will listen.",
+    "alternating": "The next time they meet, they expect that Angela will spend most of the time talking and Alice will listen.",
+    "none": "Alice and Angela do not expect to meet in the future."
+  },
+  {
+    "story": "conversation",
+    "relationship": "equal",
+    "vignette": "Consider Angela and Alice, who work at the same company. <strong>Alice and Angela are in a relationship where Angela has equal power, status, or influence as Alice.</strong> During their last one-hour meeting, Alice spent most of the time talking, while Angela spent most of the time listening and asking questions. How likely is it that",
+    "repeating": "The next time they meet, they expect that Alice will spend most of the time talking and Angela will listen.",
+    "alternating": "The next time they meet, they expect that Angela will spend most of the time talking and Alice will listen.",
+    "none": "Alice and Angela do not expect to meet in the future."
+  },
+  {
+    "story": "conversation",
+    "relationship": "less",
+    "vignette": "Consider Angela and Alice, who work at the same company. <strong>Alice and Angela are in a relationship where Angela has less power, status, or influence than Alice.</strong> During their last one-hour meeting, Alice spent most of the time talking, while Angela spent most of the time listening and asking questions. How likely is it that",
+    "repeating": "The next time they meet, they expect that Alice will spend most of the time talking and Angela will listen.",
+    "alternating": "The next time they meet, they expect that Angela will spend most of the time talking and Alice will listen.",
+    "none": "Alice and Angela do not expect to meet in the future."
+  },
+  {
+    "story": "coffee",
+    "relationship": "more",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Bob has more power, status, or influence than Andrew.</strong> This week, when they met for coffee, Bob bought and brought coffee to the meeting for both of them. How likely is it that",
+    "repeating": "The next time they meet for coffee, they expect that Bob will buy and bring coffee to the meeting for both of them.",
+    "alternating": "The next time they meet for coffee, they expect that Andrew will buy and bring coffee to the meeting for both of them.",
+    "none": "Andrew and Bob do not expect to meet for coffee in the future."
+  },
+  {
+    "story": "coffee",
+    "relationship": "equal",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Bob has equal power, status, or influence as Andrew.</strong> This week, when they met for coffee, Bob bought and brought coffee to the meeting for both of them. How likely is it that",
+    "repeating": "The next time they meet for coffee, they expect that Bob will buy and bring coffee to the meeting for both of them.",
+    "alternating": "The next time they meet for coffee, they expect that Andrew will buy and bring coffee to the meeting for both of them.",
+    "none": "Andrew and Bob do not expect to meet for coffee in the future."
+  },
+  {
+    "story": "coffee",
+    "relationship": "less",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Bob has less power, status, or influence than Andrew.</strong> This week, when they met for coffee, Bob bought and brought coffee to the meeting for both of them. How likely is it that",
+    "repeating": "The next time they meet for coffee, they expect that Bob will buy and bring coffee to the meeting for both of them.",
+    "alternating": "The next time they meet for coffee, they expect that Andrew will buy and bring coffee to the meeting for both of them.",
+    "none": "Andrew and Bob do not expect to meet for coffee in the future."
+  },
+  {
+    "story": "gifts",
+    "relationship": "more",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has more power, status, or influence than the Min family.</strong> This year, the Lee family gave the Min family a precious and expensive gift. How likely is it that",
+    "repeating": "Next year, they expect that the Lee family gives the Min family a precious and expensive gift.",
+    "alternating": "Next year, they expect that each member of the Min family gives the Lee family a precious and expensive gift.",
+    "none": "The Lee family and the Min family do not expect to exchange gifts in the future."
+  },
+  {
+    "story": "gifts",
+    "relationship": "equal",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has equal power, status, or influence as the Min family.</strong> This year, the Lee family gave the Min family a precious and expensive gift. How likely is it that",
+    "repeating": "Next year, they expect that the Lee family gives the Min family a precious and expensive gift.",
+    "alternating": "Next year, they expect that each member of the Min family gives the Lee family a precious and expensive gift.",
+    "none": "The Lee family and the Min family do not expect to exchange gifts in the future."
+  },
+  {
+    "story": "gifts",
+    "relationship": "less",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has less power, status, or influence than the Min family.</strong> This year, the Lee family gave the Min family a precious and expensive gift. How likely is it that",
+    "repeating": "Next year, they expect that the Lee family gives the Min family a precious and expensive gift.",
+    "alternating": "Next year, they expect that each member of the Min family gives the Lee family a precious and expensive gift.",
+    "none": "The Lee family and the Min family do not expect to exchange gifts in the future."
+  },
+  {
+    "story": "housemates",
+    "relationship": "more",
+    "vignette": "Consider Anne and Sarah, who both live in the same old building. <strong>Anne and Sarah are in a relationship where Anne has more power, status, or influence than Sarah.</strong> Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. This week, Anne completed all of the tasks on the list. How likely is it that",
+    "repeating": "Next week, they expect that Anne will complete all of the tasks on the list.",
+    "alternating": "Next week, they expect that Sarah will complete all of the tasks on the list.",
+    "none": "Next week, they expect to ask their next-door neighbor Emily to complete all the tasks on the list."
+  },
+  {
+    "story": "housemates",
+    "relationship": "equal",
+    "vignette": "Consider Anne and Sarah, who both live in the same old building. <strong>Anne and Sarah are in a relationship where Anne has equal power, status, or influence as Sarah.</strong> Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. This week, Anne completed all of the tasks on the list. How likely is it that",
+    "repeating": "Next week, they expect that Anne will complete all of the tasks on the list.",
+    "alternating": "Next week, they expect that Sarah will complete all of the tasks on the list.",
+    "none": "Next week, they expect to ask their next-door neighbor Emily to complete all the tasks on the list."
+  },
+  {
+    "story": "housemates",
+    "relationship": "less",
+    "vignette": "Consider Anne and Sarah, who both live in the same old building. <strong>Anne and Sarah are in a relationship where Anne has less power, status, or influence than Sarah.</strong> Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. This week, Anne completed all of the tasks on the list. How likely is it that",
+    "repeating": "Next week, they expect that Anne will complete all of the tasks on the list.",
+    "alternating": "Next week, they expect that Sarah will complete all of the tasks on the list.",
+    "none": "Next week, they expect to ask their next-door neighbor Emily to complete all the tasks on the list."
+  },
+  {
+    "story": "family meals",
+    "relationship": "more",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has more power, status, or influence than Martha.</strong> Four times a year, the whole family gets together for key religious holidays. The last time, the family gathered at Sue’s house. Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you. How likely is it that",
+    "repeating": "The next time the whole family gets together, they expect to gather at Sue's house, where Sue will do all the cooking and cleaning.",
+    "alternating": "The next time the whole family gets together, they expect to gather at Martha's house, where Martha will do all the cooking and cleaning.",
+    "none": "Sue and Martha do not expect to attend the next family gathering."
+  },
+  {
+    "story": "family meals",
+    "relationship": "equal",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has equal power, status, or influence as Martha.</strong> Four times a year, the whole family gets together for key religious holidays. The last time, the family gathered at Sue’s house. Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you. How likely is it that",
+    "repeating": "The next time the whole family gets together, they expect to gather at Sue's house, where Sue will do all the cooking and cleaning.",
+    "alternating": "The next time the whole family gets together, they expect to gather at Martha's house, where Martha will do all the cooking and cleaning.",
+    "none": "Sue and Martha do not expect to attend the next family gathering."
+  },
+  {
+    "story": "family meals",
+    "relationship": "less",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has less power, status, or influence than Martha.</strong> Four times a year, the whole family gets together for key religious holidays. The last time, the family gathered at Sue’s house. Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you. How likely is it that",
+    "repeating": "The next time the whole family gets together, they expect to gather at Sue's house, where Sue will do all the cooking and cleaning.",
+    "alternating": "The next time the whole family gets together, they expect to gather at Martha's house, where Martha will do all the cooking and cleaning.",
+    "none": "Sue and Martha do not expect to attend the next family gathering."
+  },
+  {
+    "story": "police",
+    "relationship": "more",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has more power, status, or influence than Jarred.</strong> Today, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car. How likely is it that",
+    "repeating": "Tomorrow, they expect that Justin will go to the office at 6am to do the day's paperwork, so that Jarred can arrive later.",
+    "alternating": "Tomorrow, they expect that Jarred will go to the office at 6am to do the day's paperwork, so that Justin can arrive later.",
+    "none": "Justin and Jarred do not expect to work together in the future."
+  },
+  {
+    "story": "police",
+    "relationship": "equal",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has equal power, status, or influence as Jarred.</strong> Today, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car. How likely is it that",
+    "repeating": "Tomorrow, they expect that Justin will go to the office at 6am to do the day's paperwork, so that Jarred can arrive later.",
+    "alternating": "Tomorrow, they expect that Jarred will go to the office at 6am to do the day's paperwork, so that Justin can arrive later.",
+    "none": "Justin and Jarred do not expect to work together in the future."
+  },
+  {
+    "story": "police",
+    "relationship": "less",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has less power, status, or influence than Jarred.</strong> Today, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car. How likely is it that",
+    "repeating": "Tomorrow, they expect that Justin will go to the office at 6am to do the day's paperwork, so that Jarred can arrive later.",
+    "alternating": "Tomorrow, they expect that Jarred will go to the office at 6am to do the day's paperwork, so that Justin can arrive later.",
+    "none": "Justin and Jarred do not expect to work together in the future."
+  },
+  {
+    "story": "concerts",
+    "relationship": "more",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has more power, status, or influence than Allen.</strong> Last time they went to a concert together, Kevin paid for the tickets. How likely is it that",
+    "repeating": "Next time, they expect that Kevin will pay for the tickets.",
+    "alternating": "Next time, they expect that Allen will pay for the tickets.",
+    "none": "Kevin and Allen do not expect to go to concerts together in the future."
+  },
+  {
+    "story": "concerts",
+    "relationship": "equal",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has equal power, status, or influence as Allen.</strong> Last time they went to a concert together, Kevin paid for the tickets. How likely is it that",
+    "repeating": "Next time, they expect that Kevin will pay for the tickets.",
+    "alternating": "Next time, they expect that Allen will pay for the tickets.",
+    "none": "Kevin and Allen do not expect to go to concerts together in the future."
+  },
+  {
+    "story": "concerts",
+    "relationship": "less",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has less power, status, or influence than Allen.</strong> Last time they went to a concert together, Kevin paid for the tickets. How likely is it that",
+    "repeating": "Next time, they expect that Kevin will pay for the tickets.",
+    "alternating": "Next time, they expect that Allen will pay for the tickets.",
+    "none": "Kevin and Allen do not expect to go to concerts together in the future."
+  },
+  {
+    "story": "architects",
+    "relationship": "more",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has more power, status, or influence than Liana.</strong> They work on the same team, where they work together on their designs. Last time, Sonia meticulously double-checked their finished designs before they sent them out. How likely is it that",
+    "repeating": "Next time they finish a design, they expect that Sonia meticulously double checks the design.",
+    "alternating": "Next time they finish a design, they expect that Liana meticulously double checks the design.",
+    "none": "Sonia and Liana do not expect to work together on designs in the future."
+  },
+  {
+    "story": "architects",
+    "relationship": "equal",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has equal power, status, or influence as Liana.</strong> They work on the same team, where they work together on their designs. Last time, Sonia meticulously double-checked their finished designs before they sent them out. How likely is it that",
+    "repeating": "Next time they finish a design, they expect that Sonia meticulously double checks the design.",
+    "alternating": "Next time they finish a design, they expect that Liana meticulously double checks the design.",
+    "none": "Sonia and Liana do not expect to work together on designs in the future."
+  },
+  {
+    "story": "architects",
+    "relationship": "less",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has less power, status, or influence than Liana.</strong> They work on the same team, where they work together on their designs. Last time, Sonia meticulously double-checked their finished designs before they sent them out. How likely is it that",
+    "repeating": "Next time they finish a design, they expect that Sonia meticulously double checks the design.",
+    "alternating": "Next time they finish a design, they expect that Liana meticulously double checks the design.",
+    "none": "Sonia and Liana do not expect to work together on designs in the future."
+  },
+  {
+    "story": "feedback",
+    "relationship": "more",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has more power, status, or influence than Samantha.</strong> They frequently attend the same group writing workshops. Last time, Samantha shared her work in progress, and Taylor gave feedback on it. How likely is it that",
+    "repeating": "Next time, they expect that Samantha shares her work in progress, and Taylor gives feedback on it.",
+    "alternating": "Next time, they expect that Taylor shares her work in progress, and Samantha gives feedback on it.",
+    "none": "Taylor and Samantha do not expect to exchange feedback in the future."
+  },
+  {
+    "story": "feedback",
+    "relationship": "equal",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has equal power, status, or influence as Samantha.</strong> They frequently attend the same group writing workshops. Last time, Samantha shared her work in progress, and Taylor gave feedback on it. How likely is it that",
+    "repeating": "Next time, they expect that Samantha shares her work in progress, and Taylor gives feedback on it.",
+    "alternating": "Next time, they expect that Taylor shares her work in progress, and Samantha gives feedback on it.",
+    "none": "Taylor and Samantha do not expect to exchange feedback in the future."
+  },
+  {
+    "story": "feedback",
+    "relationship": "less",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has less power, status, or influence than Samantha.</strong> They frequently attend the same group writing workshops. Last time, Samantha shared her work in progress, and Taylor gave feedback on it. How likely is it that",
+    "repeating": "Next time, they expect that Samantha shares her work in progress, and Taylor gives feedback on it.",
+    "alternating": "Next time, they expect that Taylor shares her work in progress, and Samantha gives feedback on it.",
+    "none": "Taylor and Samantha do not expect to exchange feedback in the future."
+  },
+  {
+    "story": "meeting location",
+    "relationship": "more",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. <strong>Ethan and Benjamin are in a relationship where Ethan has more power, status, or influence than Benjamin.</strong> This week, Ethan walked to Benjamin’s office, where they had the meeting. How likely is it that",
+    "repeating": "Next week, they expect that Ethan walks to Benjamin's office, where they have the meeting.",
+    "alternating": "Next week, they expect that Benjamin walks to Ethan's office, where they have the meeting.",
+    "none": "Ethan and Benjamin do not expect to meet in the future."
+  },
+  {
+    "story": "meeting location",
+    "relationship": "equal",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. <strong>Ethan and Benjamin are in a relationship where Ethan has equal power, status, or influence as Benjamin.</strong> This week, Ethan walked to Benjamin’s office, where they had the meeting. How likely is it that",
+    "repeating": "Next week, they expect that Ethan walks to Benjamin's office, where they have the meeting.",
+    "alternating": "Next week, they expect that Benjamin walks to Ethan's office, where they have the meeting.",
+    "none": "Ethan and Benjamin do not expect to meet in the future."
+  },
+  {
+    "story": "meeting location",
+    "relationship": "less",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. <strong>Ethan and Benjamin are in a relationship where Ethan has less power, status, or influence than Benjamin.</strong> This week, Ethan walked to Benjamin’s office, where they had the meeting. How likely is it that",
+    "repeating": "Next week, they expect that Ethan walks to Benjamin's office, where they have the meeting.",
+    "alternating": "Next week, they expect that Benjamin walks to Ethan's office, where they have the meeting.",
+    "none": "Ethan and Benjamin do not expect to meet in the future."
+  },
+  {
+    "story": "group project",
+    "relationship": "more",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has more power, status, or influence than Ralph.</strong> This time, when they met, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next. How likely is it that",
+    "repeating": "Next time they meet, they expect that Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "alternating": "Next time they meet, they expect that Ralph contributes most of the ideas, delegates tasks to Maxwell, and decides what to do next.",
+    "none": "Maxwell and Ralph do not expect to meet in the future."
+  },
+  {
+    "story": "group project",
+    "relationship": "equal",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has equal power, status, or influence as Ralph.</strong> This time, when they met, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next. How likely is it that",
+    "repeating": "Next time they meet, they expect that Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "alternating": "Next time they meet, they expect that Ralph contributes most of the ideas, delegates tasks to Maxwell, and decides what to do next.",
+    "none": "Maxwell and Ralph do not expect to meet in the future."
+  },
+  {
+    "story": "group project",
+    "relationship": "less",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has less power, status, or influence than Ralph.</strong> This time, when they met, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next. How likely is it that",
+    "repeating": "Next time they meet, they expect that Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "alternating": "Next time they meet, they expect that Ralph contributes most of the ideas, delegates tasks to Maxwell, and decides what to do next.",
+    "none": "Maxwell and Ralph do not expect to meet in the future."
+  },
+  {
+    "story": "meeting prep",
+    "relationship": "more",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has more power, status, or influence than Victoria.</strong> Last week, when they met, Chloe prepared the agenda for each meeting and booked the meeting room. How likely is it that",
+    "repeating": "Next week, they expect that Chloe prepares the agenda for the meeting and books the meeting room.",
+    "alternating": "Next week, they expect that Victoria prepares the agenda for the meeting and books the meeting room.",
+    "none": "Chloe and Victoria do not expect to meet in the future."
+  },
+  {
+    "story": "meeting prep",
+    "relationship": "equal",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has equal power, status, or influence as Victoria.</strong> Last week, when they met, Chloe prepared the agenda for each meeting and booked the meeting room. How likely is it that",
+    "repeating": "Next week, they expect that Chloe prepares the agenda for the meeting and books the meeting room.",
+    "alternating": "Next week, they expect that Victoria prepares the agenda for the meeting and books the meeting room.",
+    "none": "Chloe and Victoria do not expect to meet in the future."
+  },
+  {
+    "story": "meeting prep",
+    "relationship": "less",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has less power, status, or influence than Victoria.</strong> Last week, when they met, Chloe prepared the agenda for each meeting and booked the meeting room. How likely is it that",
+    "repeating": "Next week, they expect that Chloe prepares the agenda for the meeting and books the meeting room.",
+    "alternating": "Next week, they expect that Victoria prepares the agenda for the meeting and books the meeting room.",
+    "none": "Chloe and Victoria do not expect to meet in the future."
+  },
+  {
+    "story": "restaurant",
+    "relationship": "more",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has more power, status, or influence than Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. This week, they went to the Chinese restaurant. How likely is it that",
+    "repeating": "Next time they go out to eat together, they expect that they will go to the Chinese restaurant.",
+    "alternating": "Next time they go out to eat together, they expect that they will go to the Indian restaurant.",
+    "none": "Avery and Grace do not expect to go out to eat together in the future."
+  },
+  {
+    "story": "restaurant",
+    "relationship": "equal",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has equal power, status, or influence as Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. This week, they went to the Chinese restaurant. How likely is it that",
+    "repeating": "Next time they go out to eat together, they expect that they will go to the Chinese restaurant.",
+    "alternating": "Next time they go out to eat together, they expect that they will go to the Indian restaurant.",
+    "none": "Avery and Grace do not expect to go out to eat together in the future."
+  },
+  {
+    "story": "restaurant",
+    "relationship": "less",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has less power, status, or influence than Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. This week, they went to the Chinese restaurant. How likely is it that",
+    "repeating": "Next time they go out to eat together, they expect that they will go to the Chinese restaurant.",
+    "alternating": "Next time they go out to eat together, they expect that they will go to the Indian restaurant.",
+    "none": "Avery and Grace do not expect to go out to eat together in the future."
+  },
+  {
+    "story": "groceries",
+    "relationship": "more",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has more power, status, or influence than Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week. This week, Caleb helped carry Dylan's groceries up the stairs. How likely is it that",
+    "repeating": "Next week, they expect that Caleb helps carry Dylan's groceries up the stairs.",
+    "alternating": "Next week, they expect that Dylan helps carry Caleb's groceries up the stairs.",
+    "none": "Dylan and Caleb do not expect to help each other carry groceries in the future."
+  },
+  {
+    "story": "groceries",
+    "relationship": "equal",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has equal power, status, or influence as Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week. This week, Caleb helped carry Dylan's groceries up the stairs. How likely is it that",
+    "repeating": "Next week, they expect that Caleb helps carry Dylan's groceries up the stairs.",
+    "alternating": "Next week, they expect that Dylan helps carry Caleb's groceries up the stairs.",
+    "none": "Dylan and Caleb do not expect to help each other carry groceries in the future."
+  },
+  {
+    "story": "groceries",
+    "relationship": "less",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has less power, status, or influence than Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week. This week, Caleb helped carry Dylan's groceries up the stairs. How likely is it that",
+    "repeating": "Next week, they expect that Caleb helps carry Dylan's groceries up the stairs.",
+    "alternating": "Next week, they expect that Dylan helps carry Caleb's groceries up the stairs.",
+    "none": "Dylan and Caleb do not expect to help each other carry groceries in the future."
+  },
+  {
+    "story": "weekend",
+    "relationship": "more",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has more power, status, or influence than Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn woke up early both days to do intense outdoor activities. How likely is it that",
+    "repeating": "Next weekend, they expect that they will do intense outdoor activities.",
+    "alternating": "Next weekend, they expect that they will sleep in, get brunch, and walk around the city.",
+    "none": "Abby and Evelyn do not expect to spend time together during the weekend in the future."
+  },
+  {
+    "story": "weekend",
+    "relationship": "equal",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has equal power, status, or influence as Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn woke up early both days to do intense outdoor activities. How likely is it that",
+    "repeating": "Next weekend, they expect that they will do intense outdoor activities.",
+    "alternating": "Next weekend, they expect that they will sleep in, get brunch, and walk around the city.",
+    "none": "Abby and Evelyn do not expect to spend time together during the weekend in the future."
+  },
+  {
+    "story": "weekend",
+    "relationship": "less",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has less power, status, or influence than Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn woke up early both days to do intense outdoor activities. How likely is it that",
+    "repeating": "Next weekend, they expect that they will do intense outdoor activities.",
+    "alternating": "Next weekend, they expect that they will sleep in, get brunch, and walk around the city.",
+    "none": "Abby and Evelyn do not expect to spend time together during the weekend in the future."
+  },
+  {
+    "story": "scheduling",
+    "relationship": "more",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace, and met up for a meal this week. <strong>Matt and William are in a relationship where Matt has more power, status, or influence than William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. This week, they got dinner on Wednesday at 7pm. How likely is it that",
+    "repeating": "Next time they meet up for a meal during the work week, they expect that they will get dinner.",
+    "alternating": "Next time they meet up for a meal during the work week, they expect that they will get lunch.",
+    "none": "Matt and William do not expect to meet up for a meal in the future."
+  },
+  {
+    "story": "scheduling",
+    "relationship": "equal",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace, and met up for a meal this week. <strong>Matt and William are in a relationship where Matt has equal power, status, or influence as William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. This week, they got dinner on Wednesday at 7pm. How likely is it that",
+    "repeating": "Next time they meet up for a meal during the work week, they expect that they will get dinner.",
+    "alternating": "Next time they meet up for a meal during the work week, they expect that they will get lunch.",
+    "none": "Matt and William do not expect to meet up for a meal in the future."
+  },
+  {
+    "story": "scheduling",
+    "relationship": "less",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace, and met up for a meal this week. <strong>Matt and William are in a relationship where Matt has less power, status, or influence than William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. This week, they got dinner on Wednesday at 7pm. How likely is it that",
+    "repeating": "Next time they meet up for a meal during the work week, they expect that they will get dinner.",
+    "alternating": "Next time they meet up for a meal during the work week, they expect that they will get lunch.",
+    "none": "Matt and William do not expect to meet up for a meal in the future."
+  },
+  {
+    "story": "babysitting",
+    "relationship": "more",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has more power, status, or influence than Ryan.</strong> This week, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night. How likely is it that",
+    "repeating": "Next time, they expect that Ryan drops their children off at John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "alternating": "Next time, they expect that John drops their children off at Ryan's house, where Ryan volunteers to watch John's children so John can have a date night.",
+    "none": "Ryan and John do not expect to volunteer to babysit each other's kids in the future."
+  },
+  {
+    "story": "babysitting",
+    "relationship": "equal",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has equal power, status, or influence as Ryan.</strong> This week, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night. How likely is it that",
+    "repeating": "Next time, they expect that Ryan drops their children off at John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "alternating": "Next time, they expect that John drops their children off at Ryan's house, where Ryan volunteers to watch John's children so John can have a date night.",
+    "none": "Ryan and John do not expect to volunteer to babysit each other's kids in the future."
+  },
+  {
+    "story": "babysitting",
+    "relationship": "less",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has less power, status, or influence than Ryan.</strong> This week, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night. How likely is it that",
+    "repeating": "Next time, they expect that Ryan drops their children off at John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "alternating": "Next time, they expect that John drops their children off at Ryan's house, where Ryan volunteers to watch John's children so John can have a date night.",
+    "none": "Ryan and John do not expect to volunteer to babysit each other's kids in the future."
+  },
+  {
+    "story": "fundraising",
+    "relationship": "more",
+    "vignette": "Consider Caroline and Bella, who both run races for a charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has more power, status, or influence than Bella.</strong> Last time, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "repeating": "Next time they race for charity, they expect that Caroline takes the lead on the advertising and fundraising.",
+    "alternating": "Next time they race for charity, they expect that Bella takes the lead on the advertising and fundraising.",
+    "none": "Caroline and Bella do not expect to raise money together for charity in the future."
+  },
+  {
+    "story": "fundraising",
+    "relationship": "equal",
+    "vignette": "Consider Caroline and Bella, who both run races for a charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has equal power, status, or influence as Bella.</strong> Last time, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "repeating": "Next time they race for charity, they expect that Caroline takes the lead on the advertising and fundraising.",
+    "alternating": "Next time they race for charity, they expect that Bella takes the lead on the advertising and fundraising.",
+    "none": "Caroline and Bella do not expect to raise money together for charity in the future."
+  },
+  {
+    "story": "fundraising",
+    "relationship": "less",
+    "vignette": "Consider Caroline and Bella, who both run races for a charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has less power, status, or influence than Bella.</strong> Last time, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "repeating": "Next time they race for charity, they expect that Caroline takes the lead on the advertising and fundraising.",
+    "alternating": "Next time they race for charity, they expect that Bella takes the lead on the advertising and fundraising.",
+    "none": "Caroline and Bella do not expect to raise money together for charity in the future."
+  }
+]
