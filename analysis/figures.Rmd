@@ -635,7 +635,7 @@ ggplot(
   scale_y_continuous(limits = c(0, 1)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "First time P(lower-rank generous)", y = "Second time P(lower-rank generous)", color = "Observed rank of generous actor") +
+  labs(x = "Expected first time (Study 4)", y = "Predicted next time (Study 4)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 
@@ -1069,45 +1069,6 @@ ggplot(
 ggsave(here("figures/study-5_first_time_all.pdf"))
 ```
 
-
-```{r}
-study_5_strategy_summary <- study_5_data %>%
-  group_by(participant_rank, successful_first_time) %>%
-  tidyboot_mean(strategy_alternating, na.rm = T)
-```
-
-```{r fig.width=5.5, fig.height=3.2}
-ggplot(
-  study_5_strategy_summary,
-  aes(
-    x = participant_rank,
-    y = empirical_stat,
-    color = factor(successful_first_time)
-  )
-) +
-  geom_pointrange(
-    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
-    size = 0.7,
-    linewidth = 1.5,
-    position = position_dodge(width = 0.2)
-  ) +
-  geom_hline(
-    yintercept = 0.5,
-    linetype = "dashed",
-    color = "gray"
-  ) +
-  labs(
-    title = "Study 5: Strategies",
-    x = "Self rank",
-    y = "P(Reciprocity)",
-    color = "First time coordination"
-  ) +
-  scale_y_continuous(limits = c(0, 1)) +
-  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful"))
-
-ggsave(here("figures/study-5_strategies.pdf"))
-```
-
 ```{r}
 study_5_summary <- study_5_data %>%
   group_by(
@@ -1305,45 +1266,6 @@ ggplot(
 ggsave(here("figures/study-6_first_time_all.pdf"))
 ```
 
-
-```{r}
-study_6_strategy_summary <- study_6_data %>%
-  group_by(participant_rank, successful_first_time) %>%
-  tidyboot_mean(strategy_alternating, na.rm = T)
-```
-
-```{r fig.width=5.5, fig.height=3.2}
-ggplot(
-  study_6_strategy_summary,
-  aes(
-    x = participant_rank,
-    y = empirical_stat,
-    color = factor(successful_first_time)
-  )
-) +
-  geom_pointrange(
-    aes(y = empirical_stat, ymin = ci_lower, ymax = ci_upper),
-    size = 0.7,
-    linewidth = 1.5,
-    position = position_dodge(width = 0.2)
-  ) +
-  geom_hline(
-    yintercept = 0.5,
-    linetype = "dashed",
-    color = "gray"
-  ) +
-  labs(
-    title = "Study 6: Strategies",
-    x = "Self rank",
-    y = "P(Reciprocity)",
-    color = "First time coordination"
-  ) +
-  scale_y_continuous(limits = c(0, 1)) +
-  scale_color_brewer(palette = "Set1", labels = c("Unsuccessful", "Successful"))
-
-ggsave(here("figures/study-6_strategies.pdf"))
-```
-
 ```{r}
 study_6_summary <- study_6_data %>%
   group_by(
@@ -1436,7 +1358,7 @@ ggplot(
     y = "P(Second time generous)",
     color = "Self rank"
   ) +
-  scale_color_manual(values = relationship.colors) +
+  scale_color_manual(values = relationship_colors) +
   facet_wrap(~participant_first_choice,
     labeller = labeller(
       participant_first_choice = function(x) {
