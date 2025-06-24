@@ -1063,7 +1063,6 @@ ggplot(
     color = "gray"
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = relationship_colors) +
   theme(legend.position = "none")
 
 ggsave(here("figures/study-5_first_time_all.pdf"))
