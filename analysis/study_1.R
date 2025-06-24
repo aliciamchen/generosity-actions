@@ -71,6 +71,11 @@ mod <-
        + (1 | story) + (1 | subject_id),
        data = d)
 
+# mod <-
+#   lmer(likert_rating ~ 1 + next_interaction * relationship
+#        + (1 + next_interaction | story) + (1 + relationship | subject_id),
+#        data = d)
+
 summary(mod)
 
 anova(mod, type = "III")

@@ -721,7 +721,7 @@ ggplot(
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Study 4 First time P(lower-rank generous)", y = "Study 2 P(lower-rank generous)", color = "Observed rank of generous actor") +
+  labs(x = "Expected first time (Study 4)", y = "Predicted next time (Study 2)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 
@@ -815,7 +815,7 @@ ggplot(
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
   scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
-  labs(x = "Study 4 First time P(lower-rank generous)", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
+  labs(x = "Expected first time (Study 4)", y = "Predicted next time (Study 3)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 

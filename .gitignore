@@ -4,3 +4,4 @@ non_anonymized
 .Rproj.user
 .Rhistory
 .vscode
+*.ai
