@@ -17,7 +17,7 @@ options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 
 ## ----load-data-----------------------------------------------------------------------------------------------------------------------------------------
-data <- read.csv(here("data/study-6/non_anonymized/study-6_data.csv"))
+data <- read.csv(here("data/study-6_data.csv"))
 
 main_data <- data %>%
   filter(time == "first") %>%
@@ -80,7 +80,6 @@ main_data <- data %>%
     relationship = factor(relationship, levels = c("equal", "unequal")),
     participant_first_choice = factor(participant_first_choice, levels = c("give", "receive")),
     partner_first_choice = factor(partner_first_choice, levels = c("give", "receive")),
-    coordination = factor(coordination, levels = c("False", "True")),
     participant_second_choice = factor(participant_second_choice, levels = c("give", "receive")),
     strategy = factor(strategy, levels = c("alternating", "repeating")), 
     first_choices = factor(first_choices, levels = c("give_give", "give_receive", "receive_give", "receive_receive"))
@@ -95,7 +94,7 @@ write_csv(main_data_filtered, here("data/study-6_tidy_data.csv"))
 
 # Look at demographic info
 length(unique(main_data_filtered$subject_id))
-study_6_demographics <- read.csv(here("data/study-6/non_anonymized/study-6_demographics.csv"))
+study_6_demographics <- read.csv(here("data/study-6_demographics.csv"))
 study_6_demographics %>% count(gender)
 study_6_demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
 
