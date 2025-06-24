@@ -266,15 +266,3 @@ emmeans(mod, revpairwise ~ next_interaction | relationship) %>%
   summary(infer = T)
 
 
-emm <-
-  mod %>% emmeans(~ relationship * next_interaction) %>%
-  add_grouping("interaction_present",
-               "next_interaction",
-               c("yes", "yes", "no")) %>%
-  add_grouping("relationship_present", "relationship", c("no", "yes", "yes"))
-
-
-emmeans(emm, revpairwise ~ interaction_present |
-          relationship_present) %>%
-  summary(infer = T)
-

@@ -1,0 +1,453 @@
+here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Welcome to emmeans.
+Caution: You lose important information if you filter this package's results.
+See '? untidy'
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+
+Attaching package: ‘lmerTest’
+
+The following object is masked from ‘package:lme4’:
+
+    lmer
+
+The following object is masked from ‘package:stats’:
+
+    step
+
+Joining with `by = join_by(story)`
+[1] 59
+         gender  n
+1        female 28
+2          male 27
+3 nonconforming  5
+  mean_age   sd_age min_age max_age
+1 32.96667 10.92651      18      65
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: likert_rating ~ 1 + next_interaction * relationship + (1 | story) +  
+    (1 | subject_id)
+   Data: d
+
+REML criterion at convergence: 11126.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.4554 -0.6943  0.0069  0.7294  3.5175 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.08713  0.2952  
+ story      (Intercept) 0.03623  0.1903  
+ Residual               1.86979  1.3674  
+Number of obs: 3174, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+                                  Estimate Std. Error         df t value
+(Intercept)                        3.86400    0.06386   35.21664  60.504
+next_interaction1                  0.50098    0.03433 3090.03157  14.595
+next_interaction2                  0.87360    0.03434 3090.09044  25.438
+relationship1                      0.05186    0.03435 3091.95841   1.510
+relationship2                     -0.02508    0.03452 3108.55852  -0.727
+next_interaction1:relationship1    0.55835    0.04854 3089.97756  11.502
+next_interaction2:relationship1   -0.30500    0.04857 3090.00597  -6.279
+next_interaction1:relationship2   -0.27869    0.04863 3090.06202  -5.731
+next_interaction2:relationship2    0.14328    0.04864 3090.10940   2.946
+                                Pr(>|t|)    
+(Intercept)                      < 2e-16 ***
+next_interaction1                < 2e-16 ***
+next_interaction2                < 2e-16 ***
+relationship1                    0.13126    
+relationship2                    0.46757    
+next_interaction1:relationship1  < 2e-16 ***
+next_interaction2:relationship1 3.88e-10 ***
+next_interaction1:relationship2 1.09e-08 ***
+next_interaction2:relationship2  0.00325 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) nxt_n1 nxt_n2 rltns1 rltns2 nx_1:1 nx_2:1 nx_1:2
+nxt_ntrctn1  0.000                                                 
+nxt_ntrctn2  0.001 -0.501                                          
+relatinshp1  0.000 -0.001  0.000                                   
+relatinshp2  0.002  0.001  0.000 -0.501                            
+nxt_ntrc1:1  0.000  0.000  0.001 -0.001  0.000                     
+nxt_ntrc2:1  0.000  0.001  0.000  0.001  0.000 -0.500              
+nxt_ntrc1:2  0.000  0.005 -0.003  0.000  0.001 -0.502  0.251       
+nxt_ntrc2:2  0.000 -0.003  0.004  0.000  0.001  0.251 -0.502 -0.501
+Type III Analysis of Variance Table with Satterthwaite's method
+                               Sum Sq Mean Sq NumDF  DenDF F value Pr(>F)    
+next_interaction              3074.02 1537.01     2 3090.1 822.021 <2e-16 ***
+relationship                     4.26    2.13     2 3102.2   1.140   0.32    
+next_interaction:relationship  248.18   62.04     4 3090.0  33.182 <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+asymmetry_present = no:
+ next_interaction emmean     SE    df lower.CL upper.CL t.ratio p.value
+ Reciprocity        4.98 0.0937 161.8     4.79     5.16  53.073  <.0001
+ Precedent          4.48 0.0938 162.3     4.30     4.67  47.796  <.0001
+ None               2.29 0.0938 162.3     2.10     2.47  24.385  <.0001
+
+asymmetry_present = yes:
+ next_interaction emmean     SE    df lower.CL upper.CL t.ratio p.value
+ Reciprocity        4.06 0.0784  79.8     3.90     4.22  51.802  <.0001
+ Precedent          4.86 0.0784  79.9     4.71     5.02  62.045  <.0001
+ None               2.59 0.0783  79.5     2.43     2.75  33.080  <.0001
+
+Results are averaged over the levels of: relationship 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+asymmetry_present = no:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ Reciprocity - Precedent    0.491 0.1030 3090    0.249    0.732   4.764  <.0001
+ Reciprocity - None         2.687 0.1030 3090    2.446    2.929  26.089  <.0001
+ Precedent - None           2.197 0.1030 3090    1.955    2.438  21.310  <.0001
+
+asymmetry_present = yes:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ Reciprocity - Precedent   -0.804 0.0729 3090   -0.975   -0.633 -11.039  <.0001
+ Reciprocity - None         1.470 0.0728 3090    1.299    1.640  20.200  <.0001
+ Precedent - None           2.274 0.0728 3090    2.103    2.445  31.244  <.0001
+
+Results are averaged over the levels of: relationship 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
+$emmeans
+next_interaction = Reciprocity:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ Equal          4.98 0.0937 162     4.79     5.16  53.073  <.0001
+ Lower          4.06 0.0940 164     3.88     4.25  43.187  <.0001
+ Higher         4.06 0.0936 161     3.87     4.24  43.348  <.0001
+
+next_interaction = Precedent:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ Equal          4.48 0.0938 162     4.30     4.67  47.796  <.0001
+ Lower          4.86 0.0940 164     4.67     5.04  51.639  <.0001
+ Higher         4.87 0.0937 161     4.69     5.06  51.997  <.0001
+
+next_interaction = None:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ Equal          2.29 0.0938 162     2.10     2.47  24.385  <.0001
+ Lower          2.60 0.0939 162     2.41     2.79  27.695  <.0001
+ Higher         2.58 0.0935 160     2.40     2.77  27.586  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+next_interaction = Reciprocity:
+ contrast       estimate    SE   df lower.CL upper.CL t.ratio p.value
+ Lower - Equal  -0.91398 0.103 3093  -1.1560   -0.672  -8.855  <.0001
+ Higher - Equal -0.91664 0.103 3092  -1.1578   -0.676  -8.914  <.0001
+ Higher - Lower -0.00266 0.103 3098  -0.2446    0.239  -0.026  0.9996
+
+next_interaction = Precedent:
+ contrast       estimate    SE   df lower.CL upper.CL t.ratio p.value
+ Lower - Equal   0.37134 0.103 3093   0.1291    0.614   3.595  0.0010
+ Higher - Equal  0.38809 0.103 3092   0.1466    0.630   3.768  0.0005
+ Higher - Lower  0.01675 0.103 3098  -0.2254    0.259   0.162  0.9856
+
+next_interaction = None:
+ contrast       estimate    SE   df lower.CL upper.CL t.ratio p.value
+ Lower - Equal   0.31183 0.103 3093   0.0700    0.554   3.023  0.0071
+ Higher - Equal  0.29265 0.103 3092   0.0515    0.534   2.846  0.0124
+ Higher - Lower -0.01918 0.103 3098  -0.2606    0.222  -0.186  0.9811
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: p_prec ~ 1 + diff + (1 | story) + (1 | subject_id)
+   Data: d.benefit.effort %>% filter(relationship == "Higher", type ==  
+    "benefit")
+
+REML criterion at convergence: -437.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6081 -0.5650  0.0354  0.6039  3.1253 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.001002 0.03166 
+ story      (Intercept) 0.008811 0.09387 
+ Residual               0.013615 0.11668 
+Number of obs: 353, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)  0.65137    0.04775 16.10951  13.643 2.87e-10 ***
+diff        -0.05707    0.02282 15.93851  -2.501   0.0237 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+diff -0.872
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: p_prec ~ 1 + diff + (1 | story) + (1 | subject_id)
+   Data: d.benefit.effort %>% filter(relationship == "Higher", type ==  
+    "effort")
+
+REML criterion at convergence: -432.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6159 -0.5919  0.0397  0.5997  3.1785 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.001002 0.03166 
+ story      (Intercept) 0.012263 0.11074 
+ Residual               0.013615 0.11668 
+Number of obs: 353, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)  0.51790    0.05708 16.16034   9.073 9.62e-08 ***
+diff         0.01542    0.02640 16.03017   0.584    0.567    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+diff -0.880
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: p_prec ~ 1 + diff + (1 | story) + (1 | subject_id)
+   Data: d.benefit.effort %>% filter(relationship == "Lower", type ==  
+    "benefit")
+
+REML criterion at convergence: -410.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-3.04482 -0.55958  0.00555  0.58268  2.55712 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.001263 0.03553 
+ story      (Intercept) 0.006894 0.08303 
+ Residual               0.014527 0.12053 
+Number of obs: 348, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+            Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)  0.60179    0.04309 16.42798  13.967 1.54e-10 ***
+diff        -0.03010    0.02051 16.00587  -1.468    0.162    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+diff -0.871
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: p_prec ~ 1 + diff + (1 | story) + (1 | subject_id)
+   Data: d.benefit.effort %>% filter(relationship == "Lower", type ==  
+    "effort")
+
+REML criterion at convergence: -408.2
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-3.06073 -0.56823  0.00179  0.59938  2.53372 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.001215 0.03485 
+ story      (Intercept) 0.007910 0.08894 
+ Residual               0.014560 0.12067 
+Number of obs: 348, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)  0.537911   0.046912 16.409613  11.466 2.99e-09 ***
+diff         0.004581   0.021607 16.039598   0.212    0.835    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+     (Intr)
+diff -0.878
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: normalized_likert_rating ~ 1 + next_interaction * relationship +  
+    (1 | story) + (1 | subject_id)
+   Data: d
+
+REML criterion at convergence: -4502.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.0409 -0.6769 -0.0996  0.6092  6.8470 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.00000  0.0000  
+ story      (Intercept) 0.00000  0.0000  
+ Residual               0.01383  0.1176  
+Number of obs: 3174, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+                                  Estimate Std. Error         df t value
+(Intercept)                      3.347e-01  2.087e-03  3.165e+03 160.366
+next_interaction1                4.354e-02  2.952e-03  3.165e+03  14.750
+next_interaction2                7.842e-02  2.953e-03  3.165e+03  26.556
+relationship1                    1.200e-04  2.952e-03  3.165e+03   0.041
+relationship2                    1.108e-04  2.956e-03  3.165e+03   0.037
+next_interaction1:relationship1  5.063e-02  4.174e-03  3.165e+03  12.130
+next_interaction2:relationship1 -3.268e-02  4.177e-03  3.165e+03  -7.824
+next_interaction1:relationship2 -2.603e-02  4.181e-03  3.165e+03  -6.226
+next_interaction2:relationship2  1.514e-02  4.182e-03  3.165e+03   3.621
+                                Pr(>|t|)    
+(Intercept)                      < 2e-16 ***
+next_interaction1                < 2e-16 ***
+next_interaction2                < 2e-16 ***
+relationship1                   0.967592    
+relationship2                   0.970090    
+next_interaction1:relationship1  < 2e-16 ***
+next_interaction2:relationship1 6.93e-15 ***
+next_interaction1:relationship2 5.42e-10 ***
+next_interaction2:relationship2 0.000298 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) nxt_n1 nxt_n2 rltns1 rltns2 nx_1:1 nx_2:1 nx_1:2
+nxt_ntrctn1  0.000                                                 
+nxt_ntrctn2  0.001 -0.501                                          
+relatinshp1  0.001 -0.001  0.000                                   
+relatinshp2  0.004  0.001  0.000 -0.502                            
+nxt_ntrc1:1 -0.001  0.000  0.001 -0.001  0.000                     
+nxt_ntrc2:1  0.000  0.001  0.000  0.001  0.000 -0.500              
+nxt_ntrc1:2  0.001  0.005 -0.003  0.000  0.001 -0.502  0.251       
+nxt_ntrc2:2  0.000 -0.003  0.004  0.000  0.001  0.251 -0.502 -0.501
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+                               Sum Sq Mean Sq NumDF DenDF  F value Pr(>F)    
+next_interaction              24.2640 12.1320     2  3165 877.5001 <2e-16 ***
+relationship                   0.0001  0.0000     2  3165   0.0031 0.9969    
+next_interaction:relationship  2.0950  0.5237     4  3165  37.8821 <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+asymmetry_present = no:
+ next_interaction emmean      SE  df lower.CL upper.CL t.ratio p.value
+ Reciprocity       0.429 0.00626 877    0.417    0.441  68.545  <.0001
+ Precedent         0.381 0.00627 880    0.368    0.393  60.721  <.0001
+ None              0.195 0.00627 880    0.183    0.207  31.099  <.0001
+
+asymmetry_present = yes:
+ next_interaction emmean      SE  df lower.CL upper.CL t.ratio p.value
+ Reciprocity       0.353 0.00443 259    0.344    0.362  79.677  <.0001
+ Precedent         0.429 0.00443 260    0.421    0.438  96.892  <.0001
+ None              0.222 0.00442 257    0.213    0.230  50.159  <.0001
+
+Results are averaged over the levels of: relationship 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+asymmetry_present = no:
+ contrast                estimate      SE   df lower.CL upper.CL t.ratio
+ Reciprocity - Precedent   0.0484 0.00886 3090   0.0277   0.0692   5.468
+ Reciprocity - None        0.2341 0.00886 3091   0.2133   0.2548  26.429
+ Precedent - None          0.1857 0.00886 3091   0.1649   0.2064  20.946
+ p.value
+  <.0001
+  <.0001
+  <.0001
+
+asymmetry_present = yes:
+ contrast                estimate      SE   df lower.CL upper.CL t.ratio
+ Reciprocity - Precedent  -0.0765 0.00627 3091  -0.0912  -0.0618 -12.217
+ Reciprocity - None        0.1312 0.00626 3090   0.1165   0.1459  20.971
+ Precedent - None          0.2077 0.00626 3090   0.1931   0.2224  33.193
+ p.value
+  <.0001
+  <.0001
+  <.0001
+
+Results are averaged over the levels of: relationship 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
+$emmeans
+next_interaction = Reciprocity:
+ relationship emmean      SE  df lower.CL upper.CL t.ratio p.value
+ Equal         0.429 0.00626 877    0.417    0.441  68.545  <.0001
+ Lower         0.352 0.00629 879    0.340    0.365  56.048  <.0001
+ Higher        0.353 0.00624 863    0.341    0.366  56.623  <.0001
+
+next_interaction = Precedent:
+ relationship emmean      SE  df lower.CL upper.CL t.ratio p.value
+ Equal         0.381 0.00627 880    0.368    0.393  60.721  <.0001
+ Lower         0.428 0.00629 880    0.416    0.441  68.148  <.0001
+ Higher        0.430 0.00625 867    0.418    0.443  68.866  <.0001
+
+next_interaction = None:
+ relationship emmean      SE  df lower.CL upper.CL t.ratio p.value
+ Equal         0.195 0.00627 880    0.183    0.207  31.099  <.0001
+ Lower         0.224 0.00627 873    0.211    0.236  35.696  <.0001
+ Higher        0.220 0.00623 859    0.207    0.232  35.231  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+next_interaction = Reciprocity:
+ contrast       estimate      SE   df lower.CL upper.CL t.ratio p.value
+ Lower - Equal  -0.07667 0.00887 3101 -0.09747  -0.0559  -8.644  <.0001
+ Higher - Equal -0.07559 0.00884 3098 -0.09631  -0.0549  -8.551  <.0001
+ Higher - Lower  0.00109 0.00886 3118 -0.01969   0.0219   0.123  0.9917
+
+next_interaction = Precedent:
+ contrast       estimate      SE   df lower.CL upper.CL t.ratio p.value
+ Lower - Equal   0.04781 0.00888 3101  0.02700   0.0686   5.386  <.0001
+ Higher - Equal  0.04986 0.00885 3099  0.02911   0.0706   5.633  <.0001
+ Higher - Lower  0.00205 0.00887 3117 -0.01874   0.0228   0.231  0.9709
+
+next_interaction = None:
+ contrast       estimate      SE   df lower.CL upper.CL t.ratio p.value
+ Lower - Equal   0.02884 0.00886 3100  0.00805   0.0496   3.253  0.0033
+ Higher - Equal  0.02467 0.00884 3099  0.00394   0.0454   2.791  0.0146
+ Higher - Lower -0.00416 0.00884 3117 -0.02489   0.0166  -0.471  0.8849
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+

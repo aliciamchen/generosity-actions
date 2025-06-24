@@ -1,0 +1,425 @@
+here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+
+Attaching package: ‘lmerTest’
+
+The following object is masked from ‘package:lme4’:
+
+    lmer
+
+The following object is masked from ‘package:stats’:
+
+    step
+
+Welcome to emmeans.
+Caution: You lose important information if you filter this package's results.
+See '? untidy'
+Joining with `by = join_by(story)`
+         gender  n
+1        female 59
+2          male 60
+3 nonconforming  1
+  mean_age   sd_age min_age max_age
+1 37.80833 12.04006      18      85
+[1] 113
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: first_response ~ diff_effort + (1 | subject_id) + (1 | story)
+   Data: d %>% filter(first_actual != "Equal")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1615.6    1636.5    -803.8    1607.6      1352 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.4675 -0.6880 -0.3489  0.6741  2.6581 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.1799   0.4242  
+ story      (Intercept) 1.2495   1.1178  
+Number of obs: 1356, groups:  subject_id, 113; story, 18
+
+Fixed effects:
+            Estimate Std. Error z value Pr(>|z|)
+(Intercept)   0.2029     0.5760   0.352    0.725
+diff_effort  -0.1144     0.2661  -0.430    0.667
+
+Correlation of Fixed Effects:
+            (Intr)
+diff_effort -0.880
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: first_response ~ diff_benefit + (1 | subject_id) + (1 | story)
+   Data: d %>% filter(first_actual != "Equal")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1613.7    1634.5    -802.8    1605.7      1352 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.3913 -0.6976 -0.3403  0.6716  2.7261 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.1807   0.4251  
+ story      (Intercept) 1.1138   1.0554  
+Number of obs: 1356, groups:  subject_id, 113; story, 18
+
+Fixed effects:
+             Estimate Std. Error z value Pr(>|z|)
+(Intercept)   -0.7152     0.5349  -1.337    0.181
+diff_benefit   0.3826     0.2555   1.498    0.134
+
+Correlation of Fixed Effects:
+            (Intr)
+diff_beneft -0.874
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: strategy ~ first_actual + (1 | subject_id) + (1 | story)
+   Data: d
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   2368.4    2396.5   -1179.2    2358.4      2029 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.5490 -0.6774 -0.2515  0.6888  5.3037 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 1.0664   1.0326  
+ story      (Intercept) 0.4606   0.6786  
+Number of obs: 2034, groups:  subject_id, 113; story, 18
+
+Fixed effects:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   -0.23327    0.19473  -1.198    0.231    
+first_actual1 -1.16172    0.08145 -14.263  < 2e-16 ***
+first_actual2  0.46142    0.07391   6.243  4.3e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) frst_1
+first_actl1  0.035       
+first_actl2 -0.019 -0.536
+$emmeans
+ first_actual emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
+ Equal        -1.395 0.214 Inf   -1.8138    -0.976  -6.528  <.0001
+ Higher        0.228 0.207 Inf   -0.1775     0.634   1.102  0.2703
+ Lower         0.467 0.207 Inf    0.0606     0.874   2.252  0.0243
+
+Results are given on the logit (not the response) scale. 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast       estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
+ Equal - Higher   -1.623 0.136 Inf    -1.942   -1.3039 -11.915  <.0001
+ Equal - Lower    -1.862 0.138 Inf    -2.186   -1.5383 -13.479  <.0001
+ Higher - Lower   -0.239 0.125 Inf    -0.531    0.0535  -1.915  0.1345
+
+Results are given on the log odds ratio (not the response) scale. 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: strategy ~ first_actual * Expectations + (1 | subject_id) + (1 |  
+    story)
+   Data: d
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   2273.4    2312.7   -1129.7    2259.4      2027 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.7930 -0.6252 -0.2298  0.6325  5.2003 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 1.1364   1.066   
+ story      (Intercept) 0.4872   0.698   
+Number of obs: 2034, groups:  subject_id, 113; story, 18
+
+Fixed effects:
+                            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                 -0.42179    0.21453  -1.966   0.0493 *  
+first_actual1               -1.56594    0.17397  -9.001  < 2e-16 ***
+first_actual2                0.66191    0.11091   5.968 2.40e-09 ***
+Expectations1                0.62883    0.09874   6.369 1.91e-10 ***
+first_actual1:Expectations1 -0.05361    0.14593  -0.367   0.7134    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) frst_1 frst_2 Expct1
+first_actl1  0.325                     
+first_actl2 -0.266 -0.809              
+Expectatns1 -0.318 -0.808  0.653       
+frst_ct1:E1 -0.341 -0.828  0.686  0.728
+fit warnings:
+fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+$emmeans
+ first_actual Expectations emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
+ Equal        Consistent   -1.413 0.219 Inf    -1.842   -0.9833  -6.450  <.0001
+ Higher       Consistent    0.869 0.237 Inf     0.404    1.3337   3.664  0.0002
+ Lower        Consistent    1.165 0.240 Inf     0.695    1.6342   4.862  <.0001
+ Equal        Inconsistent nonEst    NA  NA        NA        NA      NA      NA
+ Higher       Inconsistent -0.389 0.234 Inf    -0.847    0.0692  -1.664  0.0961
+ Lower        Inconsistent -0.200 0.233 Inf    -0.657    0.2565  -0.859  0.3902
+
+Results are given on the logit (not the response) scale. 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast                                 estimate    SE  df asymp.LCL
+ Equal Consistent - Higher Consistent       -2.281 0.176 Inf    -2.761
+ Equal Consistent - Lower Consistent        -2.577 0.180 Inf    -3.069
+ Equal Consistent - Equal Inconsistent      nonEst    NA  NA        NA
+ Equal Consistent - Higher Inconsistent     -1.024 0.166 Inf    -1.478
+ Equal Consistent - Lower Inconsistent      -1.212 0.166 Inf    -1.665
+ Higher Consistent - Lower Consistent       -0.296 0.202 Inf    -0.846
+ Higher Consistent - Equal Inconsistent     nonEst    NA  NA        NA
+ Higher Consistent - Higher Inconsistent     1.258 0.197 Inf     0.719
+ Higher Consistent - Lower Inconsistent      1.069 0.186 Inf     0.562
+ Lower Consistent - Equal Inconsistent      nonEst    NA  NA        NA
+ Lower Consistent - Higher Inconsistent      1.553 0.190 Inf     1.035
+ Lower Consistent - Lower Inconsistent       1.365 0.201 Inf     0.818
+ Equal Inconsistent - Higher Inconsistent   nonEst    NA  NA        NA
+ Equal Inconsistent - Lower Inconsistent    nonEst    NA  NA        NA
+ Higher Inconsistent - Lower Inconsistent   -0.189 0.189 Inf    -0.705
+ asymp.UCL z.ratio p.value
+    -1.802 -12.991  <.0001
+    -2.086 -14.305  <.0001
+        NA      NA      NA
+    -0.570  -6.150  <.0001
+    -0.760  -7.309  <.0001
+     0.255  -1.465  0.5852
+        NA      NA      NA
+     1.796   6.369  <.0001
+     1.577   5.746  <.0001
+        NA      NA      NA
+     2.071   8.180  <.0001
+     1.912   6.805  <.0001
+        NA      NA      NA
+        NA      NA      NA
+     0.328  -0.995  0.8577
+
+Results are given on the log odds ratio (not the response) scale. 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 5 estimates 
+P value adjustment: tukey method for comparing a family of 5 estimates 
+
+boundary (singular) fit: see help('isSingular')
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: second_response ~ first_response * first_actual + (1 | subject_id) +  
+    (1 | story)
+   Data: d.h1
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1759.0    1790.3    -873.5    1747.0      1350 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.8471 -0.8955  0.5692  0.8472  1.6317 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.00000  0.0000  
+ story      (Intercept) 0.06232  0.2496  
+Number of obs: 1356, groups:  subject_id, 113; story, 18
+
+Fixed effects:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    0.10280    0.08232   1.249    0.212    
+first_response1                0.50655    0.06370   7.952 1.84e-15 ***
+first_actual1                  0.29489    0.05757   5.122 3.02e-07 ***
+first_response1:first_actual1 -0.02998    0.05771  -0.519    0.603    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) frst_r1 frst_c1
+frst_rspns1 0.011                 
+first_actl1 0.006  0.052          
+frst_rs1:_1 0.047  0.011   0.027  
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+expected.next.2 ~ expected.first.4 * first_actual + (1 | subject_id) +  
+    (1 | story)
+   Data: studies_2_4_all
+
+REML criterion at convergence: -719.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.3085 -0.5820 -0.0397  0.6753  2.8221 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.00000  0.00000 
+ story      (Intercept) 0.00019  0.01378 
+ Residual               0.02010  0.14177 
+Number of obs: 701, groups:  subject_id, 59; story, 18
+
+Fixed effects:
+                                Estimate Std. Error        df t value Pr(>|t|)
+(Intercept)                      0.37564    0.01453  16.19771  25.857 1.34e-14
+expected.first.4                 0.24854    0.02628  16.17993   9.456 5.39e-08
+first_actual1                    0.09379    0.01244 685.44630   7.539 1.50e-13
+expected.first.4:first_actual1  -0.09213    0.02250 685.60749  -4.094 4.75e-05
+                                  
+(Intercept)                    ***
+expected.first.4               ***
+first_actual1                  ***
+expected.first.4:first_actual1 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) exp..4 frst_1
+expctd.fr.4 -0.902              
+first_actl1  0.016 -0.016       
+expct..4:_1 -0.016  0.018 -0.903
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) +  
+    (1 | story)
+   Data: studies_3_4_all
+
+REML criterion at convergence: -694.4
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.86058 -0.54419 -0.01503  0.60696  2.66935 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.000000 0.00000 
+ story      (Intercept) 0.001108 0.03328 
+ Residual               0.019738 0.14049 
+Number of obs: 678, groups:  subject_id, 57; story, 18
+
+Fixed effects:
+                                Estimate Std. Error        df t value Pr(>|t|)
+(Intercept)                      0.42286    0.02214  16.80160  19.096 7.93e-13
+expected.first.4                 0.15303    0.03989  16.50593   3.836  0.00139
+first_actual1                    0.05363    0.01273 663.17095   4.214 2.85e-05
+expected.first.4:first_actual1  -0.06150    0.02270 662.48019  -2.709  0.00693
+                                  
+(Intercept)                    ***
+expected.first.4               ** 
+first_actual1                  ***
+expected.first.4:first_actual1 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) exp..4 frst_1
+expctd.fr.4 -0.903              
+first_actl1  0.012 -0.011       
+expct..4:_1 -0.011  0.007 -0.905
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+boundary (singular) fit: see help('isSingular')
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+expected.next.3 ~ (dominance_score + prestige_score + expected.first.4) *  
+    first_actual + (1 | subject_id) + (1 | story)
+   Data: studies_3_4_all
+
+REML criterion at convergence: -659.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.0323 -0.5802 -0.0153  0.6424  2.5525 
+
+Random effects:
+ Groups     Name        Variance  Std.Dev.
+ subject_id (Intercept) 0.0000000 0.00000 
+ story      (Intercept) 0.0008452 0.02907 
+ Residual               0.0194478 0.13946 
+Number of obs: 678, groups:  subject_id, 57; story, 18
+
+Fixed effects:
+                                 Estimate Std. Error         df t value
+(Intercept)                     2.846e-01  7.319e-02  1.411e+01   3.888
+dominance_score                 5.085e-04  7.331e-04  1.396e+01   0.694
+prestige_score                  1.731e-03  1.006e-03  1.404e+01   1.720
+expected.first.4                1.548e-01  3.766e-02  1.434e+01   4.109
+first_actual1                  -2.087e-02  4.498e-02  6.613e+02  -0.464
+dominance_score:first_actual1   1.391e-03  4.476e-04  6.586e+02   3.108
+prestige_score:first_actual1    5.043e-04  6.174e-04  6.622e+02   0.817
+expected.first.4:first_actual1 -7.255e-02  2.327e-02  6.600e+02  -3.117
+                               Pr(>|t|)   
+(Intercept)                     0.00162 **
+dominance_score                 0.49931   
+prestige_score                  0.10732   
+expected.first.4                0.00101 **
+first_actual1                   0.64281   
+dominance_score:first_actual1   0.00196 **
+prestige_score:first_actual1    0.41437   
+expected.first.4:first_actual1  0.00190 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) dmnnc_ prstg_ exp..4 frst_1 dm_:_1 pr_:_1
+dominnc_scr -0.027                                          
+prestig_scr -0.922 -0.254                                   
+expctd.fr.4 -0.359 -0.215  0.179                            
+first_actl1 -0.001  0.026 -0.004 -0.015                     
+dmnnc_sc:_1  0.026 -0.002 -0.021 -0.024 -0.032              
+prstg_sc:_1 -0.004 -0.021  0.008  0.018 -0.922 -0.245       
+expct..4:_1 -0.015 -0.024  0.018  0.020 -0.358 -0.217  0.173
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+refitting model(s) with ML (instead of REML)
+Data: studies_3_4_all
+Models:
+mod: expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) + (1 | story)
+mod2: expected.next.3 ~ (dominance_score + prestige_score + expected.first.4) * first_actual + (1 | subject_id) + (1 | story)
+     npar     AIC     BIC logLik -2*log(L)  Chisq Df Pr(>Chisq)   
+mod     7 -706.93 -675.29 360.46   -720.93                        
+mod2   11 -716.36 -666.65 369.18   -738.36 17.434  4   0.001591 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

@@ -1,0 +1,257 @@
+here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
+Loading required package: sysfonts
+Loading required package: showtextdb
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.2     ✔ tibble    3.3.0
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+Welcome to emmeans.
+Caution: You lose important information if you filter this package's results.
+See '? untidy'
+
+Attaching package: ‘lmerTest’
+
+The following object is masked from ‘package:lme4’:
+
+    lmer
+
+The following object is masked from ‘package:stats’:
+
+    step
+
+Loading required package: carData
+
+Attaching package: ‘car’
+
+The following object is masked from ‘package:dplyr’:
+
+    recode
+
+The following object is masked from ‘package:purrr’:
+
+    some
+
+[1] 153
+         gender  n
+1        female 79
+2          male 76
+3 nonconforming  1
+  mean_age   sd_age min_age max_age
+1 39.16667 11.82989      19      77
+boundary (singular) fit: see help('isSingular')
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+strategy_repeating ~ partner_status * coordination + (1 | scenario_id) +  
+    (1 | subject_id)
+   Data: main_data_filtered
+Control: glmerControl(optimizer = "bobyqa")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1060.5    1099.1    -522.3    1044.5       910 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.7326 -0.8036  0.3890  0.5770  1.9145 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ subject_id  (Intercept) 1.101    1.049   
+ scenario_id (Intercept) 0.000    0.000   
+Number of obs: 918, groups:  subject_id, 153; scenario_id, 6
+
+Fixed effects:
+                              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                    1.08829    0.12627   8.619  < 2e-16 ***
+partner_status1               -0.38071    0.11331  -3.360  0.00078 ***
+partner_status2                0.17367    0.11696   1.485  0.13757    
+coordination1                 -0.01278    0.08483  -0.151  0.88021    
+partner_status1:coordination1  0.49186    0.11803   4.167 3.08e-05 ***
+partner_status2:coordination1 -0.32426    0.12049  -2.691  0.00712 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) prtn_1 prtn_2 crdnt1 pr_1:1
+prtnr_stts1 -0.082                            
+prtnr_stts2  0.044 -0.491                     
+coordinatn1 -0.051  0.065 -0.095              
+prtnr_st1:1  0.087 -0.042  0.065 -0.074       
+prtnr_st2:1 -0.069  0.061 -0.133  0.042 -0.490
+optimizer (bobyqa) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+ partner_status coordination emmean    SE  df asymp.LCL asymp.UCL z.ratio
+ equal          FALSE         1.187 0.218 Inf     0.759     1.615   5.432
+ lower          FALSE         0.925 0.211 Inf     0.511     1.339   4.376
+ higher         FALSE         1.115 0.225 Inf     0.675     1.555   4.963
+ equal           TRUE         0.229 0.211 Inf    -0.185     0.642   1.083
+ lower           TRUE         1.599 0.250 Inf     1.110     2.088   6.406
+ higher          TRUE         1.476 0.235 Inf     1.015     1.936   6.283
+ p.value
+  <.0001
+  <.0001
+  <.0001
+  0.2786
+  <.0001
+  <.0001
+
+Results are given on the logit (not the response) scale. 
+Confidence level used: 0.95 
+ contrast                   estimate    SE  df z.ratio p.value
+ equal FALSE - lower FALSE    0.2617 0.271 Inf   0.965  0.9290
+ equal FALSE - higher FALSE   0.0717 0.283 Inf   0.253  0.9999
+ equal FALSE - equal TRUE     0.9582 0.280 Inf   3.417  0.0083
+ equal FALSE - lower TRUE    -0.4123 0.301 Inf  -1.372  0.7442
+ equal FALSE - higher TRUE   -0.2891 0.287 Inf  -1.008  0.9154
+ lower FALSE - higher FALSE  -0.1900 0.277 Inf  -0.687  0.9834
+ lower FALSE - equal TRUE     0.6964 0.270 Inf   2.580  0.1021
+ lower FALSE - lower TRUE    -0.6741 0.300 Inf  -2.243  0.2179
+ lower FALSE - higher TRUE   -0.5508 0.282 Inf  -1.952  0.3704
+ higher FALSE - equal TRUE    0.8864 0.281 Inf   3.155  0.0200
+ higher FALSE - lower TRUE   -0.4841 0.308 Inf  -1.573  0.6166
+ higher FALSE - higher TRUE  -0.3608 0.299 Inf  -1.207  0.8337
+ equal TRUE - lower TRUE     -1.3705 0.300 Inf  -4.562  0.0001
+ equal TRUE - higher TRUE    -1.2472 0.288 Inf  -4.337  0.0002
+ lower TRUE - higher TRUE     0.1233 0.308 Inf   0.400  0.9987
+
+Results are given on the log odds ratio (not the response) scale. 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+boundary (singular) fit: see help('isSingular')
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+participant_second_choice_generous ~ partner_first_choice * participant_first_choice +  
+    (1 | scenario_id) + (1 | subject_id)
+   Data: main_data_filtered
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1125.4    1154.3    -556.7    1113.4       912 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.5288 -0.6489 -0.6072  0.7100  1.6470 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ subject_id  (Intercept) 0        0       
+ scenario_id (Intercept) 0        0       
+Number of obs: 918, groups:  subject_id, 153; scenario_id, 6
+
+Fixed effects:
+                                                 Estimate Std. Error z value
+(Intercept)                                     -0.082233   0.074404  -1.105
+partner_first_choice1                           -0.849201   0.074404 -11.413
+participant_first_choice1                        0.007807   0.074404   0.105
+partner_first_choice1:participant_first_choice1 -0.074244   0.074404  -0.998
+                                                Pr(>|z|)    
+(Intercept)                                        0.269    
+partner_first_choice1                             <2e-16 ***
+participant_first_choice1                          0.916    
+partner_first_choice1:participant_first_choice1    0.318    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) prtn__1 prtc__1
+prtnr_frs_1  0.055                
+prtcpnt_f_1 -0.225 -0.057         
+prtn__1:__1 -0.057 -0.225   0.055 
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+boundary (singular) fit: see help('isSingular')
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: 
+participant_second_choice_generous ~ partner_first_choice * participant_first_choice +  
+    partner_first_choice:partner_status + partner_status + (1 |  
+    scenario_id) + (1 | subject_id)
+   Data: main_data_filtered
+Control: glmerControl(optimizer = "bobyqa")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   1121.7    1169.9    -550.8    1101.7       908 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.8124 -0.6767 -0.5272  0.6894  1.8967 
+
+Random effects:
+ Groups      Name        Variance Std.Dev.
+ subject_id  (Intercept) 0        0       
+ scenario_id (Intercept) 0        0       
+Number of obs: 918, groups:  subject_id, 153; scenario_id, 6
+
+Fixed effects:
+                                                Estimate Std. Error z value
+(Intercept)                                     -0.07314    0.07515  -0.973
+partner_first_choice1                           -0.85625    0.07515 -11.394
+participant_first_choice1                       -0.01320    0.07645  -0.173
+partner_status1                                 -0.05751    0.10121  -0.568
+partner_status2                                 -0.10474    0.10682  -0.981
+partner_first_choice1:participant_first_choice1 -0.09031    0.07645  -1.181
+partner_first_choice1:partner_status1            0.30945    0.10121   3.058
+partner_first_choice1:partner_status2           -0.14262    0.10682  -1.335
+                                                Pr(>|z|)    
+(Intercept)                                      0.33040    
+partner_first_choice1                            < 2e-16 ***
+participant_first_choice1                        0.86290    
+partner_status1                                  0.56984    
+partner_status2                                  0.32682    
+partner_first_choice1:participant_first_choice1  0.23746    
+partner_first_choice1:partner_status1            0.00223 ** 
+partner_first_choice1:partner_status2            0.18182    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) prtn__1 prtc__1 prtn_1 prtn_2 p__1:__ p__1:_1
+prtnr_frs_1  0.044                                              
+prtcpnt_f_1 -0.223 -0.047                                       
+prtnr_stts1 -0.054  0.017  -0.103                               
+prtnr_stts2 -0.015  0.034   0.199  -0.483                       
+prtn__1:__1 -0.047 -0.223   0.046  -0.032 -0.003                
+prtnr__1:_1  0.017 -0.054  -0.032   0.039 -0.053 -0.103         
+prtnr__1:_2  0.034 -0.015  -0.003  -0.053  0.051  0.199  -0.483 
+optimizer (bobyqa) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Analysis of Deviance Table (Type III Wald chisquare tests)
+
+Response: participant_second_choice_generous
+                                                 Chisq Df Pr(>Chisq)    
+(Intercept)                                     0.9473  1   0.330402    
+partner_first_choice                          129.8195  1  < 2.2e-16 ***
+participant_first_choice                        0.0298  1   0.862902    
+partner_status                                  2.3776  2   0.304581    
+partner_first_choice:participant_first_choice   1.3956  1   0.237460    
+partner_first_choice:partner_status             9.3753  2   0.009208 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Data: main_data_filtered
+Models:
+model1: participant_second_choice_generous ~ partner_first_choice * participant_first_choice + (1 | scenario_id) + (1 | subject_id)
+model2: participant_second_choice_generous ~ partner_first_choice * participant_first_choice + partner_first_choice:partner_status + partner_status + (1 | scenario_id) + (1 | subject_id)
+       npar    AIC    BIC  logLik -2*log(L)  Chisq Df Pr(>Chisq)  
+model1    6 1125.4 1154.3 -556.68    1113.4                       
+model2   10 1121.7 1169.9 -550.85    1101.7 11.676  4    0.01993 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

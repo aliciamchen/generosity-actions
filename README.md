@@ -27,20 +27,24 @@ renv::restore()
 
 1. **Reproduce main results**:
 ```bash
-cd analysis
-
-Rscript study_1.R
-Rscript study_2.R
-Rscript study_3.R
-Rscript study_4.R
-Rscript study_5.R
-Rscript study_6.R
+Rscript -e 'renv::run("analysis/scenario_validation.R")' > analysis/outputs/scenario_validation.txt 2>&1
+Rscript -e 'renv::run("analysis/study_1.R")' > analysis/outputs/study_1.txt 2>&1
+Rscript -e 'renv::run("analysis/study_2.R")' > analysis/outputs/study_2.txt 2>&1
+Rscript -e 'renv::run("analysis/study_3.R")' > analysis/outputs/study_3.txt 2>&1
+Rscript -e 'renv::run("analysis/study_4.R")' > analysis/outputs/study_4.txt 2>&1
+Rscript -e 'renv::run("analysis/study_5.R")' > analysis/outputs/study_5.txt 2>&1
+Rscript -e 'renv::run("analysis/study_6.R")' > analysis/outputs/study_6.txt 2>&1
 ```
+
+Text outputs are saved in `analysis/outputs/`.
 
 2. **Generate figures**:
 ```bash
-Rscript -e "rmarkdown::render('figures.Rmd')"
+Rscript -e "rmarkdown::render('analysis/figures.Rmd')"
 ```
+
+Direct figure output is saved in `figures/`. The Illustrator-formatted figures for the paper are in `figures/PDF`. 
+
 
 ## Data structure
 
