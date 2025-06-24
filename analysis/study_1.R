@@ -277,3 +277,4 @@ emm <-
 emmeans(emm, revpairwise ~ interaction_present |
           relationship_present) %>%
   summary(infer = T)
+
