@@ -6,3 +6,4 @@ non_anonymized
 .vscode
 *.ai
 preprocess
+experiments/README.md
