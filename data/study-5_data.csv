@@ -1,0 +1,1873 @@
+subject_id,trial_num,scenario_id,partner_status,time,partner_choice,participant_choice,coordination,passed_attention_checks
+9ff9ad628fa015fb3da0b73e6c86c59e,1,task checking,higher,first,receive,receive,FALSE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,2,object carrying,equal,first,give,give,FALSE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,3,object carrying,equal,second,receive,receive,FALSE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,4,meal,higher,first,give,give,FALSE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,5,gift,lower,first,receive,give,TRUE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,6,meal,higher,second,give,receive,TRUE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,7,task checking,higher,second,receive,give,TRUE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,8,gift,lower,second,receive,give,TRUE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,9,meeting place,lower,first,give,give,FALSE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,10,song preference,equal,first,receive,give,TRUE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,11,song preference,equal,second,give,give,FALSE,2
+9ff9ad628fa015fb3da0b73e6c86c59e,12,meeting place,lower,second,give,receive,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,1,object carrying,equal,first,give,give,FALSE,2
+c225fdc0c892163e036a6b1e59f385de,2,meal,equal,first,receive,give,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,3,meeting place,higher,first,receive,give,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,4,meal,equal,second,give,receive,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,5,song preference,lower,first,give,receive,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,6,song preference,lower,second,give,receive,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,7,gift,lower,first,receive,give,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,8,task checking,higher,first,give,receive,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,9,task checking,higher,second,give,receive,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,10,object carrying,equal,second,receive,give,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,11,meeting place,higher,second,receive,give,TRUE,2
+c225fdc0c892163e036a6b1e59f385de,12,gift,lower,second,receive,give,TRUE,2
+2a5d97bb20320cd8023f477f2ca30148,1,gift,lower,first,give,give,FALSE,1
+2a5d97bb20320cd8023f477f2ca30148,2,song preference,equal,first,give,give,FALSE,1
+2a5d97bb20320cd8023f477f2ca30148,3,gift,lower,second,give,receive,TRUE,1
+2a5d97bb20320cd8023f477f2ca30148,4,song preference,equal,second,receive,receive,FALSE,1
+2a5d97bb20320cd8023f477f2ca30148,5,object carrying,lower,first,receive,receive,FALSE,1
+2a5d97bb20320cd8023f477f2ca30148,6,meal,higher,first,give,receive,TRUE,1
+2a5d97bb20320cd8023f477f2ca30148,7,meal,higher,second,give,receive,TRUE,1
+2a5d97bb20320cd8023f477f2ca30148,8,meeting place,equal,first,receive,receive,FALSE,1
+2a5d97bb20320cd8023f477f2ca30148,9,meeting place,equal,second,give,give,FALSE,1
+2a5d97bb20320cd8023f477f2ca30148,10,object carrying,lower,second,receive,give,TRUE,1
+2a5d97bb20320cd8023f477f2ca30148,11,task checking,higher,first,receive,give,TRUE,1
+2a5d97bb20320cd8023f477f2ca30148,12,task checking,higher,second,receive,give,TRUE,1
+1af8f9b1fd72c68243329413da663cec,1,song preference,equal,first,give,give,FALSE,1
+1af8f9b1fd72c68243329413da663cec,2,gift,equal,first,receive,give,TRUE,1
+1af8f9b1fd72c68243329413da663cec,3,task checking,higher,first,receive,receive,FALSE,1
+1af8f9b1fd72c68243329413da663cec,4,song preference,equal,second,receive,receive,FALSE,1
+1af8f9b1fd72c68243329413da663cec,5,meeting place,lower,first,receive,give,TRUE,1
+1af8f9b1fd72c68243329413da663cec,6,object carrying,lower,first,give,receive,TRUE,1
+1af8f9b1fd72c68243329413da663cec,7,meal,higher,first,give,give,FALSE,1
+1af8f9b1fd72c68243329413da663cec,8,meal,higher,second,give,receive,TRUE,1
+1af8f9b1fd72c68243329413da663cec,9,object carrying,lower,second,give,receive,TRUE,1
+1af8f9b1fd72c68243329413da663cec,10,gift,equal,second,give,give,FALSE,1
+1af8f9b1fd72c68243329413da663cec,11,task checking,higher,second,receive,receive,FALSE,1
+1af8f9b1fd72c68243329413da663cec,12,meeting place,lower,second,receive,give,TRUE,1
+f9ee3f0de717032a2fd738c1fbab007b,1,gift,higher,first,give,give,FALSE,2
+f9ee3f0de717032a2fd738c1fbab007b,2,object carrying,equal,first,give,give,FALSE,2
+f9ee3f0de717032a2fd738c1fbab007b,3,task checking,lower,first,give,receive,TRUE,2
+f9ee3f0de717032a2fd738c1fbab007b,4,gift,higher,second,give,receive,TRUE,2
+f9ee3f0de717032a2fd738c1fbab007b,5,meal,equal,first,receive,receive,FALSE,2
+f9ee3f0de717032a2fd738c1fbab007b,6,meal,equal,second,give,receive,TRUE,2
+f9ee3f0de717032a2fd738c1fbab007b,7,object carrying,equal,second,receive,receive,FALSE,2
+f9ee3f0de717032a2fd738c1fbab007b,8,task checking,lower,second,give,receive,TRUE,2
+f9ee3f0de717032a2fd738c1fbab007b,9,song preference,higher,first,receive,give,TRUE,2
+f9ee3f0de717032a2fd738c1fbab007b,10,song preference,higher,second,receive,give,TRUE,2
+f9ee3f0de717032a2fd738c1fbab007b,11,meeting place,lower,first,receive,receive,FALSE,2
+f9ee3f0de717032a2fd738c1fbab007b,12,meeting place,lower,second,receive,receive,FALSE,2
+d52bd40d3d5a7d7d0e0a40097ae76559,1,gift,lower,first,give,receive,TRUE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,2,task checking,equal,first,give,give,FALSE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,3,task checking,equal,second,receive,receive,FALSE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,4,meal,equal,first,receive,give,TRUE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,5,object carrying,lower,first,receive,give,TRUE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,6,song preference,higher,first,receive,receive,FALSE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,7,meeting place,higher,first,give,give,FALSE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,8,object carrying,lower,second,receive,give,TRUE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,9,meeting place,higher,second,give,receive,TRUE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,10,gift,lower,second,give,give,FALSE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,11,song preference,higher,second,receive,give,TRUE,0
+d52bd40d3d5a7d7d0e0a40097ae76559,12,meal,equal,second,give,receive,TRUE,0
+81c55c3e18f218345d28f6a1300487f9,1,gift,equal,first,receive,receive,FALSE,2
+81c55c3e18f218345d28f6a1300487f9,2,meeting place,lower,first,give,receive,TRUE,2
+81c55c3e18f218345d28f6a1300487f9,3,meal,higher,first,receive,give,TRUE,2
+81c55c3e18f218345d28f6a1300487f9,4,song preference,higher,first,give,receive,TRUE,2
+81c55c3e18f218345d28f6a1300487f9,5,meeting place,lower,second,give,give,FALSE,2
+81c55c3e18f218345d28f6a1300487f9,6,object carrying,equal,first,give,give,FALSE,2
+81c55c3e18f218345d28f6a1300487f9,7,object carrying,equal,second,receive,receive,FALSE,2
+81c55c3e18f218345d28f6a1300487f9,8,song preference,higher,second,give,give,FALSE,2
+81c55c3e18f218345d28f6a1300487f9,9,meal,higher,second,receive,give,TRUE,2
+81c55c3e18f218345d28f6a1300487f9,10,gift,equal,second,give,receive,TRUE,2
+81c55c3e18f218345d28f6a1300487f9,11,task checking,lower,first,receive,give,TRUE,2
+81c55c3e18f218345d28f6a1300487f9,12,task checking,lower,second,receive,receive,FALSE,2
+44d36d6744ac7050965d7fd145168f88,1,meal,higher,first,give,receive,TRUE,1
+44d36d6744ac7050965d7fd145168f88,2,task checking,lower,first,receive,receive,FALSE,1
+44d36d6744ac7050965d7fd145168f88,3,task checking,lower,second,receive,give,TRUE,1
+44d36d6744ac7050965d7fd145168f88,4,object carrying,equal,first,give,receive,TRUE,1
+44d36d6744ac7050965d7fd145168f88,5,gift,equal,first,receive,give,TRUE,1
+44d36d6744ac7050965d7fd145168f88,6,meal,higher,second,give,give,FALSE,1
+44d36d6744ac7050965d7fd145168f88,7,object carrying,equal,second,receive,give,TRUE,1
+44d36d6744ac7050965d7fd145168f88,8,meeting place,higher,first,receive,give,TRUE,1
+44d36d6744ac7050965d7fd145168f88,9,song preference,lower,first,give,receive,TRUE,1
+44d36d6744ac7050965d7fd145168f88,10,song preference,lower,second,give,receive,TRUE,1
+44d36d6744ac7050965d7fd145168f88,11,gift,equal,second,give,give,FALSE,1
+44d36d6744ac7050965d7fd145168f88,12,meeting place,higher,second,receive,receive,FALSE,1
+c7ad441ca72e1ed677f2d6dca8c6401d,1,meeting place,higher,first,receive,give,TRUE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,2,meal,lower,first,receive,give,TRUE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,3,gift,lower,first,give,give,FALSE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,4,object carrying,equal,first,receive,receive,FALSE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,5,meeting place,higher,second,receive,give,TRUE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,6,meal,lower,second,receive,give,TRUE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,7,gift,lower,second,give,receive,TRUE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,8,object carrying,equal,second,give,give,FALSE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,9,task checking,equal,first,give,give,FALSE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,10,task checking,equal,second,receive,give,TRUE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,11,song preference,higher,first,give,give,FALSE,2
+c7ad441ca72e1ed677f2d6dca8c6401d,12,song preference,higher,second,give,receive,TRUE,2
+badf6eb7a667093d7f00916e40c66835,1,gift,equal,first,give,give,FALSE,2
+badf6eb7a667093d7f00916e40c66835,2,meal,lower,first,give,receive,TRUE,2
+badf6eb7a667093d7f00916e40c66835,3,meal,lower,second,give,receive,TRUE,2
+badf6eb7a667093d7f00916e40c66835,4,song preference,lower,first,receive,receive,FALSE,2
+badf6eb7a667093d7f00916e40c66835,5,task checking,equal,first,receive,give,TRUE,2
+badf6eb7a667093d7f00916e40c66835,6,meeting place,higher,first,give,give,FALSE,2
+badf6eb7a667093d7f00916e40c66835,7,song preference,lower,second,receive,give,TRUE,2
+badf6eb7a667093d7f00916e40c66835,8,object carrying,higher,first,receive,give,TRUE,2
+badf6eb7a667093d7f00916e40c66835,9,gift,equal,second,receive,receive,FALSE,2
+badf6eb7a667093d7f00916e40c66835,10,task checking,equal,second,give,give,FALSE,2
+badf6eb7a667093d7f00916e40c66835,11,object carrying,higher,second,receive,give,TRUE,2
+badf6eb7a667093d7f00916e40c66835,12,meeting place,higher,second,give,receive,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,1,gift,equal,first,receive,give,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,2,meal,lower,first,receive,receive,FALSE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,3,meal,lower,second,receive,receive,FALSE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,4,meeting place,higher,first,give,receive,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,5,object carrying,lower,first,give,give,FALSE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,6,meeting place,higher,second,give,give,FALSE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,7,gift,equal,second,give,receive,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,8,task checking,higher,first,receive,give,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,9,song preference,equal,first,give,receive,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,10,song preference,equal,second,receive,give,TRUE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,11,object carrying,lower,second,give,give,FALSE,2
+52f6dcd2bf9c7d2d0e423ffec470670b,12,task checking,higher,second,receive,give,TRUE,2
+ffb9ea385add6ebedab2764b9f137d0a,1,gift,higher,first,give,give,FALSE,1
+ffb9ea385add6ebedab2764b9f137d0a,2,meal,lower,first,receive,receive,FALSE,1
+ffb9ea385add6ebedab2764b9f137d0a,3,object carrying,higher,first,receive,receive,FALSE,1
+ffb9ea385add6ebedab2764b9f137d0a,4,gift,higher,second,give,receive,TRUE,1
+ffb9ea385add6ebedab2764b9f137d0a,5,meal,lower,second,receive,give,TRUE,1
+ffb9ea385add6ebedab2764b9f137d0a,6,meeting place,equal,first,receive,give,TRUE,1
+ffb9ea385add6ebedab2764b9f137d0a,7,meeting place,equal,second,give,receive,TRUE,1
+ffb9ea385add6ebedab2764b9f137d0a,8,object carrying,higher,second,receive,receive,FALSE,1
+ffb9ea385add6ebedab2764b9f137d0a,9,task checking,equal,first,give,give,FALSE,1
+ffb9ea385add6ebedab2764b9f137d0a,10,task checking,equal,second,receive,give,TRUE,1
+ffb9ea385add6ebedab2764b9f137d0a,11,song preference,lower,first,give,give,FALSE,1
+ffb9ea385add6ebedab2764b9f137d0a,12,song preference,lower,second,give,receive,TRUE,1
+9a2b7d6d4a8d0d581667c30146b8af25,1,task checking,higher,first,give,receive,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,2,gift,higher,first,receive,give,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,3,meeting place,lower,first,give,receive,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,4,meal,lower,first,receive,receive,FALSE,2
+9a2b7d6d4a8d0d581667c30146b8af25,5,meeting place,lower,second,give,give,FALSE,2
+9a2b7d6d4a8d0d581667c30146b8af25,6,meal,lower,second,receive,give,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,7,song preference,equal,first,give,give,FALSE,2
+9a2b7d6d4a8d0d581667c30146b8af25,8,gift,higher,second,receive,receive,FALSE,2
+9a2b7d6d4a8d0d581667c30146b8af25,9,task checking,higher,second,give,receive,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,10,song preference,equal,second,receive,give,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,11,object carrying,equal,first,receive,give,TRUE,2
+9a2b7d6d4a8d0d581667c30146b8af25,12,object carrying,equal,second,give,give,FALSE,2
+6660f3ed34773f9b746a58a3c59415f0,1,gift,higher,first,receive,give,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,2,task checking,lower,first,receive,give,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,3,meal,lower,first,give,receive,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,4,object carrying,higher,first,give,give,FALSE,2
+6660f3ed34773f9b746a58a3c59415f0,5,song preference,equal,first,receive,give,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,6,task checking,lower,second,receive,give,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,7,object carrying,higher,second,give,receive,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,8,song preference,equal,second,give,give,FALSE,2
+6660f3ed34773f9b746a58a3c59415f0,9,meeting place,equal,first,give,receive,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,10,meal,lower,second,give,receive,TRUE,2
+6660f3ed34773f9b746a58a3c59415f0,11,meeting place,equal,second,receive,receive,FALSE,2
+6660f3ed34773f9b746a58a3c59415f0,12,gift,higher,second,receive,give,TRUE,2
+8f64257821a43f4367c498907438e2fb,1,gift,higher,first,receive,give,TRUE,2
+8f64257821a43f4367c498907438e2fb,2,object carrying,higher,first,give,give,FALSE,2
+8f64257821a43f4367c498907438e2fb,3,task checking,equal,first,receive,receive,FALSE,2
+8f64257821a43f4367c498907438e2fb,4,gift,higher,second,receive,give,TRUE,2
+8f64257821a43f4367c498907438e2fb,5,meal,equal,first,give,receive,TRUE,2
+8f64257821a43f4367c498907438e2fb,6,meeting place,lower,first,receive,receive,FALSE,2
+8f64257821a43f4367c498907438e2fb,7,task checking,equal,second,give,give,FALSE,2
+8f64257821a43f4367c498907438e2fb,8,meal,equal,second,receive,receive,FALSE,2
+8f64257821a43f4367c498907438e2fb,9,song preference,lower,first,give,give,FALSE,2
+8f64257821a43f4367c498907438e2fb,10,meeting place,lower,second,receive,receive,FALSE,2
+8f64257821a43f4367c498907438e2fb,11,song preference,lower,second,give,receive,TRUE,2
+8f64257821a43f4367c498907438e2fb,12,object carrying,higher,second,give,give,FALSE,2
+ec535b1bbafee8c26ab6797a2e6c3860,1,gift,equal,first,receive,give,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,2,song preference,higher,first,give,give,FALSE,1
+ec535b1bbafee8c26ab6797a2e6c3860,3,gift,equal,second,give,give,FALSE,1
+ec535b1bbafee8c26ab6797a2e6c3860,4,song preference,higher,second,give,receive,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,5,meal,lower,first,receive,give,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,6,object carrying,higher,first,receive,receive,FALSE,1
+ec535b1bbafee8c26ab6797a2e6c3860,7,meeting place,lower,first,give,receive,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,8,object carrying,higher,second,receive,give,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,9,meeting place,lower,second,give,receive,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,10,task checking,equal,first,give,receive,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,11,meal,lower,second,receive,give,TRUE,1
+ec535b1bbafee8c26ab6797a2e6c3860,12,task checking,equal,second,receive,receive,FALSE,1
+8cf1e943ab781a9bcb63aed309de9149,1,meeting place,equal,first,receive,give,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,2,object carrying,higher,first,give,receive,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,3,gift,lower,first,give,give,FALSE,2
+8cf1e943ab781a9bcb63aed309de9149,4,gift,lower,second,give,receive,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,5,meeting place,equal,second,give,receive,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,6,object carrying,higher,second,give,receive,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,7,song preference,higher,first,receive,give,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,8,meal,lower,first,receive,give,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,9,task checking,equal,first,give,receive,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,10,task checking,equal,second,receive,receive,FALSE,2
+8cf1e943ab781a9bcb63aed309de9149,11,meal,lower,second,receive,give,TRUE,2
+8cf1e943ab781a9bcb63aed309de9149,12,song preference,higher,second,receive,give,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,1,gift,equal,first,give,give,FALSE,2
+db1f56be0e6e546200c7a17e099a0b6b,2,meal,higher,first,receive,give,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,3,meeting place,lower,first,give,give,FALSE,2
+db1f56be0e6e546200c7a17e099a0b6b,4,object carrying,higher,first,give,receive,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,5,gift,equal,second,receive,receive,FALSE,2
+db1f56be0e6e546200c7a17e099a0b6b,6,task checking,lower,first,receive,give,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,7,task checking,lower,second,receive,give,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,8,meal,higher,second,receive,receive,FALSE,2
+db1f56be0e6e546200c7a17e099a0b6b,9,meeting place,lower,second,give,receive,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,10,object carrying,higher,second,give,receive,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,11,song preference,equal,first,receive,give,TRUE,2
+db1f56be0e6e546200c7a17e099a0b6b,12,song preference,equal,second,give,receive,TRUE,2
+e3e96bdb55634512360a02e132826682,1,meal,lower,first,receive,receive,FALSE,1
+e3e96bdb55634512360a02e132826682,2,meeting place,equal,first,give,give,FALSE,1
+e3e96bdb55634512360a02e132826682,3,gift,equal,first,receive,receive,FALSE,1
+e3e96bdb55634512360a02e132826682,4,gift,equal,second,give,give,FALSE,1
+e3e96bdb55634512360a02e132826682,5,song preference,higher,first,receive,receive,FALSE,1
+e3e96bdb55634512360a02e132826682,6,song preference,higher,second,receive,give,TRUE,1
+e3e96bdb55634512360a02e132826682,7,object carrying,higher,first,give,give,FALSE,1
+e3e96bdb55634512360a02e132826682,8,meal,lower,second,receive,give,TRUE,1
+e3e96bdb55634512360a02e132826682,9,meeting place,equal,second,receive,give,TRUE,1
+e3e96bdb55634512360a02e132826682,10,object carrying,higher,second,give,give,FALSE,1
+e3e96bdb55634512360a02e132826682,11,task checking,lower,first,give,give,FALSE,1
+e3e96bdb55634512360a02e132826682,12,task checking,lower,second,give,receive,TRUE,1
+b8f4558d2c96226ba46ccf578d7c9474,1,gift,lower,first,receive,give,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,2,meal,lower,first,give,give,FALSE,2
+b8f4558d2c96226ba46ccf578d7c9474,3,object carrying,higher,first,receive,give,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,4,song preference,equal,first,receive,give,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,5,song preference,equal,second,give,give,FALSE,2
+b8f4558d2c96226ba46ccf578d7c9474,6,meeting place,equal,first,give,give,FALSE,2
+b8f4558d2c96226ba46ccf578d7c9474,7,gift,lower,second,receive,give,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,8,object carrying,higher,second,receive,give,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,9,task checking,higher,first,give,receive,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,10,meal,lower,second,give,receive,TRUE,2
+b8f4558d2c96226ba46ccf578d7c9474,11,meeting place,equal,second,receive,receive,FALSE,2
+b8f4558d2c96226ba46ccf578d7c9474,12,task checking,higher,second,give,receive,TRUE,2
+3767de7aac209a5b6f8f89c305e52d2a,1,task checking,higher,first,receive,receive,FALSE,2
+3767de7aac209a5b6f8f89c305e52d2a,2,song preference,lower,first,receive,receive,FALSE,2
+3767de7aac209a5b6f8f89c305e52d2a,3,object carrying,equal,first,give,give,FALSE,2
+3767de7aac209a5b6f8f89c305e52d2a,4,meeting place,equal,first,receive,receive,FALSE,2
+3767de7aac209a5b6f8f89c305e52d2a,5,task checking,higher,second,receive,give,TRUE,2
+3767de7aac209a5b6f8f89c305e52d2a,6,meal,higher,first,give,receive,TRUE,2
+3767de7aac209a5b6f8f89c305e52d2a,7,gift,lower,first,give,receive,TRUE,2
+3767de7aac209a5b6f8f89c305e52d2a,8,song preference,lower,second,receive,give,TRUE,2
+3767de7aac209a5b6f8f89c305e52d2a,9,object carrying,equal,second,receive,receive,FALSE,2
+3767de7aac209a5b6f8f89c305e52d2a,10,meeting place,equal,second,give,give,FALSE,2
+3767de7aac209a5b6f8f89c305e52d2a,11,meal,higher,second,give,receive,TRUE,2
+3767de7aac209a5b6f8f89c305e52d2a,12,gift,lower,second,give,receive,TRUE,2
+0cc39063c61d7eacb5ea6cf393aa4d2a,1,gift,equal,first,give,give,FALSE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,2,meeting place,higher,first,give,give,FALSE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,3,song preference,lower,first,receive,give,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,4,task checking,higher,first,receive,give,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,5,meal,lower,first,give,give,FALSE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,6,meeting place,higher,second,give,receive,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,7,song preference,lower,second,receive,give,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,8,task checking,higher,second,receive,give,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,9,meal,lower,second,give,receive,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,10,gift,equal,second,receive,receive,FALSE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,11,object carrying,equal,first,receive,give,TRUE,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,12,object carrying,equal,second,give,give,FALSE,1
+4013deb13160c407272ba0731d1e1eed,1,task checking,equal,first,give,give,FALSE,1
+4013deb13160c407272ba0731d1e1eed,2,gift,lower,first,give,give,FALSE,1
+4013deb13160c407272ba0731d1e1eed,3,meal,higher,first,give,receive,TRUE,1
+4013deb13160c407272ba0731d1e1eed,4,song preference,higher,first,receive,give,TRUE,1
+4013deb13160c407272ba0731d1e1eed,5,meal,higher,second,give,give,FALSE,1
+4013deb13160c407272ba0731d1e1eed,6,gift,lower,second,give,receive,TRUE,1
+4013deb13160c407272ba0731d1e1eed,7,song preference,higher,second,receive,give,TRUE,1
+4013deb13160c407272ba0731d1e1eed,8,object carrying,equal,first,receive,give,TRUE,1
+4013deb13160c407272ba0731d1e1eed,9,task checking,equal,second,receive,receive,FALSE,1
+4013deb13160c407272ba0731d1e1eed,10,meeting place,lower,first,receive,give,TRUE,1
+4013deb13160c407272ba0731d1e1eed,11,object carrying,equal,second,give,receive,TRUE,1
+4013deb13160c407272ba0731d1e1eed,12,meeting place,lower,second,receive,receive,FALSE,1
+d4f5fc7464e1eeb0955539ba50d6cc44,1,gift,equal,first,give,give,FALSE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,2,gift,equal,second,receive,receive,FALSE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,3,meeting place,higher,first,give,receive,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,4,song preference,equal,first,receive,give,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,5,meal,lower,first,give,receive,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,6,meal,lower,second,give,receive,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,7,meeting place,higher,second,give,give,FALSE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,8,object carrying,higher,first,receive,give,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,9,task checking,lower,first,receive,give,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,10,object carrying,higher,second,receive,give,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,11,song preference,equal,second,give,receive,TRUE,2
+d4f5fc7464e1eeb0955539ba50d6cc44,12,task checking,lower,second,receive,give,TRUE,2
+61e58883cd9a1303872556b98973cbdf,1,task checking,equal,first,receive,give,TRUE,2
+61e58883cd9a1303872556b98973cbdf,2,task checking,equal,second,give,receive,TRUE,2
+61e58883cd9a1303872556b98973cbdf,3,gift,higher,first,receive,give,TRUE,2
+61e58883cd9a1303872556b98973cbdf,4,meal,lower,first,give,receive,TRUE,2
+61e58883cd9a1303872556b98973cbdf,5,song preference,lower,first,receive,receive,FALSE,2
+61e58883cd9a1303872556b98973cbdf,6,song preference,lower,second,receive,receive,FALSE,2
+61e58883cd9a1303872556b98973cbdf,7,gift,higher,second,receive,give,TRUE,2
+61e58883cd9a1303872556b98973cbdf,8,object carrying,higher,first,give,give,FALSE,2
+61e58883cd9a1303872556b98973cbdf,9,meal,lower,second,give,receive,TRUE,2
+61e58883cd9a1303872556b98973cbdf,10,meeting place,equal,first,give,receive,TRUE,2
+61e58883cd9a1303872556b98973cbdf,11,meeting place,equal,second,receive,give,TRUE,2
+61e58883cd9a1303872556b98973cbdf,12,object carrying,higher,second,give,receive,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,1,gift,higher,first,give,give,FALSE,2
+0013cadea25f4e1e710bd7cad1a73276,2,gift,higher,second,give,receive,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,3,meeting place,equal,first,receive,give,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,4,object carrying,lower,first,receive,give,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,5,task checking,lower,first,give,give,FALSE,2
+0013cadea25f4e1e710bd7cad1a73276,6,object carrying,lower,second,receive,give,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,7,task checking,lower,second,give,receive,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,8,meeting place,equal,second,give,give,FALSE,2
+0013cadea25f4e1e710bd7cad1a73276,9,song preference,equal,first,give,give,FALSE,2
+0013cadea25f4e1e710bd7cad1a73276,10,meal,higher,first,receive,receive,FALSE,2
+0013cadea25f4e1e710bd7cad1a73276,11,meal,higher,second,receive,give,TRUE,2
+0013cadea25f4e1e710bd7cad1a73276,12,song preference,equal,second,receive,give,TRUE,2
+cd4f8bfd41899afa297adc55c76b4300,1,song preference,higher,first,receive,give,TRUE,2
+cd4f8bfd41899afa297adc55c76b4300,2,meal,equal,first,give,give,FALSE,2
+cd4f8bfd41899afa297adc55c76b4300,3,meeting place,lower,first,give,receive,TRUE,2
+cd4f8bfd41899afa297adc55c76b4300,4,song preference,higher,second,receive,give,TRUE,2
+cd4f8bfd41899afa297adc55c76b4300,5,meal,equal,second,receive,give,TRUE,2
+cd4f8bfd41899afa297adc55c76b4300,6,gift,lower,first,receive,receive,FALSE,2
+cd4f8bfd41899afa297adc55c76b4300,7,gift,lower,second,receive,receive,FALSE,2
+cd4f8bfd41899afa297adc55c76b4300,8,object carrying,higher,first,give,give,FALSE,2
+cd4f8bfd41899afa297adc55c76b4300,9,task checking,equal,first,receive,give,TRUE,2
+cd4f8bfd41899afa297adc55c76b4300,10,meeting place,lower,second,give,give,FALSE,2
+cd4f8bfd41899afa297adc55c76b4300,11,object carrying,higher,second,give,give,FALSE,2
+cd4f8bfd41899afa297adc55c76b4300,12,task checking,equal,second,give,receive,TRUE,2
+aea77c7876801747e3ec7696fafb1403,1,meeting place,lower,first,receive,give,TRUE,1
+aea77c7876801747e3ec7696fafb1403,2,song preference,higher,first,give,give,FALSE,1
+aea77c7876801747e3ec7696fafb1403,3,gift,equal,first,give,receive,TRUE,1
+aea77c7876801747e3ec7696fafb1403,4,meeting place,lower,second,receive,give,TRUE,1
+aea77c7876801747e3ec7696fafb1403,5,meal,lower,first,give,give,FALSE,1
+aea77c7876801747e3ec7696fafb1403,6,object carrying,equal,first,receive,receive,FALSE,1
+aea77c7876801747e3ec7696fafb1403,7,song preference,higher,second,give,receive,TRUE,1
+aea77c7876801747e3ec7696fafb1403,8,task checking,higher,first,receive,give,TRUE,1
+aea77c7876801747e3ec7696fafb1403,9,object carrying,equal,second,give,receive,TRUE,1
+aea77c7876801747e3ec7696fafb1403,10,meal,lower,second,give,receive,TRUE,1
+aea77c7876801747e3ec7696fafb1403,11,gift,equal,second,receive,receive,FALSE,1
+aea77c7876801747e3ec7696fafb1403,12,task checking,higher,second,receive,receive,FALSE,1
+236f8f90be786e835fb6c82226b56779,1,song preference,equal,first,receive,give,TRUE,1
+236f8f90be786e835fb6c82226b56779,2,song preference,equal,second,give,receive,TRUE,1
+236f8f90be786e835fb6c82226b56779,3,gift,higher,first,receive,give,TRUE,1
+236f8f90be786e835fb6c82226b56779,4,meeting place,lower,first,give,give,FALSE,1
+236f8f90be786e835fb6c82226b56779,5,object carrying,lower,first,receive,give,TRUE,1
+236f8f90be786e835fb6c82226b56779,6,object carrying,lower,second,receive,give,TRUE,1
+236f8f90be786e835fb6c82226b56779,7,gift,higher,second,receive,give,TRUE,1
+236f8f90be786e835fb6c82226b56779,8,meal,equal,first,give,give,FALSE,1
+236f8f90be786e835fb6c82226b56779,9,meal,equal,second,receive,receive,FALSE,1
+236f8f90be786e835fb6c82226b56779,10,meeting place,lower,second,give,receive,TRUE,1
+236f8f90be786e835fb6c82226b56779,11,task checking,higher,first,give,receive,TRUE,1
+236f8f90be786e835fb6c82226b56779,12,task checking,higher,second,give,receive,TRUE,1
+417c44c0cfe1c3f7ca6c79f3a70b80af,1,gift,higher,first,give,give,FALSE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,2,meal,lower,first,receive,receive,FALSE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,3,gift,higher,second,give,receive,TRUE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,4,meeting place,equal,first,receive,receive,FALSE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,5,meal,lower,second,receive,give,TRUE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,6,task checking,lower,first,give,give,FALSE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,7,object carrying,higher,first,receive,give,TRUE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,8,meeting place,equal,second,give,give,FALSE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,9,song preference,equal,first,give,receive,TRUE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,10,object carrying,higher,second,receive,give,TRUE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,11,song preference,equal,second,receive,receive,FALSE,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,12,task checking,lower,second,give,receive,TRUE,2
+a004b8d2c41b2fc095f014a17a82d4ab,1,meal,lower,first,give,receive,TRUE,1
+a004b8d2c41b2fc095f014a17a82d4ab,2,meal,lower,second,give,receive,TRUE,1
+a004b8d2c41b2fc095f014a17a82d4ab,3,object carrying,higher,first,receive,give,TRUE,1
+a004b8d2c41b2fc095f014a17a82d4ab,4,task checking,equal,first,receive,give,TRUE,1
+a004b8d2c41b2fc095f014a17a82d4ab,5,meeting place,higher,first,give,give,FALSE,1
+a004b8d2c41b2fc095f014a17a82d4ab,6,gift,equal,first,give,give,FALSE,1
+a004b8d2c41b2fc095f014a17a82d4ab,7,meeting place,higher,second,give,give,FALSE,1
+a004b8d2c41b2fc095f014a17a82d4ab,8,gift,equal,second,receive,give,TRUE,1
+a004b8d2c41b2fc095f014a17a82d4ab,9,song preference,lower,first,receive,receive,FALSE,1
+a004b8d2c41b2fc095f014a17a82d4ab,10,object carrying,higher,second,receive,give,TRUE,1
+a004b8d2c41b2fc095f014a17a82d4ab,11,song preference,lower,second,receive,receive,FALSE,1
+a004b8d2c41b2fc095f014a17a82d4ab,12,task checking,equal,second,give,give,FALSE,1
+a422f0e3129d132b25c76ba25f2a695d,1,task checking,equal,first,receive,give,TRUE,2
+a422f0e3129d132b25c76ba25f2a695d,2,gift,higher,first,receive,receive,FALSE,2
+a422f0e3129d132b25c76ba25f2a695d,3,gift,higher,second,receive,give,TRUE,2
+a422f0e3129d132b25c76ba25f2a695d,4,meal,lower,first,receive,receive,FALSE,2
+a422f0e3129d132b25c76ba25f2a695d,5,object carrying,equal,first,give,give,FALSE,2
+a422f0e3129d132b25c76ba25f2a695d,6,song preference,higher,first,give,give,FALSE,2
+a422f0e3129d132b25c76ba25f2a695d,7,meeting place,lower,first,give,receive,TRUE,2
+a422f0e3129d132b25c76ba25f2a695d,8,object carrying,equal,second,receive,receive,FALSE,2
+a422f0e3129d132b25c76ba25f2a695d,9,meeting place,lower,second,give,receive,TRUE,2
+a422f0e3129d132b25c76ba25f2a695d,10,task checking,equal,second,give,give,FALSE,2
+a422f0e3129d132b25c76ba25f2a695d,11,meal,lower,second,receive,give,TRUE,2
+a422f0e3129d132b25c76ba25f2a695d,12,song preference,higher,second,give,receive,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,1,task checking,lower,first,receive,give,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,2,gift,equal,first,give,give,FALSE,2
+5f1159b79f1255dd21a899cb3e82acce,3,meeting place,equal,first,receive,give,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,4,meeting place,equal,second,give,receive,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,5,meal,lower,first,give,give,FALSE,2
+5f1159b79f1255dd21a899cb3e82acce,6,object carrying,higher,first,give,give,FALSE,2
+5f1159b79f1255dd21a899cb3e82acce,7,gift,equal,second,receive,receive,FALSE,2
+5f1159b79f1255dd21a899cb3e82acce,8,task checking,lower,second,receive,give,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,9,song preference,higher,first,receive,receive,FALSE,2
+5f1159b79f1255dd21a899cb3e82acce,10,object carrying,higher,second,give,receive,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,11,meal,lower,second,give,receive,TRUE,2
+5f1159b79f1255dd21a899cb3e82acce,12,song preference,higher,second,receive,give,TRUE,2
+0e09862718fad982c054bd825416fb33,1,gift,lower,first,receive,give,TRUE,2
+0e09862718fad982c054bd825416fb33,2,meal,equal,first,receive,give,TRUE,2
+0e09862718fad982c054bd825416fb33,3,meeting place,equal,first,give,give,FALSE,2
+0e09862718fad982c054bd825416fb33,4,meal,equal,second,give,give,FALSE,2
+0e09862718fad982c054bd825416fb33,5,meeting place,equal,second,receive,receive,FALSE,2
+0e09862718fad982c054bd825416fb33,6,gift,lower,second,receive,give,TRUE,2
+0e09862718fad982c054bd825416fb33,7,song preference,higher,first,give,give,FALSE,2
+0e09862718fad982c054bd825416fb33,8,song preference,higher,second,give,receive,TRUE,2
+0e09862718fad982c054bd825416fb33,9,object carrying,lower,first,give,give,FALSE,2
+0e09862718fad982c054bd825416fb33,10,object carrying,lower,second,give,receive,TRUE,2
+0e09862718fad982c054bd825416fb33,11,task checking,higher,first,receive,receive,FALSE,2
+0e09862718fad982c054bd825416fb33,12,task checking,higher,second,receive,receive,FALSE,2
+f37bb0347fffb42cf521561ee25c4b11,1,gift,equal,first,give,receive,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,2,task checking,higher,first,give,give,FALSE,2
+f37bb0347fffb42cf521561ee25c4b11,3,gift,equal,second,receive,give,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,4,meeting place,lower,first,receive,receive,FALSE,2
+f37bb0347fffb42cf521561ee25c4b11,5,meal,lower,first,give,receive,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,6,object carrying,higher,first,receive,give,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,7,meal,lower,second,give,give,FALSE,2
+f37bb0347fffb42cf521561ee25c4b11,8,task checking,higher,second,give,receive,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,9,object carrying,higher,second,receive,receive,FALSE,2
+f37bb0347fffb42cf521561ee25c4b11,10,meeting place,lower,second,receive,give,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,11,song preference,equal,first,receive,give,TRUE,2
+f37bb0347fffb42cf521561ee25c4b11,12,song preference,equal,second,give,receive,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,1,object carrying,equal,first,receive,give,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,2,song preference,lower,first,receive,give,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,3,gift,lower,first,give,give,FALSE,2
+737e49e5a7981c04c6beaa94a0a310ce,4,gift,lower,second,give,give,FALSE,2
+737e49e5a7981c04c6beaa94a0a310ce,5,meal,equal,first,give,receive,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,6,meal,equal,second,receive,receive,FALSE,2
+737e49e5a7981c04c6beaa94a0a310ce,7,meeting place,higher,first,receive,give,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,8,meeting place,higher,second,receive,give,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,9,song preference,lower,second,receive,give,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,10,task checking,higher,first,give,receive,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,11,task checking,higher,second,give,receive,TRUE,2
+737e49e5a7981c04c6beaa94a0a310ce,12,object carrying,equal,second,give,give,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,1,meeting place,higher,first,give,give,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,2,song preference,lower,first,receive,receive,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,3,song preference,lower,second,receive,give,TRUE,2
+c3e992eab9cb61fb650927f7f122f3e1,4,meal,equal,first,give,receive,TRUE,2
+c3e992eab9cb61fb650927f7f122f3e1,5,gift,lower,first,give,give,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,6,meal,equal,second,receive,receive,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,7,task checking,higher,first,receive,receive,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,8,gift,lower,second,give,receive,TRUE,2
+c3e992eab9cb61fb650927f7f122f3e1,9,task checking,higher,second,receive,give,TRUE,2
+c3e992eab9cb61fb650927f7f122f3e1,10,object carrying,equal,first,receive,receive,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,11,object carrying,equal,second,give,give,FALSE,2
+c3e992eab9cb61fb650927f7f122f3e1,12,meeting place,higher,second,give,receive,TRUE,2
+0050011b38df3414c12ab46794171265,1,object carrying,equal,first,give,give,FALSE,2
+0050011b38df3414c12ab46794171265,2,gift,higher,first,receive,receive,FALSE,2
+0050011b38df3414c12ab46794171265,3,meal,lower,first,give,give,FALSE,2
+0050011b38df3414c12ab46794171265,4,task checking,lower,first,receive,give,TRUE,2
+0050011b38df3414c12ab46794171265,5,task checking,lower,second,receive,give,TRUE,2
+0050011b38df3414c12ab46794171265,6,gift,higher,second,receive,give,TRUE,2
+0050011b38df3414c12ab46794171265,7,meeting place,higher,first,give,give,FALSE,2
+0050011b38df3414c12ab46794171265,8,object carrying,equal,second,receive,receive,FALSE,2
+0050011b38df3414c12ab46794171265,9,meeting place,higher,second,give,receive,TRUE,2
+0050011b38df3414c12ab46794171265,10,song preference,equal,first,receive,receive,FALSE,2
+0050011b38df3414c12ab46794171265,11,song preference,equal,second,give,give,FALSE,2
+0050011b38df3414c12ab46794171265,12,meal,lower,second,give,receive,TRUE,2
+b32469a99618e0a53179b5f978c70843,1,song preference,lower,first,receive,give,TRUE,2
+b32469a99618e0a53179b5f978c70843,2,meal,higher,first,give,give,FALSE,2
+b32469a99618e0a53179b5f978c70843,3,meal,higher,second,give,receive,TRUE,2
+b32469a99618e0a53179b5f978c70843,4,task checking,equal,first,give,give,FALSE,2
+b32469a99618e0a53179b5f978c70843,5,song preference,lower,second,receive,give,TRUE,2
+b32469a99618e0a53179b5f978c70843,6,gift,lower,first,give,give,FALSE,2
+b32469a99618e0a53179b5f978c70843,7,task checking,equal,second,receive,receive,FALSE,2
+b32469a99618e0a53179b5f978c70843,8,object carrying,equal,first,receive,give,TRUE,2
+b32469a99618e0a53179b5f978c70843,9,meeting place,higher,first,receive,give,TRUE,2
+b32469a99618e0a53179b5f978c70843,10,meeting place,higher,second,receive,give,TRUE,2
+b32469a99618e0a53179b5f978c70843,11,gift,lower,second,give,receive,TRUE,2
+b32469a99618e0a53179b5f978c70843,12,object carrying,equal,second,give,receive,TRUE,2
+619647b575ccd60210451093110c2d21,1,gift,higher,first,receive,receive,FALSE,1
+619647b575ccd60210451093110c2d21,2,meal,lower,first,give,give,FALSE,1
+619647b575ccd60210451093110c2d21,3,task checking,equal,first,receive,give,TRUE,1
+619647b575ccd60210451093110c2d21,4,song preference,lower,first,receive,give,TRUE,1
+619647b575ccd60210451093110c2d21,5,meeting place,higher,first,give,give,FALSE,1
+619647b575ccd60210451093110c2d21,6,meal,lower,second,give,receive,TRUE,1
+619647b575ccd60210451093110c2d21,7,meeting place,higher,second,give,give,FALSE,1
+619647b575ccd60210451093110c2d21,8,gift,higher,second,receive,receive,FALSE,1
+619647b575ccd60210451093110c2d21,9,song preference,lower,second,receive,give,TRUE,1
+619647b575ccd60210451093110c2d21,10,object carrying,equal,first,give,give,FALSE,1
+619647b575ccd60210451093110c2d21,11,task checking,equal,second,give,receive,TRUE,1
+619647b575ccd60210451093110c2d21,12,object carrying,equal,second,receive,receive,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,1,meeting place,higher,first,receive,give,TRUE,1
+4945c0d64e7ad8ca6f4c77302cf24531,2,meeting place,higher,second,receive,give,TRUE,1
+4945c0d64e7ad8ca6f4c77302cf24531,3,meal,higher,first,give,give,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,4,meal,higher,second,give,give,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,5,object carrying,lower,first,receive,receive,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,6,object carrying,lower,second,receive,receive,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,7,gift,lower,first,give,receive,TRUE,1
+4945c0d64e7ad8ca6f4c77302cf24531,8,song preference,equal,first,receive,give,TRUE,1
+4945c0d64e7ad8ca6f4c77302cf24531,9,song preference,equal,second,give,give,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,10,task checking,equal,first,give,give,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,11,task checking,equal,second,receive,receive,FALSE,1
+4945c0d64e7ad8ca6f4c77302cf24531,12,gift,lower,second,give,receive,TRUE,1
+59264a05301b7788e6776bfd18635487,1,song preference,lower,first,receive,receive,FALSE,2
+59264a05301b7788e6776bfd18635487,2,meal,lower,first,give,receive,TRUE,2
+59264a05301b7788e6776bfd18635487,3,gift,higher,first,receive,receive,FALSE,2
+59264a05301b7788e6776bfd18635487,4,song preference,lower,second,receive,give,TRUE,2
+59264a05301b7788e6776bfd18635487,5,task checking,equal,first,give,receive,TRUE,2
+59264a05301b7788e6776bfd18635487,6,object carrying,equal,first,receive,receive,FALSE,2
+59264a05301b7788e6776bfd18635487,7,object carrying,equal,second,give,give,FALSE,2
+59264a05301b7788e6776bfd18635487,8,gift,higher,second,receive,give,TRUE,2
+59264a05301b7788e6776bfd18635487,9,meal,lower,second,give,receive,TRUE,2
+59264a05301b7788e6776bfd18635487,10,meeting place,higher,first,give,receive,TRUE,2
+59264a05301b7788e6776bfd18635487,11,task checking,equal,second,receive,receive,FALSE,2
+59264a05301b7788e6776bfd18635487,12,meeting place,higher,second,give,receive,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,1,gift,higher,first,receive,give,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,2,meeting place,equal,first,receive,give,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,3,gift,higher,second,receive,give,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,4,object carrying,lower,first,give,give,FALSE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,5,object carrying,lower,second,give,receive,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,6,song preference,higher,first,give,give,FALSE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,7,song preference,higher,second,give,receive,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,8,task checking,lower,first,receive,give,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,9,meal,equal,first,give,give,FALSE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,10,meal,equal,second,receive,receive,FALSE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,11,meeting place,equal,second,give,receive,TRUE,2
+259bf1eb9c09d1eaef93cd1f1350cc81,12,task checking,lower,second,receive,receive,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,1,meeting place,higher,first,give,give,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,2,object carrying,higher,first,receive,give,TRUE,2
+efc9ffba321ca20e5714dbdad5e098c8,3,meal,equal,first,receive,receive,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,4,meeting place,higher,second,give,receive,TRUE,2
+efc9ffba321ca20e5714dbdad5e098c8,5,task checking,lower,first,give,give,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,6,gift,lower,first,receive,receive,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,7,task checking,lower,second,give,receive,TRUE,2
+efc9ffba321ca20e5714dbdad5e098c8,8,meal,equal,second,give,give,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,9,song preference,equal,first,give,receive,TRUE,2
+efc9ffba321ca20e5714dbdad5e098c8,10,object carrying,higher,second,receive,give,TRUE,2
+efc9ffba321ca20e5714dbdad5e098c8,11,song preference,equal,second,receive,receive,FALSE,2
+efc9ffba321ca20e5714dbdad5e098c8,12,gift,lower,second,receive,give,TRUE,2
+8b124353e7ee6520b84a0cff1d14d454,1,meal,equal,first,give,receive,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,2,gift,lower,first,receive,give,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,3,object carrying,equal,first,receive,give,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,4,song preference,higher,first,give,give,FALSE,1
+8b124353e7ee6520b84a0cff1d14d454,5,meal,equal,second,receive,give,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,6,gift,lower,second,receive,give,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,7,meeting place,lower,first,give,give,FALSE,1
+8b124353e7ee6520b84a0cff1d14d454,8,task checking,higher,first,receive,receive,FALSE,1
+8b124353e7ee6520b84a0cff1d14d454,9,object carrying,equal,second,give,receive,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,10,meeting place,lower,second,give,give,FALSE,1
+8b124353e7ee6520b84a0cff1d14d454,11,task checking,higher,second,receive,give,TRUE,1
+8b124353e7ee6520b84a0cff1d14d454,12,song preference,higher,second,give,receive,TRUE,1
+ae9b1280d68c6ef67b702f1063adfd09,1,object carrying,equal,first,receive,receive,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,2,gift,higher,first,receive,receive,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,3,song preference,lower,first,give,receive,TRUE,2
+ae9b1280d68c6ef67b702f1063adfd09,4,meal,higher,first,give,receive,TRUE,2
+ae9b1280d68c6ef67b702f1063adfd09,5,meal,higher,second,give,receive,TRUE,2
+ae9b1280d68c6ef67b702f1063adfd09,6,object carrying,equal,second,give,give,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,7,meeting place,equal,first,give,give,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,8,meeting place,equal,second,receive,receive,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,9,gift,higher,second,receive,receive,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,10,task checking,lower,first,receive,receive,FALSE,2
+ae9b1280d68c6ef67b702f1063adfd09,11,song preference,lower,second,give,receive,TRUE,2
+ae9b1280d68c6ef67b702f1063adfd09,12,task checking,lower,second,receive,give,TRUE,2
+6d746862933f4b178f42d02af0caea2c,1,gift,equal,first,give,give,FALSE,1
+6d746862933f4b178f42d02af0caea2c,2,object carrying,lower,first,give,receive,TRUE,1
+6d746862933f4b178f42d02af0caea2c,3,meal,lower,first,receive,receive,FALSE,1
+6d746862933f4b178f42d02af0caea2c,4,meal,lower,second,receive,receive,FALSE,1
+6d746862933f4b178f42d02af0caea2c,5,meeting place,higher,first,give,give,FALSE,1
+6d746862933f4b178f42d02af0caea2c,6,object carrying,lower,second,give,receive,TRUE,1
+6d746862933f4b178f42d02af0caea2c,7,song preference,equal,first,receive,give,TRUE,1
+6d746862933f4b178f42d02af0caea2c,8,meeting place,higher,second,give,receive,TRUE,1
+6d746862933f4b178f42d02af0caea2c,9,gift,equal,second,receive,receive,FALSE,1
+6d746862933f4b178f42d02af0caea2c,10,song preference,equal,second,give,give,FALSE,1
+6d746862933f4b178f42d02af0caea2c,11,task checking,higher,first,receive,give,TRUE,1
+6d746862933f4b178f42d02af0caea2c,12,task checking,higher,second,receive,give,TRUE,1
+f59ede6c8f5f41192ffec622a0bb25e0,1,meal,equal,first,receive,receive,FALSE,2
+f59ede6c8f5f41192ffec622a0bb25e0,2,gift,higher,first,give,receive,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,3,meeting place,higher,first,receive,give,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,4,gift,higher,second,give,receive,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,5,meeting place,higher,second,receive,give,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,6,object carrying,lower,first,receive,give,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,7,song preference,lower,first,give,give,FALSE,2
+f59ede6c8f5f41192ffec622a0bb25e0,8,object carrying,lower,second,receive,give,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,9,task checking,equal,first,give,give,FALSE,2
+f59ede6c8f5f41192ffec622a0bb25e0,10,task checking,equal,second,receive,give,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,11,song preference,lower,second,give,receive,TRUE,2
+f59ede6c8f5f41192ffec622a0bb25e0,12,meal,equal,second,give,give,FALSE,2
+f04916f33eb7f6f137c3a546e7923f9c,1,gift,higher,first,give,give,FALSE,2
+f04916f33eb7f6f137c3a546e7923f9c,2,meal,lower,first,give,give,FALSE,2
+f04916f33eb7f6f137c3a546e7923f9c,3,object carrying,higher,first,receive,give,TRUE,2
+f04916f33eb7f6f137c3a546e7923f9c,4,gift,higher,second,give,receive,TRUE,2
+f04916f33eb7f6f137c3a546e7923f9c,5,object carrying,higher,second,receive,give,TRUE,2
+f04916f33eb7f6f137c3a546e7923f9c,6,meeting place,equal,first,receive,give,TRUE,2
+f04916f33eb7f6f137c3a546e7923f9c,7,meal,lower,second,give,receive,TRUE,2
+f04916f33eb7f6f137c3a546e7923f9c,8,meeting place,equal,second,give,give,FALSE,2
+f04916f33eb7f6f137c3a546e7923f9c,9,task checking,lower,first,receive,receive,FALSE,2
+f04916f33eb7f6f137c3a546e7923f9c,10,song preference,equal,first,give,receive,TRUE,2
+f04916f33eb7f6f137c3a546e7923f9c,11,song preference,equal,second,receive,receive,FALSE,2
+f04916f33eb7f6f137c3a546e7923f9c,12,task checking,lower,second,receive,give,TRUE,2
+5759444f23ea9c7a5457152d28fe0f9f,1,gift,lower,first,receive,receive,FALSE,1
+5759444f23ea9c7a5457152d28fe0f9f,2,song preference,equal,first,receive,give,TRUE,1
+5759444f23ea9c7a5457152d28fe0f9f,3,meal,higher,first,receive,give,TRUE,1
+5759444f23ea9c7a5457152d28fe0f9f,4,song preference,equal,second,give,give,FALSE,1
+5759444f23ea9c7a5457152d28fe0f9f,5,object carrying,higher,first,give,give,FALSE,1
+5759444f23ea9c7a5457152d28fe0f9f,6,meeting place,lower,first,give,receive,TRUE,1
+5759444f23ea9c7a5457152d28fe0f9f,7,gift,lower,second,receive,give,TRUE,1
+5759444f23ea9c7a5457152d28fe0f9f,8,object carrying,higher,second,give,receive,TRUE,1
+5759444f23ea9c7a5457152d28fe0f9f,9,task checking,equal,first,give,give,FALSE,1
+5759444f23ea9c7a5457152d28fe0f9f,10,task checking,equal,second,receive,receive,FALSE,1
+5759444f23ea9c7a5457152d28fe0f9f,11,meal,higher,second,receive,give,TRUE,1
+5759444f23ea9c7a5457152d28fe0f9f,12,meeting place,lower,second,give,receive,TRUE,1
+5857fa1b6eeba79307cc6e305d7599f7,1,meeting place,lower,first,receive,receive,FALSE,2
+5857fa1b6eeba79307cc6e305d7599f7,2,meeting place,lower,second,receive,give,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,3,meal,equal,first,receive,give,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,4,gift,higher,first,receive,give,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,5,gift,higher,second,receive,give,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,6,object carrying,equal,first,give,give,FALSE,2
+5857fa1b6eeba79307cc6e305d7599f7,7,meal,equal,second,give,receive,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,8,object carrying,equal,second,receive,give,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,9,song preference,lower,first,give,receive,TRUE,2
+5857fa1b6eeba79307cc6e305d7599f7,10,task checking,higher,first,give,give,FALSE,2
+5857fa1b6eeba79307cc6e305d7599f7,11,song preference,lower,second,give,give,FALSE,2
+5857fa1b6eeba79307cc6e305d7599f7,12,task checking,higher,second,give,receive,TRUE,2
+6b689f1f2e3eaf30d348cdabf61c0368,1,gift,lower,first,give,give,FALSE,2
+6b689f1f2e3eaf30d348cdabf61c0368,2,gift,lower,second,give,receive,TRUE,2
+6b689f1f2e3eaf30d348cdabf61c0368,3,meeting place,lower,first,receive,receive,FALSE,2
+6b689f1f2e3eaf30d348cdabf61c0368,4,object carrying,higher,first,receive,give,TRUE,2
+6b689f1f2e3eaf30d348cdabf61c0368,5,meal,higher,first,give,receive,TRUE,2
+6b689f1f2e3eaf30d348cdabf61c0368,6,meal,higher,second,give,give,FALSE,2
+6b689f1f2e3eaf30d348cdabf61c0368,7,song preference,equal,first,give,give,FALSE,2
+6b689f1f2e3eaf30d348cdabf61c0368,8,meeting place,lower,second,receive,give,TRUE,2
+6b689f1f2e3eaf30d348cdabf61c0368,9,song preference,equal,second,receive,receive,FALSE,2
+6b689f1f2e3eaf30d348cdabf61c0368,10,object carrying,higher,second,receive,receive,FALSE,2
+6b689f1f2e3eaf30d348cdabf61c0368,11,task checking,equal,first,receive,give,TRUE,2
+6b689f1f2e3eaf30d348cdabf61c0368,12,task checking,equal,second,give,receive,TRUE,2
+cd10248259a026b13316b846cf56fada,1,gift,equal,first,receive,receive,FALSE,2
+cd10248259a026b13316b846cf56fada,2,meal,higher,first,receive,receive,FALSE,2
+cd10248259a026b13316b846cf56fada,3,meal,higher,second,receive,give,TRUE,2
+cd10248259a026b13316b846cf56fada,4,object carrying,higher,first,give,give,FALSE,2
+cd10248259a026b13316b846cf56fada,5,task checking,lower,first,receive,receive,FALSE,2
+cd10248259a026b13316b846cf56fada,6,gift,equal,second,give,give,FALSE,2
+cd10248259a026b13316b846cf56fada,7,meeting place,lower,first,give,give,FALSE,2
+cd10248259a026b13316b846cf56fada,8,song preference,equal,first,give,receive,TRUE,2
+cd10248259a026b13316b846cf56fada,9,song preference,equal,second,receive,give,TRUE,2
+cd10248259a026b13316b846cf56fada,10,task checking,lower,second,receive,give,TRUE,2
+cd10248259a026b13316b846cf56fada,11,object carrying,higher,second,give,receive,TRUE,2
+cd10248259a026b13316b846cf56fada,12,meeting place,lower,second,give,receive,TRUE,2
+3bc526a9ce163fd8cb2d0487e28b9368,1,object carrying,lower,first,give,give,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,2,task checking,higher,first,receive,receive,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,3,meal,lower,first,receive,receive,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,4,meal,lower,second,receive,give,TRUE,2
+3bc526a9ce163fd8cb2d0487e28b9368,5,object carrying,lower,second,give,give,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,6,song preference,higher,first,give,give,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,7,task checking,higher,second,receive,give,TRUE,2
+3bc526a9ce163fd8cb2d0487e28b9368,8,song preference,higher,second,give,give,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,9,meeting place,equal,first,give,give,FALSE,2
+3bc526a9ce163fd8cb2d0487e28b9368,10,meeting place,equal,second,receive,give,TRUE,2
+3bc526a9ce163fd8cb2d0487e28b9368,11,gift,equal,first,receive,give,TRUE,2
+3bc526a9ce163fd8cb2d0487e28b9368,12,gift,equal,second,give,receive,TRUE,2
+affc2c5e9eac70cd0b796832edcb4ce6,1,song preference,equal,first,give,receive,TRUE,2
+affc2c5e9eac70cd0b796832edcb4ce6,2,meeting place,lower,first,give,give,FALSE,2
+affc2c5e9eac70cd0b796832edcb4ce6,3,meeting place,lower,second,give,receive,TRUE,2
+affc2c5e9eac70cd0b796832edcb4ce6,4,meal,higher,first,receive,give,TRUE,2
+affc2c5e9eac70cd0b796832edcb4ce6,5,object carrying,higher,first,give,give,FALSE,2
+affc2c5e9eac70cd0b796832edcb4ce6,6,meal,higher,second,receive,receive,FALSE,2
+affc2c5e9eac70cd0b796832edcb4ce6,7,object carrying,higher,second,give,receive,TRUE,2
+affc2c5e9eac70cd0b796832edcb4ce6,8,song preference,equal,second,receive,give,TRUE,2
+affc2c5e9eac70cd0b796832edcb4ce6,9,gift,equal,first,receive,receive,FALSE,2
+affc2c5e9eac70cd0b796832edcb4ce6,10,task checking,lower,first,receive,receive,FALSE,2
+affc2c5e9eac70cd0b796832edcb4ce6,11,task checking,lower,second,receive,receive,FALSE,2
+affc2c5e9eac70cd0b796832edcb4ce6,12,gift,equal,second,give,receive,TRUE,2
+6dad65107bd6617f8f15b6960f627aeb,1,task checking,equal,first,receive,receive,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,2,object carrying,equal,first,give,give,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,3,gift,higher,first,give,give,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,4,meeting place,lower,first,receive,give,TRUE,1
+6dad65107bd6617f8f15b6960f627aeb,5,object carrying,equal,second,receive,receive,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,6,gift,higher,second,give,receive,TRUE,1
+6dad65107bd6617f8f15b6960f627aeb,7,meal,higher,first,receive,receive,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,8,task checking,equal,second,give,give,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,9,song preference,lower,first,give,give,FALSE,1
+6dad65107bd6617f8f15b6960f627aeb,10,meal,higher,second,receive,give,TRUE,1
+6dad65107bd6617f8f15b6960f627aeb,11,meeting place,lower,second,receive,give,TRUE,1
+6dad65107bd6617f8f15b6960f627aeb,12,song preference,lower,second,give,receive,TRUE,1
+a7dc263c7bbfad4a0710b8a0b079c04c,1,meeting place,higher,first,give,receive,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,2,gift,lower,first,receive,give,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,3,song preference,lower,first,give,receive,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,4,meal,equal,first,give,receive,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,5,song preference,lower,second,give,receive,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,6,meeting place,higher,second,give,receive,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,7,gift,lower,second,receive,receive,FALSE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,8,object carrying,higher,first,receive,give,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,9,object carrying,higher,second,receive,give,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,10,task checking,equal,first,receive,give,TRUE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,11,task checking,equal,second,give,give,FALSE,2
+a7dc263c7bbfad4a0710b8a0b079c04c,12,meal,equal,second,receive,give,TRUE,2
+3bc81e77c14456620e50848bd4a41be8,1,song preference,equal,first,receive,give,TRUE,1
+3bc81e77c14456620e50848bd4a41be8,2,gift,lower,first,give,give,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,3,meal,higher,first,give,give,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,4,meal,higher,second,give,receive,TRUE,1
+3bc81e77c14456620e50848bd4a41be8,5,meeting place,equal,first,give,give,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,6,meeting place,equal,second,receive,receive,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,7,gift,lower,second,give,receive,TRUE,1
+3bc81e77c14456620e50848bd4a41be8,8,object carrying,lower,first,receive,receive,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,9,object carrying,lower,second,receive,give,TRUE,1
+3bc81e77c14456620e50848bd4a41be8,10,task checking,higher,first,receive,receive,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,11,song preference,equal,second,give,give,FALSE,1
+3bc81e77c14456620e50848bd4a41be8,12,task checking,higher,second,receive,give,TRUE,1
+4d16847ea91d61518fd99987c007e407,1,meal,lower,first,receive,receive,FALSE,2
+4d16847ea91d61518fd99987c007e407,2,object carrying,higher,first,receive,give,TRUE,2
+4d16847ea91d61518fd99987c007e407,3,gift,equal,first,give,receive,TRUE,2
+4d16847ea91d61518fd99987c007e407,4,gift,equal,second,receive,receive,FALSE,2
+4d16847ea91d61518fd99987c007e407,5,meeting place,equal,first,receive,receive,FALSE,2
+4d16847ea91d61518fd99987c007e407,6,song preference,lower,first,give,receive,TRUE,2
+4d16847ea91d61518fd99987c007e407,7,song preference,lower,second,give,receive,TRUE,2
+4d16847ea91d61518fd99987c007e407,8,object carrying,higher,second,receive,give,TRUE,2
+4d16847ea91d61518fd99987c007e407,9,meeting place,equal,second,give,give,FALSE,2
+4d16847ea91d61518fd99987c007e407,10,task checking,higher,first,give,receive,TRUE,2
+4d16847ea91d61518fd99987c007e407,11,meal,lower,second,receive,give,TRUE,2
+4d16847ea91d61518fd99987c007e407,12,task checking,higher,second,give,receive,TRUE,2
+7b354d226c8844c7b15b3bf0259ed77b,1,gift,equal,first,receive,give,TRUE,2
+7b354d226c8844c7b15b3bf0259ed77b,2,gift,equal,second,give,receive,TRUE,2
+7b354d226c8844c7b15b3bf0259ed77b,3,object carrying,higher,first,receive,give,TRUE,2
+7b354d226c8844c7b15b3bf0259ed77b,4,meal,higher,first,give,give,FALSE,2
+7b354d226c8844c7b15b3bf0259ed77b,5,song preference,equal,first,give,give,FALSE,2
+7b354d226c8844c7b15b3bf0259ed77b,6,song preference,equal,second,receive,receive,FALSE,2
+7b354d226c8844c7b15b3bf0259ed77b,7,meeting place,lower,first,receive,receive,FALSE,2
+7b354d226c8844c7b15b3bf0259ed77b,8,task checking,lower,first,give,give,FALSE,2
+7b354d226c8844c7b15b3bf0259ed77b,9,object carrying,higher,second,receive,receive,FALSE,2
+7b354d226c8844c7b15b3bf0259ed77b,10,task checking,lower,second,give,receive,TRUE,2
+7b354d226c8844c7b15b3bf0259ed77b,11,meeting place,lower,second,receive,give,TRUE,2
+7b354d226c8844c7b15b3bf0259ed77b,12,meal,higher,second,give,receive,TRUE,2
+eede2584f377c89cf960e8acaf48814f,1,gift,lower,first,receive,receive,FALSE,1
+eede2584f377c89cf960e8acaf48814f,2,task checking,equal,first,give,give,FALSE,1
+eede2584f377c89cf960e8acaf48814f,3,song preference,higher,first,give,give,FALSE,1
+eede2584f377c89cf960e8acaf48814f,4,meeting place,higher,first,receive,give,TRUE,1
+eede2584f377c89cf960e8acaf48814f,5,gift,lower,second,receive,give,TRUE,1
+eede2584f377c89cf960e8acaf48814f,6,object carrying,lower,first,give,give,FALSE,1
+eede2584f377c89cf960e8acaf48814f,7,meal,equal,first,receive,receive,FALSE,1
+eede2584f377c89cf960e8acaf48814f,8,song preference,higher,second,give,give,FALSE,1
+eede2584f377c89cf960e8acaf48814f,9,meal,equal,second,give,give,FALSE,1
+eede2584f377c89cf960e8acaf48814f,10,object carrying,lower,second,give,receive,TRUE,1
+eede2584f377c89cf960e8acaf48814f,11,task checking,equal,second,receive,receive,FALSE,1
+eede2584f377c89cf960e8acaf48814f,12,meeting place,higher,second,receive,give,TRUE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,1,object carrying,equal,first,give,give,FALSE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,2,gift,higher,first,give,give,FALSE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,3,gift,higher,second,give,receive,TRUE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,4,song preference,higher,first,receive,receive,FALSE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,5,meal,lower,first,receive,give,TRUE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,6,object carrying,equal,second,receive,receive,FALSE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,7,meeting place,lower,first,give,receive,TRUE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,8,song preference,higher,second,receive,receive,FALSE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,9,meeting place,lower,second,give,give,FALSE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,10,task checking,equal,first,receive,give,TRUE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,11,meal,lower,second,receive,give,TRUE,1
+b2ee1a97ec698c1373b26a766b3c9a3e,12,task checking,equal,second,give,receive,TRUE,1
+79c1b257f65ffa1824ef30efa940e76d,1,meeting place,lower,first,receive,receive,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,2,song preference,equal,first,give,give,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,3,gift,lower,first,give,give,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,4,meal,higher,first,give,give,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,5,song preference,equal,second,receive,receive,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,6,gift,lower,second,give,give,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,7,meal,higher,second,give,give,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,8,task checking,equal,first,receive,receive,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,9,meeting place,lower,second,receive,receive,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,10,task checking,equal,second,give,give,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,11,object carrying,higher,first,receive,receive,FALSE,2
+79c1b257f65ffa1824ef30efa940e76d,12,object carrying,higher,second,receive,give,TRUE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,1,meal,equal,first,give,give,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,2,gift,lower,first,receive,give,TRUE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,3,meeting place,lower,first,give,give,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,4,song preference,higher,first,receive,give,TRUE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,5,song preference,higher,second,receive,receive,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,6,task checking,equal,first,receive,give,TRUE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,7,meal,equal,second,receive,receive,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,8,object carrying,higher,first,give,give,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,9,gift,lower,second,receive,receive,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,10,object carrying,higher,second,give,give,FALSE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,11,task checking,equal,second,give,receive,TRUE,2
+e9ee9d4da44c1400109fd66a8ce69c1d,12,meeting place,lower,second,give,give,FALSE,2
+b4ca9f158da1d596c6ff084196e85efe,1,gift,equal,first,give,receive,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,2,song preference,higher,first,receive,give,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,3,gift,equal,second,receive,give,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,4,object carrying,lower,first,give,give,FALSE,2
+b4ca9f158da1d596c6ff084196e85efe,5,task checking,higher,first,give,receive,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,6,object carrying,lower,second,give,give,FALSE,2
+b4ca9f158da1d596c6ff084196e85efe,7,song preference,higher,second,receive,give,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,8,meeting place,equal,first,receive,give,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,9,meeting place,equal,second,give,give,FALSE,2
+b4ca9f158da1d596c6ff084196e85efe,10,task checking,higher,second,give,receive,TRUE,2
+b4ca9f158da1d596c6ff084196e85efe,11,meal,lower,first,receive,receive,FALSE,2
+b4ca9f158da1d596c6ff084196e85efe,12,meal,lower,second,receive,receive,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,1,meal,higher,first,receive,receive,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,2,meal,higher,second,receive,give,TRUE,2
+169d4b8322d002d7057ff4cf41b05b21,3,gift,equal,first,give,give,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,4,gift,equal,second,receive,give,TRUE,2
+169d4b8322d002d7057ff4cf41b05b21,5,object carrying,higher,first,give,give,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,6,meeting place,equal,first,receive,give,TRUE,2
+169d4b8322d002d7057ff4cf41b05b21,7,task checking,lower,first,give,give,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,8,song preference,lower,first,receive,give,TRUE,2
+169d4b8322d002d7057ff4cf41b05b21,9,song preference,lower,second,receive,give,TRUE,2
+169d4b8322d002d7057ff4cf41b05b21,10,object carrying,higher,second,give,give,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,11,task checking,lower,second,give,give,FALSE,2
+169d4b8322d002d7057ff4cf41b05b21,12,meeting place,equal,second,give,give,FALSE,2
+6927891537af2483050786629294fa75,1,object carrying,equal,first,receive,receive,FALSE,2
+6927891537af2483050786629294fa75,2,meeting place,lower,first,receive,receive,FALSE,2
+6927891537af2483050786629294fa75,3,meal,equal,first,give,receive,TRUE,2
+6927891537af2483050786629294fa75,4,gift,higher,first,give,give,FALSE,2
+6927891537af2483050786629294fa75,5,meeting place,lower,second,receive,give,TRUE,2
+6927891537af2483050786629294fa75,6,meal,equal,second,receive,give,TRUE,2
+6927891537af2483050786629294fa75,7,song preference,higher,first,receive,give,TRUE,2
+6927891537af2483050786629294fa75,8,song preference,higher,second,receive,give,TRUE,2
+6927891537af2483050786629294fa75,9,object carrying,equal,second,give,give,FALSE,2
+6927891537af2483050786629294fa75,10,gift,higher,second,give,receive,TRUE,2
+6927891537af2483050786629294fa75,11,task checking,lower,first,give,receive,TRUE,2
+6927891537af2483050786629294fa75,12,task checking,lower,second,give,receive,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,1,gift,higher,first,give,receive,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,2,gift,higher,second,give,give,FALSE,2
+03e37d9a8307bf5f38651efa7cb0a69c,3,meeting place,lower,first,receive,give,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,4,meal,higher,first,receive,give,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,5,meeting place,lower,second,receive,give,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,6,object carrying,lower,first,give,give,FALSE,2
+03e37d9a8307bf5f38651efa7cb0a69c,7,song preference,equal,first,receive,give,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,8,task checking,equal,first,give,give,FALSE,2
+03e37d9a8307bf5f38651efa7cb0a69c,9,task checking,equal,second,receive,receive,FALSE,2
+03e37d9a8307bf5f38651efa7cb0a69c,10,meal,higher,second,receive,give,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,11,object carrying,lower,second,give,receive,TRUE,2
+03e37d9a8307bf5f38651efa7cb0a69c,12,song preference,equal,second,give,receive,TRUE,2
+d21eb9aab168048bd725421c80276628,1,object carrying,lower,first,receive,receive,FALSE,2
+d21eb9aab168048bd725421c80276628,2,gift,lower,first,give,give,FALSE,2
+d21eb9aab168048bd725421c80276628,3,meeting place,higher,first,receive,give,TRUE,2
+d21eb9aab168048bd725421c80276628,4,meeting place,higher,second,receive,give,TRUE,2
+d21eb9aab168048bd725421c80276628,5,meal,higher,first,give,give,FALSE,2
+d21eb9aab168048bd725421c80276628,6,object carrying,lower,second,receive,give,TRUE,2
+d21eb9aab168048bd725421c80276628,7,song preference,equal,first,receive,give,TRUE,2
+d21eb9aab168048bd725421c80276628,8,song preference,equal,second,give,receive,TRUE,2
+d21eb9aab168048bd725421c80276628,9,meal,higher,second,give,receive,TRUE,2
+d21eb9aab168048bd725421c80276628,10,gift,lower,second,give,give,FALSE,2
+d21eb9aab168048bd725421c80276628,11,task checking,equal,first,give,give,FALSE,2
+d21eb9aab168048bd725421c80276628,12,task checking,equal,second,receive,receive,FALSE,2
+2592baf6005bec1fdc6b3beba2448474,1,meeting place,higher,first,receive,give,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,2,meeting place,higher,second,receive,give,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,3,object carrying,lower,first,give,give,FALSE,2
+2592baf6005bec1fdc6b3beba2448474,4,meal,equal,first,receive,give,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,5,object carrying,lower,second,give,receive,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,6,gift,lower,first,receive,receive,FALSE,2
+2592baf6005bec1fdc6b3beba2448474,7,meal,equal,second,give,give,FALSE,2
+2592baf6005bec1fdc6b3beba2448474,8,gift,lower,second,receive,give,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,9,song preference,equal,first,give,receive,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,10,task checking,higher,first,give,give,FALSE,2
+2592baf6005bec1fdc6b3beba2448474,11,song preference,equal,second,receive,give,TRUE,2
+2592baf6005bec1fdc6b3beba2448474,12,task checking,higher,second,give,receive,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,1,meeting place,higher,first,receive,give,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,2,task checking,lower,first,give,give,FALSE,2
+670f4e16f88bbcead6b27014f5823c32,3,song preference,higher,first,give,give,FALSE,2
+670f4e16f88bbcead6b27014f5823c32,4,song preference,higher,second,give,receive,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,5,meeting place,higher,second,receive,receive,FALSE,2
+670f4e16f88bbcead6b27014f5823c32,6,meal,equal,first,receive,give,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,7,task checking,lower,second,give,receive,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,8,gift,equal,first,give,give,FALSE,2
+670f4e16f88bbcead6b27014f5823c32,9,object carrying,lower,first,receive,give,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,10,object carrying,lower,second,receive,give,TRUE,2
+670f4e16f88bbcead6b27014f5823c32,11,meal,equal,second,give,give,FALSE,2
+670f4e16f88bbcead6b27014f5823c32,12,gift,equal,second,receive,receive,FALSE,2
+45ed6d09aa86ff7cbd10731d47d186c1,1,meeting place,higher,first,give,give,FALSE,1
+45ed6d09aa86ff7cbd10731d47d186c1,2,meal,lower,first,give,receive,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,3,meeting place,higher,second,give,receive,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,4,gift,equal,first,receive,receive,FALSE,1
+45ed6d09aa86ff7cbd10731d47d186c1,5,meal,lower,second,give,receive,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,6,task checking,equal,first,give,give,FALSE,1
+45ed6d09aa86ff7cbd10731d47d186c1,7,gift,equal,second,give,give,FALSE,1
+45ed6d09aa86ff7cbd10731d47d186c1,8,song preference,higher,first,receive,give,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,9,object carrying,lower,first,receive,give,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,10,object carrying,lower,second,receive,give,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,11,song preference,higher,second,receive,give,TRUE,1
+45ed6d09aa86ff7cbd10731d47d186c1,12,task checking,equal,second,receive,receive,FALSE,1
+b1ed27dc9b04e4b144abe6add0bb8c6c,1,song preference,higher,first,receive,give,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,2,object carrying,lower,first,give,receive,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,3,object carrying,lower,second,give,receive,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,4,meeting place,lower,first,receive,receive,FALSE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,5,gift,equal,first,give,give,FALSE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,6,song preference,higher,second,receive,give,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,7,task checking,higher,first,give,receive,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,8,gift,equal,second,receive,receive,FALSE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,9,meal,equal,first,receive,give,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,10,meal,equal,second,give,give,FALSE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,11,task checking,higher,second,give,receive,TRUE,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,12,meeting place,lower,second,receive,give,TRUE,2
+c4413f6979b83c24b474f01cc85e352d,1,object carrying,lower,first,receive,give,TRUE,2
+c4413f6979b83c24b474f01cc85e352d,2,meal,equal,first,receive,give,TRUE,2
+c4413f6979b83c24b474f01cc85e352d,3,meeting place,lower,first,give,give,FALSE,2
+c4413f6979b83c24b474f01cc85e352d,4,gift,equal,first,give,give,FALSE,2
+c4413f6979b83c24b474f01cc85e352d,5,meal,equal,second,give,give,FALSE,2
+c4413f6979b83c24b474f01cc85e352d,6,song preference,higher,first,receive,receive,FALSE,2
+c4413f6979b83c24b474f01cc85e352d,7,object carrying,lower,second,receive,give,TRUE,2
+c4413f6979b83c24b474f01cc85e352d,8,song preference,higher,second,receive,give,TRUE,2
+c4413f6979b83c24b474f01cc85e352d,9,gift,equal,second,receive,receive,FALSE,2
+c4413f6979b83c24b474f01cc85e352d,10,meeting place,lower,second,give,receive,TRUE,2
+c4413f6979b83c24b474f01cc85e352d,11,task checking,higher,first,give,give,FALSE,2
+c4413f6979b83c24b474f01cc85e352d,12,task checking,higher,second,give,receive,TRUE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,1,task checking,lower,first,give,give,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,2,object carrying,higher,first,receive,give,TRUE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,3,meeting place,equal,first,receive,give,TRUE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,4,meeting place,equal,second,give,give,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,5,gift,equal,first,give,give,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,6,meal,higher,first,give,give,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,7,gift,equal,second,receive,receive,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,8,object carrying,higher,second,receive,receive,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,9,task checking,lower,second,give,receive,TRUE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,10,song preference,lower,first,receive,give,TRUE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,11,meal,higher,second,give,give,FALSE,2
+86bcc9bbc5b35ead5efe2227a28c5db1,12,song preference,lower,second,receive,receive,FALSE,2
+895351e823138d44b29d347330bcf9f8,1,song preference,higher,first,give,give,FALSE,2
+895351e823138d44b29d347330bcf9f8,2,gift,equal,first,give,receive,TRUE,2
+895351e823138d44b29d347330bcf9f8,3,song preference,higher,second,give,receive,TRUE,2
+895351e823138d44b29d347330bcf9f8,4,gift,equal,second,receive,receive,FALSE,2
+895351e823138d44b29d347330bcf9f8,5,task checking,equal,first,receive,give,TRUE,2
+895351e823138d44b29d347330bcf9f8,6,meeting place,higher,first,receive,receive,FALSE,2
+895351e823138d44b29d347330bcf9f8,7,meeting place,higher,second,receive,give,TRUE,2
+895351e823138d44b29d347330bcf9f8,8,meal,lower,first,receive,give,TRUE,2
+895351e823138d44b29d347330bcf9f8,9,object carrying,lower,first,give,give,FALSE,2
+895351e823138d44b29d347330bcf9f8,10,object carrying,lower,second,give,receive,TRUE,2
+895351e823138d44b29d347330bcf9f8,11,meal,lower,second,receive,receive,FALSE,2
+895351e823138d44b29d347330bcf9f8,12,task checking,equal,second,give,give,FALSE,2
+2e8c067e0122d155498f31563f451925,1,gift,equal,first,receive,give,TRUE,1
+2e8c067e0122d155498f31563f451925,2,meal,higher,first,receive,give,TRUE,1
+2e8c067e0122d155498f31563f451925,3,task checking,higher,first,give,receive,TRUE,1
+2e8c067e0122d155498f31563f451925,4,meal,higher,second,receive,give,TRUE,1
+2e8c067e0122d155498f31563f451925,5,meeting place,lower,first,receive,receive,FALSE,1
+2e8c067e0122d155498f31563f451925,6,gift,equal,second,give,receive,TRUE,1
+2e8c067e0122d155498f31563f451925,7,meeting place,lower,second,receive,receive,FALSE,1
+2e8c067e0122d155498f31563f451925,8,task checking,higher,second,give,receive,TRUE,1
+2e8c067e0122d155498f31563f451925,9,object carrying,lower,first,give,receive,TRUE,1
+2e8c067e0122d155498f31563f451925,10,song preference,equal,first,give,give,FALSE,1
+2e8c067e0122d155498f31563f451925,11,object carrying,lower,second,give,receive,TRUE,1
+2e8c067e0122d155498f31563f451925,12,song preference,equal,second,receive,give,TRUE,1
+41df1ecb28680d718859a2f814952a64,1,object carrying,higher,first,give,receive,TRUE,2
+41df1ecb28680d718859a2f814952a64,2,gift,equal,first,receive,receive,FALSE,2
+41df1ecb28680d718859a2f814952a64,3,task checking,lower,first,receive,give,TRUE,2
+41df1ecb28680d718859a2f814952a64,4,task checking,lower,second,receive,give,TRUE,2
+41df1ecb28680d718859a2f814952a64,5,meeting place,equal,first,give,give,FALSE,2
+41df1ecb28680d718859a2f814952a64,6,object carrying,higher,second,give,receive,TRUE,2
+41df1ecb28680d718859a2f814952a64,7,song preference,higher,first,receive,give,TRUE,2
+41df1ecb28680d718859a2f814952a64,8,song preference,higher,second,receive,give,TRUE,2
+41df1ecb28680d718859a2f814952a64,9,gift,equal,second,give,give,FALSE,2
+41df1ecb28680d718859a2f814952a64,10,meeting place,equal,second,receive,receive,FALSE,2
+41df1ecb28680d718859a2f814952a64,11,meal,lower,first,give,receive,TRUE,2
+41df1ecb28680d718859a2f814952a64,12,meal,lower,second,give,receive,TRUE,2
+8c09704258b76332a5c0dc04c753474a,1,meal,lower,first,give,receive,TRUE,2
+8c09704258b76332a5c0dc04c753474a,2,object carrying,equal,first,give,give,FALSE,2
+8c09704258b76332a5c0dc04c753474a,3,gift,lower,first,receive,receive,FALSE,2
+8c09704258b76332a5c0dc04c753474a,4,meal,lower,second,give,receive,TRUE,2
+8c09704258b76332a5c0dc04c753474a,5,gift,lower,second,receive,give,TRUE,2
+8c09704258b76332a5c0dc04c753474a,6,object carrying,equal,second,receive,give,TRUE,2
+8c09704258b76332a5c0dc04c753474a,7,song preference,higher,first,give,give,FALSE,2
+8c09704258b76332a5c0dc04c753474a,8,song preference,higher,second,give,receive,TRUE,2
+8c09704258b76332a5c0dc04c753474a,9,meeting place,equal,first,receive,receive,FALSE,2
+8c09704258b76332a5c0dc04c753474a,10,meeting place,equal,second,give,receive,TRUE,2
+8c09704258b76332a5c0dc04c753474a,11,task checking,higher,first,receive,give,TRUE,2
+8c09704258b76332a5c0dc04c753474a,12,task checking,higher,second,receive,give,TRUE,2
+86b03f7b6e0622ecff5b2590b12fc2af,1,object carrying,lower,first,receive,receive,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,2,meeting place,equal,first,receive,give,TRUE,1
+86b03f7b6e0622ecff5b2590b12fc2af,3,meal,equal,first,give,give,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,4,meeting place,equal,second,give,give,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,5,song preference,lower,first,give,receive,TRUE,1
+86b03f7b6e0622ecff5b2590b12fc2af,6,gift,higher,first,give,give,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,7,task checking,higher,first,receive,receive,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,8,song preference,lower,second,give,receive,TRUE,1
+86b03f7b6e0622ecff5b2590b12fc2af,9,meal,equal,second,receive,receive,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,10,task checking,higher,second,receive,give,TRUE,1
+86b03f7b6e0622ecff5b2590b12fc2af,11,object carrying,lower,second,receive,receive,FALSE,1
+86b03f7b6e0622ecff5b2590b12fc2af,12,gift,higher,second,give,give,FALSE,1
+a40e4e1dbdd42cde99050a22c5601acc,1,meeting place,higher,first,receive,receive,FALSE,1
+a40e4e1dbdd42cde99050a22c5601acc,2,meal,higher,first,give,receive,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,3,meeting place,higher,second,receive,give,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,4,object carrying,lower,first,give,receive,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,5,gift,equal,first,give,receive,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,6,gift,equal,second,receive,give,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,7,task checking,lower,first,receive,receive,FALSE,1
+a40e4e1dbdd42cde99050a22c5601acc,8,song preference,equal,first,receive,give,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,9,song preference,equal,second,give,receive,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,10,meal,higher,second,give,give,FALSE,1
+a40e4e1dbdd42cde99050a22c5601acc,11,object carrying,lower,second,give,receive,TRUE,1
+a40e4e1dbdd42cde99050a22c5601acc,12,task checking,lower,second,receive,give,TRUE,1
+28da31337644af1402fe64c036bacdae,1,gift,higher,first,give,give,FALSE,2
+28da31337644af1402fe64c036bacdae,2,meal,equal,first,give,give,FALSE,2
+28da31337644af1402fe64c036bacdae,3,meeting place,lower,first,give,receive,TRUE,2
+28da31337644af1402fe64c036bacdae,4,task checking,equal,first,receive,give,TRUE,2
+28da31337644af1402fe64c036bacdae,5,gift,higher,second,give,receive,TRUE,2
+28da31337644af1402fe64c036bacdae,6,song preference,higher,first,receive,give,TRUE,2
+28da31337644af1402fe64c036bacdae,7,object carrying,lower,first,receive,receive,FALSE,2
+28da31337644af1402fe64c036bacdae,8,meal,equal,second,receive,give,TRUE,2
+28da31337644af1402fe64c036bacdae,9,object carrying,lower,second,receive,give,TRUE,2
+28da31337644af1402fe64c036bacdae,10,meeting place,lower,second,give,receive,TRUE,2
+28da31337644af1402fe64c036bacdae,11,song preference,higher,second,receive,give,TRUE,2
+28da31337644af1402fe64c036bacdae,12,task checking,equal,second,give,receive,TRUE,2
+b22d484fd60bc15d3e0823f9a11d9ca3,1,gift,higher,first,give,give,FALSE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,2,task checking,equal,first,give,receive,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,3,meal,equal,first,receive,receive,FALSE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,4,meeting place,lower,first,receive,give,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,5,object carrying,higher,first,receive,receive,FALSE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,6,meal,equal,second,give,receive,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,7,object carrying,higher,second,receive,give,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,8,meeting place,lower,second,receive,give,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,9,task checking,equal,second,receive,receive,FALSE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,10,gift,higher,second,give,receive,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,11,song preference,lower,first,give,receive,TRUE,1
+b22d484fd60bc15d3e0823f9a11d9ca3,12,song preference,lower,second,give,receive,TRUE,1
+26c032c4a87dfbfebab21ff45ee45b77,1,gift,higher,first,give,give,FALSE,2
+26c032c4a87dfbfebab21ff45ee45b77,2,meeting place,lower,first,give,give,FALSE,2
+26c032c4a87dfbfebab21ff45ee45b77,3,meal,equal,first,give,receive,TRUE,2
+26c032c4a87dfbfebab21ff45ee45b77,4,object carrying,lower,first,receive,receive,FALSE,2
+26c032c4a87dfbfebab21ff45ee45b77,5,meeting place,lower,second,give,receive,TRUE,2
+26c032c4a87dfbfebab21ff45ee45b77,6,meal,equal,second,receive,give,TRUE,2
+26c032c4a87dfbfebab21ff45ee45b77,7,gift,higher,second,give,give,FALSE,2
+26c032c4a87dfbfebab21ff45ee45b77,8,song preference,higher,first,receive,give,TRUE,2
+26c032c4a87dfbfebab21ff45ee45b77,9,song preference,higher,second,receive,receive,FALSE,2
+26c032c4a87dfbfebab21ff45ee45b77,10,object carrying,lower,second,receive,give,TRUE,2
+26c032c4a87dfbfebab21ff45ee45b77,11,task checking,equal,first,receive,receive,FALSE,2
+26c032c4a87dfbfebab21ff45ee45b77,12,task checking,equal,second,give,give,FALSE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,1,gift,lower,first,give,give,FALSE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,2,gift,lower,second,give,receive,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,3,meal,equal,first,receive,give,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,4,object carrying,equal,first,give,give,FALSE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,5,song preference,higher,first,give,give,FALSE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,6,song preference,higher,second,give,receive,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,7,meeting place,lower,first,receive,give,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,8,task checking,higher,first,receive,give,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,9,meal,equal,second,give,give,FALSE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,10,meeting place,lower,second,receive,give,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,11,task checking,higher,second,receive,give,TRUE,2
+5a4f7bd246b2b856bf0ffde9120ac53e,12,object carrying,equal,second,receive,receive,FALSE,2
+6fe036320beee82986f627540a6244b2,1,gift,higher,first,give,give,FALSE,2
+6fe036320beee82986f627540a6244b2,2,gift,higher,second,give,receive,TRUE,2
+6fe036320beee82986f627540a6244b2,3,meeting place,equal,first,give,give,FALSE,2
+6fe036320beee82986f627540a6244b2,4,meal,equal,first,receive,receive,FALSE,2
+6fe036320beee82986f627540a6244b2,5,object carrying,lower,first,receive,receive,FALSE,2
+6fe036320beee82986f627540a6244b2,6,object carrying,lower,second,receive,give,TRUE,2
+6fe036320beee82986f627540a6244b2,7,meeting place,equal,second,receive,receive,FALSE,2
+6fe036320beee82986f627540a6244b2,8,song preference,higher,first,receive,give,TRUE,2
+6fe036320beee82986f627540a6244b2,9,meal,equal,second,give,give,FALSE,2
+6fe036320beee82986f627540a6244b2,10,task checking,lower,first,give,give,FALSE,2
+6fe036320beee82986f627540a6244b2,11,song preference,higher,second,receive,give,TRUE,2
+6fe036320beee82986f627540a6244b2,12,task checking,lower,second,give,receive,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,1,object carrying,lower,first,give,give,FALSE,2
+8ffede789b2819f4f5198f00e873cd95,2,gift,lower,first,receive,receive,FALSE,2
+8ffede789b2819f4f5198f00e873cd95,3,song preference,equal,first,give,receive,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,4,gift,lower,second,receive,give,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,5,meeting place,higher,first,receive,give,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,6,object carrying,lower,second,give,receive,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,7,meeting place,higher,second,receive,give,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,8,meal,equal,first,receive,give,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,9,meal,equal,second,give,receive,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,10,song preference,equal,second,receive,receive,FALSE,2
+8ffede789b2819f4f5198f00e873cd95,11,task checking,higher,first,give,receive,TRUE,2
+8ffede789b2819f4f5198f00e873cd95,12,task checking,higher,second,give,receive,TRUE,2
+dad98215429ada3043b07cfb9f66f14c,1,meal,equal,first,receive,receive,FALSE,2
+dad98215429ada3043b07cfb9f66f14c,2,meeting place,higher,first,give,give,FALSE,2
+dad98215429ada3043b07cfb9f66f14c,3,meal,equal,second,give,give,FALSE,2
+dad98215429ada3043b07cfb9f66f14c,4,gift,lower,first,give,receive,TRUE,2
+dad98215429ada3043b07cfb9f66f14c,5,gift,lower,second,give,receive,TRUE,2
+dad98215429ada3043b07cfb9f66f14c,6,meeting place,higher,second,give,give,FALSE,2
+dad98215429ada3043b07cfb9f66f14c,7,task checking,equal,first,give,give,FALSE,2
+dad98215429ada3043b07cfb9f66f14c,8,object carrying,higher,first,receive,give,TRUE,2
+dad98215429ada3043b07cfb9f66f14c,9,task checking,equal,second,receive,give,TRUE,2
+dad98215429ada3043b07cfb9f66f14c,10,object carrying,higher,second,receive,give,TRUE,2
+dad98215429ada3043b07cfb9f66f14c,11,song preference,lower,first,receive,receive,FALSE,2
+dad98215429ada3043b07cfb9f66f14c,12,song preference,lower,second,receive,receive,FALSE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,1,gift,higher,first,receive,give,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,2,meeting place,higher,first,give,give,FALSE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,3,meal,lower,first,receive,receive,FALSE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,4,task checking,equal,first,receive,give,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,5,meeting place,higher,second,give,receive,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,6,meal,lower,second,receive,give,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,7,object carrying,lower,first,give,receive,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,8,gift,higher,second,receive,give,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,9,object carrying,lower,second,give,receive,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,10,song preference,equal,first,give,give,FALSE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,11,song preference,equal,second,receive,give,TRUE,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,12,task checking,equal,second,give,give,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,1,meeting place,lower,first,receive,give,TRUE,2
+8d6adaf5993e95ef58e0ea6b6d524157,2,gift,equal,first,give,give,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,3,song preference,equal,first,receive,receive,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,4,object carrying,higher,first,receive,give,TRUE,2
+8d6adaf5993e95ef58e0ea6b6d524157,5,meal,lower,first,give,receive,TRUE,2
+8d6adaf5993e95ef58e0ea6b6d524157,6,meal,lower,second,give,receive,TRUE,2
+8d6adaf5993e95ef58e0ea6b6d524157,7,object carrying,higher,second,receive,give,TRUE,2
+8d6adaf5993e95ef58e0ea6b6d524157,8,gift,equal,second,receive,receive,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,9,task checking,higher,first,give,give,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,10,meeting place,lower,second,receive,receive,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,11,song preference,equal,second,give,give,FALSE,2
+8d6adaf5993e95ef58e0ea6b6d524157,12,task checking,higher,second,give,receive,TRUE,2
+35df536325a103ad0fc646e70c06ab1e,1,song preference,lower,first,give,give,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,2,song preference,lower,second,give,receive,TRUE,2
+35df536325a103ad0fc646e70c06ab1e,3,gift,equal,first,give,receive,TRUE,2
+35df536325a103ad0fc646e70c06ab1e,4,gift,equal,second,receive,receive,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,5,object carrying,higher,first,receive,give,TRUE,2
+35df536325a103ad0fc646e70c06ab1e,6,meal,lower,first,receive,receive,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,7,task checking,higher,first,give,give,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,8,task checking,higher,second,give,give,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,9,meal,lower,second,receive,receive,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,10,meeting place,equal,first,receive,receive,FALSE,2
+35df536325a103ad0fc646e70c06ab1e,11,meeting place,equal,second,give,receive,TRUE,2
+35df536325a103ad0fc646e70c06ab1e,12,object carrying,higher,second,receive,receive,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,1,meeting place,equal,first,receive,give,TRUE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,2,meeting place,equal,second,give,give,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,3,task checking,higher,first,receive,give,TRUE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,4,task checking,higher,second,receive,give,TRUE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,5,meal,lower,first,receive,receive,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,6,song preference,lower,first,give,give,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,7,song preference,lower,second,give,receive,TRUE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,8,object carrying,higher,first,give,give,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,9,gift,equal,first,give,give,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,10,gift,equal,second,receive,receive,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,11,meal,lower,second,receive,receive,FALSE,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,12,object carrying,higher,second,give,give,FALSE,2
+86a3b694fcb3727c077c09bb7f6eafa8,1,meal,lower,first,give,receive,TRUE,1
+86a3b694fcb3727c077c09bb7f6eafa8,2,meal,lower,second,give,receive,TRUE,1
+86a3b694fcb3727c077c09bb7f6eafa8,3,object carrying,higher,first,give,give,FALSE,1
+86a3b694fcb3727c077c09bb7f6eafa8,4,meeting place,higher,first,receive,give,TRUE,1
+86a3b694fcb3727c077c09bb7f6eafa8,5,gift,lower,first,receive,give,TRUE,1
+86a3b694fcb3727c077c09bb7f6eafa8,6,gift,lower,second,receive,give,TRUE,1
+86a3b694fcb3727c077c09bb7f6eafa8,7,song preference,equal,first,give,give,FALSE,1
+86a3b694fcb3727c077c09bb7f6eafa8,8,task checking,equal,first,receive,receive,FALSE,1
+86a3b694fcb3727c077c09bb7f6eafa8,9,song preference,equal,second,receive,receive,FALSE,1
+86a3b694fcb3727c077c09bb7f6eafa8,10,object carrying,higher,second,give,receive,TRUE,1
+86a3b694fcb3727c077c09bb7f6eafa8,11,task checking,equal,second,give,give,FALSE,1
+86a3b694fcb3727c077c09bb7f6eafa8,12,meeting place,higher,second,receive,give,TRUE,1
+7e126c9919fc41f3ccea4d81740d1a74,1,song preference,higher,first,receive,give,TRUE,2
+7e126c9919fc41f3ccea4d81740d1a74,2,meal,higher,first,give,give,FALSE,2
+7e126c9919fc41f3ccea4d81740d1a74,3,meal,higher,second,give,receive,TRUE,2
+7e126c9919fc41f3ccea4d81740d1a74,4,gift,equal,first,give,give,FALSE,2
+7e126c9919fc41f3ccea4d81740d1a74,5,gift,equal,second,receive,receive,FALSE,2
+7e126c9919fc41f3ccea4d81740d1a74,6,meeting place,lower,first,receive,give,TRUE,2
+7e126c9919fc41f3ccea4d81740d1a74,7,object carrying,equal,first,receive,give,TRUE,2
+7e126c9919fc41f3ccea4d81740d1a74,8,task checking,lower,first,give,give,FALSE,2
+7e126c9919fc41f3ccea4d81740d1a74,9,song preference,higher,second,receive,give,TRUE,2
+7e126c9919fc41f3ccea4d81740d1a74,10,meeting place,lower,second,receive,give,TRUE,2
+7e126c9919fc41f3ccea4d81740d1a74,11,object carrying,equal,second,give,give,FALSE,2
+7e126c9919fc41f3ccea4d81740d1a74,12,task checking,lower,second,give,give,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,1,gift,higher,first,give,give,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,2,meeting place,equal,first,receive,receive,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,3,gift,higher,second,give,receive,TRUE,2
+fe68e522573afe87c8419d04f9e53b9b,4,meal,lower,first,receive,receive,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,5,meeting place,equal,second,give,give,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,6,meal,lower,second,receive,give,TRUE,2
+fe68e522573afe87c8419d04f9e53b9b,7,song preference,lower,first,give,receive,TRUE,2
+fe68e522573afe87c8419d04f9e53b9b,8,object carrying,higher,first,receive,receive,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,9,task checking,equal,first,give,receive,TRUE,2
+fe68e522573afe87c8419d04f9e53b9b,10,object carrying,higher,second,receive,give,TRUE,2
+fe68e522573afe87c8419d04f9e53b9b,11,task checking,equal,second,receive,receive,FALSE,2
+fe68e522573afe87c8419d04f9e53b9b,12,song preference,lower,second,give,receive,TRUE,2
+65cb63011cf59f5f0f223e058bdd610a,1,meal,lower,first,receive,receive,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,2,meal,lower,second,receive,receive,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,3,gift,higher,first,give,give,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,4,task checking,lower,first,give,give,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,5,object carrying,equal,first,give,give,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,6,meeting place,higher,first,receive,give,TRUE,2
+65cb63011cf59f5f0f223e058bdd610a,7,gift,higher,second,give,give,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,8,meeting place,higher,second,receive,give,TRUE,2
+65cb63011cf59f5f0f223e058bdd610a,9,song preference,equal,first,receive,receive,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,10,task checking,lower,second,give,receive,TRUE,2
+65cb63011cf59f5f0f223e058bdd610a,11,song preference,equal,second,give,give,FALSE,2
+65cb63011cf59f5f0f223e058bdd610a,12,object carrying,equal,second,receive,receive,FALSE,2
+6fc9ec5f325981ee44ef655b0e2551ff,1,gift,lower,first,receive,give,TRUE,2
+6fc9ec5f325981ee44ef655b0e2551ff,2,gift,lower,second,receive,receive,FALSE,2
+6fc9ec5f325981ee44ef655b0e2551ff,3,song preference,equal,first,receive,receive,FALSE,2
+6fc9ec5f325981ee44ef655b0e2551ff,4,object carrying,higher,first,give,receive,TRUE,2
+6fc9ec5f325981ee44ef655b0e2551ff,5,song preference,equal,second,give,receive,TRUE,2
+6fc9ec5f325981ee44ef655b0e2551ff,6,meeting place,equal,first,give,give,FALSE,2
+6fc9ec5f325981ee44ef655b0e2551ff,7,object carrying,higher,second,give,receive,TRUE,2
+6fc9ec5f325981ee44ef655b0e2551ff,8,meal,lower,first,give,give,FALSE,2
+6fc9ec5f325981ee44ef655b0e2551ff,9,meeting place,equal,second,receive,receive,FALSE,2
+6fc9ec5f325981ee44ef655b0e2551ff,10,task checking,higher,first,receive,give,TRUE,2
+6fc9ec5f325981ee44ef655b0e2551ff,11,task checking,higher,second,receive,give,TRUE,2
+6fc9ec5f325981ee44ef655b0e2551ff,12,meal,lower,second,give,receive,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,1,gift,higher,first,give,receive,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,2,meeting place,lower,first,receive,receive,FALSE,2
+6634465d0966368c7c96639d65a8a0e9,3,song preference,equal,first,give,give,FALSE,2
+6634465d0966368c7c96639d65a8a0e9,4,task checking,lower,first,give,receive,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,5,task checking,lower,second,give,give,FALSE,2
+6634465d0966368c7c96639d65a8a0e9,6,meeting place,lower,second,receive,give,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,7,gift,higher,second,give,receive,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,8,object carrying,higher,first,receive,give,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,9,meal,equal,first,receive,receive,FALSE,2
+6634465d0966368c7c96639d65a8a0e9,10,object carrying,higher,second,receive,give,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,11,meal,equal,second,give,receive,TRUE,2
+6634465d0966368c7c96639d65a8a0e9,12,song preference,equal,second,receive,give,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,1,object carrying,lower,first,receive,receive,FALSE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,2,song preference,equal,first,receive,give,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,3,gift,equal,first,give,receive,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,4,task checking,higher,first,receive,receive,FALSE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,5,meal,lower,first,give,receive,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,6,gift,equal,second,receive,give,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,7,meeting place,higher,first,give,give,FALSE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,8,task checking,higher,second,receive,receive,FALSE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,9,meeting place,higher,second,give,receive,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,10,song preference,equal,second,give,receive,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,11,meal,lower,second,give,receive,TRUE,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,12,object carrying,lower,second,receive,receive,FALSE,2
+1138ea55d79aa4a5d41635d45b9b0cde,1,gift,equal,first,receive,give,TRUE,2
+1138ea55d79aa4a5d41635d45b9b0cde,2,gift,equal,second,give,give,FALSE,2
+1138ea55d79aa4a5d41635d45b9b0cde,3,meal,higher,first,give,give,FALSE,2
+1138ea55d79aa4a5d41635d45b9b0cde,4,meal,higher,second,give,give,FALSE,2
+1138ea55d79aa4a5d41635d45b9b0cde,5,task checking,lower,first,receive,give,TRUE,2
+1138ea55d79aa4a5d41635d45b9b0cde,6,object carrying,higher,first,receive,give,TRUE,2
+1138ea55d79aa4a5d41635d45b9b0cde,7,task checking,lower,second,receive,give,TRUE,2
+1138ea55d79aa4a5d41635d45b9b0cde,8,meeting place,lower,first,give,receive,TRUE,2
+1138ea55d79aa4a5d41635d45b9b0cde,9,song preference,equal,first,give,give,FALSE,2
+1138ea55d79aa4a5d41635d45b9b0cde,10,meeting place,lower,second,give,receive,TRUE,2
+1138ea55d79aa4a5d41635d45b9b0cde,11,song preference,equal,second,receive,receive,FALSE,2
+1138ea55d79aa4a5d41635d45b9b0cde,12,object carrying,higher,second,receive,give,TRUE,2
+3df91cc02d8ba47c1b7a412584691195,1,meal,equal,first,receive,give,TRUE,1
+3df91cc02d8ba47c1b7a412584691195,2,meal,equal,second,give,receive,TRUE,1
+3df91cc02d8ba47c1b7a412584691195,3,gift,higher,first,receive,receive,FALSE,1
+3df91cc02d8ba47c1b7a412584691195,4,meeting place,lower,first,receive,receive,FALSE,1
+3df91cc02d8ba47c1b7a412584691195,5,object carrying,higher,first,give,receive,TRUE,1
+3df91cc02d8ba47c1b7a412584691195,6,gift,higher,second,receive,receive,FALSE,1
+3df91cc02d8ba47c1b7a412584691195,7,object carrying,higher,second,give,receive,TRUE,1
+3df91cc02d8ba47c1b7a412584691195,8,task checking,equal,first,give,give,FALSE,1
+3df91cc02d8ba47c1b7a412584691195,9,task checking,equal,second,receive,receive,FALSE,1
+3df91cc02d8ba47c1b7a412584691195,10,song preference,lower,first,give,receive,TRUE,1
+3df91cc02d8ba47c1b7a412584691195,11,meeting place,lower,second,receive,receive,FALSE,1
+3df91cc02d8ba47c1b7a412584691195,12,song preference,lower,second,give,receive,TRUE,1
+84defbdd9b8d74ef896d09bfc2fa127a,1,meal,higher,first,give,give,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,2,gift,equal,first,receive,give,TRUE,2
+84defbdd9b8d74ef896d09bfc2fa127a,3,gift,equal,second,give,give,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,4,song preference,equal,first,give,give,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,5,meeting place,higher,first,receive,receive,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,6,meal,higher,second,give,give,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,7,object carrying,lower,first,receive,receive,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,8,meeting place,higher,second,receive,receive,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,9,task checking,lower,first,give,give,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,10,song preference,equal,second,receive,give,TRUE,2
+84defbdd9b8d74ef896d09bfc2fa127a,11,object carrying,lower,second,receive,receive,FALSE,2
+84defbdd9b8d74ef896d09bfc2fa127a,12,task checking,lower,second,give,give,FALSE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,1,task checking,higher,first,receive,give,TRUE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,2,meeting place,equal,first,give,give,FALSE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,3,gift,lower,first,give,give,FALSE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,4,song preference,equal,first,receive,give,TRUE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,5,object carrying,lower,first,receive,receive,FALSE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,6,meal,higher,first,give,give,FALSE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,7,task checking,higher,second,receive,give,TRUE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,8,object carrying,lower,second,receive,give,TRUE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,9,song preference,equal,second,give,give,FALSE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,10,gift,lower,second,give,receive,TRUE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,11,meal,higher,second,give,receive,TRUE,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,12,meeting place,equal,second,receive,receive,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,1,meeting place,higher,first,give,give,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,2,meal,equal,first,receive,give,TRUE,2
+78a1d995a1fc759c4f3e60228d1c41e6,3,gift,lower,first,receive,receive,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,4,meeting place,higher,second,give,give,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,5,gift,lower,second,receive,receive,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,6,meal,equal,second,give,give,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,7,object carrying,lower,first,give,give,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,8,object carrying,lower,second,give,give,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,9,task checking,equal,first,give,receive,TRUE,2
+78a1d995a1fc759c4f3e60228d1c41e6,10,song preference,higher,first,receive,give,TRUE,2
+78a1d995a1fc759c4f3e60228d1c41e6,11,task checking,equal,second,receive,receive,FALSE,2
+78a1d995a1fc759c4f3e60228d1c41e6,12,song preference,higher,second,receive,give,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,1,meal,higher,first,receive,give,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,2,meal,higher,second,receive,give,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,3,gift,lower,first,receive,receive,FALSE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,4,song preference,equal,first,give,receive,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,5,meeting place,lower,first,give,receive,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,6,song preference,equal,second,receive,give,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,7,meeting place,lower,second,give,receive,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,8,object carrying,higher,first,give,give,FALSE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,9,task checking,equal,first,receive,give,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,10,object carrying,higher,second,give,give,FALSE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,11,task checking,equal,second,give,receive,TRUE,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,12,gift,lower,second,receive,give,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,1,task checking,equal,first,receive,receive,FALSE,2
+4becbb39bc8a5b19af164bfee36517f3,2,gift,equal,first,give,give,FALSE,2
+4becbb39bc8a5b19af164bfee36517f3,3,object carrying,lower,first,receive,give,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,4,song preference,lower,first,give,give,FALSE,2
+4becbb39bc8a5b19af164bfee36517f3,5,task checking,equal,second,give,give,FALSE,2
+4becbb39bc8a5b19af164bfee36517f3,6,meeting place,higher,first,receive,give,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,7,meeting place,higher,second,receive,give,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,8,meal,higher,first,give,receive,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,9,object carrying,lower,second,receive,give,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,10,song preference,lower,second,give,receive,TRUE,2
+4becbb39bc8a5b19af164bfee36517f3,11,gift,equal,second,receive,receive,FALSE,2
+4becbb39bc8a5b19af164bfee36517f3,12,meal,higher,second,give,receive,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,1,gift,lower,first,receive,receive,FALSE,2
+d6c5fd9737390989ccaaeac2a441fc0c,2,gift,lower,second,receive,give,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,3,object carrying,lower,first,give,receive,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,4,task checking,higher,first,give,give,FALSE,2
+d6c5fd9737390989ccaaeac2a441fc0c,5,object carrying,lower,second,give,receive,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,6,meal,higher,first,receive,give,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,7,meal,higher,second,receive,receive,FALSE,2
+d6c5fd9737390989ccaaeac2a441fc0c,8,task checking,higher,second,give,receive,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,9,meeting place,equal,first,give,give,FALSE,2
+d6c5fd9737390989ccaaeac2a441fc0c,10,song preference,equal,first,receive,give,TRUE,2
+d6c5fd9737390989ccaaeac2a441fc0c,11,song preference,equal,second,give,give,FALSE,2
+d6c5fd9737390989ccaaeac2a441fc0c,12,meeting place,equal,second,receive,give,TRUE,2
+b1ebb9e280eea98ee4735cd35e6ba139,1,gift,equal,first,give,give,FALSE,0
+b1ebb9e280eea98ee4735cd35e6ba139,2,meal,higher,first,give,receive,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,3,meeting place,lower,first,receive,receive,FALSE,0
+b1ebb9e280eea98ee4735cd35e6ba139,4,task checking,lower,first,give,receive,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,5,meal,higher,second,give,receive,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,6,gift,equal,second,receive,receive,FALSE,0
+b1ebb9e280eea98ee4735cd35e6ba139,7,task checking,lower,second,give,receive,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,8,song preference,higher,first,receive,give,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,9,meeting place,lower,second,receive,give,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,10,object carrying,equal,first,receive,give,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,11,song preference,higher,second,receive,give,TRUE,0
+b1ebb9e280eea98ee4735cd35e6ba139,12,object carrying,equal,second,give,give,FALSE,0
+4b7319abd521f7b9ad6533858f6e7d3d,1,meal,equal,first,give,receive,TRUE,2
+4b7319abd521f7b9ad6533858f6e7d3d,2,song preference,equal,first,receive,receive,FALSE,2
+4b7319abd521f7b9ad6533858f6e7d3d,3,object carrying,lower,first,receive,receive,FALSE,2
+4b7319abd521f7b9ad6533858f6e7d3d,4,gift,lower,first,give,give,FALSE,2
+4b7319abd521f7b9ad6533858f6e7d3d,5,meal,equal,second,receive,give,TRUE,2
+4b7319abd521f7b9ad6533858f6e7d3d,6,task checking,higher,first,receive,give,TRUE,2
+4b7319abd521f7b9ad6533858f6e7d3d,7,task checking,higher,second,receive,give,TRUE,2
+4b7319abd521f7b9ad6533858f6e7d3d,8,meeting place,higher,first,give,give,FALSE,2
+4b7319abd521f7b9ad6533858f6e7d3d,9,song preference,equal,second,give,give,FALSE,2
+4b7319abd521f7b9ad6533858f6e7d3d,10,object carrying,lower,second,receive,give,TRUE,2
+4b7319abd521f7b9ad6533858f6e7d3d,11,meeting place,higher,second,give,give,FALSE,2
+4b7319abd521f7b9ad6533858f6e7d3d,12,gift,lower,second,give,give,FALSE,2
+3bfc65f913e62dc20eb1a8ad21b89ed6,1,gift,equal,first,receive,give,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,2,object carrying,higher,first,receive,give,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,3,gift,equal,second,give,receive,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,4,object carrying,higher,second,receive,give,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,5,meal,lower,first,receive,give,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,6,meeting place,equal,first,give,give,FALSE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,7,meeting place,equal,second,receive,give,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,8,song preference,lower,first,give,give,FALSE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,9,song preference,lower,second,give,give,FALSE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,10,meal,lower,second,receive,give,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,11,task checking,higher,first,give,receive,TRUE,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,12,task checking,higher,second,give,receive,TRUE,1
+57b1b5a3e1ea96fd12edd9259f6693fc,1,meeting place,lower,first,receive,give,TRUE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,2,gift,higher,first,give,receive,TRUE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,3,object carrying,equal,first,receive,give,TRUE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,4,gift,higher,second,give,receive,TRUE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,5,song preference,equal,first,give,give,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,6,meeting place,lower,second,receive,receive,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,7,object carrying,equal,second,give,give,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,8,meal,higher,first,receive,receive,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,9,song preference,equal,second,receive,receive,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,10,task checking,lower,first,give,give,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,11,task checking,lower,second,give,give,FALSE,2
+57b1b5a3e1ea96fd12edd9259f6693fc,12,meal,higher,second,receive,give,TRUE,2
+07a6758e69b20ed500abfaf23f45e1ac,1,meeting place,higher,first,give,give,FALSE,2
+07a6758e69b20ed500abfaf23f45e1ac,2,task checking,lower,first,give,give,FALSE,2
+07a6758e69b20ed500abfaf23f45e1ac,3,song preference,equal,first,receive,give,TRUE,2
+07a6758e69b20ed500abfaf23f45e1ac,4,task checking,lower,second,give,give,FALSE,2
+07a6758e69b20ed500abfaf23f45e1ac,5,meal,higher,first,receive,receive,FALSE,2
+07a6758e69b20ed500abfaf23f45e1ac,6,song preference,equal,second,give,receive,TRUE,2
+07a6758e69b20ed500abfaf23f45e1ac,7,object carrying,equal,first,give,give,FALSE,2
+07a6758e69b20ed500abfaf23f45e1ac,8,object carrying,equal,second,receive,receive,FALSE,2
+07a6758e69b20ed500abfaf23f45e1ac,9,meal,higher,second,receive,give,TRUE,2
+07a6758e69b20ed500abfaf23f45e1ac,10,meeting place,higher,second,give,receive,TRUE,2
+07a6758e69b20ed500abfaf23f45e1ac,11,gift,lower,first,receive,give,TRUE,2
+07a6758e69b20ed500abfaf23f45e1ac,12,gift,lower,second,receive,give,TRUE,2
+157a1562c86763444ae49a9f7d81d882,1,meal,equal,first,receive,give,TRUE,2
+157a1562c86763444ae49a9f7d81d882,2,song preference,lower,first,receive,give,TRUE,2
+157a1562c86763444ae49a9f7d81d882,3,meal,equal,second,give,give,FALSE,2
+157a1562c86763444ae49a9f7d81d882,4,meeting place,lower,first,give,give,FALSE,2
+157a1562c86763444ae49a9f7d81d882,5,task checking,higher,first,receive,receive,FALSE,2
+157a1562c86763444ae49a9f7d81d882,6,gift,equal,first,give,give,FALSE,2
+157a1562c86763444ae49a9f7d81d882,7,gift,equal,second,receive,receive,FALSE,2
+157a1562c86763444ae49a9f7d81d882,8,object carrying,higher,first,give,give,FALSE,2
+157a1562c86763444ae49a9f7d81d882,9,song preference,lower,second,receive,receive,FALSE,2
+157a1562c86763444ae49a9f7d81d882,10,meeting place,lower,second,give,receive,TRUE,2
+157a1562c86763444ae49a9f7d81d882,11,object carrying,higher,second,give,receive,TRUE,2
+157a1562c86763444ae49a9f7d81d882,12,task checking,higher,second,receive,give,TRUE,2
+5564fef5870fc31325f5def72c973646,1,meal,equal,first,give,give,FALSE,2
+5564fef5870fc31325f5def72c973646,2,task checking,lower,first,give,give,FALSE,2
+5564fef5870fc31325f5def72c973646,3,gift,higher,first,give,give,FALSE,2
+5564fef5870fc31325f5def72c973646,4,meal,equal,second,receive,receive,FALSE,2
+5564fef5870fc31325f5def72c973646,5,gift,higher,second,give,receive,TRUE,2
+5564fef5870fc31325f5def72c973646,6,meeting place,equal,first,receive,give,TRUE,2
+5564fef5870fc31325f5def72c973646,7,object carrying,lower,first,receive,receive,FALSE,2
+5564fef5870fc31325f5def72c973646,8,object carrying,lower,second,receive,give,TRUE,2
+5564fef5870fc31325f5def72c973646,9,song preference,higher,first,receive,give,TRUE,2
+5564fef5870fc31325f5def72c973646,10,song preference,higher,second,receive,receive,FALSE,2
+5564fef5870fc31325f5def72c973646,11,meeting place,equal,second,give,receive,TRUE,2
+5564fef5870fc31325f5def72c973646,12,task checking,lower,second,give,receive,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,1,task checking,equal,first,receive,give,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,2,object carrying,equal,first,give,give,FALSE,2
+9ecc05b702cb7cc9797b12192d033ce6,3,object carrying,equal,second,receive,give,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,4,song preference,higher,first,give,give,FALSE,2
+9ecc05b702cb7cc9797b12192d033ce6,5,gift,lower,first,receive,receive,FALSE,2
+9ecc05b702cb7cc9797b12192d033ce6,6,meal,higher,first,receive,give,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,7,task checking,equal,second,give,give,FALSE,2
+9ecc05b702cb7cc9797b12192d033ce6,8,gift,lower,second,receive,receive,FALSE,2
+9ecc05b702cb7cc9797b12192d033ce6,9,meeting place,lower,first,give,receive,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,10,meal,higher,second,receive,give,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,11,meeting place,lower,second,give,receive,TRUE,2
+9ecc05b702cb7cc9797b12192d033ce6,12,song preference,higher,second,give,receive,TRUE,2
+52999a764b402432076560a51d64c47d,1,task checking,higher,first,give,receive,TRUE,1
+52999a764b402432076560a51d64c47d,2,meeting place,higher,first,receive,give,TRUE,1
+52999a764b402432076560a51d64c47d,3,meal,lower,first,receive,give,TRUE,1
+52999a764b402432076560a51d64c47d,4,task checking,higher,second,give,give,FALSE,1
+52999a764b402432076560a51d64c47d,5,gift,equal,first,receive,receive,FALSE,1
+52999a764b402432076560a51d64c47d,6,gift,equal,second,give,give,FALSE,1
+52999a764b402432076560a51d64c47d,7,song preference,equal,first,give,give,FALSE,1
+52999a764b402432076560a51d64c47d,8,object carrying,lower,first,give,receive,TRUE,1
+52999a764b402432076560a51d64c47d,9,object carrying,lower,second,give,give,FALSE,1
+52999a764b402432076560a51d64c47d,10,song preference,equal,second,receive,receive,FALSE,1
+52999a764b402432076560a51d64c47d,11,meal,lower,second,receive,give,TRUE,1
+52999a764b402432076560a51d64c47d,12,meeting place,higher,second,receive,receive,FALSE,1
+3d11224be9508999d8987fc0dbc59fd1,1,meeting place,equal,first,give,receive,TRUE,2
+3d11224be9508999d8987fc0dbc59fd1,2,gift,higher,first,receive,give,TRUE,2
+3d11224be9508999d8987fc0dbc59fd1,3,gift,higher,second,receive,receive,FALSE,2
+3d11224be9508999d8987fc0dbc59fd1,4,song preference,equal,first,receive,receive,FALSE,2
+3d11224be9508999d8987fc0dbc59fd1,5,meal,higher,first,give,receive,TRUE,2
+3d11224be9508999d8987fc0dbc59fd1,6,object carrying,lower,first,receive,receive,FALSE,2
+3d11224be9508999d8987fc0dbc59fd1,7,meeting place,equal,second,receive,give,TRUE,2
+3d11224be9508999d8987fc0dbc59fd1,8,song preference,equal,second,give,receive,TRUE,2
+3d11224be9508999d8987fc0dbc59fd1,9,meal,higher,second,give,give,FALSE,2
+3d11224be9508999d8987fc0dbc59fd1,10,task checking,lower,first,give,receive,TRUE,2
+3d11224be9508999d8987fc0dbc59fd1,11,object carrying,lower,second,receive,receive,FALSE,2
+3d11224be9508999d8987fc0dbc59fd1,12,task checking,lower,second,give,receive,TRUE,2
+84bf233b365100ef3ca73ee4673c8cec,1,task checking,lower,first,receive,give,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,2,gift,lower,first,give,receive,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,3,gift,lower,second,give,receive,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,4,meal,equal,first,receive,give,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,5,meeting place,equal,first,give,give,FALSE,1
+84bf233b365100ef3ca73ee4673c8cec,6,object carrying,higher,first,give,receive,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,7,meal,equal,second,give,give,FALSE,1
+84bf233b365100ef3ca73ee4673c8cec,8,task checking,lower,second,receive,receive,FALSE,1
+84bf233b365100ef3ca73ee4673c8cec,9,meeting place,equal,second,receive,give,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,10,object carrying,higher,second,give,give,FALSE,1
+84bf233b365100ef3ca73ee4673c8cec,11,song preference,higher,first,receive,give,TRUE,1
+84bf233b365100ef3ca73ee4673c8cec,12,song preference,higher,second,receive,receive,FALSE,1
+f0b7014ce2363cd998f910069b9b504b,1,object carrying,lower,first,give,receive,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,2,gift,equal,first,receive,give,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,3,song preference,equal,first,give,give,FALSE,2
+f0b7014ce2363cd998f910069b9b504b,4,task checking,higher,first,give,give,FALSE,2
+f0b7014ce2363cd998f910069b9b504b,5,task checking,higher,second,give,receive,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,6,meal,higher,first,receive,give,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,7,object carrying,lower,second,give,receive,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,8,gift,equal,second,give,receive,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,9,meeting place,lower,first,receive,receive,FALSE,2
+f0b7014ce2363cd998f910069b9b504b,10,meeting place,lower,second,receive,give,TRUE,2
+f0b7014ce2363cd998f910069b9b504b,11,song preference,equal,second,receive,receive,FALSE,2
+f0b7014ce2363cd998f910069b9b504b,12,meal,higher,second,receive,give,TRUE,2
+c1cddba7f4b1ef57caf8ef9610d0d156,1,meeting place,higher,first,receive,give,TRUE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,2,gift,lower,first,give,give,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,3,meeting place,higher,second,receive,receive,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,4,gift,lower,second,give,give,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,5,task checking,higher,first,give,give,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,6,meal,equal,first,receive,receive,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,7,object carrying,equal,first,give,give,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,8,song preference,lower,first,receive,receive,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,9,task checking,higher,second,give,give,FALSE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,10,meal,equal,second,give,receive,TRUE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,11,object carrying,equal,second,receive,give,TRUE,1
+c1cddba7f4b1ef57caf8ef9610d0d156,12,song preference,lower,second,receive,receive,FALSE,1
+a2c03b2e6ceb28fc51b3d39fa003a083,1,task checking,lower,first,receive,give,TRUE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,2,gift,higher,first,give,give,FALSE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,3,meeting place,equal,first,give,give,FALSE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,4,meal,lower,first,give,receive,TRUE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,5,object carrying,higher,first,receive,give,TRUE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,6,meeting place,equal,second,receive,receive,FALSE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,7,task checking,lower,second,receive,give,TRUE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,8,object carrying,higher,second,receive,give,TRUE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,9,gift,higher,second,give,receive,TRUE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,10,song preference,equal,first,receive,receive,FALSE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,11,song preference,equal,second,give,give,FALSE,2
+a2c03b2e6ceb28fc51b3d39fa003a083,12,meal,lower,second,give,receive,TRUE,2
+5310c4e011d698efc803932786855f4c,1,task checking,higher,first,receive,give,TRUE,1
+5310c4e011d698efc803932786855f4c,2,gift,equal,first,give,give,FALSE,1
+5310c4e011d698efc803932786855f4c,3,gift,equal,second,receive,receive,FALSE,1
+5310c4e011d698efc803932786855f4c,4,meal,lower,first,give,receive,TRUE,1
+5310c4e011d698efc803932786855f4c,5,object carrying,lower,first,receive,receive,FALSE,1
+5310c4e011d698efc803932786855f4c,6,meeting place,higher,first,give,give,FALSE,1
+5310c4e011d698efc803932786855f4c,7,meal,lower,second,give,give,FALSE,1
+5310c4e011d698efc803932786855f4c,8,song preference,equal,first,receive,receive,FALSE,1
+5310c4e011d698efc803932786855f4c,9,object carrying,lower,second,receive,give,TRUE,1
+5310c4e011d698efc803932786855f4c,10,task checking,higher,second,receive,give,TRUE,1
+5310c4e011d698efc803932786855f4c,11,meeting place,higher,second,give,receive,TRUE,1
+5310c4e011d698efc803932786855f4c,12,song preference,equal,second,give,give,FALSE,1
+5fd7293582b34dde273a48be5c1fad24,1,song preference,equal,first,give,give,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,2,gift,higher,first,give,give,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,3,object carrying,lower,first,receive,receive,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,4,task checking,lower,first,give,give,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,5,object carrying,lower,second,receive,receive,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,6,meal,higher,first,receive,receive,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,7,meal,higher,second,receive,receive,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,8,gift,higher,second,give,give,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,9,song preference,equal,second,receive,give,TRUE,2
+5fd7293582b34dde273a48be5c1fad24,10,meeting place,equal,first,receive,receive,FALSE,2
+5fd7293582b34dde273a48be5c1fad24,11,meeting place,equal,second,give,receive,TRUE,2
+5fd7293582b34dde273a48be5c1fad24,12,task checking,lower,second,give,give,FALSE,2
+ed2b1f355d21ed50e480db87c2da08af,1,task checking,higher,first,give,receive,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,2,task checking,higher,second,give,receive,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,3,object carrying,equal,first,give,give,FALSE,2
+ed2b1f355d21ed50e480db87c2da08af,4,meeting place,higher,first,receive,give,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,5,gift,equal,first,receive,give,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,6,meal,lower,first,receive,receive,FALSE,2
+ed2b1f355d21ed50e480db87c2da08af,7,song preference,lower,first,give,receive,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,8,gift,equal,second,give,receive,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,9,meeting place,higher,second,receive,give,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,10,song preference,lower,second,give,receive,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,11,object carrying,equal,second,receive,give,TRUE,2
+ed2b1f355d21ed50e480db87c2da08af,12,meal,lower,second,receive,receive,FALSE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,1,meal,higher,first,give,give,FALSE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,2,meeting place,equal,first,receive,give,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,3,meeting place,equal,second,give,receive,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,4,gift,lower,first,give,give,FALSE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,5,object carrying,lower,first,receive,give,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,6,task checking,equal,first,give,give,FALSE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,7,object carrying,lower,second,receive,give,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,8,task checking,equal,second,receive,give,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,9,song preference,higher,first,receive,give,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,10,gift,lower,second,give,give,FALSE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,11,song preference,higher,second,receive,give,TRUE,2
+dfa30c3527ec10fa6d151ef8c09d56d4,12,meal,higher,second,give,receive,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,1,meeting place,equal,first,give,give,FALSE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,2,meeting place,equal,second,receive,receive,FALSE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,3,task checking,lower,first,receive,give,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,4,song preference,higher,first,receive,give,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,5,song preference,higher,second,receive,receive,FALSE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,6,meal,lower,first,give,receive,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,7,object carrying,equal,first,receive,give,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,8,object carrying,equal,second,give,give,FALSE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,9,gift,higher,first,give,receive,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,10,gift,higher,second,give,receive,TRUE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,11,meal,lower,second,give,give,FALSE,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,12,task checking,lower,second,receive,give,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,1,song preference,higher,first,receive,give,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,2,gift,equal,first,receive,give,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,3,object carrying,higher,first,give,give,FALSE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,4,object carrying,higher,second,give,receive,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,5,task checking,lower,first,receive,give,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,6,song preference,higher,second,receive,give,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,7,meal,equal,first,give,give,FALSE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,8,meeting place,lower,first,give,receive,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,9,meeting place,lower,second,give,receive,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,10,meal,equal,second,receive,receive,FALSE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,11,task checking,lower,second,receive,give,TRUE,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,12,gift,equal,second,give,give,FALSE,2
+11fa9920f3438a37d684e4043699a2fb,1,meeting place,equal,first,give,give,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,2,object carrying,lower,first,receive,receive,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,3,meal,higher,first,receive,give,TRUE,1
+11fa9920f3438a37d684e4043699a2fb,4,meeting place,equal,second,receive,receive,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,5,song preference,equal,first,receive,receive,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,6,song preference,equal,second,give,give,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,7,meal,higher,second,receive,give,TRUE,1
+11fa9920f3438a37d684e4043699a2fb,8,gift,lower,first,give,receive,TRUE,1
+11fa9920f3438a37d684e4043699a2fb,9,task checking,higher,first,give,give,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,10,object carrying,lower,second,receive,receive,FALSE,1
+11fa9920f3438a37d684e4043699a2fb,11,gift,lower,second,give,receive,TRUE,1
+11fa9920f3438a37d684e4043699a2fb,12,task checking,higher,second,give,receive,TRUE,1
+b2991ee171606cca55276ec5163be347,1,meal,higher,first,give,give,FALSE,2
+b2991ee171606cca55276ec5163be347,2,gift,lower,first,give,receive,TRUE,2
+b2991ee171606cca55276ec5163be347,3,task checking,equal,first,give,receive,TRUE,2
+b2991ee171606cca55276ec5163be347,4,task checking,equal,second,receive,receive,FALSE,2
+b2991ee171606cca55276ec5163be347,5,gift,lower,second,give,receive,TRUE,2
+b2991ee171606cca55276ec5163be347,6,song preference,lower,first,receive,give,TRUE,2
+b2991ee171606cca55276ec5163be347,7,meal,higher,second,give,receive,TRUE,2
+b2991ee171606cca55276ec5163be347,8,meeting place,higher,first,receive,give,TRUE,2
+b2991ee171606cca55276ec5163be347,9,meeting place,higher,second,receive,give,TRUE,2
+b2991ee171606cca55276ec5163be347,10,song preference,lower,second,receive,give,TRUE,2
+b2991ee171606cca55276ec5163be347,11,object carrying,equal,first,receive,receive,FALSE,2
+b2991ee171606cca55276ec5163be347,12,object carrying,equal,second,give,give,FALSE,2
+15a0f9d5d90d1735857b591f334202fe,1,gift,lower,first,receive,give,TRUE,2
+15a0f9d5d90d1735857b591f334202fe,2,gift,lower,second,receive,give,TRUE,2
+15a0f9d5d90d1735857b591f334202fe,3,task checking,higher,first,give,receive,TRUE,2
+15a0f9d5d90d1735857b591f334202fe,4,meal,higher,first,receive,receive,FALSE,2
+15a0f9d5d90d1735857b591f334202fe,5,object carrying,equal,first,receive,give,TRUE,2
+15a0f9d5d90d1735857b591f334202fe,6,object carrying,equal,second,give,give,FALSE,2
+15a0f9d5d90d1735857b591f334202fe,7,task checking,higher,second,give,receive,TRUE,2
+15a0f9d5d90d1735857b591f334202fe,8,song preference,lower,first,give,give,FALSE,2
+15a0f9d5d90d1735857b591f334202fe,9,meeting place,equal,first,give,give,FALSE,2
+15a0f9d5d90d1735857b591f334202fe,10,meeting place,equal,second,receive,receive,FALSE,2
+15a0f9d5d90d1735857b591f334202fe,11,song preference,lower,second,give,receive,TRUE,2
+15a0f9d5d90d1735857b591f334202fe,12,meal,higher,second,receive,give,TRUE,2
+3396e81d743e555e2799b627371191c4,1,gift,lower,first,give,receive,TRUE,1
+3396e81d743e555e2799b627371191c4,2,meeting place,higher,first,give,give,FALSE,1
+3396e81d743e555e2799b627371191c4,3,song preference,equal,first,receive,give,TRUE,1
+3396e81d743e555e2799b627371191c4,4,task checking,lower,first,receive,give,TRUE,1
+3396e81d743e555e2799b627371191c4,5,task checking,lower,second,receive,give,TRUE,1
+3396e81d743e555e2799b627371191c4,6,meeting place,higher,second,give,receive,TRUE,1
+3396e81d743e555e2799b627371191c4,7,song preference,equal,second,give,give,FALSE,1
+3396e81d743e555e2799b627371191c4,8,gift,lower,second,give,receive,TRUE,1
+3396e81d743e555e2799b627371191c4,9,meal,higher,first,receive,give,TRUE,1
+3396e81d743e555e2799b627371191c4,10,meal,higher,second,receive,give,TRUE,1
+3396e81d743e555e2799b627371191c4,11,object carrying,equal,first,give,give,FALSE,1
+3396e81d743e555e2799b627371191c4,12,object carrying,equal,second,receive,receive,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,1,gift,higher,first,receive,give,TRUE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,2,gift,higher,second,receive,receive,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,3,meeting place,higher,first,give,give,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,4,meeting place,higher,second,give,receive,TRUE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,5,object carrying,equal,first,give,give,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,6,meal,lower,first,give,receive,TRUE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,7,meal,lower,second,give,give,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,8,task checking,equal,first,receive,give,TRUE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,9,song preference,lower,first,receive,receive,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,10,song preference,lower,second,receive,give,TRUE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,11,object carrying,equal,second,receive,receive,FALSE,1
+a716ea57ba143b4b8e2e416de0ffbfa7,12,task checking,equal,second,give,give,FALSE,1
+83d23d757e2db79c3e87d448c876cdb9,1,gift,lower,first,receive,give,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,2,object carrying,equal,first,give,receive,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,3,gift,lower,second,receive,give,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,4,song preference,higher,first,receive,give,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,5,meal,higher,first,give,give,FALSE,2
+83d23d757e2db79c3e87d448c876cdb9,6,meeting place,lower,first,give,receive,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,7,task checking,equal,first,receive,give,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,8,meal,higher,second,give,receive,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,9,task checking,equal,second,give,give,FALSE,2
+83d23d757e2db79c3e87d448c876cdb9,10,meeting place,lower,second,give,receive,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,11,object carrying,equal,second,receive,give,TRUE,2
+83d23d757e2db79c3e87d448c876cdb9,12,song preference,higher,second,receive,give,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,1,gift,equal,first,receive,give,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,2,gift,equal,second,give,receive,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,3,song preference,lower,first,give,receive,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,4,object carrying,higher,first,give,give,FALSE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,5,meal,higher,first,receive,give,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,6,song preference,lower,second,give,receive,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,7,meeting place,lower,first,receive,receive,FALSE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,8,object carrying,higher,second,give,give,FALSE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,9,meal,higher,second,receive,give,TRUE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,10,meeting place,lower,second,receive,receive,FALSE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,11,task checking,equal,first,give,give,FALSE,2
+e3ff78fb3f0d8fb786645f4fc5701f61,12,task checking,equal,second,receive,receive,FALSE,2
+d4a78ff53b5d18654e974c9be9a3a93f,1,meeting place,equal,first,give,give,FALSE,2
+d4a78ff53b5d18654e974c9be9a3a93f,2,meal,higher,first,give,give,FALSE,2
+d4a78ff53b5d18654e974c9be9a3a93f,3,gift,equal,first,receive,receive,FALSE,2
+d4a78ff53b5d18654e974c9be9a3a93f,4,song preference,lower,first,receive,receive,FALSE,2
+d4a78ff53b5d18654e974c9be9a3a93f,5,task checking,higher,first,receive,give,TRUE,2
+d4a78ff53b5d18654e974c9be9a3a93f,6,meal,higher,second,give,receive,TRUE,2
+d4a78ff53b5d18654e974c9be9a3a93f,7,gift,equal,second,give,give,FALSE,2
+d4a78ff53b5d18654e974c9be9a3a93f,8,task checking,higher,second,receive,give,TRUE,2
+d4a78ff53b5d18654e974c9be9a3a93f,9,object carrying,lower,first,give,receive,TRUE,2
+d4a78ff53b5d18654e974c9be9a3a93f,10,song preference,lower,second,receive,give,TRUE,2
+d4a78ff53b5d18654e974c9be9a3a93f,11,object carrying,lower,second,give,receive,TRUE,2
+d4a78ff53b5d18654e974c9be9a3a93f,12,meeting place,equal,second,receive,receive,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,1,meal,higher,first,give,receive,TRUE,2
+658acd39c44a4fe9c7d5f894b762a82f,2,gift,equal,first,give,receive,TRUE,2
+658acd39c44a4fe9c7d5f894b762a82f,3,meeting place,equal,first,receive,receive,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,4,task checking,lower,first,give,give,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,5,object carrying,lower,first,receive,receive,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,6,song preference,higher,first,receive,give,TRUE,2
+658acd39c44a4fe9c7d5f894b762a82f,7,meeting place,equal,second,give,give,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,8,meal,higher,second,give,receive,TRUE,2
+658acd39c44a4fe9c7d5f894b762a82f,9,gift,equal,second,receive,receive,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,10,song preference,higher,second,receive,receive,FALSE,2
+658acd39c44a4fe9c7d5f894b762a82f,11,task checking,lower,second,give,receive,TRUE,2
+658acd39c44a4fe9c7d5f894b762a82f,12,object carrying,lower,second,receive,give,TRUE,2
+b7e387331da163b75b12c099aeafa11e,1,gift,equal,first,give,receive,TRUE,1
+b7e387331da163b75b12c099aeafa11e,2,object carrying,higher,first,give,give,FALSE,1
+b7e387331da163b75b12c099aeafa11e,3,task checking,higher,first,receive,give,TRUE,1
+b7e387331da163b75b12c099aeafa11e,4,meeting place,equal,first,receive,give,TRUE,1
+b7e387331da163b75b12c099aeafa11e,5,meal,lower,first,give,give,FALSE,1
+b7e387331da163b75b12c099aeafa11e,6,object carrying,higher,second,give,receive,TRUE,1
+b7e387331da163b75b12c099aeafa11e,7,meeting place,equal,second,give,receive,TRUE,1
+b7e387331da163b75b12c099aeafa11e,8,meal,lower,second,give,receive,TRUE,1
+b7e387331da163b75b12c099aeafa11e,9,gift,equal,second,receive,give,TRUE,1
+b7e387331da163b75b12c099aeafa11e,10,song preference,lower,first,receive,give,TRUE,1
+b7e387331da163b75b12c099aeafa11e,11,task checking,higher,second,receive,receive,FALSE,1
+b7e387331da163b75b12c099aeafa11e,12,song preference,lower,second,receive,give,TRUE,1
+c69321fd3ef689e2e98e46a0634c20a0,1,meal,lower,first,receive,receive,FALSE,1
+c69321fd3ef689e2e98e46a0634c20a0,2,meal,lower,second,receive,give,TRUE,1
+c69321fd3ef689e2e98e46a0634c20a0,3,task checking,higher,first,give,receive,TRUE,1
+c69321fd3ef689e2e98e46a0634c20a0,4,object carrying,lower,first,give,give,FALSE,1
+c69321fd3ef689e2e98e46a0634c20a0,5,meeting place,equal,first,give,give,FALSE,1
+c69321fd3ef689e2e98e46a0634c20a0,6,song preference,equal,first,receive,give,TRUE,1
+c69321fd3ef689e2e98e46a0634c20a0,7,gift,higher,first,receive,receive,FALSE,1
+c69321fd3ef689e2e98e46a0634c20a0,8,object carrying,lower,second,give,receive,TRUE,1
+c69321fd3ef689e2e98e46a0634c20a0,9,task checking,higher,second,give,receive,TRUE,1
+c69321fd3ef689e2e98e46a0634c20a0,10,meeting place,equal,second,receive,receive,FALSE,1
+c69321fd3ef689e2e98e46a0634c20a0,11,song preference,equal,second,give,give,FALSE,1
+c69321fd3ef689e2e98e46a0634c20a0,12,gift,higher,second,receive,give,TRUE,1
+4da8d6772a41e01747919d2b05bef08e,1,meal,higher,first,receive,give,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,2,song preference,higher,first,give,give,FALSE,2
+4da8d6772a41e01747919d2b05bef08e,3,song preference,higher,second,give,receive,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,4,gift,equal,first,receive,give,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,5,object carrying,lower,first,give,receive,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,6,task checking,lower,first,receive,give,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,7,meal,higher,second,receive,give,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,8,task checking,lower,second,receive,receive,FALSE,2
+4da8d6772a41e01747919d2b05bef08e,9,gift,equal,second,give,receive,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,10,meeting place,equal,first,give,receive,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,11,meeting place,equal,second,receive,give,TRUE,2
+4da8d6772a41e01747919d2b05bef08e,12,object carrying,lower,second,give,give,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,1,gift,higher,first,receive,receive,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,2,meal,lower,first,receive,give,TRUE,2
+7d97fd6d1746831d5bae950200d5d241,3,gift,higher,second,receive,receive,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,4,meeting place,lower,first,give,give,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,5,object carrying,equal,first,give,give,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,6,song preference,higher,first,give,receive,TRUE,2
+7d97fd6d1746831d5bae950200d5d241,7,task checking,equal,first,receive,receive,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,8,object carrying,equal,second,receive,give,TRUE,2
+7d97fd6d1746831d5bae950200d5d241,9,task checking,equal,second,give,receive,TRUE,2
+7d97fd6d1746831d5bae950200d5d241,10,meal,lower,second,receive,receive,FALSE,2
+7d97fd6d1746831d5bae950200d5d241,11,song preference,higher,second,give,receive,TRUE,2
+7d97fd6d1746831d5bae950200d5d241,12,meeting place,lower,second,give,give,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,1,gift,lower,first,give,give,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,2,object carrying,equal,first,receive,give,TRUE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,3,gift,lower,second,give,give,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,4,meal,equal,first,give,give,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,5,song preference,higher,first,receive,give,TRUE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,6,song preference,higher,second,receive,give,TRUE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,7,meeting place,higher,first,give,give,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,8,task checking,lower,first,receive,give,TRUE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,9,object carrying,equal,second,give,give,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,10,task checking,lower,second,receive,give,TRUE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,11,meal,equal,second,receive,receive,FALSE,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,12,meeting place,higher,second,give,give,FALSE,2
+58a8ed7e3438250e295284492ff47907,1,meal,lower,first,receive,receive,FALSE,1
+58a8ed7e3438250e295284492ff47907,2,meal,lower,second,receive,give,TRUE,1
+58a8ed7e3438250e295284492ff47907,3,gift,higher,first,receive,give,TRUE,1
+58a8ed7e3438250e295284492ff47907,4,gift,higher,second,receive,give,TRUE,1
+58a8ed7e3438250e295284492ff47907,5,song preference,lower,first,give,receive,TRUE,1
+58a8ed7e3438250e295284492ff47907,6,meeting place,equal,first,receive,give,TRUE,1
+58a8ed7e3438250e295284492ff47907,7,meeting place,equal,second,give,give,FALSE,1
+58a8ed7e3438250e295284492ff47907,8,song preference,lower,second,give,receive,TRUE,1
+58a8ed7e3438250e295284492ff47907,9,task checking,higher,first,give,give,FALSE,1
+58a8ed7e3438250e295284492ff47907,10,object carrying,equal,first,give,give,FALSE,1
+58a8ed7e3438250e295284492ff47907,11,task checking,higher,second,give,receive,TRUE,1
+58a8ed7e3438250e295284492ff47907,12,object carrying,equal,second,receive,receive,FALSE,1
+9f3acef59fdab7f23e22e6de396f375c,1,object carrying,equal,first,receive,give,TRUE,1
+9f3acef59fdab7f23e22e6de396f375c,2,song preference,higher,first,receive,give,TRUE,1
+9f3acef59fdab7f23e22e6de396f375c,3,meeting place,lower,first,receive,give,TRUE,1
+9f3acef59fdab7f23e22e6de396f375c,4,song preference,higher,second,receive,give,TRUE,1
+9f3acef59fdab7f23e22e6de396f375c,5,gift,higher,first,give,give,FALSE,1
+9f3acef59fdab7f23e22e6de396f375c,6,meal,equal,first,give,give,FALSE,1
+9f3acef59fdab7f23e22e6de396f375c,7,meal,equal,second,receive,receive,FALSE,1
+9f3acef59fdab7f23e22e6de396f375c,8,object carrying,equal,second,give,give,FALSE,1
+9f3acef59fdab7f23e22e6de396f375c,9,task checking,lower,first,give,give,FALSE,1
+9f3acef59fdab7f23e22e6de396f375c,10,meeting place,lower,second,receive,give,TRUE,1
+9f3acef59fdab7f23e22e6de396f375c,11,gift,higher,second,give,receive,TRUE,1
+9f3acef59fdab7f23e22e6de396f375c,12,task checking,lower,second,give,receive,TRUE,1
+eaf2b934aefbe007ad6cc05121f6f42b,1,meal,higher,first,give,give,FALSE,2
+eaf2b934aefbe007ad6cc05121f6f42b,2,gift,equal,first,receive,receive,FALSE,2
+eaf2b934aefbe007ad6cc05121f6f42b,3,song preference,lower,first,receive,give,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,4,song preference,lower,second,receive,give,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,5,meeting place,equal,first,give,receive,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,6,gift,equal,second,give,receive,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,7,object carrying,lower,first,give,receive,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,8,object carrying,lower,second,give,receive,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,9,task checking,higher,first,receive,give,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,10,meeting place,equal,second,receive,give,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,11,task checking,higher,second,receive,give,TRUE,2
+eaf2b934aefbe007ad6cc05121f6f42b,12,meal,higher,second,give,receive,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,1,gift,equal,first,receive,give,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,2,meal,equal,first,give,give,FALSE,2
+94a1f57e9b147e53d3faa12ca91c68ce,3,meal,equal,second,receive,receive,FALSE,2
+94a1f57e9b147e53d3faa12ca91c68ce,4,gift,equal,second,give,receive,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,5,song preference,lower,first,give,receive,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,6,song preference,lower,second,give,receive,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,7,object carrying,higher,first,receive,give,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,8,object carrying,higher,second,receive,give,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,9,meeting place,lower,first,receive,receive,FALSE,2
+94a1f57e9b147e53d3faa12ca91c68ce,10,task checking,higher,first,give,receive,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,11,task checking,higher,second,give,receive,TRUE,2
+94a1f57e9b147e53d3faa12ca91c68ce,12,meeting place,lower,second,receive,receive,FALSE,2
+99373830e6f12c5247ac6235418a5c3f,1,object carrying,equal,first,give,give,FALSE,2
+99373830e6f12c5247ac6235418a5c3f,2,gift,higher,first,receive,receive,FALSE,2
+99373830e6f12c5247ac6235418a5c3f,3,object carrying,equal,second,receive,receive,FALSE,2
+99373830e6f12c5247ac6235418a5c3f,4,meal,lower,first,receive,give,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,5,gift,higher,second,receive,give,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,6,task checking,higher,first,give,receive,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,7,meal,lower,second,receive,give,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,8,task checking,higher,second,give,receive,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,9,song preference,lower,first,give,receive,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,10,song preference,lower,second,give,receive,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,11,meeting place,equal,first,receive,give,TRUE,2
+99373830e6f12c5247ac6235418a5c3f,12,meeting place,equal,second,give,give,FALSE,2
+22441d64a1e10184b628c3e45006eb28,1,gift,higher,first,give,give,FALSE,1
+22441d64a1e10184b628c3e45006eb28,2,task checking,equal,first,give,give,FALSE,1
+22441d64a1e10184b628c3e45006eb28,3,task checking,equal,second,receive,receive,FALSE,1
+22441d64a1e10184b628c3e45006eb28,4,object carrying,equal,first,receive,receive,FALSE,1
+22441d64a1e10184b628c3e45006eb28,5,meal,higher,first,receive,give,TRUE,1
+22441d64a1e10184b628c3e45006eb28,6,meal,higher,second,receive,give,TRUE,1
+22441d64a1e10184b628c3e45006eb28,7,gift,higher,second,give,receive,TRUE,1
+22441d64a1e10184b628c3e45006eb28,8,object carrying,equal,second,give,give,FALSE,1
+22441d64a1e10184b628c3e45006eb28,9,meeting place,lower,first,give,receive,TRUE,1
+22441d64a1e10184b628c3e45006eb28,10,meeting place,lower,second,give,receive,TRUE,1
+22441d64a1e10184b628c3e45006eb28,11,song preference,lower,first,receive,receive,FALSE,1
+22441d64a1e10184b628c3e45006eb28,12,song preference,lower,second,receive,give,TRUE,1
+15cedf5e1eae7fb334b31d4f4cd2de53,1,gift,equal,first,give,receive,TRUE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,2,object carrying,higher,first,give,receive,TRUE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,3,meal,equal,first,receive,receive,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,4,song preference,lower,first,receive,receive,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,5,meeting place,lower,first,give,receive,TRUE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,6,gift,equal,second,receive,receive,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,7,task checking,higher,first,receive,receive,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,8,object carrying,higher,second,give,give,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,9,meal,equal,second,give,receive,TRUE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,10,task checking,higher,second,receive,receive,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,11,meeting place,lower,second,give,give,FALSE,2
+15cedf5e1eae7fb334b31d4f4cd2de53,12,song preference,lower,second,receive,receive,FALSE,2
+b0c0d5560c18910da5f15a9c36a9faf9,1,meal,higher,first,receive,give,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,2,meal,higher,second,receive,give,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,3,task checking,lower,first,give,receive,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,4,gift,equal,first,give,give,FALSE,0
+b0c0d5560c18910da5f15a9c36a9faf9,5,song preference,higher,first,give,receive,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,6,song preference,higher,second,give,receive,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,7,task checking,lower,second,give,receive,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,8,gift,equal,second,receive,give,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,9,object carrying,lower,first,receive,receive,FALSE,0
+b0c0d5560c18910da5f15a9c36a9faf9,10,meeting place,equal,first,receive,give,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,11,object carrying,lower,second,receive,give,TRUE,0
+b0c0d5560c18910da5f15a9c36a9faf9,12,meeting place,equal,second,give,give,FALSE,0
+afb3e894d90b9443062389acd55505cf,1,song preference,equal,first,give,give,FALSE,1
+afb3e894d90b9443062389acd55505cf,2,gift,higher,first,give,give,FALSE,1
+afb3e894d90b9443062389acd55505cf,3,object carrying,equal,first,receive,receive,FALSE,1
+afb3e894d90b9443062389acd55505cf,4,object carrying,equal,second,give,give,FALSE,1
+afb3e894d90b9443062389acd55505cf,5,meeting place,lower,first,receive,give,TRUE,1
+afb3e894d90b9443062389acd55505cf,6,meal,higher,first,receive,give,TRUE,1
+afb3e894d90b9443062389acd55505cf,7,meeting place,lower,second,receive,give,TRUE,1
+afb3e894d90b9443062389acd55505cf,8,gift,higher,second,give,receive,TRUE,1
+afb3e894d90b9443062389acd55505cf,9,song preference,equal,second,receive,receive,FALSE,1
+afb3e894d90b9443062389acd55505cf,10,task checking,lower,first,give,give,FALSE,1
+afb3e894d90b9443062389acd55505cf,11,task checking,lower,second,give,receive,TRUE,1
+afb3e894d90b9443062389acd55505cf,12,meal,higher,second,receive,give,TRUE,1
+d0c0d2c1aae08e2fbd79da8fba7cca61,1,gift,lower,first,receive,give,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,2,object carrying,higher,first,give,give,FALSE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,3,task checking,higher,first,receive,receive,FALSE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,4,meeting place,equal,first,give,give,FALSE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,5,meal,lower,first,give,receive,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,6,task checking,higher,second,receive,give,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,7,meeting place,equal,second,receive,receive,FALSE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,8,object carrying,higher,second,give,receive,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,9,meal,lower,second,give,receive,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,10,song preference,equal,first,receive,give,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,11,gift,lower,second,receive,give,TRUE,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,12,song preference,equal,second,give,receive,TRUE,2
+f525dd6d5612da9b13adb064aecc3372,1,meal,lower,first,give,receive,TRUE,2
+f525dd6d5612da9b13adb064aecc3372,2,gift,equal,first,receive,give,TRUE,2
+f525dd6d5612da9b13adb064aecc3372,3,gift,equal,second,give,receive,TRUE,2
+f525dd6d5612da9b13adb064aecc3372,4,song preference,equal,first,give,give,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,5,meeting place,higher,first,receive,give,TRUE,2
+f525dd6d5612da9b13adb064aecc3372,6,meeting place,higher,second,receive,receive,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,7,song preference,equal,second,receive,receive,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,8,object carrying,higher,first,give,give,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,9,object carrying,higher,second,give,give,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,10,meal,lower,second,give,give,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,11,task checking,lower,first,receive,receive,FALSE,2
+f525dd6d5612da9b13adb064aecc3372,12,task checking,lower,second,receive,give,TRUE,2
+77e77f07e787ade852cd1a888a1c3412,1,task checking,higher,first,give,give,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,2,meal,equal,first,receive,give,TRUE,1
+77e77f07e787ade852cd1a888a1c3412,3,gift,higher,first,receive,receive,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,4,meal,equal,second,give,receive,TRUE,1
+77e77f07e787ade852cd1a888a1c3412,5,object carrying,equal,first,give,give,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,6,gift,higher,second,receive,give,TRUE,1
+77e77f07e787ade852cd1a888a1c3412,7,task checking,higher,second,give,receive,TRUE,1
+77e77f07e787ade852cd1a888a1c3412,8,meeting place,lower,first,receive,receive,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,9,meeting place,lower,second,receive,receive,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,10,song preference,lower,first,give,give,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,11,object carrying,equal,second,receive,receive,FALSE,1
+77e77f07e787ade852cd1a888a1c3412,12,song preference,lower,second,give,receive,TRUE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,1,gift,lower,first,give,give,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,2,gift,lower,second,give,give,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,3,meeting place,equal,first,receive,give,TRUE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,4,meeting place,equal,second,give,give,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,5,object carrying,higher,first,receive,receive,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,6,task checking,higher,first,give,receive,TRUE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,7,object carrying,higher,second,receive,receive,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,8,meal,equal,first,give,give,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,9,song preference,lower,first,receive,give,TRUE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,10,task checking,higher,second,give,receive,TRUE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,11,meal,equal,second,receive,receive,FALSE,1
+6ec551d084c8b3c5e33c08a0e45a56a0,12,song preference,lower,second,receive,give,TRUE,1
+274ea72f995e61cec7fd50561257487a,1,meal,equal,first,receive,give,TRUE,2
+274ea72f995e61cec7fd50561257487a,2,gift,higher,first,give,receive,TRUE,2
+274ea72f995e61cec7fd50561257487a,3,gift,higher,second,give,give,FALSE,2
+274ea72f995e61cec7fd50561257487a,4,meal,equal,second,give,give,FALSE,2
+274ea72f995e61cec7fd50561257487a,5,task checking,equal,first,give,give,FALSE,2
+274ea72f995e61cec7fd50561257487a,6,meeting place,higher,first,receive,receive,FALSE,2
+274ea72f995e61cec7fd50561257487a,7,song preference,lower,first,give,give,FALSE,2
+274ea72f995e61cec7fd50561257487a,8,meeting place,higher,second,receive,give,TRUE,2
+274ea72f995e61cec7fd50561257487a,9,object carrying,lower,first,receive,give,TRUE,2
+274ea72f995e61cec7fd50561257487a,10,task checking,equal,second,receive,give,TRUE,2
+274ea72f995e61cec7fd50561257487a,11,song preference,lower,second,give,receive,TRUE,2
+274ea72f995e61cec7fd50561257487a,12,object carrying,lower,second,receive,receive,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,1,meal,equal,first,give,give,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,2,task checking,lower,first,receive,receive,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,3,meal,equal,second,receive,receive,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,4,gift,lower,first,give,receive,TRUE,2
+59cd0be6818596e470d5efec9ac6227e,5,meeting place,higher,first,give,give,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,6,gift,lower,second,give,receive,TRUE,2
+59cd0be6818596e470d5efec9ac6227e,7,meeting place,higher,second,give,give,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,8,song preference,higher,first,receive,give,TRUE,2
+59cd0be6818596e470d5efec9ac6227e,9,task checking,lower,second,receive,receive,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,10,song preference,higher,second,receive,give,TRUE,2
+59cd0be6818596e470d5efec9ac6227e,11,object carrying,equal,first,receive,receive,FALSE,2
+59cd0be6818596e470d5efec9ac6227e,12,object carrying,equal,second,give,receive,TRUE,2

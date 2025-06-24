@@ -1,0 +1,163 @@
+subject_id,gender,age,understood,realPeople,comments,passed_attention_checks,total_points,total_pay
+f1789d9981aa68c93825e5e0848ee301,male,55,yes,yes,Great survey,2,11,4.18
+ddfe0747f25b3a63ac05804463865a91,male,36,yes,no,NA,2,8,3.86
+43dceb38823aa3a7322a8519579d8bd0,female,51,yes,no,NA,2,8,3.86
+8c671a679c397dea9df2bdf74ab96c92,female,47,yes,yes,NA,2,11,4.18
+80d30f68ce0d66554ee4c536cbb1657b,female,56,yes,no,NA,2,10,4.07
+1de425390089e6c1fba1dbf9f5b519c8,female,77,yes,no,NA,2,13,4.39
+85ad7578bf57f1eaea715fffa0932b6b,male,63,yes,no,no comment,2,13,4.39
+bafbf23f9c0580ee727b34d7fdeb34be,male,19,yes,yes,no,2,10,4.07
+18d973f8835fe4e77bb6a1129785af4d,male,55,yes,yes,NA,2,11,4.18
+1102f9f78b38b4b2d15e982abcdee081,female,51,yes,yes,The study was okay.,2,13,4.39
+3ee816e4ea75a4abb61cac7955020bd6,male,20,yes,yes,NA,2,8,3.86
+70f8d280819d1c40ba8816532477c69e,male,32,yes,no,NA,1,11,4.18
+924fcd9dc40619e1dcc6e7ba2bc8fc19,male,34,yes,yes,NA,2,10,4.07
+90ad58765eed7d3ca3e3407ae7461b1e,female,33,yes,no,NA,2,15,4.61
+d9fa7b49873777fc02c2d792c3bbe0e0,male,30,yes,no,NA,2,9,3.96
+f1504c2a664334b3db012ac3d74e1bdb,male,52,yes,yes,NA,2,12,4.28
+bf52c929f617101dcf17168f1b2f7e16,male,60,yes,no,NA,2,11,4.18
+ab2db5270a6d121f28c1076faf4d090e,male,50,yes,yes,NA,2,7,3.75
+2334f64c3d7280cf73bb1f15dd2084fd,male,49,yes,no,"I was not asked to give a name, while my partners had names, so it didn't feel like I was interacting with real people.",2,12,4.28
+6505ed6e03448e28b5b8dd18caa21412,female,26,yes,no,NA,2,15,4.61
+6fe2fd3191f186fe5530e7784ecd8a0f,female,38,yes,no,NA,2,7,3.75
+4249de41d212a1b9887e9937f5cdd91b,male,19,yes,yes,nope,2,12,4.28
+298e2bd323e7a09e2feb2b4c76fd8445,male,43,yes,yes,A brainstorming activity,2,12,4.28
+630396288647447b66fc1387c4efc599,female,47,yes,yes,good study,2,11,4.18
+96806b5f9b73f02297230849514df373,male,38,yes,no,N/A,2,11,4.18
+f09d82bb3e7afd5cbd13d518fc06d28f,male,35,yes,yes,NA,2,12,4.28
+0482ada66b918f943a21e59d521760bb,male,51,yes,no,NA,2,9,3.96
+6d8b1808a2210a3fe736c39adcb480c1,female,59,yes,yes,I really enjoyed this. I did the attention checks correctly but for some reason the 1st one said afterwords in red that it was an attention check I did but the 2nd one didn't give me the message after so I just want to make sure it calculated correctly as I chose the right ones it asked me too.,2,13,4.39
+dc7498b6fe99736e7bd6f9746e397fb2,female,47,yes,no,NA,2,11,4.18
+0e64b476d0de8977bd6c4c60e1264e46,male,65,yes,yes,NA,2,11,4.18
+0ed7aeb212d59c49111f1b48ca346b1f,female,24,yes,no,none,2,11,4.18
+56f66123d6d3d854b601d34c9891626f,female,46,yes,no,NA,2,11,4.18
+00ab558c3cc236980f5ba446c548433f,male,54,yes,no,Very interesting study! Thank you for the opportunity to assist you with it. Wishing you a great day! :),2,9,3.96
+46825f9a047a1dc68ed23c2cb7f8b8c3,male,29,yes,yes,NA,2,14,4.5
+af3b809f733d2bb945789d08e3e58fff,female,48,yes,yes,NA,1,7,3.75
+261e8c0c2e0fd89a0b4199f96dc984bc,female,27,yes,yes,NA,2,12,4.28
+cc7ad936b991f2cf09ca727493397d45,male,27,yes,yes,NA,2,10,4.07
+628e158796a539d648fffed06ad37026,male,26,yes,yes,None,2,11,4.18
+96fa8e36ae3f6524a996fe6c6d059767,male,65,yes,yes,NA,1,11,4.18
+63715f3ad1c89bf7feeb9dfd27a1909a,male,69,yes,yes,None,2,9,3.96
+8b7d9e93295c68d86b112c0c8464805d,female,48,yes,yes,no,2,13,4.39
+9f48330f322009a9da99946a3b35dcb7,male,22,yes,no,NA,1,12,4.28
+aef430e853790e393cbf388e63e49391,male,33,yes,yes,NA,2,11,4.18
+2e2fbd20e35a74899915305d95098e8c,male,34,yes,no,NA,1,7,3.75
+8c922bda19f063edf73f3735ca23b968,female,35,yes,yes,NA,1,12,4.28
+a9b83d733d8180581ab20ad5c80706e9,female,24,yes,no,NA,1,10,4.07
+a8e2005304833f3386e448f5b3961c48,female,25,yes,yes,NA,2,10,4.07
+aa254092e77651e67d0b81e582296d76,female,54,yes,yes,NA,2,12,4.28
+04f66f928b8b5fdb222b6337ddf44e8a,male,25,yes,yes,NA,2,9,3.96
+2f37dbd00b9a65d2a3eed31fbc9d1c57,female,31,yes,yes,NA,2,11,4.18
+2590b76c543340c206c0e090d5e6f084,male,32,yes,no,NA,2,18,4.93
+b415d8a01acc4395caff6a3f30881e3c,female,59,yes,yes,GOOD,1,8,3.86
+495800af593d599e3aabef93abd7f5b4,male,20,yes,yes,The survey was interesting and lively.,2,11,4.18
+66758c8b4cefecc937e5d924cc7c068a,male,27,yes,yes,NA,2,10,4.07
+2c501617d0af2568352c646089b3b80f,male,44,yes,no,NA,2,6,3.64
+dd4106b3840c0c6a18a839b613e8b151,female,32,yes,no,NA,2,11,4.18
+2cb25cc5670ff8f0e59a514a4fb73b56,male,62,yes,yes,No comment,2,11,4.18
+bdf7e004ed269860c5bbb6f3b12efea0,female,57,yes,yes,No comments.,2,13,4.39
+1e4bd24090ca840c67ffe3fa07e6b17f,male,31,yes,no,NA,2,14,4.5
+de3baacb82a7713a0993e2f84ff12da4,male,54,yes,yes,NA,2,12,4.28
+59f8d306ae273df5f48606d1a887a7ec,nonconforming,30,yes,yes,NA,2,14,4.5
+0b31996d4fe022097f301ddc6dfa0f07,male,35,yes,yes,NA,2,10,4.07
+251f72f6a5c6b98f0b4a36a04b49db6b,female,68,yes,no,no,2,13,4.39
+9bf60ffb4dc959b8ddf609b3cbd2183c,female,58,yes,no,NA,2,10,4.07
+de814e081e25b4fa7c678635f953994f,female,35,yes,yes,NA,2,12,4.28
+72875576535f9039d7899b6d438abeb8,male,32,yes,yes,good,2,11,4.18
+92ecf972b4ade4c1d348e2eff7215be1,male,50,yes,no,none,1,13,4.39
+69ca85294951a750265857da9f07a809,male,78,yes,no,NA,2,13,4.39
+1aa81eaedffaea89cef2cc856a9e6fa5,female,49,yes,yes,NA,1,13,4.39
+6eabef6e4c4fc835b395d365bc71db4e,female,40,yes,no,"this was fun, ty!",2,9,3.96
+a88e6fd815bda019639535359c5285a7,female,36,yes,yes,The survey was good and it helped me in making decision with my fellow ''community members''. Thanks for the opportunity.,2,12,4.28
+71ba7257493b6e2030ed2a36f54f55ab,female,37,yes,yes,good study,2,13,4.39
+499e1f2d4cdeb0bcd4348d544ff59ae5,female,46,yes,yes,NA,2,11,4.18
+7250c27753a988e5c391210891ac4f1e,male,49,yes,yes,NA,1,7,3.75
+95f4e19e62b25be0742fbfaa74f22cac,female,33,yes,yes,NA,1,10,4.07
+a8e539ba765490f671980c27f2bd1a57,male,30,yes,yes,NI,1,16,4.71
+9fdc1fc47679d9b2c76cf1f99ece975e,female,34,yes,yes,I enjoyed participating in this study.,2,16,4.71
+6ade61cba7027af27223097eb8feea5e,female,46,yes,no,NA,2,9,3.96
+7e5e5bb612337bc0c966157ac28f6df5,female,47,yes,yes,NA,2,7,3.75
+bd27bf15e08ecc70e7dd56395b1265c3,male,26,yes,no,no,2,9,3.96
+a26b9076accb9940075e5bf48b09759e,female,22,yes,yes,none,2,13,4.39
+95c6ad31f941c9b561460aecaaef994a,male,19,yes,yes,NA,2,11,4.18
+5652a5d95fc4c665331728ed2b421f42,male,20,yes,yes,I enjoyed the survey,2,12,4.28
+24355aa4c616b9a4287fcccd6bf22a66,female,36,yes,yes,NA,1,7,3.75
+59989c7664e49f8e7e9231adbad21a2e,female,50,yes,yes,NA,2,12,4.28
+21de61608923be31bc020aa35ec4a39c,female,57,yes,no,NA,1,12,4.28
+8df220a32b9395a2db32fe2fcb05114e,female,54,yes,no,NA,1,11,4.18
+a347b49bf34aab22239a7591e9bbd8d4,male,31,yes,yes,NA,2,14,4.5
+cbbfadac87c4fdff8f729a11881b7b6d,male,54,yes,yes,Great study!,2,11,4.18
+38d92875a57aed8d332610ca393e0c81,male,35,yes,no,NA,1,13,4.39
+c11b6410d54b1df1d9b0c22c8f90be0b,male,34,yes,no,"No issues, questions, comments, or concerns, thanks!",1,12,4.28
+6f837d90eafda48e21f94e52903cb304,female,30,yes,yes,NA,1,11,4.18
+b3a40644109fd796fe3669cf67817771,female,41,yes,yes,"it was fun,to more of this",1,13,4.39
+d2fc467b888564b08fd3b4bfc9db70a2,female,25,yes,yes,Excellent.,2,11,4.18
+41bacf3620a925b221f99835f5b512eb,male,27,yes,yes,NA,2,10,4.07
+01a762f31e73a002fb646a5f50d1830a,male,26,yes,yes,NA,1,10,4.07
+4cdeac522df6f8c7533d1edd1bda81db,male,35,yes,no,NA,2,14,4.5
+54205a5aa38ef3e17e68aaed6a52a52e,male,30,yes,yes,NA,2,11,4.18
+e9c9a9125202921574e6c73769c73b5f,male,26,yes,yes,NA,1,10,4.07
+c28d99f1896415edcdaa0e74b944c751,male,58,yes,no,NA,0,8,3.86
+01869295239e76e3c576923ec9a65045,female,23,yes,yes,NA,2,14,4.5
+03c22d7d609474c94b57385098245c06,female,48,yes,no,NA,2,11,4.18
+83c1baa44bb96267bf657dbdf6639dc3,female,38,yes,yes,no,2,14,4.5
+97202234bb7d0283807fe4be110c0a2a,female,19,yes,yes,NA,1,13,4.39
+5f4ea8ff8bf0c1e685982fa4ad8cc8d8,male,61,yes,no,NA,1,11,4.18
+6c1bd04ba7479383654cbb9fee519f77,male,32,yes,no,The red attention check pop up was kind of weird because it only happened once even though there were two of those checks. I knew I selected the right answer for them.,2,11,4.18
+3967077eb495c41aeb4df78d4c1820fc,male,35,yes,yes,I enjoy this,2,11,4.18
+d7ff3286c6120a8c57973f0a9ec4bd75,male,28,yes,yes,NA,2,13,4.39
+68a8f8236c6d5b37574888f6d5ccd56a,male,62,yes,yes,NA,2,12,4.28
+c228c12801903150112dc0892d58e151,female,54,yes,yes,Great survey,2,13,4.39
+ade43235f39feac19a824aa20c9927cd,male,49,yes,no,thanks,2,12,4.28
+abf636cf0e441a1a60443a689ea575c9,male,43,yes,yes,NA,2,8,3.86
+d1fbd6db76d65dbac2849684be62d66f,female,74,yes,yes,NA,2,14,4.5
+4143dfc997503e39333a2ffbcb3751f2,female,22,yes,no,NA,2,8,3.86
+d65026cc9282e39ce12c59f3f51b65de,male,28,yes,no,NA,2,8,3.86
+b00485fe909f93d62fa8f9342d4b8f28,female,49,yes,yes,NONE.,1,12,4.28
+5f97db804097766571f1d2f7bc8f169a,male,26,yes,no,NA,2,11,4.18
+c5a5d140b0079daa3499699cef5ca92b,female,34,yes,no,NA,0,12,4.28
+6613c0535184a9df3a16a762a4043c8c,male,32,yes,yes,NA,2,13,4.39
+abc6d805cbfec649a60fcf9a42eea46e,female,50,yes,no,NA,2,14,4.5
+7138d40e72762129582702100de10a67,female,28,yes,no,NA,2,15,4.61
+906037f0cae34ec7c0c228a5835635b2,female,46,yes,yes,NA,2,10,4.07
+4c46c3fb0f9664a07815cbfa52529ead,male,28,yes,yes,NA,1,9,3.96
+748f4d7aa587b66b25d6154b7307a1f3,male,56,yes,yes,NA,1,10,4.07
+d23f8dbad5603235077fd2de3c4a6caa,female,52,yes,no,NA,1,11,4.18
+aee0081da87c31b6dc7ac8feb9383397,female,41,yes,yes,NA,1,9,3.96
+014ecc578c1e71c9d83e9ae8bc1761e0,male,56,yes,yes,N/A,2,9,3.96
+0b10dcf9457961cd94d7533b0adc9459,female,32,yes,yes,NA,1,8,3.86
+0d85dac45fda2b56fe44456add3267b7,male,26,yes,no,NA,2,18,4.93
+b577b10b64c9ac6e3964af2a24dff857,female,29,yes,yes,"It was interesting trying to figure out the social rules. Everything worked smoothly, and the setup made me think about real-life relationships.",2,9,3.96
+31fc06ababa061cc1ad5d7c9f2c17218,female,57,yes,yes,i enjoyed the study,2,10,4.07
+307e4afa6454836549c7bc5fcb55db8c,female,60,yes,yes,na,2,11,4.18
+accccf4b445f493172e477705fa9a8c0,male,38,yes,yes,NA,2,15,4.61
+b3252d76b5a6acee33fe57ec2973744b,female,66,yes,yes,NA,2,13,4.39
+f011807712fd503e586aefa648604d3c,female,38,yes,yes,none,0,7,3.75
+9bad48e1cf82e9c71dfad696af12fcaf,male,29,yes,yes,NA,2,8,3.86
+a1803a90a054a8768c077981e83f967d,male,34,yes,no,No comments to add.,2,11,4.18
+781508041cd34eb8de2f4eebc52c7243,male,32,yes,no,NA,1,10,4.07
+cf769cee78c4471477db1f08298e67f2,female,55,yes,no,NA,2,10,4.07
+b6665b0c595e3069de71c6836a3eabd8,female,33,yes,yes,NA,1,13,4.39
+891b2352baeaa511d576fa90de4e4a94,nonconforming,35,yes,no,NA,2,11,4.18
+e552f313fd054feb1b706f73ebbe2c72,male,45,yes,no,no,2,12,4.28
+88afa90087dd53a05ed92858b0c43844,female,31,yes,yes,n/a,2,11,4.18
+c20fafb9a584b36ff8386ca348ca2820,male,58,yes,yes,NA,2,11,4.18
+96697250802af83b81fa49f9e30fbc4f,male,33,yes,no,Thank you.,2,13,4.39
+942ac26993ccc0e02e8064a9ecd7a41b,male,50,yes,no,N/A,1,10,4.07
+12ec04870be61bc17c0f1693df16945c,female,36,yes,no,NA,2,15,4.61
+2f2f78054dd58cbd27196707a96175a7,female,56,yes,no,NA,2,9,3.96
+4ae12e3f7bfb1c34a072466d6146316f,female,30,yes,yes,NA,2,9,3.96
+03b8e33b4823ea5213a1f67edb53bd3c,female,42,yes,yes,NA,2,16,4.71
+4f8b1f4263b24612cbd3c0ca2db83cb1,female,37,yes,yes,NA,2,13,4.39
+8e95e6be19ed90aa39c991acabc14057,female,22,yes,yes,No comments.,2,14,4.5
+70f8fe57e719c252d70b95acaf1cc9e4,male,36,yes,yes,NO COMMENTS,0,7,3.75
+8079a2462ed15736504201e0c306cbd9,female,57,yes,yes,no,2,12,4.28
+0e58b3b6ba14c85a46895fa134c2588f,male,45,yes,yes,None,2,14,4.5
+e07f845dc3d57005095a4b0c26dea953,male,49,yes,no,NA,1,9,3.96
+e8f404a4c297496a9bd100d81fa03c1f,male,33,yes,no,NA,2,13,4.39
+dc81d4ebef5cfe2aa587a968c14fd6ff,female,30,yes,yes,No comments,2,13,4.39
+7fd8068cf57efceb0e2e5deee2c97df8,male,27,yes,no,NA,1,12,4.28
+bdf136ef3ca87d54dc907793225f6000,male,66,yes,yes,NA,2,8,3.86
+e93dd9b232a12ffd4ad2f5364ac7f008,female,40,yes,yes,None,2,11,4.18
+296b8b33bf94f428925a1253faad1b52,male,25,yes,yes,"I enjoyed performing the tasks, it makes one engage their mental activity.",2,12,4.28

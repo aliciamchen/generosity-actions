@@ -1,0 +1,919 @@
+subject_id,scenario_id,partner_status,relationship,partner_first_choice,participant_first_choice,first_choices,participant_first_choice_generous,coordination,successful_first_time,participant_second_choice,participant_second_choice_generous,strategy,strategy_repeating,passed_attention_checks
+0013cadea25f4e1e710bd7cad1a73276,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0013cadea25f4e1e710bd7cad1a73276,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+0013cadea25f4e1e710bd7cad1a73276,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+0013cadea25f4e1e710bd7cad1a73276,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+0013cadea25f4e1e710bd7cad1a73276,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+0013cadea25f4e1e710bd7cad1a73276,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0050011b38df3414c12ab46794171265,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+0050011b38df3414c12ab46794171265,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0050011b38df3414c12ab46794171265,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0050011b38df3414c12ab46794171265,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0050011b38df3414c12ab46794171265,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+0050011b38df3414c12ab46794171265,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+03e37d9a8307bf5f38651efa7cb0a69c,gift,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+03e37d9a8307bf5f38651efa7cb0a69c,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+03e37d9a8307bf5f38651efa7cb0a69c,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+03e37d9a8307bf5f38651efa7cb0a69c,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+03e37d9a8307bf5f38651efa7cb0a69c,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+03e37d9a8307bf5f38651efa7cb0a69c,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+07a6758e69b20ed500abfaf23f45e1ac,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+07a6758e69b20ed500abfaf23f45e1ac,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+07a6758e69b20ed500abfaf23f45e1ac,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+07a6758e69b20ed500abfaf23f45e1ac,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+07a6758e69b20ed500abfaf23f45e1ac,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+07a6758e69b20ed500abfaf23f45e1ac,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+0cc39063c61d7eacb5ea6cf393aa4d2a,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+0cc39063c61d7eacb5ea6cf393aa4d2a,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+0e09862718fad982c054bd825416fb33,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+0e09862718fad982c054bd825416fb33,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+0e09862718fad982c054bd825416fb33,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0e09862718fad982c054bd825416fb33,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0e09862718fad982c054bd825416fb33,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+0e09862718fad982c054bd825416fb33,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+1138ea55d79aa4a5d41635d45b9b0cde,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+1138ea55d79aa4a5d41635d45b9b0cde,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+1138ea55d79aa4a5d41635d45b9b0cde,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+1138ea55d79aa4a5d41635d45b9b0cde,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+1138ea55d79aa4a5d41635d45b9b0cde,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+1138ea55d79aa4a5d41635d45b9b0cde,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+11fa9920f3438a37d684e4043699a2fb,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+11fa9920f3438a37d684e4043699a2fb,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+11fa9920f3438a37d684e4043699a2fb,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+11fa9920f3438a37d684e4043699a2fb,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+11fa9920f3438a37d684e4043699a2fb,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+11fa9920f3438a37d684e4043699a2fb,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+157a1562c86763444ae49a9f7d81d882,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+157a1562c86763444ae49a9f7d81d882,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+157a1562c86763444ae49a9f7d81d882,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+157a1562c86763444ae49a9f7d81d882,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+157a1562c86763444ae49a9f7d81d882,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+157a1562c86763444ae49a9f7d81d882,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+15a0f9d5d90d1735857b591f334202fe,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+15a0f9d5d90d1735857b591f334202fe,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+15a0f9d5d90d1735857b591f334202fe,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+15a0f9d5d90d1735857b591f334202fe,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+15a0f9d5d90d1735857b591f334202fe,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+15a0f9d5d90d1735857b591f334202fe,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+15cedf5e1eae7fb334b31d4f4cd2de53,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+15cedf5e1eae7fb334b31d4f4cd2de53,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+15cedf5e1eae7fb334b31d4f4cd2de53,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+15cedf5e1eae7fb334b31d4f4cd2de53,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+15cedf5e1eae7fb334b31d4f4cd2de53,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+15cedf5e1eae7fb334b31d4f4cd2de53,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+169d4b8322d002d7057ff4cf41b05b21,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+169d4b8322d002d7057ff4cf41b05b21,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+169d4b8322d002d7057ff4cf41b05b21,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+169d4b8322d002d7057ff4cf41b05b21,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+169d4b8322d002d7057ff4cf41b05b21,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+169d4b8322d002d7057ff4cf41b05b21,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+1af8f9b1fd72c68243329413da663cec,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+1af8f9b1fd72c68243329413da663cec,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+1af8f9b1fd72c68243329413da663cec,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+1af8f9b1fd72c68243329413da663cec,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+1af8f9b1fd72c68243329413da663cec,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+1af8f9b1fd72c68243329413da663cec,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+22441d64a1e10184b628c3e45006eb28,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+22441d64a1e10184b628c3e45006eb28,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+22441d64a1e10184b628c3e45006eb28,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+22441d64a1e10184b628c3e45006eb28,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+22441d64a1e10184b628c3e45006eb28,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+22441d64a1e10184b628c3e45006eb28,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+236f8f90be786e835fb6c82226b56779,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+236f8f90be786e835fb6c82226b56779,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+236f8f90be786e835fb6c82226b56779,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+236f8f90be786e835fb6c82226b56779,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+236f8f90be786e835fb6c82226b56779,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+236f8f90be786e835fb6c82226b56779,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+2592baf6005bec1fdc6b3beba2448474,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+2592baf6005bec1fdc6b3beba2448474,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+2592baf6005bec1fdc6b3beba2448474,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+2592baf6005bec1fdc6b3beba2448474,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+2592baf6005bec1fdc6b3beba2448474,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+2592baf6005bec1fdc6b3beba2448474,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+259bf1eb9c09d1eaef93cd1f1350cc81,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+259bf1eb9c09d1eaef93cd1f1350cc81,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+259bf1eb9c09d1eaef93cd1f1350cc81,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+259bf1eb9c09d1eaef93cd1f1350cc81,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+259bf1eb9c09d1eaef93cd1f1350cc81,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+259bf1eb9c09d1eaef93cd1f1350cc81,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+26c032c4a87dfbfebab21ff45ee45b77,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+26c032c4a87dfbfebab21ff45ee45b77,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+26c032c4a87dfbfebab21ff45ee45b77,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+26c032c4a87dfbfebab21ff45ee45b77,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+26c032c4a87dfbfebab21ff45ee45b77,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+26c032c4a87dfbfebab21ff45ee45b77,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+274ea72f995e61cec7fd50561257487a,gift,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+274ea72f995e61cec7fd50561257487a,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+274ea72f995e61cec7fd50561257487a,meeting place,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+274ea72f995e61cec7fd50561257487a,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+274ea72f995e61cec7fd50561257487a,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+274ea72f995e61cec7fd50561257487a,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+28da31337644af1402fe64c036bacdae,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+28da31337644af1402fe64c036bacdae,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+28da31337644af1402fe64c036bacdae,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+28da31337644af1402fe64c036bacdae,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+28da31337644af1402fe64c036bacdae,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+28da31337644af1402fe64c036bacdae,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+2a5d97bb20320cd8023f477f2ca30148,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+2a5d97bb20320cd8023f477f2ca30148,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+2a5d97bb20320cd8023f477f2ca30148,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+2a5d97bb20320cd8023f477f2ca30148,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+2a5d97bb20320cd8023f477f2ca30148,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+2a5d97bb20320cd8023f477f2ca30148,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+2e8c067e0122d155498f31563f451925,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+2e8c067e0122d155498f31563f451925,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+2e8c067e0122d155498f31563f451925,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+2e8c067e0122d155498f31563f451925,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+2e8c067e0122d155498f31563f451925,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+2e8c067e0122d155498f31563f451925,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+3396e81d743e555e2799b627371191c4,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+3396e81d743e555e2799b627371191c4,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+3396e81d743e555e2799b627371191c4,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+3396e81d743e555e2799b627371191c4,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+3396e81d743e555e2799b627371191c4,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+3396e81d743e555e2799b627371191c4,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+35df536325a103ad0fc646e70c06ab1e,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+35df536325a103ad0fc646e70c06ab1e,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+35df536325a103ad0fc646e70c06ab1e,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+35df536325a103ad0fc646e70c06ab1e,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+35df536325a103ad0fc646e70c06ab1e,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+35df536325a103ad0fc646e70c06ab1e,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+3767de7aac209a5b6f8f89c305e52d2a,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+3767de7aac209a5b6f8f89c305e52d2a,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+3767de7aac209a5b6f8f89c305e52d2a,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+3767de7aac209a5b6f8f89c305e52d2a,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+3767de7aac209a5b6f8f89c305e52d2a,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+3767de7aac209a5b6f8f89c305e52d2a,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+3bc526a9ce163fd8cb2d0487e28b9368,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+3bc526a9ce163fd8cb2d0487e28b9368,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+3bc526a9ce163fd8cb2d0487e28b9368,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+3bc526a9ce163fd8cb2d0487e28b9368,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+3bc526a9ce163fd8cb2d0487e28b9368,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+3bc526a9ce163fd8cb2d0487e28b9368,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+3bc81e77c14456620e50848bd4a41be8,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+3bc81e77c14456620e50848bd4a41be8,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+3bc81e77c14456620e50848bd4a41be8,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+3bc81e77c14456620e50848bd4a41be8,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+3bc81e77c14456620e50848bd4a41be8,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+3bc81e77c14456620e50848bd4a41be8,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+3bfc65f913e62dc20eb1a8ad21b89ed6,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+3d11224be9508999d8987fc0dbc59fd1,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+3d11224be9508999d8987fc0dbc59fd1,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+3d11224be9508999d8987fc0dbc59fd1,meeting place,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+3d11224be9508999d8987fc0dbc59fd1,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+3d11224be9508999d8987fc0dbc59fd1,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+3d11224be9508999d8987fc0dbc59fd1,task checking,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+3df91cc02d8ba47c1b7a412584691195,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+3df91cc02d8ba47c1b7a412584691195,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+3df91cc02d8ba47c1b7a412584691195,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+3df91cc02d8ba47c1b7a412584691195,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+3df91cc02d8ba47c1b7a412584691195,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+3df91cc02d8ba47c1b7a412584691195,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+4013deb13160c407272ba0731d1e1eed,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+4013deb13160c407272ba0731d1e1eed,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+4013deb13160c407272ba0731d1e1eed,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+4013deb13160c407272ba0731d1e1eed,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+4013deb13160c407272ba0731d1e1eed,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+4013deb13160c407272ba0731d1e1eed,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+417c44c0cfe1c3f7ca6c79f3a70b80af,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+417c44c0cfe1c3f7ca6c79f3a70b80af,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+41df1ecb28680d718859a2f814952a64,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+41df1ecb28680d718859a2f814952a64,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+41df1ecb28680d718859a2f814952a64,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+41df1ecb28680d718859a2f814952a64,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+41df1ecb28680d718859a2f814952a64,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+41df1ecb28680d718859a2f814952a64,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+44d36d6744ac7050965d7fd145168f88,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+44d36d6744ac7050965d7fd145168f88,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+44d36d6744ac7050965d7fd145168f88,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+44d36d6744ac7050965d7fd145168f88,object carrying,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+44d36d6744ac7050965d7fd145168f88,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+44d36d6744ac7050965d7fd145168f88,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+45ed6d09aa86ff7cbd10731d47d186c1,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+45ed6d09aa86ff7cbd10731d47d186c1,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+45ed6d09aa86ff7cbd10731d47d186c1,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+45ed6d09aa86ff7cbd10731d47d186c1,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+45ed6d09aa86ff7cbd10731d47d186c1,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+45ed6d09aa86ff7cbd10731d47d186c1,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+4945c0d64e7ad8ca6f4c77302cf24531,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+4945c0d64e7ad8ca6f4c77302cf24531,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+4945c0d64e7ad8ca6f4c77302cf24531,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+4945c0d64e7ad8ca6f4c77302cf24531,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+4945c0d64e7ad8ca6f4c77302cf24531,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+4945c0d64e7ad8ca6f4c77302cf24531,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+4b7319abd521f7b9ad6533858f6e7d3d,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+4b7319abd521f7b9ad6533858f6e7d3d,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+4b7319abd521f7b9ad6533858f6e7d3d,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+4b7319abd521f7b9ad6533858f6e7d3d,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+4b7319abd521f7b9ad6533858f6e7d3d,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+4b7319abd521f7b9ad6533858f6e7d3d,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+4becbb39bc8a5b19af164bfee36517f3,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+4becbb39bc8a5b19af164bfee36517f3,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+4becbb39bc8a5b19af164bfee36517f3,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+4becbb39bc8a5b19af164bfee36517f3,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+4becbb39bc8a5b19af164bfee36517f3,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+4becbb39bc8a5b19af164bfee36517f3,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+4ca6589ce02cdf6b3b9a97850a37d1d8,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+4d16847ea91d61518fd99987c007e407,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+4d16847ea91d61518fd99987c007e407,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+4d16847ea91d61518fd99987c007e407,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+4d16847ea91d61518fd99987c007e407,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+4d16847ea91d61518fd99987c007e407,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+4d16847ea91d61518fd99987c007e407,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+4da8d6772a41e01747919d2b05bef08e,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+4da8d6772a41e01747919d2b05bef08e,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+4da8d6772a41e01747919d2b05bef08e,meeting place,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+4da8d6772a41e01747919d2b05bef08e,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+4da8d6772a41e01747919d2b05bef08e,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+4da8d6772a41e01747919d2b05bef08e,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+52999a764b402432076560a51d64c47d,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+52999a764b402432076560a51d64c47d,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+52999a764b402432076560a51d64c47d,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+52999a764b402432076560a51d64c47d,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+52999a764b402432076560a51d64c47d,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+52999a764b402432076560a51d64c47d,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+52f6dcd2bf9c7d2d0e423ffec470670b,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+52f6dcd2bf9c7d2d0e423ffec470670b,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+52f6dcd2bf9c7d2d0e423ffec470670b,meeting place,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+52f6dcd2bf9c7d2d0e423ffec470670b,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+52f6dcd2bf9c7d2d0e423ffec470670b,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+52f6dcd2bf9c7d2d0e423ffec470670b,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+5310c4e011d698efc803932786855f4c,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+5310c4e011d698efc803932786855f4c,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+5310c4e011d698efc803932786855f4c,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+5310c4e011d698efc803932786855f4c,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+5310c4e011d698efc803932786855f4c,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+5310c4e011d698efc803932786855f4c,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+5564fef5870fc31325f5def72c973646,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5564fef5870fc31325f5def72c973646,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5564fef5870fc31325f5def72c973646,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+5564fef5870fc31325f5def72c973646,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+5564fef5870fc31325f5def72c973646,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+5564fef5870fc31325f5def72c973646,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5759444f23ea9c7a5457152d28fe0f9f,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+5759444f23ea9c7a5457152d28fe0f9f,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+5759444f23ea9c7a5457152d28fe0f9f,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+5759444f23ea9c7a5457152d28fe0f9f,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+5759444f23ea9c7a5457152d28fe0f9f,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+5759444f23ea9c7a5457152d28fe0f9f,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+57b1b5a3e1ea96fd12edd9259f6693fc,gift,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+57b1b5a3e1ea96fd12edd9259f6693fc,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+57b1b5a3e1ea96fd12edd9259f6693fc,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+57b1b5a3e1ea96fd12edd9259f6693fc,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+57b1b5a3e1ea96fd12edd9259f6693fc,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+57b1b5a3e1ea96fd12edd9259f6693fc,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+5857fa1b6eeba79307cc6e305d7599f7,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+5857fa1b6eeba79307cc6e305d7599f7,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+5857fa1b6eeba79307cc6e305d7599f7,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+5857fa1b6eeba79307cc6e305d7599f7,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+5857fa1b6eeba79307cc6e305d7599f7,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+5857fa1b6eeba79307cc6e305d7599f7,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+5899bf7c2511ff4a9ff70b69a8bd14c4,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+58a8ed7e3438250e295284492ff47907,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+58a8ed7e3438250e295284492ff47907,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+58a8ed7e3438250e295284492ff47907,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+58a8ed7e3438250e295284492ff47907,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+58a8ed7e3438250e295284492ff47907,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+58a8ed7e3438250e295284492ff47907,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+59264a05301b7788e6776bfd18635487,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+59264a05301b7788e6776bfd18635487,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+59264a05301b7788e6776bfd18635487,meeting place,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+59264a05301b7788e6776bfd18635487,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+59264a05301b7788e6776bfd18635487,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+59264a05301b7788e6776bfd18635487,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+59cd0be6818596e470d5efec9ac6227e,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+59cd0be6818596e470d5efec9ac6227e,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+59cd0be6818596e470d5efec9ac6227e,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+59cd0be6818596e470d5efec9ac6227e,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+59cd0be6818596e470d5efec9ac6227e,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+59cd0be6818596e470d5efec9ac6227e,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+5a4f7bd246b2b856bf0ffde9120ac53e,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5a4f7bd246b2b856bf0ffde9120ac53e,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+5a4f7bd246b2b856bf0ffde9120ac53e,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+5a4f7bd246b2b856bf0ffde9120ac53e,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5a4f7bd246b2b856bf0ffde9120ac53e,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5a4f7bd246b2b856bf0ffde9120ac53e,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+5f1159b79f1255dd21a899cb3e82acce,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5f1159b79f1255dd21a899cb3e82acce,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5f1159b79f1255dd21a899cb3e82acce,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+5f1159b79f1255dd21a899cb3e82acce,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+5f1159b79f1255dd21a899cb3e82acce,song preference,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+5f1159b79f1255dd21a899cb3e82acce,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+5fd7293582b34dde273a48be5c1fad24,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+5fd7293582b34dde273a48be5c1fad24,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+5fd7293582b34dde273a48be5c1fad24,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+5fd7293582b34dde273a48be5c1fad24,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+5fd7293582b34dde273a48be5c1fad24,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+5fd7293582b34dde273a48be5c1fad24,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+619647b575ccd60210451093110c2d21,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+619647b575ccd60210451093110c2d21,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+619647b575ccd60210451093110c2d21,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+619647b575ccd60210451093110c2d21,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+619647b575ccd60210451093110c2d21,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+619647b575ccd60210451093110c2d21,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+61e58883cd9a1303872556b98973cbdf,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+61e58883cd9a1303872556b98973cbdf,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+61e58883cd9a1303872556b98973cbdf,meeting place,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+61e58883cd9a1303872556b98973cbdf,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+61e58883cd9a1303872556b98973cbdf,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+61e58883cd9a1303872556b98973cbdf,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+658acd39c44a4fe9c7d5f894b762a82f,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+658acd39c44a4fe9c7d5f894b762a82f,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+658acd39c44a4fe9c7d5f894b762a82f,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+658acd39c44a4fe9c7d5f894b762a82f,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+658acd39c44a4fe9c7d5f894b762a82f,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+658acd39c44a4fe9c7d5f894b762a82f,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+65cb63011cf59f5f0f223e058bdd610a,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+65cb63011cf59f5f0f223e058bdd610a,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+65cb63011cf59f5f0f223e058bdd610a,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+65cb63011cf59f5f0f223e058bdd610a,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+65cb63011cf59f5f0f223e058bdd610a,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+65cb63011cf59f5f0f223e058bdd610a,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6634465d0966368c7c96639d65a8a0e9,gift,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+6634465d0966368c7c96639d65a8a0e9,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+6634465d0966368c7c96639d65a8a0e9,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+6634465d0966368c7c96639d65a8a0e9,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+6634465d0966368c7c96639d65a8a0e9,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+6634465d0966368c7c96639d65a8a0e9,task checking,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+6660f3ed34773f9b746a58a3c59415f0,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+6660f3ed34773f9b746a58a3c59415f0,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+6660f3ed34773f9b746a58a3c59415f0,meeting place,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+6660f3ed34773f9b746a58a3c59415f0,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6660f3ed34773f9b746a58a3c59415f0,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+6660f3ed34773f9b746a58a3c59415f0,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+670f4e16f88bbcead6b27014f5823c32,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+670f4e16f88bbcead6b27014f5823c32,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+670f4e16f88bbcead6b27014f5823c32,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+670f4e16f88bbcead6b27014f5823c32,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+670f4e16f88bbcead6b27014f5823c32,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+670f4e16f88bbcead6b27014f5823c32,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6927891537af2483050786629294fa75,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6927891537af2483050786629294fa75,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+6927891537af2483050786629294fa75,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+6927891537af2483050786629294fa75,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+6927891537af2483050786629294fa75,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+6927891537af2483050786629294fa75,task checking,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+6b689f1f2e3eaf30d348cdabf61c0368,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6b689f1f2e3eaf30d348cdabf61c0368,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+6b689f1f2e3eaf30d348cdabf61c0368,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+6b689f1f2e3eaf30d348cdabf61c0368,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+6b689f1f2e3eaf30d348cdabf61c0368,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6b689f1f2e3eaf30d348cdabf61c0368,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+6d746862933f4b178f42d02af0caea2c,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+6d746862933f4b178f42d02af0caea2c,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+6d746862933f4b178f42d02af0caea2c,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+6d746862933f4b178f42d02af0caea2c,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+6d746862933f4b178f42d02af0caea2c,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+6d746862933f4b178f42d02af0caea2c,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+6dad65107bd6617f8f15b6960f627aeb,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+6dad65107bd6617f8f15b6960f627aeb,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+6dad65107bd6617f8f15b6960f627aeb,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+6dad65107bd6617f8f15b6960f627aeb,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+6dad65107bd6617f8f15b6960f627aeb,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+6dad65107bd6617f8f15b6960f627aeb,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+6ec551d084c8b3c5e33c08a0e45a56a0,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+6ec551d084c8b3c5e33c08a0e45a56a0,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+6ec551d084c8b3c5e33c08a0e45a56a0,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+6ec551d084c8b3c5e33c08a0e45a56a0,object carrying,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+6ec551d084c8b3c5e33c08a0e45a56a0,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+6ec551d084c8b3c5e33c08a0e45a56a0,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+6fc9ec5f325981ee44ef655b0e2551ff,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+6fc9ec5f325981ee44ef655b0e2551ff,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6fc9ec5f325981ee44ef655b0e2551ff,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6fc9ec5f325981ee44ef655b0e2551ff,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+6fc9ec5f325981ee44ef655b0e2551ff,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+6fc9ec5f325981ee44ef655b0e2551ff,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+6fe036320beee82986f627540a6244b2,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6fe036320beee82986f627540a6244b2,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+6fe036320beee82986f627540a6244b2,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+6fe036320beee82986f627540a6244b2,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+6fe036320beee82986f627540a6244b2,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+6fe036320beee82986f627540a6244b2,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+737e49e5a7981c04c6beaa94a0a310ce,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+737e49e5a7981c04c6beaa94a0a310ce,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+737e49e5a7981c04c6beaa94a0a310ce,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+737e49e5a7981c04c6beaa94a0a310ce,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+737e49e5a7981c04c6beaa94a0a310ce,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+737e49e5a7981c04c6beaa94a0a310ce,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+77e77f07e787ade852cd1a888a1c3412,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+77e77f07e787ade852cd1a888a1c3412,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+77e77f07e787ade852cd1a888a1c3412,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+77e77f07e787ade852cd1a888a1c3412,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+77e77f07e787ade852cd1a888a1c3412,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+77e77f07e787ade852cd1a888a1c3412,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+78a1d995a1fc759c4f3e60228d1c41e6,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+78a1d995a1fc759c4f3e60228d1c41e6,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+78a1d995a1fc759c4f3e60228d1c41e6,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+78a1d995a1fc759c4f3e60228d1c41e6,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+78a1d995a1fc759c4f3e60228d1c41e6,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+78a1d995a1fc759c4f3e60228d1c41e6,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+79c1b257f65ffa1824ef30efa940e76d,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+79c1b257f65ffa1824ef30efa940e76d,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+79c1b257f65ffa1824ef30efa940e76d,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+79c1b257f65ffa1824ef30efa940e76d,object carrying,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+79c1b257f65ffa1824ef30efa940e76d,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+79c1b257f65ffa1824ef30efa940e76d,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+7b354d226c8844c7b15b3bf0259ed77b,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+7b354d226c8844c7b15b3bf0259ed77b,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+7b354d226c8844c7b15b3bf0259ed77b,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+7b354d226c8844c7b15b3bf0259ed77b,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+7b354d226c8844c7b15b3bf0259ed77b,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+7b354d226c8844c7b15b3bf0259ed77b,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+7d97fd6d1746831d5bae950200d5d241,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+7d97fd6d1746831d5bae950200d5d241,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+7d97fd6d1746831d5bae950200d5d241,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+7d97fd6d1746831d5bae950200d5d241,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+7d97fd6d1746831d5bae950200d5d241,song preference,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+7d97fd6d1746831d5bae950200d5d241,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+7e126c9919fc41f3ccea4d81740d1a74,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+7e126c9919fc41f3ccea4d81740d1a74,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+7e126c9919fc41f3ccea4d81740d1a74,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+7e126c9919fc41f3ccea4d81740d1a74,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+7e126c9919fc41f3ccea4d81740d1a74,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+7e126c9919fc41f3ccea4d81740d1a74,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+81c55c3e18f218345d28f6a1300487f9,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+81c55c3e18f218345d28f6a1300487f9,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+81c55c3e18f218345d28f6a1300487f9,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+81c55c3e18f218345d28f6a1300487f9,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+81c55c3e18f218345d28f6a1300487f9,song preference,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+81c55c3e18f218345d28f6a1300487f9,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+83d23d757e2db79c3e87d448c876cdb9,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+83d23d757e2db79c3e87d448c876cdb9,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+83d23d757e2db79c3e87d448c876cdb9,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+83d23d757e2db79c3e87d448c876cdb9,object carrying,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+83d23d757e2db79c3e87d448c876cdb9,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+83d23d757e2db79c3e87d448c876cdb9,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+84bf233b365100ef3ca73ee4673c8cec,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+84bf233b365100ef3ca73ee4673c8cec,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+84bf233b365100ef3ca73ee4673c8cec,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+84bf233b365100ef3ca73ee4673c8cec,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+84bf233b365100ef3ca73ee4673c8cec,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+84bf233b365100ef3ca73ee4673c8cec,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+84defbdd9b8d74ef896d09bfc2fa127a,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+84defbdd9b8d74ef896d09bfc2fa127a,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+84defbdd9b8d74ef896d09bfc2fa127a,meeting place,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+84defbdd9b8d74ef896d09bfc2fa127a,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+84defbdd9b8d74ef896d09bfc2fa127a,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+84defbdd9b8d74ef896d09bfc2fa127a,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+86a3b694fcb3727c077c09bb7f6eafa8,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+86a3b694fcb3727c077c09bb7f6eafa8,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+86a3b694fcb3727c077c09bb7f6eafa8,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+86a3b694fcb3727c077c09bb7f6eafa8,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+86a3b694fcb3727c077c09bb7f6eafa8,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+86a3b694fcb3727c077c09bb7f6eafa8,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+86b03f7b6e0622ecff5b2590b12fc2af,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+86b03f7b6e0622ecff5b2590b12fc2af,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+86b03f7b6e0622ecff5b2590b12fc2af,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+86b03f7b6e0622ecff5b2590b12fc2af,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+86b03f7b6e0622ecff5b2590b12fc2af,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+86b03f7b6e0622ecff5b2590b12fc2af,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+86bcc9bbc5b35ead5efe2227a28c5db1,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+86bcc9bbc5b35ead5efe2227a28c5db1,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+86bcc9bbc5b35ead5efe2227a28c5db1,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+86bcc9bbc5b35ead5efe2227a28c5db1,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+86bcc9bbc5b35ead5efe2227a28c5db1,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+86bcc9bbc5b35ead5efe2227a28c5db1,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+895351e823138d44b29d347330bcf9f8,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+895351e823138d44b29d347330bcf9f8,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+895351e823138d44b29d347330bcf9f8,meeting place,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+895351e823138d44b29d347330bcf9f8,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+895351e823138d44b29d347330bcf9f8,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+895351e823138d44b29d347330bcf9f8,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+89d07b7a14dfe9ebf5e7723c9308cbf5,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8b124353e7ee6520b84a0cff1d14d454,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+8b124353e7ee6520b84a0cff1d14d454,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+8b124353e7ee6520b84a0cff1d14d454,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+8b124353e7ee6520b84a0cff1d14d454,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+8b124353e7ee6520b84a0cff1d14d454,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+8b124353e7ee6520b84a0cff1d14d454,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+8c09704258b76332a5c0dc04c753474a,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+8c09704258b76332a5c0dc04c753474a,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+8c09704258b76332a5c0dc04c753474a,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+8c09704258b76332a5c0dc04c753474a,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+8c09704258b76332a5c0dc04c753474a,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+8c09704258b76332a5c0dc04c753474a,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8cf1e943ab781a9bcb63aed309de9149,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+8cf1e943ab781a9bcb63aed309de9149,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8cf1e943ab781a9bcb63aed309de9149,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+8cf1e943ab781a9bcb63aed309de9149,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+8cf1e943ab781a9bcb63aed309de9149,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8cf1e943ab781a9bcb63aed309de9149,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+8d6adaf5993e95ef58e0ea6b6d524157,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+8d6adaf5993e95ef58e0ea6b6d524157,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+8d6adaf5993e95ef58e0ea6b6d524157,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+8d6adaf5993e95ef58e0ea6b6d524157,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8d6adaf5993e95ef58e0ea6b6d524157,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+8d6adaf5993e95ef58e0ea6b6d524157,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+8f64257821a43f4367c498907438e2fb,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8f64257821a43f4367c498907438e2fb,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+8f64257821a43f4367c498907438e2fb,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+8f64257821a43f4367c498907438e2fb,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+8f64257821a43f4367c498907438e2fb,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+8f64257821a43f4367c498907438e2fb,task checking,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+8ffede789b2819f4f5198f00e873cd95,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+8ffede789b2819f4f5198f00e873cd95,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+8ffede789b2819f4f5198f00e873cd95,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+8ffede789b2819f4f5198f00e873cd95,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+8ffede789b2819f4f5198f00e873cd95,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+8ffede789b2819f4f5198f00e873cd95,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+94a1f57e9b147e53d3faa12ca91c68ce,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+94a1f57e9b147e53d3faa12ca91c68ce,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+94a1f57e9b147e53d3faa12ca91c68ce,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+94a1f57e9b147e53d3faa12ca91c68ce,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+94a1f57e9b147e53d3faa12ca91c68ce,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+94a1f57e9b147e53d3faa12ca91c68ce,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,gift,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+98ad8ecab95fe3f7127bb8d789f4f9f7,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+99373830e6f12c5247ac6235418a5c3f,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+99373830e6f12c5247ac6235418a5c3f,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+99373830e6f12c5247ac6235418a5c3f,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+99373830e6f12c5247ac6235418a5c3f,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+99373830e6f12c5247ac6235418a5c3f,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+99373830e6f12c5247ac6235418a5c3f,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+9a2b7d6d4a8d0d581667c30146b8af25,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+9a2b7d6d4a8d0d581667c30146b8af25,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+9a2b7d6d4a8d0d581667c30146b8af25,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+9a2b7d6d4a8d0d581667c30146b8af25,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9a2b7d6d4a8d0d581667c30146b8af25,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+9a2b7d6d4a8d0d581667c30146b8af25,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+9ac2b3a5746e308fd12a6656b6c8a2c4,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9ecc05b702cb7cc9797b12192d033ce6,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+9ecc05b702cb7cc9797b12192d033ce6,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9ecc05b702cb7cc9797b12192d033ce6,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+9ecc05b702cb7cc9797b12192d033ce6,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+9ecc05b702cb7cc9797b12192d033ce6,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+9ecc05b702cb7cc9797b12192d033ce6,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9f3acef59fdab7f23e22e6de396f375c,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+9f3acef59fdab7f23e22e6de396f375c,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+9f3acef59fdab7f23e22e6de396f375c,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+9f3acef59fdab7f23e22e6de396f375c,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+9f3acef59fdab7f23e22e6de396f375c,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+9f3acef59fdab7f23e22e6de396f375c,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+9ff9ad628fa015fb3da0b73e6c86c59e,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9ff9ad628fa015fb3da0b73e6c86c59e,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+9ff9ad628fa015fb3da0b73e6c86c59e,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+9ff9ad628fa015fb3da0b73e6c86c59e,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+9ff9ad628fa015fb3da0b73e6c86c59e,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+9ff9ad628fa015fb3da0b73e6c86c59e,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+a004b8d2c41b2fc095f014a17a82d4ab,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+a004b8d2c41b2fc095f014a17a82d4ab,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+a004b8d2c41b2fc095f014a17a82d4ab,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+a004b8d2c41b2fc095f014a17a82d4ab,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+a004b8d2c41b2fc095f014a17a82d4ab,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+a004b8d2c41b2fc095f014a17a82d4ab,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+a2c03b2e6ceb28fc51b3d39fa003a083,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+a2c03b2e6ceb28fc51b3d39fa003a083,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+a2c03b2e6ceb28fc51b3d39fa003a083,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+a2c03b2e6ceb28fc51b3d39fa003a083,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+a2c03b2e6ceb28fc51b3d39fa003a083,song preference,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+a2c03b2e6ceb28fc51b3d39fa003a083,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+a40e4e1dbdd42cde99050a22c5601acc,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+a40e4e1dbdd42cde99050a22c5601acc,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+a40e4e1dbdd42cde99050a22c5601acc,meeting place,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+a40e4e1dbdd42cde99050a22c5601acc,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+a40e4e1dbdd42cde99050a22c5601acc,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+a40e4e1dbdd42cde99050a22c5601acc,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+a422f0e3129d132b25c76ba25f2a695d,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+a422f0e3129d132b25c76ba25f2a695d,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+a422f0e3129d132b25c76ba25f2a695d,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+a422f0e3129d132b25c76ba25f2a695d,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+a422f0e3129d132b25c76ba25f2a695d,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+a422f0e3129d132b25c76ba25f2a695d,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+a716ea57ba143b4b8e2e416de0ffbfa7,gift,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+a716ea57ba143b4b8e2e416de0ffbfa7,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+a716ea57ba143b4b8e2e416de0ffbfa7,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+a716ea57ba143b4b8e2e416de0ffbfa7,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+a716ea57ba143b4b8e2e416de0ffbfa7,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+a716ea57ba143b4b8e2e416de0ffbfa7,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+a7dc263c7bbfad4a0710b8a0b079c04c,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+a7dc263c7bbfad4a0710b8a0b079c04c,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+a7dc263c7bbfad4a0710b8a0b079c04c,meeting place,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+a7dc263c7bbfad4a0710b8a0b079c04c,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+a7dc263c7bbfad4a0710b8a0b079c04c,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+a7dc263c7bbfad4a0710b8a0b079c04c,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+ae9b1280d68c6ef67b702f1063adfd09,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+ae9b1280d68c6ef67b702f1063adfd09,meal,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+ae9b1280d68c6ef67b702f1063adfd09,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+ae9b1280d68c6ef67b702f1063adfd09,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+ae9b1280d68c6ef67b702f1063adfd09,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+ae9b1280d68c6ef67b702f1063adfd09,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+aea77c7876801747e3ec7696fafb1403,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+aea77c7876801747e3ec7696fafb1403,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+aea77c7876801747e3ec7696fafb1403,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+aea77c7876801747e3ec7696fafb1403,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+aea77c7876801747e3ec7696fafb1403,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+aea77c7876801747e3ec7696fafb1403,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+afb3e894d90b9443062389acd55505cf,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+afb3e894d90b9443062389acd55505cf,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+afb3e894d90b9443062389acd55505cf,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+afb3e894d90b9443062389acd55505cf,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+afb3e894d90b9443062389acd55505cf,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+afb3e894d90b9443062389acd55505cf,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+affc2c5e9eac70cd0b796832edcb4ce6,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+affc2c5e9eac70cd0b796832edcb4ce6,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+affc2c5e9eac70cd0b796832edcb4ce6,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+affc2c5e9eac70cd0b796832edcb4ce6,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+affc2c5e9eac70cd0b796832edcb4ce6,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+affc2c5e9eac70cd0b796832edcb4ce6,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b1ed27dc9b04e4b144abe6add0bb8c6c,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+b22d484fd60bc15d3e0823f9a11d9ca3,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+b22d484fd60bc15d3e0823f9a11d9ca3,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+b22d484fd60bc15d3e0823f9a11d9ca3,meeting place,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+b22d484fd60bc15d3e0823f9a11d9ca3,object carrying,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+b22d484fd60bc15d3e0823f9a11d9ca3,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+b22d484fd60bc15d3e0823f9a11d9ca3,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+b2991ee171606cca55276ec5163be347,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+b2991ee171606cca55276ec5163be347,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b2991ee171606cca55276ec5163be347,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b2991ee171606cca55276ec5163be347,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+b2991ee171606cca55276ec5163be347,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b2991ee171606cca55276ec5163be347,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+b2ee1a97ec698c1373b26a766b3c9a3e,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+b2ee1a97ec698c1373b26a766b3c9a3e,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+b2ee1a97ec698c1373b26a766b3c9a3e,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+b2ee1a97ec698c1373b26a766b3c9a3e,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+b2ee1a97ec698c1373b26a766b3c9a3e,song preference,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+b2ee1a97ec698c1373b26a766b3c9a3e,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+b32469a99618e0a53179b5f978c70843,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b32469a99618e0a53179b5f978c70843,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b32469a99618e0a53179b5f978c70843,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b32469a99618e0a53179b5f978c70843,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+b32469a99618e0a53179b5f978c70843,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b32469a99618e0a53179b5f978c70843,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b4ca9f158da1d596c6ff084196e85efe,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+b4ca9f158da1d596c6ff084196e85efe,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+b4ca9f158da1d596c6ff084196e85efe,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b4ca9f158da1d596c6ff084196e85efe,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+b4ca9f158da1d596c6ff084196e85efe,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b4ca9f158da1d596c6ff084196e85efe,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+b7e387331da163b75b12c099aeafa11e,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,1
+b7e387331da163b75b12c099aeafa11e,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+b7e387331da163b75b12c099aeafa11e,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+b7e387331da163b75b12c099aeafa11e,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+b7e387331da163b75b12c099aeafa11e,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+b7e387331da163b75b12c099aeafa11e,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+b8f4558d2c96226ba46ccf578d7c9474,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b8f4558d2c96226ba46ccf578d7c9474,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b8f4558d2c96226ba46ccf578d7c9474,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+b8f4558d2c96226ba46ccf578d7c9474,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b8f4558d2c96226ba46ccf578d7c9474,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+b8f4558d2c96226ba46ccf578d7c9474,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+badf6eb7a667093d7f00916e40c66835,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+badf6eb7a667093d7f00916e40c66835,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+badf6eb7a667093d7f00916e40c66835,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+badf6eb7a667093d7f00916e40c66835,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+badf6eb7a667093d7f00916e40c66835,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+badf6eb7a667093d7f00916e40c66835,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c1cddba7f4b1ef57caf8ef9610d0d156,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+c1cddba7f4b1ef57caf8ef9610d0d156,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+c1cddba7f4b1ef57caf8ef9610d0d156,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+c1cddba7f4b1ef57caf8ef9610d0d156,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+c1cddba7f4b1ef57caf8ef9610d0d156,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+c1cddba7f4b1ef57caf8ef9610d0d156,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+c225fdc0c892163e036a6b1e59f385de,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c225fdc0c892163e036a6b1e59f385de,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+c225fdc0c892163e036a6b1e59f385de,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c225fdc0c892163e036a6b1e59f385de,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+c225fdc0c892163e036a6b1e59f385de,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+c225fdc0c892163e036a6b1e59f385de,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+c3e992eab9cb61fb650927f7f122f3e1,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c3e992eab9cb61fb650927f7f122f3e1,meal,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+c3e992eab9cb61fb650927f7f122f3e1,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c3e992eab9cb61fb650927f7f122f3e1,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+c3e992eab9cb61fb650927f7f122f3e1,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+c3e992eab9cb61fb650927f7f122f3e1,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+c4413f6979b83c24b474f01cc85e352d,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c4413f6979b83c24b474f01cc85e352d,meal,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c4413f6979b83c24b474f01cc85e352d,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c4413f6979b83c24b474f01cc85e352d,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c4413f6979b83c24b474f01cc85e352d,song preference,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+c4413f6979b83c24b474f01cc85e352d,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c69321fd3ef689e2e98e46a0634c20a0,gift,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+c69321fd3ef689e2e98e46a0634c20a0,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+c69321fd3ef689e2e98e46a0634c20a0,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+c69321fd3ef689e2e98e46a0634c20a0,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+c69321fd3ef689e2e98e46a0634c20a0,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+c69321fd3ef689e2e98e46a0634c20a0,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+c7ad441ca72e1ed677f2d6dca8c6401d,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c7ad441ca72e1ed677f2d6dca8c6401d,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c7ad441ca72e1ed677f2d6dca8c6401d,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+c7ad441ca72e1ed677f2d6dca8c6401d,object carrying,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+c7ad441ca72e1ed677f2d6dca8c6401d,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+c7ad441ca72e1ed677f2d6dca8c6401d,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+cd10248259a026b13316b846cf56fada,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+cd10248259a026b13316b846cf56fada,meal,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+cd10248259a026b13316b846cf56fada,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+cd10248259a026b13316b846cf56fada,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+cd10248259a026b13316b846cf56fada,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+cd10248259a026b13316b846cf56fada,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+cd4f8bfd41899afa297adc55c76b4300,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+cd4f8bfd41899afa297adc55c76b4300,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+cd4f8bfd41899afa297adc55c76b4300,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+cd4f8bfd41899afa297adc55c76b4300,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+cd4f8bfd41899afa297adc55c76b4300,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+cd4f8bfd41899afa297adc55c76b4300,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+d0c0d2c1aae08e2fbd79da8fba7cca61,task checking,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+d21eb9aab168048bd725421c80276628,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+d21eb9aab168048bd725421c80276628,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d21eb9aab168048bd725421c80276628,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+d21eb9aab168048bd725421c80276628,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+d21eb9aab168048bd725421c80276628,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+d21eb9aab168048bd725421c80276628,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d4a78ff53b5d18654e974c9be9a3a93f,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+d4a78ff53b5d18654e974c9be9a3a93f,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d4a78ff53b5d18654e974c9be9a3a93f,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d4a78ff53b5d18654e974c9be9a3a93f,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+d4a78ff53b5d18654e974c9be9a3a93f,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+d4a78ff53b5d18654e974c9be9a3a93f,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+d4f5fc7464e1eeb0955539ba50d6cc44,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+d4f5fc7464e1eeb0955539ba50d6cc44,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+d4f5fc7464e1eeb0955539ba50d6cc44,meeting place,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+d4f5fc7464e1eeb0955539ba50d6cc44,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+d4f5fc7464e1eeb0955539ba50d6cc44,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+d4f5fc7464e1eeb0955539ba50d6cc44,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+d6c5fd9737390989ccaaeac2a441fc0c,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+d6c5fd9737390989ccaaeac2a441fc0c,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+d6c5fd9737390989ccaaeac2a441fc0c,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+d6c5fd9737390989ccaaeac2a441fc0c,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+d6c5fd9737390989ccaaeac2a441fc0c,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+d6c5fd9737390989ccaaeac2a441fc0c,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+dad98215429ada3043b07cfb9f66f14c,gift,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+dad98215429ada3043b07cfb9f66f14c,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+dad98215429ada3043b07cfb9f66f14c,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+dad98215429ada3043b07cfb9f66f14c,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+dad98215429ada3043b07cfb9f66f14c,song preference,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+dad98215429ada3043b07cfb9f66f14c,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+db1f56be0e6e546200c7a17e099a0b6b,gift,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+db1f56be0e6e546200c7a17e099a0b6b,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+db1f56be0e6e546200c7a17e099a0b6b,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+db1f56be0e6e546200c7a17e099a0b6b,object carrying,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+db1f56be0e6e546200c7a17e099a0b6b,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+db1f56be0e6e546200c7a17e099a0b6b,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+dfa30c3527ec10fa6d151ef8c09d56d4,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+dfa30c3527ec10fa6d151ef8c09d56d4,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+dfa30c3527ec10fa6d151ef8c09d56d4,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+dfa30c3527ec10fa6d151ef8c09d56d4,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+dfa30c3527ec10fa6d151ef8c09d56d4,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+dfa30c3527ec10fa6d151ef8c09d56d4,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+e3e96bdb55634512360a02e132826682,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+e3e96bdb55634512360a02e132826682,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+e3e96bdb55634512360a02e132826682,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+e3e96bdb55634512360a02e132826682,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+e3e96bdb55634512360a02e132826682,song preference,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+e3e96bdb55634512360a02e132826682,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+e3ff78fb3f0d8fb786645f4fc5701f61,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+e3ff78fb3f0d8fb786645f4fc5701f61,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+e3ff78fb3f0d8fb786645f4fc5701f61,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+e3ff78fb3f0d8fb786645f4fc5701f61,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+e3ff78fb3f0d8fb786645f4fc5701f61,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+e3ff78fb3f0d8fb786645f4fc5701f61,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+e9ee9d4da44c1400109fd66a8ce69c1d,gift,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+e9ee9d4da44c1400109fd66a8ce69c1d,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+e9ee9d4da44c1400109fd66a8ce69c1d,meeting place,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+e9ee9d4da44c1400109fd66a8ce69c1d,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+e9ee9d4da44c1400109fd66a8ce69c1d,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+e9ee9d4da44c1400109fd66a8ce69c1d,task checking,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+eaf2b934aefbe007ad6cc05121f6f42b,gift,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+eaf2b934aefbe007ad6cc05121f6f42b,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+eaf2b934aefbe007ad6cc05121f6f42b,meeting place,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+eaf2b934aefbe007ad6cc05121f6f42b,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+eaf2b934aefbe007ad6cc05121f6f42b,song preference,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+eaf2b934aefbe007ad6cc05121f6f42b,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+ec535b1bbafee8c26ab6797a2e6c3860,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+ec535b1bbafee8c26ab6797a2e6c3860,meal,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+ec535b1bbafee8c26ab6797a2e6c3860,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+ec535b1bbafee8c26ab6797a2e6c3860,object carrying,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+ec535b1bbafee8c26ab6797a2e6c3860,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+ec535b1bbafee8c26ab6797a2e6c3860,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,1
+ed2b1f355d21ed50e480db87c2da08af,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+ed2b1f355d21ed50e480db87c2da08af,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+ed2b1f355d21ed50e480db87c2da08af,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+ed2b1f355d21ed50e480db87c2da08af,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+ed2b1f355d21ed50e480db87c2da08af,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+ed2b1f355d21ed50e480db87c2da08af,task checking,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,meeting place,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+ee2da8e6b4f3052bcfd7cfb0d97255ae,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+eede2584f377c89cf960e8acaf48814f,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+eede2584f377c89cf960e8acaf48814f,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+eede2584f377c89cf960e8acaf48814f,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,1
+eede2584f377c89cf960e8acaf48814f,object carrying,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+eede2584f377c89cf960e8acaf48814f,song preference,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
+eede2584f377c89cf960e8acaf48814f,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+efc9ffba321ca20e5714dbdad5e098c8,gift,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+efc9ffba321ca20e5714dbdad5e098c8,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+efc9ffba321ca20e5714dbdad5e098c8,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+efc9ffba321ca20e5714dbdad5e098c8,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+efc9ffba321ca20e5714dbdad5e098c8,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+efc9ffba321ca20e5714dbdad5e098c8,task checking,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f04916f33eb7f6f137c3a546e7923f9c,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f04916f33eb7f6f137c3a546e7923f9c,meal,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f04916f33eb7f6f137c3a546e7923f9c,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f04916f33eb7f6f137c3a546e7923f9c,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f04916f33eb7f6f137c3a546e7923f9c,song preference,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+f04916f33eb7f6f137c3a546e7923f9c,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,meal,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,meeting place,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,object carrying,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f0b011a8c7d8e955b56bcb58c54dfeaa,task checking,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f0b7014ce2363cd998f910069b9b504b,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+f0b7014ce2363cd998f910069b9b504b,meal,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f0b7014ce2363cd998f910069b9b504b,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+f0b7014ce2363cd998f910069b9b504b,object carrying,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+f0b7014ce2363cd998f910069b9b504b,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f0b7014ce2363cd998f910069b9b504b,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f37bb0347fffb42cf521561ee25c4b11,gift,equal,equal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+f37bb0347fffb42cf521561ee25c4b11,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+f37bb0347fffb42cf521561ee25c4b11,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+f37bb0347fffb42cf521561ee25c4b11,object carrying,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+f37bb0347fffb42cf521561ee25c4b11,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+f37bb0347fffb42cf521561ee25c4b11,task checking,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f525dd6d5612da9b13adb064aecc3372,gift,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+f525dd6d5612da9b13adb064aecc3372,meal,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,give,1,alternating,0,2
+f525dd6d5612da9b13adb064aecc3372,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,2
+f525dd6d5612da9b13adb064aecc3372,object carrying,higher,unequal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+f525dd6d5612da9b13adb064aecc3372,song preference,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f525dd6d5612da9b13adb064aecc3372,task checking,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+f59ede6c8f5f41192ffec622a0bb25e0,gift,higher,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+f59ede6c8f5f41192ffec622a0bb25e0,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+f59ede6c8f5f41192ffec622a0bb25e0,meeting place,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f59ede6c8f5f41192ffec622a0bb25e0,object carrying,lower,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f59ede6c8f5f41192ffec622a0bb25e0,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f59ede6c8f5f41192ffec622a0bb25e0,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,2
+f9ee3f0de717032a2fd738c1fbab007b,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f9ee3f0de717032a2fd738c1fbab007b,meal,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+f9ee3f0de717032a2fd738c1fbab007b,meeting place,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,2
+f9ee3f0de717032a2fd738c1fbab007b,object carrying,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+f9ee3f0de717032a2fd738c1fbab007b,song preference,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+f9ee3f0de717032a2fd738c1fbab007b,task checking,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,gift,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,meal,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,meeting place,equal,equal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,object carrying,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,song preference,equal,equal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+fdb41fb8d79d865fd60aab9eb9c46a3c,task checking,higher,unequal,receive,give,give_receive,1,TRUE,TRUE,give,1,repeating,1,2
+fe68e522573afe87c8419d04f9e53b9b,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,2
+fe68e522573afe87c8419d04f9e53b9b,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+fe68e522573afe87c8419d04f9e53b9b,meeting place,equal,equal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+fe68e522573afe87c8419d04f9e53b9b,object carrying,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,2
+fe68e522573afe87c8419d04f9e53b9b,song preference,lower,unequal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+fe68e522573afe87c8419d04f9e53b9b,task checking,equal,equal,give,receive,receive_give,0,TRUE,TRUE,receive,0,repeating,1,2
+ffb9ea385add6ebedab2764b9f137d0a,gift,higher,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+ffb9ea385add6ebedab2764b9f137d0a,meal,lower,unequal,receive,receive,receive_receive,0,FALSE,FALSE,give,1,repeating,1,1
+ffb9ea385add6ebedab2764b9f137d0a,meeting place,equal,equal,receive,give,give_receive,1,TRUE,TRUE,receive,0,alternating,0,1
+ffb9ea385add6ebedab2764b9f137d0a,object carrying,higher,unequal,receive,receive,receive_receive,0,FALSE,FALSE,receive,0,alternating,0,1
+ffb9ea385add6ebedab2764b9f137d0a,song preference,lower,unequal,give,give,give_give,1,FALSE,FALSE,receive,0,repeating,1,1
+ffb9ea385add6ebedab2764b9f137d0a,task checking,equal,equal,give,give,give_give,1,FALSE,FALSE,give,1,alternating,0,1
