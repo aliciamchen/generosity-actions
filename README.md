@@ -2,7 +2,7 @@
 
 This project examines how social relationships influence people's expectations about sequences of generosity. The research tests how these expectations vary across different relationship types (equal vs. hierarchical) and explores the underlying mechanisms driving these patterns.
 
-Preprint: TBD
+Preprint: https://osf.io/preprints/psyarxiv/7j6k8_v1
 
 ## How to reproduce results
 
