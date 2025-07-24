@@ -2,7 +2,16 @@
 
 This project examines how social relationships influence people's expectations about sequences of generosity. The research tests how these expectations vary across different relationship types (equal vs. hierarchical) and explores the underlying mechanisms driving these patterns.
 
-Preprint: https://osf.io/preprints/psyarxiv/7j6k8_v1
+<!-- Preprint: https://osf.io/preprints/psyarxiv/7j6k8_v1 -->
+
+## This repository
+
+This repository contains the code and data for the project. The code is organized into the following folders:
+
+- `analysis/`: contains the code for the analyses
+- `data/`: contains the data. See [codebook](data/README.md) for more details. 
+- `experiments/`: contains the code for the experiments. 
+- `figures/`: contains the figures. The direct figure outputs are in `figures/`. Illustrator-formatted figures for the paper are in `figures/PDF`. 
 
 ## How to reproduce results
 
@@ -43,14 +52,7 @@ Text outputs are saved in `analysis/outputs/`.
 Rscript -e "rmarkdown::render('analysis/figures.Rmd')"
 ```
 
-Direct figure output is saved in `figures/`. The Illustrator-formatted figures for the paper are in `figures/PDF`. 
+<!-- ## Contact
 
-
-## Data structure
-
-See [codebook](data/README.md). 
-
-## Contact
-
-Email: aliciach@mit.edu
+Email: aliciach@mit.edu -->
 

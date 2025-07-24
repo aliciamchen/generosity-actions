@@ -6,7 +6,7 @@ This folder contains data and demographic info for each experiment.
 
 The below entries correspond to the non-processed wide-form data (tidy data with labels modified and organized is also provided under the `{}_tidy_data.csv` labels)
 
-- `study-1_data.csv` collected Jan 30, 2023 by Alicia Chen
+- `study-1_data.csv` collected Jan 30, 2023
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `relationship`: what relationship are the two characters in? (either `no_info`, `asymmetric`, or `symmetric`)
@@ -16,7 +16,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `none`: likelihood of no future interaction
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `study-2_data.csv` collected Apr 12, 2023 by Alicia Chen
+- `study-2_data.csv` collected Apr 12, 2023
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `relationship`: what relationship are the two characters in? (corresponds to relative status of generous character: `more`, `equal`, or `less`)
@@ -26,7 +26,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `none`: likelihood of no future interaction
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `study-3_data.csv`: collected April 30 and May 1, 2025 by Alicia Chen
+- `study-3_data.csv`: collected April 30 and May 1, 2025
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `relationship`: what relationship are the two characters in? (corresponds to relative status of generous character: `more`, `equal`, or `less`)
@@ -36,7 +36,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `none`: likelihood of no future interaction
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `study-4_data.csv` collected Aug 5, 2023 by Alicia Chen
+- `study-4_data.csv` collected Aug 5, 2023
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `altruistic_status`: what relationship are the two characters in? (corresponds to relative status of first-time experimenter-manipulated generous character: `more`, `equal`, or `less`); this corresponds to 'observed first time' in the manuscript
@@ -47,7 +47,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `strategy`: did people expect `repeating` or `alternating` actions?
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `study-5_data.csv` (collected May 16th 2025 by Alicia Chen) and `study-6_data.csv` (collected May 17th 2025 by Alicia Chen)
+- `study-5_data.csv` (collected May 16th 2025) and `study-6_data.csv` (collected May 17th 2025)
     - `subject_id`: anonymized participant ID
     - `trial_num`: corresponds to the order the trials were displayed to participants
     - `scenario_id`: label for each of the 6 scenarios
@@ -59,9 +59,9 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `passed_attention_checks`: how many attention checks (out of 2) did they pass? 
 
 
-### Validation experiments
+### Validation experiments (measuring relative benefit/effort in each scenario)
 
-- `validation_benefit_data.csv` collected May 24 and July 11, 2023 by Alicia Chen
+- `validation_benefit_data.csv` collected May 24 and July 11, 2023
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - participant responses (0-indexed, on a 7 point Likert scale)
@@ -70,13 +70,13 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
 
-- `validation_effort_data.csv` collected July 12, 2023 by Alicia Chen
+- `validation_effort_data.csv` collected July 12, 2023
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - participant responses (0-indexed, on a 7 point Likert scale)
-        - `expected_high_benefit`: how much was the (assigned) target of generosity expected to put in effort, compared to not interacting
-        - `expected_low_benefit`: how much was the (assigned) generous actor expected to put in effort, compared to not interacting
+        - `expected_high_effort`: how much was the (assigned) target of generosity expected to put in effort, compared to not interacting
+        - `expected_low_effort`: how much was the (assigned) generous actor expected to put in effort, compared to not interacting
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
 
-`validation_benefit_diff.csv` and `validation_effort_diff.csv` contain computed mean benefit/effort values for each scenario, and their difference
+`scenarios_benefit.csv` and `scenarios_effort.csv` contain computed mean benefit/effort values for each scenario, and `scenarios_diff.csv` contain their difference. 
