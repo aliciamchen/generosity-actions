@@ -7,4 +7,5 @@ dependencies = [
     "pandas>=2.2",
     "numexpr>=2.10",
     "bottleneck>=1.4",
+    "memo-lang>=1.2.9",
 ]
