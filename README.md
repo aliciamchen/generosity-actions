@@ -15,13 +15,14 @@ This repository contains the code and data for the project. The code is organize
 
 ## How to reproduce results
 
-### Set up conda and R environments 
+### Set up Python and R environments
 
+**Python (using uv):**
 ```bash
-conda env create -f environment.yml
-conda activate generosity-actions
+uv sync
 ```
 
+**R:**
 ```r
 # Install renv if not already installed
 if (!requireNamespace("renv", quietly = TRUE)) {

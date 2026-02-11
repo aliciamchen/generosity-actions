@@ -8,3 +8,5 @@ non_anonymized
 analysis/figures.html
 preprocess
 experiments/README.md
+*.pdf
+submissions
