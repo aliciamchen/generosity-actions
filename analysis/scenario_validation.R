@@ -3,12 +3,8 @@ library(tidyverse)
 library(tidyboot)
 library(ggthemes)
 library(forcats)
-library(showtext)
 
-showtext_auto()
-
-font_add(family = "Lato", regular = here("fonts/Lato-Regular.ttf"))
-theme_set(theme_classic(base_size = 15, base_family = "Lato"))
+theme_set(theme_classic(base_size = 15, base_family = "Arial"))
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
@@ -154,7 +150,7 @@ ggplot(diffs %>% filter(type == "benefit"), aes(x = story, y = diff)) +
     legend.position = "none"
   )
 
-ggsave(here("figures/scenario_diffs_benefit.pdf"), width = 9.5, height = 3)
+ggsave(here("figures/scenario_diffs_benefit.pdf"), width = 9.5, height = 3, device = cairo_pdf)
 
 ggplot(diffs %>% filter(type == "effort"), aes(x = story, y = diff)) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "gray") +
@@ -183,7 +179,7 @@ ggplot(diffs %>% filter(type == "effort"), aes(x = story, y = diff)) +
     legend.position = "none"
   )
 
-ggsave(here("figures/scenario_diffs_effort.pdf"), width = 9.5, height = 3)
+ggsave(here("figures/scenario_diffs_effort.pdf"), width = 9.5, height = 3, device = cairo_pdf)
 
 
 # Benefit
@@ -222,7 +218,7 @@ ggplot(
   labs(x = "Scenario", y = "Benefit", fill = "Partner") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1), legend.position = "bottom")
 
-ggsave(here("figures/scenario_benefit.pdf"), width = 9.5, height = 3.7)
+ggsave(here("figures/scenario_benefit.pdf"), width = 9.5, height = 3.7, device = cairo_pdf)
 
 # Effort
 
@@ -262,5 +258,5 @@ ggplot(
 
 
 
-ggsave(here("figures/scenario_effort.pdf"), width = 9.5, height = 3.7)
+ggsave(here("figures/scenario_effort.pdf"), width = 9.5, height = 3.7, device = cairo_pdf)
 

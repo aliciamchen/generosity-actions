@@ -7,20 +7,13 @@ output: html_document
 library(here)
 library(tidyverse)
 library(ggplot2)
-library(showtext)
 library(dplyr)
 library(tidyboot)
 library(lmerTest)
 library(ggpubr)
 
-showtext_auto()
-
-font_add(family = "Lato", regular = here("fonts/Lato-Regular.ttf"))
-theme_set(theme_classic(base_size = 15, base_family = "Lato"))
+source(here("analysis/plot_config.R"))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
-
-action_colors <- c("#F0E442", "#E69F00", "#D6D6D6")
-relationship_colors <- c("Higher" = "#DC267F", "Lower" = "#785EF0")
 ```
 
 
@@ -82,7 +75,7 @@ ggplot(
   ) +
   theme(legend.position = "bottom")
 
-ggsave(here("figures/study-1_main.pdf"))
+ggsave(here("figures/study-1_main.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=10, fig.height=10.5}
@@ -119,7 +112,7 @@ ggplot(
   theme(legend.position = "bottom") +
   facet_wrap(~story, nrow = 6)
 
-# ggsave(here("figures/study-1_scenarios.pdf"))
+ggsave(here("figures/study-1_scenarios.pdf"), device = cairo_pdf)
 ```
 
 # Study 2
@@ -180,7 +173,7 @@ ggplot(
   ) +
   theme(legend.position = "bottom")
 
-# ggsave(here("figures/study-2_main.pdf"))
+ggsave(here("figures/study-2_main.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=10, fig.height=10.5}
@@ -217,7 +210,7 @@ ggplot(
   theme(legend.position = "bottom") +
   facet_wrap(~story, nrow = 6)
 
-# ggsave(here("figures/study-2_scenarios.pdf"))
+ggsave(here("figures/study-2_scenarios.pdf"), device = cairo_pdf)
 ```
 ## Validation study
 
@@ -251,7 +244,7 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "benefit"), aes(x = dif
   geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
   geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(
     x = "Differential benefit",
     y = "P(Precedent)",
@@ -260,7 +253,7 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "benefit"), aes(x = dif
   theme(legend.position = "none") +
   facet_grid(~relationship, labeller = as_labeller(appender))
 
-ggsave(here("figures/study-2_benefit.pdf"))
+ggsave(here("figures/study-2_benefit.pdf"), device = cairo_pdf)
 ```
 
 
@@ -271,7 +264,7 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
   geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
   geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(
     x = "Differential effort",
     y = "P(Precedent)",
@@ -280,7 +273,7 @@ ggplot(study_2_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
   theme(legend.position = "none") +
   facet_grid(~relationship, labeller = as_labeller(appender))
 
-ggsave(here("figures/study-2_effort.pdf"))
+ggsave(here("figures/study-2_effort.pdf"), device = cairo_pdf)
 ```
 
 # Study 3
@@ -340,7 +333,7 @@ ggplot(
     fill = "Next interaction"
   ) +
   theme(legend.position = "bottom")
-# ggsave(here("figures/study-4_main.pdf"))
+ggsave(here("figures/study-3_main.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=10, fig.height=10.5}
@@ -377,7 +370,7 @@ ggplot(
   theme(legend.position = "bottom") +
   facet_wrap(~story, nrow = 6)
 
-ggsave(here("figures/study-3_scenarios.pdf"))
+ggsave(here("figures/study-3_scenarios.pdf"), device = cairo_pdf)
 ```
 
 
@@ -409,7 +402,7 @@ ggplot(study_3_benefit_effort_summary %>% filter(type == "benefit"), aes(x = dif
   geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
   geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(
     x = "Differential benefit",
     y = "P(Precedent)",
@@ -418,7 +411,7 @@ ggplot(study_3_benefit_effort_summary %>% filter(type == "benefit"), aes(x = dif
   theme(legend.position = "none") +
   facet_grid(~relationship, labeller = as_labeller(appender))
 
-ggsave(here("figures/study-3_benefit.pdf"))
+ggsave(here("figures/study-3_benefit.pdf"), device = cairo_pdf)
 ```
 ```{r fig.width = 7, fig.height=4}
 ggplot(study_3_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff_x, y = p_prec, color = relationship)) +
@@ -427,7 +420,7 @@ ggplot(study_3_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
   geom_errorbar(mapping = aes(x = diff_x, ymin = ci_lower, ymax = ci_upper), size = 1.5, width = 0.13, alpha = 0.3) +
   geom_errorbarh(mapping = aes(y = p_prec, xmin = ci_lower_x, xmax = ci_upper_x), size = 1.5, height = 0.015, alpha = 0.3) +
   geom_hline(yintercept = 0.5, linetype = "dashed", color = "gray") +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(
     x = "Differential effort",
     y = "P(Precedent)",
@@ -436,7 +429,7 @@ ggplot(study_3_benefit_effort_summary %>% filter(type == "effort"), aes(x = diff
   theme(legend.position = "none") +
   facet_grid(~relationship, labeller = as_labeller(appender))
 
-ggsave(here("figures/study-3_effort.pdf"))
+ggsave(here("figures/study-3_effort.pdf"), device = cairo_pdf)
 ```
 
 # Study 4
@@ -523,7 +516,7 @@ ggplot(study_4_summary, aes(x = first_actual, y = empirical_stat, color = first_
   ) +
   theme(legend.position = "right")
 
-ggsave(here("figures/study-4_main.pdf"))
+ggsave(here("figures/study-4_main.pdf"), device = cairo_pdf)
 ```
 
 ## Implicit cooordination
@@ -553,7 +546,7 @@ ggplot(study_4_first_time_summary, aes(x = story, y = empirical_stat)) +
   labs(x = "Scenario", y = "P(lower-rank generous)", title = "Study 3: Implicit coordination") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
-ggsave(here("figures/study-4_implicit.pdf"))
+ggsave(here("figures/study-4_implicit.pdf"), device = cairo_pdf)
 ```
 
 
@@ -573,7 +566,7 @@ ggplot(study_4_first_second_summary, aes(x = diff_effort, y = empirical_stat_fir
   ) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-4_effort-first-time.pdf"))
+ggsave(here("figures/study-4_effort-first-time.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width = 4.5, fig.height=4}
@@ -590,7 +583,7 @@ ggplot(study_4_first_second_summary, aes(x = diff_benefit, y = empirical_stat_fi
   ) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-4_benefit-first-time.pdf"))
+ggsave(here("figures/study-4_benefit-first-time.pdf"), device = cairo_pdf)
 ```
 
 ## Main plot: First time vs. second time
@@ -634,13 +627,13 @@ ggplot(
   ) +
   scale_y_continuous(limits = c(0, 1)) +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(x = "Expected first time (Study 4)", y = "Predicted next time (Study 4)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 
 
-ggsave(here("figures/study-4_first_second.pdf"))
+ggsave(here("figures/study-4_first_second.pdf"), device = cairo_pdf)
 ```
 
 ## Study 4 vs. Study 2
@@ -720,12 +713,12 @@ ggplot(
   ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(x = "Expected first time (Study 4)", y = "Predicted next time (Study 2)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 
-ggsave(here("figures/study-2-4_first_second.pdf"))
+ggsave(here("figures/study-2-4_first_second.pdf"), device = cairo_pdf)
 ```
 
 ## Study 4 vs. Study 3 (concrete relationships) 
@@ -814,12 +807,12 @@ ggplot(
   ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(0, 1)) +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(x = "Expected first time (Study 4)", y = "Predicted next time (Study 3)", color = "Observed rank of generous actor") +
   theme(legend.position = "bottom")
 
 
-ggsave(here("figures/study-3-4_first_second.pdf"))
+ggsave(here("figures/study-3-4_first_second.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=4, fig.height=4}
@@ -849,12 +842,12 @@ ggplot(
     color = "gray"
   ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(x = "Prestige score", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
   theme(legend.position = "none")
 
 
-ggsave(here("figures/study-3_prestige.pdf"))
+ggsave(here("figures/study-3_prestige.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=4, fig.height=4}
@@ -884,12 +877,12 @@ ggplot(
     color = "gray"
   ) +
   scale_y_continuous(limits = c(0.2, 0.8)) +
-  scale_color_manual(values = c("Higher" = "#DC267F", "Lower" = "#785EF0")) +
+  scale_color_manual(values = relationship_colors) +
   labs(x = "Dominance score", y = "Study 3 P(lower-rank generous)", color = "Observed rank of generous actor") +
   theme(legend.position = "none")
 
 
-ggsave(here("figures/study-3_dominance.pdf"))
+ggsave(here("figures/study-3_dominance.pdf"), device = cairo_pdf)
 ```
 
 plot correlation of dominance score vs. prestige score
@@ -900,7 +893,7 @@ ggplot(studies_3_4_summary, aes(x = dominance_score, y = prestige_score)) +
   geom_smooth(method = "lm", fill = "lightgray", linewidth = 1.3) +
   labs(x = "Dominance score", y = "Prestige score")
 
-ggsave(here("figures/dominance_vs_prestige.pdf"))
+ggsave(here("figures/dominance_vs_prestige.pdf"), device = cairo_pdf)
 ```
 ```{r}
 cor.test(studies_3_4_summary$dominance_score, studies_3_4_summary$prestige_score, method = "pearson")
@@ -953,7 +946,7 @@ ggplot(
   lims(y = c(0, 1)) +
   labs(y = "Study 4 First time P(lower-rank generous)", x = "Dominance score")
 
-ggsave(here("figures/study-4_dominance-vs-first.pdf"))
+ggsave(here("figures/study-4_dominance-vs-first.pdf"), device = cairo_pdf)
 
 ggplot(
   studies_3_4_higher_summary,
@@ -977,7 +970,7 @@ ggplot(
   lims(y = c(0, 1)) +
   labs(y = "Study 4 First time P(lower-rank generous)", x = "Prestige score")
 
-ggsave(here("figures/study-4_prestige-vs-first.pdf"))
+ggsave(here("figures/study-4_prestige-vs-first.pdf"), device = cairo_pdf)
 ```
 
 
@@ -1038,7 +1031,7 @@ ggplot(
   facet_wrap(~scenario_id) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-5_first_time_scenarios.pdf"))
+ggsave(here("figures/study-5_first_time_scenarios.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=2.8, fig.height=3.2}
@@ -1065,7 +1058,7 @@ ggplot(
   scale_y_continuous(limits = c(0, 1)) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-5_first_time_all.pdf"))
+ggsave(here("figures/study-5_first_time_all.pdf"), device = cairo_pdf)
 ```
 
 ```{r}
@@ -1103,7 +1096,7 @@ ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     shape = "First time generous"
   ) +
   scale_color_manual(
-    values = c("Receive" = "#E69F00", "Give" = "#F0E442"),
+    values = give_receive_colors,
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
   ) +
   scale_shape_manual(
@@ -1111,7 +1104,7 @@ ggplot(study_5_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
   )
 
-ggsave(here("figures/study-5_second_time_successful.pdf"))
+ggsave(here("figures/study-5_second_time_successful.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=4.5, fig.height=3.2}
@@ -1139,7 +1132,7 @@ ggplot(study_5_summary %>% filter(successful_first_time == FALSE), aes(x = parti
     labels = c("Give" = "Both give", "Receive" = "Both receive")
   )
 
-ggsave(here("figures/study-5_second_time_unsuccessful.pdf"))
+ggsave(here("figures/study-5_second_time_unsuccessful.pdf"), device = cairo_pdf)
 ```
 
 
@@ -1235,7 +1228,7 @@ ggplot(
   facet_wrap(~scenario_id) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-6_first_time_scenarios.pdf"))
+ggsave(here("figures/study-6_first_time_scenarios.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=2.8, fig.height=3.2}
@@ -1262,7 +1255,7 @@ ggplot(
   scale_y_continuous(limits = c(0, 1)) +
   theme(legend.position = "none")
 
-ggsave(here("figures/study-6_first_time_all.pdf"))
+ggsave(here("figures/study-6_first_time_all.pdf"), device = cairo_pdf)
 ```
 
 ```{r}
@@ -1299,11 +1292,11 @@ ggplot(study_6_summary %>% filter(successful_first_time == TRUE), aes(x = partic
     color = "First time generous"
   ) +
   scale_color_manual(
-    values = c("Receive" = "#E69F00", "Give" = "#F0E442"),
+    values = give_receive_colors,
     labels = c("Receive" = "Self (Precedent)", "Give" = "Partner (Reciprocity)")
   )
 
-ggsave(here("figures/study-6_second_time_successful.pdf"))
+ggsave(here("figures/study-6_second_time_successful.pdf"), device = cairo_pdf)
 ```
 
 ```{r fig.width=4.5, fig.height=3.2}
@@ -1331,7 +1324,7 @@ ggplot(study_6_summary %>% filter(successful_first_time == FALSE), aes(x = parti
     labels = c("Give" = "Both give", "Receive" = "Both receive")
   )
 
-ggsave(here("figures/study-6_second_time_unsuccessful.pdf"))
+ggsave(here("figures/study-6_second_time_unsuccessful.pdf"), device = cairo_pdf)
 ```
 
 ```{r}

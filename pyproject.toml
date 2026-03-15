@@ -8,4 +8,8 @@ dependencies = [
     "numexpr>=2.10",
     "bottleneck>=1.4",
     "memo-lang>=1.2.9",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "jax>=0.9.0.1",
+    "seaborn>=0.13.2",
 ]

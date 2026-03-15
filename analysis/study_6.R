@@ -1,5 +1,4 @@
 library(here)
-library(showtext)
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
@@ -8,10 +7,7 @@ library(emmeans)
 library(lmerTest)
 library(car)
 
-showtext_auto()
-
-font_add(family = "Lato", regular = here("fonts/Lato-Regular.ttf"))
-theme_set(theme_classic(base_size = 15, base_family = "Lato"))
+theme_set(theme_classic(base_size = 15, base_family = "Arial"))
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 

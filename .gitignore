@@ -11,3 +11,8 @@ experiments/README.md
 *.pdf
 submissions
 CLAUDE.md
+model/
+model_fit_plan.md
+analysis/outputs/fitted_params*.csv
+analysis/outputs/model_predictions*.csv
+analysis/outputs/model_figures/
