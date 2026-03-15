@@ -16,4 +16,5 @@ model_fit_plan.md
 analysis/outputs/fitted_params*.csv
 analysis/outputs/model_predictions*.csv
 analysis/outputs/model_figures/
-revision
+reviews
+generosity-actions_R1
