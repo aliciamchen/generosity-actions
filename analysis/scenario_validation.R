@@ -4,7 +4,8 @@ library(tidyboot)
 library(ggthemes)
 library(forcats)
 
-theme_set(theme_classic(base_size = 15, base_family = "Arial"))
+cairo_pdf(nullfile())
+source(here("analysis/plot_config.R"))
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
@@ -128,7 +129,7 @@ ggplot(diffs %>% filter(type == "benefit"), aes(x = story, y = diff)) +
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.4), alpha = 1
+    position = position_dodge(width = 0.4), alpha = 0.7
   ) +
   geom_point(
     data = diffs.summary %>% filter(type == "benefit"),
@@ -157,7 +158,7 @@ ggplot(diffs %>% filter(type == "effort"), aes(x = story, y = diff)) +
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.4), alpha = 1
+    position = position_dodge(width = 0.4), alpha = 0.7
   ) +
   geom_point(
     data = diffs.summary %>% filter(type == "effort"),
@@ -191,7 +192,8 @@ ggplot(
   geom_violin(
     width = 2.0,
     bw = 0.43,
-    position = position_dodge(width = 0.7)
+    position = position_dodge(width = 0.7),
+    alpha = 0.7
   ) +
   geom_point(
     data = benefit.long.summary,
@@ -208,7 +210,7 @@ ggplot(
     width = 0
   ) +
   scale_fill_brewer(
-    palette = "Set2",
+    palette = "Set1",
     labels = c("Generous actor", "Recipient")
   ) +
   scale_y_continuous(
@@ -230,6 +232,7 @@ ggplot(
     width = 2.0,
     bw = 0.43,
     position = position_dodge(width = 0.7),
+    alpha = 0.7
   ) +
   geom_point(
     data = effort.long.summary,
@@ -246,7 +249,7 @@ ggplot(
     width = 0
   ) +
   scale_fill_brewer(
-    palette = "Set2",
+    palette = "Set1",
     labels = c("Generous actor", "Recipient")
   ) +
   scale_y_continuous(

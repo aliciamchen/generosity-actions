@@ -50,7 +50,7 @@ ggplot(
   geom_violin(
     bw = 0.43,
     position = position_dodge(width = 0.7),
-    alpha = 0.8
+    alpha = 0.7
   ) +
   geom_pointrange(
     data = study_1_summary,
@@ -86,7 +86,7 @@ ggplot(
   geom_violin(
     bw = 0.43,
     position = position_dodge(width = 0.7),
-    alpha = 0.8
+    alpha = 0.7
   ) +
   geom_pointrange(
     data = study_1_summary_scenario,
@@ -148,7 +148,7 @@ ggplot(
   geom_violin(
     bw = 0.43,
     position = position_dodge(width = 0.7),
-    alpha = 0.8
+    alpha = 0.7
   ) +
   geom_pointrange(
     data = study_2_summary,
@@ -184,7 +184,7 @@ ggplot(
   geom_violin(
     bw = 0.43,
     position = position_dodge(width = 0.7),
-    alpha = 0.8
+    alpha = 0.7
   ) +
   geom_pointrange(
     data = study_2_summary_scenario,
@@ -309,7 +309,7 @@ ggplot(
   geom_violin(
     bw = 0.43,
     position = position_dodge(width = 0.7),
-    alpha = 0.8
+    alpha = 0.7
   ) +
   geom_pointrange(
     data = study_3_summary,
@@ -344,7 +344,7 @@ ggplot(
   geom_violin(
     bw = 0.43,
     position = position_dodge(width = 0.7),
-    alpha = 0.8
+    alpha = 0.7
   ) +
   geom_pointrange(
     data = study_3_summary_scenario,

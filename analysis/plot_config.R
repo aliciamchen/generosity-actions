@@ -9,6 +9,6 @@ give_receive_colors <- c("Receive" = "#E09565", "Give" = "#4D7D4C")
 
 # Global theme
 theme_set(
-  theme_classic(base_size = 15, base_family = "Arial") +
+  theme_classic(base_size = 15, base_family = "Arial Nova") +
     theme(strip.background = element_blank())
 )
