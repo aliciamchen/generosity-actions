@@ -1,10 +1,10 @@
 here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
 ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.2     ✔ tibble    3.3.0
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.0.4     
+✔ dplyr     1.2.0     ✔ readr     2.1.6
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.2     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.1     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
@@ -31,6 +31,13 @@ The following object is masked from ‘package:stats’:
 Welcome to emmeans.
 Caution: You lose important information if you filter this package's results.
 See '? untidy'
+
+Attaching package: ‘ordinal’
+
+The following object is masked from ‘package:dplyr’:
+
+    slice
+
 [1] 59
          gender  n
 1        female 26
@@ -59,11 +66,11 @@ Number of obs: 3179, groups:  subject_id, 59; story, 18
 
 Fixed effects:
                                   Estimate Std. Error         df t value
-(Intercept)                        3.82589    0.05808   28.25021  65.871
+(Intercept)                        3.82589    0.05808   28.25017  65.871
 next_interaction1                  0.45352    0.03413 3095.12036  13.288
 next_interaction2                  1.00290    0.03415 3095.12969  29.370
-relationship1                      0.08598    0.03424 3105.09827   2.511
-relationship2                     -0.02598    0.03424 3104.22336  -0.759
+relationship1                      0.08598    0.03424 3105.09826   2.511
+relationship2                     -0.02598    0.03424 3104.22335  -0.759
 next_interaction1:relationship1    0.24188    0.04825 3095.05482   5.012
 next_interaction2:relationship1   -0.16626    0.04827 3095.05578  -3.445
 next_interaction1:relationship2    0.50029    0.04828 3095.11838  10.361
@@ -91,6 +98,21 @@ nxt_ntrc1:1  0.000 -0.001  0.001 -0.001  0.000
 nxt_ntrc2:1  0.000  0.001 -0.001  0.000  0.001 -0.500              
 nxt_ntrc1:2  0.000  0.001  0.000  0.000  0.000 -0.500  0.250       
 nxt_ntrc2:2  0.000  0.000  0.000  0.001  0.000  0.250 -0.499 -0.500
+
+--- Standardized Parameters ---
+# Standardization method: refit
+
+Parameter                         | Std. Coef. |         95% CI
+---------------------------------------------------------------
+(Intercept)                       |   8.70e-05 | [-0.06,  0.06]
+next interaction1                 |       0.25 | [ 0.22,  0.29]
+next interaction2                 |       0.56 | [ 0.52,  0.60]
+relationship1                     |       0.05 | [ 0.01,  0.09]
+relationship2                     |      -0.01 | [-0.05,  0.02]
+next interaction1 × relationship1 |       0.14 | [ 0.08,  0.19]
+next interaction2 × relationship1 |      -0.09 | [-0.15, -0.04]
+next interaction1 × relationship2 |       0.28 | [ 0.23,  0.33]
+next interaction2 × relationship2 |      -0.18 | [-0.23, -0.12]
 Type III Analysis of Variance Table with Satterthwaite's method
                               Sum Sq Mean Sq NumDF  DenDF  F value Pr(>F)    
 next_interaction              3529.5 1764.74     2 3095.1 952.5011 <2e-16 ***
@@ -101,21 +123,21 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 $emmeans
 relationship = No info:
  next_interaction emmean     SE  df lower.CL upper.CL t.ratio p.value
- Reciprocity        4.61 0.0896 158     4.43     4.78  51.407  <.0001
- Precedent          4.75 0.0896 158     4.57     4.93  52.983  <.0001
- None               2.38 0.0897 158     2.20     2.56  26.529  <.0001
+ Reciprocity        4.61 0.0896 158     4.43     4.78  51.407 <0.0001
+ Precedent          4.75 0.0896 158     4.57     4.93  52.983 <0.0001
+ None               2.38 0.0897 158     2.20     2.56  26.529 <0.0001
 
 relationship = Symmetric:
  next_interaction emmean     SE  df lower.CL upper.CL t.ratio p.value
- Reciprocity        4.75 0.0897 158     4.58     4.93  52.992  <.0001
- Precedent          4.49 0.0897 158     4.31     4.67  50.044  <.0001
- None               2.16 0.0897 158     1.98     2.33  24.045  <.0001
+ Reciprocity        4.75 0.0897 158     4.58     4.93  52.992 <0.0001
+ Precedent          4.49 0.0897 158     4.31     4.67  50.044 <0.0001
+ None               2.16 0.0897 158     1.98     2.33  24.045 <0.0001
 
 relationship = Asymmetric:
  next_interaction emmean     SE  df lower.CL upper.CL t.ratio p.value
- Reciprocity        3.48 0.0896 158     3.30     3.65  38.799  <.0001
- Precedent          5.25 0.0898 159     5.07     5.43  58.455  <.0001
- None               2.57 0.0897 158     2.39     2.75  28.667  <.0001
+ Reciprocity        3.48 0.0896 158     3.30     3.65  38.799 <0.0001
+ Precedent          5.25 0.0898 159     5.07     5.43  58.455 <0.0001
+ None               2.57 0.0897 158     2.39     2.75  28.667 <0.0001
 
 Degrees-of-freedom method: kenward-roger 
 Confidence level used: 0.95 
@@ -124,36 +146,99 @@ $contrasts
 relationship = No info:
  contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
  Precedent - Reciprocity    0.141 0.102 3095  -0.0987   0.3811   1.381  0.3512
- None - Reciprocity        -2.227 0.102 3095  -2.4675  -1.9873 -21.755  <.0001
- None - Precedent          -2.369 0.102 3095  -2.6087  -2.1286 -23.135  <.0001
+ None - Reciprocity        -2.227 0.102 3095  -2.4675  -1.9873 -21.755 <0.0001
+ None - Precedent          -2.369 0.102 3095  -2.6087  -2.1286 -23.135 <0.0001
 
 relationship = Symmetric:
  contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
  Precedent - Reciprocity   -0.265 0.102 3095  -0.5048  -0.0243  -2.582  0.0267
- None - Reciprocity        -2.597 0.102 3095  -2.8371  -2.3566 -25.346  <.0001
- None - Precedent          -2.332 0.102 3095  -2.5725  -2.0920 -22.763  <.0001
+ None - Reciprocity        -2.597 0.102 3095  -2.8371  -2.3566 -25.346 <0.0001
+ None - Precedent          -2.332 0.102 3095  -2.5725  -2.0920 -22.763 <0.0001
 
 relationship = Asymmetric:
  contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
- Precedent - Reciprocity    1.771 0.102 3095   1.5312   2.0117  17.290  <.0001
- None - Reciprocity        -0.906 0.102 3095  -1.1456  -0.6654  -8.844  <.0001
- None - Precedent          -2.677 0.103 3095  -2.9174  -2.4366 -26.109  <.0001
+ Precedent - Reciprocity    1.771 0.102 3095   1.5312   2.0117  17.290 <0.0001
+ None - Reciprocity        -0.906 0.102 3095  -1.1456  -0.6654  -8.844 <0.0001
+ None - Precedent          -2.677 0.103 3095  -2.9174  -2.4366 -26.109 <0.0001
 
 Degrees-of-freedom method: kenward-roger 
 Confidence level used: 0.95 
 Conf-level adjustment: tukey method for comparing a family of 3 estimates 
 P value adjustment: tukey method for comparing a family of 3 estimates 
 
+
+--- Effect Sizes (Cohen’s d) for contrasts ---
+relationship = No info:
+ contrast                effect.size     SE  df lower.CL upper.CL
+ Reciprocity - Precedent      -0.104 0.0752 158  -0.2522   0.0447
+ Reciprocity - None            1.636 0.0780 158   1.4824   1.7904
+ Precedent - None              1.740 0.0783 158   1.5855   1.8949
+
+relationship = Symmetric:
+ contrast                effect.size     SE  df lower.CL upper.CL
+ Reciprocity - Precedent       0.194 0.0753 158   0.0456   0.3431
+ Reciprocity - None            1.908 0.0790 158   1.7518   2.0639
+ Precedent - None              1.713 0.0783 158   1.5588   1.8681
+
+relationship = Asymmetric:
+ contrast                effect.size     SE  df lower.CL upper.CL
+ Reciprocity - Precedent      -1.301 0.0770 158  -1.4536  -1.1493
+ Reciprocity - None            0.665 0.0757 158   0.5158   0.8147
+ Precedent - None              1.967 0.0793 158   1.8101   2.1233
+
+sigma used for effect sizes: 1.361 
+Degrees-of-freedom method: inherited from kenward-roger when re-gridding 
+Confidence level used: 0.95 
+
+--- Ordinal Mixed Model Robustness Check ---
+Ordinal model summary:
+Cumulative Link Mixed Model fitted with the Laplace approximation
+
+formula: ordered_rating ~ next_interaction * relationship + (1 | story) +  
+    (1 | subject_id)
+data:    d
+
+ link  threshold nobs logLik   AIC      niter      max.grad cond.H 
+ logit flexible  3179 -5234.23 10500.47 2398(7197) 2.06e-03 7.5e+01
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.11678  0.3417  
+ story      (Intercept) 0.06633  0.2575  
+Number of groups:  subject_id 59,  story 18 
+
+Coefficients:
+                                Estimate Std. Error z value Pr(>|z|)    
+next_interaction1                0.58685    0.04599  12.761  < 2e-16 ***
+next_interaction2                1.27707    0.04980  25.646  < 2e-16 ***
+relationship1                    0.09294    0.04494   2.068 0.038630 *  
+relationship2                   -0.04765    0.04550  -1.047 0.294985    
+next_interaction1:relationship1  0.27519    0.06287   4.377 1.20e-05 ***
+next_interaction2:relationship1 -0.23255    0.06359  -3.657 0.000255 ***
+next_interaction1:relationship2  0.65949    0.06445  10.232  < 2e-16 ***
+next_interaction2:relationship2 -0.37303    0.06491  -5.747 9.09e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Threshold coefficients:
+    Estimate Std. Error z value
+1|2 -2.80200    0.10129 -27.662
+2|3 -1.27771    0.08961 -14.258
+3|4 -0.30628    0.08678  -3.529
+4|5  0.62853    0.08690   7.232
+5|6  1.81064    0.09097  19.903
+6|7  3.64956    0.11461  31.843
+(7 observations deleted due to missingness)
 $emmeans
 relationship_present = no:
  interaction_present emmean     SE    df lower.CL upper.CL t.ratio p.value
- no                    2.38 0.0897 158.5     2.20     2.56  26.529  <.0001
- yes                   4.68 0.0736  72.6     4.53     4.82  63.567  <.0001
+ no                    2.38 0.0897 158.5     2.20     2.56  26.529 <0.0001
+ yes                   4.68 0.0736  72.6     4.53     4.82  63.567 <0.0001
 
 relationship_present = yes:
  interaction_present emmean     SE    df lower.CL upper.CL t.ratio p.value
- no                    2.36 0.0736  72.8     2.22     2.51  32.123  <.0001
- yes                   4.49 0.0641  41.8     4.36     4.62  70.115  <.0001
+ no                    2.36 0.0736  72.8     2.22     2.51  32.123 <0.0001
+ yes                   4.49 0.0641  41.8     4.36     4.62  70.114 <0.0001
 
 Results are averaged over the levels of: relationship, next_interaction 
 Degrees-of-freedom method: kenward-roger 
@@ -162,11 +247,11 @@ Confidence level used: 0.95
 $contrasts
 relationship_present = no:
  contrast estimate     SE   df lower.CL upper.CL t.ratio p.value
- yes - no     2.30 0.0887 3095     2.12     2.47  25.911  <.0001
+ yes - no     2.30 0.0887 3095     2.12     2.47  25.911 <0.0001
 
 relationship_present = yes:
  contrast estimate     SE   df lower.CL upper.CL t.ratio p.value
- yes - no     2.13 0.0627 3095     2.00     2.25  33.915  <.0001
+ yes - no     2.13 0.0627 3095     2.00     2.25  33.915 <0.0001
 
 Results are averaged over the levels of: relationship, next_interaction 
 Degrees-of-freedom method: kenward-roger 
@@ -213,13 +298,13 @@ nxt_ntrc1:1  0.001  0.000 -0.001
 $emmeans
 relationship = Symmetric:
  next_interaction emmean     SE   df lower.CL upper.CL t.ratio p.value
- Reciprocity        4.76 0.0997 76.1     4.56     4.96  47.750  <.0001
- Precedent          4.50 0.0997 76.1     4.30     4.70  45.098  <.0001
+ Reciprocity        4.76 0.0997 76.1     4.56     4.96  47.750 <0.0001
+ Precedent          4.50 0.0997 76.1     4.30     4.70  45.098 <0.0001
 
 relationship = Asymmetric:
  next_interaction emmean     SE   df lower.CL upper.CL t.ratio p.value
- Reciprocity        3.47 0.0996 75.8     3.27     3.67  34.848  <.0001
- Precedent          5.24 0.0998 76.3     5.04     5.44  52.541  <.0001
+ Reciprocity        3.47 0.0996 75.8     3.27     3.67  34.848 <0.0001
+ Precedent          5.24 0.0998 76.3     5.04     5.44  52.541 <0.0001
 
 Degrees-of-freedom method: kenward-roger 
 Confidence level used: 0.95 
@@ -231,7 +316,7 @@ relationship = Symmetric:
 
 relationship = Asymmetric:
  contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
- Precedent - Reciprocity    1.772 0.108 1333    1.559    1.984  16.346  <.0001
+ Precedent - Reciprocity    1.772 0.108 1333    1.559    1.984  16.346 <0.0001
 
 Degrees-of-freedom method: kenward-roger 
 Confidence level used: 0.95 

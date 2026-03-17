@@ -6,6 +6,8 @@ library(lmerTest)
 library(forcats)
 library(glue)
 library(emmeans)
+library(effectsize)
+library(ordinal)
 
 
 # Options -----------------------------------------------------------------
@@ -78,19 +80,26 @@ mod <-
 
 summary(mod)
 
+cat("\n--- Standardized Parameters ---\n")
+print(standardize_parameters(mod))
+
 anova(mod, type = "III")
 
-# Type III Analysis of Variance Table with Satterthwaite's method
+# Type III Analysis of Variance Table with Satterthwaite’s method
 #                               Sum Sq Mean Sq NumDF  DenDF  F value Pr(>F)
 # next_interaction              3529.5 1764.74     2 3095.1 952.5011 <2e-16 ***
 # relationship                    12.3    6.14     2 3104.8   3.3166 0.0364 *
 # next_interaction:relationship  468.2  117.05     4 3095.1  63.1770 <2e-16 ***
 # ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ‘ 1
 
 
-emmeans(mod, revpairwise ~ next_interaction |
-          relationship) %>% summary(infer = T)
+emm_contrasts <- emmeans(mod, revpairwise ~ next_interaction |
+          relationship)
+emm_contrasts %>% summary(infer = T)
+
+cat("\n--- Effect Sizes (Cohen’s d) for contrasts ---\n")
+print(eff_size(emmeans(mod, ~ next_interaction | relationship), sigma = sigma(mod), edf = df.residual(mod)))
 
 # $emmeans
 # relationship = No info:
@@ -138,6 +147,12 @@ emmeans(mod, revpairwise ~ next_interaction |
 # Conf-level adjustment: tukey method for comparing a family of 3 estimates
 # P value adjustment: tukey method for comparing a family of 3 estimates
 
+# Ordinal robustness check (ceiling effects)
+cat("\n--- Ordinal Mixed Model Robustness Check ---\n")
+d$ordered_rating <- ordered(d$likert_rating)
+ord_mod <- clmm(ordered_rating ~ next_interaction * relationship + (1 | story) + (1 | subject_id), data = d)
+cat("Ordinal model summary:\n")
+summary(ord_mod)
 
 # Do people expect a continued social interaction, both with and without the relationship?
 

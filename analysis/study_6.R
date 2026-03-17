@@ -99,9 +99,14 @@ study_6_demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_a
 main_model <- glmer(
   strategy_repeating ~ partner_status * coordination + (1 | scenario_id) + (1 | subject_id),
   data = main_data_filtered,
-  family = binomial(link = "logit"), 
+  family = binomial(link = "logit"),
   control = glmerControl(optimizer = "bobyqa"))
 summary(main_model)
+
+cat("\nOdds Ratios:\n")
+print(exp(fixef(main_model)))
+cat("\nOR 95% CIs:\n")
+print(exp(confint(main_model, method='Wald')))
 
 ## ------------------------------------------------------------------------------------------------------------------------------------------------------
 emm <- emmeans(main_model, ~ partner_status * coordination)
@@ -150,7 +155,10 @@ model1 <- glmer(
 )
 summary(model1)
 
-
+cat("\nOdds Ratios (model1):\n")
+print(exp(fixef(model1)))
+cat("\nOR 95% CIs (model1):\n")
+print(exp(confint(model1, method='Wald')))
 
 # Model 2: Including partner status
 model2 <- glmer(
@@ -163,15 +171,20 @@ model2 <- glmer(
 )
 summary(model2)
 
+cat("\nOdds Ratios (model2):\n")
+print(exp(fixef(model2)))
+cat("\nOR 95% CIs (model2):\n")
+print(exp(confint(model2, method='Wald')))
+
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )
-# Formula: participant_second_choice_generous ~ partner_first_choice * participant_first_choice +  
+# Formula: participant_second_choice_generous ~ partner_first_choice * participant_first_choice +
 #   partner_first_choice:partner_status + partner_status + (1 |      scenario_id) + (1 | subject_id)
 # Data: main_data_filtered
 # Control: glmerControl(optimizer = "bobyqa")
-# 
-# AIC      BIC   logLik deviance df.resid 
-# 1127.8   1176.4   -553.9   1107.8      938 
+#
+# AIC      BIC   logLik deviance df.resid
+# 1127.8   1176.4   -553.9   1107.8      938
 # 
 # Scaled residuals: 
 #   Min      1Q  Median      3Q     Max 

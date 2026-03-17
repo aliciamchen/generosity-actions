@@ -5,6 +5,7 @@ library(lme4)
 library(lmerTest)
 library(emmeans)
 library(glue)
+library(effectsize)
 
 # Options -----------------------------------------------------------------
 
@@ -102,6 +103,9 @@ mod <-
     family = "binomial"
   )
 summary(mod)
+
+cat("\n--- Standardized Parameters ---\n")
+print(standardize_parameters(mod))
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )

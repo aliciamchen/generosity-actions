@@ -6,6 +6,8 @@ library(lme4)
 library(lmerTest)
 library(forcats)
 library(glue)
+library(effectsize)
+library(BayesFactor)
 
 # Options -----------------------------------------------------------------
 
@@ -82,6 +84,9 @@ mod <- lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
 
 summary(mod)
 
+cat("\n--- Standardized Parameters ---\n")
+print(standardize_parameters(mod))
+
 anova(mod, type="III")
 
 # First, replicate asymmetric/symmetric results from 1a
@@ -129,8 +134,11 @@ emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present) %>%
 
 
 # What about equal/higher/lower?
-mod %>% emmeans(revpairwise ~ relationship | next_interaction) %>%
-  summary(infer = T)
+emm_rel <- emmeans(mod, ~ relationship | next_interaction)
+contrast(emm_rel, method = "revpairwise") %>% summary(infer = T)
+
+cat("\n--- Effect Sizes (Cohen's d) for relationship contrasts ---\n")
+print(eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod)))
 
 # $emmeans
 # next_interaction = Reciprocity:
@@ -179,6 +187,23 @@ mod %>% emmeans(revpairwise ~ relationship | next_interaction) %>%
 # P value adjustment: tukey method for comparing a family of 3 estimates 
 
 
+# Bayes Factor for Higher vs Lower null on Precedent
+cat("\n--- Bayes Factors for key null results ---\n")
+# BF for no Higher vs Lower difference on precedent
+d_bf_prec <- d %>% filter(next_interaction == "Precedent", relationship != "Equal") %>%
+  select(likert_rating, relationship, subject_id, story) %>%
+  drop_na() %>% as.data.frame()
+d_bf_prec$subject_id <- factor(d_bf_prec$subject_id)
+d_bf_prec$story <- factor(d_bf_prec$story)
+bf_prec <- lmBF(likert_rating ~ relationship + subject_id + story,
+                data = d_bf_prec,
+                whichRandom = c("subject_id", "story"))
+bf_prec_null <- lmBF(likert_rating ~ subject_id + story,
+                     data = d_bf_prec,
+                     whichRandom = c("subject_id", "story"))
+cat("BF01 for Higher vs Lower on Precedent (Study 2):\n")
+print(1 / (bf_prec / bf_prec_null))
+
 # Exploratory analyses ----------------------------------------------------
 
 # benefit / effort
@@ -211,6 +236,31 @@ summary(mod)
 
 
 
+
+# BF for cost/benefit not moderating precedent
+d_bf_cost <- d %>% filter(relationship != "Equal", next_interaction == "Precedent") %>%
+  select(likert_rating, diff_effort, diff_benefit, subject_id, story) %>%
+  drop_na() %>% as.data.frame()
+d_bf_cost$subject_id <- factor(d_bf_cost$subject_id)
+d_bf_cost$story <- factor(d_bf_cost$story)
+# For effort
+bf_effort <- lmBF(likert_rating ~ diff_effort + subject_id + story,
+                  data = d_bf_cost,
+                  whichRandom = c("subject_id", "story"))
+bf_effort_null <- lmBF(likert_rating ~ subject_id + story,
+                       data = d_bf_cost,
+                       whichRandom = c("subject_id", "story"))
+cat("BF01 for effort not moderating precedent (Study 2):\n")
+print(1 / (bf_effort / bf_effort_null))
+# For benefit
+bf_benefit <- lmBF(likert_rating ~ diff_benefit + subject_id + story,
+                   data = d_bf_cost,
+                   whichRandom = c("subject_id", "story"))
+bf_benefit_null <- lmBF(likert_rating ~ subject_id + story,
+                        data = d_bf_cost,
+                        whichRandom = c("subject_id", "story"))
+cat("BF01 for benefit not moderating precedent (Study 2):\n")
+print(1 / (bf_benefit / bf_benefit_null))
 
 ##################################################
 

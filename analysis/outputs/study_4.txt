@@ -1,10 +1,10 @@
 here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
 ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.2     ✔ tibble    3.3.0
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.0.4     
+✔ dplyr     1.2.0     ✔ readr     2.1.6
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.2     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.1     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
@@ -66,7 +66,16 @@ diff_effort  -0.1144     0.2661  -0.430    0.667
 Correlation of Fixed Effects:
             (Intr)
 diff_effort -0.880
-Generalized linear mixed model fit by maximum likelihood (Laplace
+
+--- Standardized Parameters ---
+# Standardization method: refit
+
+Parameter   | Std. Coef. |        95% CI
+----------------------------------------
+(Intercept) |      -0.01 | [-0.55, 0.52]
+diff effort |      -0.12 | [-0.65, 0.42]
+
+- Response is unstandardized.Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: first_response ~ diff_benefit + (1 | subject_id) + (1 | story)
@@ -82,7 +91,7 @@ Scaled residuals:
 Random effects:
  Groups     Name        Variance Std.Dev.
  subject_id (Intercept) 0.1807   0.4251  
- story      (Intercept) 1.1138   1.0554  
+ story      (Intercept) 1.1139   1.0554  
 Number of obs: 1356, groups:  subject_id, 113; story, 18
 
 Fixed effects:
@@ -104,19 +113,19 @@ Formula: strategy ~ first_actual + (1 | subject_id) + (1 | story)
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--3.5490 -0.6774 -0.2515  0.6888  5.3037 
+-3.5490 -0.6774 -0.2515  0.6888  5.3036 
 
 Random effects:
  Groups     Name        Variance Std.Dev.
- subject_id (Intercept) 1.0664   1.0326  
+ subject_id (Intercept) 1.0663   1.0326  
  story      (Intercept) 0.4606   0.6786  
 Number of obs: 2034, groups:  subject_id, 113; story, 18
 
 Fixed effects:
               Estimate Std. Error z value Pr(>|z|)    
-(Intercept)   -0.23327    0.19473  -1.198    0.231    
+(Intercept)   -0.23325    0.19473  -1.198    0.231    
 first_actual1 -1.16172    0.08145 -14.263  < 2e-16 ***
-first_actual2  0.46142    0.07391   6.243  4.3e-10 ***
+first_actual2  0.46142    0.07391   6.243 4.29e-10 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -126,8 +135,8 @@ first_actl1  0.035
 first_actl2 -0.019 -0.536
 $emmeans
  first_actual emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
- Equal        -1.395 0.214 Inf   -1.8138    -0.976  -6.528  <.0001
- Higher        0.228 0.207 Inf   -0.1775     0.634   1.102  0.2703
+ Equal        -1.395 0.214 Inf   -1.8138    -0.976  -6.528 <0.0001
+ Higher        0.228 0.207 Inf   -0.1774     0.634   1.103  0.2702
  Lower         0.467 0.207 Inf    0.0606     0.874   2.252  0.0243
 
 Results are given on the logit (not the response) scale. 
@@ -135,9 +144,9 @@ Confidence level used: 0.95
 
 $contrasts
  contrast       estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
- Equal - Higher   -1.623 0.136 Inf    -1.942   -1.3039 -11.915  <.0001
- Equal - Lower    -1.862 0.138 Inf    -2.186   -1.5383 -13.479  <.0001
- Higher - Lower   -0.239 0.125 Inf    -0.531    0.0535  -1.915  0.1345
+ Equal - Higher   -1.623 0.136 Inf    -1.942   -1.3039 -11.916 <0.0001
+ Equal - Lower    -1.862 0.138 Inf    -2.186   -1.5383 -13.479 <0.0001
+ Higher - Lower   -0.239 0.125 Inf    -0.531    0.0536  -1.915  0.1345
 
 Results are given on the log odds ratio (not the response) scale. 
 Confidence level used: 0.95 
@@ -167,7 +176,7 @@ Number of obs: 2034, groups:  subject_id, 113; story, 18
 
 Fixed effects:
                             Estimate Std. Error z value Pr(>|z|)    
-(Intercept)                 -0.42179    0.21453  -1.966   0.0493 *  
+(Intercept)                 -0.42179    0.21454  -1.966   0.0493 *  
 first_actual1               -1.56594    0.17397  -9.001  < 2e-16 ***
 first_actual2                0.66191    0.11091   5.968 2.40e-09 ***
 Expectations1                0.62883    0.09874   6.369 1.91e-10 ***
@@ -185,9 +194,9 @@ fit warnings:
 fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
 $emmeans
  first_actual Expectations emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
- Equal        Consistent   -1.413 0.219 Inf    -1.842   -0.9833  -6.450  <.0001
+ Equal        Consistent   -1.413 0.219 Inf    -1.842   -0.9833  -6.450 <0.0001
  Higher       Consistent    0.869 0.237 Inf     0.404    1.3337   3.664  0.0002
- Lower        Consistent    1.165 0.240 Inf     0.695    1.6342   4.862  <.0001
+ Lower        Consistent    1.165 0.240 Inf     0.695    1.6342   4.862 <0.0001
  Equal        Inconsistent nonEst    NA  NA        NA        NA      NA      NA
  Higher       Inconsistent -0.389 0.234 Inf    -0.847    0.0692  -1.664  0.0961
  Lower        Inconsistent -0.200 0.233 Inf    -0.657    0.2565  -0.859  0.3902
@@ -213,18 +222,18 @@ $contrasts
  Equal Inconsistent - Lower Inconsistent    nonEst    NA  NA        NA
  Higher Inconsistent - Lower Inconsistent   -0.189 0.189 Inf    -0.705
  asymp.UCL z.ratio p.value
-    -1.802 -12.991  <.0001
-    -2.086 -14.305  <.0001
+    -1.802 -12.990 <0.0001
+    -2.086 -14.305 <0.0001
         NA      NA      NA
-    -0.570  -6.150  <.0001
-    -0.760  -7.309  <.0001
+    -0.570  -6.150 <0.0001
+    -0.760  -7.309 <0.0001
      0.255  -1.465  0.5852
         NA      NA      NA
-     1.796   6.369  <.0001
-     1.577   5.746  <.0001
+     1.796   6.369 <0.0001
+     1.577   5.746 <0.0001
         NA      NA      NA
-     2.071   8.180  <.0001
-     1.912   6.805  <.0001
+     2.071   8.180 <0.0001
+     1.912   6.804 <0.0001
         NA      NA      NA
         NA      NA      NA
      0.328  -0.995  0.8577
@@ -257,18 +266,18 @@ Number of obs: 1356, groups:  subject_id, 113; story, 18
 
 Fixed effects:
                               Estimate Std. Error z value Pr(>|z|)    
-(Intercept)                    0.10280    0.08232   1.249    0.212    
-first_response1                0.50655    0.06370   7.952 1.84e-15 ***
-first_actual1                  0.29489    0.05757   5.122 3.02e-07 ***
-first_response1:first_actual1 -0.02998    0.05771  -0.519    0.603    
+(Intercept)                    0.10280    0.08219   1.251    0.211    
+first_response1                0.50655    0.06075   8.339  < 2e-16 ***
+first_actual1                  0.29489    0.05739   5.138 2.78e-07 ***
+first_response1:first_actual1 -0.02998    0.05755  -0.521    0.602    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr) frst_r1 frst_c1
-frst_rspns1 0.011                 
-first_actl1 0.006  0.052          
-frst_rs1:_1 0.047  0.011   0.027  
+frst_rspns1 0.017                 
+first_actl1 0.006  0.064          
+frst_rs1:_1 0.048  0.008   0.027  
 optimizer (Nelder_Mead) convergence code: 0 (OK)
 boundary (singular) fit: see help('isSingular')
 

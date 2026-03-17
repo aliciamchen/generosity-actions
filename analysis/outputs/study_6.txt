@@ -1,12 +1,10 @@
 here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
-Loading required package: sysfonts
-Loading required package: showtextdb
 ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.2     ✔ tibble    3.3.0
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.0.4     
+✔ dplyr     1.2.0     ✔ readr     2.1.6
+✔ forcats   1.0.1     ✔ stringr   1.6.0
+✔ ggplot2   4.0.2     ✔ tibble    3.3.1
+✔ lubridate 1.9.5     ✔ tidyr     1.3.2
+✔ purrr     1.2.1     
 ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
@@ -34,6 +32,9 @@ The following object is masked from ‘package:stats’:
     step
 
 Loading required package: carData
+Registered S3 method overwritten by 'car':
+  method           from
+  na.action.merMod lme4
 
 Attaching package: ‘car’
 
@@ -77,57 +78,76 @@ Number of obs: 948, groups:  subject_id, 158; scenario_id, 6
 
 Fixed effects:
                               Estimate Std. Error z value Pr(>|z|)    
-(Intercept)                    1.06030    0.10832   9.788  < 2e-16 ***
-partner_status1               -0.46657    0.10845  -4.302 1.69e-05 ***
-partner_status2                0.05494    0.10975   0.501 0.616643    
-coordination1                  0.07155    0.08017   0.892 0.372148    
-partner_status1:coordination1  0.38419    0.11185   3.435 0.000592 ***
-partner_status2:coordination1 -0.13172    0.11297  -1.166 0.243637    
+(Intercept)                    1.06030    0.10263  10.331  < 2e-16 ***
+partner_status1               -0.46657    0.10550  -4.422 9.76e-06 ***
+partner_status2                0.05494    0.10837   0.507 0.612178    
+coordination1                  0.07155    0.07925   0.903 0.366647    
+partner_status1:coordination1  0.38419    0.10937   3.513 0.000444 ***
+partner_status2:coordination1 -0.13172    0.11149  -1.181 0.237413    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr) prtn_1 prtn_2 crdnt1 pr_1:1
-prtnr_stts1 -0.104                            
-prtnr_stts2 -0.012 -0.438                     
-coordinatn1 -0.078  0.047  0.057              
-prtnr_st1:1  0.060 -0.091 -0.018 -0.084       
-prtnr_st2:1  0.026 -0.012 -0.068 -0.022 -0.448
+prtnr_stts1 -0.086                            
+prtnr_stts2 -0.021 -0.426                     
+coordinatn1 -0.081  0.066  0.056              
+prtnr_st1:1  0.050 -0.071 -0.031 -0.105       
+prtnr_st2:1  0.041 -0.029 -0.070 -0.025 -0.433
 optimizer (bobyqa) convergence code: 0 (OK)
 boundary (singular) fit: see help('isSingular')
 
+
+Odds Ratios:
+                  (Intercept)               partner_status1 
+                    2.8872283                     0.6271500 
+              partner_status2                 coordination1 
+                    1.0564774                     1.0741703 
+partner_status1:coordination1 partner_status2:coordination1 
+                    1.4684297                     0.8765873 
+
+OR 95% CIs:
+                                  2.5 %    97.5 %
+.sig01                               NA        NA
+.sig02                               NA        NA
+(Intercept)                   2.3611504 3.5305193
+partner_status1               0.5099964 0.7712155
+partner_status2               0.8543094 1.3064874
+coordination1                 0.9196270 1.2546845
+partner_status1:coordination1 1.1850970 1.8195016
+partner_status2:coordination1 0.7045268 1.0906687
  partner_status coordination emmean    SE  df asymp.LCL asymp.UCL z.ratio
- equal          FALSE         1.049 0.193 Inf     0.672     1.427   5.442
- lower          FALSE         1.055 0.202 Inf     0.659     1.451   5.218
- higher         FALSE         1.291 0.201 Inf     0.898     1.684   6.434
- equal           TRUE         0.138 0.199 Inf    -0.253     0.529   0.692
- lower           TRUE         1.175 0.209 Inf     0.766     1.585   5.626
- higher          TRUE         1.653 0.245 Inf     1.173     2.133   6.746
+ equal          FALSE         1.049 0.188 Inf     0.680     1.419   5.572
+ lower          FALSE         1.055 0.197 Inf     0.668     1.442   5.344
+ higher         FALSE         1.291 0.195 Inf     0.908     1.674   6.607
+ equal           TRUE         0.138 0.192 Inf    -0.239     0.515   0.718
+ lower           TRUE         1.175 0.203 Inf     0.778     1.573   5.793
+ higher          TRUE         1.653 0.242 Inf     1.178     2.127   6.828
  p.value
-  <.0001
-  <.0001
-  <.0001
-  0.4890
-  <.0001
-  <.0001
+ <0.0001
+ <0.0001
+ <0.0001
+  0.4729
+ <0.0001
+ <0.0001
 
 Results are given on the logit (not the response) scale. 
 Confidence level used: 0.95 
  contrast                   estimate    SE  df z.ratio p.value
- equal FALSE - lower FALSE   -0.0056 0.260 Inf  -0.022  1.0000
- equal FALSE - higher FALSE  -0.2415 0.258 Inf  -0.937  0.9369
- equal FALSE - equal TRUE     0.9115 0.264 Inf   3.453  0.0073
- equal FALSE - lower TRUE    -0.1259 0.263 Inf  -0.478  0.9969
- equal FALSE - higher TRUE   -0.6034 0.292 Inf  -2.068  0.3040
- lower FALSE - higher FALSE  -0.2359 0.264 Inf  -0.894  0.9480
- lower FALSE - equal TRUE     0.9171 0.266 Inf   3.446  0.0075
- lower FALSE - lower TRUE    -0.1203 0.274 Inf  -0.439  0.9979
- lower FALSE - higher TRUE   -0.5978 0.298 Inf  -2.003  0.3406
- higher FALSE - equal TRUE    1.1530 0.264 Inf   4.361  0.0002
- higher FALSE - lower TRUE    0.1156 0.267 Inf   0.432  0.9981
- higher FALSE - higher TRUE  -0.3619 0.299 Inf  -1.211  0.8315
- equal TRUE - lower TRUE     -1.0374 0.272 Inf  -3.814  0.0019
- equal TRUE - higher TRUE    -1.5149 0.301 Inf  -5.039  <.0001
+ equal FALSE - lower FALSE   -0.0056 0.256 Inf  -0.022  1.0000
+ equal FALSE - higher FALSE  -0.2415 0.255 Inf  -0.949  0.9337
+ equal FALSE - equal TRUE     0.9115 0.256 Inf   3.556  0.0051
+ equal FALSE - lower TRUE    -0.1259 0.260 Inf  -0.485  0.9967
+ equal FALSE - higher TRUE   -0.6034 0.291 Inf  -2.074  0.3011
+ lower FALSE - higher FALSE  -0.2359 0.261 Inf  -0.905  0.9454
+ lower FALSE - equal TRUE     0.9171 0.258 Inf   3.552  0.0051
+ lower FALSE - lower TRUE    -0.1203 0.270 Inf  -0.445  0.9978
+ lower FALSE - higher TRUE   -0.5978 0.298 Inf  -2.009  0.3371
+ higher FALSE - equal TRUE    1.1530 0.257 Inf   4.494  0.0001
+ higher FALSE - lower TRUE    0.1156 0.265 Inf   0.436  0.9980
+ higher FALSE - higher TRUE  -0.3619 0.299 Inf  -1.210  0.8324
+ equal TRUE - lower TRUE     -1.0374 0.264 Inf  -3.936  0.0012
+ equal TRUE - higher TRUE    -1.5149 0.295 Inf  -5.134 <0.0001
  lower TRUE - higher TRUE    -0.4774 0.301 Inf  -1.588  0.6065
 
 Results are given on the log odds ratio (not the response) scale. 
@@ -150,20 +170,20 @@ Scaled residuals:
 
 Random effects:
  Groups      Name        Variance  Std.Dev. 
- subject_id  (Intercept) 1.964e-09 4.431e-05
+ subject_id  (Intercept) 1.963e-09 4.431e-05
  scenario_id (Intercept) 1.060e-02 1.030e-01
 Number of obs: 948, groups:  subject_id, 158; scenario_id, 6
 
 Fixed effects:
                                                  Estimate Std. Error z value
-(Intercept)                                     -0.004609   0.083900  -0.055
-partner_first_choice1                           -0.888157   0.072806 -12.199
-participant_first_choice1                       -0.107076   0.073020  -1.466
-partner_first_choice1:participant_first_choice1 -0.086081   0.072630  -1.185
+(Intercept)                                     -0.004609   0.083865  -0.055
+partner_first_choice1                           -0.888157   0.072615 -12.231
+participant_first_choice1                       -0.107076   0.072647  -1.474
+partner_first_choice1:participant_first_choice1 -0.086081   0.072592  -1.186
                                                 Pr(>|z|)    
 (Intercept)                                        0.956    
 partner_first_choice1                             <2e-16 ***
-participant_first_choice1                          0.143    
+participant_first_choice1                          0.141    
 partner_first_choice1:participant_first_choice1    0.236    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
@@ -171,11 +191,30 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 Correlation of Fixed Effects:
             (Intr) prtn__1 prtc__1
 prtnr_frs_1  0.023                
-prtcpnt_f_1 -0.109 -0.047         
-prtn__1:__1 -0.046 -0.126   0.026 
+prtcpnt_f_1 -0.108 -0.053         
+prtn__1:__1 -0.046 -0.126   0.027 
 optimizer (Nelder_Mead) convergence code: 0 (OK)
 boundary (singular) fit: see help('isSingular')
 
+
+Odds Ratios (model1):
+                                    (Intercept) 
+                                      0.9954012 
+                          partner_first_choice1 
+                                      0.4114133 
+                      participant_first_choice1 
+                                      0.8984577 
+partner_first_choice1:participant_first_choice1 
+                                      0.9175201 
+
+OR 95% CIs (model1):
+                                                    2.5 %    97.5 %
+.sig01                                                 NA        NA
+.sig02                                                 NA        NA
+(Intercept)                                     0.8445249 1.1732320
+partner_first_choice1                           0.3568355 0.4743388
+participant_first_choice1                       0.7792201 1.0359413
+partner_first_choice1:participant_first_choice1 0.7958389 1.0578060
 boundary (singular) fit: see help('isSingular')
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
@@ -202,48 +241,79 @@ Number of obs: 948, groups:  subject_id, 158; scenario_id, 6
 
 Fixed effects:
                                                 Estimate Std. Error z value
-(Intercept)                                      0.01195    0.08047   0.149
-partner_first_choice1                           -0.90833    0.07463 -12.170
-participant_first_choice1                       -0.15649    0.07640  -2.048
-partner_status1                                  0.04998    0.10137   0.493
-partner_status2                                 -0.31224    0.10767  -2.900
-partner_first_choice1:participant_first_choice1 -0.12204    0.07587  -1.609
-partner_first_choice1:partner_status1            0.41571    0.10144   4.098
-partner_first_choice1:partner_status2           -0.09971    0.10790  -0.924
+(Intercept)                                      0.01195    0.08045   0.149
+partner_first_choice1                           -0.90833    0.07446 -12.198
+participant_first_choice1                       -0.15649    0.07579  -2.065
+partner_status1                                  0.04998    0.10129   0.493
+partner_status2                                 -0.31224    0.10765  -2.901
+partner_first_choice1:participant_first_choice1 -0.12204    0.07574  -1.611
+partner_first_choice1:partner_status1            0.41571    0.10130   4.104
+partner_first_choice1:partner_status2           -0.09971    0.10767  -0.926
                                                 Pr(>|z|)    
-(Intercept)                                      0.88192    
+(Intercept)                                      0.88188    
 partner_first_choice1                            < 2e-16 ***
-participant_first_choice1                        0.04053 *  
-partner_status1                                  0.62199    
-partner_status2                                  0.00373 ** 
-partner_first_choice1:participant_first_choice1  0.10771    
-partner_first_choice1:partner_status1           4.17e-05 ***
-partner_first_choice1:partner_status2            0.35544    
+participant_first_choice1                        0.03893 *  
+partner_status1                                  0.62174    
+partner_status2                                  0.00372 ** 
+partner_first_choice1:participant_first_choice1  0.10713    
+partner_first_choice1:partner_status1           4.07e-05 ***
+partner_first_choice1:partner_status2            0.35441    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Correlation of Fixed Effects:
             (Intr) prtn__1 prtc__1 prtn_1 prtn_2 p__1:__ p__1:_1
-prtnr_frs_1  0.007                                              
-prtcpnt_f_1 -0.110 -0.032                                       
-prtnr_stts1 -0.091  0.014  -0.142                               
-prtnr_stts2 -0.023  0.071   0.222  -0.457                       
-prtn__1:__1 -0.036 -0.121   0.049  -0.055  0.082                
-prtnr__1:_1  0.014 -0.095  -0.050   0.016 -0.090 -0.141         
-prtnr__1:_2  0.066 -0.029   0.073  -0.088  0.095  0.227  -0.459 
+prtnr_frs_1  0.008                                              
+prtcpnt_f_1 -0.109 -0.040                                       
+prtnr_stts1 -0.091  0.016  -0.139                               
+prtnr_stts2 -0.023  0.071   0.224  -0.457                       
+prtn__1:__1 -0.037 -0.118   0.056  -0.057  0.082                
+prtnr__1:_1  0.014 -0.099  -0.056   0.018 -0.090 -0.139         
+prtnr__1:_2  0.066 -0.025   0.082  -0.090  0.095  0.224  -0.457 
 optimizer (bobyqa) convergence code: 0 (OK)
 boundary (singular) fit: see help('isSingular')
 
+
+Odds Ratios (model2):
+                                    (Intercept) 
+                                      1.0120247 
+                          partner_first_choice1 
+                                      0.4031979 
+                      participant_first_choice1 
+                                      0.8551367 
+                                partner_status1 
+                                      1.0512478 
+                                partner_status2 
+                                      0.7318029 
+partner_first_choice1:participant_first_choice1 
+                                      0.8851126 
+          partner_first_choice1:partner_status1 
+                                      1.5154529 
+          partner_first_choice1:partner_status2 
+                                      0.9051016 
+
+OR 95% CIs (model2):
+                                                    2.5 %    97.5 %
+.sig01                                                 NA        NA
+.sig02                                                 NA        NA
+(Intercept)                                     0.8644007 1.1848602
+partner_first_choice1                           0.3484445 0.4665551
+participant_first_choice1                       0.7370975 0.9920788
+partner_status1                                 0.8619517 1.2821160
+partner_status2                                 0.5926047 0.9036978
+partner_first_choice1:participant_first_choice1 0.7630001 1.0267684
+partner_first_choice1:partner_status1           1.2425506 1.8482929
+partner_first_choice1:partner_status2           0.7329098 1.1177486
 Analysis of Deviance Table (Type III Wald chisquare tests)
 
 Response: participant_second_choice_generous
                                                  Chisq Df Pr(>Chisq)    
-(Intercept)                                     0.0221  1  0.8819165    
-partner_first_choice                          148.1209  1  < 2.2e-16 ***
-participant_first_choice                        4.1958  1  0.0405254 *  
-partner_status                                  9.2871  2  0.0096236 ** 
-partner_first_choice:participant_first_choice   2.5874  1  0.1077146    
-partner_first_choice:partner_status            17.9537  2  0.0001263 ***
+(Intercept)                                     0.0221  1  0.8818822    
+partner_first_choice                          148.7928  1  < 2.2e-16 ***
+participant_first_choice                        4.2638  1  0.0389327 *  
+partner_status                                  9.2906  2  0.0096065 ** 
+partner_first_choice:participant_first_choice   2.5960  1  0.1071343    
+partner_first_choice:partner_status            17.9832  2  0.0001245 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 Data: main_data_filtered
