@@ -209,7 +209,7 @@ Confidence level used: 0.95
 BF01 for Higher vs Lower on Precedent (Study 3):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 11.35813 ±0.96%
+[1] subject_id + story : 11.33216 ±0.84%
 
 Against denominator:
   likert_rating ~ relationship + subject_id + story 
@@ -336,7 +336,7 @@ Adding missing grouping variables: `relationship`
 BF01 for effort not moderating precedent (Study 3):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 4.081138 ±1.08%
+[1] subject_id + story : 3.982798 ±1.22%
 
 Against denominator:
   likert_rating ~ diff_effort + subject_id + story 
@@ -346,7 +346,7 @@ Bayes factor type: BFlinearModel, JZS
 BF01 for benefit not moderating precedent (Study 3):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 0.8474319 ±0.91%
+[1] subject_id + story : 0.8380154 ±1.24%
 
 Against denominator:
   likert_rating ~ diff_benefit + subject_id + story 

@@ -69,15 +69,15 @@ ggplot(
   geom_line(
     data = study_1_subject_means,
     aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
-    alpha = 0.08, linewidth = 0.3, inherit.aes = FALSE
+    alpha = 0.11, linewidth = 0.3, inherit.aes = FALSE
   ) +
   geom_violin(
     aes(group = interaction(relationship, next_interaction)),
     bw = 0.43,
-    alpha = 0.7,
-    width = 0.7 / 3 * 0.9
+    alpha = 0.5,
+    width = 0.7 / 3 * 1.2
   ) +
-  geom_pointrange(
+  geom_crossbar(
     data = study_1_summary %>% add_dodge_x(),
     aes(
       x = x_dodge,
@@ -85,8 +85,10 @@ ggplot(
       ymin = ci_lower,
       ymax = ci_upper
     ),
-    size = 0.3,
-    linewidth = 1
+    width = 0.06,
+    fatten = 2,
+    linewidth = 0.5,
+    show.legend = FALSE
   ) +
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
@@ -180,15 +182,15 @@ ggplot(
   geom_line(
     data = study_2_subject_means,
     aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
-    alpha = 0.08, linewidth = 0.3, inherit.aes = FALSE
+    alpha = 0.11, linewidth = 0.3, inherit.aes = FALSE
   ) +
   geom_violin(
     aes(group = interaction(relationship, next_interaction)),
     bw = 0.43,
-    alpha = 0.7,
-    width = 0.7 / 3 * 0.9
+    alpha = 0.5,
+    width = 0.7 / 3 * 1.2
   ) +
-  geom_pointrange(
+  geom_crossbar(
     data = study_2_summary %>% add_dodge_x(),
     aes(
       x = x_dodge,
@@ -196,8 +198,10 @@ ggplot(
       ymin = ci_lower,
       ymax = ci_upper
     ),
-    size = 0.3,
-    linewidth = 1
+    width = 0.06,
+    fatten = 2,
+    linewidth = 0.5,
+    show.legend = FALSE
   ) +
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
@@ -354,15 +358,15 @@ ggplot(
   geom_line(
     data = study_3_subject_means,
     aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
-    alpha = 0.08, linewidth = 0.3, inherit.aes = FALSE
+    alpha = 0.11, linewidth = 0.3, inherit.aes = FALSE
   ) +
   geom_violin(
     aes(group = interaction(relationship, next_interaction)),
     bw = 0.43,
-    alpha = 0.7,
-    width = 0.7 / 3 * 0.9
+    alpha = 0.5,
+    width = 0.7 / 3 * 1.2
   ) +
-  geom_pointrange(
+  geom_crossbar(
     data = study_3_summary %>% add_dodge_x(),
     aes(
       x = x_dodge,
@@ -370,8 +374,10 @@ ggplot(
       ymin = ci_lower,
       ymax = ci_upper
     ),
-    size = 0.3,
-    linewidth = 1
+    width = 0.06,
+    fatten = 2,
+    linewidth = 0.5,
+    show.legend = FALSE
   ) +
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +

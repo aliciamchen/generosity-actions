@@ -257,6 +257,10 @@ export_glmer_coef("studySixReciprocity", model2, "partner_first_choice1")
 export_glmer_coef("studySixHabit", model2, "participant_first_choice1")
 export_glmer_coef("studySixWSLS", model2, "partner_first_choice1:participant_first_choice1")
 export_glmer_coef("studySixBaseline", model2, "(Intercept)")
+export_glmer_or("studySixReciprocity", model2, "partner_first_choice1")
+export_glmer_or("studySixHabit", model2, "participant_first_choice1")
+export_glmer_or("studySixWSLS", model2, "partner_first_choice1:participant_first_choice1")
+export_glmer_or("studySixBaseline", model2, "(Intercept)")
 
 # Data: main_data_filtered
 # Models:

@@ -149,7 +149,7 @@ print(s2_effect_sizes)
 
 # Export EMMs and contrasts to tex
 s2_sym_emms <- summary(emmeans(emm_symmetry, ~ next_interaction | asymmetry_present))
-s2_sym_cons <- summary(emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present), infer = TRUE)$contrasts
+s2_sym_cons <- summary(emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present), infer = TRUE, adjust = "none")$contrasts
 
 # Asymmetric (pooled Higher+Lower): Precedent vs Reciprocity
 for (ni in c("Reciprocity", "Precedent", "None")) {
@@ -171,7 +171,7 @@ write_contrast("studyTwoRecipVsPrecEqual", row, stat_type = "t")
 
 # Higher vs Lower on Precedent
 s2_rel_emms <- summary(emm_rel)
-s2_rel_cons <- summary(contrast(emm_rel, method = "revpairwise"), infer = TRUE)
+s2_rel_cons <- summary(contrast(emm_rel, method = "revpairwise"), infer = TRUE, adjust = "none")
 
 for (rel in c("Equal", "Lower", "Higher")) {
   row <- s2_rel_emms |> filter(next_interaction == "Precedent", relationship == rel)
@@ -185,6 +185,23 @@ s2_es_df <- as.data.frame(s2_effect_sizes)
 es_row <- s2_es_df |> filter(next_interaction == "Precedent", grepl("Higher - Lower|Lower - Higher", contrast))
 if (nrow(es_row) > 0) {
   write_cohens_d("studyTwoPrecHigherVsLower", es_row$effect.size[1])
+}
+
+# Cohen's d for Precedent vs Reciprocity within Asym and Equal
+s2_sym_es <- eff_size(
+  emmeans(emm_symmetry, ~ next_interaction | asymmetry_present),
+  sigma = sigma(mod), edf = df.residual(mod)
+)
+s2_sym_es_df <- as.data.frame(s2_sym_es)
+for (asym in c("no", "yes")) {
+  asym_label <- switch(asym, no = "Equal", yes = "Asym")
+  es_row <- s2_sym_es_df |> filter(
+    asymmetry_present == asym,
+    grepl("Reciprocity - Precedent|Precedent - Reciprocity", contrast)
+  )
+  if (nrow(es_row) > 0) {
+    write_cohens_d(paste0("studyTwoRecipVsPrec", asym_label), es_row$effect.size[1])
+  }
 }
 
 # $emmeans

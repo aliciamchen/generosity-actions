@@ -119,6 +119,7 @@ cat("\nOR 95% CIs (effort model):\n")
 print(exp(confint(mod_effort, method = 'Wald')))
 
 export_glmer_coef("studyFourFirstEffort", mod_effort, "diff_effort")
+export_glmer_or("studyFourFirstEffort", mod_effort, "diff_effort")
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )
@@ -163,6 +164,7 @@ cat("\nOR 95% CIs (benefit model):\n")
 print(exp(confint(mod_benefit, method = 'Wald')))
 
 export_glmer_coef("studyFourFirstBenefit", mod_benefit, "diff_benefit")
+export_glmer_or("studyFourFirstBenefit", mod_benefit, "diff_benefit")
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )
@@ -364,6 +366,8 @@ print(exp(confint(mod_h1, method = 'Wald')))
 
 export_glmer_coef("studyFourHOneExpected", mod_h1, "first_response1")
 export_glmer_coef("studyFourHOneObserved", mod_h1, "first_actual1")
+export_glmer_or("studyFourHOneExpected", mod_h1, "first_response1")
+export_glmer_or("studyFourHOneObserved", mod_h1, "first_actual1")
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )

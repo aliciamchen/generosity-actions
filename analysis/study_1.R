@@ -109,7 +109,7 @@ print(s1_effect_sizes)
 
 # Export EMMs and contrasts to tex
 s1_emms <- summary(emm_contrasts$emmeans)
-s1_cons <- summary(emm_contrasts, infer = TRUE)$contrasts
+s1_cons <- summary(emm_contrasts, infer = TRUE, adjust = "none")$contrasts
 
 # EMMs by relationship × next_interaction
 for (rel in c("No info", "Symmetric", "Asymmetric")) {

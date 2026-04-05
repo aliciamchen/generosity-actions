@@ -127,6 +127,13 @@ write_or <- function(prefix, or_value, ci_lower, ci_upper) {
   write_stat(paste0(prefix, "ORCIUpper"), ci_upper, digits = 2)
 }
 
+#' Export odds ratio + Wald CI from a glmer model coefficient
+export_glmer_or <- function(prefix, mod, coef_name) {
+  or <- exp(fixef(mod)[coef_name])
+  ci <- exp(confint(mod, parm = coef_name, method = "Wald"))
+  write_or(prefix, or, ci[1], ci[2])
+}
+
 #' Write a Bayes Factor
 write_bf <- function(prefix, bf_value) {
   write_stat(paste0(prefix, "BF"), bf_value, digits = 2)

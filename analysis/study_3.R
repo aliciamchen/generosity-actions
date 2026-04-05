@@ -177,7 +177,7 @@ print(s3_effect_sizes)
 
 # Export EMMs and contrasts to tex
 s3_sym_emms <- summary(emmeans(emm_symmetry, ~ next_interaction | asymmetry_present))
-s3_sym_cons <- summary(emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present), infer = TRUE)$contrasts
+s3_sym_cons <- summary(emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present), infer = TRUE, adjust = "none")$contrasts
 
 for (asym in c("no", "yes")) {
   asym_label <- switch(asym, no = "Equal", yes = "Asym")
@@ -195,7 +195,7 @@ write_contrast("studyThreeRecipVsPrecEqual", row, stat_type = "t")
 
 # Higher vs Lower on Precedent
 s3_rel_emms <- summary(emm_rel)
-s3_rel_cons <- summary(contrast(emm_rel, method = "revpairwise"), infer = TRUE)
+s3_rel_cons <- summary(contrast(emm_rel, method = "revpairwise"), infer = TRUE, adjust = "none")
 
 for (rel in c("Equal", "Lower", "Higher")) {
   row <- s3_rel_emms |> filter(next_interaction == "Precedent", relationship == rel)
@@ -203,6 +203,30 @@ for (rel in c("Equal", "Lower", "Higher")) {
 }
 row <- s3_rel_cons |> filter(next_interaction == "Precedent", contrast == "Lower - Higher")
 write_contrast("studyThreePrecLowerVsHigher", row, stat_type = "t")
+
+# Cohen's d for Precedent vs Reciprocity within Asym and Equal
+s3_sym_es <- eff_size(
+  emmeans(emm_symmetry, ~ next_interaction | asymmetry_present),
+  sigma = sigma(mod), edf = df.residual(mod)
+)
+s3_sym_es_df <- as.data.frame(s3_sym_es)
+for (asym in c("no", "yes")) {
+  asym_label <- switch(asym, no = "Equal", yes = "Asym")
+  es_row <- s3_sym_es_df |> filter(
+    asymmetry_present == asym,
+    grepl("Reciprocity - Precedent|Precedent - Reciprocity", contrast)
+  )
+  if (nrow(es_row) > 0) {
+    write_cohens_d(paste0("studyThreeRecipVsPrec", asym_label), es_row$effect.size[1])
+  }
+}
+
+# Cohen's d for Precedent Higher vs Lower
+s3_es_df <- as.data.frame(s3_effect_sizes)
+es_row <- s3_es_df |> filter(next_interaction == "Precedent", grepl("Higher - Lower|Lower - Higher", contrast))
+if (nrow(es_row) > 0) {
+  write_cohens_d("studyThreePrecLowerVsHigher", es_row$effect.size[1])
+}
 
 # $emmeans
 # next_interaction = Reciprocity:
