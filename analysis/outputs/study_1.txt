@@ -610,24 +610,22 @@ Confidence level used: 0.95
 $contrasts
 relationship = No info:
  contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
- Precedent - Reciprocity   0.0725 0.0565 3095   -0.060   0.2049   1.283  0.4048
- None - Reciprocity       -1.2575 0.0565 3095   -1.390  -1.1249 -22.251 <0.0001
- None - Precedent         -1.3299 0.0565 3095   -1.462  -1.1974 -23.533 <0.0001
+ Precedent - Reciprocity   0.0725 0.0565 3095  -0.0383   0.1832   1.283  0.1995
+ None - Reciprocity       -1.2575 0.0565 3095  -1.3683  -1.1467 -22.251 <0.0001
+ None - Precedent         -1.3299 0.0565 3095  -1.4407  -1.2191 -23.533 <0.0001
 
 relationship = Symmetric:
  contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
- Precedent - Reciprocity  -0.1763 0.0566 3095   -0.309  -0.0437  -3.117  0.0052
- None - Reciprocity       -1.4978 0.0566 3095   -1.630  -1.3652 -26.485 <0.0001
- None - Precedent         -1.3215 0.0566 3095   -1.454  -1.1889 -23.367 <0.0001
+ Precedent - Reciprocity  -0.1763 0.0566 3095  -0.2872  -0.0654  -3.117  0.0018
+ None - Reciprocity       -1.4978 0.0566 3095  -1.6086  -1.3869 -26.485 <0.0001
+ None - Precedent         -1.3215 0.0566 3095  -1.4324  -1.2106 -23.367 <0.0001
 
 relationship = Asymmetric:
  contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
- Precedent - Reciprocity   1.0031 0.0566 3095    0.870   1.1357  17.737 <0.0001
- None - Reciprocity       -0.5156 0.0565 3095   -0.648  -0.3831  -9.124 <0.0001
- None - Precedent         -1.5187 0.0566 3095   -1.651  -1.3860 -26.835 <0.0001
+ Precedent - Reciprocity   1.0031 0.0566 3095   0.8922   1.1139  17.737 <0.0001
+ None - Reciprocity       -0.5156 0.0565 3095  -0.6264  -0.4048  -9.124 <0.0001
+ None - Precedent         -1.5187 0.0566 3095  -1.6296  -1.4077 -26.835 <0.0001
 
 Degrees-of-freedom method: kenward-roger 
 Confidence level used: 0.95 
-Conf-level adjustment: tukey method for comparing a family of 3 estimates 
-P value adjustment: tukey method for comparing a family of 3 estimates 
 

@@ -193,6 +193,23 @@ ord_mod <- clmm(ordered_rating ~ next_interaction * relationship + (1 | story) +
 cat("Ordinal model summary:\n")
 summary(ord_mod)
 
+# Export ordinal model interaction coefficients
+write_section("Ordinal robustness check")
+ord_coefs <- summary(ord_mod)$coefficients
+# next_interaction1:relationship2 is the key interaction (precedent vs recip × asym vs sym)
+ord_int_names <- c(
+  "next_interaction1:relationship1" = "NIaRelA",
+  "next_interaction2:relationship1" = "NIbRelA",
+  "next_interaction1:relationship2" = "NIaRelB",
+  "next_interaction2:relationship2" = "NIbRelB"
+)
+for (coef_name in names(ord_int_names)) {
+  label <- ord_int_names[coef_name]
+  row <- ord_coefs[coef_name, ]
+  write_stat(paste0("studyOneOrd", label, "B"), row["Estimate"], digits = 2)
+  write_stat(paste0("studyOneOrd", label, "Z"), row["z value"], digits = 2)
+}
+
 # Do people expect a continued social interaction, both with and without the relationship?
 
 
@@ -316,5 +333,19 @@ mod_z <- lmer(
 summary(mod_z)
 anova(mod_z, type = "III")
 
-emmeans(mod_z, revpairwise ~ next_interaction | relationship) |>
-  summary(infer = T)
+s1_z_cons <- emmeans(mod_z, revpairwise ~ next_interaction | relationship) |>
+  summary(infer = TRUE, adjust = "none")
+print(s1_z_cons)
+
+# Export z-scored contrasts
+write_section("Z-scored robustness check")
+for (rel in c("No info", "Symmetric", "Asymmetric")) {
+  rel_label <- switch(rel, "No info" = "NoInfo", Symmetric = "Sym", Asymmetric = "Asym")
+  row <- s1_z_cons$contrasts |> filter(relationship == rel, contrast == "Precedent - Reciprocity")
+  write_contrast(paste0("studyOneZPrecVsRecip", rel_label), row, stat_type = "t")
+}
+
+# ANOVA for z-scored model
+s1_z_anova <- anova(mod_z, type = "III")
+write_stat("studyOneZInteractionF", s1_z_anova["next_interaction:relationship", "F value"], digits = 2)
+write_stat("studyOneZInteractionP", formatC(s1_z_anova["next_interaction:relationship", "Pr(>F)"], format = "e", digits = 1))
