@@ -9,6 +9,9 @@ library(glue)
 library(effectsize)
 library(BayesFactor)
 
+source(here("analysis/stats_helpers.R"))
+set_stats_file("study_2")
+
 # Options -----------------------------------------------------------------
 
 options(warn = -1)
@@ -69,11 +72,14 @@ write_csv(d.benefit.effort, here("data/study-2_benefit_effort.csv"))
 
 # Demographic info --------------------------------------------------------
 
-print(length(unique(d$subject_id)))
+n_subjects <- length(unique(d$subject_id))
+print(n_subjects)
 
 d.demographics <- read.csv(here('data/study-2_demographics.csv'))
-d.demographics %>% count(gender)
-d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+d.demographics |> count(gender)
+d.demographics |> summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+
+write_demographics("studyTwo", d.demographics, n_subjects)
 
 
 # Stats -------------------------------------------------------------------
@@ -138,7 +144,48 @@ emm_rel <- emmeans(mod, ~ relationship | next_interaction)
 contrast(emm_rel, method = "revpairwise") %>% summary(infer = T)
 
 cat("\n--- Effect Sizes (Cohen's d) for relationship contrasts ---\n")
-print(eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod)))
+s2_effect_sizes <- eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod))
+print(s2_effect_sizes)
+
+# Export EMMs and contrasts to tex
+s2_sym_emms <- summary(emmeans(emm_symmetry, ~ next_interaction | asymmetry_present))
+s2_sym_cons <- summary(emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present), infer = TRUE)$contrasts
+
+# Asymmetric (pooled Higher+Lower): Precedent vs Reciprocity
+for (ni in c("Reciprocity", "Precedent", "None")) {
+  ni_label <- switch(ni, Reciprocity = "Recip", Precedent = "Prec", None = "None")
+  row <- s2_sym_emms |> filter(asymmetry_present == "yes", next_interaction == ni)
+  write_emm(paste0("studyTwo", ni_label, "Asym"), row)
+}
+row <- s2_sym_cons |> filter(asymmetry_present == "yes", contrast == "Reciprocity - Precedent")
+write_contrast("studyTwoRecipVsPrecAsym", row, stat_type = "t")
+
+# Equal: Reciprocity vs Precedent
+for (ni in c("Reciprocity", "Precedent", "None")) {
+  ni_label <- switch(ni, Reciprocity = "Recip", Precedent = "Prec", None = "None")
+  row <- s2_sym_emms |> filter(asymmetry_present == "no", next_interaction == ni)
+  write_emm(paste0("studyTwo", ni_label, "Equal"), row)
+}
+row <- s2_sym_cons |> filter(asymmetry_present == "no", contrast == "Reciprocity - Precedent")
+write_contrast("studyTwoRecipVsPrecEqual", row, stat_type = "t")
+
+# Higher vs Lower on Precedent
+s2_rel_emms <- summary(emm_rel)
+s2_rel_cons <- summary(contrast(emm_rel, method = "revpairwise"), infer = TRUE)
+
+for (rel in c("Equal", "Lower", "Higher")) {
+  row <- s2_rel_emms |> filter(next_interaction == "Precedent", relationship == rel)
+  write_emm(paste0("studyTwoPrec", rel), row)
+}
+row <- s2_rel_cons |> filter(next_interaction == "Precedent", contrast == "Higher - Lower")
+write_contrast("studyTwoPrecHigherVsLower", row, stat_type = "t")
+
+# Cohen's d for Precedent Higher vs Lower
+s2_es_df <- as.data.frame(s2_effect_sizes)
+es_row <- s2_es_df |> filter(next_interaction == "Precedent", grepl("Higher - Lower|Lower - Higher", contrast))
+if (nrow(es_row) > 0) {
+  write_cohens_d("studyTwoPrecHigherVsLower", es_row$effect.size[1])
+}
 
 # $emmeans
 # next_interaction = Reciprocity:
@@ -201,34 +248,34 @@ bf_prec <- lmBF(likert_rating ~ relationship + subject_id + story,
 bf_prec_null <- lmBF(likert_rating ~ subject_id + story,
                      data = d_bf_prec,
                      whichRandom = c("subject_id", "story"))
+s2_bf01_prec <- as.vector(1 / (bf_prec / bf_prec_null))
 cat("BF01 for Higher vs Lower on Precedent (Study 2):\n")
-print(1 / (bf_prec / bf_prec_null))
+print(s2_bf01_prec)
+write_bf("studyTwoPrecHigherVsLower", extractBF(bf_prec / bf_prec_null)$bf |> {\(x) 1/x}())
 
 # Exploratory analyses ----------------------------------------------------
 
 # benefit / effort
 
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_higher_benefit <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Higher", type == "benefit"))
+summary(mod_higher_benefit)
+export_lmer_coef("studyTwoHigherBenefit", mod_higher_benefit)
 
-summary(mod)
-
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_higher_effort <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Higher", type == "effort"))
+summary(mod_higher_effort)
+export_lmer_coef("studyTwoHigherEffort", mod_higher_effort)
 
-summary(mod)
-
-
-
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_lower_benefit <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Lower", type == "benefit"))
+summary(mod_lower_benefit)
+export_lmer_coef("studyTwoLowerBenefit", mod_lower_benefit)
 
-summary(mod)
-
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_lower_effort <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Lower", type == "effort"))
-
-summary(mod)
+summary(mod_lower_effort)
+export_lmer_coef("studyTwoLowerEffort", mod_lower_effort)
 
 
 
@@ -252,6 +299,8 @@ bf_effort_null <- lmBF(likert_rating ~ subject_id + story,
                        whichRandom = c("subject_id", "story"))
 cat("BF01 for effort not moderating precedent (Study 2):\n")
 print(1 / (bf_effort / bf_effort_null))
+write_bf("studyTwoEffortModPrec", extractBF(bf_effort / bf_effort_null)$bf |> {\(x) 1/x}())
+
 # For benefit
 bf_benefit <- lmBF(likert_rating ~ diff_benefit + subject_id + story,
                    data = d_bf_cost,
@@ -261,6 +310,7 @@ bf_benefit_null <- lmBF(likert_rating ~ subject_id + story,
                         whichRandom = c("subject_id", "story"))
 cat("BF01 for benefit not moderating precedent (Study 2):\n")
 print(1 / (bf_benefit / bf_benefit_null))
+write_bf("studyTwoBenefitModPrec", extractBF(bf_benefit / bf_benefit_null)$bf |> {\(x) 1/x}())
 
 ##################################################
 

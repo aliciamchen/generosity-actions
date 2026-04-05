@@ -204,15 +204,8 @@ Confidence level used: 0.95
 
 --- Bayes Factors for key null results ---
 BF01 for Higher vs Lower on Precedent (Study 2):
-Bayes factor analysis
---------------
-[1] subject_id + story : 11.81719 ±2.22%
-
-Against denominator:
-  likert_rating ~ relationship + subject_id + story 
----
-Bayes factor type: BFlinearModel, JZS
-
+subject_id + story 
+          12.21803 
 Linear mixed model fit by REML. t-tests use Satterthwaite's method [
 lmerModLmerTest]
 Formula: p_prec ~ 1 + diff + (1 | story) + (1 | subject_id)
@@ -333,7 +326,7 @@ Adding missing grouping variables: `relationship`
 BF01 for effort not moderating precedent (Study 2):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 3.28827 ±0.7%
+[1] subject_id + story : 3.288692 ±0.7%
 
 Against denominator:
   likert_rating ~ diff_effort + subject_id + story 
@@ -343,7 +336,7 @@ Bayes factor type: BFlinearModel, JZS
 BF01 for benefit not moderating precedent (Study 2):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 0.5591866 ±1.49%
+[1] subject_id + story : 0.5733289 ±0.89%
 
 Against denominator:
   likert_rating ~ diff_benefit + subject_id + story 

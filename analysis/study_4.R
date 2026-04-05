@@ -6,6 +6,10 @@ library(lmerTest)
 library(emmeans)
 library(glue)
 library(effectsize)
+library(BayesFactor)
+
+source(here("analysis/stats_helpers.R"))
+set_stats_file("study_4")
 
 # Options -----------------------------------------------------------------
 
@@ -77,24 +81,26 @@ write.csv(d, here("data/study-4_tidy_data.csv"), row.names = FALSE)
 
 # Display demographics ----------------------------------------------------
 
-
 d.demographics <- read.csv(here("data/study-4_demographics.csv"))
-d.demographics %>% count(gender)
-d.demographics %>% summarize(
+d.demographics |> count(gender)
+d.demographics |> summarize(
   mean_age = mean(age),
   sd_age = sd(age),
   min_age = min(age),
   max_age = max(age)
 )
 
-print(length(unique(d$subject_id)))
+n_subjects <- length(unique(d$subject_id))
+print(n_subjects)
+
+write_demographics("studyFour", d.demographics, n_subjects)
 
 
 # Stats -------------------------------------------------------------------
 
 # What happened the first time people interacted?
 # Can their expectations be explained by relative cost/benefit?
-mod <-
+mod_effort <-
   glmer(
     data = d %>% filter(first_actual != "Equal"),
     first_response ~ diff_effort + (1 |
@@ -102,10 +108,17 @@ mod <-
       story),
     family = "binomial"
   )
-summary(mod)
+summary(mod_effort)
 
 cat("\n--- Standardized Parameters ---\n")
-print(standardize_parameters(mod))
+print(standardize_parameters(mod_effort))
+
+cat("\nOdds Ratios (effort model):\n")
+print(exp(fixef(mod_effort)))
+cat("\nOR 95% CIs (effort model):\n")
+print(exp(confint(mod_effort, method = 'Wald')))
+
+export_glmer_coef("studyFourFirstEffort", mod_effort, "diff_effort")
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )
@@ -134,7 +147,7 @@ print(standardize_parameters(mod))
 #   (Intr)
 # diff_effort -0.880
 
-mod <-
+mod_benefit <-
   glmer(
     data = d %>% filter(first_actual != "Equal"),
     first_response ~ diff_benefit + (1 |
@@ -142,7 +155,14 @@ mod <-
       story),
     family = "binomial"
   )
-summary(mod)
+summary(mod_benefit)
+
+cat("\nOdds Ratios (benefit model):\n")
+print(exp(fixef(mod_benefit)))
+cat("\nOR 95% CIs (benefit model):\n")
+print(exp(confint(mod_benefit, method = 'Wald')))
+
+export_glmer_coef("studyFourFirstBenefit", mod_benefit, "diff_benefit")
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )
@@ -177,7 +197,7 @@ summary(mod)
 
 # People expect alternation when the relationship is symmetric, and repetition when the relationship is asymmetric.
 
-mod <- glmer(
+mod_strategy <- glmer(
   data = d,
   strategy ~ first_actual + (1 |
     subject_id) + (1 |
@@ -185,10 +205,47 @@ mod <- glmer(
   family = "binomial"
 )
 
-summary(mod)
+summary(mod_strategy)
 
+cat("\nOdds Ratios (strategy model):\n")
+print(exp(fixef(mod_strategy)))
+cat("\nOR 95% CIs (strategy model):\n")
+print(exp(confint(mod_strategy, method = 'Wald')))
 
-emmeans(mod, pairwise ~ first_actual) %>% summary(infer = T)
+s4_strategy_emm <- emmeans(mod_strategy, pairwise ~ first_actual) |> summary(infer = T)
+s4_strategy_emm
+
+# Export EMMs
+for (fa in c("Equal", "Higher", "Lower")) {
+  row <- s4_strategy_emm$emmeans |> filter(first_actual == fa)
+  write_emm(paste0("studyFourStrategy", fa), row)
+}
+
+# Export Higher vs Lower contrast
+row <- s4_strategy_emm$contrasts |> filter(contrast == "Higher - Lower")
+write_contrast("studyFourStrategyHigherVsLower", row, stat_type = "z")
+
+# Bayes Factor for Higher vs Lower null on strategy
+cat("\n--- Bayes Factor for Higher vs Lower null on strategy ---\n")
+d_bf_strat <- d |>
+  filter(first_actual != "Equal") |>
+  mutate(strategy_num = as.numeric(strategy == "Precedent")) |>
+  select(strategy_num, first_actual, subject_id, story) |>
+  drop_na() |>
+  as.data.frame()
+d_bf_strat$subject_id <- factor(d_bf_strat$subject_id)
+d_bf_strat$story <- factor(d_bf_strat$story)
+d_bf_strat$first_actual <- factor(d_bf_strat$first_actual)
+
+bf_strat <- lmBF(strategy_num ~ first_actual + subject_id + story,
+                 data = d_bf_strat,
+                 whichRandom = c("subject_id", "story"))
+bf_strat_null <- lmBF(strategy_num ~ subject_id + story,
+                      data = d_bf_strat,
+                      whichRandom = c("subject_id", "story"))
+cat("BF01 for Higher vs Lower on strategy (Study 4):\n")
+print(1 / (bf_strat / bf_strat_null))
+write_bf("studyFourStrategyHigherVsLower", extractBF(bf_strat / bf_strat_null)$bf |> {\(x) 1/x}())
 
 # $emmeans
 # first_actual emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
@@ -211,7 +268,7 @@ emmeans(mod, pairwise ~ first_actual) %>% summary(infer = T)
 # P value adjustment: tukey method for comparing a family of 3 estimates
 
 # Add consistent / inconsistent as a predictor
-mod <- glmer(
+mod_strat_exp <- glmer(
   data = d,
   strategy ~ first_actual * Expectations + (1 |
                                subject_id) + (1 |
@@ -219,8 +276,25 @@ mod <- glmer(
   family = "binomial"
 )
 
-summary(mod)
-emmeans(mod, pairwise ~ first_actual * Expectations) %>% summary(infer = T)
+summary(mod_strat_exp)
+
+cat("\nOdds Ratios (strategy × expectations model):\n")
+print(exp(fixef(mod_strat_exp)))
+cat("\nOR 95% CIs:\n")
+print(exp(confint(mod_strat_exp, method = 'Wald')))
+
+s4_strat_exp <- emmeans(mod_strat_exp, pairwise ~ first_actual * Expectations) |> summary(infer = T)
+s4_strat_exp
+
+# Export key EMMs for consistent/inconsistent conditions
+for (fa in c("Equal", "Higher", "Lower")) {
+  for (exp_cond in c("Consistent", "Inconsistent")) {
+    row <- s4_strat_exp$emmeans |> filter(first_actual == fa, Expectations == exp_cond)
+    if (nrow(row) > 0 && !is.na(row$emmean)) {
+      write_emm(paste0("studyFour", fa, exp_cond), row)
+    }
+  }
+}
 
 # $emmeans
 # first_actual Expectations emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
@@ -273,7 +347,7 @@ d.h1 <- d %>%
     second_response = factor(second_response, levels = c("Higher", "Lower"))
   )
 
-mod <- glmer(
+mod_h1 <- glmer(
   data = d.h1,
   second_response ~ first_response * first_actual + (1 |
     subject_id) + (1 |
@@ -281,7 +355,15 @@ mod <- glmer(
   family = "binomial"
 )
 
-summary(mod)
+summary(mod_h1)
+
+cat("\nOdds Ratios (H1 model):\n")
+print(exp(fixef(mod_h1)))
+cat("\nOR 95% CIs:\n")
+print(exp(confint(mod_h1, method = 'Wald')))
+
+export_glmer_coef("studyFourHOneExpected", mod_h1, "first_response1")
+export_glmer_coef("studyFourHOneObserved", mod_h1, "first_actual1")
 
 # Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
 # Family: binomial  ( logit )
@@ -363,12 +445,15 @@ studies_2_4_all <-
   ) %>%
   filter(second_response == "Lower")
 
-mod <- lmer(
+mod_cross_2 <- lmer(
   data = studies_2_4_all,
   expected.next.2 ~ expected.first.4 * first_actual + (1 | subject_id) + (1 | story)
 )
 
-summary(mod)
+summary(mod_cross_2)
+
+export_lmer_coef("studyFourCrossTwoExpected", mod_cross_2, "expected.first.4")
+export_lmer_coef("studyFourCrossTwoObserved", mod_cross_2, "first_actual1")
 
 # Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
 # Formula: expected.next.2 ~ expected.first.4 * first_actual + (1 | subject_id) +      (1 | story)
@@ -438,12 +523,15 @@ studies_3_4_all <-
   ) %>%
   filter(second_response == "Lower")
 
-mod <- lmer(
+mod_cross_3 <- lmer(
   data = studies_3_4_all,
   expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) + (1 | story)
 )
 
-summary(mod)
+summary(mod_cross_3)
+
+export_lmer_coef("studyFourCrossThreeExpected", mod_cross_3, "expected.first.4")
+export_lmer_coef("studyFourCrossThreeObserved", mod_cross_3, "first_actual1")
 
 # Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
 # Formula: expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) +      (1 | story)
@@ -532,7 +620,7 @@ summary(mod2)
 # boundary (singular) fit: see help('isSingular')
 
 # Is the more complex model better?
-anova(mod, mod2)
+anova(mod_cross_3, mod2)
 
 # Data: studies_3_4_all
 # Models:

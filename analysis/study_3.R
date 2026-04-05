@@ -9,6 +9,9 @@ library(glue)
 library(effectsize)
 library(BayesFactor)
 
+source(here("analysis/stats_helpers.R"))
+set_stats_file("study_3")
+
 # Options -----------------------------------------------------------------
 
 options(warn = -1)
@@ -96,11 +99,14 @@ write_csv(d.benefit.effort, here("data/study-3_benefit_effort.csv"))
 
 # Demographic info --------------------------------------------------------
 
-print(length(unique(d$subject_id)))
+n_subjects <- length(unique(d$subject_id))
+print(n_subjects)
 
 d.demographics <- read.csv(here('data/study-3_demographics.csv'))
-d.demographics %>% count(gender)
-d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+d.demographics |> count(gender)
+d.demographics |> summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+
+write_demographics("studyThree", d.demographics, n_subjects)
 
 
 # Stats -------------------------------------------------------------------
@@ -166,7 +172,37 @@ emm_rel <- emmeans(mod, ~ relationship | next_interaction)
 contrast(emm_rel, method = "revpairwise") %>% summary(infer = T)
 
 cat("\n--- Effect Sizes (Cohen's d) for relationship contrasts ---\n")
-print(eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod)))
+s3_effect_sizes <- eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod))
+print(s3_effect_sizes)
+
+# Export EMMs and contrasts to tex
+s3_sym_emms <- summary(emmeans(emm_symmetry, ~ next_interaction | asymmetry_present))
+s3_sym_cons <- summary(emmeans(emm_symmetry, pairwise ~ next_interaction | asymmetry_present), infer = TRUE)$contrasts
+
+for (asym in c("no", "yes")) {
+  asym_label <- switch(asym, no = "Equal", yes = "Asym")
+  for (ni in c("Reciprocity", "Precedent", "None")) {
+    ni_label <- switch(ni, Reciprocity = "Recip", Precedent = "Prec", None = "None")
+    row <- s3_sym_emms |> filter(asymmetry_present == asym, next_interaction == ni)
+    write_emm(paste0("studyThree", ni_label, asym_label), row)
+  }
+}
+
+row <- s3_sym_cons |> filter(asymmetry_present == "yes", contrast == "Reciprocity - Precedent")
+write_contrast("studyThreeRecipVsPrecAsym", row, stat_type = "t")
+row <- s3_sym_cons |> filter(asymmetry_present == "no", contrast == "Reciprocity - Precedent")
+write_contrast("studyThreeRecipVsPrecEqual", row, stat_type = "t")
+
+# Higher vs Lower on Precedent
+s3_rel_emms <- summary(emm_rel)
+s3_rel_cons <- summary(contrast(emm_rel, method = "revpairwise"), infer = TRUE)
+
+for (rel in c("Equal", "Lower", "Higher")) {
+  row <- s3_rel_emms |> filter(next_interaction == "Precedent", relationship == rel)
+  write_emm(paste0("studyThreePrec", rel), row)
+}
+row <- s3_rel_cons |> filter(next_interaction == "Precedent", contrast == "Lower - Higher")
+write_contrast("studyThreePrecLowerVsHigher", row, stat_type = "t")
 
 # $emmeans
 # next_interaction = Reciprocity:
@@ -230,32 +266,31 @@ bf_prec_null <- lmBF(likert_rating ~ subject_id + story,
                      whichRandom = c("subject_id", "story"))
 cat("BF01 for Higher vs Lower on Precedent (Study 3):\n")
 print(1 / (bf_prec / bf_prec_null))
+write_bf("studyThreePrecHigherVsLower", extractBF(bf_prec / bf_prec_null)$bf |> {\(x) 1/x}())
 
 # Exploratory analyses ----------------------------------------------------
 
 # benefit / effort
 
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_higher_benefit <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Higher", type == "benefit"))
+summary(mod_higher_benefit)
+export_lmer_coef("studyThreeHigherBenefit", mod_higher_benefit)
 
-summary(mod)
-
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_higher_effort <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Higher", type == "effort"))
+summary(mod_higher_effort)
+export_lmer_coef("studyThreeHigherEffort", mod_higher_effort)
 
-summary(mod)
-
-
-
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_lower_benefit <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Lower", type == "benefit"))
+summary(mod_lower_benefit)
+export_lmer_coef("studyThreeLowerBenefit", mod_lower_benefit)
 
-summary(mod)
-
-mod <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
+mod_lower_effort <- lmer(p_prec ~ 1 + diff + (1 | story) + (1 | subject_id),
             data = d.benefit.effort %>% filter(relationship == "Lower", type == "effort"))
-
-summary(mod)
+summary(mod_lower_effort)
+export_lmer_coef("studyThreeLowerEffort", mod_lower_effort)
 
 
 
@@ -274,6 +309,8 @@ bf_effort_null <- lmBF(likert_rating ~ subject_id + story,
                        whichRandom = c("subject_id", "story"))
 cat("BF01 for effort not moderating precedent (Study 3):\n")
 print(1 / (bf_effort / bf_effort_null))
+write_bf("studyThreeEffortModPrec", extractBF(bf_effort / bf_effort_null)$bf |> {\(x) 1/x}())
+
 # For benefit
 bf_benefit <- lmBF(likert_rating ~ diff_benefit + subject_id + story,
                    data = d_bf_cost,
@@ -283,6 +320,7 @@ bf_benefit_null <- lmBF(likert_rating ~ subject_id + story,
                         whichRandom = c("subject_id", "story"))
 cat("BF01 for benefit not moderating precedent (Study 3):\n")
 print(1 / (bf_benefit / bf_benefit_null))
+write_bf("studyThreeBenefitModPrec", extractBF(bf_benefit / bf_benefit_null)$bf |> {\(x) 1/x}())
 
 # Full model with Study 2 benefit / effort
 

@@ -39,33 +39,58 @@ study_1_summary <- study_1_data %>%
 study_1_summary_scenario <- study_1_data %>%
   group_by(relationship, next_interaction, story) %>%
   tidyboot_mean(likert_rating, na.rm = T)
+
+# Per-subject means for spaghetti lines
+# Compute dodged x positions to match violin dodge (width = 0.7, 3 groups)
+add_dodge_x <- function(df, x_var = "relationship", dodge_var = "next_interaction", width = 0.7) {
+  n_groups <- length(unique(df[[dodge_var]]))
+  df %>%
+    mutate(
+      x_num = as.numeric(.data[[x_var]]),
+      dodge_i = as.numeric(.data[[dodge_var]]),
+      x_dodge = x_num + width * (dodge_i - (n_groups + 1) / 2) / n_groups
+    )
+}
+
+study_1_subject_means <- study_1_data %>%
+  group_by(subject_id, relationship, next_interaction) %>%
+  summarize(mean_rating = mean(likert_rating, na.rm = TRUE), .groups = "drop") %>%
+  add_dodge_x()
 ```
 
 
 ```{r fig.width=6, fig.height=3.5, dpi=125}
+study_1_rel_levels <- levels(study_1_data$relationship)
+
 ggplot(
-  study_1_data,
-  aes(x = relationship, y = likert_rating, fill = next_interaction)
+  study_1_data %>% add_dodge_x(),
+  aes(x = x_dodge, y = likert_rating, fill = next_interaction)
 ) +
+  geom_line(
+    data = study_1_subject_means,
+    aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
+    alpha = 0.08, linewidth = 0.3, inherit.aes = FALSE
+  ) +
   geom_violin(
+    aes(group = interaction(relationship, next_interaction)),
     bw = 0.43,
-    position = position_dodge(width = 0.7),
-    alpha = 0.7
+    alpha = 0.7,
+    width = 0.7 / 3 * 0.9
   ) +
   geom_pointrange(
-    data = study_1_summary,
+    data = study_1_summary %>% add_dodge_x(),
     aes(
-      x = relationship,
+      x = x_dodge,
       y = empirical_stat,
       ymin = ci_lower,
       ymax = ci_upper
     ),
     size = 0.3,
-    linewidth = 1,
-    position = position_dodge(width = 0.7)
+    linewidth = 1
   ) +
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
+  scale_x_continuous(breaks = seq_along(study_1_rel_levels), labels = study_1_rel_levels) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
   labs(
     title = "Study 1: Equal vs. hierarchical",
@@ -137,33 +162,46 @@ study_2_summary <- study_2_data %>%
 study_2_summary_scenario <- study_2_data %>%
   group_by(relationship, next_interaction, story) %>%
   tidyboot_mean(likert_rating, na.rm = T)
+
+study_2_subject_means <- study_2_data %>%
+  group_by(subject_id, relationship, next_interaction) %>%
+  summarize(mean_rating = mean(likert_rating, na.rm = TRUE), .groups = "drop") %>%
+  add_dodge_x()
 ```
 
 
 ```{r fig.width=6, fig.height=3.5, dpi=125}
+study_2_rel_levels <- levels(study_2_data$relationship)
+
 ggplot(
-  study_2_data,
-  aes(x = relationship, y = likert_rating, fill = next_interaction)
+  study_2_data %>% add_dodge_x(),
+  aes(x = x_dodge, y = likert_rating, fill = next_interaction)
 ) +
+  geom_line(
+    data = study_2_subject_means,
+    aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
+    alpha = 0.08, linewidth = 0.3, inherit.aes = FALSE
+  ) +
   geom_violin(
+    aes(group = interaction(relationship, next_interaction)),
     bw = 0.43,
-    position = position_dodge(width = 0.7),
-    alpha = 0.7
+    alpha = 0.7,
+    width = 0.7 / 3 * 0.9
   ) +
   geom_pointrange(
-    data = study_2_summary,
+    data = study_2_summary %>% add_dodge_x(),
     aes(
-      x = relationship,
+      x = x_dodge,
       y = empirical_stat,
       ymin = ci_lower,
       ymax = ci_upper
     ),
     size = 0.3,
-    linewidth = 1,
-    position = position_dodge(width = 0.7)
+    linewidth = 1
   ) +
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
+  scale_x_continuous(breaks = seq_along(study_2_rel_levels), labels = study_2_rel_levels) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
   labs(
     title = "Study 2: Relative rank",
@@ -298,33 +336,46 @@ study_3_summary <- study_3_data %>%
 study_3_summary_scenario <- study_3_data %>%
   group_by(relationship, next_interaction, story) %>%
   tidyboot_mean(likert_rating, na.rm = T)
+
+study_3_subject_means <- study_3_data %>%
+  group_by(subject_id, relationship, next_interaction) %>%
+  summarize(mean_rating = mean(likert_rating, na.rm = TRUE), .groups = "drop") %>%
+  add_dodge_x()
 ```
 
 
 ```{r fig.width=6, fig.height=3.5, dpi=125}
+study_3_rel_levels <- levels(study_3_data$relationship)
+
 ggplot(
-  study_3_data,
-  aes(x = relationship, y = likert_rating, fill = next_interaction)
+  study_3_data %>% add_dodge_x(),
+  aes(x = x_dodge, y = likert_rating, fill = next_interaction)
 ) +
+  geom_line(
+    data = study_3_subject_means,
+    aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
+    alpha = 0.08, linewidth = 0.3, inherit.aes = FALSE
+  ) +
   geom_violin(
+    aes(group = interaction(relationship, next_interaction)),
     bw = 0.43,
-    position = position_dodge(width = 0.7),
-    alpha = 0.7
+    alpha = 0.7,
+    width = 0.7 / 3 * 0.9
   ) +
   geom_pointrange(
-    data = study_3_summary,
+    data = study_3_summary %>% add_dodge_x(),
     aes(
-      x = relationship,
+      x = x_dodge,
       y = empirical_stat,
       ymin = ci_lower,
       ymax = ci_upper
     ),
     size = 0.3,
-    linewidth = 1,
-    position = position_dodge(width = 0.7)
+    linewidth = 1
   ) +
   scale_fill_manual(values = action_colors) +
   scale_color_manual(values = action_colors) +
+  scale_x_continuous(breaks = seq_along(study_3_rel_levels), labels = study_3_rel_levels) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7)) +
   labs(
     title = "Study 3: Concrete relationships",

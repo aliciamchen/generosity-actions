@@ -7,6 +7,9 @@ library(emmeans)
 library(lmerTest)
 library(car)
 
+source(here("analysis/stats_helpers.R"))
+set_stats_file("study_6")
+
 theme_set(theme_classic(base_size = 15, base_family = "Arial"))
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
@@ -89,10 +92,13 @@ main_data_filtered <- main_data %>%
 write_csv(main_data_filtered, here("data/study-6_tidy_data.csv"))
 
 # Look at demographic info
-length(unique(main_data_filtered$subject_id))
+n_subjects <- length(unique(main_data_filtered$subject_id))
+print(n_subjects)
 study_6_demographics <- read.csv(here("data/study-6_demographics.csv"))
-study_6_demographics %>% count(gender)
-study_6_demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+study_6_demographics |> count(gender)
+study_6_demographics |> summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+
+write_demographics("studySix", study_6_demographics, n_subjects)
 
 
 ## ------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -110,7 +116,15 @@ print(exp(confint(main_model, method='Wald')))
 
 ## ------------------------------------------------------------------------------------------------------------------------------------------------------
 emm <- emmeans(main_model, ~ partner_status * coordination)
-summary(emm, infer = T)
+s6_emm <- summary(emm, infer = T)
+s6_emm
+
+# Export key EMMs: successful coordination by partner status
+for (ps in c("equal", "lower", "higher")) {
+  ps_label <- switch(ps, equal = "Equal", lower = "Lower", higher = "Higher")
+  row <- s6_emm |> filter(partner_status == ps, coordination == TRUE)
+  write_emm(paste0("studySixCoord", ps_label), row)
+}
 
 # partner_status coordination emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # equal          False         1.049 0.193 Inf     0.672     1.427   5.442  <.0001
@@ -221,24 +235,28 @@ print(exp(confint(model2, method='Wald')))
 # optimizer (bobyqa) convergence code: 0 (OK)
 # boundary (singular) fit: see help('isSingular')
 
-Anova(model2, type = "III")
+s6_anova2 <- Anova(model2, type = "III")
+s6_anova2
 
-# Analysis of Deviance Table (Type III Wald chisquare tests)
-# 
-# Response: participant_second_choice_generous
-# Chisq Df Pr(>Chisq)    
-# (Intercept)                                     0.0221  1  0.8819169    
-# partner_first_choice                          148.1207  1  < 2.2e-16 ***
-#   participant_first_choice                        4.1957  1  0.0405254 *  
-#   partner_status                                  9.2871  2  0.0096236 ** 
-#   partner_first_choice:participant_first_choice   2.5874  1  0.1077154    
-# partner_first_choice:partner_status            17.9537  2  0.0001263 ***
-#   ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
+# Export Type III interaction chi-squared
+write_stat("studySixInteractionChisq", s6_anova2["partner_first_choice:partner_status", "Chisq"], digits = 2)
+write_stat("studySixInteractionDF", s6_anova2["partner_first_choice:partner_status", "Df"])
+write_p("studySixInteractionP", s6_anova2["partner_first_choice:partner_status", "Pr(>Chisq)"])
 
 # Compare models using likelihood ratio test
-anova(model1, model2)
+s6_lrt <- anova(model1, model2)
+s6_lrt
+
+# Export LRT
+write_stat("studySixLRTChisq", s6_lrt$Chisq[2], digits = 2)
+write_stat("studySixLRTDF", s6_lrt$Df[2])
+write_p("studySixLRTP", s6_lrt$`Pr(>Chisq)`[2])
+
+# Export model2 key coefficients
+export_glmer_coef("studySixReciprocity", model2, "partner_first_choice1")
+export_glmer_coef("studySixHabit", model2, "participant_first_choice1")
+export_glmer_coef("studySixWSLS", model2, "partner_first_choice1:participant_first_choice1")
+export_glmer_coef("studySixBaseline", model2, "(Intercept)")
 
 # Data: main_data_filtered
 # Models:

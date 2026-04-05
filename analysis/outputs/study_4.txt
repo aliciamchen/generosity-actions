@@ -31,6 +31,12 @@ The following object is masked from ‘package:stats’:
 Welcome to emmeans.
 Caution: You lose important information if you filter this package's results.
 See '? untidy'
+Loading required package: coda
+************
+Welcome to BayesFactor 0.9.12-4.8. If you have questions, please contact Richard Morey (richarddmorey@gmail.com).
+
+Type BFManual() to open the manual.
+************
 Joining with `by = join_by(story)`
          gender  n
 1        female 59
@@ -75,7 +81,18 @@ Parameter   | Std. Coef. |        95% CI
 (Intercept) |      -0.01 | [-0.55, 0.52]
 diff effort |      -0.12 | [-0.65, 0.42]
 
-- Response is unstandardized.Generalized linear mixed model fit by maximum likelihood (Laplace
+- Response is unstandardized.
+Odds Ratios (effort model):
+(Intercept) diff_effort 
+  1.2249505   0.8918999 
+
+OR 95% CIs (effort model):
+                2.5 %   97.5 %
+.sig01             NA       NA
+.sig02             NA       NA
+(Intercept) 0.3961412 3.787801
+diff_effort 0.5294742 1.502406
+Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: first_response ~ diff_benefit + (1 | subject_id) + (1 | story)
@@ -102,6 +119,17 @@ diff_benefit   0.3826     0.2555   1.498    0.134
 Correlation of Fixed Effects:
             (Intr)
 diff_beneft -0.874
+
+Odds Ratios (benefit model):
+ (Intercept) diff_benefit 
+   0.4890891    1.4660316 
+
+OR 95% CIs (benefit model):
+                 2.5 %   97.5 %
+.sig01              NA       NA
+.sig02              NA       NA
+(Intercept)  0.1714216 1.395437
+diff_benefit 0.8885775 2.418752
 Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: binomial  ( logit )
@@ -133,6 +161,18 @@ Correlation of Fixed Effects:
             (Intr) frst_1
 first_actl1  0.035       
 first_actl2 -0.019 -0.536
+
+Odds Ratios (strategy model):
+  (Intercept) first_actual1 first_actual2 
+    0.7919517     0.3129470     1.5863291 
+
+OR 95% CIs (strategy model):
+                  2.5 %    97.5 %
+.sig01               NA        NA
+.sig02               NA        NA
+(Intercept)   0.5406858 1.1599850
+first_actual1 0.2667710 0.3671157
+first_actual2 1.3723984 1.8336074
 $emmeans
  first_actual emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
  Equal        -1.395 0.214 Inf   -1.8138    -0.976  -6.528 <0.0001
@@ -152,6 +192,18 @@ Results are given on the log odds ratio (not the response) scale.
 Confidence level used: 0.95 
 Conf-level adjustment: tukey method for comparing a family of 3 estimates 
 P value adjustment: tukey method for comparing a family of 3 estimates 
+
+
+--- Bayes Factor for Higher vs Lower null on strategy ---
+BF01 for Higher vs Lower on strategy (Study 4):
+Bayes factor analysis
+--------------
+[1] subject_id + story : 2.419885 ±3.1%
+
+Against denominator:
+  strategy_num ~ first_actual + subject_id + story 
+---
+Bayes factor type: BFlinearModel, JZS
 
 fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
 Generalized linear mixed model fit by maximum likelihood (Laplace
@@ -192,6 +244,24 @@ Expectatns1 -0.318 -0.808  0.653
 frst_ct1:E1 -0.341 -0.828  0.686  0.728
 fit warnings:
 fixed-effect model matrix is rank deficient so dropping 1 column / coefficient
+
+Odds Ratios (strategy × expectations model):
+                (Intercept)               first_actual1 
+                  0.6558687                   0.2088906 
+              first_actual2               Expectations1 
+                  1.9384958                   1.8754206 
+first_actual1:Expectations1 
+                  0.9478064 
+
+OR 95% CIs:
+                                2.5 %    97.5 %
+.sig01                             NA        NA
+.sig02                             NA        NA
+(Intercept)                 0.4307286 0.9986885
+first_actual1               0.1485380 0.2937653
+first_actual2               1.5597618 2.4091921
+Expectations1               1.5454383 2.2758607
+first_actual1:Expectations1 0.7120424 1.2616342
 $emmeans
  first_actual Expectations emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
  Equal        Consistent   -1.413 0.219 Inf    -1.842   -0.9833  -6.450 <0.0001
@@ -281,6 +351,21 @@ frst_rs1:_1 0.048  0.008   0.027
 optimizer (Nelder_Mead) convergence code: 0 (OK)
 boundary (singular) fit: see help('isSingular')
 
+
+Odds Ratios (H1 model):
+                  (Intercept)               first_response1 
+                     1.108271                      1.659548 
+                first_actual1 first_response1:first_actual1 
+                     1.342978                      0.970467 
+
+OR 95% CIs:
+                                  2.5 %   97.5 %
+.sig01                               NA       NA
+.sig02                               NA       NA
+(Intercept)                   0.9433692 1.301998
+first_response1               1.4732728 1.869376
+first_actual1                 1.2000925 1.502876
+first_response1:first_actual1 0.8669504 1.086344
 boundary (singular) fit: see help('isSingular')
 Linear mixed model fit by REML. t-tests use Satterthwaite's method [
 lmerModLmerTest]
@@ -425,10 +510,10 @@ boundary (singular) fit: see help('isSingular')
 refitting model(s) with ML (instead of REML)
 Data: studies_3_4_all
 Models:
-mod: expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) + (1 | story)
+mod_cross_3: expected.next.3 ~ expected.first.4 * first_actual + (1 | subject_id) + (1 | story)
 mod2: expected.next.3 ~ (dominance_score + prestige_score + expected.first.4) * first_actual + (1 | subject_id) + (1 | story)
-     npar     AIC     BIC logLik -2*log(L)  Chisq Df Pr(>Chisq)   
-mod     7 -706.93 -675.29 360.46   -720.93                        
-mod2   11 -716.36 -666.65 369.18   -738.36 17.434  4   0.001591 **
+            npar     AIC     BIC logLik -2*log(L)  Chisq Df Pr(>Chisq)   
+mod_cross_3    7 -706.93 -675.29 360.46   -720.93                        
+mod2          11 -716.36 -666.65 369.18   -738.36 17.434  4   0.001591 **
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

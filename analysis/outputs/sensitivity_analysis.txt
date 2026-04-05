@@ -1,0 +1,43 @@
+here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
+=== Sensitivity Analyses: Minimum Detectable Effect Sizes ===
+
+--- Study 1 (N=59) ---
+Main effects (2 df numerator, ~3176 denominator df):
+  Minimum detectable f2 = 0.0030 (f = 0.0549)
+Interaction (4 df numerator):
+  Minimum detectable f2 = 0.0038 (f = 0.0613)
+
+--- Study 2 (N=59) ---
+Main effects (2 df numerator, ~3090 denominator df):
+  Minimum detectable f2 = 0.0031 (f = 0.0558)
+Interaction (4 df numerator):
+  Minimum detectable f2 = 0.0039 (f = 0.0622)
+
+--- Study 3 (N=57) ---
+Main effects (2 df numerator, ~2982 denominator df):
+  Minimum detectable f2 = 0.0032 (f = 0.0568)
+Interaction (4 df numerator):
+  Minimum detectable f2 = 0.0040 (f = 0.0635)
+
+--- Study 4 (N=113) ---
+Main effect of first_actual (2 df numerator, ~1350 denominator df):
+  Minimum detectable f2 = 0.0071 (f = 0.0845)
+Interaction first_response x first_actual (1 df numerator, ~1350 denominator df):
+  Minimum detectable f2 = 0.0058 (f = 0.0764)
+
+--- Study 5 (N=153) ---
+Main effects (2 df numerator, ~908 denominator df):
+  Minimum detectable f2 = 0.0106 (f = 0.1031)
+Interaction (2 df numerator):
+  Minimum detectable f2 = 0.0106 (f = 0.1031)
+
+--- Study 6 (N=158) ---
+Main effects (2 df numerator, ~938 denominator df):
+  Minimum detectable f2 = 0.0103 (f = 0.1014)
+Interaction (2 df numerator):
+  Minimum detectable f2 = 0.0103 (f = 0.1014)
+
+=== Note ===
+f2 is Cohen's f-squared effect size.
+Conventional benchmarks: small = 0.02, medium = 0.15, large = 0.35
+These are approximate since mixed models have complex df structures.

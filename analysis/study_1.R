@@ -9,6 +9,8 @@ library(emmeans)
 library(effectsize)
 library(ordinal)
 
+source(here("analysis/stats_helpers.R"))
+set_stats_file("study_1")
 
 # Options -----------------------------------------------------------------
 
@@ -52,17 +54,20 @@ write_csv(d, here("data/study-1_tidy_data.csv"))
 
 # Demographic info --------------------------------------------------------
 
-print(length(unique(d$subject_id)))
+n_subjects <- length(unique(d$subject_id))
+print(n_subjects)
 
 d.demographics <-
   read.csv(here('data/study-1_demographics.csv'))
-d.demographics %>% count(gender)
-d.demographics %>% summarize(
+d.demographics |> count(gender)
+d.demographics |> summarize(
   mean_age = mean(age),
   sd_age = sd(age),
   min_age = min(age),
   max_age = max(age)
 )
+
+write_demographics("studyOne", d.demographics, n_subjects)
 
 
 # Stats -------------------------------------------------------------------
@@ -99,7 +104,41 @@ emm_contrasts <- emmeans(mod, revpairwise ~ next_interaction |
 emm_contrasts %>% summary(infer = T)
 
 cat("\n--- Effect Sizes (Cohen’s d) for contrasts ---\n")
-print(eff_size(emmeans(mod, ~ next_interaction | relationship), sigma = sigma(mod), edf = df.residual(mod)))
+s1_effect_sizes <- eff_size(emmeans(mod, ~ next_interaction | relationship), sigma = sigma(mod), edf = df.residual(mod))
+print(s1_effect_sizes)
+
+# Export EMMs and contrasts to tex
+s1_emms <- summary(emm_contrasts$emmeans)
+s1_cons <- summary(emm_contrasts, infer = TRUE)$contrasts
+
+# EMMs by relationship × next_interaction
+for (rel in c("No info", "Symmetric", "Asymmetric")) {
+  rel_label <- switch(rel, "No info" = "NoInfo", Symmetric = "Sym", Asymmetric = "Asym")
+  for (ni in c("Reciprocity", "Precedent", "None")) {
+    ni_label <- switch(ni, Reciprocity = "Recip", Precedent = "Prec", None = "None")
+    row <- s1_emms |> filter(relationship == rel, next_interaction == ni)
+    write_emm(paste0("studyOne", ni_label, rel_label), row)
+  }
+}
+
+# Key contrasts: Precedent - Reciprocity for each relationship
+for (rel in c("No info", "Symmetric", "Asymmetric")) {
+  rel_label <- switch(rel, "No info" = "NoInfo", Symmetric = "Sym", Asymmetric = "Asym")
+  row <- s1_cons |> filter(relationship == rel, contrast == "Precedent - Reciprocity")
+  write_contrast(paste0("studyOnePrecVsRecip", rel_label), row, stat_type = "t")
+}
+
+# Effect sizes (Cohen’s d) for Precedent - Reciprocity
+s1_es_df <- as.data.frame(s1_effect_sizes)
+for (rel in c("No info", "Symmetric", "Asymmetric")) {
+  rel_label <- switch(rel, "No info" = "NoInfo", Symmetric = "Sym", Asymmetric = "Asym")
+  es_rows <- s1_es_df |> filter(relationship == rel)
+  # Precedent - Reciprocity is the first contrast within each relationship
+  prec_recip_row <- es_rows |> filter(grepl("Precedent - Reciprocity|Reciprocity - Precedent", contrast))
+  if (nrow(prec_recip_row) > 0) {
+    write_cohens_d(paste0("studyOnePrecVsRecip", rel_label), prec_recip_row$effect.size[1])
+  }
+}
 
 # $emmeans
 # relationship = No info:
@@ -165,9 +204,15 @@ emm <-
   add_grouping("relationship_present", "relationship", c("no", "yes", "yes"))
 
 
-emmeans(emm, revpairwise ~ interaction_present |
-          relationship_present) %>%
+s1_interaction <- emmeans(emm, revpairwise ~ interaction_present |
+          relationship_present) |>
   summary(infer = T)
+s1_interaction
+
+# Export continued-interaction contrast (no relationship info)
+s1_int_cons <- s1_interaction$contrasts
+row_no_rel <- s1_int_cons |> filter(relationship_present == "no")
+write_contrast("studyOneInteractionNoRel", row_no_rel, stat_type = "t")
 
 # $emmeans
 # relationship_present = no:
@@ -218,20 +263,6 @@ emmeans(mod, revpairwise ~ next_interaction | relationship) %>%
   summary(infer = T)
 
 
-emm <-
-  mod %>% emmeans(~ relationship * next_interaction) %>%
-  add_grouping("interaction_present",
-               "next_interaction",
-               c("yes", "yes", "no")) %>%
-  add_grouping("relationship_present", "relationship", c("no", "yes", "yes"))
-
-
-emmeans(emm, revpairwise ~ interaction_present |
-          relationship_present) %>%
-  summary(infer = T)
-
-
-
 # Repeat with normalized values -------------------------------------------
 
 
@@ -253,18 +284,6 @@ emmeans(mod, revpairwise ~ next_interaction |
 
 
 # Do people expect a continued social interaction, both with and without the relationship?
-emm <-
-  mod %>% emmeans(~ relationship * next_interaction) %>%
-  add_grouping("interaction_present",
-               "next_interaction",
-               c("yes", "yes", "no")) %>%
-  add_grouping("relationship_present", "relationship", c("no", "yes", "yes"))
-
-
-emmeans(emm, revpairwise ~ interaction_present |
-          relationship_present) %>%
-  summary(infer = T)
-
 # Without control levels
 
 mod <- lmer(
@@ -281,3 +300,21 @@ emmeans(mod, revpairwise ~ next_interaction | relationship) %>%
   summary(infer = T)
 
 
+# Z-scored robustness check (ceiling effects) ------------------------------
+
+cat("\n--- Z-Scored Robustness Check ---\n")
+d <- d |>
+  group_by(subject_id) |>
+  mutate(z_likert_rating = scale(likert_rating)[, 1]) |>
+  ungroup()
+
+mod_z <- lmer(
+  z_likert_rating ~ 1 + next_interaction * relationship + (1 | story) + (1 | subject_id),
+  data = d
+)
+
+summary(mod_z)
+anova(mod_z, type = "III")
+
+emmeans(mod_z, revpairwise ~ next_interaction | relationship) |>
+  summary(infer = T)
