@@ -46,7 +46,12 @@ Rscript -e 'renv::run("analysis/study_5.R")' > analysis/outputs/study_5.txt 2>&1
 Rscript -e 'renv::run("analysis/study_6.R")' > analysis/outputs/study_6.txt 2>&1
 ```
 
-Text outputs are saved in `analysis/outputs/`.
+Text outputs are saved in `analysis/outputs/`. Each study script also generates a `.tex` file (e.g., `analysis/stats_study_1.tex`) containing LaTeX macros for all inline statistics reported in the paper. These files are committed so the manuscript can compile without rerunning the analyses, but they are regenerated every time the analysis scripts run. The manuscript (`generosity-actions_R1/main_revised.tex`) loads them with `\input` and uses the macros so that no statistics are hardcoded.
+
+You can also run the sensitivity analysis:
+```bash
+Rscript -e 'renv::run("analysis/sensitivity_analysis.R")' > analysis/outputs/sensitivity.txt 2>&1
+```
 
 2. **Generate figures**:
 ```bash
