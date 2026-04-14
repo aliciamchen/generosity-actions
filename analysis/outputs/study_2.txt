@@ -182,21 +182,21 @@ P value adjustment: tukey method for comparing a family of 3 estimates
 --- Effect Sizes (Cohen's d) for relationship contrasts ---
 next_interaction = Reciprocity:
  contrast       effect.size     SE  df lower.CL upper.CL
- Equal - Lower      0.66841 0.0760 162    0.518   0.8184
- Equal - Higher     0.67035 0.0757 161    0.521   0.8198
- Lower - Higher     0.00194 0.0755 161   -0.147   0.1510
+ Lower - Equal     -0.66841 0.0760 162  -0.8184   -0.518
+ Higher - Equal    -0.67035 0.0757 161  -0.8198   -0.521
+ Higher - Lower    -0.00194 0.0755 161  -0.1510    0.147
 
 next_interaction = Precedent:
  contrast       effect.size     SE  df lower.CL upper.CL
- Equal - Lower     -0.27156 0.0756 162   -0.421  -0.1222
- Equal - Higher    -0.28381 0.0754 161   -0.433  -0.1349
- Lower - Higher    -0.01225 0.0755 161   -0.161   0.1369
+ Lower - Equal      0.27156 0.0756 162   0.1222    0.421
+ Higher - Equal     0.28381 0.0754 161   0.1349    0.433
+ Higher - Lower     0.01225 0.0755 161  -0.1369    0.161
 
 next_interaction = None:
  contrast       effect.size     SE  df lower.CL upper.CL
- Equal - Lower     -0.22805 0.0755 162   -0.377  -0.0790
- Equal - Higher    -0.21402 0.0753 160   -0.363  -0.0654
- Lower - Higher     0.01403 0.0753 160   -0.135   0.1627
+ Lower - Equal      0.22805 0.0755 162   0.0790    0.377
+ Higher - Equal     0.21402 0.0753 160   0.0654    0.363
+ Higher - Lower    -0.01403 0.0753 160  -0.1627    0.135
 
 sigma used for effect sizes: 1.367 
 Degrees-of-freedom method: inherited from kenward-roger when re-gridding 
@@ -205,7 +205,7 @@ Confidence level used: 0.95
 --- Bayes Factors for key null results ---
 BF01 for Higher vs Lower on Precedent (Study 2):
 subject_id + story 
-          10.66587 
+          11.78554 
 Linear mixed model fit by REML. t-tests use Satterthwaite's method [
 lmerModLmerTest]
 Formula: p_prec ~ 1 + diff + (1 | story) + (1 | subject_id)
@@ -326,7 +326,7 @@ Adding missing grouping variables: `relationship`
 BF01 for effort not moderating precedent (Study 2):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 3.255861 ±1.45%
+[1] subject_id + story : 3.289787 ±0.72%
 
 Against denominator:
   likert_rating ~ diff_effort + subject_id + story 
@@ -336,7 +336,7 @@ Bayes factor type: BFlinearModel, JZS
 BF01 for benefit not moderating precedent (Study 2):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 0.5739044 ±1.01%
+[1] subject_id + story : 0.5684146 ±1.26%
 
 Against denominator:
   likert_rating ~ diff_benefit + subject_id + story 

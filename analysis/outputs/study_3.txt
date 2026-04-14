@@ -185,21 +185,21 @@ P value adjustment: tukey method for comparing a family of 3 estimates
 --- Effect Sizes (Cohen's d) for relationship contrasts ---
 next_interaction = Reciprocity:
  contrast       effect.size     SE  df lower.CL upper.CL
- Equal - Higher     0.32443 0.0771 179    0.172  0.47664
- Equal - Lower      0.32821 0.0767 177    0.177  0.47963
- Higher - Lower     0.00377 0.0769 177   -0.148  0.15544
+ Higher - Equal    -0.32443 0.0771 179 -0.47664   -0.172
+ Lower - Equal     -0.32821 0.0767 177 -0.47963   -0.177
+ Lower - Higher    -0.00377 0.0769 177 -0.15544    0.148
 
 next_interaction = Precedent:
  contrast       effect.size     SE  df lower.CL upper.CL
- Equal - Higher    -0.16183 0.0770 178   -0.314 -0.00981
- Equal - Lower     -0.15434 0.0766 177   -0.305 -0.00317
- Higher - Lower     0.00750 0.0769 177   -0.144  0.15927
+ Higher - Equal     0.16183 0.0770 178  0.00981    0.314
+ Lower - Equal      0.15434 0.0766 177  0.00317    0.305
+ Lower - Higher    -0.00750 0.0769 177 -0.15927    0.144
 
 next_interaction = None:
  contrast       effect.size     SE  df lower.CL upper.CL
- Equal - Higher    -0.06415 0.0770 179   -0.216  0.08782
- Equal - Lower     -0.15580 0.0766 177   -0.307 -0.00463
- Higher - Lower    -0.09165 0.0768 177   -0.243  0.05993
+ Higher - Equal     0.06415 0.0770 179 -0.08782    0.216
+ Lower - Equal      0.15580 0.0766 177  0.00463    0.307
+ Lower - Higher     0.09165 0.0768 177 -0.05993    0.243
 
 sigma used for effect sizes: 1.405 
 Degrees-of-freedom method: inherited from kenward-roger when re-gridding 
@@ -209,7 +209,7 @@ Confidence level used: 0.95
 BF01 for Higher vs Lower on Precedent (Study 3):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 11.33216 ±0.84%
+[1] subject_id + story : 11.09855 ±1.74%
 
 Against denominator:
   likert_rating ~ relationship + subject_id + story 
@@ -336,7 +336,7 @@ Adding missing grouping variables: `relationship`
 BF01 for effort not moderating precedent (Study 3):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 3.982798 ±1.22%
+[1] subject_id + story : 4.073909 ±0.94%
 
 Against denominator:
   likert_rating ~ diff_effort + subject_id + story 
@@ -346,7 +346,7 @@ Bayes factor type: BFlinearModel, JZS
 BF01 for benefit not moderating precedent (Study 3):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 0.8380154 ±1.24%
+[1] subject_id + story : 0.8416051 ±1.24%
 
 Against denominator:
   likert_rating ~ diff_benefit + subject_id + story 

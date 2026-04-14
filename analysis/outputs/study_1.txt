@@ -170,21 +170,21 @@ P value adjustment: tukey method for comparing a family of 3 estimates
 --- Effect Sizes (Cohen’s d) for contrasts ---
 relationship = No info:
  contrast                effect.size     SE  df lower.CL upper.CL
- Reciprocity - Precedent      -0.104 0.0752 158  -0.2522   0.0447
- Reciprocity - None            1.636 0.0780 158   1.4824   1.7904
- Precedent - None              1.740 0.0783 158   1.5855   1.8949
+ Precedent - Reciprocity       0.104 0.0752 158  -0.0447   0.2522
+ None - Reciprocity           -1.636 0.0780 158  -1.7904  -1.4824
+ None - Precedent             -1.740 0.0783 158  -1.8949  -1.5855
 
 relationship = Symmetric:
  contrast                effect.size     SE  df lower.CL upper.CL
- Reciprocity - Precedent       0.194 0.0753 158   0.0456   0.3431
- Reciprocity - None            1.908 0.0790 158   1.7518   2.0639
- Precedent - None              1.713 0.0783 158   1.5588   1.8681
+ Precedent - Reciprocity      -0.194 0.0753 158  -0.3431  -0.0456
+ None - Reciprocity           -1.908 0.0790 158  -2.0639  -1.7518
+ None - Precedent             -1.713 0.0783 158  -1.8681  -1.5588
 
 relationship = Asymmetric:
  contrast                effect.size     SE  df lower.CL upper.CL
- Reciprocity - Precedent      -1.301 0.0770 158  -1.4536  -1.1493
- Reciprocity - None            0.665 0.0757 158   0.5158   0.8147
- Precedent - None              1.967 0.0793 158   1.8101   2.1233
+ Precedent - Reciprocity       1.301 0.0770 158   1.1493   1.4536
+ None - Reciprocity           -0.665 0.0757 158  -0.8147  -0.5158
+ None - Precedent             -1.967 0.0793 158  -2.1233  -1.8101
 
 sigma used for effect sizes: 1.361 
 Degrees-of-freedom method: inherited from kenward-roger when re-gridding 

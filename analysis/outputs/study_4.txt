@@ -198,7 +198,7 @@ P value adjustment: tukey method for comparing a family of 3 estimates
 BF01 for Higher vs Lower on strategy (Study 4):
 Bayes factor analysis
 --------------
-[1] subject_id + story : 2.582904 ±1.16%
+[1] subject_id + story : 2.459428 ±1.71%
 
 Against denominator:
   strategy_num ~ first_actual + subject_id + story 

@@ -12,6 +12,8 @@ library(ordinal)
 source(here("analysis/stats_helpers.R"))
 set_stats_file("study_1")
 
+set.seed(67)
+
 # Options -----------------------------------------------------------------
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
@@ -104,7 +106,7 @@ emm_contrasts <- emmeans(mod, revpairwise ~ next_interaction |
 emm_contrasts %>% summary(infer = T)
 
 cat("\n--- Effect Sizes (Cohen’s d) for contrasts ---\n")
-s1_effect_sizes <- eff_size(emmeans(mod, ~ next_interaction | relationship), sigma = sigma(mod), edf = df.residual(mod))
+s1_effect_sizes <- eff_size(emmeans(mod, ~ next_interaction | relationship), sigma = sigma(mod), edf = df.residual(mod), method = "revpairwise")
 print(s1_effect_sizes)
 
 # Export EMMs and contrasts to tex

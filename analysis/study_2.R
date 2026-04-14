@@ -12,6 +12,8 @@ library(BayesFactor)
 source(here("analysis/stats_helpers.R"))
 set_stats_file("study_2")
 
+set.seed(67)
+
 # Options -----------------------------------------------------------------
 
 options(warn = -1)
@@ -144,7 +146,7 @@ emm_rel <- emmeans(mod, ~ relationship | next_interaction)
 contrast(emm_rel, method = "revpairwise") %>% summary(infer = T)
 
 cat("\n--- Effect Sizes (Cohen's d) for relationship contrasts ---\n")
-s2_effect_sizes <- eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod))
+s2_effect_sizes <- eff_size(emm_rel, sigma = sigma(mod), edf = df.residual(mod), method = "revpairwise")
 print(s2_effect_sizes)
 
 # Export EMMs and contrasts to tex

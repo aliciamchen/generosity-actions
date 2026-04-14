@@ -13,6 +13,7 @@ library(lmerTest)
 library(ggpubr)
 
 source(here("analysis/plot_config.R"))
+set.seed(67)
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 ```
 
@@ -69,7 +70,7 @@ ggplot(
   geom_line(
     data = study_1_subject_means,
     aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
-    alpha = 0.11, linewidth = 0.3, inherit.aes = FALSE
+    alpha = 0.13, linewidth = 0.3, inherit.aes = FALSE
   ) +
   geom_violin(
     aes(group = interaction(relationship, next_interaction)),
@@ -85,7 +86,7 @@ ggplot(
       ymin = ci_lower,
       ymax = ci_upper
     ),
-    width = 0.06,
+    width = 0.09,
     fatten = 2,
     linewidth = 0.5,
     show.legend = FALSE
@@ -182,7 +183,7 @@ ggplot(
   geom_line(
     data = study_2_subject_means,
     aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
-    alpha = 0.11, linewidth = 0.3, inherit.aes = FALSE
+    alpha = 0.13, linewidth = 0.3, inherit.aes = FALSE
   ) +
   geom_violin(
     aes(group = interaction(relationship, next_interaction)),
@@ -198,7 +199,7 @@ ggplot(
       ymin = ci_lower,
       ymax = ci_upper
     ),
-    width = 0.06,
+    width = 0.09,
     fatten = 2,
     linewidth = 0.5,
     show.legend = FALSE
@@ -358,7 +359,7 @@ ggplot(
   geom_line(
     data = study_3_subject_means,
     aes(x = x_dodge, y = mean_rating, group = interaction(subject_id, relationship)),
-    alpha = 0.11, linewidth = 0.3, inherit.aes = FALSE
+    alpha = 0.13, linewidth = 0.3, inherit.aes = FALSE
   ) +
   geom_violin(
     aes(group = interaction(relationship, next_interaction)),
@@ -374,7 +375,7 @@ ggplot(
       ymin = ci_lower,
       ymax = ci_upper
     ),
-    width = 0.06,
+    width = 0.09,
     fatten = 2,
     linewidth = 0.5,
     show.legend = FALSE

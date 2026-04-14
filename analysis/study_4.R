@@ -11,6 +11,8 @@ library(BayesFactor)
 source(here("analysis/stats_helpers.R"))
 set_stats_file("study_4")
 
+set.seed(67)
+
 # Options -----------------------------------------------------------------
 
 options(warn = -1)

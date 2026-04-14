@@ -7,6 +7,8 @@ library(forcats)
 cairo_pdf(nullfile())
 source(here("analysis/plot_config.R"))
 
+set.seed(67)
+
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 
