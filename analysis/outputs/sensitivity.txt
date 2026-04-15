@@ -1,0 +1,27 @@
+here() starts at /Users/aliciachen/Dropbox/projects/generosity-actions
+=== Sensitivity Analyses: Minimum Detectable Cohen's d ===
+
+--- Study 1 (N=59) ---
+  Minimum detectable d = 0.37
+
+--- Study 2 (N=59) ---
+  Minimum detectable d = 0.37
+
+--- Study 3 (N=57) ---
+  Minimum detectable d = 0.38
+
+--- Study 4 (N=113) ---
+  Minimum detectable d = 0.27 (approximate OR = 1.62)
+
+--- Study 5 (N=153) ---
+  Minimum detectable d = 0.23 (approximate OR = 1.51)
+
+--- Study 6 (N=158) ---
+  Minimum detectable d = 0.22 (approximate OR = 1.50)
+
+=== Note ===
+Studies 1-3: Minimum detectable Cohen's d for within-subject pairwise
+contrasts (paired t-test equivalent) at 80% power, alpha = 0.05.
+Studies 4-6: Approximate minimum detectable d and OR, treating subject-level
+proportions as continuous. OR conversion: OR = exp(d * pi / sqrt(3)).
+Conventional benchmarks for d: small = 0.20, medium = 0.50, large = 0.80.
