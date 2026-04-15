@@ -626,7 +626,46 @@ summary(mod2)
 # boundary (singular) fit: see help('isSingular')
 
 # Is the more complex model better?
-anova(mod_cross_3, mod2)
+lr_dom_prestige <- anova(mod_cross_3, mod2)
+print(lr_dom_prestige)
+
+# Export stats for SI §A7 (Concrete relationships in Study 3) ---------------
+write_section("Dominance and prestige (SI A7)")
+
+# Pearson correlations across relationships
+# dominance vs prestige: computed across all (story x hierarchical level)
+# combinations in the hierarchical-only dataset — 18 scenarios x 2 levels = 36 points.
+dom_prestige_df <- studies_3_4_all %>%
+  distinct(story, first_actual, dominance_score, prestige_score)
+cor_dom_prestige <- cor.test(
+  dom_prestige_df$dominance_score,
+  dom_prestige_df$prestige_score
+)
+write_cor_test("studyFourDomPrestigeCor", cor_dom_prestige)
+
+# dominance / prestige vs initial expectations: aggregate to story level
+# (expected.first.4 is one value per story; dominance/prestige averaged
+# across the two hierarchical levels).
+story_level <- studies_3_4_all %>%
+  group_by(story) %>%
+  summarise(
+    dominance_score = mean(dominance_score),
+    prestige_score = mean(prestige_score),
+    expected.first.4 = mean(expected.first.4)
+  )
+cor_dom_expect <- cor.test(story_level$dominance_score, story_level$expected.first.4)
+cor_prestige_expect <- cor.test(story_level$prestige_score, story_level$expected.first.4)
+write_cor_test("studyFourDomExpectCor", cor_dom_expect)
+write_cor_test("studyFourPrestigeExpectCor", cor_prestige_expect)
+
+# Likelihood-ratio test: does adding dominance+prestige improve fit?
+write_lr_test("studyFourDomPrestigeLR", lr_dom_prestige)
+
+# Fixed-effect coefficients from mod2 (dominance/prestige extended model)
+export_lmer_coef_sci("studyFourDomMain",        mod2, "dominance_score")
+export_lmer_coef_sci("studyFourPrestigeMain",   mod2, "prestige_score")
+export_lmer_coef_sci("studyFourDomByActual",    mod2, "dominance_score:first_actual1")
+export_lmer_coef_sci("studyFourPrestigeByActual", mod2, "prestige_score:first_actual1")
 
 # Data: studies_3_4_all
 # Models:

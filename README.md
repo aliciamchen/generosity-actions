@@ -1,41 +1,56 @@
 # Expectations for sequences of generous acts
 
-This project examines how social relationships influence people's expectations about sequences of generosity. The research tests how these expectations vary across different relationship types (equal vs. hierarchical) and explores the underlying mechanisms driving these patterns.
+This repository contains the code, data, and experiment materials for "Expectations of reciprocal generosity are specific to equal relationships" (Open Mind, 2026). 
 
-<!-- Preprint: https://osf.io/preprints/psyarxiv/7j6k8_v1 -->
+## Overview
 
-## This repository
+This project examines how social relationships influence people's expectations about sequences of generosity. Across six studies, we test how these expectations vary across different relationship types (equal vs. hierarchical) and explore the underlying mechanisms driving these patterns.
 
-This repository contains the code and data for the project. The code is organized into the following folders:
+## Preregistration links
 
-- `analysis/`: contains the code for the analyses
-- `data/`: contains the data. See [codebook](data/README.md) for more details. 
-- `experiments/`: contains the code for the experiments. 
-- `figures/`: contains the figures. The direct figure outputs are in `figures/`. Illustrator-formatted figures for the paper are in `figures/PDF`. 
+  - Study 1: https://osf.io/fxwbh/
+  - Study 2: https://osf.io/jvnca/
+  - Study 3: https://osf.io/vt4kp
+  - Study 4: https://osf.io/dfv24/
+  - Study 5: https://osf.io/ag9v2/
+  - Study 6: https://osf.io/zn6wh/
+
+## Repository structure
+
+- `analysis/` -- R scripts for statistical analysis and figure generation
+- `data/` -- anonymized participant data. See [codebook](data/README.md).
+- `experiments/` -- jsPsych browser experiments
+- `figures/` -- figure outputs used in the paper. The final figures are in `figures/PDF/`.
 
 ## How to reproduce results
 
-### Set up Python and R environments
+### Requirements
+
+- R 4.5.2 (packages managed by `renv`)
+- Python 3.13+ (managed by `uv`)
+
+### Set up
 
 **Python (using uv):**
 ```bash
 uv sync
 ```
 
-**R:**
+**R (using renv):**
 ```r
 # Install renv if not already installed
 if (!requireNamespace("renv", quietly = TRUE)) {
   install.packages("renv")
 }
 
-# Initialize renv (this will restore packages from renv.lock)
+# Restore packages from renv.lock
 renv::restore()
 ```
 
 ### Run analyses
 
-1. **Reproduce main results**:
+Run each study script and save its console output:
+
 ```bash
 Rscript -e 'renv::run("analysis/scenario_validation.R")' > analysis/outputs/scenario_validation.txt 2>&1
 Rscript -e 'renv::run("analysis/study_1.R")' > analysis/outputs/study_1.txt 2>&1
@@ -44,21 +59,13 @@ Rscript -e 'renv::run("analysis/study_3.R")' > analysis/outputs/study_3.txt 2>&1
 Rscript -e 'renv::run("analysis/study_4.R")' > analysis/outputs/study_4.txt 2>&1
 Rscript -e 'renv::run("analysis/study_5.R")' > analysis/outputs/study_5.txt 2>&1
 Rscript -e 'renv::run("analysis/study_6.R")' > analysis/outputs/study_6.txt 2>&1
-```
-
-Text outputs are saved in `analysis/outputs/`. Each study script also generates a `.tex` file (e.g., `analysis/stats_study_1.tex`) containing LaTeX macros for all inline statistics reported in the paper. These files are committed so the manuscript can compile without rerunning the analyses, but they are regenerated every time the analysis scripts run. The manuscript (`generosity-actions_R1/main_revised.tex`) loads them with `\input` and uses the macros so that no statistics are hardcoded.
-
-You can also run the sensitivity analysis:
-```bash
 Rscript -e 'renv::run("analysis/sensitivity_analysis.R")' > analysis/outputs/sensitivity.txt 2>&1
 ```
 
-2. **Generate figures**:
+Each study script also writes a `.tex` file (e.g., `analysis/stats_study_1.tex`) containing LaTeX macros for every inline statistic reported in the paper. 
+
+### Generate figures
+
 ```bash
 Rscript -e "rmarkdown::render('analysis/figures.Rmd')"
 ```
-
-<!-- ## Contact
-
-Email: aliciach@mit.edu -->
-

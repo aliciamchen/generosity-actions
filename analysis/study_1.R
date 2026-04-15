@@ -210,6 +210,7 @@ for (coef_name in names(ord_int_names)) {
   row <- ord_coefs[coef_name, ]
   write_stat(paste0("studyOneOrd", label, "B"), row["Estimate"], digits = 2)
   write_stat(paste0("studyOneOrd", label, "Z"), row["z value"], digits = 2)
+  write_p(paste0("studyOneOrd", label, "P"), row["Pr(>|z|)"])
 }
 
 # Do people expect a continued social interaction, both with and without the relationship?

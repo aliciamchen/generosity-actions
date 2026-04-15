@@ -22,6 +22,10 @@ set_stats_file <- function(study_name) {
 
 #' Append a \\newcommand to the stats file
 #'
+#' Numeric values (and LaTeX math like `5 \\times 10^{-4}`) are wrapped in
+#' \\ensuremath{} so negative signs render as proper Unicode minus, regardless
+#' of whether the macro is used in text- or math-mode context.
+#'
 #' @param name Command name (without backslash), e.g. "studyOneN"
 #' @param value The value to write
 #' @param digits Number of decimal places (NULL = write as-is)
@@ -32,6 +36,9 @@ write_stat <- function(name, value, digits = NULL) {
     formatted <- as.character(value)
   } else {
     formatted <- as.character(value)
+  }
+  if (grepl("^-?[0-9]", formatted) || grepl("\\\\times", formatted)) {
+    formatted <- paste0("\\ensuremath{", formatted, "}")
   }
   line <- sprintf("\\providecommand{\\%s}{%s}", name, formatted)
   cat(line, "\n", file = STATS_FILE, append = TRUE)
@@ -87,8 +94,13 @@ write_demographics <- function(prefix, demographics_df, n_subjects) {
 write_contrast <- function(prefix, row, stat_type = "t") {
   write_stat(paste0(prefix, "Diff"), row$estimate, digits = 2)
   write_stat(paste0(prefix, "SE"), row$SE, digits = 2)
-  write_stat(paste0(prefix, "CILower"), row$lower.CL, digits = 2)
-  write_stat(paste0(prefix, "CIUpper"), row$upper.CL, digits = 2)
+  if ("lower.CL" %in% names(row)) {
+    write_stat(paste0(prefix, "CILower"), row$lower.CL, digits = 2)
+    write_stat(paste0(prefix, "CIUpper"), row$upper.CL, digits = 2)
+  } else if ("asymp.LCL" %in% names(row)) {
+    write_stat(paste0(prefix, "CILower"), row$asymp.LCL, digits = 2)
+    write_stat(paste0(prefix, "CIUpper"), row$asymp.UCL, digits = 2)
+  }
   if (stat_type == "t") {
     write_stat(paste0(prefix, "T"), row$t.ratio, digits = 2)
     write_stat(paste0(prefix, "DF"), round(row$df, 0))
@@ -139,6 +151,20 @@ write_bf <- function(prefix, bf_value) {
   write_stat(paste0(prefix, "BF"), bf_value, digits = 2)
 }
 
+#' Format a number, auto-switching to LaTeX scientific notation for tiny/huge values.
+#' Returns e.g. "0.15" or "5.09 \\times 10^{-4}".
+fmt_num <- function(x, digits = 2, sci_lo = 0.01, sci_hi = 10000) {
+  if (is.na(x)) return("NA")
+  if (x == 0) return(formatC(0, format = "f", digits = digits))
+  abs_x <- abs(x)
+  if (abs_x >= sci_lo && abs_x < sci_hi) {
+    formatC(x, format = "f", digits = digits)
+  } else {
+    parts <- strsplit(formatC(x, format = "e", digits = digits), "e")[[1]]
+    sprintf("%s \\times 10^{%d}", parts[1], as.integer(parts[2]))
+  }
+}
+
 #' Write a fixed-effect coefficient from an lmer model
 #'
 #' @param prefix e.g. "studyTwoHigherBenefit"
@@ -151,6 +177,37 @@ export_lmer_coef <- function(prefix, mod, coef_name = "diff") {
   write_stat(paste0(prefix, "T"), row["t value"], digits = 2)
   write_stat(paste0(prefix, "DF"), round(row["df"], 2))
   write_p(paste0(prefix, "P"), row["Pr(>|t|)"])
+}
+
+#' Export an lmer coefficient with auto scientific notation for small estimates.
+#' Writes B, SE, T, DF, P. Use for coefficients with tiny magnitudes (e.g. 1e-4).
+export_lmer_coef_sci <- function(prefix, mod, coef_name) {
+  coefs <- summary(mod)$coefficients
+  row <- coefs[coef_name, ]
+  write_stat(paste0(prefix, "B"), fmt_num(row[["Estimate"]]))
+  write_stat(paste0(prefix, "SE"), fmt_num(row[["Std. Error"]]))
+  write_stat(paste0(prefix, "T"), formatC(row[["t value"]], format = "f", digits = 2))
+  write_stat(paste0(prefix, "DF"), formatC(row[["df"]], format = "f", digits = 1))
+  write_p(paste0(prefix, "P"), row[["Pr(>|t|)"]])
+}
+
+#' Write a Pearson correlation from a cor.test() result
+write_cor_test <- function(prefix, cor_result) {
+  write_stat(paste0(prefix, "R"), formatC(unname(cor_result$estimate), format = "f", digits = 2))
+  write_stat(paste0(prefix, "T"), formatC(unname(cor_result$statistic), format = "f", digits = 2))
+  write_stat(paste0(prefix, "DF"), as.integer(unname(cor_result$parameter)))
+  write_p(paste0(prefix, "P"), cor_result$p.value)
+}
+
+#' Write a likelihood-ratio test from anova(mod1, mod2) output
+#' Reads Chisq, Df, Pr(>Chisq) from the second row (the comparison row).
+write_lr_test <- function(prefix, anova_result, row_idx = 2) {
+  chisq <- anova_result[["Chisq"]][row_idx]
+  df <- anova_result[["Df"]][row_idx]
+  p <- anova_result[["Pr(>Chisq)"]][row_idx]
+  write_stat(paste0(prefix, "Chisq"), formatC(chisq, format = "f", digits = 2))
+  write_stat(paste0(prefix, "DF"), as.integer(df))
+  write_p(paste0(prefix, "P"), p)
 }
 
 #' Write a fixed-effect coefficient from a glmer model
